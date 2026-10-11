@@ -1,0 +1,31 @@
+{
+  "name": "infinite-the-office",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Never-ending generative The Office",
+  "scripts": {
+    "dev": "vite",
+    "server": "tsx server/index.ts",
+    "build": "tsc --noEmit && vite build",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "preview": "tsx src/cli/preview.ts",
+    "pregen": "tsx src/cli/pregen.ts",
+    "library": "tsx src/cli/library.ts",
+    "render": "tsx src/cli/render.ts"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.129.0",
+    "@fontsource/jetbrains-mono": "^5.3.0",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.3",
+    "playwright-core": "^1.63.0",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.1",
+    "vitest": "^5.0.2"
+  }
+}

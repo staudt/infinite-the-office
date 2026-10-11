@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="data:," />
+    <title>Infinite Office</title>
+    <meta name="description" content="A never-ending generative sitcom set in a paper company, in ASCII." />
+  </head>
+  <body>
+    <div id="frame">
+      <header id="hud">
+        <span id="show" class="brand">THE OFFICE</span>
+        <span id="ep"></span>
+        <span id="seg"></span>
+      </header>
+      <main>
+        <div id="left">
+          <div id="stage">
+            <pre id="map" aria-label="The set"></pre>
+            <pre id="head" aria-label="Talking head" hidden></pre>
+          </div>
+          <div id="subtitle"></div>
+          <ul id="feed" aria-live="polite" aria-label="Script"></ul>
+        </div>
+        <aside id="side">
+          <section id="card" aria-label="Episode"></section>
+        </aside>
+      </main>
+      <footer>
+        <span><span id="conn"></span> · <span id="status"></span></span>
+        <span class="keys"><kbd>space</kbd> pause <kbd>1</kbd>–<kbd>4</kbd> speed <kbd>←</kbd><kbd>→</kbd> scene <kbd>d</kbd> debug <kbd>f</kbd> fullscreen <kbd>N</kbd> shows</span>
+      </footer>
+    </div>
+    <div id="ended" hidden>
+      <h2 id="ended-title"></h2>
+      <p id="ended-text" class="hint"></p>
+      <div id="ended-actions"></div>
+    </div>
+    <div id="start" hidden>
+      <div class="start-panel">
+        <h1>Choose your show</h1>
+        <p id="start-conn" class="conn-line"></p>
+        <section id="start-continue"></section>
+        <section id="new-section">
+          <h2>New series</h2>
+          <p id="create-note" class="create-note" hidden></p>
+          <fieldset id="create-area">
+            <div class="names">
+              <label><span>Series name <span class="opt">optional</span></span>
+                <input id="series-name" maxlength="60" placeholder="The Office" autocomplete="off" />
+              </label>
+            </div>
+            <p class="hint">The name makes the series' link and save folder (<code>?show=my-office</code>). Leave it empty for "The Office".</p>
+            <p class="hint">Optional direction for the writers: which era, who is dating whom, who runs the branch, what to stir up. Leave empty to be surprised.</p>
+            <div id="presets"></div>
+            <textarea id="direction" rows="4" placeholder="e.g. Classic seasons 2-3: Jim and Pam will-they-won't-they, Michael desperate for a girlfriend, Dwight scheming for Assistant Regional Manager"></textarea>
+            <button id="create" class="primary">Create series</button>
+          </fieldset>
+        </section>
+        <section id="stored-section">
+          <h2>Stored shows</h2>
+          <p class="hint">Every series you watch live is saved here and plays back for free, even offline.</p>
+          <ul id="library-list"></ul>
+          <button id="play-demo">Watch the demo episode</button>
+        </section>
+        <p class="hint"><kbd>Esc</kbd> to close</p>
+      </div>
+    </div>
+    <aside id="debug" hidden><pre id="debug-body"></pre></aside>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.env
+world.json
+shows/
+sessions/
+booker-debug-*.json
+renders/

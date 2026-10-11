@@ -1,0 +1,194 @@
+{
+  "title": "The Time Capsule",
+  "logline": "Michael makes the office fill a time capsule for the Dunder Mifflin of 2050, while Dwight hunts whoever keeps stealing his parking spot.",
+  "outline": "A: Michael's time capsule legacy; B: Dwight's parking spot stakeout; C: Kevin's secret chili. Order: cold, A, A, B, C, C, A, A, B, A, tag.",
+  "theme": "What we leave behind, and who we really are when we think nobody will look.",
+  "storySoFar": "Michael is trying to build a legacy. Dwight is convinced someone is targeting his parking spot. Kevin is secretly entering a chili cook-off.",
+  "extras": [
+    { "id": "gary", "name": "Gary Trundle", "title": "Owner, Trundle Storage Solutions", "voice": "A painfully literal storage-unit salesman who answers every question with a pricing tier." }
+  ],
+  "scenes": [
+    {
+      "part": "cold_open", "plot": "cold_open", "set": "office", "region": "bullpen", "venue": "",
+      "present": ["jim", "dwight", "pam"],
+      "recap": "Jim convinces Dwight his desk has been declared a historic landmark.",
+      "beats": [
+        { "type": "action", "who": "jim", "verb": "prank", "target": "dwight", "caption": "tapes a tiny brass plaque to Dwight's desk" },
+        { "type": "enter", "who": ["dwight"], "to": "dwight_desk" },
+        { "type": "pause", "seconds": 1.5, "caption": "Dwight reads the plaque" },
+        { "type": "say", "who": "dwight", "text": "\"Historic Landmark. Do Not Alter.\" Jim. What is this.", "to": "jim", "mood": "annoyed" },
+        { "type": "say", "who": "jim", "text": "The Scranton Historical Society came by. Your desk is protected now. You can't touch it.", "to": "dwight", "mood": "deadpan" },
+        { "type": "say", "who": "dwight", "text": "That's absurd. I need my stapler.", "to": "jim", "mood": "annoyed" },
+        { "type": "say", "who": "pam", "text": "I wouldn't. That's a federal offense.", "to": "dwight", "mood": "deadpan" },
+        { "type": "react", "who": ["jim"], "reaction": "look_at_camera" },
+        { "type": "talking_head", "who": "dwight", "lines": ["I respect history. I come from history.", "So I will be working standing up. On the floor. For as long as it takes."], "mood": "deadpan" },
+        { "type": "move", "who": "dwight", "to": "copier", "pace": "walk" },
+        { "type": "action", "who": "dwight", "verb": "typing", "target": "none", "caption": "types on a laptop balanced on the copier" }
+      ]
+    },
+    {
+      "part": "act1", "plot": "A", "set": "office", "region": "michael_office", "venue": "",
+      "present": ["michael", "pam"],
+      "recap": "Michael announces the time capsule.",
+      "beats": [
+        { "type": "say", "who": "michael", "text": "Pam. In 2050, what will they know about us?", "to": "pam", "mood": "excited" },
+        { "type": "say", "who": "pam", "text": "...Hopefully not much?", "to": "michael", "mood": "awkward" },
+        { "type": "say", "who": "michael", "text": "Exactly. Which is why we are making a time capsule. Conference room. Five minutes.", "to": "pam", "mood": "excited" },
+        { "type": "talking_head", "who": "michael", "lines": ["The pyramids were basically time capsules.", "And people still talk about the pharaohs. Nobody talks about the guy who stacked the rocks.", "I want to be the pharaoh."], "mood": "happy" }
+      ]
+    },
+    {
+      "part": "act1", "plot": "A", "set": "office", "region": "conference_room", "venue": "",
+      "present": ["michael"],
+      "recap": "Michael gathers everyone and reveals the capsule: a hollowed-out water cooler jug.",
+      "beats": [
+        { "type": "move", "who": "michael", "to": "conf_front", "pace": "hurry" },
+        { "type": "gather", "who": ["jim", "pam", "dwight", "angela", "oscar", "kevin", "stanley", "phyllis", "kelly", "andy", "creed", "meredith"], "to": "conference_room" },
+        { "type": "sit", "who": ["jim", "pam", "angela", "oscar", "kevin", "stanley", "phyllis", "kelly", "andy", "creed", "meredith"] },
+        { "type": "say", "who": "michael", "text": "Everyone will put one item in here that represents who they truly are.", "to": "all", "mood": "excited" },
+        { "type": "say", "who": "oscar", "text": "Michael, that's the water cooler jug.", "to": "michael", "mood": "deadpan" },
+        { "type": "say", "who": "michael", "text": "It WAS the water cooler jug. Now it is a vessel.", "to": "oscar", "mood": "smug" },
+        { "type": "say", "who": "stanley", "text": "Is this mandatory?", "to": "michael", "mood": "annoyed" },
+        { "type": "say", "who": "michael", "text": "History is mandatory, Stanley.", "to": "stanley", "mood": "smug" },
+        { "type": "say", "who": "kelly", "text": "Oh my God, can I put in my vision board? It has Ryan on it but I can cut him out.", "to": "michael", "mood": "excited" },
+        { "type": "say", "who": "angela", "text": "The Party Planning Committee will be overseeing all submissions. Nothing tacky.", "to": "all", "mood": "smug" },
+        { "type": "react", "who": ["jim"], "reaction": "look_at_camera" },
+        { "type": "say", "who": "dwight", "text": "I cannot participate. My desk is a protected landmark and my belongings are inside it.", "to": "michael", "mood": "deadpan" },
+        { "type": "say", "who": "michael", "text": "That... is the coolest thing that has ever happened in this office.", "to": "dwight", "mood": "excited" },
+        { "type": "talking_head", "who": "oscar", "lines": ["In 2050 someone will open that jug.", "And they will learn that we ran out of water for three weeks."], "mood": "deadpan" }
+      ]
+    },
+    {
+      "part": "act1", "plot": "B", "set": "parking_lot", "region": "parking_lot", "venue": "",
+      "present": ["dwight"],
+      "recap": "Dwight finds a stranger's minivan in his parking spot again and stakes it out.",
+      "beats": [
+        { "type": "enter", "who": ["dwight"], "to": "car_dwight" },
+        { "type": "say", "who": "dwight", "text": "Third time this week. Same minivan. Same smug little stick-figure family.", "to": "none", "mood": "angry" },
+        { "type": "action", "who": "dwight", "verb": "snoop", "target": "minivan", "caption": "presses his face against the minivan window" },
+        { "type": "enter", "who": ["hank"], "to": "dwight" },
+        { "type": "say", "who": "hank", "text": "Sir, step away from the vehicle.", "to": "dwight", "mood": "deadpan" },
+        { "type": "say", "who": "dwight", "text": "I am a volunteer sheriff's deputy. This vehicle is a suspect.", "to": "hank", "mood": "angry" },
+        { "type": "say", "who": "hank", "text": "It's a Honda.", "to": "dwight", "mood": "deadpan" },
+        { "type": "talking_head", "who": "dwight", "lines": ["Whoever is taking my spot is sending a message.", "And I will send one back. In Morse code. With my headlights. All night."], "mood": "angry" }
+      ]
+    },
+    {
+      "part": "act1", "plot": "C", "set": "break_room", "region": "break_room", "venue": "",
+      "present": ["kevin", "oscar"],
+      "recap": "Oscar catches Kevin 'preparing' his time capsule item: a sealed container of chili.",
+      "beats": [
+        { "type": "move", "who": "kevin", "to": "table_1", "pace": "sneak" },
+        { "type": "action", "who": "kevin", "verb": "eat", "target": "chili", "caption": "tastes from a giant tub of chili" },
+        { "type": "enter", "who": ["oscar"], "to": "kevin" },
+        { "type": "say", "who": "oscar", "text": "Kevin. Please tell me that's not going in the time capsule.", "to": "kevin", "mood": "annoyed" },
+        { "type": "say", "who": "kevin", "text": "It represents who I truly am.", "to": "oscar", "mood": "happy" },
+        { "type": "say", "who": "oscar", "text": "It will be a biohazard by Tuesday.", "to": "kevin", "mood": "deadpan" },
+        { "type": "say", "who": "kevin", "text": "Then it will be a biohazard of love.", "to": "oscar", "mood": "happy" },
+        { "type": "react", "who": ["oscar"], "reaction": "facepalm" },
+        { "type": "talking_head", "who": "kevin", "lines": ["The secret ingredient is time."], "mood": "happy" }
+      ]
+    },
+    {
+      "part": "act1", "plot": "C", "set": "office", "region": "reception", "venue": "",
+      "present": ["pam", "jim"],
+      "recap": "Jim and Pam plan their own secret capsule entry.",
+      "beats": [
+        { "type": "move", "who": "jim", "to": "pam_desk", "pace": "walk" },
+        { "type": "say", "who": "jim", "text": "What are you putting in?", "to": "pam", "mood": "neutral" },
+        { "type": "say", "who": "pam", "text": "A drawing of the office. Everyone in it. Even Toby.", "to": "jim", "mood": "happy" },
+        { "type": "say", "who": "jim", "text": "Bold choice, including Toby. Michael might not let it in.", "to": "pam", "mood": "deadpan" },
+        { "type": "say", "who": "pam", "text": "I drew him really small. Behind a plant.", "to": "jim", "mood": "smug" },
+        { "type": "react", "who": ["jim"], "reaction": "laugh" },
+        { "type": "talking_head", "who": "pam", "lines": ["Someone in 2050 is going to look at that drawing and think we were friends.", "Which... I guess we kind of are."], "mood": "happy" }
+      ]
+    },
+    {
+      "part": "act2", "plot": "A", "set": "warehouse", "region": "warehouse", "venue": "",
+      "present": ["darryl"],
+      "recap": "Michael asks Darryl to forklift the capsule into the ground; Darryl introduces Gary, who sells storage.",
+      "beats": [
+        { "type": "enter", "who": ["michael"], "to": "darryl" },
+        { "type": "say", "who": "michael", "text": "Darryl. My man. I need a forklift and a hole. A deep hole.", "to": "darryl", "mood": "excited" },
+        { "type": "say", "who": "darryl", "text": "We're on the second floor of a business park, Mike. There's no ground.", "to": "michael", "mood": "deadpan" },
+        { "type": "enter", "who": ["gary"], "to": "darryl" },
+        { "type": "say", "who": "gary", "text": "Gary Trundle, Trundle Storage. Climate-controlled units start at forty-nine ninety-nine.", "to": "michael", "mood": "neutral" },
+        { "type": "say", "who": "michael", "text": "Can it last until 2050?", "to": "gary", "mood": "excited" },
+        { "type": "say", "who": "gary", "text": "That's the Platinum tier.", "to": "michael", "mood": "neutral" },
+        { "type": "say", "who": "michael", "text": "Sold!", "to": "gary", "mood": "excited" },
+        { "type": "talking_head", "who": "darryl", "lines": ["Gary was here to pick up a pallet of copy paper.", "Now he has a client for twenty-six years. I respect the hustle."], "mood": "deadpan" }
+      ]
+    },
+    {
+      "part": "act2", "plot": "A", "set": "office", "region": "bullpen", "venue": "",
+      "present": ["angela", "dwight", "andy", "creed", "meredith", "phyllis", "stanley"],
+      "recap": "Angela rejects capsule submissions; Andy's a cappella recording is vetoed.",
+      "beats": [
+        { "type": "move", "who": "angela", "to": "andy", "pace": "walk" },
+        { "type": "say", "who": "angela", "text": "Andy. A cassette of your college a cappella group is not a time capsule item. It's a punishment.", "to": "andy", "mood": "smug" },
+        { "type": "say", "who": "andy", "text": "Here Comes Treble is timeless, Angela. Literally. It's in the name. Sort of.", "to": "angela", "mood": "annoyed" },
+        { "type": "action", "who": "andy", "verb": "sing", "target": "angela", "caption": "begins a one-man arrangement of 'Rockin' Robin'" },
+        { "type": "react", "who": ["stanley", "phyllis"], "reaction": "eye_roll" },
+        { "type": "move", "who": "angela", "to": "meredith", "pace": "walk" },
+        { "type": "say", "who": "meredith", "text": "I'm putting in my divorce papers. Both sets.", "to": "angela", "mood": "happy" },
+        { "type": "say", "who": "angela", "text": "Rejected.", "to": "meredith", "mood": "smug" },
+        { "type": "say", "who": "creed", "text": "I've already put mine in. Don't open it before 2050. Or ever.", "to": "angela", "mood": "deadpan" },
+        { "type": "pause", "seconds": 2, "caption": "nobody asks follow-up questions" },
+        { "type": "talking_head", "who": "angela", "lines": ["Future generations deserve to know that some of us had standards."], "mood": "smug" }
+      ]
+    },
+    {
+      "part": "act2", "plot": "B", "set": "parking_lot", "region": "entrance", "venue": "",
+      "present": ["dwight", "jim"],
+      "recap": "Dwight's stakeout reveals the minivan belongs to Toby.",
+      "beats": [
+        { "type": "enter", "who": ["jim"], "to": "dwight" },
+        { "type": "say", "who": "jim", "text": "Dwight, it's been four hours.", "to": "dwight", "mood": "deadpan" },
+        { "type": "say", "who": "dwight", "text": "Shh. The owner always returns to the scene.", "to": "jim", "mood": "nervous" },
+        { "type": "enter", "who": ["toby"], "to": "car_dwight" },
+        { "type": "action", "who": "toby", "verb": "search", "target": "keys", "caption": "fumbles for the minivan keys" },
+        { "type": "say", "who": "dwight", "text": "TOBY.", "to": "toby", "mood": "angry" },
+        { "type": "say", "who": "toby", "text": "Oh. Hi. My spot's been taken by a storage truck all week.", "to": "dwight", "mood": "sad" },
+        { "type": "react", "who": ["jim"], "reaction": "look_at_camera" },
+        { "type": "exit", "who": ["toby"], "how": "walk" },
+        { "type": "talking_head", "who": "jim", "lines": ["So the storage guy took Toby's spot. Toby took Dwight's spot.", "And Dwight's desk is a historic landmark. Honestly, it's been a big week for real estate."], "mood": "deadpan" }
+      ]
+    },
+    {
+      "part": "act2", "plot": "A", "set": "office", "region": "conference_room", "venue": "",
+      "present": ["michael", "pam", "jim", "dwight", "oscar", "kevin", "angela", "kelly", "stanley", "phyllis", "andy", "creed", "meredith", "toby"],
+      "recap": "The capsule is sealed; Michael finds Pam's drawing and sees Toby in it.",
+      "beats": [
+        { "type": "say", "who": "michael", "text": "Final submissions. Pam, what do we have?", "to": "pam", "mood": "excited" },
+        { "type": "say", "who": "pam", "text": "It's all of us. The whole office.", "to": "michael", "mood": "happy" },
+        { "type": "pause", "seconds": 2.5, "caption": "Michael studies the drawing" },
+        { "type": "say", "who": "michael", "text": "Is that... Toby? Behind the plant?", "to": "pam", "mood": "annoyed" },
+        { "type": "say", "who": "toby", "text": "You drew me? Pam, that's really—", "to": "pam", "mood": "happy" },
+        { "type": "say", "who": "michael", "text": "No. No no no. Toby does not get to be immortal.", "to": "all", "mood": "angry" },
+        { "type": "say", "who": "pam", "text": "It's a family portrait, Michael. Families have... Tobys.", "to": "michael", "mood": "sarcastic" },
+        { "type": "pause", "seconds": 2, "caption": "" },
+        { "type": "say", "who": "michael", "text": "Fine. But in 2050 I want it known that I was against it.", "to": "all", "mood": "sad" },
+        { "type": "react", "who": ["everyone"], "reaction": "cheer" },
+        { "type": "talking_head", "who": "michael", "lines": ["A legacy is like a family. You don't get to pick who's in it.", "But you do get to pick who's behind the plant."], "mood": "happy" }
+      ]
+    },
+    {
+      "part": "tag", "plot": "tag", "set": "offsite", "region": "venue", "venue": "TRUNDLE STORAGE, UNIT 14",
+      "present": ["michael", "gary"],
+      "recap": "Michael visits the capsule in its storage unit after one day.",
+      "beats": [
+        { "type": "enter", "who": ["michael"], "to": "gary" },
+        { "type": "say", "who": "michael", "text": "I just want to check on it.", "to": "gary", "mood": "nervous" },
+        { "type": "say", "who": "gary", "text": "Sir, you sealed it yesterday.", "to": "michael", "mood": "deadpan" },
+        { "type": "say", "who": "michael", "text": "And it smells like chili. Why does it smell like chili, Gary?", "to": "gary", "mood": "panicked" },
+        { "type": "say", "who": "gary", "text": "Odor management is the Titanium tier.", "to": "michael", "mood": "neutral" },
+        { "type": "react", "who": ["michael"], "reaction": "look_at_camera" }
+      ]
+    }
+  ],
+  "stateChanges": [
+    { "type": "gag", "text": "Dwight's desk is a 'historic landmark' (Jim's plaque) and he refuses to touch it" },
+    { "type": "relationship", "a": "dwight", "b": "toby", "status": "parking spot rivals" },
+    { "type": "note", "text": "Michael is paying Gary Trundle for a Platinum-tier storage unit until 2050; the capsule smells of Kevin's chili" }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "_comment": "Special episodes the season bible may schedule (like PPVs in infinite-wrestling). The finale is always the last episode of the season.",
+  "seasonLength": 12,
+  "tentpoles": [
+    { "id": "halloween", "name": "Halloween", "hint": "Costumes all day; someone's costume is a disaster; a contest." },
+    { "id": "christmas", "name": "Christmas Party", "hint": "The Party Planning Committee in civil war; Secret Santa or Yankee Swap goes wrong." },
+    { "id": "dundies", "name": "The Dundies", "hint": "Michael's office awards show at a restaurant (offsite); embarrassing trophies, one sincere moment." },
+    { "id": "booze_cruise", "name": "Office Outing", "hint": "A company trip or retreat (offsite) where relationships shift." },
+    { "id": "pretzel_day", "name": "Pretzel Day", "hint": "Stanley's one joy is threatened." },
+    { "id": "fun_run", "name": "Charity Event", "hint": "A charity fun run or fundraiser Michael makes about himself." },
+    { "id": "finale", "name": "Season Finale", "hint": "Pays off the season's arcs; a big romantic or career moment; a cliffhanger for next season." }
+  ]
+}
