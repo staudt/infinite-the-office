@@ -1,0 +1,1096 @@
+{
+  "title": "Favorite Week",
+  "logline": "After Michael reads Gerald Boyd's letters as a vote of love, he learns the staff wrote them out of fear he'd be fired, while Dwight and Andy are forced to share a client and Pam tells Roy and Jim that her answer is not here.",
+  "outline": "A: Michael reads the letters as love, calls Favorite Week, then learns from Kevin and Toby the staff wrote them because they feared he'd be fired. B: Dale Pruitt says both Dwight and Andy or neither, so they must share his account and drive to his office together. C: Jim calls Pam, she says not here, Roy pushes June 14, and Pam decides to answer the card first. Order: cold, A, B, C, A, B, A, C, A, B, C, tag.",
+  "theme": "Being loved means being present, not being the favorite: the people who choose you are often the ones who are scared for you.",
+  "storySoFar": "Jim is in Stamford dating Shannon Doyle and working with Karen Filippelli. Pam's unanswered card and unsent drafts sit in her reception drawer, and she has been reading the card in secret; she has a Tuesday watercolor class Michael knows about. Roy has set a June 14 wedding date and is suspicious of Jim. Michael took the blame for the hologram, says he won't lie for Pam again, and Jan calls his kindness disgusting. Michael read Gerald Boyd's letters as love and called Favorite Week; he now knows the staff wrote them out of fear he'd be fired. Corporate says Scranton is safe and the letters were unnecessary. Dwight and Andy must share the Pruitt Paper account after Dale Pruitt's ultimatum, ahead of Monday's call with David Wallace. Stanley is at 187 days; Kevin closes every countdown joke with \"Nobody say nothing.\"",
+  "extras": [],
+  "stateChanges": [
+    {
+      "type": "arc",
+      "arc": "Michael Wants to Be the Favorite",
+      "progress": "Michael learns the letters were written out of fear he'd be fired; he asks Toby how he is and tells the office he won't ask them to love him. Corporate calls the letters unnecessary."
+    },
+    {
+      "type": "arc",
+      "arc": "Dwight vs Andy for Number Two",
+      "progress": "Dale Pruitt forces them to share his account; they must drive to his office together Thursday and agree to speak in turns."
+    },
+    {
+      "type": "arc",
+      "arc": "The Card on Pam's Desk",
+      "progress": "Jim calls; Pam says not here and not on the phone. She decides to answer the card before Roy's binder and sketches a windmill on a draft."
+    },
+    {
+      "type": "relationship",
+      "a": "michael",
+      "b": "toby",
+      "status": "a real conversation; Michael asked how he is and waited for the answer"
+    },
+    {
+      "type": "note",
+      "text": "Pam told Phyllis she will answer the card before the June 14 binder; she has not yet told Roy or Jim what she decided."
+    },
+    {
+      "type": "note",
+      "text": "Creed told a story about a June wedding with a cat judge; nobody followed up."
+    },
+    {
+      "type": "note",
+      "text": "Michael's Favorite Week idea was dropped after Corporate called the letters unnecessary."
+    },
+    {
+      "type": "gag",
+      "text": "Stanley at 187 still: the countdown stalls and Michael's 'That's what she said' dies on silence; Kevin closes with 'Nobody say nothing.'"
+    },
+    {
+      "type": "gag",
+      "text": "Andy's bear-paw phone plays banjo hold music; Oscar: 'Actually, that's a banjo on hold.'"
+    }
+  ],
+  "scenes": [
+    {
+      "part": "cold_open",
+      "plot": "cold_open",
+      "set": "office",
+      "region": "bullpen",
+      "venue": "",
+      "present": [
+        "michael",
+        "stanley",
+        "kevin",
+        "andy",
+        "oscar"
+      ],
+      "recap": "Michael tries the countdown joke on Stanley at 187 and it dies, and Kevin closes it out.",
+      "beats": [
+        {
+          "type": "move",
+          "who": "michael",
+          "to": "stanley_desk",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "One eighty-seven, Stanley. That's what she said.",
+          "to": "stanley",
+          "mood": "happy"
+        },
+        {
+          "type": "pause",
+          "seconds": 3,
+          "caption": "Stanley does not look up from his crossword."
+        },
+        {
+          "type": "react",
+          "who": [
+            "stanley"
+          ],
+          "reaction": "stare"
+        },
+        {
+          "type": "say",
+          "who": "stanley",
+          "text": "Did I stutter?",
+          "to": "michael",
+          "mood": "annoyed"
+        },
+        {
+          "type": "action",
+          "who": "andy",
+          "verb": "phone_call",
+          "target": "none",
+          "caption": "bear-paw phone starts playing banjo hold music"
+        },
+        {
+          "type": "say",
+          "who": "oscar",
+          "text": "Actually, that's a banjo on hold.",
+          "to": "andy",
+          "mood": "deadpan"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": "Awkward silence."
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "Nobody say nothing.",
+          "to": "all",
+          "mood": "deadpan"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "A",
+      "set": "office",
+      "region": "conference_room",
+      "venue": "",
+      "present": [
+        "michael",
+        "toby",
+        "angela",
+        "oscar",
+        "kelly",
+        "phyllis",
+        "dwight",
+        "andy",
+        "kevin"
+      ],
+      "recap": "Michael calls a Favorite Week meeting built on Gerald Boyd's letters, and the office's compliments go badly.",
+      "beats": [
+        {
+          "type": "gather",
+          "who": [
+            "michael",
+            "toby",
+            "angela",
+            "oscar",
+            "kelly",
+            "phyllis",
+            "dwight",
+            "andy",
+            "kevin"
+          ],
+          "to": "conference_room"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Gerald Boyd's letters changed me. Eleven of you wrote letters. Eleven people.",
+          "to": "all",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "This week is Favorite Week. Everyone says one thing they love about me. Go.",
+          "to": "all",
+          "mood": "excited"
+        },
+        {
+          "type": "pause",
+          "seconds": 3,
+          "caption": "Nobody moves."
+        },
+        {
+          "type": "say",
+          "who": "kelly",
+          "text": "Your hair is very... there.",
+          "to": "michael",
+          "mood": "sarcastic"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Thank you, Kelly. Oscar, you're up.",
+          "to": "oscar",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "oscar",
+          "text": "I love that you're hard to ignore. Actually, that's the only thing I love.",
+          "to": "michael",
+          "mood": "deadpan"
+        },
+        {
+          "type": "react",
+          "who": [
+            "oscar"
+          ],
+          "reaction": "look_at_camera"
+        },
+        {
+          "type": "talking_head",
+          "who": "michael",
+          "lines": [
+            "They wrote me letters. I read them three times in the bathroom.",
+            "That's love, right? Or a fire drill. Hard to tell from the inside."
+          ],
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "False. I am your favorite. Question: where is my plaque?",
+          "to": "michael",
+          "mood": "smug"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": "Nobody wants to be second."
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "B",
+      "set": "office",
+      "region": "bullpen",
+      "venue": "",
+      "present": [
+        "dwight",
+        "andy",
+        "oscar",
+        "kevin"
+      ],
+      "recap": "Corporate gives Dale Pruitt's account to both Dwight and Andy, and Dale's ultimatum makes them partners.",
+      "beats": [
+        {
+          "type": "move",
+          "who": "andy",
+          "to": "dwight_desk",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "Corporate says Pruitt Paper is ours. Both of ours. Shared.",
+          "to": "dwight",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "False. Pruitt Paper is mine. You are a shareholder.",
+          "to": "andy",
+          "mood": "annoyed"
+        },
+        {
+          "type": "action",
+          "who": "dwight",
+          "verb": "phone_call",
+          "target": "none",
+          "caption": "puts Dale Pruitt on speakerphone"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "Dale says both of us, or he's calling Marcus Bell.",
+          "to": "dwight",
+          "mood": "sarcastic"
+        },
+        {
+          "type": "say",
+          "who": "oscar",
+          "text": "Actually, that's not a choice. That's a hostage situation.",
+          "to": "all",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "Two man, one client. Like two dog, one bone.",
+          "to": "dwight",
+          "mood": "neutral"
+        },
+        {
+          "type": "talking_head",
+          "who": "dwight",
+          "lines": [
+            "Question: how do you share a client? You don't. You win, and then you let the other man carry the beets.",
+            "Andy Bernard has never closed a deal in his life. He has only been loved by mistake."
+          ],
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Thursday. We drive. You do not sing in the van.",
+          "to": "andy",
+          "mood": "annoyed"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "C",
+      "set": "office",
+      "region": "reception",
+      "venue": "",
+      "present": [
+        "pam",
+        "kelly",
+        "phyllis"
+      ],
+      "recap": "Jim calls Pam at reception, she says not here, and Kelly hears Karen in the background.",
+      "beats": [
+        {
+          "type": "enter",
+          "who": [
+            "roy"
+          ],
+          "to": "reception"
+        },
+        {
+          "type": "action",
+          "who": "pam",
+          "verb": "phone_call",
+          "target": "jim",
+          "caption": "answers reception phone, Jim on the line from Stamford"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Jim. Not here. Not on the phone. We need to talk, but not here.",
+          "to": "jim",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "kelly",
+          "text": "Is that Karen in the background? Karen has the energy of a parking ticket.",
+          "to": "pam",
+          "mood": "sarcastic"
+        },
+        {
+          "type": "say",
+          "who": "roy",
+          "text": "Did Halpert call?",
+          "to": "pam",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "He called.",
+          "to": "roy",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "roy",
+          "text": "Did you tell him about June?",
+          "to": "pam",
+          "mood": "angry"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "I told him nothing, Roy.",
+          "to": "roy",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "roy",
+          "text": "Good. Keep it that way. Keep him away from you.",
+          "to": "pam",
+          "mood": "angry"
+        },
+        {
+          "type": "react",
+          "who": [
+            "pam"
+          ],
+          "reaction": "look_at_camera"
+        },
+        {
+          "type": "talking_head",
+          "who": "pam",
+          "lines": [
+            "I read his card three times. Three times isn't a decision. It's a habit.",
+            "I'm not going to say anything to anyone until I've said it to him."
+          ],
+          "mood": "nervous"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "A",
+      "set": "break_room",
+      "region": "break_room",
+      "venue": "",
+      "present": [
+        "michael",
+        "kevin",
+        "oscar",
+        "creed"
+      ],
+      "recap": "Michael asks Kevin why people would write letters for him, and Kevin explains they were scared.",
+      "beats": [
+        {
+          "type": "move",
+          "who": "michael",
+          "to": "table_3",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Kevin, why would people write letters about me? Unless...",
+          "to": "kevin",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "Man might go, people write letter.",
+          "to": "michael",
+          "mood": "neutral"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": "Michael stares at the vending machine."
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Go? Go where? Where would I go?",
+          "to": "kevin",
+          "mood": "panicked"
+        },
+        {
+          "type": "say",
+          "who": "oscar",
+          "text": "Actually, nobody's going anywhere. Corporate is discussing budgets, not you specifically. Mostly.",
+          "to": "michael",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "Scared people write nice letter. Brave people say to face.",
+          "to": "michael",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "creed",
+          "text": "I wrote a letter once to a man who isn't here anymore. Lovely handwriting.",
+          "to": "all",
+          "mood": "neutral"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": "Nobody follows up."
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Kevin, that was a good thing you just said.",
+          "to": "kevin",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "Thank you.",
+          "to": "michael",
+          "mood": "neutral"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "B",
+      "set": "warehouse",
+      "region": "loading_dock",
+      "venue": "",
+      "present": [
+        "dwight",
+        "andy",
+        "darryl"
+      ],
+      "recap": "Dwight and Andy rehearse the Pruitt pitch on Darryl's loading dock and fight over who presents what.",
+      "beats": [
+        {
+          "type": "enter",
+          "who": [
+            "dwight",
+            "andy"
+          ],
+          "to": "dock_1"
+        },
+        {
+          "type": "say",
+          "who": "darryl",
+          "text": "Y'all are not doing a presentation on my dock.",
+          "to": "dwight",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "It's a rehearsal, Darryl. Like a Cornell sing-off without the singing.",
+          "to": "darryl",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "We present the numbers. Andy presents the feelings. Question: which feelings?",
+          "to": "andy",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "Dale needs both of us. That's what he said. Both.",
+          "to": "dwight",
+          "mood": "sarcastic"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "False. Dale does not need your feelings.",
+          "to": "andy",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "darryl",
+          "text": "Listen. I'm cool with it, as long as nobody gets near my forklift.",
+          "to": "all",
+          "mood": "deadpan"
+        },
+        {
+          "type": "action",
+          "who": "andy",
+          "verb": "present",
+          "target": "none",
+          "caption": "flips slide, reveals a photo of a banjo"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "A",
+      "set": "office",
+      "region": "michael_office",
+      "venue": "",
+      "present": [
+        "michael",
+        "toby"
+      ],
+      "recap": "Michael asks Toby whether he wrote a letter, and Toby admits the staff was scared Michael would be fired.",
+      "beats": [
+        {
+          "type": "move",
+          "who": "toby",
+          "to": "michael_guest_1",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Toby, were you one of the letters?",
+          "to": "toby",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "toby",
+          "text": "Yes.",
+          "to": "michael",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "What did you write?",
+          "to": "toby",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "toby",
+          "text": "That you're the only one who listens, even when you're yelling. And that I'd miss you.",
+          "to": "michael",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Why would you miss me? Am I dying?",
+          "to": "toby",
+          "mood": "panicked"
+        },
+        {
+          "type": "say",
+          "who": "toby",
+          "text": "Corporate said the word 'eliminate,' Michael. We were scared you'd be gone. So we wrote them.",
+          "to": "michael",
+          "mood": "sad"
+        },
+        {
+          "type": "pause",
+          "seconds": 3,
+          "caption": "Michael tries to find a joke and cannot."
+        },
+        {
+          "type": "talking_head",
+          "who": "toby",
+          "lines": [
+            "Nobody's ever asked me how I am. I was ready to say fine.",
+            "I'm not fine. I'm tired. Please don't put that on a card."
+          ],
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "How are you, Toby?",
+          "to": "toby",
+          "mood": "sad"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": "Michael waits. He is actually waiting."
+        },
+        {
+          "type": "say",
+          "who": "toby",
+          "text": "I'm... tired.",
+          "to": "michael",
+          "mood": "sad"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "C",
+      "set": "parking_lot",
+      "region": "parking_lot",
+      "venue": "",
+      "present": [
+        "pam",
+        "roy",
+        "creed"
+      ],
+      "recap": "Roy corners Pam at the smoking spot about June 14, and Pam says a date is not a promise.",
+      "beats": [
+        {
+          "type": "enter",
+          "who": [
+            "pam",
+            "roy"
+          ],
+          "to": "smoking_spot"
+        },
+        {
+          "type": "say",
+          "who": "roy",
+          "text": "Halpert called you. I know he did.",
+          "to": "pam",
+          "mood": "angry"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Roy, the venue deposit is due Friday.",
+          "to": "roy",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "roy",
+          "text": "I'm not talking about the deposit.",
+          "to": "pam",
+          "mood": "angry"
+        },
+        {
+          "type": "say",
+          "who": "creed",
+          "text": "I was married in June once. The judge was a cat. Nobody asked the cat.",
+          "to": "all",
+          "mood": "neutral"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": "Nobody follows up."
+        },
+        {
+          "type": "say",
+          "who": "roy",
+          "text": "June fourteenth is a date, Pam. I'm trying.",
+          "to": "pam",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "June is a date, Roy. It isn't a promise.",
+          "to": "roy",
+          "mood": "sad"
+        },
+        {
+          "type": "talking_head",
+          "who": "pam",
+          "lines": [
+            "I'm not telling Roy about the card. I'm telling Jim first. That's the order.",
+            "Roy is a good man. That's not the same as the right one."
+          ],
+          "mood": "nervous"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "A",
+      "set": "office",
+      "region": "conference_room",
+      "venue": "",
+      "present": [
+        "michael",
+        "dwight",
+        "andy",
+        "angela",
+        "oscar",
+        "kelly",
+        "phyllis",
+        "toby",
+        "kevin",
+        "stanley",
+        "creed"
+      ],
+      "recap": "Michael apologizes to the office and calls David Wallace, who says the letters were unnecessary.",
+      "beats": [
+        {
+          "type": "gather",
+          "who": [
+            "michael",
+            "dwight",
+            "andy",
+            "angela",
+            "oscar",
+            "kelly",
+            "phyllis",
+            "toby",
+            "kevin",
+            "stanley",
+            "creed"
+          ],
+          "to": "conference_room"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "You didn't write me letters to keep me. You wrote them because you were scared I'd be fired.",
+          "to": "all",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "I'm sorry you had to be scared for me. Nobody should be scared for me.",
+          "to": "all",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "kelly",
+          "text": "Michael, that's the most normal thing you've ever said.",
+          "to": "michael",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Thank you, Kelly.",
+          "to": "kelly",
+          "mood": "happy"
+        },
+        {
+          "type": "action",
+          "who": "michael",
+          "verb": "phone_call",
+          "target": "none",
+          "caption": "dials David Wallace on speakerphone"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "David says Scranton's safe. Nobody is on a list. The letters were, quote, a nice gesture.",
+          "to": "all",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "angela",
+          "text": "Unnecessary. Like most of your meetings.",
+          "to": "michael",
+          "mood": "smug"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": "The room takes a long, slow breath."
+        },
+        {
+          "type": "say",
+          "who": "stanley",
+          "text": "Retirement, Michael. Get me retirement.",
+          "to": "michael",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "I can't give you retirement, Stanley.",
+          "to": "stanley",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "stanley",
+          "text": "Then stop talking.",
+          "to": "michael",
+          "mood": "annoyed"
+        },
+        {
+          "type": "talking_head",
+          "who": "michael",
+          "lines": [
+            "I thought being loved meant being the favorite. Turns out it means showing up when they're scared.",
+            "Also Stanley's right. I should stop talking."
+          ],
+          "mood": "sad"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "B",
+      "set": "office",
+      "region": "conference_room",
+      "venue": "",
+      "present": [
+        "dwight",
+        "andy",
+        "oscar",
+        "kevin"
+      ],
+      "recap": "Dwight and Andy agree to drive to Dale's office together and speak in turns on Thursday.",
+      "beats": [
+        {
+          "type": "move",
+          "who": "dwight",
+          "to": "conf_1",
+          "pace": "walk"
+        },
+        {
+          "type": "move",
+          "who": "andy",
+          "to": "conf_2",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "We go to Dale's together. Thursday. You drive.",
+          "to": "dwight",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "False. I drive. You sing.",
+          "to": "andy",
+          "mood": "annoyed"
+        },
+        {
+          "type": "action",
+          "who": "andy",
+          "verb": "phone_call",
+          "target": "none",
+          "caption": "bear-paw phone plays banjo hold music"
+        },
+        {
+          "type": "say",
+          "who": "oscar",
+          "text": "Actually, that's a banjo on hold.",
+          "to": "andy",
+          "mood": "deadpan"
+        },
+        {
+          "type": "react",
+          "who": [
+            "andy"
+          ],
+          "reaction": "look_at_camera"
+        },
+        {
+          "type": "talking_head",
+          "who": "andy",
+          "lines": [
+            "Dwight is a snake in a suit. He is also my partner. Partners share a van and an inability to say sorry.",
+            "I will win Dale's heart with a banjo. Dwight will provide the beets."
+          ],
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "Dale like fishing. Bring worm.",
+          "to": "dwight",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "False. Dale does not like fishing.",
+          "to": "kevin",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Thursday. Ten a.m. Neither of us speaks first.",
+          "to": "andy",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "Deal.",
+          "to": "dwight",
+          "mood": "happy"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "C",
+      "set": "office",
+      "region": "reception",
+      "venue": "",
+      "present": [
+        "pam",
+        "phyllis",
+        "kelly"
+      ],
+      "recap": "Pam pulls the drafts from her drawer and sketches a windmill, deciding to answer Jim's card before Roy's binder.",
+      "beats": [
+        {
+          "type": "action",
+          "who": "pam",
+          "verb": "search",
+          "target": "none",
+          "caption": "pulls a folder of unsent drafts from the reception drawer"
+        },
+        {
+          "type": "say",
+          "who": "phyllis",
+          "text": "Pam, are you writing him back?",
+          "to": "pam",
+          "mood": "sarcastic"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "I'm writing something. It isn't a card.",
+          "to": "phyllis",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "kelly",
+          "text": "Is it a breakup? Oh my God, is it a breakup?",
+          "to": "pam",
+          "mood": "excited"
+        },
+        {
+          "type": "action",
+          "who": "pam",
+          "verb": "search",
+          "target": "none",
+          "caption": "sketches a windmill on the back of a draft"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": "Pam looks at the windmill."
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "I'm answering the card before the binder. Then I'll tell Roy.",
+          "to": "phyllis",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "phyllis",
+          "text": "Oh honey. Answer the card before the binder.",
+          "to": "pam",
+          "mood": "sarcastic"
+        }
+      ]
+    },
+    {
+      "part": "tag",
+      "plot": "tag",
+      "set": "office",
+      "region": "bullpen",
+      "venue": "",
+      "present": [
+        "stanley",
+        "michael",
+        "kevin",
+        "andy",
+        "oscar"
+      ],
+      "recap": "Michael tries the countdown joke at 187 one more time, and Stanley almost gives him a nod.",
+      "beats": [
+        {
+          "type": "move",
+          "who": "michael",
+          "to": "stanley_desk",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "stanley",
+          "text": "Still a hundred eighty-seven. Don't ask.",
+          "to": "michael",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "One eighty-seven, Stanley. That's what she said.",
+          "to": "stanley",
+          "mood": "happy"
+        },
+        {
+          "type": "pause",
+          "seconds": 3,
+          "caption": "Silence."
+        },
+        {
+          "type": "react",
+          "who": [
+            "stanley"
+          ],
+          "reaction": "look_at_camera"
+        },
+        {
+          "type": "say",
+          "who": "stanley",
+          "text": "...Keep going.",
+          "to": "michael",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "Nobody say nothing.",
+          "to": "all",
+          "mood": "deadpan"
+        }
+      ]
+    }
+  ]
+}

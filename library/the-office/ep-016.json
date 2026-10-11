@@ -1,0 +1,1094 @@
+{
+  "title": "Chair Day",
+  "logline": "Michael scrambles to impress Jan on her Friday visit while Andy and Dwight fight for a day in his chair and Jim and Pam's prank on Dwight gets out of hand.",
+  "outline": "A: Michael tries to dazzle Jan on her Friday visit with candles and Darryl's coaching; Jan offers Pam a Stamford transfer and Michael refuses. B: Andy and Dwight compete for Chair Day; Dwight erases Andy's sales, Andy outsells him and gets the chair. C: Jim and Pam's door-sign prank on Dwight escalates when Dwight sends Jan an itinerary naming him Acting Regional Manager. Order: cold, A, B, C, A, B, A, C, B, A, tag.</outline>\n<parameter name=\"theme\">Being loved versus being present: who gets to be in the chair, and who gets to stay where they are.",
+  "theme": "",
+  "storySoFar": "Jim is in Stamford, calling and emailing Pam; Karen Filippelli keeps showing up in his messages, and Pam has heard about a dinner. Pam keeps Jim's card unanswered and her drafts in the drawer; Roy keeps pushing the June 14 wedding. Michael covered for Pam on Jim's call and says he won't lie for her again. Michael runs Love Board 2.0 under Gerald Boyd's mandate, with Dwight and Andy as co-chairs who hate each other. Jan is visiting Scranton on Friday to review the branch; Michael wants to impress her, and Jan has offered Pam a Stamford transfer, which Michael refused. Chair Day: the top paper seller sits in Michael's chair when Jan visits; Andy won it over Dwight. Dwight is Jim and Pam's prank target; their door sign has become an itinerary naming Dwight Acting Regional Manager. Stanley is at 191.",
+  "extras": [],
+  "stateChanges": [
+    {
+      "type": "arc",
+      "arc": "Michael Wants to Be the Favorite",
+      "progress": "Michael tries to impress Jan with candles and Darryl's coaching; Jan calls him sweet, then disgusting. Michael refuses to let Jan transfer Pam to Stamford and says she is not a candle."
+    },
+    {
+      "type": "arc",
+      "arc": "Dwight vs Andy for Number Two",
+      "progress": "Dwight erases Andy's tally; Andy outsells him 14 to 11 and wins Chair Day for Jan's visit. Grudging handshake that goes on too long; Dwight wants to sit in the chair too."
+    },
+    {
+      "type": "arc",
+      "arc": "The Card on Pam's Desk",
+      "progress": "Karen sends Pam's name through Jan and asks about dinner; Pam says Karen is nice. Jan offers Pam a Stamford transfer and Michael blocks it. Card still unanswered."
+    },
+    {
+      "type": "arc",
+      "arc": "Stanley's Countdown",
+      "progress": "Stanley at 191 in the tag; Michael's joke dies on silence again."
+    },
+    {
+      "type": "note",
+      "text": "Jan's Friday visit: Dwight's Acting Regional Manager binder and the itinerary are hidden under a Serenity by Jan candle. Jan will see Dwight's name in the room."
+    },
+    {
+      "type": "note",
+      "text": "Jim's prank sign with Dwight's name on it was a three out of ten; Karen made it a nine. Pam is unsettled and blames herself."
+    },
+    {
+      "type": "note",
+      "text": "Michael told Jan Pam is not a candle. Pam said thank you once more, and this time Michael said he was trying to be present, which is awful."
+    },
+    {
+      "type": "gag",
+      "text": "Jan calls Michael's behavior disgusting when he is kind; callback to the earlier scene."
+    },
+    {
+      "type": "gag",
+      "text": "Andy's bear-paw banjo hold music; Oscar: 'Actually, that's a banjo on hold.'"
+    },
+    {
+      "type": "gag",
+      "text": "Kevin: 'Nobody say nothing.' closes cold open and tag."
+    }
+  ],
+  "scenes": [
+    {
+      "part": "cold_open",
+      "plot": "cold_open",
+      "set": "office",
+      "region": "bullpen",
+      "venue": "",
+      "present": [
+        "michael",
+        "stanley",
+        "kevin",
+        "andy",
+        "oscar"
+      ],
+      "recap": "Andy's bear-paw phone plays banjo hold music, and Stanley hits 192 while Michael's joke dies.",
+      "beats": [
+        {
+          "type": "action",
+          "who": "andy",
+          "verb": "phone_call",
+          "target": "none",
+          "caption": "bear-paw phone plays banjo hold music"
+        },
+        {
+          "type": "say",
+          "who": "oscar",
+          "text": "Actually, that's a banjo on hold.",
+          "to": "andy",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "It's Cornell's hold music, Oscar. It's a whole tradition.",
+          "to": "oscar",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "stanley",
+          "text": "One hundred ninety-two.",
+          "to": "michael",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "192 days, Stanley. That's what she said.",
+          "to": "stanley",
+          "mood": "excited"
+        },
+        {
+          "type": "pause",
+          "seconds": 3,
+          "caption": "Stanley does not look up from his crossword."
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "Nobody say nothing.",
+          "to": "all",
+          "mood": "deadpan"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "A",
+      "set": "office",
+      "region": "conference_room",
+      "venue": "",
+      "present": [
+        "michael",
+        "dwight",
+        "andy",
+        "pam",
+        "angela",
+        "oscar",
+        "kelly"
+      ],
+      "recap": "Michael announces Jan's Friday visit and his plan to fill the office with Serenity by Jan candles.",
+      "beats": [
+        {
+          "type": "gather",
+          "who": [
+            "michael",
+            "dwight",
+            "andy",
+            "pam",
+            "angela",
+            "oscar",
+            "kelly"
+          ],
+          "to": "conference_room"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Jan Levinson is visiting Friday. Vice President of Northeast Sales. Jan.",
+          "to": "all",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Question: will she be inspecting the beet inventory?",
+          "to": "michael",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "She'll inspect the room, Dwight.",
+          "to": "dwight",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "I'll sing her the Cornell alma mater. Once. Quietly.",
+          "to": "all",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "angela",
+          "text": "No candles on desks. They are a fire hazard and they are not approved.",
+          "to": "michael",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Serenity by Jan candles on every desk. A gift for Jan.",
+          "to": "all",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "kelly",
+          "text": "Is she dating anyone? Because I'm very available and it's a whole thing.",
+          "to": "michael",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "oscar",
+          "text": "Michael, a candle is not a strategy.",
+          "to": "michael",
+          "mood": "deadpan"
+        },
+        {
+          "type": "react",
+          "who": [
+            "oscar"
+          ],
+          "reaction": "look_at_camera"
+        },
+        {
+          "type": "talking_head",
+          "who": "michael",
+          "lines": [
+            "Jan and I have history. Mostly good history. Some of it is in a shoebox under my bed.",
+            "I'm not nervous. I'm just holding my breath for three days."
+          ],
+          "mood": "smug"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": "Michael holds his breath."
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "B",
+      "set": "office",
+      "region": "bullpen",
+      "venue": "",
+      "present": [
+        "michael",
+        "dwight",
+        "andy",
+        "kevin"
+      ],
+      "recap": "Michael announces Chair Day, and Dwight and Andy start a sales race for his chair.",
+      "beats": [
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Chair Day! Whoever sells the most paper this week sits in my chair when Jan comes.",
+          "to": "all",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Question: is the chair the prize, or the desk underneath it?",
+          "to": "michael",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "The chair, Dwight.",
+          "to": "dwight",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "I have a Lackawanna Lanes lead and a dentist in Clarks Summit. Dwight, you have a beet.",
+          "to": "dwight",
+          "mood": "happy"
+        },
+        {
+          "type": "action",
+          "who": "dwight",
+          "verb": "phone_call",
+          "target": "none",
+          "caption": "dials three clients in rapid succession"
+        },
+        {
+          "type": "talking_head",
+          "who": "andy",
+          "lines": [
+            "Dwight thinks the chair has a secret compartment. It doesn't.",
+            "I checked. Twice. Once with a flashlight."
+          ],
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "False. The compartment contains evidence of your ineptitude.",
+          "to": "andy",
+          "mood": "smug"
+        },
+        {
+          "type": "action",
+          "who": "kevin",
+          "verb": "eat",
+          "target": "none",
+          "caption": "eats a handful of M&Ms, counting them quietly"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": "Both men stare at Kevin for a moment."
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "C",
+      "set": "break_room",
+      "region": "break_room",
+      "venue": "",
+      "present": [
+        "pam",
+        "phyllis"
+      ],
+      "recap": "Pam reads Jim's prank email in the break room, and Phyllis sees her face when Karen comes up.",
+      "beats": [
+        {
+          "type": "enter",
+          "who": [
+            "pam"
+          ],
+          "to": "table_2"
+        },
+        {
+          "type": "enter",
+          "who": [
+            "phyllis"
+          ],
+          "to": "table_4"
+        },
+        {
+          "type": "action",
+          "who": "pam",
+          "verb": "typing",
+          "target": "none",
+          "caption": "reads Jim's email on her phone"
+        },
+        {
+          "type": "say",
+          "who": "phyllis",
+          "text": "Is that Jim? Tell him Bob sends his regards. Bob sends everything.",
+          "to": "pam",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "It's about Dwight. Jim wants a sign on Michael's door with Dwight's name on it.",
+          "to": "phyllis",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "phyllis",
+          "text": "Is it a joke?",
+          "to": "pam",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "It's a small joke. Three out of ten.",
+          "to": "phyllis",
+          "mood": "nervous"
+        },
+        {
+          "type": "action",
+          "who": "pam",
+          "verb": "copy",
+          "target": "none",
+          "caption": "copies Dwight's name onto a strip from the label maker"
+        },
+        {
+          "type": "say",
+          "who": "phyllis",
+          "text": "Pam. You're doing the face.",
+          "to": "pam",
+          "mood": "sarcastic"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "I don't have a face. This is my face.",
+          "to": "phyllis",
+          "mood": "awkward"
+        },
+        {
+          "type": "talking_head",
+          "who": "pam",
+          "lines": [
+            "Jim says it's just a prank. Jim says a lot of things from Stamford.",
+            "Karen's nice. She's really nice. I'm sure she's nice."
+          ],
+          "mood": "sarcastic"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "A",
+      "set": "warehouse",
+      "region": "darryl_office",
+      "venue": "",
+      "present": [
+        "michael",
+        "darryl"
+      ],
+      "recap": "Michael asks Darryl how to charm Jan, and Darryl teaches him a street phrase that isn't real.",
+      "beats": [
+        {
+          "type": "enter",
+          "who": [
+            "michael"
+          ],
+          "to": "darryl_office"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Darryl. Jan is coming. I need to be charming, like a man in a candle commercial.",
+          "to": "darryl",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "darryl",
+          "text": "Be you, man. That's the move.",
+          "to": "michael",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Myself is a brand. I've been working on it.",
+          "to": "darryl",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "darryl",
+          "text": "Yo, Jan, that candle's fresh, straight up.",
+          "to": "michael",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Fresh. Fresh!",
+          "to": "darryl",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "darryl",
+          "text": "Nobody says fresh anymore. That was 1994.",
+          "to": "michael",
+          "mood": "deadpan"
+        },
+        {
+          "type": "action",
+          "who": "michael",
+          "verb": "present",
+          "target": "none",
+          "caption": "practices a handshake on a clipboard"
+        },
+        {
+          "type": "talking_head",
+          "who": "michael",
+          "lines": [
+            "Darryl is my friend. He taught me to say ballin'.",
+            "I say it once a day to a stapler. The stapler is not impressed."
+          ],
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "darryl",
+          "text": "Michael, Jan's going to like you if you're you.",
+          "to": "michael",
+          "mood": "neutral"
+        },
+        {
+          "type": "pause",
+          "seconds": 3,
+          "caption": "Michael tries very hard to believe him."
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Is it too much if I bring a candle to every meeting?",
+          "to": "darryl",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "darryl",
+          "text": "Yes.",
+          "to": "michael",
+          "mood": "deadpan"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "B",
+      "set": "office",
+      "region": "bullpen",
+      "venue": "",
+      "present": [
+        "dwight",
+        "andy",
+        "oscar"
+      ],
+      "recap": "Dwight erases Andy's sales tally from the whiteboard, and Oscar and Andy call him out.",
+      "beats": [
+        {
+          "type": "action",
+          "who": "dwight",
+          "verb": "snoop",
+          "target": "andy",
+          "caption": "erases Andy's sales tally from the bullpen whiteboard"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "Dwight! That was four sales!",
+          "to": "dwight",
+          "mood": "angry"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "False. Those were four unconfirmed rumors.",
+          "to": "andy",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "oscar",
+          "text": "That's the Dunder sales board, Dwight, not your evidence drawer.",
+          "to": "dwight",
+          "mood": "deadpan"
+        },
+        {
+          "type": "talking_head",
+          "who": "dwight",
+          "lines": [
+            "I don't cheat. I optimize.",
+            "Michael needs a second in command who can be trusted with an eraser."
+          ],
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "I'm working on my anger. I'm at a four, Oscar.",
+          "to": "oscar",
+          "mood": "angry"
+        },
+        {
+          "type": "react",
+          "who": [
+            "andy"
+          ],
+          "reaction": "look_at_camera"
+        },
+        {
+          "type": "say",
+          "who": "oscar",
+          "text": "Actually, you've said Cornell seven times in ten minutes.",
+          "to": "andy",
+          "mood": "deadpan"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": "Andy counts to ten. He gets to six."
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "A",
+      "set": "office",
+      "region": "conference_room",
+      "venue": "",
+      "present": [
+        "michael",
+        "pam",
+        "dwight",
+        "andy",
+        "angela",
+        "oscar"
+      ],
+      "recap": "Jan arrives, sees the candles, and mentions Karen and Jim's pipeline in front of Pam.",
+      "beats": [
+        {
+          "type": "gather",
+          "who": [
+            "michael",
+            "pam",
+            "dwight",
+            "andy",
+            "angela",
+            "oscar"
+          ],
+          "to": "conference_room"
+        },
+        {
+          "type": "enter",
+          "who": [
+            "jan"
+          ],
+          "to": "conf_front"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Jan! You look like a woman who runs a candle empire.",
+          "to": "jan",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "jan",
+          "text": "Michael. Are those my candles on every desk?",
+          "to": "michael",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "They're on every desk. Some desks have two.",
+          "to": "jan",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "angela",
+          "text": "Thank you. Finally someone said it.",
+          "to": "jan",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "jan",
+          "text": "Karen Filippelli sends her regards from Stamford. She says Jim's pipeline is very promising.",
+          "to": "all",
+          "mood": "neutral"
+        },
+        {
+          "type": "react",
+          "who": [
+            "pam"
+          ],
+          "reaction": "look_at_camera"
+        },
+        {
+          "type": "pause",
+          "seconds": 3,
+          "caption": "Pam holds very still beside a candle."
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Jim is a good salesman. Stamford is a... good place for a salesman.",
+          "to": "jan",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "jan",
+          "text": "You're sweet, Michael. You're sweet in a way that isn't helpful.",
+          "to": "michael",
+          "mood": "neutral"
+        },
+        {
+          "type": "talking_head",
+          "who": "michael",
+          "lines": [
+            "She said I'm sweet. I'm putting that on a candle.",
+            "I think she's warming up. Or she's just cold. It's a Scranton thing."
+          ],
+          "mood": "smug"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "C",
+      "set": "office",
+      "region": "bullpen",
+      "venue": "",
+      "present": [
+        "dwight",
+        "pam",
+        "oscar",
+        "kevin"
+      ],
+      "recap": "Dwight reads Jan's reply calling him Acting Regional Manager, and the prank has become official.",
+      "beats": [
+        {
+          "type": "move",
+          "who": "pam",
+          "to": "dwight_desk",
+          "pace": "sneak"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Pam. Jan emailed me back.",
+          "to": "pam",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Oh. Yes. That's... good.",
+          "to": "dwight",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Jan writes: 'Dwight, I look forward to Friday. Please have the Acting Regional Manager binder ready.'",
+          "to": "all",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "oscar",
+          "text": "You are not acting regional manager. Michael is not on sabbatical.",
+          "to": "dwight",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Question: who printed the itinerary?",
+          "to": "oscar",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "oscar",
+          "text": "You did. At the copier. It's still warm.",
+          "to": "dwight",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "Dwight king now. Pam sad.",
+          "to": "pam",
+          "mood": "neutral"
+        },
+        {
+          "type": "talking_head",
+          "who": "jim",
+          "lines": [
+            "Okay, it was supposed to be a sign on the door. Three out of ten.",
+            "Then Dwight sent it to Jan. Then Karen thought it was hilarious. Pam did not think it was hilarious."
+          ],
+          "mood": "neutral"
+        },
+        {
+          "type": "action",
+          "who": "pam",
+          "verb": "hide",
+          "target": "dwight",
+          "caption": "tucks the Friday itinerary under a Serenity by Jan candle"
+        },
+        {
+          "type": "action",
+          "who": "dwight",
+          "verb": "snoop",
+          "target": "pam",
+          "caption": "lifts the candle and rereads the itinerary"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": "Dwight holds the itinerary up like a flag."
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "B",
+      "set": "office",
+      "region": "bullpen",
+      "venue": "",
+      "present": [
+        "michael",
+        "dwight",
+        "andy",
+        "oscar"
+      ],
+      "recap": "Andy wins Chair Day by outselling Dwight, and Dwight grudgingly shakes his hand.",
+      "beats": [
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Chair Day goes to Andy Bernard! Fourteen reams. Dwight, eleven reams and a feeling.",
+          "to": "all",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "False. The numbers are unconfirmed, and so is the feeling.",
+          "to": "michael",
+          "mood": "angry"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "They're final, Dwight.",
+          "to": "dwight",
+          "mood": "neutral"
+        },
+        {
+          "type": "move",
+          "who": "andy",
+          "to": "michael_desk",
+          "pace": "walk"
+        },
+        {
+          "type": "sit",
+          "who": [
+            "andy"
+          ]
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "This is what it feels like to win. Big Tuna would be proud.",
+          "to": "all",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "False. This chair is a position of trust. You have no trust.",
+          "to": "andy",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "I did it fairly, Schrute. Let's be honest about that.",
+          "to": "dwight",
+          "mood": "happy"
+        },
+        {
+          "type": "action",
+          "who": "dwight",
+          "verb": "high_five",
+          "target": "none",
+          "caption": "offers Andy a handshake that goes on too long"
+        },
+        {
+          "type": "talking_head",
+          "who": "oscar",
+          "lines": [
+            "I have the best numbers in this room. Nobody asked.",
+            "Michael never asks for my numbers. I'm not bitter. I'm correcting the record."
+          ],
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "oscar",
+          "text": "Michael, you can't give a chair for selling paper.",
+          "to": "michael",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "It's a chair, Oscar. It's not a diploma.",
+          "to": "oscar",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Question: can I sit in the chair when Andy is at lunch?",
+          "to": "michael",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "No.",
+          "to": "dwight",
+          "mood": "neutral"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "A",
+      "set": "office",
+      "region": "reception",
+      "venue": "",
+      "present": [
+        "michael",
+        "pam",
+        "jan"
+      ],
+      "recap": "Jan offers Pam a Stamford transfer, and Michael refuses on Pam's behalf.",
+      "beats": [
+        {
+          "type": "enter",
+          "who": [
+            "jan"
+          ],
+          "to": "reception"
+        },
+        {
+          "type": "say",
+          "who": "jan",
+          "text": "Michael. I'm offering Pam a transfer to Stamford. She'd be an asset.",
+          "to": "michael",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "No.",
+          "to": "jan",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "jan",
+          "text": "Excuse me?",
+          "to": "michael",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Pam's not a candle, Jan. She's not a transfer. She's Pam.",
+          "to": "jan",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Michael...",
+          "to": "michael",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "jan",
+          "text": "Michael, you don't get to decide who goes where.",
+          "to": "michael",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "I'm the regional manager. That's the whole job. Pam stays.",
+          "to": "jan",
+          "mood": "smug"
+        },
+        {
+          "type": "pause",
+          "seconds": 3,
+          "caption": "Jan looks at Michael for a long time."
+        },
+        {
+          "type": "say",
+          "who": "jan",
+          "text": "That was disgusting, Michael.",
+          "to": "michael",
+          "mood": "neutral"
+        },
+        {
+          "type": "move",
+          "who": "jan",
+          "to": "reception",
+          "pace": "walk"
+        },
+        {
+          "type": "exit",
+          "who": [
+            "jan"
+          ],
+          "how": "walk"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "You didn't have to do that.",
+          "to": "michael",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "I know. Toby said be present. I'm being present. It's awful.",
+          "to": "pam",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Thank you, Michael.",
+          "to": "michael",
+          "mood": "happy"
+        }
+      ]
+    },
+    {
+      "part": "tag",
+      "plot": "tag",
+      "set": "break_room",
+      "region": "break_room",
+      "venue": "",
+      "present": [
+        "stanley",
+        "michael",
+        "kevin",
+        "andy"
+      ],
+      "recap": "Stanley hits 191, Andy's banjo rings, and Michael's joke dies on silence.",
+      "beats": [
+        {
+          "type": "enter",
+          "who": [
+            "stanley",
+            "michael",
+            "kevin",
+            "andy"
+          ],
+          "to": "table_3"
+        },
+        {
+          "type": "action",
+          "who": "andy",
+          "verb": "phone_call",
+          "target": "none",
+          "caption": "bear-paw phone plays banjo hold music"
+        },
+        {
+          "type": "say",
+          "who": "stanley",
+          "text": "Turn that off.",
+          "to": "andy",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "One ninety-one, Stanley. That's what she said.",
+          "to": "stanley",
+          "mood": "excited"
+        },
+        {
+          "type": "react",
+          "who": [
+            "stanley"
+          ],
+          "reaction": "look_at_camera"
+        },
+        {
+          "type": "pause",
+          "seconds": 3,
+          "caption": "The break room hums. Stanley fills in a crossword box."
+        },
+        {
+          "type": "say",
+          "who": "stanley",
+          "text": "One ninety-one. Did I stutter?",
+          "to": "all",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "Nobody say nothing.",
+          "to": "all",
+          "mood": "deadpan"
+        }
+      ]
+    }
+  ]
+}

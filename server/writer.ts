@@ -70,12 +70,14 @@ async function callTool(spec: ToolSpec, messages: Anthropic.MessageParam[]) {
   // (tool_choice auto) and a missing call gets one retry.
   const res = await getClient().messages.stream({
     model: m,
-    max_tokens: 48000,
+    // Thinking takes most of the budget (30-45k tokens per episode on Haiku); both models allow 128k when streaming.
+    max_tokens: 128000,
     output_config: { effort: 'medium' },
     // Tools render before the system prompt, so this breakpoint caches schema + instructions.
     system: [{ type: 'text', text: spec.system(), cache_control: { type: 'ephemeral' } }],
     tools: [toolFor(spec)],
-    tool_choice: { type: 'auto' },
+    // One call per response: Haiku otherwise splits a long episode across parallel calls.
+    tool_choice: { type: 'auto', disable_parallel_tool_use: true },
     messages,
   }).finalMessage();
   const u = res.usage;
@@ -84,7 +86,8 @@ async function callTool(spec: ToolSpec, messages: Anthropic.MessageParam[]) {
   if (res.stop_reason === 'max_tokens') throw new Error('output was cut off (max_tokens)');
   if (res.stop_reason === 'refusal') throw new Error('model refused');
   const block = res.content.find((b): b is Anthropic.ToolUseBlock => b.type === 'tool_use' && b.name === spec.name);
-  return { input: block?.input ?? null, content: res.content, toolUseId: block?.id ?? null };
+  const toolUseIds = res.content.filter((b) => b.type === 'tool_use').map((b) => b.id);
+  return { input: block?.input ?? null, content: res.content, toolUseIds };
 }
 
 /**
@@ -110,9 +113,12 @@ export async function callWithRetry<T>(
   console.error(`[writer] retrying ${spec.name}; problems: ${result.problems.join(' | ')}`);
   messages.push({ role: 'assistant', content: first.content });
   const fix = `That has problems:\n${result.problems.map((p) => `- ${p}`).join('\n')}\nCall ${spec.name} again with the corrected, complete result.`;
+  // Every tool_use in the reply needs its tool_result, or the API rejects the retry.
   messages.push({
     role: 'user',
-    content: first.toolUseId ? [{ type: 'tool_result', tool_use_id: first.toolUseId, is_error: true, content: fix }] : fix,
+    content: first.toolUseIds.length
+      ? first.toolUseIds.map((id) => ({ type: 'tool_result' as const, tool_use_id: id, is_error: true, content: fix }))
+      : fix,
   });
   const retry = await callTool(spec, messages);
   const second = review(retry.input);

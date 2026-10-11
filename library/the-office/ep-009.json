@@ -1,0 +1,1199 @@
+{
+  "title": "The Michael Scott Mile",
+  "logline": "Michael turns the Lackawanna County Library fun run into a personal victory lap, while Jim tries once more to say something to Pam, Kevin notices Dwight and Angela leaving at the same time, and David Wallace's praise leaves Michael speechless.",
+  "outline": "A: Michael renames the library fun run \"The Michael Scott Mile,\" stages it in the lot, and needs David Wallace's praise to feel real. B: Jim and Pam train for the walk together; Roy says he'll come. C: Kevin spots Dwight and Angela leaving the lot at the same time; Oscar and Kevin both know. Order: cold, A, B, C, A, B, A, C, A, A, B, tag.",
+  "theme": "Being seen versus being watched: everyone wants applause, but the people who really see you are the ones who walk beside you.",
+  "storySoFar": "Michael still chases Jan's approval and David Wallace's praise; Stanley's countdown is at 204. Michael's Things I Love About Michael board holds Dwight's 61%, Kevin's M&Ms note, and Dale Pruitt's card (\"Michael calls back\"). Jim and Pam keep circling a confession; Jim tried twice at Tony's and got interrupted by Michael. Roy keeps promising to show up and forgetting. Dwight is Acting RM by his own memo and in an armed truce with Andy. Angela and Dwight's secret is now suspected by Kevin and Oscar. Michael has launched the library fun run, renamed the Michael Scott Mile, and is staging it in the parking lot.",
+  "extras": [],
+  "stateChanges": [
+    {
+      "type": "arc",
+      "arc": "Will They, Won't They: Jim and Pam",
+      "progress": "Jim signs them up as a walking team and tries to say something mid-training; interrupted again by Michael's shouting from the dumpster. Still unsaid. Pam says she has noticed he keeps trying."
+    },
+    {
+      "type": "arc",
+      "arc": "Michael Wants to Be Loved",
+      "progress": "David Wallace visits in person to praise Scranton's numbers as best in the Northeast; Michael takes it badly well and hides tears behind a paper sample in the conference room. Pam adds a sticky-note drawing of Michael to the Things I Love board."
+    },
+    {
+      "type": "arc",
+      "arc": "Angela and Dwight Secret",
+      "progress": "Kevin notices Dwight and Angela leaving the lot at the same time; Angela thanks Dwight in public for checking the fax. Oscar and Kevin both suspect; nobody says anything."
+    },
+    {
+      "type": "arc",
+      "arc": "Dwight vs. Andy",
+      "progress": "Armed truce holds during the fun run: Dwight is starter with an air horn, Andy sings the start and finish."
+    },
+    {
+      "type": "note",
+      "text": "Michael's MICHAEL SCOTT MILE banner; Michael renamed the library fun run and wants it on the calendar for Saturday. Toby is official timer."
+    },
+    {
+      "type": "note",
+      "text": "Pam's sticky-note drawing of Michael in running shorts is pinned to the Things I Love board beside Dale's card, the 61%, and Kevin's M&Ms note."
+    },
+    {
+      "type": "note",
+      "text": "Roy said he would walk the fun run with Pam Saturday; Pam is not sure he will show."
+    },
+    {
+      "type": "gag",
+      "text": "Stanley's countdown: 204 in the cold open, 203 in the tag; Michael's 'That's what she said' lands on silence."
+    },
+    {
+      "type": "gag",
+      "text": "Andy's bear-paw phone plays banjo hold music; Oscar: 'Actually, that's a banjo on hold.'"
+    },
+    {
+      "type": "gag",
+      "text": "Kevin: 'Nobody say nothing.' Used in the parking lot and the tag."
+    }
+  ],
+  "scenes": [
+    {
+      "part": "cold_open",
+      "plot": "cold_open",
+      "set": "office",
+      "region": "bullpen",
+      "venue": "",
+      "present": [
+        "andy",
+        "oscar",
+        "stanley",
+        "michael"
+      ],
+      "recap": "Andy's banjo hold music fills the bullpen, and Stanley counts down to 204 while Michael's joke lands on silence.",
+      "beats": [
+        {
+          "type": "action",
+          "who": "andy",
+          "verb": "phone_call",
+          "target": "none",
+          "caption": "holds up bear-paw phone; banjo hold music fills the bullpen"
+        },
+        {
+          "type": "say",
+          "who": "oscar",
+          "text": "Actually, that's a banjo on hold.",
+          "to": "andy",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "It's bluegrass hold, Oscar. It keeps the client calm.",
+          "to": "oscar",
+          "mood": "happy"
+        },
+        {
+          "type": "react",
+          "who": [
+            "oscar"
+          ],
+          "reaction": "look_at_camera"
+        },
+        {
+          "type": "say",
+          "who": "stanley",
+          "text": "Two hundred and four.",
+          "to": "all",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "That's what she said.",
+          "to": "stanley",
+          "mood": "smug"
+        },
+        {
+          "type": "pause",
+          "seconds": 3,
+          "caption": "Stanley does not look up from his crossword."
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "A",
+      "set": "office",
+      "region": "conference_room",
+      "venue": "",
+      "present": [
+        "michael",
+        "dwight",
+        "andy",
+        "jim",
+        "pam",
+        "kevin",
+        "oscar",
+        "toby",
+        "angela"
+      ],
+      "recap": "Michael calls an all-staff meeting about a fun run and renames it after himself, and the meeting spirals for forty minutes.",
+      "beats": [
+        {
+          "type": "gather",
+          "who": [
+            "michael",
+            "dwight",
+            "andy",
+            "jim",
+            "pam",
+            "kevin",
+            "oscar",
+            "toby",
+            "angela"
+          ],
+          "to": "conference_room"
+        },
+        {
+          "type": "action",
+          "who": "michael",
+          "verb": "present",
+          "target": "none",
+          "caption": "unrolls a vinyl banner reading THE MICHAEL SCOTT MILE"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "This is not an emergency. It's an all-staff meeting about a fun run. For literacy.",
+          "to": "all",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "toby",
+          "text": "It's the Lackawanna County Library fun run, Michael. It isn't yours.",
+          "to": "michael",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "I'm renaming it to honor my legs.",
+          "to": "toby",
+          "mood": "smug"
+        },
+        {
+          "type": "react",
+          "who": [
+            "oscar"
+          ],
+          "reaction": "look_at_camera"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "False. Vinyl is not flammable. Banner approved. Acting.",
+          "to": "all",
+          "mood": "smug"
+        },
+        {
+          "type": "talking_head",
+          "who": "jim",
+          "lines": [
+            "I'm not walking with Pam. I'm walking. Alone. In my own lane, like a professional."
+          ],
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "I'll open the race with a cappella. Three notes and a clap. Ready, set, Michael's Mile!",
+          "to": "michael",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Sign-up sheet. Teams of two. Walk the mile together, like a family.",
+          "to": "all",
+          "mood": "excited"
+        },
+        {
+          "type": "action",
+          "who": "michael",
+          "verb": "present",
+          "target": "none",
+          "caption": "tapes a clipboard sign-up sheet to the whiteboard"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Can someone walk alone, or is that against the spirit?",
+          "to": "michael",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Nobody walks alone in my race, Pam. That's the rule.",
+          "to": "pam",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "oscar",
+          "text": "Actually, a 5K is 3.1 miles. This is three laps of a parking lot.",
+          "to": "michael",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "The parking lot is the world, Oscar. Think bigger.",
+          "to": "oscar",
+          "mood": "happy"
+        },
+        {
+          "type": "caption",
+          "text": "FORTY MINUTES LATER"
+        },
+        {
+          "type": "say",
+          "who": "toby",
+          "text": "Insurance will need a waiver for the dumpster.",
+          "to": "michael",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Kevin, you've run before?",
+          "to": "all",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "Kevin run one time. Kevin ran away.",
+          "to": "michael",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Meeting adjourned.",
+          "to": "all",
+          "mood": "excited"
+        },
+        {
+          "type": "pause",
+          "seconds": 3,
+          "caption": "Nobody moves."
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "B",
+      "set": "office",
+      "region": "reception",
+      "venue": "",
+      "present": [
+        "jim",
+        "pam"
+      ],
+      "recap": "Jim signs up as Pam's walking partner and Pam asks whether he is being nice to her or just being Jim.",
+      "beats": [
+        {
+          "type": "action",
+          "who": "jim",
+          "verb": "present",
+          "target": "none",
+          "caption": "writes HALPERT / BEESLY on the sign-up sheet"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "You said you were walking alone. You said it in front of everybody.",
+          "to": "jim",
+          "mood": "sarcastic"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "I said it in a talking head. That doesn't count.",
+          "to": "pam",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Roy said he'd walk Saturday. He said it twice.",
+          "to": "jim",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "Great. Roy's a great walker.",
+          "to": "pam",
+          "mood": "neutral"
+        },
+        {
+          "type": "react",
+          "who": [
+            "jim"
+          ],
+          "reaction": "look_at_camera"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Are you being nice to me, or are you being Jim?",
+          "to": "jim",
+          "mood": "sarcastic"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "I'm being a Sales Representative.",
+          "to": "pam",
+          "mood": "deadpan"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": "Pam almost smiles, then goes back to her phone."
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "C",
+      "set": "parking_lot",
+      "region": "parking_lot",
+      "venue": "",
+      "present": [
+        "kevin",
+        "oscar",
+        "dwight",
+        "angela"
+      ],
+      "recap": "Kevin notices Dwight and Angela leaving at the same time, and Angela thanks Dwight in public for checking a fax.",
+      "beats": [
+        {
+          "type": "enter",
+          "who": [
+            "kevin",
+            "oscar"
+          ],
+          "to": "parking_lot"
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "Dwight leave work. Angela leave work. Same time.",
+          "to": "oscar",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "oscar",
+          "text": "It's 5:02, Kevin. People leave at 5:02.",
+          "to": "kevin",
+          "mood": "annoyed"
+        },
+        {
+          "type": "enter",
+          "who": [
+            "dwight",
+            "angela"
+          ],
+          "to": "parking_lot"
+        },
+        {
+          "type": "say",
+          "who": "angela",
+          "text": "Dwight, did you check the fax? Everyone should know you checked the fax.",
+          "to": "dwight",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Acting. Yes. The fax is clean.",
+          "to": "angela",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "angela",
+          "text": "Thank you, Dwight. In front of everyone.",
+          "to": "all",
+          "mood": "happy"
+        },
+        {
+          "type": "talking_head",
+          "who": "kevin",
+          "lines": [
+            "Dwight and Angela. Same lot, same time. Kevin is good at lot."
+          ],
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "oscar",
+          "text": "Everyone is in the lot, Kevin. This is a parking lot.",
+          "to": "kevin",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "Who check fax in parking lot?",
+          "to": "oscar",
+          "mood": "neutral"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": "Oscar opens his mouth, then closes it."
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "A",
+      "set": "office",
+      "region": "michael_office",
+      "venue": "",
+      "present": [
+        "michael",
+        "dwight"
+      ],
+      "recap": "David Wallace comes down in person to say Scranton is the best in the Northeast, and Michael takes it badly well.",
+      "beats": [
+        {
+          "type": "enter",
+          "who": [
+            "david"
+          ],
+          "to": "michael_guest_1"
+        },
+        {
+          "type": "say",
+          "who": "david",
+          "text": "Michael. Scranton's numbers came in. Up eleven percent. Best in the Northeast.",
+          "to": "michael",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "I... yes. I know. I've been saying that. Quietly.",
+          "to": "david",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "david",
+          "text": "I wanted to tell you in person. You're doing a good job. I'm not sure how.",
+          "to": "michael",
+          "mood": "neutral"
+        },
+        {
+          "type": "pause",
+          "seconds": 3,
+          "caption": "Michael holds very still."
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Thank you, David. That's great. I'm fine. I'm going to need one minute.",
+          "to": "david",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Are you crying? Question.",
+          "to": "michael",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "It's allergies. It's the toner. Get David a water.",
+          "to": "dwight",
+          "mood": "panicked"
+        },
+        {
+          "type": "talking_head",
+          "who": "michael",
+          "lines": [
+            "David Wallace came down here and said I'm the best. In the Northeast. That's a region. I'm the best region."
+          ],
+          "mood": "smug"
+        },
+        {
+          "type": "exit",
+          "who": [
+            "david"
+          ],
+          "how": "walk"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Dwight, did he say best, or did he say 'the best'?",
+          "to": "dwight",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Those are the same. False, they're not. They're the same.",
+          "to": "michael",
+          "mood": "smug"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "B",
+      "set": "parking_lot",
+      "region": "entrance",
+      "venue": "",
+      "present": [
+        "jim",
+        "pam"
+      ],
+      "recap": "Jim and Pam train for the fun run by the entrance, and Jim almost says something before he chickens out about the cones.",
+      "beats": [
+        {
+          "type": "enter",
+          "who": [
+            "jim",
+            "pam"
+          ],
+          "to": "entrance"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Roy says he'll walk Saturday. He says it like it's a fact.",
+          "to": "jim",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "Great. He'll be fine. Let's walk.",
+          "to": "pam",
+          "mood": "neutral"
+        },
+        {
+          "type": "action",
+          "who": "jim",
+          "verb": "fall",
+          "target": "none",
+          "caption": "walks very slowly, deliberately not passing Pam"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "You're walking slow. It's a fun run, Jim, not a funeral.",
+          "to": "jim",
+          "mood": "sarcastic"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "I'm pacing. Pam, I was going to say something.",
+          "to": "pam",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Okay?",
+          "to": "jim",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "The cones are on the left.",
+          "to": "pam",
+          "mood": "awkward"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Are they?",
+          "to": "jim",
+          "mood": "sarcastic"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "No. They're on the right. Sorry.",
+          "to": "pam",
+          "mood": "awkward"
+        },
+        {
+          "type": "talking_head",
+          "who": "pam",
+          "lines": [
+            "Jim keeps almost saying something. I think it's about the run. I hope it's about the run."
+          ],
+          "mood": "nervous"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "A",
+      "set": "warehouse",
+      "region": "loading_dock",
+      "venue": "",
+      "present": [
+        "michael",
+        "darryl",
+        "dwight",
+        "andy"
+      ],
+      "recap": "Michael picks the loading dock as the start line, and Darryl teaches him a street phrase that is not a real phrase.",
+      "beats": [
+        {
+          "type": "enter",
+          "who": [
+            "michael",
+            "darryl"
+          ],
+          "to": "dock_1"
+        },
+        {
+          "type": "enter",
+          "who": [
+            "dwight",
+            "andy"
+          ],
+          "to": "dock_2"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Darryl, the start line is here. The loading dock. Beautiful. It's the start of everything.",
+          "to": "darryl",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "darryl",
+          "text": "It's a loading dock, Michael. There are forklifts at ten.",
+          "to": "michael",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "I'll sing the starting song. It's three notes and a clap.",
+          "to": "michael",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "You will not sing at the start. Acting RM ruling.",
+          "to": "andy",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "Fine. Then I'll hum it. Dwight, I'm going to hum it really loud.",
+          "to": "dwight",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Question: who starts the race? I have an air horn. Acting.",
+          "to": "michael",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Teach me a street phrase. For the race.",
+          "to": "darryl",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "darryl",
+          "text": "Say 'eyes on the prize, dawg.'",
+          "to": "michael",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Eyes on the prize, dawg.",
+          "to": "darryl",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "darryl",
+          "text": "Nope. That's not a thing.",
+          "to": "michael",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "It's a thing now. You made it a thing.",
+          "to": "darryl",
+          "mood": "happy"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "C",
+      "set": "break_room",
+      "region": "break_room",
+      "venue": "",
+      "present": [
+        "kevin",
+        "oscar"
+      ],
+      "recap": "Kevin tells Oscar he has figured out Dwight and Angela, and Oscar refuses to say anything.",
+      "beats": [
+        {
+          "type": "enter",
+          "who": [
+            "kevin",
+            "oscar"
+          ],
+          "to": "table_2"
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "Dwight and Angela. Same lot. Same time. Two car.",
+          "to": "oscar",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "oscar",
+          "text": "Kevin, people leave work. It's a coincidence with a lot of cars.",
+          "to": "kevin",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "Angela say fax. Dwight say fax. Who check fax in parking lot?",
+          "to": "oscar",
+          "mood": "neutral"
+        },
+        {
+          "type": "react",
+          "who": [
+            "oscar"
+          ],
+          "reaction": "stare"
+        },
+        {
+          "type": "say",
+          "who": "oscar",
+          "text": "I'm not going to say anything about it.",
+          "to": "kevin",
+          "mood": "awkward"
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "Nobody say nothing.",
+          "to": "oscar",
+          "mood": "neutral"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": "Oscar pours a cup of coffee very quietly."
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "A",
+      "set": "parking_lot",
+      "region": "parking_lot",
+      "venue": "",
+      "present": [
+        "michael",
+        "jim",
+        "pam",
+        "andy",
+        "dwight",
+        "toby"
+      ],
+      "recap": "The Michael Scott Mile starts with an air horn, Michael trips over the dumpster, and Jim tries to talk to Pam while Michael shouts from the recycling.",
+      "beats": [
+        {
+          "type": "enter",
+          "who": [
+            "michael",
+            "jim",
+            "pam",
+            "andy",
+            "dwight",
+            "toby"
+          ],
+          "to": "entrance"
+        },
+        {
+          "type": "action",
+          "who": "toby",
+          "verb": "present",
+          "target": "none",
+          "caption": "holds a clipboard and a stopwatch as official timer"
+        },
+        {
+          "type": "action",
+          "who": "andy",
+          "verb": "sing",
+          "target": "none",
+          "caption": "sings the starting line a cappella as Dwight blows an air horn over him"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Let's go! I'm in the lead! This is my lead!",
+          "to": "all",
+          "mood": "excited"
+        },
+        {
+          "type": "move",
+          "who": "michael",
+          "to": "dumpster",
+          "pace": "hurry"
+        },
+        {
+          "type": "action",
+          "who": "michael",
+          "verb": "fall",
+          "target": "none",
+          "caption": "trips over a cinder block and lands in a bin of recycling"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "I'm fine! This is a fine! Keep going, I'm a fun run!",
+          "to": "all",
+          "mood": "panicked"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Jim, are you walking, or are you trying to tell me something?",
+          "to": "jim",
+          "mood": "sarcastic"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "Pam, I have been trying to tell you something since Tony's.",
+          "to": "pam",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Jim! Are you watching? I need witnesses!",
+          "to": "all",
+          "mood": "panicked"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "I'm watching, Michael.",
+          "to": "michael",
+          "mood": "deadpan"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": "Pam waits. Jim does not finish."
+        },
+        {
+          "type": "say",
+          "who": "toby",
+          "text": "For the record, that's not the finish line. It's the dumpster.",
+          "to": "michael",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Winner: Acting. I have the air horn. The winner is the one with the horn.",
+          "to": "all",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "Winner is whoever sings the finish. I'm singing it. Big Tuna, come on!",
+          "to": "dwight",
+          "mood": "excited"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "A",
+      "set": "office",
+      "region": "conference_room",
+      "venue": "",
+      "present": [
+        "michael",
+        "kevin"
+      ],
+      "recap": "Michael hides a tear behind a paper sample after the race, and Kevin brings him M&Ms.",
+      "beats": [
+        {
+          "type": "enter",
+          "who": [
+            "michael",
+            "kevin"
+          ],
+          "to": "conf_front"
+        },
+        {
+          "type": "action",
+          "who": "michael",
+          "verb": "hide",
+          "target": "none",
+          "caption": "holds a paper sample up in front of his face"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "This is Cloud Matte. Very nice paper, people. Let's respect the paper.",
+          "to": "kevin",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "Kevin have M&Ms.",
+          "to": "michael",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Thank you, Kevin.",
+          "to": "kevin",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "Michael face wet.",
+          "to": "michael",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "It's the paper. The paper is damp.",
+          "to": "kevin",
+          "mood": "panicked"
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "Paper not wet.",
+          "to": "michael",
+          "mood": "neutral"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": "Michael lowers the sample an inch."
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "You're a good man, Kevin. Get out of my conference room.",
+          "to": "kevin",
+          "mood": "happy"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "B",
+      "set": "office",
+      "region": "michael_office",
+      "venue": "",
+      "present": [
+        "michael",
+        "pam"
+      ],
+      "recap": "Pam brings Michael a sticky-note drawing of himself running, and Michael pins it to the Things I Love board.",
+      "beats": [
+        {
+          "type": "move",
+          "who": "pam",
+          "to": "michael_guest_2",
+          "pace": "walk"
+        },
+        {
+          "type": "action",
+          "who": "pam",
+          "verb": "present",
+          "target": "none",
+          "caption": "hands over a small sticky-note drawing of Michael in running shorts"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "It's a sticky. Of you. You kept going after the dumpster.",
+          "to": "michael",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Pam, is this a drawing of me? Is it a Dundie?",
+          "to": "pam",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "It's a sticky. You kept going. That's the nice part.",
+          "to": "michael",
+          "mood": "happy"
+        },
+        {
+          "type": "action",
+          "who": "michael",
+          "verb": "present",
+          "target": "none",
+          "caption": "pins the drawing to the Things I Love board beside Dale's card"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "That's the third thing on this board. Dwight's 61%, Kevin's M&Ms, and now you.",
+          "to": "pam",
+          "mood": "sad"
+        },
+        {
+          "type": "talking_head",
+          "who": "pam",
+          "lines": [
+            "Michael's not who I thought he was. He's more like a person who wants the room to like him. Which is most of us."
+          ],
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Roy texted. He said have fun, babe. He's not coming Saturday.",
+          "to": "michael",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Roy's a good dude. I'll run beside you, Pam. As a friend.",
+          "to": "pam",
+          "mood": "sad"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": "Pam smiles and says nothing."
+        }
+      ]
+    },
+    {
+      "part": "tag",
+      "plot": "tag",
+      "set": "break_room",
+      "region": "break_room",
+      "venue": "",
+      "present": [
+        "stanley",
+        "kevin",
+        "michael"
+      ],
+      "recap": "Stanley counts down to 203, and Michael's joke lands on silence, followed by Kevin's line.",
+      "beats": [
+        {
+          "type": "enter",
+          "who": [
+            "stanley"
+          ],
+          "to": "table_1"
+        },
+        {
+          "type": "enter",
+          "who": [
+            "kevin"
+          ],
+          "to": "table_2"
+        },
+        {
+          "type": "enter",
+          "who": [
+            "michael"
+          ],
+          "to": "microwave"
+        },
+        {
+          "type": "action",
+          "who": "kevin",
+          "verb": "eat",
+          "target": "none",
+          "caption": "eats a spoonful of cold chili straight from the container"
+        },
+        {
+          "type": "say",
+          "who": "stanley",
+          "text": "Two hundred and three.",
+          "to": "all",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "That's what she said.",
+          "to": "stanley",
+          "mood": "smug"
+        },
+        {
+          "type": "pause",
+          "seconds": 4,
+          "caption": "Stanley does not look up."
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "Nobody say nothing.",
+          "to": "michael",
+          "mood": "neutral"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": "Nobody says anything."
+        }
+      ]
+    }
+  ]
+}

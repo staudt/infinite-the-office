@@ -202,7 +202,11 @@ export class Stage {
     let due = this.wt;
     for (const p of path ?? [to]) {
       const diag = p.x !== a.x && p.y !== a.y;
+      a.stepFrom = a.pos;
+      a.stepTo = p;
+      a.stepStart = due;
       due += (diag ? Math.SQRT2 : 1) / SPEED[pace];
+      a.stepEnd = due;
       yield () => this.wt >= due - 1e-9;
       if (a.walkId !== id) return;
       if (p.x !== a.x) a.facing = p.x > a.x ? 1 : -1;
@@ -210,6 +214,7 @@ export class Stage {
       a.y = p.y;
     }
     a.dest = null;
+    a.stepFrom = a.stepTo = null;
     a.seated = set.kinds[to.y][to.x] === 'seat';
     then?.();
   }

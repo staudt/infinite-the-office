@@ -1,0 +1,1336 @@
+{
+  "title": "Table for Six",
+  "logline": "Michael takes the team to a client lunch to win over paper buyer Dale Pruitt, while Dwight sabotages Andy's pitch time, Jim tries to tell Pam how he feels, and Michael's car has other plans.",
+  "outline": "A: Jim tries to tell Pam he likes her at Michael's Pruitt lunch; Michael interrupts with a toast, then with tears in the parking lot. B: Michael courts paper buyer Dale Pruitt with cards and a folding chair, and Dale writes him a card. C: Dwight moves Andy's pitch to 2pm; Jim's accidental Post-it saves Andy, who sings Dale a pitch. Order: cold, A, B, C, A, B, C, A, A, B, C, tag.",
+  "theme": "Being called back: everyone wants someone to notice they showed up.",
+  "storySoFar": "Michael still chases Jan's approval; Jan sent another maybe. Stanley's countdown is at 206. Michael's Things I Love About Michael board holds Dwight's 61% and Kevin's M&Ms note; Michael hid a tear after the Halloween party. Jim and Pam keep pranking Dwight; \"Quality Dessert\" hangs in Jim's apartment. Pam's show \"Small Things\" went well after Jim showed up; Roy forgot again and keeps postponing the wedding. Dwight is Acting RM by his own memo, keeps the title, and is in an armed truce with Andy. Angela and Dwight's secret is unspoken. Kevin's Harvest Cook-Off chili is Saturday. Toby keeps Michael's folding chair. Michael has a new client, paper buyer Dale Pruitt of Pruitt Party Supply, to win over at Tony's Trattoria.",
+  "extras": [
+    {
+      "id": "dale_pruitt",
+      "name": "Dale Pruitt",
+      "title": "Owner, Pruitt Party Supply",
+      "voice": "Gruff, slow, almost never smiles. Says 'Mm.' as a full sentence. Orders the same thing every time. Honest to the point of rude, then surprisingly tender once."
+    }
+  ],
+  "stateChanges": [
+    {
+      "type": "arc",
+      "arc": "Will They, Won't They: Jim and Pam",
+      "progress": "Jim tries twice to tell Pam at Tony's and gets interrupted both times, first by Michael's toast and then by Michael's tears in the parking lot. Still unsaid; Pam noticed he has been trying."
+    },
+    {
+      "type": "arc",
+      "arc": "Michael Wants to Be Loved",
+      "progress": "Dale Pruitt writes Michael a card: 'Michael calls back.' Michael pins it to the Things I Love board beside the 61% and the M&Ms note, and hides a tear behind a paper sample."
+    },
+    {
+      "type": "arc",
+      "arc": "Dwight vs. Andy",
+      "progress": "Dwight moved Andy's pitch to 2pm; Jim's Post-it (DWIGHT IS WRONG) got Andy to lunch on time. Andy sang a cappella and won Dale's renewal. Dwight keeps the title; Andy keeps the crowd. Armed truce holds, with a three-note fanfare."
+    },
+    {
+      "type": "note",
+      "text": "Dale Pruitt renewed Dunder's paper account after Andy's a cappella pitch. He told Michael not to read his card at the table."
+    },
+    {
+      "type": "note",
+      "text": "Dwight kept the Post-it as evidence in his desk drawer."
+    },
+    {
+      "type": "note",
+      "text": "Michael's folding chair was set out at Tony's for Toby, who stayed in the car; Dale sat in it."
+    },
+    {
+      "type": "gag",
+      "text": "Stanley's countdown: 206 in the cold open, 205 in the tag."
+    },
+    {
+      "type": "gag",
+      "text": "Kevin: 'Nobody say nothing.' Used in the cold open and the tag."
+    },
+    {
+      "type": "gag",
+      "text": "Andy's bear-paw phone plays banjo hold music; Oscar: 'Actually, that's a banjo on hold.'"
+    },
+    {
+      "type": "gag",
+      "text": "Michael's 'That's what she said' lands on silence to Stanley's countdown."
+    }
+  ],
+  "scenes": [
+    {
+      "part": "cold_open",
+      "plot": "cold_open",
+      "set": "office",
+      "region": "bullpen",
+      "venue": "",
+      "present": [
+        "andy",
+        "oscar",
+        "dwight",
+        "stanley",
+        "kevin"
+      ],
+      "recap": "Andy's banjo hold music annoys Oscar, and Stanley counts down to 206.",
+      "beats": [
+        {
+          "type": "action",
+          "who": "andy",
+          "verb": "phone_call",
+          "target": "none",
+          "caption": "holds up a bear-paw phone as banjo music twangs through it"
+        },
+        {
+          "type": "say",
+          "who": "oscar",
+          "text": "Actually, that's a banjo on hold.",
+          "to": "andy",
+          "mood": "deadpan"
+        },
+        {
+          "type": "react",
+          "who": [
+            "oscar"
+          ],
+          "reaction": "look_at_camera"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "It's bluegrass, Oscar. It's the sound of a man waiting for his moment.",
+          "to": "oscar",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Question: who approved a banjo on a Dunder Mifflin phone line?",
+          "to": "andy",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "Your memo said no banjo in the office. Hold is not the office.",
+          "to": "dwight",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "False. Hold is the office, with extra steps.",
+          "to": "andy",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "stanley",
+          "text": "Two hundred and six.",
+          "to": "all",
+          "mood": "deadpan"
+        },
+        {
+          "type": "action",
+          "who": "kevin",
+          "verb": "eat",
+          "target": "none",
+          "caption": "walks past eating M&Ms out of a bag, one at a time"
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "Nobody say nothing.",
+          "to": "all",
+          "mood": "neutral"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": "Nobody says nothing."
+        },
+        {
+          "type": "react",
+          "who": [
+            "stanley"
+          ],
+          "reaction": "sigh"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "A",
+      "set": "office",
+      "region": "conference_room",
+      "venue": "",
+      "present": [
+        "michael",
+        "jim",
+        "pam",
+        "dwight",
+        "andy",
+        "kevin"
+      ],
+      "recap": "Michael announces a client lunch at Tony's Trattoria for Dale Pruitt, assigns Andy and Dwight to pitch, and assigns Jim to drive Pam.",
+      "beats": [
+        {
+          "type": "gather",
+          "who": [
+            "everyone"
+          ],
+          "to": "conference_room"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Dale Pruitt, Pruitt Party Supply, is our oldest paper account in Scranton. He is coming to lunch Friday at noon at Tony's Trattoria.",
+          "to": "all",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Nobody at Dunder has ever made Dale feel like family. We are going to make Dale feel like the bread in the sandwich.",
+          "to": "all",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Question: is the Acting Regional Manager pitching?",
+          "to": "michael",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Andy pitches the feeling. Dwight pitches the paper. Acting RM is a title, Dwight, not a seat.",
+          "to": "dwight",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "I'll pitch the feeling. Cornell taught me feelings.",
+          "to": "all",
+          "mood": "excited"
+        },
+        {
+          "type": "react",
+          "who": [
+            "jim"
+          ],
+          "reaction": "look_at_camera"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Pam, you're note-taker. Jim, you drive. Everyone writes one thing they love about Dale on an index card.",
+          "to": "all",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Like the board?",
+          "to": "michael",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Not like the board. Like a card. The board is for me.",
+          "to": "pam",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "I'll drive, Pam.",
+          "to": "pam",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Jan said maybe about coming. Maybe is basically a yes, in Jan.",
+          "to": "all",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "Maybe mean no.",
+          "to": "michael",
+          "mood": "neutral"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": "Michael pretends not to hear."
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "B",
+      "set": "office",
+      "region": "michael_office",
+      "venue": "",
+      "present": [
+        "michael",
+        "toby"
+      ],
+      "recap": "Michael invites Toby to lunch and offers him a folding chair; Toby is ambiguous.",
+      "beats": [
+        {
+          "type": "move",
+          "who": "toby",
+          "to": "michael_guest_1",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Toby. Come to lunch at Tony's. Friday.",
+          "to": "toby",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "toby",
+          "text": "I'm not invited.",
+          "to": "michael",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "You're invited to a folding chair. I'm bringing it. It's the chair from the fire code.",
+          "to": "toby",
+          "mood": "excited"
+        },
+        {
+          "type": "talking_head",
+          "who": "toby",
+          "lines": [
+            "He asked me to lunch. He has never asked me to lunch.",
+            "I told him I'd think about it, which means no. He doesn't know that, which means maybe."
+          ],
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "toby",
+          "text": "Michael, why do you want me there?",
+          "to": "michael",
+          "mood": "sad"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": "Michael has no answer."
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Because there's a chair, Toby. There's always going to be a chair.",
+          "to": "toby",
+          "mood": "awkward"
+        },
+        {
+          "type": "move",
+          "who": "toby",
+          "to": "toby_desk",
+          "pace": "walk"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "C",
+      "set": "office",
+      "region": "bullpen",
+      "venue": "",
+      "present": [
+        "dwight",
+        "andy",
+        "jim"
+      ],
+      "recap": "Dwight moves Andy's pitch to two o'clock on the itinerary, and Jim plants a Post-it that says DWIGHT IS WRONG.",
+      "beats": [
+        {
+          "type": "action",
+          "who": "dwight",
+          "verb": "typing",
+          "target": "none",
+          "caption": "types a new time into a printed itinerary and initials it Acting RM"
+        },
+        {
+          "type": "talking_head",
+          "who": "dwight",
+          "lines": [
+            "Andy's pitch is at two. Lunch is at noon. Dale Pruitt leaves at one.",
+            "In my time, a pitch at two is a pitch that does not exist."
+          ],
+          "mood": "smug"
+        },
+        {
+          "type": "move",
+          "who": "dwight",
+          "to": "andy_desk",
+          "pace": "sneak"
+        },
+        {
+          "type": "action",
+          "who": "dwight",
+          "verb": "present",
+          "target": "none",
+          "caption": "sets the printed itinerary on Andy's keyboard like a summons"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Your pitch is at two. Do not be early. It's bad for the room.",
+          "to": "andy",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "Dwight, you signed that 'Acting.'",
+          "to": "dwight",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Always.",
+          "to": "andy",
+          "mood": "neutral"
+        },
+        {
+          "type": "move",
+          "who": "dwight",
+          "to": "dwight_desk",
+          "pace": "walk"
+        },
+        {
+          "type": "move",
+          "who": "jim",
+          "to": "andy_desk",
+          "pace": "sneak"
+        },
+        {
+          "type": "action",
+          "who": "jim",
+          "verb": "prank",
+          "target": "dwight",
+          "caption": "sticks a yellow Post-it on the itinerary: DWIGHT IS WRONG"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "Big Tuna. Dwight is wrong?",
+          "to": "jim",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "It's a note. Notes are rarely wrong.",
+          "to": "andy",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "I'm going to Tony's at noon. Big Tuna, you're a good man.",
+          "to": "jim",
+          "mood": "excited"
+        },
+        {
+          "type": "react",
+          "who": [
+            "dwight"
+          ],
+          "reaction": "stare"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "A",
+      "set": "break_room",
+      "region": "break_room",
+      "venue": "",
+      "present": [
+        "pam",
+        "jim"
+      ],
+      "recap": "Pam says Roy will try to make the lunch, and Jim tries to ask her something before Pam asks if he's pranking her.",
+      "beats": [
+        {
+          "type": "move",
+          "who": "pam",
+          "to": "table_1",
+          "pace": "walk"
+        },
+        {
+          "type": "move",
+          "who": "jim",
+          "to": "table_2",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Roy says he'll try to swing by Tony's. He said 'try' like it's a weather report.",
+          "to": "jim",
+          "mood": "sarcastic"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "I'll drive you.",
+          "to": "pam",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "You're always driving me.",
+          "to": "jim",
+          "mood": "happy"
+        },
+        {
+          "type": "talking_head",
+          "who": "jim",
+          "lines": [
+            "Roy says he'll try. I've started keeping a list of what I'd do if I were Roy.",
+            "It's long, and mostly it's me showing up."
+          ],
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "Pam, can I tell you something after lunch?",
+          "to": "pam",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Is it about Dwight?",
+          "to": "jim",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "No. Not Dwight.",
+          "to": "pam",
+          "mood": "awkward"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": "Pam waits. Jim does not say anything else."
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Are you pranking me?",
+          "to": "jim",
+          "mood": "sarcastic"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "Not yet.",
+          "to": "pam",
+          "mood": "deadpan"
+        },
+        {
+          "type": "react",
+          "who": [
+            "pam"
+          ],
+          "reaction": "laugh"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "B",
+      "set": "offsite",
+      "region": "venue",
+      "venue": "TONY'S TRATTORIA",
+      "present": [
+        "michael",
+        "dale_pruitt",
+        "dwight",
+        "jim",
+        "pam"
+      ],
+      "recap": "At Tony's, Michael courts Dale with index cards and a folding chair, and Dale refuses to write anything before quietly writing one card.",
+      "beats": [
+        {
+          "type": "caption",
+          "text": "FRIDAY, 12:04 P.M."
+        },
+        {
+          "type": "enter",
+          "who": [
+            "michael"
+          ],
+          "to": "seat_1"
+        },
+        {
+          "type": "enter",
+          "who": [
+            "dwight"
+          ],
+          "to": "seat_2"
+        },
+        {
+          "type": "enter",
+          "who": [
+            "jim"
+          ],
+          "to": "seat_5"
+        },
+        {
+          "type": "enter",
+          "who": [
+            "pam"
+          ],
+          "to": "seat_6"
+        },
+        {
+          "type": "enter",
+          "who": [
+            "dale_pruitt"
+          ],
+          "to": "seat_4"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Dale! Welcome to Tony's. Sit anywhere. Sit there. In the chair.",
+          "to": "dale_pruitt",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "dale_pruitt",
+          "text": "Mm.",
+          "to": "michael",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "That's Toby's chair. Nobody sits in Toby's chair.",
+          "to": "dale_pruitt",
+          "mood": "awkward"
+        },
+        {
+          "type": "say",
+          "who": "dale_pruitt",
+          "text": "Mm.",
+          "to": "michael",
+          "mood": "neutral"
+        },
+        {
+          "type": "action",
+          "who": "michael",
+          "verb": "present",
+          "target": "none",
+          "caption": "fans out a stack of index cards labeled THINGS I LOVE ABOUT DALE"
+        },
+        {
+          "type": "say",
+          "who": "dale_pruitt",
+          "text": "No.",
+          "to": "michael",
+          "mood": "deadpan"
+        },
+        {
+          "type": "pause",
+          "seconds": 3,
+          "caption": "awkward silence"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Okay. That's okay. Dale doesn't love cards. Dale loves paper.",
+          "to": "all",
+          "mood": "awkward"
+        },
+        {
+          "type": "talking_head",
+          "who": "michael",
+          "lines": [
+            "It's a lunch. It's a lunch where I'm going to be loved. Dale just doesn't know it yet.",
+            "Everybody loves me eventually. It's like paper. It takes a while to soak in."
+          ],
+          "mood": "nervous"
+        },
+        {
+          "type": "action",
+          "who": "dale_pruitt",
+          "verb": "hide",
+          "target": "none",
+          "caption": "writes something on a card and hides it under his napkin"
+        },
+        {
+          "type": "say",
+          "who": "dale_pruitt",
+          "text": "Don't read it at the table.",
+          "to": "michael",
+          "mood": "neutral"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "C",
+      "set": "offsite",
+      "region": "venue",
+      "venue": "TONY'S TRATTORIA",
+      "present": [
+        "andy",
+        "dwight",
+        "dale_pruitt",
+        "michael"
+      ],
+      "recap": "Andy arrives at noon thanks to Jim's Post-it, and sings Dale a pitch Dwight tried to ban.",
+      "beats": [
+        {
+          "type": "enter",
+          "who": [
+            "andy"
+          ],
+          "to": "seat_3"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "I'm here! I am early to the lunch!",
+          "to": "all",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "You were supposed to be here at two.",
+          "to": "andy",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "Big Tuna says your itinerary is wrong.",
+          "to": "dwight",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "False. Halpert is not a source.",
+          "to": "andy",
+          "mood": "angry"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "Mr. Pruitt, may I sing you a paper pitch?",
+          "to": "dale_pruitt",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Acting RM has banned singing at client meetings. The memo covers all instruments, including the mouth.",
+          "to": "dale_pruitt",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "dale_pruitt",
+          "text": "Sing.",
+          "to": "andy",
+          "mood": "neutral"
+        },
+        {
+          "type": "action",
+          "who": "andy",
+          "verb": "sing",
+          "target": "none",
+          "caption": "sings five parts of a cappella about Dunder Mifflin paper, all five parts at once"
+        },
+        {
+          "type": "react",
+          "who": [
+            "michael"
+          ],
+          "reaction": "cheer"
+        },
+        {
+          "type": "react",
+          "who": [
+            "dale_pruitt"
+          ],
+          "reaction": "stare"
+        },
+        {
+          "type": "say",
+          "who": "dale_pruitt",
+          "text": "Again. The bridge.",
+          "to": "andy",
+          "mood": "neutral"
+        },
+        {
+          "type": "action",
+          "who": "dwight",
+          "verb": "present",
+          "target": "none",
+          "caption": "unfolds a memo on letterhead and slaps it on the table"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "This memo is on letterhead. Letterhead wins.",
+          "to": "dale_pruitt",
+          "mood": "angry"
+        },
+        {
+          "type": "say",
+          "who": "dale_pruitt",
+          "text": "Dunder's paper is fine. The singing is better. I'll renew. The bear stays out.",
+          "to": "andy",
+          "mood": "smug"
+        },
+        {
+          "type": "talking_head",
+          "who": "andy",
+          "lines": [
+            "I didn't prepare a pitch. I prepared a song. Dwight's memo banned banjos, not my spirit."
+          ],
+          "mood": "happy"
+        },
+        {
+          "type": "exit",
+          "who": [
+            "dale_pruitt"
+          ],
+          "how": "walk"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "A",
+      "set": "offsite",
+      "region": "venue",
+      "venue": "TONY'S TRATTORIA",
+      "present": [
+        "jim",
+        "pam",
+        "michael"
+      ],
+      "recap": "Jim tries to tell Pam how he feels, and Michael interrupts with a toast to Dale.",
+      "beats": [
+        {
+          "type": "enter",
+          "who": [
+            "jim"
+          ],
+          "to": "seat_5"
+        },
+        {
+          "type": "enter",
+          "who": [
+            "pam"
+          ],
+          "to": "seat_6"
+        },
+        {
+          "type": "enter",
+          "who": [
+            "michael"
+          ],
+          "to": "seat_1"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "You told Andy Dwight was wrong.",
+          "to": "jim",
+          "mood": "sarcastic"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "I told Andy a Post-it was right.",
+          "to": "pam",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Jim, I laughed. Don't—",
+          "to": "jim",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "Pam, can I say—",
+          "to": "pam",
+          "mood": "nervous"
+        },
+        {
+          "type": "action",
+          "who": "michael",
+          "verb": "present",
+          "target": "none",
+          "caption": "stands and taps a fork against his water glass"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "To Dale Pruitt, the bread of this company! Dale, you're the Pruitt of my heart.",
+          "to": "all",
+          "mood": "excited"
+        },
+        {
+          "type": "react",
+          "who": [
+            "pam"
+          ],
+          "reaction": "look_at_camera"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "Michael, we're in the middle of—",
+          "to": "michael",
+          "mood": "awkward"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Jim, that means you too, Big Tuna! Drink! The bread!",
+          "to": "jim",
+          "mood": "excited"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": "The toast ends in a clink nobody joins."
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Roy said he'd try.",
+          "to": "jim",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "I know. I'll drive you.",
+          "to": "pam",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "After lunch?",
+          "to": "jim",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "After lunch.",
+          "to": "pam",
+          "mood": "nervous"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "A",
+      "set": "parking_lot",
+      "region": "parking_lot",
+      "venue": "",
+      "present": [
+        "jim",
+        "pam",
+        "michael",
+        "toby"
+      ],
+      "recap": "In the parking lot, Jim finally starts to say it, and Michael's car door opens on a crying Michael with Toby in the passenger seat.",
+      "beats": [
+        {
+          "type": "enter",
+          "who": [
+            "jim",
+            "pam"
+          ],
+          "to": "car_jim"
+        },
+        {
+          "type": "enter",
+          "who": [
+            "michael",
+            "toby"
+          ],
+          "to": "car_michael"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "Pam, the thing I was going to say at lunch—",
+          "to": "pam",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "You can say it.",
+          "to": "jim",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "I—",
+          "to": "pam",
+          "mood": "nervous"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": "Michael's car door is open. Michael is crying into a tissue."
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Don't mind me. I'm allergic to Tony's.",
+          "to": "jim",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Michael?",
+          "to": "michael",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Dale wrote me a card. It says 'Michael calls back.'",
+          "to": "pam",
+          "mood": "sad"
+        },
+        {
+          "type": "talking_head",
+          "who": "jim",
+          "lines": [
+            "I had the sentence. I had it in my mouth.",
+            "Michael had a card and a tissue. Michael always has a tissue."
+          ],
+          "mood": "deadpan"
+        },
+        {
+          "type": "action",
+          "who": "pam",
+          "verb": "hug",
+          "target": "michael",
+          "caption": "leans into the car window and pats Michael's shoulder"
+        },
+        {
+          "type": "say",
+          "who": "toby",
+          "text": "I'm going to sit here a little longer.",
+          "to": "michael",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "Pam, later.",
+          "to": "pam",
+          "mood": "awkward"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "You keep saying later.",
+          "to": "jim",
+          "mood": "sarcastic"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "I know. It's a lot of later.",
+          "to": "pam",
+          "mood": "deadpan"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "B",
+      "set": "office",
+      "region": "conference_room",
+      "venue": "",
+      "present": [
+        "michael",
+        "pam",
+        "kevin",
+        "oscar"
+      ],
+      "recap": "Back at the office, Michael pins Dale's card to the Things I Love board and hides a tear behind a paper sample.",
+      "beats": [
+        {
+          "type": "action",
+          "who": "michael",
+          "verb": "present",
+          "target": "none",
+          "caption": "pins Dale's card to the board, beside the 61% and the M&Ms note"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Dale says I calls back. Dale is a man of few words and one of them was 'back.'",
+          "to": "pam",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "oscar",
+          "text": "Actually, Michael, that's the nicest thing Dale has written in twelve years. He called you 'back.'",
+          "to": "michael",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "Nobody say nothing.",
+          "to": "all",
+          "mood": "neutral"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": "Nobody says nothing. Michael looks at the card."
+        },
+        {
+          "type": "talking_head",
+          "who": "michael",
+          "lines": [
+            "I'm allergic to this board. It's a lot of love in one place.",
+            "I'm not crying. Dale would call back and say I'm crying. Dale would be right."
+          ],
+          "mood": "sad"
+        },
+        {
+          "type": "action",
+          "who": "michael",
+          "verb": "hide",
+          "target": "none",
+          "caption": "turns to the window and hides a tear behind a paper sample"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "It's Scranton pollen.",
+          "to": "michael",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "It's the pollen. It's a lot of pollen in the conference room.",
+          "to": "pam",
+          "mood": "happy"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "C",
+      "set": "break_room",
+      "region": "break_room",
+      "venue": "",
+      "present": [
+        "dwight",
+        "andy"
+      ],
+      "recap": "Dwight and Andy share a break room table; Dwight keeps the title, Andy keeps the crowd, and they re-sign the armed truce.",
+      "beats": [
+        {
+          "type": "move",
+          "who": "dwight",
+          "to": "table_2",
+          "pace": "walk"
+        },
+        {
+          "type": "move",
+          "who": "andy",
+          "to": "table_3",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Question: how did I lose a lunch?",
+          "to": "andy",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "You didn't lose, Dwight. Dale renewed. You got a bear joke and a reference to letterhead.",
+          "to": "dwight",
+          "mood": "happy"
+        },
+        {
+          "type": "action",
+          "who": "dwight",
+          "verb": "hide",
+          "target": "none",
+          "caption": "pockets the Post-it that reads DWIGHT IS WRONG, as evidence"
+        },
+        {
+          "type": "talking_head",
+          "who": "dwight",
+          "lines": [
+            "I am not a sore loser. I am a sore Acting Regional Manager. Those are different.",
+            "Halpert will be dealt with. Possibly in a memo."
+          ],
+          "mood": "angry"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "Armed truce?",
+          "to": "dwight",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Armed truce. I keep the title.",
+          "to": "andy",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "And I keep the crowd.",
+          "to": "dwight",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "A crowd is not a title.",
+          "to": "andy",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "Fanfare?",
+          "to": "dwight",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "No.",
+          "to": "andy",
+          "mood": "deadpan"
+        },
+        {
+          "type": "action",
+          "who": "andy",
+          "verb": "sing",
+          "target": "none",
+          "caption": "hums three notes of a fanfare, very softly, out of respect"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "...Fine.",
+          "to": "andy",
+          "mood": "neutral"
+        }
+      ]
+    },
+    {
+      "part": "tag",
+      "plot": "tag",
+      "set": "office",
+      "region": "bullpen",
+      "venue": "",
+      "present": [
+        "stanley",
+        "michael",
+        "kevin",
+        "oscar"
+      ],
+      "recap": "Stanley counts down to 205, and Michael's 'That's what she said' lands on silence.",
+      "beats": [
+        {
+          "type": "say",
+          "who": "stanley",
+          "text": "Two hundred and five.",
+          "to": "all",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Two hundred and five. That's what she said.",
+          "to": "stanley",
+          "mood": "happy"
+        },
+        {
+          "type": "pause",
+          "seconds": 3,
+          "caption": "Silence."
+        },
+        {
+          "type": "react",
+          "who": [
+            "stanley"
+          ],
+          "reaction": "stare"
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "Nobody say nothing.",
+          "to": "all",
+          "mood": "neutral"
+        },
+        {
+          "type": "react",
+          "who": [
+            "oscar"
+          ],
+          "reaction": "laugh"
+        }
+      ]
+    }
+  ]
+}

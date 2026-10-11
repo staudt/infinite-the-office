@@ -20,7 +20,7 @@ const BALLOON_LINES = 4;
 const TEXT = '#ececec';
 
 /** Small marker drawn above a head for ~1.5 s. */
-const MARKER: Record<Reaction, string> = {
+export const MARKER: Record<Reaction, string> = {
   look_at_camera: '[o]', eye_roll: '-.-', laugh: ':D', facepalm: 'T_T', stare: '?', sigh: '...', gasp: '!', cringe: '>_<', shrug: '~?~', cheer: '\\o/',
 };
 

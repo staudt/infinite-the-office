@@ -1,0 +1,1388 @@
+{
+  "title": "Big Red Mixer",
+  "logline": "Andy throws a Cornell mixer nobody wants to attend, Michael asks the office what it loves about him, and Jim sees Pam's art while a sticky-note prank on Dwight spirals into a crime wall.",
+  "outline": "A: Pam shows Jim her sketchbook; Jim is the only one who looks. They plan a one-Post-it prank on Dwight that escalates into his whole desk covered in Pam's drawings; Pam owns it at the meeting. B: Michael's \"Things I Love About Michael\" whiteboard gets a dud; Andy's Cornell mixer draws only Michael and Kevin, and Michael hides tears behind a receipt. Dwight vs. Andy: Andy tries too hard and backfires; an armed truce over a mug. C: Angela defends Dwight bizarrely; Oscar and Kevin know. Order: cold, A, B, C, A, B, A, B, A, C, B, tag.",
+  "theme": "Being seen: people want someone to actually look at them, not just applaud.",
+  "storySoFar": "Michael still chases Jan's approval; Jan keeps sending maybes and her voicemail said she isn't coming. Jim and Pam keep escalating Jell-O pranks on Dwight; Jim noticed Pam's earrings, and Roy noticed late and got it wrong. Pam is an artist; Jim is the first person to really look at her sketches. Roy keeps postponing the wedding. Angela thanks Dwight publicly for fax checks; Oscar and Kevin know the secret and say nothing. Andy Bernard arrived from Stamford and tries too hard to be liked; Dwight is at war with him, and a fragile truce is forming. Michael keeps setting out a folding chair for Toby, who sat in it once. Gerald Boyd gave Scranton a barely pass and may return. Stanley is at 212 days, counting down each morning.",
+  "extras": [],
+  "stateChanges": [
+    {
+      "type": "arc",
+      "arc": "Will They, Won't They: Jim and Pam",
+      "progress": "Pam shows Jim her sketchbook and he is the only one who looks; he shares the blame for the Post-it prank and she finds her voice by admitting she did it because nobody looks at what she makes."
+    },
+    {
+      "type": "arc",
+      "arc": "Michael Wants to Be Loved",
+      "progress": "The Things I Love About Michael board gets almost nothing; Michael hides tears behind a Big Red receipt at Andy's mixer, with only Kevin noticing."
+    },
+    {
+      "type": "arc",
+      "arc": "Dwight vs. Andy",
+      "progress": "Andy's mixer and mug backfire; Dwight and Andy reaffirm the split: Dwight keeps the title, Andy keeps the crowd, and they shake on it."
+    },
+    {
+      "type": "arc",
+      "arc": "Angela and Dwight Secret",
+      "progress": "Angela defends Dwight's face and honesty bizarrely in front of Oscar and Kevin; Oscar's look at the camera says everything; nobody says anything."
+    },
+    {
+      "type": "relationship",
+      "a": "jim",
+      "b": "pam",
+      "status": "closer; she shows him her art and he is the only one who looks"
+    },
+    {
+      "type": "note",
+      "text": "Pam's sticky-note drawings of Dwight are now on the conference room crime wall; Michael said he wants to see the rest of her work."
+    },
+    {
+      "type": "note",
+      "text": "Andy's Cornell mixer: only Michael and Kevin came. Andy's Big Red receipt ($34) is in Michael's wallet."
+    },
+    {
+      "type": "note",
+      "text": "Dwight attended the mixer 'in my capacity as Assistant to the Regional Manager.' Andy made him a Cornell mug; Dwight accepted it as a token of surrender."
+    },
+    {
+      "type": "gag",
+      "text": "Kevin: 'Nobody say nothing.' Used in the cold open, the prank, the mixer, and the Angela scene."
+    },
+    {
+      "type": "gag",
+      "text": "Stanley's countdown: 212 at the cold open, 211 in the tag."
+    },
+    {
+      "type": "gag",
+      "text": "Michael's 'Things I Love About Michael' board: one percentage (61%) from Dwight and an M&Ms note from Kevin."
+    }
+  ],
+  "scenes": [
+    {
+      "part": "cold_open",
+      "plot": "cold_open",
+      "set": "break_room",
+      "region": "break_room",
+      "venue": "",
+      "present": [
+        "andy",
+        "kevin",
+        "stanley"
+      ],
+      "recap": "Andy offers lopsided Cornell cookies to a break room that would rather not.",
+      "beats": [
+        {
+          "type": "enter",
+          "who": [
+            "andy"
+          ],
+          "to": "table_1"
+        },
+        {
+          "type": "enter",
+          "who": [
+            "kevin"
+          ],
+          "to": "table_3"
+        },
+        {
+          "type": "enter",
+          "who": [
+            "stanley"
+          ],
+          "to": "table_5"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "Good morning, Scranton! I baked Cornell cookies. Red and white. Go Big Red!",
+          "to": "all",
+          "mood": "excited"
+        },
+        {
+          "type": "action",
+          "who": "andy",
+          "verb": "present",
+          "target": "none",
+          "caption": "presents a tray of lopsided cookies like a championship trophy"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": "The microwave beeps. Nobody moves."
+        },
+        {
+          "type": "say",
+          "who": "stanley",
+          "text": "Those are not cookies, Andy. Those are a hostage situation.",
+          "to": "andy",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "It's my grandmother's recipe!",
+          "to": "stanley",
+          "mood": "neutral"
+        },
+        {
+          "type": "talking_head",
+          "who": "stanley",
+          "lines": [
+            "Andy wants everybody to like him. Two hundred and twelve days left for me. I'm not making it easier."
+          ],
+          "mood": "deadpan"
+        },
+        {
+          "type": "action",
+          "who": "kevin",
+          "verb": "eat",
+          "target": "none",
+          "caption": "takes five cookies and eats them in four slow bites"
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "Good cookie. Thank you.",
+          "to": "andy",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "Thank you, Kevin! Have another!",
+          "to": "kevin",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "Nobody say nothing.",
+          "to": "all",
+          "mood": "deadpan"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "A",
+      "set": "office",
+      "region": "reception",
+      "venue": "",
+      "present": [
+        "pam",
+        "jim"
+      ],
+      "recap": "Pam hesitantly shows Jim her sketchbook, and he is the only one who really looks.",
+      "beats": [
+        {
+          "type": "move",
+          "who": "jim",
+          "to": "pam_desk",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Don't look at this. It's really bad.",
+          "to": "jim",
+          "mood": "awkward"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "Okay.",
+          "to": "pam",
+          "mood": "neutral"
+        },
+        {
+          "type": "action",
+          "who": "jim",
+          "verb": "snoop",
+          "target": "pam",
+          "caption": "looks at the sketchbook for a long time, very carefully"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "This is the copier. It looks like it's about to sigh.",
+          "to": "pam",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "It does sigh. Every time.",
+          "to": "jim",
+          "mood": "happy"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": "Jim keeps turning the page."
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "You drew the water cooler. Nobody draws the water cooler.",
+          "to": "pam",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "It's where everybody stands. It's the middle of the office.",
+          "to": "jim",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "The reflection in it is really good, Pam.",
+          "to": "pam",
+          "mood": "neutral"
+        },
+        {
+          "type": "talking_head",
+          "who": "pam",
+          "lines": [
+            "Roy looked at my sketchbook for four seconds. He asked if the copier was supposed to be a dog.",
+            "It was a copier, Roy. Jim just knew it was a copier."
+          ],
+          "mood": "sarcastic"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "Keep drawing, okay?",
+          "to": "pam",
+          "mood": "happy"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "B",
+      "set": "office",
+      "region": "conference_room",
+      "venue": "",
+      "present": [
+        "michael",
+        "dwight",
+        "andy",
+        "kevin",
+        "stanley",
+        "toby",
+        "angela"
+      ],
+      "recap": "Michael asks the office to write one thing they love about him, and the board gets almost nothing.",
+      "beats": [
+        {
+          "type": "gather",
+          "who": [
+            "michael",
+            "dwight",
+            "andy",
+            "kevin",
+            "stanley",
+            "toby",
+            "angela"
+          ],
+          "to": "conference_room"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "This is a no-judgment zone. I want one thing you love about me. Anything.",
+          "to": "all",
+          "mood": "excited"
+        },
+        {
+          "type": "action",
+          "who": "michael",
+          "verb": "present",
+          "target": "none",
+          "caption": "writes THINGS I LOVE ABOUT MICHAEL across the whiteboard in fat letters"
+        },
+        {
+          "type": "pause",
+          "seconds": 3,
+          "caption": "The marker squeaks."
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "Your bold Scranton spirit! Your leadership! I love all of you, Michael. The whole you.",
+          "to": "michael",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Andy, that's a lot. That's a lot of me.",
+          "to": "andy",
+          "mood": "awkward"
+        },
+        {
+          "type": "action",
+          "who": "dwight",
+          "verb": "typing",
+          "target": "none",
+          "caption": "writes a percentage in tiny, precise block capitals"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "What's sixty-one percent?",
+          "to": "dwight",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Sixty-one percent of this office loves you. It is a fact.",
+          "to": "michael",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Who's the other thirty-nine?",
+          "to": "dwight",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Question: Do you want me to go through them?",
+          "to": "michael",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "No. No, I'm good.",
+          "to": "dwight",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "Michael. Also M&Ms.",
+          "to": "all",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Toby, you're not invited to this.",
+          "to": "toby",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "toby",
+          "text": "I'm in the room, Michael.",
+          "to": "michael",
+          "mood": "sad"
+        },
+        {
+          "type": "react",
+          "who": [
+            "toby"
+          ],
+          "reaction": "look_at_camera"
+        },
+        {
+          "type": "talking_head",
+          "who": "toby",
+          "lines": [
+            "He asks for feedback, then uninvites me from the feedback.",
+            "I've stopped taking it personally. Mostly."
+          ],
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "stanley",
+          "text": "Can we go? I'm counting.",
+          "to": "michael",
+          "mood": "annoyed"
+        },
+        {
+          "type": "pause",
+          "seconds": 3,
+          "caption": "One percentage, one M&Ms, and a whole lot of white board."
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Great. Honest feedback. Meeting adjourned. I'm a rock.",
+          "to": "all",
+          "mood": "happy"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "C",
+      "set": "office",
+      "region": "kitchen",
+      "venue": "",
+      "present": [
+        "angela",
+        "oscar",
+        "kevin",
+        "dwight"
+      ],
+      "recap": "Angela thanks Dwight in front of Oscar and Kevin and defends him in a way that makes no sense.",
+      "beats": [
+        {
+          "type": "move",
+          "who": "dwight",
+          "to": "kitchen_2",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "angela",
+          "text": "Dwight checked the fax again today. He is a very thorough man.",
+          "to": "oscar",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "oscar",
+          "text": "Actually, checking the fax is his job, Angela.",
+          "to": "angela",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "angela",
+          "text": "He did it well. Kevin, don't you agree?",
+          "to": "kevin",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "Nobody say nothing.",
+          "to": "all",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Question: Who is talking about me?",
+          "to": "all",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "angela",
+          "text": "Dwight, thank you for checking the fax. Publicly.",
+          "to": "dwight",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "It was jammed with cat hair. It is an honor to be thanked by a Party Planner.",
+          "to": "angela",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "angela",
+          "text": "Dwight would never draw on anything. He respects paper far too much. He is the most honest man in this building.",
+          "to": "oscar",
+          "mood": "smug"
+        },
+        {
+          "type": "react",
+          "who": [
+            "oscar"
+          ],
+          "reaction": "look_at_camera"
+        },
+        {
+          "type": "talking_head",
+          "who": "oscar",
+          "lines": [
+            "Angela has said Dwight's name six times in one minute. I'm an accountant. I counted.",
+            "Nobody is saying anything. That is the entire problem."
+          ],
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "oscar",
+          "text": "Dwight has a Jell-O trophy, Angela.",
+          "to": "angela",
+          "mood": "sarcastic"
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "Nobody say nothing.",
+          "to": "all",
+          "mood": "deadpan"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "A",
+      "set": "break_room",
+      "region": "break_room",
+      "venue": "",
+      "present": [
+        "jim",
+        "pam",
+        "kevin"
+      ],
+      "recap": "Jim and Pam plan a single tiny Post-it prank on Dwight, which Jim already knows is not going to stay tiny.",
+      "beats": [
+        {
+          "type": "enter",
+          "who": [
+            "jim"
+          ],
+          "to": "table_1"
+        },
+        {
+          "type": "enter",
+          "who": [
+            "pam"
+          ],
+          "to": "table_2"
+        },
+        {
+          "type": "enter",
+          "who": [
+            "kevin"
+          ],
+          "to": "table_3"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "Dwight's desk is sacred. We don't touch it.",
+          "to": "pam",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "We don't have to touch it. We could just leave one thing on it.",
+          "to": "jim",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "What thing?",
+          "to": "pam",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "A drawing. Of him. On a Post-it. It's very small.",
+          "to": "jim",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "Pam. That's the best idea we've had.",
+          "to": "pam",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Just one. On his monitor. He won't even notice.",
+          "to": "jim",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "Dwight notice everything. Dwight is police.",
+          "to": "all",
+          "mood": "deadpan"
+        },
+        {
+          "type": "react",
+          "who": [
+            "jim"
+          ],
+          "reaction": "look_at_camera"
+        },
+        {
+          "type": "talking_head",
+          "who": "jim",
+          "lines": [
+            "Pam draws like she's apologizing to the thing she's drawing.",
+            "I'm not saying I'm in love. I'm saying I'm holding the Post-its."
+          ],
+          "mood": "deadpan"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": "Kevin nods very slowly."
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "Nobody say nothing.",
+          "to": "all",
+          "mood": "deadpan"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "B",
+      "set": "office",
+      "region": "annex",
+      "venue": "",
+      "present": [
+        "andy",
+        "dwight",
+        "stanley",
+        "kelly"
+      ],
+      "recap": "Andy announces a Cornell mixer that nobody asked for, and Dwight treats it as a hostile takeover.",
+      "beats": [
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "Cornell alumni mixer! Today! Lunch! Annex! Bring your Big Red!",
+          "to": "all",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Question: Is this a mixer or a takeover?",
+          "to": "andy",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "It's a mixer, Dwight. For community.",
+          "to": "dwight",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "kelly",
+          "text": "Oh my god, is there a DJ?",
+          "to": "andy",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "I'm a DJ. Kind of. I have a banjo.",
+          "to": "kelly",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "stanley",
+          "text": "Will there be pretzels?",
+          "to": "andy",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "There will be pretzels.",
+          "to": "stanley",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "stanley",
+          "text": "Then I'm not going. I'm saving myself for Pretzel Day.",
+          "to": "andy",
+          "mood": "deadpan"
+        },
+        {
+          "type": "action",
+          "who": "andy",
+          "verb": "sing",
+          "target": "none",
+          "caption": "sings a verse of the Cornell fight song to the flyer"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": "The flyer curls at one corner."
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "False. You are trying to replace Michael's Friday lunch with a sing-along.",
+          "to": "andy",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "Maybe you could come? As, like, the ambassador?",
+          "to": "dwight",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Question: Is that a bribe? I will attend in my capacity as Assistant to the Regional Manager.",
+          "to": "andy",
+          "mood": "smug"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "A",
+      "set": "office",
+      "region": "bullpen",
+      "venue": "",
+      "present": [
+        "jim",
+        "pam",
+        "dwight",
+        "michael"
+      ],
+      "recap": "Jim and Pam's one-Post-it prank turns into Dwight's whole desk covered in Pam's drawings.",
+      "beats": [
+        {
+          "type": "move",
+          "who": "dwight",
+          "to": "copier",
+          "pace": "walk"
+        },
+        {
+          "type": "move",
+          "who": "jim",
+          "to": "dwight_desk",
+          "pace": "sneak"
+        },
+        {
+          "type": "move",
+          "who": "pam",
+          "to": "dwight_desk",
+          "pace": "sneak"
+        },
+        {
+          "type": "action",
+          "who": "jim",
+          "verb": "prank",
+          "target": "dwight",
+          "caption": "sticks a blank Post-it on the bottom of Dwight's monitor"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Just one.",
+          "to": "jim",
+          "mood": "nervous"
+        },
+        {
+          "type": "action",
+          "who": "pam",
+          "verb": "prank",
+          "target": "dwight",
+          "caption": "draws a tiny Dwight face on a second Post-it, very carefully"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "That's him. That's exactly him.",
+          "to": "pam",
+          "mood": "happy"
+        },
+        {
+          "type": "action",
+          "who": "pam",
+          "verb": "prank",
+          "target": "dwight",
+          "caption": "adds a third Post-it, then a fourth, then one on the stapler"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "Okay, now the stapler is in Jell-O.",
+          "to": "pam",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Jim, no—",
+          "to": "jim",
+          "mood": "panicked"
+        },
+        {
+          "type": "action",
+          "who": "jim",
+          "verb": "prank",
+          "target": "dwight",
+          "caption": "sets the stapler in lime Jell-O, then tapes drawings to the chair"
+        },
+        {
+          "type": "move",
+          "who": "dwight",
+          "to": "dwight_desk",
+          "pace": "hurry"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "False. Someone has been in my desk.",
+          "to": "all",
+          "mood": "angry"
+        },
+        {
+          "type": "move",
+          "who": "michael",
+          "to": "dwight_desk",
+          "pace": "hurry"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Dwight, why is your desk wearing your face?",
+          "to": "dwight",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "It is an attack. Question: Will you help me investigate?",
+          "to": "michael",
+          "mood": "angry"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Who would attack you?",
+          "to": "dwight",
+          "mood": "nervous"
+        },
+        {
+          "type": "action",
+          "who": "jim",
+          "verb": "hide",
+          "target": "none",
+          "caption": "slides a Post-it into his shirt pocket, face calm"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "B",
+      "set": "break_room",
+      "region": "break_room",
+      "venue": "",
+      "present": [
+        "michael",
+        "andy",
+        "kevin",
+        "stanley"
+      ],
+      "recap": "Andy's mixer draws Michael and Kevin, and Michael hides a tear behind a Big Red receipt.",
+      "beats": [
+        {
+          "type": "enter",
+          "who": [
+            "michael"
+          ],
+          "to": "table_4"
+        },
+        {
+          "type": "enter",
+          "who": [
+            "andy"
+          ],
+          "to": "table_2"
+        },
+        {
+          "type": "enter",
+          "who": [
+            "kevin"
+          ],
+          "to": "table_3"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "Michael! You came! Three people! That's a mixer by Cornell math.",
+          "to": "all",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "I'm not Cornell, Andy. I'm Scranton. But I like you.",
+          "to": "andy",
+          "mood": "happy"
+        },
+        {
+          "type": "action",
+          "who": "andy",
+          "verb": "sing",
+          "target": "none",
+          "caption": "sings the Cornell alma mater with one hand on his heart"
+        },
+        {
+          "type": "enter",
+          "who": [
+            "stanley"
+          ],
+          "to": "table_5"
+        },
+        {
+          "type": "say",
+          "who": "stanley",
+          "text": "Is this a mixer or a hostage situation?",
+          "to": "andy",
+          "mood": "deadpan"
+        },
+        {
+          "type": "action",
+          "who": "michael",
+          "verb": "search",
+          "target": "none",
+          "caption": "pulls a Big Red receipt for thirty-four dollars from his wallet"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Thirty-four dollars of soda. For a crowd of three.",
+          "to": "all",
+          "mood": "sad"
+        },
+        {
+          "type": "action",
+          "who": "michael",
+          "verb": "hide",
+          "target": "none",
+          "caption": "hides a tear behind the receipt"
+        },
+        {
+          "type": "talking_head",
+          "who": "michael",
+          "lines": [
+            "It's not crying. It's Big Red. It's a very strong drink.",
+            "I'm a rock. I'm a rock with a receipt."
+          ],
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "Nobody say nothing.",
+          "to": "michael",
+          "mood": "deadpan"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": "Andy beams. Stanley leaves."
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Best mixer I've ever been to. Honestly.",
+          "to": "all",
+          "mood": "happy"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "A",
+      "set": "office",
+      "region": "conference_room",
+      "venue": "",
+      "present": [
+        "michael",
+        "dwight",
+        "jim",
+        "pam",
+        "angela",
+        "oscar",
+        "kevin",
+        "andy"
+      ],
+      "recap": "At an emergency meeting, Pam admits to the drawings, and Jim admits he helped, and Michael asks to see more of her work.",
+      "beats": [
+        {
+          "type": "gather",
+          "who": [
+            "michael",
+            "dwight",
+            "jim",
+            "pam",
+            "angela",
+            "oscar",
+            "kevin",
+            "andy"
+          ],
+          "to": "conference_room"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Someone has been drawing on Dwight. This is now a crime room.",
+          "to": "all",
+          "mood": "excited"
+        },
+        {
+          "type": "action",
+          "who": "michael",
+          "verb": "present",
+          "target": "none",
+          "caption": "pins Pam's Post-its across the whiteboard like evidence"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Question: Is this about the Jell-O?",
+          "to": "michael",
+          "mood": "angry"
+        },
+        {
+          "type": "say",
+          "who": "oscar",
+          "text": "Actually, these are good. Someone drew the eyes.",
+          "to": "all",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "The eyes are not me. I do not have that expression.",
+          "to": "oscar",
+          "mood": "annoyed"
+        },
+        {
+          "type": "react",
+          "who": [
+            "jim"
+          ],
+          "reaction": "stare"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Who did this?",
+          "to": "all",
+          "mood": "nervous"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": "Pam raises her hand, then lowers it."
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "I did. Dwight, I'm sorry. I did it.",
+          "to": "dwight",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "I stuck them up. That's basically drawing.",
+          "to": "all",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Question: Why?",
+          "to": "pam",
+          "mood": "angry"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Because nobody here looks at anything I make.",
+          "to": "dwight",
+          "mood": "sad"
+        },
+        {
+          "type": "pause",
+          "seconds": 3,
+          "caption": "Jim is looking at her. Nobody else is."
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Pam, I'd like to see the rest. Show me the rest.",
+          "to": "pam",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Okay.",
+          "to": "michael",
+          "mood": "happy"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "C",
+      "set": "office",
+      "region": "kitchen",
+      "venue": "",
+      "present": [
+        "angela",
+        "oscar",
+        "kevin",
+        "dwight"
+      ],
+      "recap": "Angela defends Dwight's face as though it were a national treasure, and nobody follows up.",
+      "beats": [
+        {
+          "type": "move",
+          "who": "dwight",
+          "to": "kitchen_2",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "angela",
+          "text": "Whoever did this is a monster. Dwight's face is precious.",
+          "to": "oscar",
+          "mood": "angry"
+        },
+        {
+          "type": "say",
+          "who": "oscar",
+          "text": "Angela, it's a face on a Post-it.",
+          "to": "angela",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "angela",
+          "text": "It's his face. Dwight deserves someone who respects his face.",
+          "to": "oscar",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "Nobody say nothing.",
+          "to": "all",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Thank you, Angela.",
+          "to": "angela",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "angela",
+          "text": "I'm not thanking you. I'm thanking the fax.",
+          "to": "dwight",
+          "mood": "awkward"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": "Oscar looks at the ceiling. Kevin opens a bag of M&Ms."
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Noted.",
+          "to": "angela",
+          "mood": "happy"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "B",
+      "set": "office",
+      "region": "annex",
+      "venue": "",
+      "present": [
+        "andy",
+        "dwight"
+      ],
+      "recap": "Andy gives Dwight a Cornell mug and tries too hard, and the two shake on an armed truce.",
+      "beats": [
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "Dwight. I got you a Cornell mug. I'm trying here.",
+          "to": "dwight",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Question: Is this a bribe?",
+          "to": "andy",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "No! Also, I put your name on the mixer gift card.",
+          "to": "dwight",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "It says Dwight Schrute, Assistant to the Regional Manager. That is a conspiracy.",
+          "to": "andy",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "I wanted you to feel valued!",
+          "to": "dwight",
+          "mood": "neutral"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": "Andy's hand is still out, holding the mug."
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "You keep the crowd. I keep the title.",
+          "to": "andy",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "Deal. Can we shake on it?",
+          "to": "dwight",
+          "mood": "happy"
+        },
+        {
+          "type": "action",
+          "who": "dwight",
+          "verb": "hug",
+          "target": "andy",
+          "caption": "shakes Andy's hand once, firmly, like a hostage exchange"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "Okay. I'm also working on my anger.",
+          "to": "dwight",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Noted.",
+          "to": "andy",
+          "mood": "smug"
+        }
+      ]
+    },
+    {
+      "part": "tag",
+      "plot": "tag",
+      "set": "parking_lot",
+      "region": "parking_lot",
+      "venue": "",
+      "present": [
+        "jim",
+        "pam",
+        "stanley"
+      ],
+      "recap": "In the parking lot, Pam says Roy missed the earrings again, and Jim says they're the good ones.",
+      "beats": [
+        {
+          "type": "enter",
+          "who": [
+            "jim"
+          ],
+          "to": "parking_lot"
+        },
+        {
+          "type": "enter",
+          "who": [
+            "pam"
+          ],
+          "to": "parking_lot"
+        },
+        {
+          "type": "enter",
+          "who": [
+            "stanley"
+          ],
+          "to": "parking_lot"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Roy didn't notice my earrings again.",
+          "to": "jim",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "They're the good ones.",
+          "to": "pam",
+          "mood": "happy"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": "Pam touches one earring and smiles."
+        },
+        {
+          "type": "talking_head",
+          "who": "jim",
+          "lines": [
+            "Roy didn't notice the earrings again.",
+            "I noticed. I'm not saying that's a big deal. It's a big deal."
+          ],
+          "mood": "deadpan"
+        },
+        {
+          "type": "move",
+          "who": "stanley",
+          "to": "car_stanley",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "stanley",
+          "text": "Two hundred and eleven. Don't talk to me.",
+          "to": "all",
+          "mood": "deadpan"
+        }
+      ]
+    }
+  ]
+}

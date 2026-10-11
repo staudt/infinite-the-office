@@ -1,0 +1,262 @@
+{
+ "props": {
+  "wardrobe": {
+   "src": "props/wardrobe.png",
+   "w": 73,
+   "h": 142
+  },
+  "wall_picture": {
+   "src": "props/wall_picture.png",
+   "w": 84,
+   "h": 54
+  },
+  "plant_tall": {
+   "src": "props/plant_tall.png",
+   "w": 68,
+   "h": 123
+  },
+  "reception_desk_curved": {
+   "src": "props/reception_desk_curved.png",
+   "w": 206,
+   "h": 150
+  },
+  "couch_lamp": {
+   "src": "props/couch_lamp.png",
+   "w": 188,
+   "h": 109
+  },
+  "armchair": {
+   "src": "props/armchair.png",
+   "w": 77,
+   "h": 85
+  },
+  "credenza_shelf": {
+   "src": "props/credenza_shelf.png",
+   "w": 118,
+   "h": 99
+  },
+  "filing_cabinet_plant": {
+   "src": "props/filing_cabinet_plant.png",
+   "w": 51,
+   "h": 103
+  },
+  "conference_table": {
+   "src": "props/conference_table.png",
+   "w": 305,
+   "h": 116
+  },
+  "whiteboard": {
+   "src": "props/whiteboard.png",
+   "w": 87,
+   "h": 118
+  },
+  "desk_small": {
+   "src": "props/desk_small.png",
+   "w": 142,
+   "h": 103
+  },
+  "counter_boxes": {
+   "src": "props/counter_boxes.png",
+   "w": 288,
+   "h": 107
+  },
+  "reception_desk_curved_2": {
+   "src": "props/reception_desk_curved_2.png",
+   "w": 209,
+   "h": 165
+  },
+  "bookshelf_tall": {
+   "src": "props/bookshelf_tall.png",
+   "w": 106,
+   "h": 172
+  },
+  "printer_filing_cabinet": {
+   "src": "props/printer_filing_cabinet.png",
+   "w": 80,
+   "h": 92
+  },
+  "desk_copier": {
+   "src": "props/desk_copier.png",
+   "w": 119,
+   "h": 93
+  },
+  "bookshelf_low": {
+   "src": "props/bookshelf_low.png",
+   "w": 95,
+   "h": 114
+  },
+  "desk_pod_stacked": {
+   "src": "props/desk_pod_stacked.png",
+   "w": 220,
+   "h": 140
+  },
+  "desk_pod_a": {
+   "src": "props/desk_pod_a.png",
+   "w": 141,
+   "h": 149
+  },
+  "desk_pod_b": {
+   "src": "props/desk_pod_b.png",
+   "w": 165,
+   "h": 185
+  },
+  "desk_pod_c": {
+   "src": "props/desk_pod_c.png",
+   "w": 164,
+   "h": 172
+  },
+  "counter_printer": {
+   "src": "props/counter_printer.png",
+   "w": 253,
+   "h": 105
+  },
+  "plant_tall_2": {
+   "src": "props/plant_tall_2.png",
+   "w": 62,
+   "h": 125
+  },
+  "kitchen_counter": {
+   "src": "props/kitchen_counter.png",
+   "w": 292,
+   "h": 107
+  },
+  "plant_tall_3": {
+   "src": "props/plant_tall_3.png",
+   "w": 65,
+   "h": 131
+  },
+  "bookshelf_files": {
+   "src": "props/bookshelf_files.png",
+   "w": 94,
+   "h": 160
+  },
+  "desk_manager": {
+   "src": "props/desk_manager.png",
+   "w": 186,
+   "h": 117
+  },
+  "desk_small_2": {
+   "src": "props/desk_small_2.png",
+   "w": 150,
+   "h": 116
+  },
+  "coat_rack": {
+   "src": "props/coat_rack.png",
+   "w": 29,
+   "h": 110
+  },
+  "file_cabinet_plant": {
+   "src": "props/file_cabinet_plant.png",
+   "w": 51,
+   "h": 99
+  },
+  "shelf_papers": {
+   "src": "props/shelf_papers.png",
+   "w": 67,
+   "h": 154
+  },
+  "plant_tall_4": {
+   "src": "props/plant_tall_4.png",
+   "w": 66,
+   "h": 131
+  },
+  "michael_desk": {
+   "src": "props/michael_desk.png",
+   "w": 166,
+   "h": 153
+  },
+  "coat_rack_jackets": {
+   "src": "props/coat_rack_jackets.png",
+   "w": 33,
+   "h": 96
+  },
+  "bookshelf_dark": {
+   "src": "props/bookshelf_dark.png",
+   "w": 78,
+   "h": 118
+  },
+  "globe_cabinet": {
+   "src": "props/globe_cabinet.png",
+   "w": 85,
+   "h": 108
+  },
+  "copier_cabinet": {
+   "src": "props/copier_cabinet.png",
+   "w": 99,
+   "h": 110
+  },
+  "supply_counter": {
+   "src": "props/supply_counter.png",
+   "w": 340,
+   "h": 126
+  },
+  "wall_map": {
+   "src": "props/wall_map.png",
+   "w": 64,
+   "h": 84
+  },
+  "round_table": {
+   "src": "props/round_table.png",
+   "w": 86,
+   "h": 84
+  },
+  "filing_cabinet_stack": {
+   "src": "props/filing_cabinet_stack.png",
+   "w": 78,
+   "h": 117
+  },
+  "chair_front": {
+   "src": "props/chair_front.png",
+   "w": 267,
+   "h": 357
+  },
+  "chair_back": {
+   "src": "props/chair_back.png",
+   "w": 266,
+   "h": 299
+  },
+  "chair_side": {
+   "src": "props/chair_side.png",
+   "w": 229,
+   "h": 358
+  }
+ },
+ "anims": {
+  "pam_walk_front": {
+   "src": "pam_walk_front.png",
+   "frameW": 72,
+   "frameH": 130,
+   "frames": 5,
+   "anchorX": 36,
+   "anchorY": 129
+  },
+  "pam_walk_back": {
+   "src": "pam_walk_back.png",
+   "frameW": 68,
+   "frameH": 128,
+   "frames": 5,
+   "anchorX": 34,
+   "anchorY": 127
+  },
+  "pam_walk_side": {
+   "src": "pam_walk_side.png",
+   "frameW": 66,
+   "frameH": 129,
+   "frames": 5,
+   "anchorX": 33,
+   "anchorY": 128
+  }
+ },
+ "images": {
+  "pam_head": {
+   "src": "pam_head.png",
+   "w": 601,
+   "h": 800
+  },
+  "head_bg": {
+   "src": "head_bg.png",
+   "w": 1280,
+   "h": 720
+  }
+ }
+}

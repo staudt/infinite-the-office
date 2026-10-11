@@ -1,0 +1,1151 @@
+{
+  "title": "Date Mike",
+  "logline": "Michael takes Jan to lunch at CHILI'S and tries to become her favorite, while Jim and Pam's Stamford hologram prank on Dwight escapes into the real world and Michael takes the blame.",
+  "outline": "A: Michael plans a lunch date with Jan at CHILI'S as \"Date Mike,\" fails, and is taken in by the office. B: Dwight and Andy fight to co-host the 3 p.m. Corporate call and finally agree to partner. C: Pam feels guilty as Karen's Stamford hologram prank on Dwight escalates until the real David Wallace walks in, and Michael takes the blame. Order: cold, A, B, C, A, B, C, A, C, B, A, tag.",
+  "theme": "Being loved means being present, and choosing who you are when no one is grading you.",
+  "storySoFar": "Jim is in Stamford, calling and emailing Pam; Karen Filippelli is now part of his prank and his messages, and Pam's unanswered card and unsent drafts sit in her drawer. Pam has a secret Tuesday watercolor class and has not told Jim; Michael knows and says he's not Jim. Michael covered for Pam once on the phone and says he won't again. Michael wants Jan's approval; Jan calls his kindness disgusting. Dwight and Andy co-chair Love Board 2.0 and now fight to run the 3 p.m. Corporate hologram call. Stanley is at 189 days, with Kevin closing every countdown joke with \"Nobody say nothing.\"",
+  "extras": [],
+  "stateChanges": [
+    {
+      "type": "relationship",
+      "a": "dwight",
+      "b": "andy",
+      "status": "grudging partners for the Monday Corporate call"
+    },
+    {
+      "type": "relationship",
+      "a": "michael",
+      "b": "jan",
+      "status": "lunch went badly; Jan says his kindness is disgusting"
+    },
+    {
+      "type": "relationship",
+      "a": "michael",
+      "b": "pam",
+      "status": "Michael took the blame for the hologram to protect her and Jim"
+    },
+    {
+      "type": "arc",
+      "arc": "The Card on Pam's Desk",
+      "progress": "Jim's Stamford hologram prank reached David Wallace in person; Pam feels guilty and Jim's card is still unanswered. Pam has not told Jim about the class or that Michael took the blame."
+    },
+    {
+      "type": "arc",
+      "arc": "Michael Wants to Be the Favorite",
+      "progress": "Michael's Jan lunch failed and Jan called his kindness disgusting; the office intervened with honest feedback and Toby's 'be present'; Michael took the blame for Pam and Jim."
+    },
+    {
+      "type": "arc",
+      "arc": "Dwight vs Andy for Number Two",
+      "progress": "Dwight and Andy are grudging partners for Monday's 3 p.m. Corporate call with David Wallace; Dwight is thrilled and Andy is still working on his anger."
+    },
+    {
+      "type": "arc",
+      "arc": "Stanley's Countdown",
+      "progress": "Stanley at 189 in the tag; Stanley almost gave Michael real dating advice."
+    },
+    {
+      "type": "note",
+      "text": "David Wallace came to Scranton in person. He said Monday 3 p.m. Corporate call with Dwight, Andy and Michael; Michael is the one on the hook for the hologram."
+    },
+    {
+      "type": "note",
+      "text": "Karen's Stamford booking reached Corporate's calendar; Stamford may now be exposed on Monday."
+    },
+    {
+      "type": "gag",
+      "text": "Jan calls Michael's kindness disgusting; Michael's 'That's what she said' dies on silence."
+    },
+    {
+      "type": "gag",
+      "text": "Stanley's countdown: 190 in the cold open, 189 in the tag; Kevin closes with 'Nobody say nothing.'"
+    },
+    {
+      "type": "gag",
+      "text": "Andy's bear-paw banjo hold music; Oscar: 'Actually, that's a banjo on hold.'"
+    }
+  ],
+  "scenes": [
+    {
+      "part": "cold_open",
+      "plot": "cold_open",
+      "set": "office",
+      "region": "bullpen",
+      "venue": "",
+      "present": [
+        "michael",
+        "stanley",
+        "kevin",
+        "oscar"
+      ],
+      "recap": "Michael tries his countdown joke on Stanley at 190 days and it dies on silence.",
+      "beats": [
+        {
+          "type": "move",
+          "who": "michael",
+          "to": "stanley_desk",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Stanley, one ninety. That's a big number. A big, big number.",
+          "to": "stanley",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "stanley",
+          "text": "It's a number, Michael. It's not a feeling.",
+          "to": "michael",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Well. That's what she said.",
+          "to": "stanley",
+          "mood": "smug"
+        },
+        {
+          "type": "pause",
+          "seconds": 3,
+          "caption": "Silence. Stanley goes back to his crossword."
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "Nobody say nothing.",
+          "to": "all",
+          "mood": "deadpan"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "A",
+      "set": "office",
+      "region": "conference_room",
+      "venue": "",
+      "present": [
+        "michael",
+        "angela",
+        "oscar",
+        "toby",
+        "dwight"
+      ],
+      "recap": "Michael announces a lunch date with Jan and the office sets rules for Date Mike.",
+      "beats": [
+        {
+          "type": "gather",
+          "who": [
+            "michael",
+            "angela",
+            "oscar",
+            "toby",
+            "dwight"
+          ],
+          "to": "conference_room"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Jan is taking me to lunch today. At CHILI'S. This is a date. Dates are my specialty.",
+          "to": "all",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "angela",
+          "text": "Jan is a Vice President. Vice Presidents do not date regional managers.",
+          "to": "michael",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "We have history. I am the history.",
+          "to": "angela",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Question: Are you bringing the candles?",
+          "to": "michael",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Two candles. One for the table. One for the soul.",
+          "to": "dwight",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "oscar",
+          "text": "Actually, if she's not paying, it's not a business lunch. It's just lunch.",
+          "to": "all",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "toby",
+          "text": "Just be present, Michael.",
+          "to": "michael",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "I'm always present, Toby. It's my gift.",
+          "to": "toby",
+          "mood": "smug"
+        },
+        {
+          "type": "talking_head",
+          "who": "michael",
+          "lines": [
+            "Jan and I are on the same page. The page is me.",
+            "I'm going to be so present she'll need a bigger table."
+          ],
+          "mood": "smug"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": "Michael adjusts his tie in the reflection of a Serenity by…"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "B",
+      "set": "office",
+      "region": "bullpen",
+      "venue": "",
+      "present": [
+        "dwight",
+        "andy",
+        "oscar"
+      ],
+      "recap": "Dwight and Andy argue over who runs the 3 p.m. Corporate call while the banjo hold music plays.",
+      "beats": [
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Question: Who runs the three o'clock call while Michael is at lunch?",
+          "to": "andy",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "Me. Regional Director in Charge of Sales. And Cornell.",
+          "to": "dwight",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "False. I am Assistant to the Regional Manager. You are a director of hold music.",
+          "to": "andy",
+          "mood": "annoyed"
+        },
+        {
+          "type": "action",
+          "who": "andy",
+          "verb": "phone_call",
+          "target": "none",
+          "caption": "bear-paw phone plays banjo hold music across the bullpen"
+        },
+        {
+          "type": "say",
+          "who": "oscar",
+          "text": "Actually, that's a banjo on hold.",
+          "to": "all",
+          "mood": "deadpan"
+        },
+        {
+          "type": "react",
+          "who": [
+            "oscar"
+          ],
+          "reaction": "look_at_camera"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "It's a Cornell bear-paw, Oscar. Please don't Actually it.",
+          "to": "oscar",
+          "mood": "annoyed"
+        },
+        {
+          "type": "talking_head",
+          "who": "andy",
+          "lines": [
+            "Dwight wants my chair. I want my chair. Michael wants us both to sing.",
+            "I'm working on my anger. It's going great."
+          ],
+          "mood": "angry"
+        },
+        {
+          "type": "move",
+          "who": "dwight",
+          "to": "dwight_desk",
+          "pace": "walk"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "C",
+      "set": "office",
+      "region": "reception",
+      "venue": "",
+      "present": [
+        "pam",
+        "kelly"
+      ],
+      "recap": "Pam reads Jim's email about Karen's Stamford conference room and Kelly pushes for drama.",
+      "beats": [
+        {
+          "type": "move",
+          "who": "kelly",
+          "to": "pam_desk",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Jim says Karen booked a conference room in Stamford for the hologram. It's a whole production.",
+          "to": "kelly",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "kelly",
+          "text": "Who is Karen? Is she the one from the dinner?",
+          "to": "pam",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "She's his ex. And now she's helping with the prank.",
+          "to": "kelly",
+          "mood": "awkward"
+        },
+        {
+          "type": "say",
+          "who": "kelly",
+          "text": "Ooh. Is it a prank or a romance? Ryan says those are the same thing.",
+          "to": "pam",
+          "mood": "excited"
+        },
+        {
+          "type": "react",
+          "who": [
+            "pam"
+          ],
+          "reaction": "look_at_camera"
+        },
+        {
+          "type": "talking_head",
+          "who": "pam",
+          "lines": [
+            "I want to cancel it. But I also want to see Dwight's face when it works.",
+            "Jim's card is still on my desk. Karen is on his email. Dwight gets a hologram. I get a headache."
+          ],
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "I could just call Jim and say stop.",
+          "to": "kelly",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "kelly",
+          "text": "Or you could say the thing on the card.",
+          "to": "pam",
+          "mood": "neutral"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": "Pam picks up her phone, looks at it, and puts it face down."
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "A",
+      "set": "break_room",
+      "region": "break_room",
+      "venue": "",
+      "present": [
+        "michael",
+        "stanley"
+      ],
+      "recap": "Michael asks Stanley for dating advice and Stanley almost gives him some.",
+      "beats": [
+        {
+          "type": "enter",
+          "who": [
+            "stanley"
+          ],
+          "to": "table_2"
+        },
+        {
+          "type": "enter",
+          "who": [
+            "michael"
+          ],
+          "to": "table_1"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Stanley, I need advice. Jan. Lunch. What do I do?",
+          "to": "stanley",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "stanley",
+          "text": "Let her pick the restaurant.",
+          "to": "michael",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "I already picked CHILI'S.",
+          "to": "stanley",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "stanley",
+          "text": "Then let her pick the dessert. Let her leave early if she wants. Don't follow her to the parking lot.",
+          "to": "michael",
+          "mood": "deadpan"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": "Stanley looks up from the crossword."
+        },
+        {
+          "type": "say",
+          "who": "stanley",
+          "text": "Ask her one question about herself. Then shut up for a minute.",
+          "to": "michael",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "That's... that's good advice, Stanley.",
+          "to": "stanley",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "stanley",
+          "text": "Did I stutter?",
+          "to": "michael",
+          "mood": "annoyed"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "B",
+      "set": "office",
+      "region": "conference_room",
+      "venue": "",
+      "present": [
+        "dwight",
+        "andy",
+        "oscar"
+      ],
+      "recap": "Dwight and Andy fight over the projector and the sing-along until Oscar shoots it down.",
+      "beats": [
+        {
+          "type": "move",
+          "who": "dwight",
+          "to": "conf_front",
+          "pace": "walk"
+        },
+        {
+          "type": "move",
+          "who": "andy",
+          "to": "conf_1",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Question: Who sits at the head of the table during a call with Corporate?",
+          "to": "andy",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "The Director in Charge of Sales. It's on my door.",
+          "to": "dwight",
+          "mood": "smug"
+        },
+        {
+          "type": "action",
+          "who": "dwight",
+          "verb": "present",
+          "target": "none",
+          "caption": "fiddles with the projector cable like it owes him money"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "Let's do a sing-along for Corporate. Here Comes Treble. Live.",
+          "to": "dwight",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "False. Corporate does not sing.",
+          "to": "andy",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "oscar",
+          "text": "Actually, a hologram of David Wallace singing would be the worst thing that has ever happened in this building.",
+          "to": "dwight",
+          "mood": "deadpan"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "C",
+      "set": "office",
+      "region": "reception",
+      "venue": "",
+      "present": [
+        "pam",
+        "michael"
+      ],
+      "recap": "Michael tells Pam he knows about her Tuesday class and promises to keep quiet, or maybe not.",
+      "beats": [
+        {
+          "type": "move",
+          "who": "michael",
+          "to": "pam_desk",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Pam. I know about Tuesday. The watercolor class.",
+          "to": "pam",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "I'm sorry, what class?",
+          "to": "michael",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "The Scranton Community Center. Painting. Your art.",
+          "to": "pam",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "How do you even know that?",
+          "to": "michael",
+          "mood": "awkward"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "I'm not Jim. I'm not going to tell him. Probably not.",
+          "to": "pam",
+          "mood": "smug"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": "Pam slides a napkin that says TUESDAY 6:30 over her drawer."
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Thank you.",
+          "to": "michael",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Don't thank me. Thank Stanley, he gave me dating advice. It's awful.",
+          "to": "pam",
+          "mood": "awkward"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "A",
+      "set": "offsite",
+      "region": "venue",
+      "venue": "CHILI'S",
+      "present": [
+        "michael",
+        "jan"
+      ],
+      "recap": "Michael's lunch with Jan at CHILI'S goes sour when she takes Stamford calls and calls his kindness disgusting.",
+      "beats": [
+        {
+          "type": "enter",
+          "who": [
+            "michael"
+          ],
+          "to": "seat_1"
+        },
+        {
+          "type": "enter",
+          "who": [
+            "jan"
+          ],
+          "to": "seat_2"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "I ordered you the Southwest chicken. It's the only thing on this menu with a personality.",
+          "to": "jan",
+          "mood": "excited"
+        },
+        {
+          "type": "action",
+          "who": "jan",
+          "verb": "phone_call",
+          "target": "none",
+          "caption": "takes a Stamford call and holds up one finger"
+        },
+        {
+          "type": "pause",
+          "seconds": 3,
+          "caption": "Michael eats a tortilla chip. Quietly."
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "I got you a gift. It's a candle. Serenity by Jan. It smells like you.",
+          "to": "jan",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "jan",
+          "text": "Michael, that's disgusting. You're being nice to me. Stop it.",
+          "to": "michael",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Disgusting? Is that a compliment?",
+          "to": "jan",
+          "mood": "awkward"
+        },
+        {
+          "type": "talking_head",
+          "who": "jan",
+          "lines": [
+            "He's a sweet man. He'd be much easier to date if he were a worse one."
+          ],
+          "mood": "deadpan"
+        },
+        {
+          "type": "exit",
+          "who": [
+            "jan"
+          ],
+          "how": "walk"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Well. That's what she said.",
+          "to": "none",
+          "mood": "sad"
+        },
+        {
+          "type": "pause",
+          "seconds": 3,
+          "caption": "Silence. Michael reaches for the Southwest chicken, alone."
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "C",
+      "set": "office",
+      "region": "conference_room",
+      "venue": "",
+      "present": [
+        "dwight",
+        "andy",
+        "pam",
+        "oscar",
+        "kevin"
+      ],
+      "recap": "At three o'clock the Stamford hologram flickers on, and the real David Wallace walks in to ask who is in the hologram.",
+      "beats": [
+        {
+          "type": "caption",
+          "text": "3:00 P.M."
+        },
+        {
+          "type": "action",
+          "who": "dwight",
+          "verb": "present",
+          "target": "none",
+          "caption": "sets the projector to 'Corporate' and dims the lights"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Question: Is everyone sitting in the correct order? Do not stand near the screen.",
+          "to": "all",
+          "mood": "smug"
+        },
+        {
+          "type": "action",
+          "who": "dwight",
+          "verb": "present",
+          "target": "none",
+          "caption": "a blurry suited figure blinks onto the screen in front of a Stamford backdrop"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Question: Is that David Wallace? He looks like a man who has been to Stamford.",
+          "to": "all",
+          "mood": "excited"
+        },
+        {
+          "type": "react",
+          "who": [
+            "pam"
+          ],
+          "reaction": "facepalm"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "Dwight, sing with me. For Corporate.",
+          "to": "dwight",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "oscar",
+          "text": "Actually, the hologram is buffering.",
+          "to": "andy",
+          "mood": "deadpan"
+        },
+        {
+          "type": "enter",
+          "who": [
+            "david"
+          ],
+          "to": "conf_4"
+        },
+        {
+          "type": "say",
+          "who": "david",
+          "text": "I got a calendar invite for a hologram call with Dwight. At three. I'm in Scranton. Is this a hologram?",
+          "to": "all",
+          "mood": "awkward"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Question: Are you a hologram?",
+          "to": "david",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "david",
+          "text": "No, Dwight. I'm the CFO.",
+          "to": "dwight",
+          "mood": "deadpan"
+        },
+        {
+          "type": "enter",
+          "who": [
+            "michael"
+          ],
+          "to": "conf_5"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Mr. Wallace! It was me. I set up the hologram. I'm responsible for all of it.",
+          "to": "david",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "False. You were at CHILI'S. I saw the chicken.",
+          "to": "michael",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "I'm the regional manager. A hologram is a Scranton problem. So it's my problem.",
+          "to": "david",
+          "mood": "sad"
+        },
+        {
+          "type": "react",
+          "who": [
+            "pam"
+          ],
+          "reaction": "look_at_camera"
+        },
+        {
+          "type": "say",
+          "who": "david",
+          "text": "Michael, you're the regional manager of a hologram?",
+          "to": "michael",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "david",
+          "text": "Monday. Three o'clock. Corporate. Dwight, Andy, and you, Michael. Please don't be a hologram.",
+          "to": "all",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Confirmed.",
+          "to": "david",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Michael, you didn't have to do that.",
+          "to": "michael",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "I'm not doing it for you. I'm doing it for the paper.",
+          "to": "pam",
+          "mood": "awkward"
+        },
+        {
+          "type": "exit",
+          "who": [
+            "david"
+          ],
+          "how": "walk"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "B",
+      "set": "office",
+      "region": "bullpen",
+      "venue": "",
+      "present": [
+        "dwight",
+        "andy",
+        "oscar"
+      ],
+      "recap": "Dwight and Andy agree to share Monday's call and shake on it, while the banjo ruins the moment.",
+      "beats": [
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "We're on the Corporate call together. Partners.",
+          "to": "dwight",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Question: Are we partners, or are you just standing in my light?",
+          "to": "andy",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "Partners. You take the screen. I'll take the sound.",
+          "to": "dwight",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "False. Sound is for the chair.",
+          "to": "andy",
+          "mood": "smug"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": "Andy extends a hand. Dwight regards it like a beet he did…"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Fine. Grudgingly. This is a grudging shake.",
+          "to": "andy",
+          "mood": "neutral"
+        },
+        {
+          "type": "action",
+          "who": "andy",
+          "verb": "high_five",
+          "target": "none",
+          "caption": "shakes Dwight's hand, then wipes his palm on his tie"
+        },
+        {
+          "type": "action",
+          "who": "andy",
+          "verb": "phone_call",
+          "target": "none",
+          "caption": "bear-paw phone plays banjo hold music at full volume"
+        },
+        {
+          "type": "say",
+          "who": "oscar",
+          "text": "Actually, Andy, that's a banjo on hold.",
+          "to": "all",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "It's a lifestyle, Oscar.",
+          "to": "oscar",
+          "mood": "smug"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "A",
+      "set": "break_room",
+      "region": "break_room",
+      "venue": "",
+      "present": [
+        "michael",
+        "toby",
+        "angela",
+        "oscar",
+        "kelly",
+        "phyllis"
+      ],
+      "recap": "The office gathers in the break room to tell Michael his kindness is not disgusting, and Toby asks him a real question.",
+      "beats": [
+        {
+          "type": "enter",
+          "who": [
+            "michael"
+          ],
+          "to": "table_3"
+        },
+        {
+          "type": "enter",
+          "who": [
+            "toby",
+            "angela"
+          ],
+          "to": "table_4"
+        },
+        {
+          "type": "enter",
+          "who": [
+            "kelly",
+            "phyllis",
+            "oscar"
+          ],
+          "to": "table_5"
+        },
+        {
+          "type": "say",
+          "who": "kelly",
+          "text": "Jan called you disgusting? That's disgusting.",
+          "to": "michael",
+          "mood": "sarcastic"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "She said I was being kind.",
+          "to": "kelly",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "angela",
+          "text": "Kindness is not a Serenity by Jan candle, Michael.",
+          "to": "michael",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "phyllis",
+          "text": "You were lovely. Jan is just very cold. Like a walk-in.",
+          "to": "michael",
+          "mood": "sarcastic"
+        },
+        {
+          "type": "say",
+          "who": "toby",
+          "text": "Be present, Michael.",
+          "to": "michael",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "I'm present, Toby. I'm just eating a chicken Jan didn't eat.",
+          "to": "toby",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "oscar",
+          "text": "Actually, you're present the way a fire alarm is present.",
+          "to": "michael",
+          "mood": "deadpan"
+        },
+        {
+          "type": "talking_head",
+          "who": "oscar",
+          "lines": [
+            "Michael wants to be everyone's favorite. I'd settle for him not setting anything on fire.",
+            "He took the blame for Corporate's hologram. That was... annoyingly decent."
+          ],
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Toby, how was your day?",
+          "to": "toby",
+          "mood": "nervous"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": "Toby stares at him like a dog that heard its name in a…"
+        },
+        {
+          "type": "say",
+          "who": "toby",
+          "text": "It was... fine. Thanks for asking.",
+          "to": "michael",
+          "mood": "awkward"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Good. Good. That was good.",
+          "to": "toby",
+          "mood": "happy"
+        }
+      ]
+    },
+    {
+      "part": "tag",
+      "plot": "tag",
+      "set": "office",
+      "region": "bullpen",
+      "venue": "",
+      "present": [
+        "michael",
+        "stanley",
+        "kevin",
+        "oscar"
+      ],
+      "recap": "Stanley hits 189 and Michael's joke dies on silence until Kevin closes it out.",
+      "beats": [
+        {
+          "type": "move",
+          "who": "michael",
+          "to": "stanley_desk",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "One eighty-nine. That's a big number. That's a—",
+          "to": "stanley",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "stanley",
+          "text": "Don't.",
+          "to": "michael",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "That's what she said.",
+          "to": "stanley",
+          "mood": "smug"
+        },
+        {
+          "type": "pause",
+          "seconds": 3,
+          "caption": "Silence."
+        },
+        {
+          "type": "react",
+          "who": [
+            "stanley"
+          ],
+          "reaction": "look_at_camera"
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "Nobody say nothing.",
+          "to": "all",
+          "mood": "deadpan"
+        }
+      ]
+    }
+  ]
+}

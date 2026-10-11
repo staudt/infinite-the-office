@@ -21,6 +21,11 @@ export class Actor {
   reaction: Reaction | null = null;
   /** World time (Stage.wt) when the reaction marker disappears. */
   reactionUntil = 0;
+  /** Visual only: the step being walked, so views can glide between cells over [stepStart, stepEnd] (world time). */
+  stepFrom: Point | null = null;
+  stepTo: Point | null = null;
+  stepStart = 0;
+  stepEnd = 0;
 
   constructor(
     readonly id: string,

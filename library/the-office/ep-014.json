@@ -1,0 +1,1154 @@
+{
+  "title": "Section Nine",
+  "logline": "Michael reads Gerald Boyd's letters as a mandate to make the whole office love him, starting with a Love Board follow-up that runs straight into Toby's fire code, while Pam finally faces Jim's card and Angela and Kelly fight over the Spring Social.",
+  "outline": "A: Michael turns the Gerald Boyd letters into a mandate (Love Board 2.0) and makes Toby's Section 9 objection personal; B: Pam hides Jim's card while Roy pushes the wedding, and Michael's selfless turn puts her on the phone instead of covering; C: Angela and Kelly/Phyllis fight over the Spring Social (hearts vs. garden), Angela leans on Dwight. Order: cold, A, B, C, A, B, A, C, B, A, tag. Michael drives A.",
+  "theme": "Being loved means being present, not being on the board.",
+  "storySoFar": "Jim is in Stamford settling in, calling and writing Pam carefully. Pam keeps Jim's card on her desk unanswered and drafts replies she never sends; Roy keeps pushing the June 14 wedding. Michael covered for Pam on Jim's call and said nothing; Pam heard and said thank you. Michael reads Gerald Boyd's letters as a mandate and starts Love Board 2.0, with Dwight and Andy as co-chairs who hate each other. Toby objects under Section 9 (HR Form 14-B) and Michael makes it personal. Angela's Party Planning Committee is split: Kelly and Phyllis want a Sweetheart Social, Angela wants a Garden Party, and she leans on Dwight. Dwight and Angela's secret is known to Oscar and Kevin. Stanley is at 195.",
+  "extras": [],
+  "stateChanges": [
+    {
+      "type": "arc",
+      "arc": "The Card on Pam's Desk",
+      "progress": "Pam rereads Jim's card alone and drafts a voicemail; she leaves a four-word message and hangs up before finishing. She has not told Jim that Michael covered for her. Roy's binder and June 14 keep pressing."
+    },
+    {
+      "type": "arc",
+      "arc": "Michael Wants to Be the Favorite",
+      "progress": "Michael treats Gerald Boyd's letters as a mandate and launches Love Board 2.0. Toby's blank card gets a real one from Toby: 'be present.' Michael's selfless move: he hands Pam the phone instead of covering for her."
+    },
+    {
+      "type": "arc",
+      "arc": "Dwight vs Andy for Number Two",
+      "progress": "Dwight and Andy are co-chairs of Love Board 2.0 by Michael's decree and still fight over who is Chair."
+    },
+    {
+      "type": "arc",
+      "arc": "Stanley's Countdown",
+      "progress": "195 days in the tag. Stanley gives Michael a grudging 'Mm.'"
+    },
+    {
+      "type": "gag",
+      "text": "Michael's 'That's what she said' to Stanley's countdown dies on silence again; Kevin's 'Nobody say nothing.' closes cold open and tag."
+    },
+    {
+      "type": "gag",
+      "text": "Andy's bear-paw banjo hold music; Oscar: 'Actually, that's a banjo on hold.'"
+    },
+    {
+      "type": "note",
+      "text": "Pam has not told Jim that Michael covered for her on the phone. Michael now says he won't lie for her again."
+    },
+    {
+      "type": "note",
+      "text": "Toby's card to Michael says 'be present'; Michael's Love Board 2.0 card-reading is on the break room board beside the laminated Section 9 notice."
+    },
+    {
+      "type": "note",
+      "text": "Angela and Kelly/Phyllis Spring Social split: hearts on the right, cats (Angela's) on the left."
+    }
+  ],
+  "scenes": [
+    {
+      "part": "cold_open",
+      "plot": "cold_open",
+      "set": "office",
+      "region": "bullpen",
+      "venue": "",
+      "present": [
+        "andy",
+        "oscar",
+        "stanley",
+        "michael",
+        "kevin"
+      ],
+      "recap": "Andy's banjo hold music, Stanley's 196 days, and Michael's joke dies on silence.",
+      "beats": [
+        {
+          "type": "action",
+          "who": "andy",
+          "verb": "phone_call",
+          "target": "none",
+          "caption": "holds up his bear-paw phone; banjo hold music plays"
+        },
+        {
+          "type": "say",
+          "who": "oscar",
+          "text": "Actually, that's a banjo on hold.",
+          "to": "andy",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "It's a Cornell hold. Respect it.",
+          "to": "oscar",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "stanley",
+          "text": "One hundred ninety-six.",
+          "to": "all",
+          "mood": "annoyed"
+        },
+        {
+          "type": "move",
+          "who": "michael",
+          "to": "stanley_desk",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "One ninety-six. That's what she said.",
+          "to": "stanley",
+          "mood": "excited"
+        },
+        {
+          "type": "pause",
+          "seconds": 3,
+          "caption": "Stanley does not look up from his crossword"
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "Nobody say nothing.",
+          "to": "all",
+          "mood": "deadpan"
+        },
+        {
+          "type": "react",
+          "who": [
+            "oscar"
+          ],
+          "reaction": "facepalm"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "A",
+      "set": "office",
+      "region": "reception",
+      "venue": "",
+      "present": [
+        "pam",
+        "michael"
+      ],
+      "recap": "Pam rereads Jim's card in secret, and Michael offers to start a Love Board follow-up for her.",
+      "beats": [
+        {
+          "type": "action",
+          "who": "pam",
+          "verb": "search",
+          "target": "none",
+          "caption": "unfolds Jim's Stamford card from the reception drawer"
+        },
+        {
+          "type": "talking_head",
+          "who": "pam",
+          "lines": [
+            "He wrote that Stamford has no Pretzel Day. And he thought of me.",
+            "I've read it nine times. That's not a number I'm proud of."
+          ],
+          "mood": "sad"
+        },
+        {
+          "type": "move",
+          "who": "michael",
+          "to": "pam_desk",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Is that a Jim card? I can start a Love Board follow-up. Love needs a system.",
+          "to": "pam",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "It's a card, Michael.",
+          "to": "michael",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Did he say anything about me?",
+          "to": "pam",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "No.",
+          "to": "michael",
+          "mood": "neutral"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": "Michael waits for more"
+        },
+        {
+          "type": "action",
+          "who": "pam",
+          "verb": "hide",
+          "target": "none",
+          "caption": "slides the card back under the stapler in the drawer"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "He's gonna respect that.",
+          "to": "pam",
+          "mood": "smug"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "B",
+      "set": "office",
+      "region": "conference_room",
+      "venue": "",
+      "present": [
+        "michael",
+        "dwight",
+        "andy",
+        "toby",
+        "oscar",
+        "kevin",
+        "pam",
+        "stanley"
+      ],
+      "recap": "Michael announces Love Board 2.0 as a mandate from Gerald Boyd's letters, and Toby objects under Section 9.",
+      "beats": [
+        {
+          "type": "gather",
+          "who": [
+            "michael",
+            "dwight",
+            "andy",
+            "toby",
+            "oscar",
+            "kevin",
+            "pam",
+            "stanley"
+          ],
+          "to": "conference_room"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Corporate sent me letters. Gerald Boyd's letters, praising me. That's a mandate.",
+          "to": "all",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "False. Those letters were written by us.",
+          "to": "michael",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Dwight, we don't talk about the letters.",
+          "to": "dwight",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "So we're doing Love Board 2.0. Every desk writes a card for every person.",
+          "to": "all",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "I'll be Chair of the Board. I have a memo.",
+          "to": "michael",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "I'll write the most cards. Cornell wrote the most cards.",
+          "to": "michael",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "You're co-chairs. You'll hate each other, which is great.",
+          "to": "all",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "toby",
+          "text": "The board is over the fire extinguisher. HR needs a Form 14-B.",
+          "to": "michael",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Toby, you want to put my love in a form?",
+          "to": "toby",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "toby",
+          "text": "It's Section 9.",
+          "to": "michael",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Love is a mandate. Corporate has spoken.",
+          "to": "all",
+          "mood": "smug"
+        },
+        {
+          "type": "react",
+          "who": [
+            "oscar"
+          ],
+          "reaction": "look_at_camera"
+        },
+        {
+          "type": "pause",
+          "seconds": 3,
+          "caption": "Toby stares at the table"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "C",
+      "set": "office",
+      "region": "kitchen",
+      "venue": "",
+      "present": [
+        "angela",
+        "kelly",
+        "phyllis",
+        "dwight",
+        "oscar",
+        "kevin"
+      ],
+      "recap": "Kelly and Phyllis propose a Sweetheart Social; Angela wants a Garden Party and recruits Dwight.",
+      "beats": [
+        {
+          "type": "move",
+          "who": "kelly",
+          "to": "kitchen_1",
+          "pace": "walk"
+        },
+        {
+          "type": "move",
+          "who": "phyllis",
+          "to": "kitchen_2",
+          "pace": "walk"
+        },
+        {
+          "type": "move",
+          "who": "angela",
+          "to": "kitchen_3",
+          "pace": "walk"
+        },
+        {
+          "type": "move",
+          "who": "dwight",
+          "to": "kitchen",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "kelly",
+          "text": "Hearts. Pink. It's a Sweetheart Social, and it's happening.",
+          "to": "angela",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "angela",
+          "text": "The Party Planning Committee has a Spring Garden Party. I approved it.",
+          "to": "kelly",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "phyllis",
+          "text": "Bob thinks sweethearts are romantic.",
+          "to": "angela",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "angela",
+          "text": "Bob Vance is not on my committee.",
+          "to": "phyllis",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "phyllis",
+          "text": "Bob Vance is on everything, Angela.",
+          "to": "phyllis",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "angela",
+          "text": "Dwight, you'll sign the garden form with me.",
+          "to": "dwight",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Question: is this an alliance, or a secret?",
+          "to": "angela",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "angela",
+          "text": "It's a committee, Dwight.",
+          "to": "dwight",
+          "mood": "annoyed"
+        },
+        {
+          "type": "react",
+          "who": [
+            "kevin"
+          ],
+          "reaction": "look_at_camera"
+        },
+        {
+          "type": "talking_head",
+          "who": "angela",
+          "lines": [
+            "Kelly quit my committee and took Phyllis with her.",
+            "Now they want the Spring Social to be about love. I approve of tablecloths."
+          ],
+          "mood": "annoyed"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "A",
+      "set": "office",
+      "region": "reception",
+      "venue": "",
+      "present": [
+        "pam"
+      ],
+      "recap": "Roy arrives with a wedding binder and asks whether Jim called.",
+      "beats": [
+        {
+          "type": "action",
+          "who": "pam",
+          "verb": "typing",
+          "target": "none",
+          "caption": "sketches in the margin of a wedding seating chart"
+        },
+        {
+          "type": "enter",
+          "who": [
+            "roy"
+          ],
+          "to": "reception"
+        },
+        {
+          "type": "say",
+          "who": "roy",
+          "text": "June fourteenth. I got a binder.",
+          "to": "pam",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Roy, that's a lot of binder.",
+          "to": "roy",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "roy",
+          "text": "I'm trying. You see me trying?",
+          "to": "pam",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "I see you.",
+          "to": "roy",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "roy",
+          "text": "Did Jim call? I'm asking. Not in a weird way.",
+          "to": "pam",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "No.",
+          "to": "roy",
+          "mood": "neutral"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": "Roy looks at the drawer"
+        },
+        {
+          "type": "say",
+          "who": "roy",
+          "text": "Cool. Cool.",
+          "to": "pam",
+          "mood": "annoyed"
+        },
+        {
+          "type": "talking_head",
+          "who": "roy",
+          "lines": [
+            "It's a binder. Binders are commitment.",
+            "She's drawing again. I can see the pencil. It's fine. It's fine."
+          ],
+          "mood": "awkward"
+        },
+        {
+          "type": "exit",
+          "who": [
+            "roy"
+          ],
+          "how": "walk"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "B",
+      "set": "break_room",
+      "region": "break_room",
+      "venue": "",
+      "present": [
+        "toby"
+      ],
+      "recap": "Toby laminates a Section 9 notice over the Things I Love board, and Michael makes it personal.",
+      "beats": [
+        {
+          "type": "action",
+          "who": "toby",
+          "verb": "copy",
+          "target": "none",
+          "caption": "tacks a laminated HR notice over the Things I Love board"
+        },
+        {
+          "type": "enter",
+          "who": [
+            "michael",
+            "dwight",
+            "andy"
+          ],
+          "to": "break_room"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "You laminated it? That's an act of war, Toby.",
+          "to": "toby",
+          "mood": "angry"
+        },
+        {
+          "type": "say",
+          "who": "toby",
+          "text": "It's Section 9. No postings in common areas without HR approval.",
+          "to": "michael",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "False. Section 9 is the fire code. I have read it.",
+          "to": "toby",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "Did you read the Cornell handbook too?",
+          "to": "dwight",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Toby has never been loved, so he can't stand anybody else being loved.",
+          "to": "all",
+          "mood": "smug"
+        },
+        {
+          "type": "talking_head",
+          "who": "toby",
+          "lines": [
+            "I've filed eleven reports about Michael.",
+            "This is the first one about a board. It isn't in the fire code. I checked. I'm sad about it."
+          ],
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Then take it down.",
+          "to": "toby",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "toby",
+          "text": "I'm approving it. Form 14-B. Three copies.",
+          "to": "michael",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Fine. I'll write you a card, Toby.",
+          "to": "toby",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "toby",
+          "text": "Please don't.",
+          "to": "michael",
+          "mood": "sad"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "A",
+      "set": "parking_lot",
+      "region": "parking_lot",
+      "venue": "",
+      "present": [
+        "michael"
+      ],
+      "recap": "Michael tells Pam he won't cover for her again, and offers to stand guard if she calls Jim back.",
+      "beats": [
+        {
+          "type": "action",
+          "who": "michael",
+          "verb": "drink",
+          "target": "none",
+          "caption": "sits in his car with a coffee, door open"
+        },
+        {
+          "type": "enter",
+          "who": [
+            "pam"
+          ],
+          "to": "parking_lot"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Michael.",
+          "to": "michael",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "I picked up Jim's call and said you weren't here. That wasn't mine to say.",
+          "to": "pam",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "I heard.",
+          "to": "michael",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "I'm not going to say it again. You have to tell him something true.",
+          "to": "pam",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Thank you.",
+          "to": "michael",
+          "mood": "happy"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": "Michael clears his throat"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "If you want to call him back, I'll stand outside the door. Like Prison Mike.",
+          "to": "pam",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Prison Mike doesn't stand outside doors.",
+          "to": "michael",
+          "mood": "sarcastic"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "He does now.",
+          "to": "pam",
+          "mood": "smug"
+        },
+        {
+          "type": "react",
+          "who": [
+            "pam"
+          ],
+          "reaction": "laugh"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "C",
+      "set": "office",
+      "region": "bullpen",
+      "venue": "",
+      "present": [
+        "angela",
+        "kelly",
+        "phyllis",
+        "dwight",
+        "andy"
+      ],
+      "recap": "The Spring Social fight escalates over napkins and singing, and Phyllis splits the room.",
+      "beats": [
+        {
+          "type": "gather",
+          "who": [
+            "angela",
+            "kelly",
+            "phyllis",
+            "dwight",
+            "andy"
+          ],
+          "to": "bullpen"
+        },
+        {
+          "type": "say",
+          "who": "kelly",
+          "text": "We need the room for hearts. Pink napkins. Heart-shaped ice.",
+          "to": "all",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "angela",
+          "text": "No heart-shaped anything. It's a Garden Party.",
+          "to": "kelly",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "I can sing at the Garden Party. Sweetheart harmony.",
+          "to": "angela",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "angela",
+          "text": "No singing.",
+          "to": "andy",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Question: is singing a violation of the committee bylaws?",
+          "to": "angela",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "angela",
+          "text": "Yes, Dwight.",
+          "to": "dwight",
+          "mood": "neutral"
+        },
+        {
+          "type": "action",
+          "who": "dwight",
+          "verb": "search",
+          "target": "none",
+          "caption": "pulls a bag of pink napkins from his evidence drawer"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Exhibit A. Found in the supply closet. Kelly.",
+          "to": "all",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "kelly",
+          "text": "Those are for the Sweetheart Social, Dwight.",
+          "to": "dwight",
+          "mood": "sarcastic"
+        },
+        {
+          "type": "say",
+          "who": "phyllis",
+          "text": "Let's split the room. Garden on the left, hearts on the right.",
+          "to": "angela",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "angela",
+          "text": "A split room is a crime against tablecloths.",
+          "to": "phyllis",
+          "mood": "annoyed"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": "Angela looks at the cats on her clipboard"
+        },
+        {
+          "type": "say",
+          "who": "angela",
+          "text": "Hearts on the right. Cats on the left. Nobody touches the cats.",
+          "to": "all",
+          "mood": "neutral"
+        },
+        {
+          "type": "react",
+          "who": [
+            "andy"
+          ],
+          "reaction": "cheer"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "B",
+      "set": "break_room",
+      "region": "break_room",
+      "venue": "",
+      "present": [
+        "michael",
+        "toby"
+      ],
+      "recap": "Michael reads the Love Board 2.0 cards aloud, and Toby's card says 'be present.'",
+      "beats": [
+        {
+          "type": "enter",
+          "who": [
+            "oscar",
+            "kevin",
+            "dwight",
+            "andy"
+          ],
+          "to": "break_room"
+        },
+        {
+          "type": "action",
+          "who": "michael",
+          "verb": "present",
+          "target": "none",
+          "caption": "reads Love Board 2.0 cards aloud to the room"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Kelly says I'm like a cat with a laser.",
+          "to": "all",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Michael is the best manager. Acting not included.",
+          "to": "michael",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "Mine says gentleman, scholar, Cornell-adjacent.",
+          "to": "michael",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "Michael. M&M. Good.",
+          "to": "michael",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Toby, what does yours say?",
+          "to": "toby",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "toby",
+          "text": "Blank.",
+          "to": "michael",
+          "mood": "sad"
+        },
+        {
+          "type": "pause",
+          "seconds": 3,
+          "caption": "Michael turns the blank card over and over"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "A blank card means no words, which means honest.",
+          "to": "all",
+          "mood": "smug"
+        },
+        {
+          "type": "react",
+          "who": [
+            "oscar"
+          ],
+          "reaction": "look_at_camera"
+        },
+        {
+          "type": "say",
+          "who": "toby",
+          "text": "I wrote one for you. It says be present.",
+          "to": "michael",
+          "mood": "sad"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": "Michael reads it twice"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "That's not a card, Toby. That's a survey.",
+          "to": "toby",
+          "mood": "awkward"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "A",
+      "set": "office",
+      "region": "reception",
+      "venue": "",
+      "present": [
+        "pam",
+        "michael"
+      ],
+      "recap": "Pam calls Jim from reception, leaves a four-word voicemail, and Michael hands her the phone instead of covering.",
+      "beats": [
+        {
+          "type": "action",
+          "who": "pam",
+          "verb": "phone_call",
+          "target": "none",
+          "caption": "dials Stamford from the reception line"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "It's ringing.",
+          "to": "all",
+          "mood": "nervous"
+        },
+        {
+          "type": "move",
+          "who": "michael",
+          "to": "pam_desk",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Want me to say you're not here? I'm very good at it now.",
+          "to": "pam",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Please don't.",
+          "to": "michael",
+          "mood": "sarcastic"
+        },
+        {
+          "type": "action",
+          "who": "pam",
+          "verb": "phone_call",
+          "target": "none",
+          "caption": "gets voicemail and starts a message"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Hi, it's Pam. I got your card. I—",
+          "to": "none",
+          "mood": "nervous"
+        },
+        {
+          "type": "pause",
+          "seconds": 3,
+          "caption": "Pam hangs up before finishing"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "That was four words.",
+          "to": "pam",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Thank you for not saying I'm not here.",
+          "to": "michael",
+          "mood": "happy"
+        },
+        {
+          "type": "talking_head",
+          "who": "pam",
+          "lines": [
+            "I left a voicemail. It had maybe four words in it.",
+            "I'm not ready for the other words. I'm pretty sure I'm not ready."
+          ],
+          "mood": "awkward"
+        }
+      ]
+    },
+    {
+      "part": "tag",
+      "plot": "tag",
+      "set": "office",
+      "region": "none",
+      "venue": "",
+      "present": [
+        "stanley",
+        "kevin",
+        "michael"
+      ],
+      "recap": "Stanley hits 195, Michael's joke dies on silence, and Stanley gives him a grudging nod.",
+      "beats": [
+        {
+          "type": "enter",
+          "who": [
+            "stanley",
+            "kevin",
+            "michael"
+          ],
+          "to": "none"
+        },
+        {
+          "type": "action",
+          "who": "stanley",
+          "verb": "typing",
+          "target": "none",
+          "caption": "fills in a crossword at table_3"
+        },
+        {
+          "type": "say",
+          "who": "stanley",
+          "text": "One hundred ninety-five.",
+          "to": "all",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "One ninety-five. That's what she said.",
+          "to": "stanley",
+          "mood": "excited"
+        },
+        {
+          "type": "pause",
+          "seconds": 3,
+          "caption": "Stanley keeps filling in the puzzle"
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "Nobody say nothing.",
+          "to": "all",
+          "mood": "deadpan"
+        },
+        {
+          "type": "talking_head",
+          "who": "stanley",
+          "lines": [
+            "Michael has been making that joke for years. I've been counting for years.",
+            "I'm not going to say it's nice. I'm not going to say it isn't."
+          ],
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "stanley",
+          "text": "Mm.",
+          "to": "michael",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Was that a nod?",
+          "to": "stanley",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "stanley",
+          "text": "Did I stutter?",
+          "to": "michael",
+          "mood": "annoyed"
+        }
+      ]
+    }
+  ]
+}

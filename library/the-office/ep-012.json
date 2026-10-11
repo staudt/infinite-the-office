@@ -1,0 +1,1309 @@
+{
+  "title": "Receipts",
+  "logline": "On the day Corporate's auditor comes to decide Scranton's fate, Michael has no receipts, Dwight finds a form loophole, and Jim finally says the thing in a parking lot.",
+  "outline": "A: Michael has no receipts for Gerald Boyd's review; he tries to win love before the count; staff vouch for him. B: Jim finally confesses to Pam; she says she can't; Jim requests the Stamford transfer. C: Dwight finds a form that makes him Assistant Regional Manager; Andy sulks, then they share a nod; Angela thanks Dwight in public. Order: cold, A, B, C, A, B, A, C, B, A, C, tag.",
+  "theme": "Being seen by someone is not the same as being chosen by them.",
+  "storySoFar": "Season finale. Corporate's auditor Gerald Boyd is reviewing Scranton's headcount and wants receipts; the office has written him secret letters praising Michael. Dwight is Acting RM by memo and in an armed truce with Andy, who came from Stamford with a better tie. Jim confessed to Pam in the parking lot; she said she can't, and did not say she doesn't feel it. Jim has requested a transfer to Stamford. Roy has cancelled again and finally sets a wedding date. Angela and Dwight's secret is known to Oscar and Kevin, who say nothing. Michael's Things I Love board holds Dwight's percentage, Kevin's M&Ms, Dale's card, and Pam's drawing of Michael running. Stanley's countdown is at 197.",
+  "extras": [],
+  "stateChanges": [
+    {
+      "type": "relationship",
+      "a": "jim",
+      "b": "pam",
+      "status": "Jim confessed in the parking lot; Pam said she can't and did not say she doesn't feel it; Jim requested Stamford transfer"
+    },
+    {
+      "type": "relationship",
+      "a": "dwight",
+      "b": "andy",
+      "status": "armed truce renewed with a grudging nod; Dwight holds ARM title by form technicality"
+    },
+    {
+      "type": "arc",
+      "arc": "Will They, Won't They: Jim and Pam",
+      "progress": "Confession made and turned down for now; Jim transferring to Stamford; Pam's desk has a card from Jim"
+    },
+    {
+      "type": "arc",
+      "arc": "Michael Wants to Be Loved",
+      "progress": "Headcount unchanged for now; Gerald wants receipts next quarter; Michael moved to tears by the office's letters"
+    },
+    {
+      "type": "arc",
+      "arc": "Dwight vs. Andy",
+      "progress": "Dwight named Assistant Regional Manager by technicality; Andy sulks then nods; truce holds"
+    },
+    {
+      "type": "arc",
+      "arc": "Angela and Dwight Secret",
+      "progress": "Angela thanks Dwight publicly; Oscar and Kevin still say nothing"
+    },
+    {
+      "type": "note",
+      "text": "Roy set a wedding date: June 14. Pam received it in the tag along with Jim's card."
+    },
+    {
+      "type": "note",
+      "text": "Gerald Boyd asked for receipts next quarter; the letters are on file."
+    },
+    {
+      "type": "gag",
+      "text": "Stanley's countdown: 198 in the cold open, 197 in the tag; Michael's 'That's what she said' lands on silence; Kevin: 'Nobody say nothing.'"
+    },
+    {
+      "type": "gag",
+      "text": "Andy's bear-paw phone plays banjo hold music; Oscar: 'Actually, that's a banjo on hold.'"
+    }
+  ],
+  "scenes": [
+    {
+      "part": "cold_open",
+      "plot": "cold_open",
+      "set": "office",
+      "region": "bullpen",
+      "venue": "",
+      "present": [
+        "michael",
+        "stanley",
+        "andy",
+        "oscar",
+        "kevin"
+      ],
+      "recap": "Andy's banjo hold music plays while Stanley counts down and Michael's joke dies on silence.",
+      "beats": [
+        {
+          "type": "action",
+          "who": "andy",
+          "verb": "phone_call",
+          "target": "none",
+          "caption": "holds up bear-paw phone as banjo hold music plays"
+        },
+        {
+          "type": "say",
+          "who": "oscar",
+          "text": "Actually, that's a banjo on hold.",
+          "to": "andy",
+          "mood": "sarcastic"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "It's a bluegrass hold. Very calming.",
+          "to": "oscar",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Stanley, how many days left?",
+          "to": "stanley",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "stanley",
+          "text": "198.",
+          "to": "michael",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "That's what she said.",
+          "to": "all",
+          "mood": "happy"
+        },
+        {
+          "type": "pause",
+          "seconds": 3,
+          "caption": "silence"
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "Nobody say nothing.",
+          "to": "all",
+          "mood": "deadpan"
+        },
+        {
+          "type": "react",
+          "who": [
+            "andy"
+          ],
+          "reaction": "laugh"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "A",
+      "set": "office",
+      "region": "conference_room",
+      "venue": "",
+      "present": [
+        "michael",
+        "dwight",
+        "angela",
+        "oscar",
+        "kevin",
+        "stanley",
+        "creed",
+        "toby",
+        "pam",
+        "jim",
+        "kelly",
+        "phyllis",
+        "andy"
+      ],
+      "recap": "Michael calls an emergency meeting about Gerald Boyd's receipts and gets no useful answers.",
+      "beats": [
+        {
+          "type": "gather",
+          "who": [
+            "everyone"
+          ],
+          "to": "conference_room"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Gerald Boyd, Corporate auditor, arrives at three o'clock. He is going to ask us for receipts.",
+          "to": "all",
+          "mood": "nervous"
+        },
+        {
+          "type": "talking_head",
+          "who": "michael",
+          "lines": [
+            "Gerald Boyd has the face of a closed Sbarro. I'm not scared. I'm a little scared. I'm also a little hungry."
+          ],
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Question: What form of proof? Per my memo, all receipts are to be in triplicate.",
+          "to": "michael",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "oscar",
+          "text": "Actually, Corporate receipts are invoices. Also, we have no receipts for anything in this branch.",
+          "to": "michael",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "Me have receipt for chili. Chili is proof.",
+          "to": "michael",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "creed",
+          "text": "I once had a receipt for a man. Nobody followed up.",
+          "to": "all",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "stanley",
+          "text": "Can I go home now.",
+          "to": "michael",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "No, Stanley! This is the most important day in the history of this branch.",
+          "to": "stanley",
+          "mood": "angry"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "We could sing Gerald the Cornell fight song. Nobody can be sad during the fight song.",
+          "to": "michael",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "We are not singing, Andy. We are being a family.",
+          "to": "andy",
+          "mood": "neutral"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": "Andy takes off his tie to show his heart"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Pam, Jim, you two are on the welcome committee. Make it warm. Make it feel like a hug.",
+          "to": "pam",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Sure, Michael.",
+          "to": "michael",
+          "mood": "neutral"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "B",
+      "set": "office",
+      "region": "reception",
+      "venue": "",
+      "present": [
+        "jim",
+        "pam",
+        "kelly"
+      ],
+      "recap": "Jim asks Pam to talk after the review, and Pam wonders whether it's another prank.",
+      "beats": [
+        {
+          "type": "move",
+          "who": "jim",
+          "to": "pam_desk",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "Hey. Can you come outside with me after the review?",
+          "to": "pam",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Is this about the prank? Because Dwight already knows.",
+          "to": "jim",
+          "mood": "sarcastic"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "It's not a prank.",
+          "to": "pam",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Everything's a prank with you.",
+          "to": "jim",
+          "mood": "deadpan"
+        },
+        {
+          "type": "react",
+          "who": [
+            "jim"
+          ],
+          "reaction": "look_at_camera"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "Yeah. I know.",
+          "to": "pam",
+          "mood": "awkward"
+        },
+        {
+          "type": "talking_head",
+          "who": "pam",
+          "lines": [
+            "Jim has been about to tell me something since August. I have been pretending I'm not waiting for it. I'm very good at pretending. It's my whole personality."
+          ],
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "kelly",
+          "text": "Ooh, is this about Shannon? Because I heard he's basically engaged.",
+          "to": "pam",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Kelly, no.",
+          "to": "kelly",
+          "mood": "annoyed"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "C",
+      "set": "office",
+      "region": "bullpen",
+      "venue": "",
+      "present": [
+        "dwight",
+        "andy",
+        "oscar"
+      ],
+      "recap": "Dwight discovers a form that calls him Assistant Regional Manager, and Andy calls it a typo.",
+      "beats": [
+        {
+          "type": "move",
+          "who": "dwight",
+          "to": "dwight_desk",
+          "pace": "walk"
+        },
+        {
+          "type": "action",
+          "who": "dwight",
+          "verb": "search",
+          "target": "none",
+          "caption": "reads the Corporate audit roster with a highlighter"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Question: Did you read Section Nine? The acting regional manager shall be listed as Assistant Regional Manager.",
+          "to": "andy",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "That's a typo, Dwight. A Corporate typo.",
+          "to": "dwight",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "False. It is a typo that is now official. Forms are binding.",
+          "to": "andy",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "oscar",
+          "text": "Actually, Andy, he's right. I checked the form. The form is wrong, and it's in ink.",
+          "to": "andy",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "Oscar, you're supposed to be on my side.",
+          "to": "oscar",
+          "mood": "angry"
+        },
+        {
+          "type": "say",
+          "who": "oscar",
+          "text": "I'm on the side of the facts. Which is your side on Tuesdays.",
+          "to": "andy",
+          "mood": "smug"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": "Andy inhales, about to sing, and stops himself"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "A",
+      "set": "office",
+      "region": "michael_office",
+      "venue": "",
+      "present": [
+        "michael",
+        "toby"
+      ],
+      "recap": "Michael shows Toby his receipt folder of napkins and asks if the office likes him.",
+      "beats": [
+        {
+          "type": "move",
+          "who": "toby",
+          "to": "michael_guest_1",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Toby, I need you to look at my receipts. Tell me they're receipts.",
+          "to": "toby",
+          "mood": "excited"
+        },
+        {
+          "type": "action",
+          "who": "michael",
+          "verb": "search",
+          "target": "none",
+          "caption": "holds up a folder of napkins labeled RECEIPTS"
+        },
+        {
+          "type": "say",
+          "who": "toby",
+          "text": "Michael, those are napkins from Chili's.",
+          "to": "michael",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "They are proof that I took people to lunch.",
+          "to": "toby",
+          "mood": "nervous"
+        },
+        {
+          "type": "talking_head",
+          "who": "michael",
+          "lines": [
+            "Toby is the only person here I don't have to be funny for. That's why I hate him. Kidding. Not kidding. It's complicated, like a Ferris wheel."
+          ],
+          "mood": "awkward"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Do you think they like me?",
+          "to": "toby",
+          "mood": "nervous"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": "Toby decides how honest to be"
+        },
+        {
+          "type": "say",
+          "who": "toby",
+          "text": "...Yes.",
+          "to": "michael",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "You said that like a hostage.",
+          "to": "toby",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "toby",
+          "text": "I've been in HR for fourteen years. I say everything like that.",
+          "to": "michael",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Toby, at the review, tell Gerald the truth. That you think I'm good.",
+          "to": "toby",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "toby",
+          "text": "That's not in the fire code.",
+          "to": "michael",
+          "mood": "sad"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "B",
+      "set": "parking_lot",
+      "region": "parking_lot",
+      "venue": "",
+      "present": [
+        "jim",
+        "pam"
+      ],
+      "recap": "Jim finally tells Pam how he feels in the parking lot, and Pam says she can't.",
+      "beats": [
+        {
+          "type": "move",
+          "who": "jim",
+          "to": "car_jim",
+          "pace": "walk"
+        },
+        {
+          "type": "move",
+          "who": "pam",
+          "to": "smoking_spot",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "You said outside. It's outside. Say it.",
+          "to": "jim",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "I like you, Pam. Not as a bit. Not as a prank. I've liked you since the day you were the only person who laughed at my joke.",
+          "to": "pam",
+          "mood": "nervous"
+        },
+        {
+          "type": "pause",
+          "seconds": 3,
+          "caption": "a car alarm goes off somewhere"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Jim.",
+          "to": "jim",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "You don't have to say anything.",
+          "to": "pam",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Roy—",
+          "to": "jim",
+          "mood": "awkward"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "I know about Roy.",
+          "to": "pam",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "I can't, Jim. I can't do this today.",
+          "to": "jim",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "I'm not saying I—",
+          "to": "jim",
+          "mood": "awkward"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": "Pam doesn't finish the sentence"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "Okay.",
+          "to": "pam",
+          "mood": "neutral"
+        },
+        {
+          "type": "talking_head",
+          "who": "jim",
+          "lines": [
+            "I said it next to a dumpster. It's the most me thing I've ever done. She didn't say no. She just didn't say yes. I'm choosing to hear the first part."
+          ],
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "I'm going to ask Toby about the Stamford transfer.",
+          "to": "pam",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Stamford.",
+          "to": "jim",
+          "mood": "sad"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "A",
+      "set": "office",
+      "region": "conference_room",
+      "venue": "",
+      "present": [
+        "michael",
+        "gerald_boyd",
+        "dwight",
+        "angela",
+        "oscar",
+        "kevin",
+        "stanley",
+        "creed",
+        "toby",
+        "pam",
+        "andy",
+        "phyllis"
+      ],
+      "recap": "Gerald Boyd asks for receipts, the staff produces letters, and the headcount stays the same.",
+      "beats": [
+        {
+          "type": "enter",
+          "who": [
+            "gerald_boyd"
+          ],
+          "to": "conf_front"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Gerald! Welcome to the Scranton family. Dwight, get Gerald the good chair.",
+          "to": "gerald_boyd",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "gerald_boyd",
+          "text": "I need receipts, Michael.",
+          "to": "michael",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Of course. Let me tell you about our receipts. They are feelings.",
+          "to": "gerald_boyd",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "gerald_boyd",
+          "text": "Feelings are not a receipt.",
+          "to": "michael",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "Michael. Good boss. Give me M&Ms.",
+          "to": "gerald_boyd",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "oscar",
+          "text": "Our receipts are sales figures, and also letters. Actually, many letters.",
+          "to": "gerald_boyd",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "gerald_boyd",
+          "text": "Yes. Fourteen letters. Each one uses the phrase 'Michael is a light in the dark.'",
+          "to": "oscar",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "phyllis",
+          "text": "We used a template. Mine was in pencil.",
+          "to": "gerald_boyd",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "creed",
+          "text": "I wrote one about being buried alive. I don't know what it means.",
+          "to": "gerald_boyd",
+          "mood": "neutral"
+        },
+        {
+          "type": "pause",
+          "seconds": 3,
+          "caption": "nobody follows up"
+        },
+        {
+          "type": "say",
+          "who": "gerald_boyd",
+          "text": "Headcount is unchanged. For now.",
+          "to": "all",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Unchanged?",
+          "to": "gerald_boyd",
+          "mood": "panicked"
+        },
+        {
+          "type": "say",
+          "who": "gerald_boyd",
+          "text": "Bring me receipts next quarter. Good day.",
+          "to": "michael",
+          "mood": "neutral"
+        },
+        {
+          "type": "exit",
+          "who": [
+            "gerald_boyd"
+          ],
+          "how": "walk"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "You guys wrote me letters?",
+          "to": "all",
+          "mood": "sad"
+        },
+        {
+          "type": "action",
+          "who": "michael",
+          "verb": "hug",
+          "target": "none",
+          "caption": "stares at the stack of letters and can't speak"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Question: Are you crying?",
+          "to": "michael",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "I'm allergic to Gerald. Excuse me. I'm going to be in my office. Forever.",
+          "to": "all",
+          "mood": "sad"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "C",
+      "set": "break_room",
+      "region": "break_room",
+      "venue": "",
+      "present": [
+        "dwight",
+        "andy",
+        "stanley"
+      ],
+      "recap": "Dwight shows Andy the form, Andy sulks about his tie, and they reach a grudging nod.",
+      "beats": [
+        {
+          "type": "move",
+          "who": "dwight",
+          "to": "table_2",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Andy. Gerald signed the roster. Assistant Regional Manager.",
+          "to": "andy",
+          "mood": "smug"
+        },
+        {
+          "type": "action",
+          "who": "andy",
+          "verb": "phone_call",
+          "target": "none",
+          "caption": "sets down bear-paw phone; banjo hold music plays"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "That's a typo, Dwight. Gerald probably signed it while sneezing.",
+          "to": "dwight",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "False. Gerald does not sneeze. He sighs.",
+          "to": "andy",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "I came from Stamford with a better tie.",
+          "to": "dwight",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "You do have a better tie.",
+          "to": "andy",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "Thank you. I'm going to sulk now.",
+          "to": "dwight",
+          "mood": "sad"
+        },
+        {
+          "type": "action",
+          "who": "andy",
+          "verb": "sleep",
+          "target": "none",
+          "caption": "slumps over table_4 with a bear-paw phone on his chest"
+        },
+        {
+          "type": "say",
+          "who": "stanley",
+          "text": "Sulk somewhere else. Some of us are on a break from you.",
+          "to": "andy",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Andy. You keep the crowd. I keep the title.",
+          "to": "andy",
+          "mood": "neutral"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": "Andy looks up"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "...Yeah. Okay. Good.",
+          "to": "dwight",
+          "mood": "neutral"
+        },
+        {
+          "type": "react",
+          "who": [
+            "andy",
+            "dwight"
+          ],
+          "reaction": "shrug"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "B",
+      "set": "office",
+      "region": "bullpen",
+      "venue": "",
+      "present": [
+        "jim",
+        "toby",
+        "pam"
+      ],
+      "recap": "Jim files his Stamford transfer with Toby, who says it isn't in the fire code and is sad about it.",
+      "beats": [
+        {
+          "type": "move",
+          "who": "jim",
+          "to": "toby_desk",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "Toby, I need a transfer form. Stamford.",
+          "to": "toby",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "toby",
+          "text": "Stamford. Okay.",
+          "to": "jim",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "toby",
+          "text": "It's not in the fire code. But I'll file it.",
+          "to": "jim",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "Thanks, Toby.",
+          "to": "toby",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "toby",
+          "text": "Pam is going to miss you.",
+          "to": "jim",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "You think?",
+          "to": "toby",
+          "mood": "awkward"
+        },
+        {
+          "type": "say",
+          "who": "toby",
+          "text": "I think. I'm going to be sad about it at home. Alone. With the fire code.",
+          "to": "jim",
+          "mood": "sad"
+        },
+        {
+          "type": "action",
+          "who": "pam",
+          "verb": "typing",
+          "target": "none",
+          "caption": "types at reception and doesn't look up"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "Don't tell Michael.",
+          "to": "toby",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "toby",
+          "text": "I'm not allowed to tell him things. He's not allowed to hear them.",
+          "to": "jim",
+          "mood": "deadpan"
+        },
+        {
+          "type": "exit",
+          "who": [
+            "jim"
+          ],
+          "how": "walk"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "A",
+      "set": "office",
+      "region": "conference_room",
+      "venue": "",
+      "present": [
+        "michael",
+        "dwight"
+      ],
+      "recap": "Michael finds the Things I Love board updated with new notes, and hides a tear behind a paper sample.",
+      "beats": [
+        {
+          "type": "move",
+          "who": "michael",
+          "to": "conf_1",
+          "pace": "walk"
+        },
+        {
+          "type": "action",
+          "who": "michael",
+          "verb": "search",
+          "target": "none",
+          "caption": "reads the Things I Love board, one note at a time"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Oscar wrote 'correct about forty percent of the time. Better than average.' That's a compliment.",
+          "to": "dwight",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "It is a compliment. Also, I updated my note.",
+          "to": "michael",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "You wrote sixty-two percent.",
+          "to": "dwight",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "I'm rounding up. Because you are a good boss.",
+          "to": "michael",
+          "mood": "neutral"
+        },
+        {
+          "type": "talking_head",
+          "who": "dwight",
+          "lines": [
+            "Michael is my boss. He is also the only person who has ever said I was good at something without a memo. Question: Do I cry? No. I have beet juice."
+          ],
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Dwight. Are you going to say something nice?",
+          "to": "dwight",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Michael Scott, you are not the worst regional manager in the Northeast.",
+          "to": "michael",
+          "mood": "neutral"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": "Michael raises a paper sample in front of his face"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Is that a paper sample?",
+          "to": "dwight",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "It is a paper sample.",
+          "to": "michael",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Okay. Thank you. Go away now. Forever.",
+          "to": "dwight",
+          "mood": "sad"
+        },
+        {
+          "type": "exit",
+          "who": [
+            "dwight"
+          ],
+          "how": "walk"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "C",
+      "set": "office",
+      "region": "bullpen",
+      "venue": "",
+      "present": [
+        "angela",
+        "dwight",
+        "oscar",
+        "kevin"
+      ],
+      "recap": "Angela thanks Dwight in public for checking the fax, and Oscar and Kevin say nothing.",
+      "beats": [
+        {
+          "type": "move",
+          "who": "angela",
+          "to": "dwight_desk",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "angela",
+          "text": "Dwight. Thank you for checking the Party Planning fax. It was adequate.",
+          "to": "dwight",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "I am the Assistant Regional Manager. Checking faxes is my duty.",
+          "to": "angela",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "angela",
+          "text": "Of course you are. Your cuff is uneven, by the way.",
+          "to": "dwight",
+          "mood": "neutral"
+        },
+        {
+          "type": "action",
+          "who": "angela",
+          "verb": "hide",
+          "target": "none",
+          "caption": "straightens Dwight's cuff with two fingers, then walks away"
+        },
+        {
+          "type": "react",
+          "who": [
+            "oscar",
+            "kevin"
+          ],
+          "reaction": "stare"
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "Nobody say nothing.",
+          "to": "all",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "oscar",
+          "text": "I'm not saying anything.",
+          "to": "kevin",
+          "mood": "annoyed"
+        },
+        {
+          "type": "react",
+          "who": [
+            "oscar"
+          ],
+          "reaction": "look_at_camera"
+        },
+        {
+          "type": "talking_head",
+          "who": "oscar",
+          "lines": [
+            "I knew about the beets. I have known for weeks. I am not going to say it, because the moment I do, Angela will have me reassigned to the warehouse, and I cannot do Kevin's taxes alone."
+          ],
+          "mood": "annoyed"
+        }
+      ]
+    },
+    {
+      "part": "tag",
+      "plot": "tag",
+      "set": "office",
+      "region": "reception",
+      "venue": "",
+      "present": [
+        "pam",
+        "michael",
+        "stanley",
+        "kevin"
+      ],
+      "recap": "Pam finds Jim's card on her desk as Roy arrives with a wedding date, and Stanley's countdown hits 197.",
+      "beats": [
+        {
+          "type": "action",
+          "who": "pam",
+          "verb": "search",
+          "target": "none",
+          "caption": "finds a card on her desk, in handwriting she knows"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "'Some things are easier to say on paper. J.'",
+          "to": "all",
+          "mood": "sad"
+        },
+        {
+          "type": "enter",
+          "who": [
+            "roy"
+          ],
+          "to": "reception"
+        },
+        {
+          "type": "say",
+          "who": "roy",
+          "text": "Babe. We set a date. June fourteenth. I booked the hall.",
+          "to": "pam",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Roy, we—",
+          "to": "roy",
+          "mood": "awkward"
+        },
+        {
+          "type": "say",
+          "who": "roy",
+          "text": "Don't cry. It's the warehouse. It gets dusty.",
+          "to": "pam",
+          "mood": "smug"
+        },
+        {
+          "type": "action",
+          "who": "pam",
+          "verb": "hide",
+          "target": "none",
+          "caption": "slides Jim's card into her drawer"
+        },
+        {
+          "type": "move",
+          "who": "stanley",
+          "to": "pam_desk",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "stanley",
+          "text": "One ninety-seven.",
+          "to": "all",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "That's what she said.",
+          "to": "all",
+          "mood": "happy"
+        },
+        {
+          "type": "pause",
+          "seconds": 3,
+          "caption": "silence"
+        },
+        {
+          "type": "react",
+          "who": [
+            "stanley"
+          ],
+          "reaction": "look_at_camera"
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "Nobody say nothing.",
+          "to": "all",
+          "mood": "deadpan"
+        }
+      ]
+    }
+  ]
+}

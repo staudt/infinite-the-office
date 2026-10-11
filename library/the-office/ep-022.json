@@ -1,0 +1,1037 @@
+{
+  "title": "Rule Fourteen",
+  "logline": "A rumor that Pam is moving to Stamford spreads through the office like a game of telephone, and Michael's farewell speech for her turns into a sincere speech about the office.",
+  "outline": "A: Kelly's rumor that Pam is moving to Stamford reaches Roy; Michael relays Jim's call badly; Pam tells Roy she is staying in Scranton and writes her answer on a napkin. B: Toby enforces Rule Fourteen (no banjo hold music) and Michael makes it personal; Michael's farewell speech for Pam becomes a sincere speech about the office. C: Dwight and Andy time their Thursday turns at the break room table while Stanley sits at 187. Order: cold, A, B, C, A, B, A, B, A, C, tag.",
+  "theme": "Who do you choose when you finally have to choose? Showing up for people versus being chosen by them.",
+  "storySoFar": "Jim is in Stamford dating Shannon and working with Karen; his unanswered card sits in Pam's drawer beside the Stamford paints. Pam has told Roy she is not happy; June 14 is still on. Pam is taking Tuesday watercolor classes, which Michael knows about and says he will keep quiet about, or maybe not. Michael has stopped chasing favorites: he asked Toby how he is and waited for the answer, and he gave the office a real speech. Corporate called his letters unnecessary. Dwight and Andy share the Pruitt account and will drive to Dale's office Thursday, speaking in turns. Stanley is stuck at 187 days; Michael's joke dies, and Kevin closes with \"Nobody say nothing.\" Jan's candles and Kelly's party fights are behind them. Andy's banjo hold music continues to annoy Toby.",
+  "extras": [],
+  "stateChanges": [
+    {
+      "type": "arc",
+      "arc": "The Card on Pam's Desk",
+      "progress": "Rumor says Pam is moving to Stamford; Pam tells Roy she is staying in Scranton but not that she is staying with him. She writes her answer to Jim on a napkin and has not sent it. Jim knows Michael relayed 'not a no'."
+    },
+    {
+      "type": "arc",
+      "arc": "Michael Wants to Be the Favorite",
+      "progress": "Michael gives a sincere speech to the office about showing up, and Toby's Rule Fourteen becomes a fight he almost picks and then sits out."
+    },
+    {
+      "type": "arc",
+      "arc": "Dwight vs Andy for Number Two",
+      "progress": "Thursday turns agreed at the break room table: Dwight four minutes, Andy four minutes, nobody goes over."
+    },
+    {
+      "type": "arc",
+      "arc": "Stanley's Countdown",
+      "progress": "Still at 187. Stanley says Michael's speech was 'dull, but you meant it' and nods."
+    },
+    {
+      "type": "relationship",
+      "a": "pam",
+      "b": "roy",
+      "status": "wedding on, Pam not happy and no longer hiding it; she said she is staying in Scranton, not with him"
+    },
+    {
+      "type": "note",
+      "text": "Kelly's rumor (Pam moving to Stamford with Jim) is still circulating; Roy heard it first and is suspicious."
+    },
+    {
+      "type": "note",
+      "text": "Pam's napkin answer to Jim is folded in her drawer with the Stamford paints."
+    },
+    {
+      "type": "gag",
+      "text": "Telephone game: each person repeats a rumor a little bigger; Kevin says 'Pam go Stamford' and Oscar corrects him."
+    },
+    {
+      "type": "gag",
+      "text": "Toby's Rule Fourteen: no banjo hold music during business hours; Michael keeps trying to cancel it by speech."
+    },
+    {
+      "type": "gag",
+      "text": "Stanley at 187; Michael's 'That's what she said' dies on silence; Kevin closes with 'Nobody say nothing.'"
+    }
+  ],
+  "scenes": [
+    {
+      "part": "cold_open",
+      "plot": "cold_open",
+      "set": "office",
+      "region": "bullpen",
+      "venue": "",
+      "present": [
+        "michael",
+        "stanley",
+        "kevin"
+      ],
+      "recap": "Michael tries the countdown joke on Stanley at 187 and it dies on silence; Kevin closes it out.",
+      "beats": [
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "A hundred and eighty-seven days, Stanley. That's a lot of days. That's what she said.",
+          "to": "stanley",
+          "mood": "excited"
+        },
+        {
+          "type": "pause",
+          "seconds": 3,
+          "caption": "Silence."
+        },
+        {
+          "type": "react",
+          "who": [
+            "stanley"
+          ],
+          "reaction": "stare"
+        },
+        {
+          "type": "say",
+          "who": "stanley",
+          "text": "Did I stutter?",
+          "to": "michael",
+          "mood": "annoyed"
+        },
+        {
+          "type": "talking_head",
+          "who": "stanley",
+          "lines": [
+            "Michael says it every day. Same joke. Every day I am exactly where I was, which is at a desk."
+          ],
+          "mood": "deadpan"
+        },
+        {
+          "type": "move",
+          "who": "kevin",
+          "to": "stanley_desk",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "Nobody say nothing.",
+          "to": "all",
+          "mood": "neutral"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "A",
+      "set": "office",
+      "region": "kitchen",
+      "venue": "",
+      "present": [
+        "kelly",
+        "phyllis",
+        "kevin",
+        "oscar"
+      ],
+      "recap": "Kelly tells Phyllis Pam is moving to Stamford, and the rumor gets bigger as it passes to Kevin and Oscar.",
+      "beats": [
+        {
+          "type": "move",
+          "who": "kelly",
+          "to": "kitchen_1",
+          "pace": "walk"
+        },
+        {
+          "type": "move",
+          "who": "phyllis",
+          "to": "kitchen_2",
+          "pace": "walk"
+        },
+        {
+          "type": "move",
+          "who": "kevin",
+          "to": "kitchen_3",
+          "pace": "walk"
+        },
+        {
+          "type": "move",
+          "who": "oscar",
+          "to": "kitchen",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "kelly",
+          "text": "Pam's moving to Stamford. Karen told me Jim already got her a desk.",
+          "to": "phyllis",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "phyllis",
+          "text": "Pam didn't say that.",
+          "to": "kelly",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "kelly",
+          "text": "Pam doesn't say things, Phyllis. That's her whole thing.",
+          "to": "phyllis",
+          "mood": "sarcastic"
+        },
+        {
+          "type": "talking_head",
+          "who": "kelly",
+          "lines": [
+            "I didn't start it. I just said it faster than anybody else in the building."
+          ],
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "Pam go Stamford.",
+          "to": "oscar",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "oscar",
+          "text": "Kevin, Karen said there is a desk. She did not say Pam is going.",
+          "to": "kevin",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "Desk. Stamford. Same word.",
+          "to": "oscar",
+          "mood": "neutral"
+        },
+        {
+          "type": "react",
+          "who": [
+            "oscar"
+          ],
+          "reaction": "facepalm"
+        },
+        {
+          "type": "say",
+          "who": "kelly",
+          "text": "I'm telling Roy.",
+          "to": "all",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "phyllis",
+          "text": "Kelly, don't.",
+          "to": "kelly",
+          "mood": "nervous"
+        },
+        {
+          "type": "exit",
+          "who": [
+            "kelly"
+          ],
+          "how": "walk"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "B",
+      "set": "office",
+      "region": "bullpen",
+      "venue": "",
+      "present": [
+        "michael",
+        "toby",
+        "andy",
+        "dwight",
+        "oscar"
+      ],
+      "recap": "Toby posts Rule Fourteen after Andy's banjo hold music interrupts the bullpen, and Michael makes the rule about Toby.",
+      "beats": [
+        {
+          "type": "action",
+          "who": "andy",
+          "verb": "phone_call",
+          "target": "none",
+          "caption": "holds up bear-paw phone as banjo hold music twangs"
+        },
+        {
+          "type": "move",
+          "who": "toby",
+          "to": "andy_desk",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "toby",
+          "text": "Andy, Rule Fourteen. No instruments on hold during business hours.",
+          "to": "andy",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "It's not an instrument, Toby. It's a feeling on hold.",
+          "to": "toby",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "oscar",
+          "text": "Actually, it's a banjo on hold.",
+          "to": "andy",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Toby, Rule Fourteen is about you. You don't want anybody having fun, because nobody invited you to have fun.",
+          "to": "toby",
+          "mood": "smug"
+        },
+        {
+          "type": "talking_head",
+          "who": "toby",
+          "lines": [
+            "I'm trying to enforce a policy. He makes it about my childhood. He doesn't know anything about my childhood."
+          ],
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "I'm canceling Rule Fourteen. Effective now. I'm the regional manager and I'm canceling it with my mouth.",
+          "to": "all",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "toby",
+          "text": "You can't cancel a rule by saying it.",
+          "to": "michael",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Watch me.",
+          "to": "toby",
+          "mood": "smug"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": "Toby looks at the banjo ringtone."
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "C",
+      "set": "break_room",
+      "region": "break_room",
+      "venue": "",
+      "present": [
+        "dwight",
+        "andy",
+        "stanley"
+      ],
+      "recap": "Dwight times Andy's Thursday turns with a stopwatch while Stanley stares at the clock, stuck at 187.",
+      "beats": [
+        {
+          "type": "move",
+          "who": "dwight",
+          "to": "table_2",
+          "pace": "walk"
+        },
+        {
+          "type": "move",
+          "who": "andy",
+          "to": "table_3",
+          "pace": "walk"
+        },
+        {
+          "type": "action",
+          "who": "dwight",
+          "verb": "present",
+          "target": "none",
+          "caption": "sets a stopwatch on the table between two Dixie cups"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Question: who speaks first at Dale's office Thursday?",
+          "to": "andy",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "Me. I have the Cornell voice. Dale responds to the Cornell voice.",
+          "to": "dwight",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "False. Dale responds to beets. And I have the Pruitt history.",
+          "to": "andy",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "Okay. You go first. Four minutes. Then I do the close.",
+          "to": "dwight",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Four minutes, me. Four minutes, you. Nobody goes over. I will be timing you.",
+          "to": "andy",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "Dwight, you're timing my laugh.",
+          "to": "dwight",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "stanley",
+          "text": "Are you two going to talk about Dale's, or who is older? I'm at a hundred and eighty-seven.",
+          "to": "all",
+          "mood": "annoyed"
+        },
+        {
+          "type": "react",
+          "who": [
+            "dwight",
+            "andy"
+          ],
+          "reaction": "shrug"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Partners.",
+          "to": "andy",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "Partners. Thursday. Do not go over, Dwight.",
+          "to": "dwight",
+          "mood": "happy"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "A",
+      "set": "office",
+      "region": "reception",
+      "venue": "",
+      "present": [
+        "pam",
+        "michael"
+      ],
+      "recap": "Michael promises to keep the rumor quiet, then answers Jim's call and relays Pam's words as 'not a no.'",
+      "beats": [
+        {
+          "type": "move",
+          "who": "michael",
+          "to": "reception",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Pam, I'm not going to say anything. I'm a vault. A vault with a Hallmark card.",
+          "to": "pam",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Michael, Kelly told the whole building I'm moving to Stamford.",
+          "to": "michael",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Kelly didn't tell me. Kelly told the air conditioning.",
+          "to": "pam",
+          "mood": "neutral"
+        },
+        {
+          "type": "action",
+          "who": "michael",
+          "verb": "phone_call",
+          "target": "jim",
+          "caption": "grabs Pam's ringing line and answers it"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Dunder Mifflin, Scranton, Michael Scott, Regional Manager. Jim? Hi, buddy.",
+          "to": "all",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Michael. Give me the phone.",
+          "to": "michael",
+          "mood": "panicked"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "She's right here. She's not moving to Stamford. She said that. I'm the one who's saying it, though.",
+          "to": "all",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "She didn't say she's staying either. But she said it's not a no.",
+          "to": "all",
+          "mood": "smug"
+        },
+        {
+          "type": "pause",
+          "seconds": 3,
+          "caption": "Silence on the line."
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "I said not here.",
+          "to": "michael",
+          "mood": "panicked"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "You said not here. Which is basically what she said.",
+          "to": "all",
+          "mood": "smug"
+        },
+        {
+          "type": "talking_head",
+          "who": "jim",
+          "lines": [
+            "She said not here. Michael said it's not a no. I'm in Stamford, and I just got a yes from a man holding a receiver like a trophy."
+          ],
+          "mood": "deadpan"
+        },
+        {
+          "type": "react",
+          "who": [
+            "jim"
+          ],
+          "reaction": "look_at_camera"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "B",
+      "set": "office",
+      "region": "conference_room",
+      "venue": "",
+      "present": [
+        "michael",
+        "pam",
+        "kelly",
+        "toby",
+        "andy",
+        "dwight",
+        "oscar",
+        "stanley",
+        "phyllis",
+        "kevin",
+        "angela",
+        "darryl"
+      ],
+      "recap": "Michael gives a sincere speech about the office, which he had written for Pam's farewell, and Kelly calls it disgusting.",
+      "beats": [
+        {
+          "type": "gather",
+          "who": [
+            "everyone"
+          ],
+          "to": "conference_room"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "I wrote a speech for Pam's going-away. It's called 'Your Desk Is Still Here.' Pam, I'm sorry.",
+          "to": "pam",
+          "mood": "awkward"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "I'm not leaving, Michael.",
+          "to": "michael",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Right. Okay. Then this is for the office. Which is sort of the same thing.",
+          "to": "all",
+          "mood": "nervous"
+        },
+        {
+          "type": "talking_head",
+          "who": "michael",
+          "lines": [
+            "I used to think the job was being the favorite. Then I read the letters, and they were scared. I don't want scared. I want people to show up."
+          ],
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "You're here. Even when you hate it. Even Toby, who's sitting down right now. Thank you for sitting.",
+          "to": "all",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "toby",
+          "text": "Thank you.",
+          "to": "michael",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "kelly",
+          "text": "Michael, that's disgusting.",
+          "to": "michael",
+          "mood": "sarcastic"
+        },
+        {
+          "type": "pause",
+          "seconds": 3,
+          "caption": "Nobody moves."
+        },
+        {
+          "type": "say",
+          "who": "kelly",
+          "text": "Keep going.",
+          "to": "michael",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "That's the speech. That's all I had.",
+          "to": "kelly",
+          "mood": "awkward"
+        },
+        {
+          "type": "say",
+          "who": "stanley",
+          "text": "Did I stutter? Can we go?",
+          "to": "michael",
+          "mood": "annoyed"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "A",
+      "set": "parking_lot",
+      "region": "parking_lot",
+      "venue": "",
+      "present": [
+        "pam",
+        "roy"
+      ],
+      "recap": "Roy corners Pam at the smoking spot about Kelly's rumor, and Pam says she is staying in Scranton, not with him.",
+      "beats": [
+        {
+          "type": "move",
+          "who": "roy",
+          "to": "smoking_spot",
+          "pace": "hurry"
+        },
+        {
+          "type": "say",
+          "who": "roy",
+          "text": "Kelly says you're moving to Stamford.",
+          "to": "pam",
+          "mood": "angry"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Kelly says a lot of things.",
+          "to": "roy",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "roy",
+          "text": "Are you?",
+          "to": "pam",
+          "mood": "angry"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "No.",
+          "to": "roy",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "roy",
+          "text": "Good. So you're staying with me.",
+          "to": "pam",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "I'm staying in Scranton.",
+          "to": "roy",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "roy",
+          "text": "That's not what I asked.",
+          "to": "pam",
+          "mood": "angry"
+        },
+        {
+          "type": "pause",
+          "seconds": 3,
+          "caption": "Pam looks at the parking lot."
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "I know.",
+          "to": "roy",
+          "mood": "sad"
+        },
+        {
+          "type": "talking_head",
+          "who": "pam",
+          "lines": [
+            "He asked me a yes or no. I gave him a Scranton. I know that's a bad answer. It was the only true one I had."
+          ],
+          "mood": "sad"
+        },
+        {
+          "type": "exit",
+          "who": [
+            "roy"
+          ],
+          "how": "walk"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "B",
+      "set": "office",
+      "region": "bullpen",
+      "venue": "",
+      "present": [
+        "michael",
+        "toby",
+        "andy",
+        "oscar"
+      ],
+      "recap": "Michael tries to cancel Rule Fourteen by speech, asks Toby if he likes banjos, and Oscar gives the banjo gag a correction.",
+      "beats": [
+        {
+          "type": "say",
+          "who": "toby",
+          "text": "Rule Fourteen is still in effect.",
+          "to": "andy",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "Toby, it's not a rule, it's a Cornell heartbeat.",
+          "to": "toby",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Toby, I'm going to ask you a real question. Do you like banjos?",
+          "to": "toby",
+          "mood": "awkward"
+        },
+        {
+          "type": "say",
+          "who": "toby",
+          "text": "No.",
+          "to": "michael",
+          "mood": "neutral"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": "Michael nods slowly."
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Okay. Okay. Andy, play Toby something he hates.",
+          "to": "andy",
+          "mood": "excited"
+        },
+        {
+          "type": "action",
+          "who": "andy",
+          "verb": "sing",
+          "target": "none",
+          "caption": "launches into an a cappella Cornell fight song at full volume"
+        },
+        {
+          "type": "react",
+          "who": [
+            "oscar"
+          ],
+          "reaction": "look_at_camera"
+        },
+        {
+          "type": "say",
+          "who": "oscar",
+          "text": "Actually, that's a banjo on hold, and now it's a choir.",
+          "to": "all",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "toby",
+          "text": "I'm going to the fire exit.",
+          "to": "michael",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Toby, don't go. I'm being present. Look at me being present.",
+          "to": "toby",
+          "mood": "nervous"
+        },
+        {
+          "type": "action",
+          "who": "toby",
+          "verb": "typing",
+          "target": "none",
+          "caption": "sits down at his desk and does not leave"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "A",
+      "set": "break_room",
+      "region": "break_room",
+      "venue": "",
+      "present": [
+        "pam",
+        "phyllis"
+      ],
+      "recap": "Pam writes her answer to Jim on a napkin and folds it into her drawer, telling Phyllis she will say it in person.",
+      "beats": [
+        {
+          "type": "move",
+          "who": "pam",
+          "to": "table_4",
+          "pace": "walk"
+        },
+        {
+          "type": "move",
+          "who": "phyllis",
+          "to": "table_5",
+          "pace": "walk"
+        },
+        {
+          "type": "action",
+          "who": "pam",
+          "verb": "copy",
+          "target": "none",
+          "caption": "writes three careful lines on a folded napkin"
+        },
+        {
+          "type": "say",
+          "who": "phyllis",
+          "text": "Is it a yes?",
+          "to": "pam",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "It's a napkin.",
+          "to": "phyllis",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "phyllis",
+          "text": "Pam, a napkin is going to be a problem.",
+          "to": "pam",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "I'm going to tell him in person. Not on Michael's phone.",
+          "to": "phyllis",
+          "mood": "neutral"
+        },
+        {
+          "type": "talking_head",
+          "who": "pam",
+          "lines": [
+            "I wrote it on a napkin because a napkin doesn't have a binder. It has a corner. I can fold it."
+          ],
+          "mood": "deadpan"
+        },
+        {
+          "type": "action",
+          "who": "pam",
+          "verb": "hide",
+          "target": "none",
+          "caption": "slides the folded napkin into her desk drawer beside the Stamford paints"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "C",
+      "set": "office",
+      "region": "bullpen",
+      "venue": "",
+      "present": [
+        "michael",
+        "stanley"
+      ],
+      "recap": "Michael tries the countdown joke again, and Stanley says Michael's speech was dull but he meant it.",
+      "beats": [
+        {
+          "type": "move",
+          "who": "michael",
+          "to": "stanley_desk",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Stanley, it's a hundred and eighty-seven. Does that mean it's stuck, or it's coming?",
+          "to": "stanley",
+          "mood": "awkward"
+        },
+        {
+          "type": "say",
+          "who": "stanley",
+          "text": "It's a hundred and eighty-seven.",
+          "to": "michael",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "That's what she said.",
+          "to": "stanley",
+          "mood": "smug"
+        },
+        {
+          "type": "pause",
+          "seconds": 4,
+          "caption": "Silence."
+        },
+        {
+          "type": "say",
+          "who": "stanley",
+          "text": "Your speech was dull. But you meant it.",
+          "to": "michael",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Thank you, Stanley.",
+          "to": "stanley",
+          "mood": "happy"
+        },
+        {
+          "type": "react",
+          "who": [
+            "stanley"
+          ],
+          "reaction": "look_at_camera"
+        }
+      ]
+    },
+    {
+      "part": "tag",
+      "plot": "tag",
+      "set": "office",
+      "region": "bullpen",
+      "venue": "",
+      "present": [
+        "kevin",
+        "stanley",
+        "michael"
+      ],
+      "recap": "After hours, Kevin repeats the rumor wrong one last time, and Michael's joke dies before Kevin closes the scene.",
+      "beats": [
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "Pam go Stamford. Stanley go home.",
+          "to": "stanley",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "stanley",
+          "text": "I'm not going anywhere, Kevin.",
+          "to": "kevin",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "A hundred and eighty-seven. Think of how many days that's been. That's what she said.",
+          "to": "stanley",
+          "mood": "excited"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": "Silence."
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "Nobody say nothing.",
+          "to": "all",
+          "mood": "neutral"
+        }
+      ]
+    }
+  ]
+}

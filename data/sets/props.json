@@ -1,0 +1,22 @@
+{
+  "_doc": "Sprite candidates per solid-block kind (chosen by aspect, then a stable hash). Lookup: sets.<id>.blocks['x,y'] > regions.<region>.<kind>[_tall] (blocks 3+ wide) > sets.<id>.kinds.<kind> > kinds.<kind>. Empty list = procedural box.",
+  "kinds": {
+    "desk": ["desk_pod_a", "desk_pod_b", "desk_pod_c", "desk_small", "desk_small_2", "desk_manager", "desk_pod_stacked"],
+    "desk_narrow": ["whiteboard", "wardrobe", "bookshelf_dark"],
+    "plant": ["plant_tall", "plant_tall_2", "plant_tall_3", "plant_tall_4"],
+    "shelf": ["bookshelf_tall", "bookshelf_low", "bookshelf_files", "bookshelf_dark", "filing_cabinet_stack", "filing_cabinet_plant", "file_cabinet_plant", "shelf_papers", "credenza_shelf"],
+    "machine": ["copier_cabinet", "printer_filing_cabinet", "counter_printer", "desk_copier"],
+    "prop": ["couch_lamp"]
+  },
+  "regions": {
+    "conference_room": { "desk": ["conference_table"] },
+    "kitchen": { "desk": ["kitchen_counter", "counter_boxes"], "desk_tall": ["round_table", "conference_table"] },
+    "break_room": { "desk": ["kitchen_counter", "counter_boxes"], "desk_tall": ["round_table", "conference_table"] }
+  },
+  "sets": {
+    "office": { "blocks": { "10,3": "michael_desk", "8,22": "reception_desk_curved_2", "3,4": "couch_lamp" } },
+    "parking_lot": { "kinds": { "prop": [], "shelf": [], "plant": ["plant_tall", "plant_tall_2"] } },
+    "warehouse": { "kinds": { "prop": [], "shelf": [], "machine": [] } },
+    "offsite": { "kinds": { "prop": [], "shelf": [] } }
+  }
+}

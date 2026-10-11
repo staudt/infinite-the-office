@@ -1,0 +1,1292 @@
+{
+  "title": "Not Here",
+  "logline": "Jan's visit to the Scranton Trade Expo sends Michael chasing the office's love, while Pam keeps Jim's unanswered card in her drawer until Michael has to decide what to tell him on the phone.",
+  "outline": "A: Pam hides Jim's Stamford card from everyone, reads it on the loading dock with Roy arriving, and Michael covers for her on Jim's phone call without telling her what to do (Pam drives). B: Michael courts Jan and the office at the Scranton Trade Expo with ribbons, gets it wrong, then gives Dwight and Andy the booth together (Michael drives). C: Stanley at 196 with Creed in the parking lot, and Andy's banjo hold music in the break room. Order: cold, A, B, C, A, B, A, B, C, tag.",
+  "theme": "Being present: people keep choosing the place they are not, and Michael learns that being loved means showing up for the people in the room.",
+  "storySoFar": "Jim has transferred to Stamford and is settling in, calling and writing Pam carefully. Pam has Jim's card on her desk and has not answered it; she is also planning a wedding to Roy (June 14), who keeps trying harder while Pam keeps drawing. Dwight is the self-declared Acting Regional Manager by memo, in an armed truce with Andy, who keeps competing for Michael's attention and the Number Two title. Michael still wants the office's love, is on-off with Jan (who is warmer after the audit), and despises Toby. Michael's Things I Love board holds Dwight's percentage, Kevin's M&Ms, Dale's card, and Pam's drawing of Michael running. Angela and Dwight's secret is known to Oscar and Kevin, who say nothing. Stanley's countdown is at 196.",
+  "extras": [],
+  "stateChanges": [
+    {
+      "type": "arc",
+      "arc": "The Card on Pam's Desk",
+      "progress": "Jim's first week in Stamford. Pam reads his card in secret and does not reply. Michael picks up Jim's call and tells him Pam is not here, which Pam hears and does not correct."
+    },
+    {
+      "type": "arc",
+      "arc": "Michael Wants to Be the Favorite",
+      "progress": "Michael courted Jan and the office at the Scranton Trade Expo with ribbons, got it wrong, then gave Dwight and Andy the booth shifts together. He covered for Pam on Jim's call and said nothing about it to her."
+    },
+    {
+      "type": "arc",
+      "arc": "Dwight vs Andy for Number Two",
+      "progress": "Dwight enforced his title by memo for the expo booth; Andy refused to accept it. Forced to share Saturday shifts, they reached a grudging nod."
+    },
+    {
+      "type": "arc",
+      "arc": "Stanley's Countdown",
+      "progress": "196 at the cold open, 195 in the tag."
+    },
+    {
+      "type": "note",
+      "text": "Jim's Stamford card says Stamford has no Pretzel Day and he thought of Pam. Pam keeps unsent drafts in her reception drawer."
+    },
+    {
+      "type": "note",
+      "text": "Michael told Jim that Pam was not here. Pam heard it and said thank you. Pay off whether she ever tells Jim that Michael covered for her."
+    },
+    {
+      "type": "gag",
+      "text": "Kevin: 'Nobody say nothing.' Used in the cold open and the tag."
+    },
+    {
+      "type": "gag",
+      "text": "Andy's bear-paw phone plays banjo hold music; Oscar: 'Actually, that's a banjo on hold.'"
+    },
+    {
+      "type": "gag",
+      "text": "Michael's 'That's what she said' lands on silence to Stanley's countdown."
+    }
+  ],
+  "scenes": [
+    {
+      "part": "cold_open",
+      "plot": "cold_open",
+      "set": "office",
+      "region": "bullpen",
+      "venue": "",
+      "present": [
+        "michael",
+        "stanley",
+        "kevin",
+        "oscar"
+      ],
+      "recap": "Michael makes a joke about Stanley's countdown, and it dies on silence.",
+      "beats": [
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Stanley! How many days until you're free?",
+          "to": "stanley",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "stanley",
+          "text": "One hundred ninety-six.",
+          "to": "michael",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "A hundred ninety-six. Well, you know what they say about a long wait.",
+          "to": "stanley",
+          "mood": "smug"
+        },
+        {
+          "type": "pause",
+          "seconds": 3,
+          "caption": "Stanley's crossword pencil clicks."
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "That's what she said.",
+          "to": "all",
+          "mood": "happy"
+        },
+        {
+          "type": "react",
+          "who": [
+            "oscar"
+          ],
+          "reaction": "stare"
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "Nobody say nothing.",
+          "to": "all",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "oscar",
+          "text": "Kevin, it's a fair point, but nobody was saying anything.",
+          "to": "kevin",
+          "mood": "sarcastic"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "A",
+      "set": "office",
+      "region": "reception",
+      "venue": "",
+      "present": [
+        "pam",
+        "michael"
+      ],
+      "recap": "Pam hides Jim's card from Michael, who wants to know everything about it.",
+      "beats": [
+        {
+          "type": "action",
+          "who": "pam",
+          "verb": "search",
+          "target": "none",
+          "caption": "reads a card with a Stamford return address at reception"
+        },
+        {
+          "type": "react",
+          "who": [
+            "pam"
+          ],
+          "reaction": "sigh"
+        },
+        {
+          "type": "action",
+          "who": "pam",
+          "verb": "hide",
+          "target": "none",
+          "caption": "slides the card into her cardigan pocket as Michael walks up"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Pam! Is that a Stamford envelope? Is it a sales lead?",
+          "to": "pam",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "It's a birthday card.",
+          "to": "michael",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Whose birthday?",
+          "to": "pam",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Mine. Next week.",
+          "to": "michael",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Happy almost birthday. Stamford is a lovely city. Very Stamford.",
+          "to": "pam",
+          "mood": "happy"
+        },
+        {
+          "type": "talking_head",
+          "who": "pam",
+          "lines": [
+            "I'm reading it. Every day I read it. I'm not replying yet.",
+            "That's a decision. It's just a slow one."
+          ],
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Jan is coming to the Trade Expo on Saturday and I need the reception desk to look like the front of a Fortune 500 company.",
+          "to": "pam",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "It's reception. It's always the front.",
+          "to": "michael",
+          "mood": "sarcastic"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Reception is everything, Pam. It's the first thing people see, and you are the second thing.",
+          "to": "pam",
+          "mood": "smug"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "B",
+      "set": "office",
+      "region": "conference_room",
+      "venue": "",
+      "present": [
+        "michael",
+        "dwight",
+        "andy",
+        "kelly",
+        "oscar"
+      ],
+      "recap": "Michael announces the Trade Expo and wants the office to love him; Dwight and Andy fight over who runs the booth.",
+      "beats": [
+        {
+          "type": "gather",
+          "who": [
+            "everyone"
+          ],
+          "to": "conference_room"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Jan Levinson is coming to the Trade Expo. Jan is my... Jan is a very important person in my life, and she wants to see Scranton at its best.",
+          "to": "all",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "So I want every one of you to love me. Like Jan loves candles. Passionately.",
+          "to": "all",
+          "mood": "happy"
+        },
+        {
+          "type": "talking_head",
+          "who": "michael",
+          "lines": [
+            "I'm not trying to be the favorite. I'm trying to be the favorite that everybody likes most, which is a different thing.",
+            "Ask anyone. Oh, you can't. They're all in here."
+          ],
+          "mood": "smug"
+        },
+        {
+          "type": "action",
+          "who": "michael",
+          "verb": "present",
+          "target": "none",
+          "caption": "hands out pink ribbons that say FAVORITE OF MICHAEL"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Question: Is the ribbon an official Acting Regional Manager document?",
+          "to": "michael",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Dwight, it's a ribbon. It's a feeling.",
+          "to": "dwight",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "False. It is a sticker with a feeling. I will be running the booth.",
+          "to": "michael",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "Michael, I'm Regional Director in Charge of Sales. The booth is sales. I'm in charge of the booth.",
+          "to": "michael",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Memo, page one: The booth is under the authority of the Acting Regional Manager. Andy is not in charge. Andy is in charge of Andy.",
+          "to": "all",
+          "mood": "smug"
+        },
+        {
+          "type": "react",
+          "who": [
+            "oscar"
+          ],
+          "reaction": "look_at_camera"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "You two are going to share it. Like a Dunder Mifflin sandwich. Two slices and a cheese.",
+          "to": "all",
+          "mood": "excited"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "C",
+      "set": "break_room",
+      "region": "break_room",
+      "venue": "",
+      "present": [
+        "stanley",
+        "andy",
+        "oscar",
+        "kevin"
+      ],
+      "recap": "Andy's bear-paw phone plays banjo hold music in the break room while Stanley wants out.",
+      "beats": [
+        {
+          "type": "action",
+          "who": "andy",
+          "verb": "phone_call",
+          "target": "none",
+          "caption": "holds up a bear-paw phone that starts playing banjo hold music"
+        },
+        {
+          "type": "say",
+          "who": "oscar",
+          "text": "Actually, that's a banjo on hold.",
+          "to": "andy",
+          "mood": "sarcastic"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "It's a sales-line tune, Oscar. It keeps the client warm.",
+          "to": "oscar",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "stanley",
+          "text": "Can you keep it warm somewhere that isn't my ears.",
+          "to": "andy",
+          "mood": "annoyed"
+        },
+        {
+          "type": "action",
+          "who": "kevin",
+          "verb": "eat",
+          "target": "none",
+          "caption": "peels the wrapper off a bag of M&Ms one at a time"
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "Banjo good. Bear good.",
+          "to": "andy",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "Thank you, Kevin.",
+          "to": "kevin",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "stanley",
+          "text": "Do you know what I'd give for one Pretzel Day with nobody on the speakerphone?",
+          "to": "oscar",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "oscar",
+          "text": "Pretzel Day was on the second Tuesday. It was not a national holiday, Stanley.",
+          "to": "stanley",
+          "mood": "deadpan"
+        },
+        {
+          "type": "talking_head",
+          "who": "stanley",
+          "lines": [
+            "Two hundred days of this. Some men have a bucket list. I have a hold tune."
+          ],
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "stanley",
+          "text": "Did I stutter?",
+          "to": "andy",
+          "mood": "annoyed"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "A",
+      "set": "warehouse",
+      "region": "loading_dock",
+      "venue": "",
+      "present": [
+        "darryl",
+        "roy"
+      ],
+      "recap": "Pam reads Jim's card on the loading dock until Roy arrives with his wedding date and his suspicions.",
+      "beats": [
+        {
+          "type": "enter",
+          "who": [
+            "pam"
+          ],
+          "to": "loading_dock"
+        },
+        {
+          "type": "action",
+          "who": "pam",
+          "verb": "search",
+          "target": "none",
+          "caption": "unfolds Jim's card on the loading dock steps"
+        },
+        {
+          "type": "say",
+          "who": "darryl",
+          "text": "Pam, you're reading a card like it's a warning label.",
+          "to": "pam",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "It's from Jim. In Stamford.",
+          "to": "darryl",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "darryl",
+          "text": "Stamford. Cold, rich, got a lot of mirrors. That's a whole different office.",
+          "to": "pam",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "roy",
+          "text": "Halpert sends you cards now?",
+          "to": "pam",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "It's a card, Roy. People send cards.",
+          "to": "roy",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "roy",
+          "text": "Not to my fiancée, they don't. I put the date in my calendar, babe. June fourteenth.",
+          "to": "pam",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "I know the date, Roy.",
+          "to": "roy",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "roy",
+          "text": "I'm trying harder, Pam. I got you a tux guy. You're going to like the tux guy.",
+          "to": "pam",
+          "mood": "excited"
+        },
+        {
+          "type": "talking_head",
+          "who": "darryl",
+          "lines": [
+            "Roy's trying. You can see him try. It's like watching a forklift in a dress.",
+            "I'm not saying he's wrong about the tux guy. I'm saying he's the wrong man for the job."
+          ],
+          "mood": "deadpan"
+        },
+        {
+          "type": "action",
+          "who": "pam",
+          "verb": "hide",
+          "target": "none",
+          "caption": "folds the card back into its envelope and puts it in her pocket"
+        },
+        {
+          "type": "say",
+          "who": "roy",
+          "text": "Anyway. Yeah. Mark it.",
+          "to": "pam",
+          "mood": "annoyed"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "B",
+      "set": "offsite",
+      "region": "venue",
+      "venue": "SCRANTON TRADE EXPO",
+      "present": [
+        "michael",
+        "jan",
+        "dwight",
+        "andy",
+        "marcus_bell"
+      ],
+      "recap": "At the Trade Expo Michael tries to win Jan and the booth with ribbons, Marcus Bell poaches clients, and Michael finally puts Dwight and Andy on the same shift.",
+      "beats": [
+        {
+          "type": "enter",
+          "who": [
+            "michael",
+            "dwight",
+            "andy"
+          ],
+          "to": "venue"
+        },
+        {
+          "type": "action",
+          "who": "michael",
+          "verb": "present",
+          "target": "none",
+          "caption": "unveils a banner: DUNDER MIFFLIN SCRANTON, WHERE MICHAEL IS THE FAVORITE"
+        },
+        {
+          "type": "enter",
+          "who": [
+            "jan"
+          ],
+          "to": "venue"
+        },
+        {
+          "type": "say",
+          "who": "jan",
+          "text": "Michael. There's a candle on your banner.",
+          "to": "michael",
+          "mood": "sarcastic"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "That's your candle, Jan. It's a symbol. Of what we share.",
+          "to": "jan",
+          "mood": "happy"
+        },
+        {
+          "type": "enter",
+          "who": [
+            "marcus_bell"
+          ],
+          "to": "venue"
+        },
+        {
+          "type": "say",
+          "who": "marcus_bell",
+          "text": "Mikey! Big man! Love the banner. Think the paper buyer over there might like Staples better.",
+          "to": "michael",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Marcus, you're my favorite competitor. Please go away.",
+          "to": "marcus_bell",
+          "mood": "happy"
+        },
+        {
+          "type": "action",
+          "who": "michael",
+          "verb": "present",
+          "target": "none",
+          "caption": "hands Jan a FAVORITE OF MICHAEL ribbon and pins it on her blazer"
+        },
+        {
+          "type": "say",
+          "who": "jan",
+          "text": "You're doing the thing where you give people stickers and call it a relationship.",
+          "to": "michael",
+          "mood": "sarcastic"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "It's a ribbon, Jan. Two inches of love.",
+          "to": "jan",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Question: Who is in the booth at ten o'clock? Answer: me. Andy, you are in the booth at noon.",
+          "to": "andy",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "Dwight, that's a bad schedule. I'm the Regional Director in Charge of Sales. Sales is at ten.",
+          "to": "dwight",
+          "mood": "annoyed"
+        },
+        {
+          "type": "action",
+          "who": "andy",
+          "verb": "sing",
+          "target": "none",
+          "caption": "starts an a cappella pitch to a paper buyer, then gets glared at by Dwight"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Memo, page two: No singing at the booth. You are disqualified from the booth.",
+          "to": "andy",
+          "mood": "angry"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Guys. Guys. Look around. Everybody here is leaving. Jan, you're leaving too.",
+          "to": "all",
+          "mood": "panicked"
+        },
+        {
+          "type": "say",
+          "who": "jan",
+          "text": "Michael, it's a trade show. People leave trade shows. It's the point.",
+          "to": "michael",
+          "mood": "deadpan"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": "A buyer walks past the booth without stopping."
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Okay. Here's what's happening. You two run the booth together. Saturday. Both of you. Both shifts.",
+          "to": "all",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "False. The booth is under my authority.",
+          "to": "michael",
+          "mood": "angry"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "Fine. Together. I'll sing, you'll read the memo.",
+          "to": "dwight",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Agreed. Under protest.",
+          "to": "andy",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "jan",
+          "text": "That was almost leadership, Michael.",
+          "to": "michael",
+          "mood": "neutral"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "A",
+      "set": "office",
+      "region": "reception",
+      "venue": "",
+      "present": [
+        "pam",
+        "michael"
+      ],
+      "recap": "Jim calls the reception line and Michael, back from the expo, tells him Pam isn't there.",
+      "beats": [
+        {
+          "type": "action",
+          "who": "pam",
+          "verb": "typing",
+          "target": "none",
+          "caption": "types a draft to Jim, deletes it, and starts again at reception"
+        },
+        {
+          "type": "enter",
+          "who": [
+            "michael"
+          ],
+          "to": "reception"
+        },
+        {
+          "type": "action",
+          "who": "michael",
+          "verb": "phone_call",
+          "target": "jim",
+          "caption": "picks up the reception line as the Stamford number lights up"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Dunder Mifflin, Scranton, Michael Scott speaking. Oh. Jim.",
+          "to": "jim",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "She's not here, Jim. She's out. She's in the parking lot doing an interpretive dance about you.",
+          "to": "jim",
+          "mood": "smug"
+        },
+        {
+          "type": "react",
+          "who": [
+            "pam"
+          ],
+          "reaction": "look_at_camera"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "No. I won't put her on. She's busy. Come back when you're not in Stamford. Or call back. Whichever.",
+          "to": "jim",
+          "mood": "neutral"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": "Michael listens, nodding at the phone."
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Yes. Okay. She's fine. She's, um, she's fine. Bye, Jim.",
+          "to": "jim",
+          "mood": "nervous"
+        },
+        {
+          "type": "action",
+          "who": "michael",
+          "verb": "typing",
+          "target": "none",
+          "caption": "hangs up and stares at the phone like it owes him an apology"
+        },
+        {
+          "type": "talking_head",
+          "who": "jim",
+          "lines": [
+            "I called the front desk because I didn't want to call her cell. That was a mistake.",
+            "Michael said she's not there. Which I guess is true. She's not, in the way that matters."
+          ],
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Michael. Thank you.",
+          "to": "michael",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Don't thank me. I didn't tell him anything. Except that you're not here. Which is accurate when you're not in the room.",
+          "to": "pam",
+          "mood": "awkward"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "That's true.",
+          "to": "michael",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Take the rest of the afternoon, Pam. Reception is everything, but you are more.",
+          "to": "pam",
+          "mood": "smug"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "B",
+      "set": "office",
+      "region": "michael_office",
+      "venue": "",
+      "present": [
+        "michael",
+        "jan"
+      ],
+      "recap": "Michael and Jan talk in his office; she sees he did something kind and says it is disgusting.",
+      "beats": [
+        {
+          "type": "enter",
+          "who": [
+            "jan"
+          ],
+          "to": "michael_guest_1"
+        },
+        {
+          "type": "say",
+          "who": "jan",
+          "text": "You were good at the booth, Michael. You were terrible to Dwight, but good.",
+          "to": "michael",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "I wanted the whole room to love me. I got two guys who hate each other and a pink sticker.",
+          "to": "jan",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "jan",
+          "text": "You're not supposed to be loved by everyone. You're supposed to be loved by someone.",
+          "to": "michael",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Yeah. Well. I did something on the phone for Pam. Nobody knows.",
+          "to": "jan",
+          "mood": "awkward"
+        },
+        {
+          "type": "say",
+          "who": "jan",
+          "text": "Michael Scott, you're being nice. It's disgusting.",
+          "to": "michael",
+          "mood": "sarcastic"
+        },
+        {
+          "type": "talking_head",
+          "who": "michael",
+          "lines": [
+            "I didn't get the favorite. I got the other thing, which is better. Don't tell Jan.",
+            "Pam isn't going to thank me, and that's fine. I'm not the favorite. I'm just a guy who picked up a phone."
+          ],
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Don't tell Pam.",
+          "to": "jan",
+          "mood": "awkward"
+        },
+        {
+          "type": "say",
+          "who": "jan",
+          "text": "I'm not telling anyone anything. I'm going to Serenity Stamford.",
+          "to": "michael",
+          "mood": "deadpan"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "C",
+      "set": "parking_lot",
+      "region": "parking_lot",
+      "venue": "",
+      "present": [
+        "stanley",
+        "creed"
+      ],
+      "recap": "Stanley vents to Creed in the parking lot and Creed says something unsettling that nobody follows up.",
+      "beats": [
+        {
+          "type": "enter",
+          "who": [
+            "stanley"
+          ],
+          "to": "smoking_spot"
+        },
+        {
+          "type": "enter",
+          "who": [
+            "creed"
+          ],
+          "to": "dumpster"
+        },
+        {
+          "type": "say",
+          "who": "stanley",
+          "text": "One hundred ninety-five. I'm counting it in the car now.",
+          "to": "creed",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "creed",
+          "text": "I was buried alive for a week once. Ask Jan's candle guy. He knows the wax.",
+          "to": "stanley",
+          "mood": "neutral"
+        },
+        {
+          "type": "pause",
+          "seconds": 3,
+          "caption": "Stanley stares at the dumpster."
+        },
+        {
+          "type": "say",
+          "who": "stanley",
+          "text": "Okay.",
+          "to": "creed",
+          "mood": "deadpan"
+        },
+        {
+          "type": "react",
+          "who": [
+            "stanley"
+          ],
+          "reaction": "look_at_camera"
+        },
+        {
+          "type": "say",
+          "who": "creed",
+          "text": "I'm going to disappear now.",
+          "to": "stanley",
+          "mood": "neutral"
+        },
+        {
+          "type": "action",
+          "who": "creed",
+          "verb": "hide",
+          "target": "none",
+          "caption": "walks into the dumpster shadow and is gone"
+        },
+        {
+          "type": "talking_head",
+          "who": "stanley",
+          "lines": [
+            "Michael gave me the good parking spot today. The fact that he did it without a meeting is almost the nicest thing I've seen him do.",
+            "It's still a pinch of hope in a bag of Pretzel Day. I'm not nodding. Don't put that in the show."
+          ],
+          "mood": "deadpan"
+        }
+      ]
+    },
+    {
+      "part": "tag",
+      "plot": "tag",
+      "set": "office",
+      "region": "reception",
+      "venue": "",
+      "present": [
+        "pam",
+        "michael",
+        "stanley",
+        "kevin"
+      ],
+      "recap": "Pam's drawer of unsent drafts gets discovered, Stanley's countdown ticks, and Michael's joke lands on silence.",
+      "beats": [
+        {
+          "type": "action",
+          "who": "pam",
+          "verb": "search",
+          "target": "none",
+          "caption": "opens her reception drawer and it is full of folded drafts"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Pam, is that a drawer full of letters?",
+          "to": "pam",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "They're drafts. I haven't sent them.",
+          "to": "michael",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "That's what she said.",
+          "to": "pam",
+          "mood": "happy"
+        },
+        {
+          "type": "pause",
+          "seconds": 3,
+          "caption": "Silence. Stanley's pencil stops."
+        },
+        {
+          "type": "say",
+          "who": "stanley",
+          "text": "One hundred ninety-five.",
+          "to": "all",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "Nobody say nothing.",
+          "to": "all",
+          "mood": "neutral"
+        },
+        {
+          "type": "action",
+          "who": "pam",
+          "verb": "hide",
+          "target": "none",
+          "caption": "closes the drawer and smiles into her cardigan"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Okay. Well. Good meeting, everybody.",
+          "to": "all",
+          "mood": "awkward"
+        }
+      ]
+    }
+  ],
+  "seasonStart": {
+    "season": 2,
+    "bible": {
+      "theme": "Who do you choose when you finally have to choose? Everyone is pulled between where they are and where they could go, while Michael learns that being loved means being present.",
+      "era": "Season 2-3 energy: Jim in Stamford, Pam and Roy's wedding countdown, Michael and Jan sparks, Dwight/Andy rivalry, Stamford visitors.",
+      "roster": [
+        "michael",
+        "dwight",
+        "jim",
+        "pam",
+        "ryan",
+        "andy",
+        "stanley",
+        "phyllis",
+        "angela",
+        "oscar",
+        "kevin",
+        "kelly",
+        "meredith",
+        "creed",
+        "toby",
+        "darryl",
+        "jan",
+        "david",
+        "roy",
+        "packer",
+        "bob_vance",
+        "karen",
+        "marcus_bell"
+      ],
+      "deskOverrides": [],
+      "manager": "michael",
+      "relationships": [
+        {
+          "a": "jim",
+          "b": "pam",
+          "status": "Jim is in Stamford; the card on her desk is unanswered. They talk by phone and email, carefully."
+        },
+        {
+          "a": "pam",
+          "b": "roy",
+          "status": "Wedding set for June 14; Roy is trying harder, but Pam keeps drawing."
+        },
+        {
+          "a": "michael",
+          "b": "jan",
+          "status": "Jan is warmer after the audit; Michael reads too much into it."
+        },
+        {
+          "a": "dwight",
+          "b": "andy",
+          "status": "Armed truce, with sales-lead competition."
+        },
+        {
+          "a": "dwight",
+          "b": "angela",
+          "status": "Secret relationship, known to Oscar and Kevin."
+        },
+        {
+          "a": "jim",
+          "b": "karen",
+          "status": "Jim's new Stamford colleague; friendly and direct."
+        },
+        {
+          "a": "michael",
+          "b": "toby",
+          "status": "Michael still despises Toby."
+        }
+      ],
+      "arcs": [
+        {
+          "name": "The Card on Pam's Desk",
+          "kind": "A",
+          "summary": "Jim is in Stamford after his transfer, and Pam has not answered his card. She decides what she wants while Roy's wedding date approaches.",
+          "perEpisode": [
+            {
+              "episode": 1,
+              "beat": "Jim's first week in Stamford; Pam reads the card in secret and does not reply."
+            },
+            {
+              "episode": 3,
+              "beat": "Jim and Karen are friendly by phone; Pam notices more than she admits."
+            },
+            {
+              "episode": 5,
+              "beat": "Pam signs up for an art class and tells no one."
+            },
+            {
+              "episode": 7,
+              "beat": "Jim visits for the outing and Pam avoids him, then talks to him."
+            },
+            {
+              "episode": 9,
+              "beat": "Roy's wedding planning forces Pam to admit she is not happy."
+            },
+            {
+              "episode": 11,
+              "beat": "Pam tells Roy the truth after the art show."
+            },
+            {
+              "episode": 12,
+              "beat": "Pam's answer to Jim's card, and Jim's return."
+            }
+          ],
+          "payoff": "Pam ends the engagement and answers the card. Jim returns to Scranton as a hook for next season."
+        },
+        {
+          "name": "Michael Wants to Be the Favorite",
+          "kind": "B",
+          "summary": "After the audit letters, Michael tries to win the office's love directly and gets it wrong, then right.",
+          "perEpisode": [
+            {
+              "episode": 2,
+              "beat": "Michael reads the letters as a mandate and starts a Love Board follow-up."
+            },
+            {
+              "episode": 4,
+              "beat": "Jan visits and Michael tries to impress her."
+            },
+            {
+              "episode": 6,
+              "beat": "Michael dates Jan or fails to, and the office intervenes."
+            },
+            {
+              "episode": 8,
+              "beat": "Michael learns the staff wrote the letters out of fear he would be fired."
+            },
+            {
+              "episode": 10,
+              "beat": "He gives a sincere speech about the office."
+            },
+            {
+              "episode": 12,
+              "beat": "Michael shows up for Pam."
+            }
+          ],
+          "payoff": "Michael does something selfless for Pam and Jim."
+        },
+        {
+          "name": "Dwight vs Andy for Number Two",
+          "kind": "B",
+          "summary": "Andy and Dwight compete to be Michael's real right hand.",
+          "perEpisode": [
+            {
+              "episode": 1,
+              "beat": "Dwight enforces his title by memo."
+            },
+            {
+              "episode": 4,
+              "beat": "Andy outsells Dwight and wins a day in Michael's chair."
+            },
+            {
+              "episode": 8,
+              "beat": "They are forced to share a client."
+            },
+            {
+              "episode": 12,
+              "beat": "They team up for Michael."
+            }
+          ],
+          "payoff": "A grudging partnership."
+        },
+        {
+          "name": "Stanley's Countdown",
+          "kind": "C",
+          "summary": "Stanley counts days to retirement; the gag carries on.",
+          "perEpisode": [
+            {
+              "episode": 1,
+              "beat": "196 at the cold open."
+            },
+            {
+              "episode": 6,
+              "beat": "Stanley almost cares."
+            },
+            {
+              "episode": 12,
+              "beat": "Stanley is still counting."
+            }
+          ],
+          "payoff": "Still counting, but he nods at Michael."
+        }
+      ],
+      "extras": [
+        {
+          "id": "marcus_bell",
+          "name": "Marcus Bell",
+          "title": "Competing Sales Rep, Staples",
+          "voice": "Smooth, overly friendly, talks like a golf buddy; poaches clients."
+        }
+      ],
+      "runningGags": [
+        "Stanley's countdown, with Michael's 'That's what she said' landing on silence.",
+        "Kevin: 'Nobody say nothing.'",
+        "Andy's bear-paw phone playing banjo hold music; Oscar: 'Actually, that's a banjo on hold.'",
+        "Dwight's evidence drawer.",
+        "Toby filing HR reports about Michael."
+      ],
+      "tentpoles": [
+        {
+          "episode": 3,
+          "id": "pretzel_day",
+          "plan": "Stanley's joy threatened by Marcus Bell's competing pretzel client gift."
+        },
+        {
+          "episode": 5,
+          "id": "halloween",
+          "plan": "Costume chaos; Pam dresses as a painter again and Jim phones in as a hologram."
+        },
+        {
+          "episode": 7,
+          "id": "booze_cruise",
+          "plan": "Scranton and Stamford join for an outing; Jim returns for a day and Pam and Jim talk."
+        },
+        {
+          "episode": 9,
+          "id": "christmas",
+          "plan": "Party Planning Committee civil war; Pam gets a Secret Santa gift from Jim."
+        },
+        {
+          "episode": 11,
+          "id": "fun_run",
+          "plan": "Charity fun run Michael makes about himself; Pam's art show and the truth with Roy."
+        }
+      ],
+      "finale": "Pam ends the engagement and answers Jim's card. Michael does something selfless to help. Dwight and Andy team up. Jim steps back into the Scranton office, and Roy's reaction is the hook for next season.",
+      "changes": "Jim has transferred to Stamford, where Karen works. Pam is alone at reception. Marcus Bell, a rival sales rep, is new."
+    }
+  }
+}

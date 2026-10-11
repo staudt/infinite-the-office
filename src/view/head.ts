@@ -1,7 +1,9 @@
-// The confessional: a close-up of one person in front of the blinds, drawn as ASCII at
-// exactly the map's size so cutting to it and back is a clean swap. The face is the
-// character's letter in big block form, in their color.
+// The confessional: a close-up of one person in front of the blinds, at exactly the map's
+// size so cutting to it and back is a clean swap. Drawn from sprite art when the speaker
+// has a portrait, else as ASCII with the character's letter as a big block face.
 import type { Stage } from '../engine/stage';
+import { art } from './art';
+import { esc } from './grid';
 import { blank, type Cell, gridHtml, paint, wrap } from './grid';
 import { NameIndex } from './names';
 import { FRAME_H, FRAME_W } from './set';
@@ -57,13 +59,68 @@ function backdrop(): Cell[][] {
   return g;
 }
 
+interface Gfx { bg: HTMLImageElement; who: HTMLImageElement; dot: HTMLElement; third: HTMLElement; name: HTMLElement; title: HTMLElement; sub: HTMLElement; last: Map<HTMLElement, string>; color: string }
+
 export class HeadView {
   private bg = backdrop();
   private names: NameIndex;
   private lastHtml = '';
 
-  constructor(private el: HTMLElement, private stage: Stage) {
+  private gfx: Gfx | null = null;
+
+  constructor(private el: HTMLElement, private gfxEl: HTMLElement, private stage: Stage) {
     this.names = new NameIndex(stage);
+  }
+
+  /** Show (and draw) the confessional, or hide both versions of it. */
+  show(on: boolean): void {
+    const portrait = on && this.stage.head ? this.portrait() : null;
+    const wantAscii = on && !portrait, wantGfx = on && !!portrait;
+    if (this.el.hidden === wantAscii) this.el.hidden = !wantAscii;
+    if (this.gfxEl.hidden === wantGfx) this.gfxEl.hidden = !wantGfx;
+    if (portrait) this.renderGfx(portrait);
+    else if (on) this.render();
+  }
+
+  /** The speaker's portrait for their mood (and mouth-open frame while talking), if drawn. */
+  private portrait(): string | null {
+    const h = this.stage.head!;
+    const base = art.url(`${h.who}_head_${h.mood}`) ?? art.url(`${h.who}_head`);
+    if (!base || !h.text) return base;
+    // Mouth flaps on show time, so renders are deterministic.
+    const open = Math.floor(this.stage.time * 7) % 2 === 0;
+    return (open && art.url(`${h.who}_head_talk`)) || base;
+  }
+
+  private renderGfx(portrait: string): void {
+    const h = this.stage.head!;
+    const a = this.stage.actor(h.who);
+    if (!this.gfx) {
+      this.gfxEl.innerHTML = `<img class="hg-bg" alt=""><img class="hg-who" alt="">
+        <div class="hg-rec"><span class="hg-dot">●</span> REC</div><div class="hg-vf">DUNDER MIFFLIN - SCRANTON</div>
+        <div class="hg-third"><b class="hg-name"></b><span class="hg-title"></span></div><div class="hg-sub"></div>`;
+      const q = <T extends HTMLElement>(c: string) => this.gfxEl.querySelector(c) as T;
+      this.gfx = { bg: q('.hg-bg'), who: q('.hg-who'), dot: q('.hg-dot'), third: q('.hg-third'), name: q('.hg-name'), title: q('.hg-title'), sub: q('.hg-sub'), last: new Map(), color: '' };
+    }
+    const g = this.gfx;
+    // Touch the DOM only on change (the renderer counts mutations as new frames).
+    const set = (el: HTMLElement, prop: 'src' | 'innerHTML' | 'textContent', v: string) => {
+      if (g.last.get(el) !== v) {
+        g.last.set(el, v);
+        (el as unknown as Record<string, string>)[prop] = v;
+      }
+    };
+    set(g.bg, 'src', art.url('head_bg') ?? '');
+    set(g.who, 'src', portrait);
+    // A small bob while talking reads as speech even without a mouth frame.
+    const bob = h.text && Math.floor(this.stage.time * 4) % 2 === 0 ? 'translateY(-0.6%)' : '';
+    if (g.who.style.transform !== bob) g.who.style.transform = bob;
+    const dot = Math.floor(this.stage.time * 1.2) % 2 === 0 ? '' : 'hidden';
+    if (g.dot.style.visibility !== dot) g.dot.style.visibility = dot;
+    set(g.name, 'textContent', a.name.toUpperCase());
+    if (g.color !== a.color) g.third.style.color = g.color = a.color; // style.color reads back as rgb()
+    set(g.title, 'textContent', a.title);
+    set(g.sub, 'innerHTML', h.text ? `<span>${this.names.html(h.text, esc)}</span>` : '');
   }
 
   render(): void {

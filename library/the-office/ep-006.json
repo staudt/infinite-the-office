@@ -1,0 +1,1240 @@
+{
+  "title": "Small Things",
+  "logline": "Michael hands Dwight the floor for a Corporate call and Dwight bans singing and locks his boss out, while Pam's art show waits for a boyfriend who forgets it and Kevin's chili finds one brave eater.",
+  "outline": "A: Pam's gallery show \"Small Things\" tonight; Roy promises to come, forgets, and Jim shows up and actually looks at every drawing (Pam drives the A). B: Michael goes on a Corporate call and makes Dwight Acting Regional Manager; Dwight bans singing, locks Michael out, and Toby enforces the fire code (Dwight drives the B, Michael reacts). C: Kevin's chili for Saturday's Harvest Cook-Off; Stanley is the only one who finishes a bowl. Order: cold, A, B, C, A, B, C, A, B, A, B, tag.",
+  "theme": "Everyone wants to be seen, and being seen usually means someone has to actually look.",
+  "storySoFar": "Michael still chases Jan's approval; Jan sends maybes and said she is not coming. Michael's Pretzel Day was swapped for Andy's brunch; he apologized with 212 pretzels and a card that Stanley kept. Stanley's countdown is at 210. Jim and Pam keep pranking Dwight; her Dwight drawings hang on the crime wall, and Jim is the only one who really looks at her art. Roy keeps postponing the wedding and forgets things. Pam's solo show \"Small Things\" opens tonight at Bridge Street Gallery. Dwight has been named Acting Regional Manager for an afternoon. Andy is in an armed truce with Dwight. Angela and Dwight's secret is still unspoken. Kevin is cooking chili for the Harvest Cook-Off on Saturday. Toby keeps Michael's folding chair. Creed has a cousin with a pretzel van.",
+  "extras": [],
+  "stateChanges": [
+    {
+      "type": "arc",
+      "arc": "Will They, Won't They: Jim and Pam",
+      "progress": "Pam's show opens; Roy forgets it again; Jim shows up, looks at every piece, and buys her Dwight drawing. Pam almost says something real and stops. Confession still pending."
+    },
+    {
+      "type": "arc",
+      "arc": "Michael Wants to Be Loved",
+      "progress": "Michael hands Dwight the floor, then gets locked out of his own office. Toby is the one who helps him, and Michael grudgingly lets it count."
+    },
+    {
+      "type": "arc",
+      "arc": "Dwight vs. Andy",
+      "progress": "Dwight abuses his acting title: singing banned by memo, Andy threatened with the binder. Truce tested but holding; Dwight gives back the key, keeps the title."
+    },
+    {
+      "type": "arc",
+      "arc": "Angela and Dwight Secret",
+      "progress": "Untouched this episode."
+    },
+    {
+      "type": "relationship",
+      "a": "jim",
+      "b": "pam",
+      "status": "closer; he came alone to her show and she almost said the thing"
+    },
+    {
+      "type": "relationship",
+      "a": "pam",
+      "b": "roy",
+      "status": "neglected; Roy forgot the show again"
+    },
+    {
+      "type": "note",
+      "text": "Pam's drawing of Dwight in Jell-O (titled 'Quality Dessert') was sold to Jim for an unknown sum; it hangs in Jim's apartment now."
+    },
+    {
+      "type": "note",
+      "text": "Kevin's Harvest Cook-Off chili is Saturday. Stanley finished a bowl. Creed has judged chili before and calls it 'a lot like a parole hearing.'"
+    },
+    {
+      "type": "note",
+      "text": "Dwight's 'Jan?' sticky notes covering Michael's desk; Toby wrote the fire code Michael signed."
+    },
+    {
+      "type": "gag",
+      "text": "Kevin: 'Nobody say nothing.' Used in the cold open, the chili scene and the tag."
+    },
+    {
+      "type": "gag",
+      "text": "Stanley's countdown: 210 in the cold open, 209 in the tag."
+    },
+    {
+      "type": "gag",
+      "text": "Dwight's memos are on letterhead and he says 'Acting' every time he signs."
+    }
+  ],
+  "scenes": [
+    {
+      "part": "cold_open",
+      "plot": "cold_open",
+      "set": "office",
+      "region": "michael_office",
+      "venue": "",
+      "present": [
+        "michael",
+        "kevin",
+        "stanley"
+      ],
+      "recap": "Michael rehearses a call with David Wallace using Kevin as David, and Stanley counts down through the door.",
+      "beats": [
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Okay, Kevin, you're David Wallace. Be reasonable. And warm.",
+          "to": "kevin",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "Hi.",
+          "to": "michael",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Warmer. Like a warm spreadsheet.",
+          "to": "kevin",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "Hi, Michael. Scranton good?",
+          "to": "michael",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Scranton is... Scranton is my family.",
+          "to": "kevin",
+          "mood": "happy"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": "Kevin considers this"
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "Why you say that?",
+          "to": "michael",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Because it's true, Kevin.",
+          "to": "kevin",
+          "mood": "sarcastic"
+        },
+        {
+          "type": "say",
+          "who": "stanley",
+          "text": "Two hundred and ten.",
+          "to": "all",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "That's not a question, Stanley.",
+          "to": "stanley",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "stanley",
+          "text": "Did I stutter?",
+          "to": "michael",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "Nobody say nothing.",
+          "to": "all",
+          "mood": "neutral"
+        },
+        {
+          "type": "react",
+          "who": [
+            "michael"
+          ],
+          "reaction": "cringe"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "A",
+      "set": "office",
+      "region": "reception",
+      "venue": "",
+      "present": [
+        "pam",
+        "jim"
+      ],
+      "recap": "Pam tells Jim her show opens tonight and Roy promised to come; Jim says he'll be there.",
+      "beats": [
+        {
+          "type": "move",
+          "who": "jim",
+          "to": "pam_desk",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "So tonight's the night?",
+          "to": "pam",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Bridge Street Gallery, seven o'clock. It's called Small Things. It sounds smaller than it is.",
+          "to": "jim",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "I'd come.",
+          "to": "pam",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Roy's coming. He said so. Twice.",
+          "to": "jim",
+          "mood": "happy"
+        },
+        {
+          "type": "react",
+          "who": [
+            "jim"
+          ],
+          "reaction": "look_at_camera"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": "Jim says nothing, which is a lot"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "Great. That's great, Pam.",
+          "to": "pam",
+          "mood": "neutral"
+        },
+        {
+          "type": "talking_head",
+          "who": "pam",
+          "lines": [
+            "Roy said he'd come. He said it twice, which for Roy is a notarized contract.",
+            "I'm not upset. I'm just going to check the door a lot."
+          ],
+          "mood": "nervous"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "B",
+      "set": "office",
+      "region": "michael_office",
+      "venue": "",
+      "present": [
+        "michael",
+        "dwight"
+      ],
+      "recap": "Michael goes on a long Corporate call and deputizes Dwight as Acting Regional Manager for the afternoon.",
+      "beats": [
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Dwight, I'm on with Corporate. David Wallace. Do not come in unless it's a fire, a bear, or Jan.",
+          "to": "dwight",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Question: is the bear a Schrute bear?",
+          "to": "michael",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "It's a bear, Dwight. You're in charge of the floor.",
+          "to": "dwight",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Acting Regional Manager.",
+          "to": "michael",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Acting. Don't abuse it.",
+          "to": "dwight",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Abuse is a word I do not use. I use authority.",
+          "to": "michael",
+          "mood": "smug"
+        },
+        {
+          "type": "action",
+          "who": "dwight",
+          "verb": "present",
+          "target": "none",
+          "caption": "pins a laminated ACTING badge to his lapel"
+        },
+        {
+          "type": "talking_head",
+          "who": "michael",
+          "lines": [
+            "Corporate wants to see that I can delegate. So I'm delegating. Delegating is a thing I do now.",
+            "Dwight has never been trusted with anything. This is the first time I've seen him look like a guy who's been trusted with something. It's a little scary."
+          ],
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Okay, I'm closing the door. Dwight, no one sings.",
+          "to": "dwight",
+          "mood": "annoyed"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": "Dwight stares at the door like a sentry"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "C",
+      "set": "break_room",
+      "region": "break_room",
+      "venue": "",
+      "present": [
+        "kevin",
+        "oscar"
+      ],
+      "recap": "Kevin is simmering a massive pot of Harvest Cook-Off chili and Oscar tries to talk him down to a sensible batch.",
+      "beats": [
+        {
+          "type": "action",
+          "who": "kevin",
+          "verb": "typing",
+          "target": "none",
+          "caption": "stirs a pot big enough to bathe a Labrador"
+        },
+        {
+          "type": "say",
+          "who": "oscar",
+          "text": "Actually, Kevin, that's enough chili for the whole parish.",
+          "to": "kevin",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "Harvest Cook-Off. Saturday. Need taste.",
+          "to": "oscar",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "oscar",
+          "text": "Actually, the Cook-Off has a panel of judges. Three of them. Not you.",
+          "to": "kevin",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "Need votes.",
+          "to": "oscar",
+          "mood": "neutral"
+        },
+        {
+          "type": "enter",
+          "who": [
+            "stanley"
+          ],
+          "to": "microwave"
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "Stanley. Taste.",
+          "to": "stanley",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "stanley",
+          "text": "No.",
+          "to": "kevin",
+          "mood": "deadpan"
+        },
+        {
+          "type": "talking_head",
+          "who": "kevin",
+          "lines": [
+            "Chili have three secret. Cumin. Cocoa. Patience.",
+            "Stanley taste it. Stanley is a very good taster. He is very quiet about it."
+          ],
+          "mood": "happy"
+        },
+        {
+          "type": "action",
+          "who": "stanley",
+          "verb": "eat",
+          "target": "none",
+          "caption": "takes one reluctant spoonful, then a second, and does not look up"
+        },
+        {
+          "type": "pause",
+          "seconds": 3,
+          "caption": "Stanley chews"
+        },
+        {
+          "type": "say",
+          "who": "stanley",
+          "text": "It's hot.",
+          "to": "kevin",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "Hot good.",
+          "to": "stanley",
+          "mood": "happy"
+        },
+        {
+          "type": "react",
+          "who": [
+            "oscar"
+          ],
+          "reaction": "stare"
+        },
+        {
+          "type": "say",
+          "who": "oscar",
+          "text": "Actually, I'm going to need a second opinion. And a glass of water.",
+          "to": "all",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "Nobody say nothing.",
+          "to": "all",
+          "mood": "happy"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "A",
+      "set": "warehouse",
+      "region": "loading_dock",
+      "venue": "",
+      "present": [
+        "pam",
+        "roy",
+        "darryl"
+      ],
+      "recap": "Pam tracks down Roy at the loading dock; he promises to come and then gets pulled away by a forklift.",
+      "beats": [
+        {
+          "type": "enter",
+          "who": [
+            "pam"
+          ],
+          "to": "loading_dock"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Roy. It's tonight. The show.",
+          "to": "roy",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "roy",
+          "text": "What show?",
+          "to": "pam",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "My show. Small Things. My drawings.",
+          "to": "roy",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "roy",
+          "text": "Oh, yeah. Yeah, no, I'm gonna swing by.",
+          "to": "pam",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "darryl",
+          "text": "You said that about the wedding.",
+          "to": "roy",
+          "mood": "sarcastic"
+        },
+        {
+          "type": "say",
+          "who": "roy",
+          "text": "Wedding's a different thing, Darryl.",
+          "to": "darryl",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "darryl",
+          "text": "Mm-hm.",
+          "to": "roy",
+          "mood": "deadpan"
+        },
+        {
+          "type": "action",
+          "who": "roy",
+          "verb": "search",
+          "target": "none",
+          "caption": "checks his phone, then a forklift beeps behind him"
+        },
+        {
+          "type": "say",
+          "who": "roy",
+          "text": "I gotta move a pallet. I'm gonna be there, babe.",
+          "to": "pam",
+          "mood": "neutral"
+        },
+        {
+          "type": "talking_head",
+          "who": "pam",
+          "lines": [
+            "This is the fourth time he's said he'll come to something I made.",
+            "I'm not mad. I just notice that I didn't have to ask Jim."
+          ],
+          "mood": "sad"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "B",
+      "set": "office",
+      "region": "bullpen",
+      "venue": "",
+      "present": [
+        "dwight",
+        "andy",
+        "oscar",
+        "michael"
+      ],
+      "recap": "Dwight issues a memo banning singing, Andy objects, and Dwight locks Michael out of his own office.",
+      "beats": [
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Memo. Effective immediately, singing on the floor is prohibited. Acting Regional Manager.",
+          "to": "all",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "Dwight, you can't ban a cappella. It's a constitutional right.",
+          "to": "dwight",
+          "mood": "angry"
+        },
+        {
+          "type": "say",
+          "who": "oscar",
+          "text": "Actually, it isn't.",
+          "to": "andy",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "False. It is now a Category Two offense. Sing one more note and you go in my binder.",
+          "to": "andy",
+          "mood": "smug"
+        },
+        {
+          "type": "action",
+          "who": "dwight",
+          "verb": "present",
+          "target": "none",
+          "caption": "tapes a laminated NO SINGING sign to the water cooler"
+        },
+        {
+          "type": "react",
+          "who": [
+            "oscar"
+          ],
+          "reaction": "look_at_camera"
+        },
+        {
+          "type": "talking_head",
+          "who": "dwight",
+          "lines": [
+            "I was asked to be in charge, and I am in charge. Michael said don't abuse it, which means he expects me to use it. Correctly.",
+            "Andy has a better tie. He does not have a binder."
+          ],
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Dwight, why is there a sign on my cooler?",
+          "to": "dwight",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Acting cooler policy.",
+          "to": "michael",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "I'm going to the kitchen to take this call from Jan's assistant. Don't touch anything.",
+          "to": "dwight",
+          "mood": "nervous"
+        },
+        {
+          "type": "move",
+          "who": "michael",
+          "to": "kitchen",
+          "pace": "walk"
+        },
+        {
+          "type": "action",
+          "who": "dwight",
+          "verb": "hide",
+          "target": "none",
+          "caption": "turns the key in Michael's office door and pockets it"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": "Andy hums a single note and stops himself"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "C",
+      "set": "break_room",
+      "region": "break_room",
+      "venue": "",
+      "present": [
+        "kevin",
+        "stanley",
+        "creed"
+      ],
+      "recap": "Creed judges the chili with a grim story, and Stanley finishes an entire bowl without admitting it.",
+      "beats": [
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "Chili. Judge.",
+          "to": "stanley",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "stanley",
+          "text": "I'm not a judge. I'm a man counting days.",
+          "to": "kevin",
+          "mood": "annoyed"
+        },
+        {
+          "type": "enter",
+          "who": [
+            "creed"
+          ],
+          "to": "table_2"
+        },
+        {
+          "type": "say",
+          "who": "creed",
+          "text": "I judged chili once in Ohio. It's a lot like a parole hearing.",
+          "to": "all",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "Creed, you eat.",
+          "to": "creed",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "creed",
+          "text": "I'm allergic to a man named Gerald. Not the chili.",
+          "to": "kevin",
+          "mood": "neutral"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": "Nobody follows up"
+        },
+        {
+          "type": "action",
+          "who": "stanley",
+          "verb": "eat",
+          "target": "none",
+          "caption": "finishes the whole bowl without looking up"
+        },
+        {
+          "type": "say",
+          "who": "stanley",
+          "text": "Two hundred and ten days, and this is the best thing I've eaten in a year.",
+          "to": "kevin",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "Chili is good. You say so.",
+          "to": "stanley",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "stanley",
+          "text": "I said it was fine.",
+          "to": "kevin",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "Nobody say nothing.",
+          "to": "all",
+          "mood": "happy"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "A",
+      "set": "offsite",
+      "region": "venue",
+      "venue": "BRIDGE STREET GALLERY",
+      "present": [
+        "pam"
+      ],
+      "recap": "Pam waits alone at her own show until Jim walks in and studies each drawing like it matters.",
+      "beats": [
+        {
+          "type": "action",
+          "who": "pam",
+          "verb": "present",
+          "target": "none",
+          "caption": "straightens a frame that is already level"
+        },
+        {
+          "type": "pause",
+          "seconds": 3,
+          "caption": "Nobody comes in for four minutes"
+        },
+        {
+          "type": "talking_head",
+          "who": "pam",
+          "lines": [
+            "Roy says he's coming. I've checked the door eleven times.",
+            "The door is a door. It does not have feelings about Roy."
+          ],
+          "mood": "sad"
+        },
+        {
+          "type": "enter",
+          "who": [
+            "jim"
+          ],
+          "to": "pam"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "Sorry. Parking.",
+          "to": "pam",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "You came.",
+          "to": "jim",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "I said I'd come.",
+          "to": "pam",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Roy said that too.",
+          "to": "jim",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "I'm not Roy.",
+          "to": "pam",
+          "mood": "happy"
+        },
+        {
+          "type": "action",
+          "who": "jim",
+          "verb": "search",
+          "target": "none",
+          "caption": "leans in close to a sketch of a Jell-O mold with a stapler inside"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "Why is the hand so small?",
+          "to": "pam",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Because the hand's the part I was scared of.",
+          "to": "jim",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "It's good, Pam. It's really good.",
+          "to": "pam",
+          "mood": "happy"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "B",
+      "set": "office",
+      "region": "michael_office",
+      "venue": "",
+      "present": [
+        "michael",
+        "toby",
+        "dwight"
+      ],
+      "recap": "Michael finds himself locked out of his own office and Toby quietly explains the fire code.",
+      "beats": [
+        {
+          "type": "enter",
+          "who": [
+            "toby"
+          ],
+          "to": "michael_office"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Dwight. Open the door.",
+          "to": "dwight",
+          "mood": "angry"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "I am conducting an acting audit of your desk.",
+          "to": "michael",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Of my desk?",
+          "to": "dwight",
+          "mood": "angry"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "It has forty sticky notes that say Jan question mark.",
+          "to": "michael",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "toby",
+          "text": "Michael, I'm going to need the door open. And Dwight, that lock is a problem.",
+          "to": "all",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "False. I have the key.",
+          "to": "toby",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "toby",
+          "text": "Michael's office is a designated egress path. You can't lock it. I wrote that policy.",
+          "to": "dwight",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Human Resources is not a branch of acting management.",
+          "to": "toby",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "toby",
+          "text": "Dwight. Please.",
+          "to": "dwight",
+          "mood": "sad"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": "Dwight weighs the power of one key"
+        },
+        {
+          "type": "action",
+          "who": "dwight",
+          "verb": "hide",
+          "target": "none",
+          "caption": "unlocks the door with great reluctance"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Thank you, Toby.",
+          "to": "toby",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Why do you even know the fire code?",
+          "to": "toby",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "toby",
+          "text": "I wrote it. You signed it. You signed it fast.",
+          "to": "michael",
+          "mood": "sad"
+        },
+        {
+          "type": "talking_head",
+          "who": "toby",
+          "lines": [
+            "Michael hates me. Dwight locked the door on him and I still got in trouble for it.",
+            "I don't know. I just didn't want anyone locked out of a room by themselves."
+          ],
+          "mood": "sad"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "A",
+      "set": "offsite",
+      "region": "venue",
+      "venue": "BRIDGE STREET GALLERY",
+      "present": [
+        "pam",
+        "jim"
+      ],
+      "recap": "Roy texts that he forgot, Jim buys Pam's Dwight drawing, and Pam almost says the real thing.",
+      "beats": [
+        {
+          "type": "action",
+          "who": "pam",
+          "verb": "search",
+          "target": "none",
+          "caption": "reads a text from Roy and turns the phone face down"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Roy says, did he miss it. Like I'm a bus.",
+          "to": "jim",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "You didn't miss anything. You had a show. It happened.",
+          "to": "pam",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "I'll take this one.",
+          "to": "pam",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "That's Dwight.",
+          "to": "jim",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "It's the one I'd put in my living room.",
+          "to": "pam",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "It's a Jell-O mold with a stapler in it.",
+          "to": "jim",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "It's the best thing in here, Pam.",
+          "to": "pam",
+          "mood": "happy"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": "Pam almost says something true"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Jim, I don't think I can... I mean, the thing is, I didn't want to—",
+          "to": "jim",
+          "mood": "nervous"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": "She stops. He waits."
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Okay. Thank you for coming.",
+          "to": "jim",
+          "mood": "sad"
+        },
+        {
+          "type": "talking_head",
+          "who": "jim",
+          "lines": [
+            "I was going to say something. It's a gallery. There's a cheese plate. I didn't want to be the guy who says it near the cheese.",
+            "She's really good. Nobody says that enough. Actually, I'm the only one who's said it."
+          ],
+          "mood": "deadpan"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "B",
+      "set": "office",
+      "region": "michael_office",
+      "venue": "",
+      "present": [
+        "michael",
+        "dwight"
+      ],
+      "recap": "Dwight hands back the key and keeps the title, and Michael admits he was proud of him.",
+      "beats": [
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Dwight, I left you the floor.",
+          "to": "dwight",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "You left me the floor. I took the floor. I also took the key.",
+          "to": "michael",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "You locked me out of my own office.",
+          "to": "dwight",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Yes.",
+          "to": "michael",
+          "mood": "deadpan"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": "Michael does not know what to say"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "I was kind of proud of you.",
+          "to": "dwight",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "I know.",
+          "to": "michael",
+          "mood": "neutral"
+        },
+        {
+          "type": "action",
+          "who": "dwight",
+          "verb": "present",
+          "target": "none",
+          "caption": "places the office key on a folded napkin and slides it across the desk"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "I am giving up the key. I am not giving up the title.",
+          "to": "michael",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Dwight, you're my favorite. That's not a title, it's a feeling.",
+          "to": "dwight",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "It is a title. It is the only one that matters.",
+          "to": "michael",
+          "mood": "happy"
+        },
+        {
+          "type": "react",
+          "who": [
+            "michael"
+          ],
+          "reaction": "laugh"
+        }
+      ]
+    },
+    {
+      "part": "tag",
+      "plot": "tag",
+      "set": "office",
+      "region": "bullpen",
+      "venue": "",
+      "present": [
+        "stanley",
+        "michael",
+        "kevin"
+      ],
+      "recap": "Stanley's countdown reaches 209 and Michael's callback lands on silence.",
+      "beats": [
+        {
+          "type": "say",
+          "who": "stanley",
+          "text": "Two hundred and nine.",
+          "to": "all",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Stanley, you're getting closer to the end of a very long—",
+          "to": "stanley",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "That's what she said.",
+          "to": "all",
+          "mood": "smug"
+        },
+        {
+          "type": "pause",
+          "seconds": 3,
+          "caption": "Silence, as expected"
+        },
+        {
+          "type": "react",
+          "who": [
+            "stanley"
+          ],
+          "reaction": "look_at_camera"
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "Nobody say nothing.",
+          "to": "all",
+          "mood": "happy"
+        }
+      ]
+    }
+  ]
+}

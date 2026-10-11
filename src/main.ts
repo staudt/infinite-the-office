@@ -12,8 +12,10 @@ import { CardView } from './view/card';
 import { firstName } from './engine/cast';
 import { FeedView } from './view/feed';
 import { esc } from './view/grid';
+import { art } from './view/art';
 import { HeadView } from './view/head';
 import { FRAME_H, FRAME_W, MapView } from './view/set';
+import { SpriteMapView } from './view/sprites';
 import { connectionText, StartScreen } from './view/start';
 import { sceneHeading } from './view/transcript';
 import { CAST } from './world/cast';
@@ -33,6 +35,7 @@ const SEED = Number(params.get('seed') ?? 1);
 // and screenshots the page, so it only needs the page to look right (any view will do).
 //   ?render=1&format=horizontal|vertical  &clip=1 (with scene=N: stop when that scene ends)
 const RENDER = params.has('render');
+art.enabled = params.get('gfx') !== '0';
 const CLIP = RENDER && params.has('clip');
 const renderState = { ready: false, done: false, error: '', changed: true, clock: 0, ticks: 0, subUntil: 0 };
 if (RENDER) {
@@ -57,6 +60,7 @@ let cur: Playable = { episode: DEMO_EPISODE, roster: DEMO_ROSTER, label: 'Demo',
 // episode silently up to that point: the engine is deterministic for a given seed.
 let stage!: Stage;
 let map!: MapView;
+let gfx!: SpriteMapView;
 let head!: HeadView;
 let feed!: FeedView;
 let card!: CardView;
@@ -66,6 +70,7 @@ let status = '';
 
 function onEvent(e: EngineEvent): void {
   map.onEvent(e);
+  gfx.onEvent(e);
   feed.onEvent(e);
   card.onEvent(e);
   if (RENDER) subtitle(e);
@@ -115,7 +120,8 @@ function start(target?: Target, done: () => void = () => start()): void {
   const { episode, roster, series } = cur;
   stage = new Stage(cur.seed, CAST, episode, roster, series ?? {});
   map = new MapView($('map'), stage);
-  head = new HeadView($('head'), stage);
+  gfx = new SpriteMapView($('map-gfx'), stage);
+  head = new HeadView($('head'), $('head-gfx'), stage);
   feed = new FeedView($('feed'), stage);
   feed.clear();
   card = new CardView($('card'), stage);
@@ -358,6 +364,7 @@ function playDemo(target?: Target): void {
 
 /** Decide what to air: ?demo, ?show= / ?play=new|library, the saved series, the start screen, or the demo. */
 async function main(): Promise<void> {
+  await art.load(); // before playback, so rendered videos never catch a half-loaded sprite
   const deepScene = Number(params.get('scene') ?? 0);
   const target: Target | undefined = deepScene > 0 ? { scene: deepScene - 1 } : undefined;
   if (params.has('demo')) {
@@ -431,6 +438,17 @@ async function main(): Promise<void> {
 // Fixed-step simulation, decoupled from the frame rate.
 let last = performance.now();
 let acc = 0;
+/** The set as sprites when art is loaded, else ASCII; hidden on a talking head. True if the sprite picture changed. */
+function drawMap(onHead: boolean): boolean {
+  const sprites = !onHead && art.loaded;
+  const show = (el: HTMLElement, on: boolean) => { if (el.hidden === on) el.hidden = !on; };
+  show($('map'), !onHead && !sprites);
+  show($('map-gfx'), sprites);
+  if (sprites) return gfx.render();
+  if (!onHead) map.render();
+  return false;
+}
+
 function frame(now: number): void {
   const dt = Math.min(0.25, (now - last) / 1000);
   last = now;
@@ -449,10 +467,8 @@ function frame(now: number): void {
   }
   if (stage) {
     const onHead = stage.head !== null;
-    $('map').hidden = onHead;
-    $('head').hidden = !onHead;
-    if (onHead) head.render();
-    else map.render();
+    drawMap(onHead);
+    head.show(onHead);
     card.tick();
     renderStatus();
   }
@@ -470,6 +486,8 @@ window.addEventListener('keydown', (e) => {
     e.preventDefault();
   } else if (e.key >= '1' && e.key <= '4') {
     speed = SPEEDS[Number(e.key) - 1];
+  } else if (e.key === 'g') {
+    art.enabled = !art.enabled;
   } else if (e.key === 'd') {
     $('debug').hidden = !$('debug').hidden;
   } else if (e.key === 'f') {
@@ -514,10 +532,8 @@ fit();
 if (RENDER) {
   const view = () => {
     const onHead = stage.head !== null;
-    if ($('map').hidden !== onHead) $('map').hidden = onHead;
-    if ($('head').hidden === onHead) $('head').hidden = !onHead;
-    if (onHead) head.render();
-    else map.render();
+    if (drawMap(onHead)) renderState.changed = true; // canvas draws are invisible to the MutationObserver
+    head.show(onHead);
   };
   (window as unknown as { __render: object }).__render = {
     get ready() { return renderState.ready; },

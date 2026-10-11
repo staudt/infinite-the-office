@@ -65,7 +65,47 @@ main { flex: 1; min-height: 0; display: flex; gap: 14px; }
   overflow: hidden;
   white-space: pre;
 }
-#map[hidden], #head[hidden] { display: none; }
+#map[hidden], #head[hidden], #head-gfx[hidden], #map-gfx[hidden] { display: none; }
+
+/* The drawn confessional: same box as the map, layered images plus HTML text. */
+#head-gfx, #map-gfx {
+  position: relative;
+  font-size: var(--cell);
+  width: calc(var(--cols) * 1ch + 16px);
+  height: calc(var(--rows) * 1.3em + 12px);
+  border: 1px solid #1c1c28;
+  border-radius: 4px;
+  overflow: hidden;
+  background: #050508;
+}
+#head-gfx img { position: absolute; image-rendering: pixelated; user-select: none; }
+#head-gfx .hg-bg { inset: 0; width: 100%; height: 100%; object-fit: cover; }
+/* Seated slightly off-center, like the show; cropped at the waist by the frame. */
+#head-gfx .hg-who { left: 50%; bottom: 0; height: 88%; translate: -42% 0; }
+#head-gfx .hg-rec { position: absolute; top: 3%; left: 2.5%; color: #e8e8f0; font-size: 1.4em; text-shadow: 0 1px 3px #000; }
+#head-gfx .hg-dot { color: #ff4d4d; }
+#head-gfx .hg-vf { position: absolute; top: 3%; right: 2.5%; color: #e8e8f0; opacity: 0.8; font-size: 1.2em; text-shadow: 0 1px 3px #000; }
+#head-gfx .hg-third { position: absolute; left: 3%; bottom: 7%; display: flex; flex-direction: column; padding: 0.4em 1em 0.4em 0.8em; background: #1c1c2ce6; border-left: 0.35em solid currentColor; font-size: 1.5em; }
+#head-gfx .hg-name { font-weight: 700; }
+#head-gfx .hg-title { color: #a8a8c0; font-size: 0.8em; }
+#head-gfx .hg-sub { position: absolute; left: 30%; right: 6%; bottom: 5%; text-align: center; font-size: 1.7em; line-height: 1.35; }
+#head-gfx .hg-sub span { background: #0c0c14d9; color: #f4f4f4; padding: 0.1em 0.4em; box-decoration-break: clone; -webkit-box-decoration-break: clone; }
+/* The sprite map: a canvas with an HTML layer for balloons and cards. */
+#map-gfx canvas { display: block; width: 100%; height: 100%; }
+#map-gfx .sg-ui { position: absolute; inset: 0; overflow: hidden; pointer-events: none; }
+#map-gfx .sg-balloon { position: absolute; left: 0; top: 0; width: max-content; max-width: 34ch; box-sizing: border-box; padding: 0.35em 0.7em; border: 1px solid; border-left-width: 0.3em; border-radius: 0.5em; background: #181826f0; color: #ececec; font-size: 1.15em; line-height: 1.3; }
+#map-gfx .sg-balloon.sg-dir { font-style: italic; color: #b4b4cc; border-color: #3c3c58 !important; }
+#map-gfx .sg-who { margin-right: 0.2em; }
+#map-gfx .sg-balloon::after { content: ''; position: absolute; width: 0.7em; height: 0.7em; background: inherit; border: inherit; border-width: 0; --t: 50%; }
+#map-gfx .sg-balloon[data-tail=b]::after { left: calc(var(--t) - 0.35em); bottom: -0.35em; rotate: 45deg; border-right: 1px solid; border-bottom: 1px solid; border-color: inherit; }
+#map-gfx .sg-balloon[data-tail=t]::after { left: calc(var(--t) - 0.35em); top: -0.35em; rotate: 45deg; border-left: 1px solid; border-top: 1px solid; border-color: inherit; }
+#map-gfx .sg-balloon[data-tail=l]::after { top: calc(var(--t) - 0.35em); left: -0.35em; rotate: 45deg; border-left: 1px solid; border-bottom: 1px solid; border-color: inherit; }
+#map-gfx .sg-balloon[data-tail=r]::after { top: calc(var(--t) - 0.35em); right: -0.35em; rotate: 45deg; border-right: 1px solid; border-top: 1px solid; border-color: inherit; }
+#map-gfx .sg-card { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.8em; background: #050508; }
+#map-gfx .sg-card[hidden], #map-gfx .sg-cap[hidden] { display: none; }
+#map-gfx .sg-card b { color: var(--accent); font-size: 2.6em; letter-spacing: 0.25em; }
+#map-gfx .sg-card span { color: #cfd3ea; font-size: 1.4em; }
+#map-gfx .sg-cap { position: absolute; left: 0; right: 0; bottom: 3%; text-align: center; color: #9a9ab4; font-style: italic; font-size: 1.4em; text-shadow: 0 1px 3px #000; }
 /* One fixed cell for every non-ASCII glyph, whatever font draws it. */
 #map .w, #head .w { display: inline-block; width: 1ch; height: 1.3em; line-height: 1.3em; text-align: center; overflow: hidden; vertical-align: top; font-style: normal; }
 

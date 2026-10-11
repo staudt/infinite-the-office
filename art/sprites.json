@@ -1,0 +1,97 @@
+{
+ "sheets": [
+  {
+   "file": "furniture.png",
+   "kind": "props",
+   "key": true,
+   "gap": -2,
+   "names": [
+    "wardrobe",
+    "wall_picture",
+    "plant_tall",
+    "reception_desk_curved",
+    "couch_lamp",
+    "armchair",
+    "credenza_shelf",
+    "filing_cabinet_plant",
+    "conference_table",
+    "whiteboard",
+    "desk_small",
+    "counter_boxes",
+    "reception_desk_curved_2",
+    "bookshelf_tall",
+    "printer_filing_cabinet",
+    "desk_copier",
+    "bookshelf_low",
+    "desk_pod_stacked",
+    "desk_pod_a",
+    "desk_pod_b",
+    "desk_pod_c",
+    "counter_printer",
+    "plant_tall_2",
+    "kitchen_counter",
+    "plant_tall_3",
+    "bookshelf_files",
+    "desk_manager",
+    "desk_small_2",
+    "coat_rack",
+    "file_cabinet_plant",
+    "shelf_papers",
+    "plant_tall_4",
+    "michael_desk",
+    "coat_rack_jackets",
+    "bookshelf_dark",
+    "globe_cabinet",
+    "copier_cabinet",
+    "supply_counter",
+    "wall_map",
+    "round_table",
+    "filing_cabinet_stack"
+   ]
+  },
+  {
+   "file": "chairs.png",
+   "kind": "props",
+   "key": true,
+   "gap": 6,
+   "names": [
+    "chair_front",
+    "chair_back",
+    "chair_side"
+   ]
+  },
+  {
+   "file": "pam-walk-front.png",
+   "kind": "frames",
+   "name": "pam_walk_front",
+   "gap": 1,
+   "scale": 0.5
+  },
+  {
+   "file": "pam-walk-back.png",
+   "kind": "frames",
+   "name": "pam_walk_back",
+   "gap": 1,
+   "scale": 0.5
+  },
+  {
+   "file": "pam-walk-side.png",
+   "kind": "frames",
+   "name": "pam_walk_side",
+   "gap": 1,
+   "scale": 0.5
+  },
+  {
+   "file": "pam-head.png",
+   "kind": "image",
+   "name": "pam_head",
+   "maxHeight": 800
+  },
+  {
+   "file": "head-bg.png",
+   "kind": "image",
+   "name": "head_bg",
+   "maxWidth": 1280
+  }
+ ]
+}

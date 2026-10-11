@@ -1,0 +1,313 @@
+{
+  "version": 1,
+  "id": "the-office",
+  "seed": 3754212070,
+  "name": "The Office",
+  "direction": "Classic mid-run Scranton: Michael is regional manager and desperate for love and approval, Jim and Pam's slow-burn romance, Dwight's endless quest for power, Andy arrives from Stamford. Grounded, warm, cringe comedy with real season-long arcs and recurring side characters.",
+  "season": 1,
+  "episode": 0,
+  "roster": [
+    "michael",
+    "dwight",
+    "jim",
+    "pam",
+    "ryan",
+    "andy",
+    "stanley",
+    "phyllis",
+    "angela",
+    "oscar",
+    "kevin",
+    "kelly",
+    "meredith",
+    "creed",
+    "toby",
+    "darryl",
+    "jan",
+    "david",
+    "roy",
+    "packer",
+    "bob_vance",
+    "gerald_boyd"
+  ],
+  "deskOverrides": {},
+  "extras": [
+    {
+      "id": "gerald_boyd",
+      "name": "Gerald Boyd",
+      "title": "Corporate Auditor",
+      "voice": "Monotone, ever-sighing numbers guy who just wants everyone to produce a receipt.",
+      "glyph": "L",
+      "color": "#00e5ff",
+      "since": 1
+    }
+  ],
+  "relationships": [
+    {
+      "a": "jim",
+      "b": "pam",
+      "status": "Best friends; Jim quietly in love, Pam engaged-ish to Roy with a never-set wedding date."
+    },
+    {
+      "a": "pam",
+      "b": "roy",
+      "status": "Long-engaged, Roy neglectful but possessive."
+    },
+    {
+      "a": "michael",
+      "b": "jan",
+      "status": "Boss and subordinate; Jan tolerates him, flirtation sparks late."
+    },
+    {
+      "a": "dwight",
+      "b": "andy",
+      "status": "Andy arrives mid-season; instant rivals for Michael's favor."
+    },
+    {
+      "a": "dwight",
+      "b": "angela",
+      "status": "Secret, prim, unspoken thing."
+    },
+    {
+      "a": "michael",
+      "b": "toby",
+      "status": "Michael despises Toby for no reason."
+    }
+  ],
+  "gags": [
+    "Dwight's elaborate pranks on Jim, such as stapler in Jell-O or the Schrute Bucks",
+    "Michael's 'That's what she said' that lands on silence",
+    "Stanley's crossword and counting days to retirement",
+    "Toby is told he is not invited to things"
+  ],
+  "notes": [],
+  "arcProgress": {},
+  "storySoFar": "",
+  "history": [],
+  "recentPlots": [],
+  "bible": {
+    "theme": "Everyone wants to be seen by someone: Michael by the whole office, Dwight by power, Jim by Pam, Andy by anyone who'll sing along.",
+    "era": "Season 2-3 energy: Jim and Pam slow burn with Roy in the way, Michael and Jan, Andy arriving from Stamford as a rival for Dwight.",
+    "roster": [
+      "michael",
+      "dwight",
+      "jim",
+      "pam",
+      "ryan",
+      "andy",
+      "stanley",
+      "phyllis",
+      "angela",
+      "oscar",
+      "kevin",
+      "kelly",
+      "meredith",
+      "creed",
+      "toby",
+      "darryl",
+      "jan",
+      "david",
+      "roy",
+      "packer",
+      "bob_vance",
+      "gerald_boyd"
+    ],
+    "deskOverrides": [],
+    "manager": "michael",
+    "relationships": [
+      {
+        "a": "jim",
+        "b": "pam",
+        "status": "Best friends; Jim quietly in love, Pam engaged-ish to Roy with a never-set wedding date."
+      },
+      {
+        "a": "pam",
+        "b": "roy",
+        "status": "Long-engaged, Roy neglectful but possessive."
+      },
+      {
+        "a": "michael",
+        "b": "jan",
+        "status": "Boss and subordinate; Jan tolerates him, flirtation sparks late."
+      },
+      {
+        "a": "dwight",
+        "b": "andy",
+        "status": "Andy arrives mid-season; instant rivals for Michael's favor."
+      },
+      {
+        "a": "dwight",
+        "b": "angela",
+        "status": "Secret, prim, unspoken thing."
+      },
+      {
+        "a": "michael",
+        "b": "toby",
+        "status": "Michael despises Toby for no reason."
+      }
+    ],
+    "arcs": [
+      {
+        "name": "Will They, Won't They: Jim and Pam",
+        "kind": "A",
+        "summary": "Jim's crush on Pam grows while she is stuck with Roy's endless engagement. Small kindnesses build toward a confession.",
+        "perEpisode": [
+          {
+            "episode": 1,
+            "beat": "Jim and Pam prank Dwight together; Roy picks Pam up late and barely notices her."
+          },
+          {
+            "episode": 4,
+            "beat": "Pam shows Jim her art; Jim is the only one who looks."
+          },
+          {
+            "episode": 6,
+            "beat": "Roy forgets Pam's art show; Jim shows up instead."
+          },
+          {
+            "episode": 8,
+            "beat": "Jim almost tells Pam, interrupted by Michael."
+          },
+          {
+            "episode": 10,
+            "beat": "Pam sees Jim with another woman and is jealous, unsure why."
+          },
+          {
+            "episode": 12,
+            "beat": "Jim confesses; Pam says she can't, but doesn't say she doesn't feel it. Jim requests a transfer to Stamford."
+          }
+        ],
+        "payoff": "Jim confesses in the finale; Pam hesitates and Jim leaves for Stamford, a hook for season 2."
+      },
+      {
+        "name": "Michael Wants to Be Loved",
+        "kind": "B",
+        "summary": "Michael's schemes to win affection backfire, but he sometimes earns real warmth. He also pursues Jan's approval.",
+        "perEpisode": [
+          {
+            "episode": 2,
+            "beat": "Michael throws a mandatory fun meeting; only Kevin is happy."
+          },
+          {
+            "episode": 5,
+            "beat": "Jan visits and Michael oversells himself, nearly costing him credibility."
+          },
+          {
+            "episode": 7,
+            "beat": "Michael's failed party leaves him alone; Darryl and Pam sit with him."
+          },
+          {
+            "episode": 9,
+            "beat": "David Wallace praises Michael's sales numbers; Michael takes it badly well."
+          },
+          {
+            "episode": 11,
+            "beat": "Corporate threatens downsizing; the office rallies for Michael without telling him."
+          },
+          {
+            "episode": 12,
+            "beat": "Michael learns they covered for him and is truly moved."
+          }
+        ],
+        "payoff": "The office shows it likes him; he hides tears in the conference room."
+      },
+      {
+        "name": "Dwight vs. Andy",
+        "kind": "B",
+        "summary": "Andy arrives from Stamford with a better tie and a better voice, so Dwight escalates to keep his status as Michael's favorite.",
+        "perEpisode": [
+          {
+            "episode": 3,
+            "beat": "Andy arrives and sings a welcome; Dwight declares a secret war."
+          },
+          {
+            "episode": 5,
+            "beat": "Dwight tests Andy's sales claims; Andy outsells him."
+          },
+          {
+            "episode": 8,
+            "beat": "Dwight sabotages Andy; Jim helps by accident."
+          },
+          {
+            "episode": 10,
+            "beat": "Andy and Dwight forced to share a client; they succeed by luck."
+          },
+          {
+            "episode": 12,
+            "beat": "Dwight is named Assistant Regional Manager in a technicality, Andy sulks, then they share a grudging nod."
+          }
+        ],
+        "payoff": "Armed truce; Dwight keeps his title, Andy keeps a crowd."
+      },
+      {
+        "name": "Angela and Dwight Secret",
+        "kind": "C",
+        "summary": "Dwight and Angela's covert flirtation leaks in tiny hints.",
+        "perEpisode": [
+          {
+            "episode": 4,
+            "beat": "Angela defends Dwight bizarrely."
+          },
+          {
+            "episode": 9,
+            "beat": "Kevin notices them leaving the same parking lot at the same time."
+          },
+          {
+            "episode": 11,
+            "beat": "Oscar figures it out and keeps it to himself, annoyed."
+          }
+        ],
+        "payoff": "Oscar and Kevin both know; nobody says anything."
+      }
+    ],
+    "extras": [
+      {
+        "id": "gerald_boyd",
+        "name": "Gerald Boyd",
+        "title": "Corporate Auditor",
+        "voice": "Monotone, ever-sighing numbers guy who just wants everyone to produce a receipt."
+      }
+    ],
+    "runningGags": [
+      "Dwight's elaborate pranks on Jim, such as stapler in Jell-O or the Schrute Bucks",
+      "Michael's 'That's what she said' that lands on silence",
+      "Stanley's crossword and counting days to retirement",
+      "Toby is told he is not invited to things"
+    ],
+    "tentpoles": [
+      {
+        "episode": 2,
+        "id": "dundies",
+        "plan": "Michael hosts the Dundies at Chili's; Pam wins 'Whitest Sneakers', gets drunk and honest, Jim notices."
+      },
+      {
+        "episode": 5,
+        "id": "pretzel_day",
+        "plan": "Stanley's one joy is threatened and Andy's arrival costs the office Pretzel Day, so Dwight blames him."
+      },
+      {
+        "episode": 7,
+        "id": "halloween",
+        "plan": "Michael fires someone in a costume as a bit; costume contest humiliates Dwight and Andy."
+      },
+      {
+        "episode": 9,
+        "id": "fun_run",
+        "plan": "Michael makes the charity run about himself; Jim and Pam walk it together."
+      },
+      {
+        "episode": 10,
+        "id": "booze_cruise",
+        "plan": "Offsite outing shifts the Jim/Pam dynamic as Jim brings a date."
+      },
+      {
+        "episode": 11,
+        "id": "christmas",
+        "plan": "Party Planning Committee fights; Michael's Yankee Swap gift reveals his loneliness while the office rallies for him."
+      }
+    ],
+    "finale": "Corporate downsizing review ends in Michael's favor because the staff vouch for him. Jim confesses to Pam, who hesitates; Jim takes the Stamford transfer. Dwight claims a title; Andy stays. Final hook: Pam's desk with a card from Jim, and Roy's wedding date finally set.",
+    "changes": ""
+  },
+  "bibleSeason": 1
+}
