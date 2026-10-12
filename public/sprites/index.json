@@ -954,6 +954,630 @@
    "frames": 1,
    "anchorX": 33,
    "anchorY": 122
+  },
+  "oscar_walk_front": {
+   "src": "oscar_walk_front.png",
+   "frameW": 69,
+   "frameH": 136,
+   "frames": 5,
+   "anchorX": 34,
+   "anchorY": 135
+  },
+  "oscar_walk_back": {
+   "src": "oscar_walk_back.png",
+   "frameW": 66,
+   "frameH": 135,
+   "frames": 5,
+   "anchorX": 33,
+   "anchorY": 134
+  },
+  "oscar_walk_side": {
+   "src": "oscar_walk_side.png",
+   "frameW": 73,
+   "frameH": 143,
+   "frames": 5,
+   "anchorX": 36,
+   "anchorY": 142
+  },
+  "oscar_sit_front": {
+   "src": "oscar_sit_front.png",
+   "frameW": 80,
+   "frameH": 159,
+   "frames": 1,
+   "anchorX": 40,
+   "anchorY": 158
+  },
+  "oscar_sit_back": {
+   "src": "oscar_sit_back.png",
+   "frameW": 80,
+   "frameH": 159,
+   "frames": 1,
+   "anchorX": 40,
+   "anchorY": 158
+  },
+  "oscar_sit_side": {
+   "src": "oscar_sit_side.png",
+   "frameW": 87,
+   "frameH": 157,
+   "frames": 1,
+   "anchorX": 43,
+   "anchorY": 156
+  },
+  "oscar_type_side": {
+   "src": "oscar_type_side.png",
+   "frameW": 90,
+   "frameH": 158,
+   "frames": 2,
+   "anchorX": 45,
+   "anchorY": 157
+  },
+  "oscar_phone_side": {
+   "src": "oscar_phone_side.png",
+   "frameW": 88,
+   "frameH": 158,
+   "frames": 1,
+   "anchorX": 44,
+   "anchorY": 157
+  },
+  "oscar_react_gasp": {
+   "src": "oscar_react_gasp.png",
+   "frameW": 71,
+   "frameH": 137,
+   "frames": 1,
+   "anchorX": 35,
+   "anchorY": 136
+  },
+  "oscar_react_laugh": {
+   "src": "oscar_react_laugh.png",
+   "frameW": 71,
+   "frameH": 137,
+   "frames": 1,
+   "anchorX": 35,
+   "anchorY": 136
+  },
+  "oscar_react_sad": {
+   "src": "oscar_react_sad.png",
+   "frameW": 71,
+   "frameH": 137,
+   "frames": 1,
+   "anchorX": 35,
+   "anchorY": 136
+  },
+  "oscar_react_facepalm": {
+   "src": "oscar_react_facepalm.png",
+   "frameW": 71,
+   "frameH": 137,
+   "frames": 1,
+   "anchorX": 35,
+   "anchorY": 136
+  },
+  "oscar_react_look": {
+   "src": "oscar_react_look.png",
+   "frameW": 71,
+   "frameH": 137,
+   "frames": 1,
+   "anchorX": 35,
+   "anchorY": 136
+  },
+  "phyllis_walk_front": {
+   "src": "phyllis_walk_front.png",
+   "frameW": 72,
+   "frameH": 127,
+   "frames": 5,
+   "anchorX": 36,
+   "anchorY": 126
+  },
+  "phyllis_walk_back": {
+   "src": "phyllis_walk_back.png",
+   "frameW": 69,
+   "frameH": 123,
+   "frames": 5,
+   "anchorX": 34,
+   "anchorY": 122
+  },
+  "phyllis_walk_side": {
+   "src": "phyllis_walk_side.png",
+   "frameW": 68,
+   "frameH": 124,
+   "frames": 5,
+   "anchorX": 34,
+   "anchorY": 123
+  },
+  "phyllis_sit_front": {
+   "src": "phyllis_sit_front.png",
+   "frameW": 77,
+   "frameH": 138,
+   "frames": 1,
+   "anchorX": 38,
+   "anchorY": 137
+  },
+  "phyllis_sit_back": {
+   "src": "phyllis_sit_back.png",
+   "frameW": 77,
+   "frameH": 138,
+   "frames": 1,
+   "anchorX": 38,
+   "anchorY": 137
+  },
+  "phyllis_sit_side": {
+   "src": "phyllis_sit_side.png",
+   "frameW": 90,
+   "frameH": 140,
+   "frames": 1,
+   "anchorX": 45,
+   "anchorY": 139
+  },
+  "phyllis_type_side": {
+   "src": "phyllis_type_side.png",
+   "frameW": 91,
+   "frameH": 140,
+   "frames": 2,
+   "anchorX": 45,
+   "anchorY": 139
+  },
+  "phyllis_phone_side": {
+   "src": "phyllis_phone_side.png",
+   "frameW": 87,
+   "frameH": 140,
+   "frames": 1,
+   "anchorX": 43,
+   "anchorY": 139
+  },
+  "phyllis_react_gasp": {
+   "src": "phyllis_react_gasp.png",
+   "frameW": 71,
+   "frameH": 125,
+   "frames": 1,
+   "anchorX": 35,
+   "anchorY": 124
+  },
+  "phyllis_react_laugh": {
+   "src": "phyllis_react_laugh.png",
+   "frameW": 71,
+   "frameH": 125,
+   "frames": 1,
+   "anchorX": 35,
+   "anchorY": 124
+  },
+  "phyllis_react_sad": {
+   "src": "phyllis_react_sad.png",
+   "frameW": 72,
+   "frameH": 125,
+   "frames": 1,
+   "anchorX": 36,
+   "anchorY": 124
+  },
+  "phyllis_react_facepalm": {
+   "src": "phyllis_react_facepalm.png",
+   "frameW": 72,
+   "frameH": 124,
+   "frames": 1,
+   "anchorX": 36,
+   "anchorY": 123
+  },
+  "phyllis_react_look": {
+   "src": "phyllis_react_look.png",
+   "frameW": 72,
+   "frameH": 125,
+   "frames": 1,
+   "anchorX": 36,
+   "anchorY": 124
+  },
+  "creed_walk_front": {
+   "src": "creed_walk_front.png",
+   "frameW": 63,
+   "frameH": 132,
+   "frames": 5,
+   "anchorX": 31,
+   "anchorY": 131
+  },
+  "creed_walk_back": {
+   "src": "creed_walk_back.png",
+   "frameW": 62,
+   "frameH": 134,
+   "frames": 5,
+   "anchorX": 31,
+   "anchorY": 133
+  },
+  "creed_walk_side": {
+   "src": "creed_walk_side.png",
+   "frameW": 63,
+   "frameH": 131,
+   "frames": 5,
+   "anchorX": 31,
+   "anchorY": 130
+  },
+  "creed_sit_front": {
+   "src": "creed_sit_front.png",
+   "frameW": 79,
+   "frameH": 146,
+   "frames": 1,
+   "anchorX": 39,
+   "anchorY": 145
+  },
+  "creed_sit_back": {
+   "src": "creed_sit_back.png",
+   "frameW": 78,
+   "frameH": 147,
+   "frames": 1,
+   "anchorX": 39,
+   "anchorY": 146
+  },
+  "creed_sit_side": {
+   "src": "creed_sit_side.png",
+   "frameW": 81,
+   "frameH": 147,
+   "frames": 1,
+   "anchorX": 40,
+   "anchorY": 146
+  },
+  "creed_type_side": {
+   "src": "creed_type_side.png",
+   "frameW": 80,
+   "frameH": 148,
+   "frames": 2,
+   "anchorX": 40,
+   "anchorY": 147
+  },
+  "creed_phone_side": {
+   "src": "creed_phone_side.png",
+   "frameW": 83,
+   "frameH": 147,
+   "frames": 1,
+   "anchorX": 41,
+   "anchorY": 146
+  },
+  "creed_react_gasp": {
+   "src": "creed_react_gasp.png",
+   "frameW": 64,
+   "frameH": 132,
+   "frames": 1,
+   "anchorX": 32,
+   "anchorY": 131
+  },
+  "creed_react_laugh": {
+   "src": "creed_react_laugh.png",
+   "frameW": 63,
+   "frameH": 132,
+   "frames": 1,
+   "anchorX": 31,
+   "anchorY": 131
+  },
+  "creed_react_sad": {
+   "src": "creed_react_sad.png",
+   "frameW": 63,
+   "frameH": 132,
+   "frames": 1,
+   "anchorX": 31,
+   "anchorY": 131
+  },
+  "creed_react_facepalm": {
+   "src": "creed_react_facepalm.png",
+   "frameW": 64,
+   "frameH": 132,
+   "frames": 1,
+   "anchorX": 32,
+   "anchorY": 131
+  },
+  "creed_react_look": {
+   "src": "creed_react_look.png",
+   "frameW": 65,
+   "frameH": 132,
+   "frames": 1,
+   "anchorX": 32,
+   "anchorY": 131
+  },
+  "meredith_walk_front": {
+   "src": "meredith_walk_front.png",
+   "frameW": 69,
+   "frameH": 129,
+   "frames": 5,
+   "anchorX": 34,
+   "anchorY": 128
+  },
+  "meredith_walk_back": {
+   "src": "meredith_walk_back.png",
+   "frameW": 67,
+   "frameH": 125,
+   "frames": 5,
+   "anchorX": 33,
+   "anchorY": 124
+  },
+  "meredith_walk_side": {
+   "src": "meredith_walk_side.png",
+   "frameW": 70,
+   "frameH": 128,
+   "frames": 5,
+   "anchorX": 35,
+   "anchorY": 127
+  },
+  "meredith_sit_front": {
+   "src": "meredith_sit_front.png",
+   "frameW": 77,
+   "frameH": 151,
+   "frames": 1,
+   "anchorX": 38,
+   "anchorY": 150
+  },
+  "meredith_sit_back": {
+   "src": "meredith_sit_back.png",
+   "frameW": 77,
+   "frameH": 154,
+   "frames": 1,
+   "anchorX": 38,
+   "anchorY": 153
+  },
+  "meredith_sit_side": {
+   "src": "meredith_sit_side.png",
+   "frameW": 87,
+   "frameH": 152,
+   "frames": 1,
+   "anchorX": 43,
+   "anchorY": 151
+  },
+  "meredith_type_side": {
+   "src": "meredith_type_side.png",
+   "frameW": 86,
+   "frameH": 153,
+   "frames": 2,
+   "anchorX": 43,
+   "anchorY": 152
+  },
+  "meredith_phone_side": {
+   "src": "meredith_phone_side.png",
+   "frameW": 85,
+   "frameH": 152,
+   "frames": 1,
+   "anchorX": 42,
+   "anchorY": 151
+  },
+  "meredith_react_gasp": {
+   "src": "meredith_react_gasp.png",
+   "frameW": 71,
+   "frameH": 130,
+   "frames": 1,
+   "anchorX": 35,
+   "anchorY": 129
+  },
+  "meredith_react_laugh": {
+   "src": "meredith_react_laugh.png",
+   "frameW": 71,
+   "frameH": 130,
+   "frames": 1,
+   "anchorX": 35,
+   "anchorY": 129
+  },
+  "meredith_react_sad": {
+   "src": "meredith_react_sad.png",
+   "frameW": 72,
+   "frameH": 130,
+   "frames": 1,
+   "anchorX": 36,
+   "anchorY": 129
+  },
+  "meredith_react_facepalm": {
+   "src": "meredith_react_facepalm.png",
+   "frameW": 72,
+   "frameH": 130,
+   "frames": 1,
+   "anchorX": 36,
+   "anchorY": 129
+  },
+  "meredith_react_look": {
+   "src": "meredith_react_look.png",
+   "frameW": 72,
+   "frameH": 131,
+   "frames": 1,
+   "anchorX": 36,
+   "anchorY": 130
+  },
+  "andy_walk_front": {
+   "src": "andy_walk_front.png",
+   "frameW": 66,
+   "frameH": 139,
+   "frames": 5,
+   "anchorX": 33,
+   "anchorY": 138
+  },
+  "andy_walk_back": {
+   "src": "andy_walk_back.png",
+   "frameW": 67,
+   "frameH": 138,
+   "frames": 5,
+   "anchorX": 33,
+   "anchorY": 137
+  },
+  "andy_walk_side": {
+   "src": "andy_walk_side.png",
+   "frameW": 70,
+   "frameH": 134,
+   "frames": 5,
+   "anchorX": 35,
+   "anchorY": 133
+  },
+  "andy_sit_front": {
+   "src": "andy_sit_front.png",
+   "frameW": 77,
+   "frameH": 147,
+   "frames": 1,
+   "anchorX": 38,
+   "anchorY": 146
+  },
+  "andy_sit_back": {
+   "src": "andy_sit_back.png",
+   "frameW": 76,
+   "frameH": 148,
+   "frames": 1,
+   "anchorX": 38,
+   "anchorY": 147
+  },
+  "andy_sit_side": {
+   "src": "andy_sit_side.png",
+   "frameW": 77,
+   "frameH": 147,
+   "frames": 1,
+   "anchorX": 38,
+   "anchorY": 146
+  },
+  "andy_type_side": {
+   "src": "andy_type_side.png",
+   "frameW": 79,
+   "frameH": 148,
+   "frames": 2,
+   "anchorX": 39,
+   "anchorY": 147
+  },
+  "andy_phone_side": {
+   "src": "andy_phone_side.png",
+   "frameW": 79,
+   "frameH": 148,
+   "frames": 1,
+   "anchorX": 39,
+   "anchorY": 147
+  },
+  "andy_react_gasp": {
+   "src": "andy_react_gasp.png",
+   "frameW": 67,
+   "frameH": 130,
+   "frames": 1,
+   "anchorX": 33,
+   "anchorY": 129
+  },
+  "andy_react_laugh": {
+   "src": "andy_react_laugh.png",
+   "frameW": 66,
+   "frameH": 130,
+   "frames": 1,
+   "anchorX": 33,
+   "anchorY": 129
+  },
+  "andy_react_sad": {
+   "src": "andy_react_sad.png",
+   "frameW": 66,
+   "frameH": 131,
+   "frames": 1,
+   "anchorX": 33,
+   "anchorY": 130
+  },
+  "andy_react_facepalm": {
+   "src": "andy_react_facepalm.png",
+   "frameW": 68,
+   "frameH": 131,
+   "frames": 1,
+   "anchorX": 34,
+   "anchorY": 130
+  },
+  "andy_react_look": {
+   "src": "andy_react_look.png",
+   "frameW": 67,
+   "frameH": 132,
+   "frames": 1,
+   "anchorX": 33,
+   "anchorY": 131
+  },
+  "ryan_walk_front": {
+   "src": "ryan_walk_front.png",
+   "frameW": 67,
+   "frameH": 137,
+   "frames": 5,
+   "anchorX": 33,
+   "anchorY": 136
+  },
+  "ryan_walk_back": {
+   "src": "ryan_walk_back.png",
+   "frameW": 67,
+   "frameH": 138,
+   "frames": 5,
+   "anchorX": 33,
+   "anchorY": 137
+  },
+  "ryan_walk_side": {
+   "src": "ryan_walk_side.png",
+   "frameW": 73,
+   "frameH": 135,
+   "frames": 5,
+   "anchorX": 36,
+   "anchorY": 134
+  },
+  "ryan_sit_front": {
+   "src": "ryan_sit_front.png",
+   "frameW": 75,
+   "frameH": 152,
+   "frames": 1,
+   "anchorX": 37,
+   "anchorY": 151
+  },
+  "ryan_sit_back": {
+   "src": "ryan_sit_back.png",
+   "frameW": 79,
+   "frameH": 152,
+   "frames": 1,
+   "anchorX": 39,
+   "anchorY": 151
+  },
+  "ryan_sit_side": {
+   "src": "ryan_sit_side.png",
+   "frameW": 82,
+   "frameH": 150,
+   "frames": 1,
+   "anchorX": 41,
+   "anchorY": 149
+  },
+  "ryan_type_side": {
+   "src": "ryan_type_side.png",
+   "frameW": 82,
+   "frameH": 151,
+   "frames": 2,
+   "anchorX": 41,
+   "anchorY": 150
+  },
+  "ryan_phone_side": {
+   "src": "ryan_phone_side.png",
+   "frameW": 82,
+   "frameH": 150,
+   "frames": 1,
+   "anchorX": 41,
+   "anchorY": 149
+  },
+  "ryan_react_gasp": {
+   "src": "ryan_react_gasp.png",
+   "frameW": 69,
+   "frameH": 138,
+   "frames": 1,
+   "anchorX": 34,
+   "anchorY": 137
+  },
+  "ryan_react_laugh": {
+   "src": "ryan_react_laugh.png",
+   "frameW": 69,
+   "frameH": 138,
+   "frames": 1,
+   "anchorX": 34,
+   "anchorY": 137
+  },
+  "ryan_react_sad": {
+   "src": "ryan_react_sad.png",
+   "frameW": 69,
+   "frameH": 138,
+   "frames": 1,
+   "anchorX": 34,
+   "anchorY": 137
+  },
+  "ryan_react_facepalm": {
+   "src": "ryan_react_facepalm.png",
+   "frameW": 70,
+   "frameH": 135,
+   "frames": 1,
+   "anchorX": 35,
+   "anchorY": 134
+  },
+  "ryan_react_look": {
+   "src": "ryan_react_look.png",
+   "frameW": 70,
+   "frameH": 138,
+   "frames": 1,
+   "anchorX": 35,
+   "anchorY": 137
   }
  },
  "images": {

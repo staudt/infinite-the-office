@@ -275,6 +275,54 @@
    "key": true,
    "gap": 12,
    "height": 118
+  },
+  {
+   "file": "oscar-sheet.png",
+   "kind": "character",
+   "name": "oscar",
+   "key": true,
+   "gap": 12,
+   "height": 132
+  },
+  {
+   "file": "phyllis-sheet.png",
+   "kind": "character",
+   "name": "phyllis",
+   "key": true,
+   "gap": 12,
+   "height": 122
+  },
+  {
+   "file": "creed-sheet.png",
+   "kind": "character",
+   "name": "creed",
+   "key": true,
+   "gap": 12,
+   "height": 128
+  },
+  {
+   "file": "meredith-sheet.png",
+   "kind": "character",
+   "name": "meredith",
+   "key": true,
+   "gap": 12,
+   "height": 124
+  },
+  {
+   "file": "andy-sheet.png",
+   "kind": "character",
+   "name": "andy",
+   "key": true,
+   "gap": 12,
+   "height": 134
+  },
+  {
+   "file": "ryan-sheet.png",
+   "kind": "character",
+   "name": "ryan",
+   "key": true,
+   "gap": 12,
+   "height": 132
   }
  ]
 }
