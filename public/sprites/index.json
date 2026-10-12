@@ -330,6 +330,422 @@
    "frames": 1,
    "anchorX": 35,
    "anchorY": 128
+  },
+  "jim_walk_front": {
+   "src": "jim_walk_front.png",
+   "frameW": 79,
+   "frameH": 144,
+   "frames": 5,
+   "anchorX": 39,
+   "anchorY": 143
+  },
+  "jim_walk_back": {
+   "src": "jim_walk_back.png",
+   "frameW": 76,
+   "frameH": 141,
+   "frames": 5,
+   "anchorX": 38,
+   "anchorY": 140
+  },
+  "jim_walk_side": {
+   "src": "jim_walk_side.png",
+   "frameW": 79,
+   "frameH": 145,
+   "frames": 5,
+   "anchorX": 39,
+   "anchorY": 144
+  },
+  "jim_sit_front": {
+   "src": "jim_sit_front.png",
+   "frameW": 74,
+   "frameH": 150,
+   "frames": 1,
+   "anchorX": 37,
+   "anchorY": 149
+  },
+  "jim_sit_back": {
+   "src": "jim_sit_back.png",
+   "frameW": 74,
+   "frameH": 150,
+   "frames": 1,
+   "anchorX": 37,
+   "anchorY": 149
+  },
+  "jim_sit_side": {
+   "src": "jim_sit_side.png",
+   "frameW": 80,
+   "frameH": 150,
+   "frames": 1,
+   "anchorX": 40,
+   "anchorY": 149
+  },
+  "jim_type_side": {
+   "src": "jim_type_side.png",
+   "frameW": 80,
+   "frameH": 150,
+   "frames": 2,
+   "anchorX": 40,
+   "anchorY": 149
+  },
+  "jim_phone_side": {
+   "src": "jim_phone_side.png",
+   "frameW": 80,
+   "frameH": 150,
+   "frames": 1,
+   "anchorX": 40,
+   "anchorY": 149
+  },
+  "jim_react_gasp": {
+   "src": "jim_react_gasp.png",
+   "frameW": 78,
+   "frameH": 145,
+   "frames": 1,
+   "anchorX": 39,
+   "anchorY": 144
+  },
+  "jim_react_laugh": {
+   "src": "jim_react_laugh.png",
+   "frameW": 81,
+   "frameH": 144,
+   "frames": 1,
+   "anchorX": 40,
+   "anchorY": 143
+  },
+  "jim_react_sad": {
+   "src": "jim_react_sad.png",
+   "frameW": 81,
+   "frameH": 145,
+   "frames": 1,
+   "anchorX": 40,
+   "anchorY": 144
+  },
+  "jim_react_facepalm": {
+   "src": "jim_react_facepalm.png",
+   "frameW": 80,
+   "frameH": 145,
+   "frames": 1,
+   "anchorX": 40,
+   "anchorY": 144
+  },
+  "jim_react_look": {
+   "src": "jim_react_look.png",
+   "frameW": 80,
+   "frameH": 145,
+   "frames": 1,
+   "anchorX": 40,
+   "anchorY": 144
+  },
+  "dwight_walk_front": {
+   "src": "dwight_walk_front.png",
+   "frameW": 74,
+   "frameH": 142,
+   "frames": 5,
+   "anchorX": 37,
+   "anchorY": 141
+  },
+  "dwight_walk_back": {
+   "src": "dwight_walk_back.png",
+   "frameW": 71,
+   "frameH": 139,
+   "frames": 5,
+   "anchorX": 35,
+   "anchorY": 138
+  },
+  "dwight_walk_side": {
+   "src": "dwight_walk_side.png",
+   "frameW": 76,
+   "frameH": 141,
+   "frames": 5,
+   "anchorX": 38,
+   "anchorY": 140
+  },
+  "dwight_sit_front": {
+   "src": "dwight_sit_front.png",
+   "frameW": 74,
+   "frameH": 149,
+   "frames": 1,
+   "anchorX": 37,
+   "anchorY": 148
+  },
+  "dwight_sit_back": {
+   "src": "dwight_sit_back.png",
+   "frameW": 73,
+   "frameH": 149,
+   "frames": 1,
+   "anchorX": 36,
+   "anchorY": 148
+  },
+  "dwight_sit_side": {
+   "src": "dwight_sit_side.png",
+   "frameW": 80,
+   "frameH": 151,
+   "frames": 1,
+   "anchorX": 40,
+   "anchorY": 150
+  },
+  "dwight_type_side": {
+   "src": "dwight_type_side.png",
+   "frameW": 80,
+   "frameH": 150,
+   "frames": 2,
+   "anchorX": 40,
+   "anchorY": 149
+  },
+  "dwight_phone_side": {
+   "src": "dwight_phone_side.png",
+   "frameW": 78,
+   "frameH": 150,
+   "frames": 1,
+   "anchorX": 39,
+   "anchorY": 149
+  },
+  "dwight_react_gasp": {
+   "src": "dwight_react_gasp.png",
+   "frameW": 73,
+   "frameH": 141,
+   "frames": 1,
+   "anchorX": 36,
+   "anchorY": 140
+  },
+  "dwight_react_laugh": {
+   "src": "dwight_react_laugh.png",
+   "frameW": 74,
+   "frameH": 141,
+   "frames": 1,
+   "anchorX": 37,
+   "anchorY": 140
+  },
+  "dwight_react_sad": {
+   "src": "dwight_react_sad.png",
+   "frameW": 74,
+   "frameH": 141,
+   "frames": 1,
+   "anchorX": 37,
+   "anchorY": 140
+  },
+  "dwight_react_facepalm": {
+   "src": "dwight_react_facepalm.png",
+   "frameW": 74,
+   "frameH": 140,
+   "frames": 1,
+   "anchorX": 37,
+   "anchorY": 139
+  },
+  "dwight_react_look": {
+   "src": "dwight_react_look.png",
+   "frameW": 74,
+   "frameH": 140,
+   "frames": 1,
+   "anchorX": 37,
+   "anchorY": 139
+  },
+  "michael_walk_front": {
+   "src": "michael_walk_front.png",
+   "frameW": 69,
+   "frameH": 136,
+   "frames": 5,
+   "anchorX": 34,
+   "anchorY": 135
+  },
+  "michael_walk_back": {
+   "src": "michael_walk_back.png",
+   "frameW": 67,
+   "frameH": 139,
+   "frames": 5,
+   "anchorX": 33,
+   "anchorY": 138
+  },
+  "michael_walk_side": {
+   "src": "michael_walk_side.png",
+   "frameW": 69,
+   "frameH": 138,
+   "frames": 5,
+   "anchorX": 34,
+   "anchorY": 137
+  },
+  "michael_sit_front": {
+   "src": "michael_sit_front.png",
+   "frameW": 73,
+   "frameH": 150,
+   "frames": 1,
+   "anchorX": 36,
+   "anchorY": 149
+  },
+  "michael_sit_back": {
+   "src": "michael_sit_back.png",
+   "frameW": 72,
+   "frameH": 150,
+   "frames": 1,
+   "anchorX": 36,
+   "anchorY": 149
+  },
+  "michael_sit_side": {
+   "src": "michael_sit_side.png",
+   "frameW": 81,
+   "frameH": 151,
+   "frames": 1,
+   "anchorX": 40,
+   "anchorY": 150
+  },
+  "michael_type_side": {
+   "src": "michael_type_side.png",
+   "frameW": 79,
+   "frameH": 151,
+   "frames": 2,
+   "anchorX": 39,
+   "anchorY": 150
+  },
+  "michael_phone_side": {
+   "src": "michael_phone_side.png",
+   "frameW": 78,
+   "frameH": 151,
+   "frames": 1,
+   "anchorX": 39,
+   "anchorY": 150
+  },
+  "michael_react_gasp": {
+   "src": "michael_react_gasp.png",
+   "frameW": 70,
+   "frameH": 138,
+   "frames": 1,
+   "anchorX": 35,
+   "anchorY": 137
+  },
+  "michael_react_laugh": {
+   "src": "michael_react_laugh.png",
+   "frameW": 70,
+   "frameH": 138,
+   "frames": 1,
+   "anchorX": 35,
+   "anchorY": 137
+  },
+  "michael_react_sad": {
+   "src": "michael_react_sad.png",
+   "frameW": 69,
+   "frameH": 138,
+   "frames": 1,
+   "anchorX": 34,
+   "anchorY": 137
+  },
+  "michael_react_facepalm": {
+   "src": "michael_react_facepalm.png",
+   "frameW": 69,
+   "frameH": 138,
+   "frames": 1,
+   "anchorX": 34,
+   "anchorY": 137
+  },
+  "michael_react_look": {
+   "src": "michael_react_look.png",
+   "frameW": 71,
+   "frameH": 138,
+   "frames": 1,
+   "anchorX": 35,
+   "anchorY": 137
+  },
+  "kevin_walk_front": {
+   "src": "kevin_walk_front.png",
+   "frameW": 82,
+   "frameH": 136,
+   "frames": 5,
+   "anchorX": 41,
+   "anchorY": 135
+  },
+  "kevin_walk_back": {
+   "src": "kevin_walk_back.png",
+   "frameW": 79,
+   "frameH": 139,
+   "frames": 5,
+   "anchorX": 39,
+   "anchorY": 138
+  },
+  "kevin_walk_side": {
+   "src": "kevin_walk_side.png",
+   "frameW": 69,
+   "frameH": 140,
+   "frames": 5,
+   "anchorX": 34,
+   "anchorY": 139
+  },
+  "kevin_sit_front": {
+   "src": "kevin_sit_front.png",
+   "frameW": 86,
+   "frameH": 150,
+   "frames": 1,
+   "anchorX": 43,
+   "anchorY": 149
+  },
+  "kevin_sit_back": {
+   "src": "kevin_sit_back.png",
+   "frameW": 82,
+   "frameH": 153,
+   "frames": 1,
+   "anchorX": 41,
+   "anchorY": 152
+  },
+  "kevin_sit_side": {
+   "src": "kevin_sit_side.png",
+   "frameW": 85,
+   "frameH": 154,
+   "frames": 1,
+   "anchorX": 42,
+   "anchorY": 153
+  },
+  "kevin_type_side": {
+   "src": "kevin_type_side.png",
+   "frameW": 85,
+   "frameH": 153,
+   "frames": 2,
+   "anchorX": 42,
+   "anchorY": 152
+  },
+  "kevin_phone_side": {
+   "src": "kevin_phone_side.png",
+   "frameW": 84,
+   "frameH": 156,
+   "frames": 1,
+   "anchorX": 42,
+   "anchorY": 155
+  },
+  "kevin_react_gasp": {
+   "src": "kevin_react_gasp.png",
+   "frameW": 80,
+   "frameH": 134,
+   "frames": 1,
+   "anchorX": 40,
+   "anchorY": 133
+  },
+  "kevin_react_laugh": {
+   "src": "kevin_react_laugh.png",
+   "frameW": 79,
+   "frameH": 134,
+   "frames": 1,
+   "anchorX": 39,
+   "anchorY": 133
+  },
+  "kevin_react_sad": {
+   "src": "kevin_react_sad.png",
+   "frameW": 79,
+   "frameH": 134,
+   "frames": 1,
+   "anchorX": 39,
+   "anchorY": 133
+  },
+  "kevin_react_facepalm": {
+   "src": "kevin_react_facepalm.png",
+   "frameW": 79,
+   "frameH": 135,
+   "frames": 1,
+   "anchorX": 39,
+   "anchorY": 134
+  },
+  "kevin_react_look": {
+   "src": "kevin_react_look.png",
+   "frameW": 78,
+   "frameH": 134,
+   "frames": 1,
+   "anchorX": 39,
+   "anchorY": 133
   }
  },
  "images": {

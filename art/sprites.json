@@ -227,6 +227,38 @@
    "kind": "image",
    "name": "head_bg",
    "maxWidth": 1280
+  },
+  {
+   "file": "jim-sheet.png",
+   "kind": "character",
+   "name": "jim",
+   "key": true,
+   "gap": 12,
+   "height": 142
+  },
+  {
+   "file": "dwight-sheet.png",
+   "kind": "character",
+   "name": "dwight",
+   "key": true,
+   "gap": 12,
+   "height": 138
+  },
+  {
+   "file": "michael-sheet.png",
+   "kind": "character",
+   "name": "michael",
+   "key": true,
+   "gap": 12,
+   "height": 134
+  },
+  {
+   "file": "kevin-sheet.png",
+   "kind": "character",
+   "name": "kevin",
+   "key": true,
+   "gap": 12,
+   "height": 132
   }
  ]
 }

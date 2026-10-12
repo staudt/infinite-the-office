@@ -7,8 +7,8 @@ import { PNG } from 'pngjs';
 import { type Img, anchorStrip, keyBorder, alphaBox, components, crop, fitMax, keyMagenta, mergeComps, readingOrder, removeSpecks, scaleBy, trim } from './sprites/pixels';
 
 interface Sheet {
-  file: string; kind: 'props' | 'frames' | 'image'; key?: boolean | 'border';
-  names?: string[]; gap?: number; minArea?: number; scale?: number; maxWidth?: number; maxHeight?: number; name?: string; box?: [number, number, number, number];
+  file: string; kind: 'props' | 'frames' | 'image' | 'character'; key?: boolean | 'border';
+  names?: string[]; gap?: number; minArea?: number; scale?: number; maxWidth?: number; maxHeight?: number; name?: string; box?: [number, number, number, number]; height?: number;
 }
 const RAW = 'art/raw', OUT = 'public/sprites', DEV = 'art/out';
 const sheets: Sheet[] = JSON.parse(readFileSync('art/sprites.json', 'utf8')).sheets;
@@ -18,6 +18,12 @@ const save = (path: string, im: Img) => { const p = new PNG({ width: im.w, heigh
 const stem = (f: string) => f.replace(/\.png$/, '');
 
 rmSync(OUT, { recursive: true, force: true }); mkdirSync(OUT, { recursive: true }); mkdirSync(DEV, { recursive: true });
+/** The frame order of a character sheet (art/templates/pam-sheet.png), row by row. */
+const CHARACTER: [string, number][] = [
+  ['walk_front', 5], ['walk_back', 5], ['walk_side', 5],
+  ['sit_front', 1], ['sit_back', 1], ['sit_side', 1], ['type_side', 2], ['phone_side', 1],
+  ['react_gasp', 1], ['react_laugh', 1], ['react_sad', 1], ['react_facepalm', 1], ['react_look', 1],
+];
 const index = { props: {} as Record<string, { src: string; w: number; h: number }>, anims: {} as Record<string, unknown>, images: {} as Record<string, unknown> };
 
 for (const s of sheets) {
@@ -35,6 +41,30 @@ for (const s of sheets) {
   }
   const { comps, labels } = components(img);
   const groups = readingOrder(mergeComps(comps.filter((c) => c.area >= (s.minArea ?? 150)), s.gap ?? 6));
+  if (s.kind === 'character') {
+    // A whole character sheet laid out like art/templates/pam-sheet.png: frames in reading order become
+    // <name>_<anim>. Rows are told apart relative to frame size, since generated sheets come at any scale.
+    const merged = mergeComps(comps.filter((c) => c.area >= (s.minArea ?? 150)), s.gap ?? 6);
+    const hs = merged.map((g) => g.y1 - g.y0).sort((a, b) => a - b), med = hs[hs.length >> 1] ?? 1;
+    const gs = readingOrder(merged, med * 0.4);
+    const want = CHARACTER.reduce((n, [, k]) => n + k, 0);
+    if (gs.length !== want) console.log(`  ! ${s.file}: found ${gs.length} frames, expected ${want} (frames touching, or a row out of order?)`);
+    // The standing front frame ends up ~128 px tall like Pam's; `height` makes someone taller or shorter.
+    // Seated frames keep the base scale, so the chair in them still matches the empty chairs.
+    const sc = s.scale ?? 128 / (gs[0].y1 - gs[0].y0 + 1), tall = (s.height ?? 128) / 128;
+    let k = 0;
+    for (const [anim, n] of CHARACTER) {
+      const part = gs.slice(k, (k += n));
+      if (part.length < n) break;
+      const seated = /^(sit|type|phone)_/.test(anim);
+      const frames = part.map((g) => scaleBy(crop(img, g, (x, y) => g.labels.includes(labels[y * img.w + x])), seated ? sc : sc * tall));
+      const { strip, cellW, cellH, anchorX, anchorY } = anchorStrip(frames), name = `${s.name}_${anim}`;
+      save(join(OUT, `${name}.png`), strip);
+      index.anims[name] = { src: `${name}.png`, frameW: cellW, frameH: cellH, frames: n, anchorX, anchorY };
+    }
+    console.log(`character ${s.name}: ${gs.length} frames, scale ${sc.toFixed(3)}`);
+    continue;
+  }
   if (s.kind === 'frames') {
     const frames = groups.map((g) => scaleBy(crop(img, g, (x, y) => g.labels.includes(labels[y * img.w + x])), s.scale ?? 1));
     const { strip, cellW, cellH, anchorX, anchorY } = anchorStrip(frames);

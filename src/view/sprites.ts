@@ -240,6 +240,10 @@ const REACT_POSE: Partial<Record<Reaction, string>> = {
   gasp: 'gasp', laugh: 'laugh', cheer: 'laugh', facepalm: 'facepalm', cringe: 'facepalm', sigh: 'sad', look_at_camera: 'look', stare: 'look',
 };
 
+/** Character art shares one pixel density: a standard standing frame (Pam's) is this tall, drawn at personH.
+ *  Taller or shorter characters keep their own height (the sprite script's `height`). */
+const ART_H = 130;
+
 /** An anim's name if its art is loaded. */
 const poseArt = (name: string): string | null => (art.index.anims?.[name] && art.image(name) ? name : null);
 
@@ -560,7 +564,7 @@ export class SpriteMapView {
     if (pa && pim) {
       // Pose art shares the walk art's pixel density. Seated art includes the chair, so its base sits where the
       // empty chair stood; standing reactions stand on the feet like the walk sheet.
-      const ref = art.index.anims?.[`${a.id}_walk_front`] ?? pa, s = geo.personH / ref.frameH;
+      const s = geo.personH / ART_H;
       ctx.save();
       ctx.translate(fx, p.seated ? fy0 + 8 : fy);
       if (p.seated && p.dir === 'side' && p.face === -1) ctx.scale(-1, 1); // seated side art faces right
@@ -571,7 +575,7 @@ export class SpriteMapView {
     const an = art.index.anims?.[`${a.id}_walk_${p.dir}`] && art.image(`${a.id}_walk_${p.dir}`) ? `${a.id}_walk_${p.dir}` : art.index.anims?.[`${a.id}_walk_front`] && art.image(`${a.id}_walk_front`) ? `${a.id}_walk_front` : null;
     const anim = an ? art.index.anims![an] : null;
     if (anim && an) {
-      const s = geo.personH / anim.frameH, im = art.image(an)!;
+      const s = geo.personH / ART_H, im = art.image(an)!;
       // Side art faces left; mirror for right. The front and back views are symmetric enough.
       const flip = an.endsWith('_side') && p.face === 1;
       ctx.save();
