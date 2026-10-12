@@ -14,6 +14,44 @@ const MOOD_FACE: Partial<Record<Mood, string>> = {
   sad: 'sad', nervous: 'nervous', awkward: 'nervous', panicked: 'nervous', deadpan: 'deadpan',
 };
 
+/** Moods shown with a map sprite's reaction frames when a character has no portrait art. */
+const SPRITE_MOOD: Partial<Record<Mood, string>> = {
+  happy: 'react_laugh', excited: 'react_laugh', smug: 'react_look', sad: 'react_sad', annoyed: 'react_look', deadpan: 'react_look', sarcastic: 'react_look', panicked: 'react_gasp',
+};
+
+const faces = new Map<string, string | null>();
+/** Head and chest of frame 0 of `<id>_<anim>`, as a crisp upscaled data URL (cached). */
+function cropFace(id: string, anim: string): string | null {
+  const k = `${id}_${anim}`;
+  if (faces.has(k)) return faces.get(k)!;
+  const a = art.index.anims?.[k], im = art.image(k);
+  let url: string | null = null;
+  if (a && im) {
+    // Keep head to waist (frames are anchored at the feet, so the head is at the top). The sprite is a soft
+    // downscale (~2 px per art pixel), so snap it back to its art grid: sample every 2nd pixel, then upscale
+    // nearest-neighbour with hard alpha. That reads as crisp pixel art instead of a blurry zoom.
+    const h = Math.round(a.frameH * 0.72), G = 2, S = 16, w = Math.ceil(a.frameW / G), hh = Math.ceil(h / G);
+    const src = document.createElement('canvas');
+    src.width = w;
+    src.height = hh;
+    const sx = src.getContext('2d')!;
+    sx.imageSmoothingEnabled = false;
+    sx.drawImage(im, 0, 0, a.frameW, h, 0, 0, w, hh);
+    const px = sx.getImageData(0, 0, w, hh);
+    for (let i = 3; i < px.data.length; i += 4) px.data[i] = px.data[i] > 110 ? 255 : 0;
+    sx.putImageData(px, 0, 0);
+    const c = document.createElement('canvas');
+    c.width = w * S;
+    c.height = hh * S;
+    const ctx = c.getContext('2d')!;
+    ctx.imageSmoothingEnabled = false;
+    ctx.drawImage(src, 0, 0, c.width, c.height);
+    url = c.toDataURL();
+  }
+  faces.set(k, url);
+  return url;
+}
+
 interface Gfx { bg: HTMLImageElement; who: HTMLImageElement; ph: HTMLElement; dot: HTMLElement; third: HTMLElement; name: HTMLElement; title: HTMLElement; sub: HTMLElement; last: Map<HTMLElement, string>; color: string }
 
 const SKIN = ['#f1c9a5', '#e0ac85', '#c68a64', '#8d5a3c'];
@@ -58,6 +96,7 @@ export class HeadView {
   /** The speaker's portrait for their mood (and mouth-open frame while talking), if drawn. */
   private portrait(): string | null {
     const h = this.stage.head!;
+    if (!art.url(`${h.who}_head`)) return this.spriteFace();
     // A drawn face for the mood (exact name first, then the shared face), else the neutral portrait.
     const face = [h.mood, MOOD_FACE[h.mood]].find((f) => f && art.url(`${h.who}_head_${f}`));
     const still = face ? `${h.who}_head_${face}` : `${h.who}_head`;
@@ -66,6 +105,18 @@ export class HeadView {
     // so a mood face never flickers back to neutral.
     const open = Math.floor(this.stage.time * 7) % 2 === 0;
     return (open && art.url(`${still}_talk`)) || art.url(still);
+  }
+
+  /**
+   * No portrait drawn: a close-up of the map sprite (head and chest of the standing front frames, scaled up crisp).
+   * Its reaction frames stand in for moods, and the gasp frame for an open mouth. Experimental: may be rolled back.
+   */
+  private spriteFace(): string | null {
+    const h = this.stage.head!;
+    const still = SPRITE_MOOD[h.mood] ?? 'walk_front';
+    if (!art.index.anims?.[`${h.who}_walk_front`]) return null;
+    const open = !!h.text && Math.floor(this.stage.time * 7) % 2 === 0 && still === 'walk_front';
+    return cropFace(h.who, open ? 'react_gasp' : still) ?? cropFace(h.who, 'walk_front');
   }
 
   private render(): void {
@@ -89,13 +140,11 @@ export class HeadView {
     };
     set(g.bg, 'src', art.url('head_bg') ?? '');
     if (portrait) set(g.who, 'src', portrait);
+    const sprite = !art.url(`${h.who}_head`);
+    if (g.who.classList.contains('hg-sprite') !== sprite) g.who.classList.toggle('hg-sprite', sprite);
     else set(g.ph, 'innerHTML', bust(a.id, a.color, a.glyph, !!h.text && Math.floor(this.stage.time * 7) % 2 === 0));
     if (g.who.hidden === !!portrait) g.who.hidden = !portrait;
     if (g.ph.hidden === !portrait) g.ph.hidden = !!portrait;
-    // A small bob while talking reads as speech even without a mouth frame.
-    const bob = h.text && Math.floor(this.stage.time * 4) % 2 === 0 ? 'translateY(-0.6%)' : '';
-    const body = portrait ? g.who : g.ph;
-    if (body.style.transform !== bob) body.style.transform = bob;
     const dot = Math.floor(this.stage.time * 1.2) % 2 === 0 ? '' : 'hidden';
     if (g.dot.style.visibility !== dot) g.dot.style.visibility = dot;
     set(g.name, 'textContent', a.name.toUpperCase());
