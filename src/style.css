@@ -95,7 +95,14 @@ body.render.vertical #head-gfx .hg-sub { left: 4%; right: 4%; bottom: 3%; font-s
 #map-gfx .sg-balloon[data-tail=l]::after { top: calc(var(--t) - 0.35em); left: -0.35em; rotate: 45deg; border-left: 1px solid; border-bottom: 1px solid; border-color: inherit; }
 #map-gfx .sg-balloon[data-tail=r]::after { top: calc(var(--t) - 0.35em); right: -0.35em; rotate: 45deg; border-right: 1px solid; border-top: 1px solid; border-color: inherit; }
 #map-gfx .sg-card { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.8em; background: #050508; }
-#map-gfx .sg-card[hidden], #map-gfx .sg-cap[hidden] { display: none; }
+#map-gfx .sg-card[hidden], #map-gfx .sg-cap[hidden], #map-gfx .sg-logo[hidden] { display: none; }
+/* Opening titles: the show's black logo box over the office, the episode title under it. */
+#map-gfx .sg-logo { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.9em; background: radial-gradient(ellipse at center, #05050866 0%, #050508cc 100%); animation: sg-logo-in 0.6s ease-out; }
+#map-gfx .sg-mark { background: #0b0b0b; color: #f2f2f2; font-family: 'Courier New', Courier, monospace; font-weight: 700; font-size: 3.6em; letter-spacing: 0.04em; padding: 0.15em 0.6em 0.2em; box-shadow: 0 0.3em 1.2em #000a; }
+#map-gfx .sg-mark small { font-size: 0.55em; vertical-align: 0.35em; margin-right: 0.1em; }
+#map-gfx .sg-ep { color: #fff; font-size: 1.6em; font-weight: 700; text-shadow: 0 0.1em 0.4em #000; }
+#map-gfx .sg-label { color: #cfd3ea; font-size: 0.95em; letter-spacing: 0.12em; text-transform: uppercase; text-shadow: 0 0.1em 0.4em #000; }
+@keyframes sg-logo-in { from { opacity: 0; } to { opacity: 1; } }
 #map-gfx .sg-card b { color: var(--accent); font-size: 2.6em; letter-spacing: 0.25em; }
 #map-gfx .sg-card span { color: #cfd3ea; font-size: 1.4em; }
 #map-gfx .sg-cap { position: absolute; left: 0; right: 0; bottom: 3%; text-align: center; color: #9a9ab4; font-style: italic; font-size: 1.4em; text-shadow: 0 1px 3px #000; }

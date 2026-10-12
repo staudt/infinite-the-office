@@ -42,6 +42,10 @@ export interface StageSeries {
 }
 
 export interface Card { text: string; sub: string; until: number }
+/** A camera shot the director forces (intro montage): center cell and visible width in cells. */
+export interface Shot { at: Point; span: number }
+/** The show's logo over the map, with the episode title. */
+export interface Logo { title: string; label: string }
 export interface Note { who: string | null; text: string; until: number }
 export interface Head { who: string; text: string; mood: Mood }
 
@@ -57,6 +61,9 @@ export class Stage {
   frozen = false;
   /** Full-screen title card (show time). */
   card: Card | null = null;
+  /** Intro montage: forced camera shot and logo overlay (views only). */
+  shot: Shot | null = null;
+  logo: Logo | null = null;
   /** Dim caption at the bottom of the map (show time). */
   pauseCaption: Card | null = null;
   /** Stage direction near an actor (world time). */

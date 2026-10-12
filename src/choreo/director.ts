@@ -51,13 +51,28 @@ export class Director {
       const scene = ep.scenes[i];
       if (!opened && scene.part !== 'cold_open') {
         opened = true;
-        yield* this.card('THE OFFICE', ep.title, 3);
+        yield* this.intro();
       }
       yield* this.scene(i, scene, prev);
       prev = remap(scene).set;
     }
     yield* this.card('END OF EPISODE', ep.title, 3);
     st.bus.emit({ type: 'episodeEnd' });
+  }
+
+  /** The opening titles after the cold open: the logo and episode title over the working office. */
+  private *intro(): Co {
+    const { st, ep } = this;
+    st.enterSet('office');
+    for (const id of this.roster) {
+      const a = st.actor(id), desk = a.desk ? st.set.spots[a.desk] : undefined;
+      if (desk) st.show(a, desk);
+    }
+    st.bus.emit({ type: 'card', text: 'THE OFFICE', sub: ep.title, seconds: 0 });
+    st.shot = { at: { x: Math.floor(st.set.width / 2), y: Math.floor(st.set.height / 2) }, span: st.set.width };
+    st.logo = { title: ep.title, label: this.label };
+    yield 3.2;
+    st.shot = st.logo = null;
   }
 
   private *card(text: string, sub: string, seconds: number): Co {

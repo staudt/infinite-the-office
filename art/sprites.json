@@ -259,6 +259,22 @@
    "key": true,
    "gap": 12,
    "height": 132
+  },
+  {
+   "file": "stanley-sheet.png",
+   "kind": "character",
+   "name": "stanley",
+   "key": true,
+   "gap": 12,
+   "height": 132
+  },
+  {
+   "file": "angela-sheet.png",
+   "kind": "character",
+   "name": "angela",
+   "key": true,
+   "gap": 12,
+   "height": 118
   }
  ]
 }

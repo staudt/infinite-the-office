@@ -254,6 +254,9 @@ export class SpriteMapView {
   private ui = document.createElement('div');
   private cardEl = document.createElement('div');
   private capEl = document.createElement('div');
+  private logoEl = document.createElement('div');
+  private logoKey = '';
+  private lastShot: unknown = null;
   private names: NameIndex;
   private balloons = new Map<string, GBalloon>();
   private region = '';
@@ -274,7 +277,9 @@ export class SpriteMapView {
     this.cardEl.hidden = true;
     this.capEl.className = 'sg-cap';
     this.capEl.hidden = true;
-    this.ui.append(this.cardEl, this.capEl);
+    this.logoEl.className = 'sg-logo';
+    this.logoEl.hidden = true;
+    this.ui.append(this.cardEl, this.capEl, this.logoEl);
     el.replaceChildren(this.canvas, this.ui);
   }
 
@@ -406,15 +411,19 @@ export class SpriteMapView {
     const feet = (p: Pose) => geo.foot(p.x, p.y);
     // Camera: the scene's region, widened to keep whoever is talking in frame. Not for mere
     // walkers: background copier trips would keep pulling the shot wide.
-    const box = { ...this.regionBox(set, geo) };
+    // The intro montage forces its shots: each new one is a hard cut, and may go tighter than scenes.
+    const shot = st.shot;
+    if (shot !== this.lastShot) { this.lastShot = shot; this.snap = true; }
+    const box = shot ? this.shotBox(shot, geo, aspect) : { ...this.regionBox(set, geo) };
     const talking = new Set([...this.balloons.values()].map((b) => b.who));
-    for (const p of poses) {
+    for (const p of shot ? [] : poses) {
       if (!p.a.speaking && !talking.has(p.a.id)) continue;
       const [fx, fy] = feet(p);
       box.x0 = Math.min(box.x0, fx - 28); box.x1 = Math.max(box.x1, fx + 28);
       box.y0 = Math.min(box.y0, fy - geo.personH - 8); box.y1 = Math.max(box.y1, fy + 8);
     }
-    const goal = this.frame(box, layout.W, layout.H, aspect, geo.maxZoom);
+    const goal = this.frame(box, layout.W, layout.H, aspect, shot ? geo.maxZoom * 1.6 : geo.maxZoom);
+    changed = this.syncLogo() || changed;
     const dt = Math.min(0.5, Math.max(0, t - this.lastWt));
     this.lastWt = t;
     if (!this.cam || this.snap) { this.cam = goal; this.snap = false; } else {
@@ -618,6 +627,21 @@ export class SpriteMapView {
     this.cardEl.hidden = !c;
     this.cardEl.innerHTML = c ? `<b>${esc(c.text.toUpperCase())}</b>${c.sub ? `<span>${esc(c.sub)}</span>` : ''}` : '';
     if (c) this.lastSig = '';
+    return true;
+  }
+
+  /** A forced shot's box: `span` cells wide around a cell, framed a little above it so a sitter's head is in. */
+  private shotBox(shot: { at: { x: number; y: number }; span: number }, geo: Geo, aspect: number): Rect {
+    const [fx, fy] = geo.foot(shot.at.x, shot.at.y), w = shot.span * geo.cw, h = w / aspect, cy = fy - geo.personH * 0.4;
+    return { x0: fx - w / 2, x1: fx + w / 2, y0: cy - h / 2, y1: cy + h / 2 };
+  }
+
+  private syncLogo(): boolean {
+    const l = this.stage.logo, key = l ? `${l.title}|${l.label}` : '';
+    if (key === this.logoKey) return false;
+    this.logoKey = key;
+    this.logoEl.hidden = !l;
+    this.logoEl.innerHTML = l ? `<div class="sg-mark"><small>the</small> office</div><div class="sg-ep">${esc(l.title)}</div>${l.label ? `<div class="sg-label">${esc(l.label)}</div>` : ''}` : '';
     return true;
   }
 
