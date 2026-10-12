@@ -323,6 +323,54 @@
    "key": true,
    "gap": 12,
    "height": 132
+  },
+  {
+   "file": "toby-sheet.png",
+   "kind": "character",
+   "name": "toby",
+   "key": true,
+   "gap": 12,
+   "height": 130
+  },
+  {
+   "file": "jan-sheet.png",
+   "kind": "character",
+   "name": "jan",
+   "key": true,
+   "gap": 12,
+   "height": 130
+  },
+  {
+   "file": "kelly-sheet.png",
+   "kind": "character",
+   "name": "kelly",
+   "key": true,
+   "gap": 12,
+   "height": 120
+  },
+  {
+   "file": "roy-sheet.png",
+   "kind": "character",
+   "name": "roy",
+   "key": true,
+   "gap": 12,
+   "height": 140
+  },
+  {
+   "file": "darryl-sheet.png",
+   "kind": "character",
+   "name": "darryl",
+   "key": true,
+   "gap": 12,
+   "height": 140
+  },
+  {
+   "file": "david-sheet.png",
+   "kind": "character",
+   "name": "david",
+   "key": true,
+   "gap": 12,
+   "height": 134
   }
  ]
 }

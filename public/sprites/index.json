@@ -1578,6 +1578,630 @@
    "frames": 1,
    "anchorX": 35,
    "anchorY": 137
+  },
+  "toby_walk_front": {
+   "src": "toby_walk_front.png",
+   "frameW": 67,
+   "frameH": 134,
+   "frames": 5,
+   "anchorX": 33,
+   "anchorY": 133
+  },
+  "toby_walk_back": {
+   "src": "toby_walk_back.png",
+   "frameW": 64,
+   "frameH": 131,
+   "frames": 5,
+   "anchorX": 32,
+   "anchorY": 130
+  },
+  "toby_walk_side": {
+   "src": "toby_walk_side.png",
+   "frameW": 65,
+   "frameH": 133,
+   "frames": 5,
+   "anchorX": 32,
+   "anchorY": 132
+  },
+  "toby_sit_front": {
+   "src": "toby_sit_front.png",
+   "frameW": 75,
+   "frameH": 153,
+   "frames": 1,
+   "anchorX": 37,
+   "anchorY": 152
+  },
+  "toby_sit_back": {
+   "src": "toby_sit_back.png",
+   "frameW": 78,
+   "frameH": 153,
+   "frames": 1,
+   "anchorX": 39,
+   "anchorY": 152
+  },
+  "toby_sit_side": {
+   "src": "toby_sit_side.png",
+   "frameW": 78,
+   "frameH": 153,
+   "frames": 1,
+   "anchorX": 39,
+   "anchorY": 152
+  },
+  "toby_type_side": {
+   "src": "toby_type_side.png",
+   "frameW": 78,
+   "frameH": 153,
+   "frames": 2,
+   "anchorX": 39,
+   "anchorY": 152
+  },
+  "toby_phone_side": {
+   "src": "toby_phone_side.png",
+   "frameW": 77,
+   "frameH": 153,
+   "frames": 1,
+   "anchorX": 38,
+   "anchorY": 152
+  },
+  "toby_react_gasp": {
+   "src": "toby_react_gasp.png",
+   "frameW": 67,
+   "frameH": 131,
+   "frames": 1,
+   "anchorX": 33,
+   "anchorY": 130
+  },
+  "toby_react_laugh": {
+   "src": "toby_react_laugh.png",
+   "frameW": 67,
+   "frameH": 132,
+   "frames": 1,
+   "anchorX": 33,
+   "anchorY": 131
+  },
+  "toby_react_sad": {
+   "src": "toby_react_sad.png",
+   "frameW": 66,
+   "frameH": 131,
+   "frames": 1,
+   "anchorX": 33,
+   "anchorY": 130
+  },
+  "toby_react_facepalm": {
+   "src": "toby_react_facepalm.png",
+   "frameW": 67,
+   "frameH": 131,
+   "frames": 1,
+   "anchorX": 33,
+   "anchorY": 130
+  },
+  "toby_react_look": {
+   "src": "toby_react_look.png",
+   "frameW": 67,
+   "frameH": 131,
+   "frames": 1,
+   "anchorX": 33,
+   "anchorY": 130
+  },
+  "jan_walk_front": {
+   "src": "jan_walk_front.png",
+   "frameW": 75,
+   "frameH": 135,
+   "frames": 5,
+   "anchorX": 37,
+   "anchorY": 134
+  },
+  "jan_walk_back": {
+   "src": "jan_walk_back.png",
+   "frameW": 73,
+   "frameH": 134,
+   "frames": 5,
+   "anchorX": 36,
+   "anchorY": 133
+  },
+  "jan_walk_side": {
+   "src": "jan_walk_side.png",
+   "frameW": 74,
+   "frameH": 143,
+   "frames": 5,
+   "anchorX": 37,
+   "anchorY": 142
+  },
+  "jan_sit_front": {
+   "src": "jan_sit_front.png",
+   "frameW": 80,
+   "frameH": 155,
+   "frames": 1,
+   "anchorX": 40,
+   "anchorY": 154
+  },
+  "jan_sit_back": {
+   "src": "jan_sit_back.png",
+   "frameW": 78,
+   "frameH": 155,
+   "frames": 1,
+   "anchorX": 39,
+   "anchorY": 154
+  },
+  "jan_sit_side": {
+   "src": "jan_sit_side.png",
+   "frameW": 87,
+   "frameH": 154,
+   "frames": 1,
+   "anchorX": 43,
+   "anchorY": 153
+  },
+  "jan_type_side": {
+   "src": "jan_type_side.png",
+   "frameW": 88,
+   "frameH": 155,
+   "frames": 2,
+   "anchorX": 44,
+   "anchorY": 154
+  },
+  "jan_phone_side": {
+   "src": "jan_phone_side.png",
+   "frameW": 84,
+   "frameH": 155,
+   "frames": 1,
+   "anchorX": 42,
+   "anchorY": 154
+  },
+  "jan_react_gasp": {
+   "src": "jan_react_gasp.png",
+   "frameW": 75,
+   "frameH": 136,
+   "frames": 1,
+   "anchorX": 37,
+   "anchorY": 135
+  },
+  "jan_react_laugh": {
+   "src": "jan_react_laugh.png",
+   "frameW": 74,
+   "frameH": 136,
+   "frames": 1,
+   "anchorX": 37,
+   "anchorY": 135
+  },
+  "jan_react_sad": {
+   "src": "jan_react_sad.png",
+   "frameW": 74,
+   "frameH": 137,
+   "frames": 1,
+   "anchorX": 37,
+   "anchorY": 136
+  },
+  "jan_react_facepalm": {
+   "src": "jan_react_facepalm.png",
+   "frameW": 75,
+   "frameH": 136,
+   "frames": 1,
+   "anchorX": 37,
+   "anchorY": 135
+  },
+  "jan_react_look": {
+   "src": "jan_react_look.png",
+   "frameW": 75,
+   "frameH": 136,
+   "frames": 1,
+   "anchorX": 37,
+   "anchorY": 135
+  },
+  "kelly_walk_front": {
+   "src": "kelly_walk_front.png",
+   "frameW": 68,
+   "frameH": 122,
+   "frames": 5,
+   "anchorX": 34,
+   "anchorY": 121
+  },
+  "kelly_walk_back": {
+   "src": "kelly_walk_back.png",
+   "frameW": 66,
+   "frameH": 127,
+   "frames": 5,
+   "anchorX": 33,
+   "anchorY": 126
+  },
+  "kelly_walk_side": {
+   "src": "kelly_walk_side.png",
+   "frameW": 68,
+   "frameH": 124,
+   "frames": 5,
+   "anchorX": 34,
+   "anchorY": 123
+  },
+  "kelly_sit_front": {
+   "src": "kelly_sit_front.png",
+   "frameW": 77,
+   "frameH": 148,
+   "frames": 1,
+   "anchorX": 38,
+   "anchorY": 147
+  },
+  "kelly_sit_back": {
+   "src": "kelly_sit_back.png",
+   "frameW": 75,
+   "frameH": 147,
+   "frames": 1,
+   "anchorX": 37,
+   "anchorY": 146
+  },
+  "kelly_sit_side": {
+   "src": "kelly_sit_side.png",
+   "frameW": 83,
+   "frameH": 147,
+   "frames": 1,
+   "anchorX": 41,
+   "anchorY": 146
+  },
+  "kelly_type_side": {
+   "src": "kelly_type_side.png",
+   "frameW": 82,
+   "frameH": 148,
+   "frames": 2,
+   "anchorX": 41,
+   "anchorY": 147
+  },
+  "kelly_phone_side": {
+   "src": "kelly_phone_side.png",
+   "frameW": 81,
+   "frameH": 147,
+   "frames": 1,
+   "anchorX": 40,
+   "anchorY": 146
+  },
+  "kelly_react_gasp": {
+   "src": "kelly_react_gasp.png",
+   "frameW": 69,
+   "frameH": 124,
+   "frames": 1,
+   "anchorX": 34,
+   "anchorY": 123
+  },
+  "kelly_react_laugh": {
+   "src": "kelly_react_laugh.png",
+   "frameW": 70,
+   "frameH": 121,
+   "frames": 1,
+   "anchorX": 35,
+   "anchorY": 120
+  },
+  "kelly_react_sad": {
+   "src": "kelly_react_sad.png",
+   "frameW": 69,
+   "frameH": 121,
+   "frames": 1,
+   "anchorX": 34,
+   "anchorY": 120
+  },
+  "kelly_react_facepalm": {
+   "src": "kelly_react_facepalm.png",
+   "frameW": 70,
+   "frameH": 121,
+   "frames": 1,
+   "anchorX": 35,
+   "anchorY": 120
+  },
+  "kelly_react_look": {
+   "src": "kelly_react_look.png",
+   "frameW": 72,
+   "frameH": 121,
+   "frames": 1,
+   "anchorX": 36,
+   "anchorY": 120
+  },
+  "roy_walk_front": {
+   "src": "roy_walk_front.png",
+   "frameW": 72,
+   "frameH": 143,
+   "frames": 5,
+   "anchorX": 36,
+   "anchorY": 142
+  },
+  "roy_walk_back": {
+   "src": "roy_walk_back.png",
+   "frameW": 68,
+   "frameH": 140,
+   "frames": 5,
+   "anchorX": 34,
+   "anchorY": 139
+  },
+  "roy_walk_side": {
+   "src": "roy_walk_side.png",
+   "frameW": 70,
+   "frameH": 137,
+   "frames": 5,
+   "anchorX": 35,
+   "anchorY": 136
+  },
+  "roy_sit_front": {
+   "src": "roy_sit_front.png",
+   "frameW": 74,
+   "frameH": 139,
+   "frames": 1,
+   "anchorX": 37,
+   "anchorY": 138
+  },
+  "roy_sit_back": {
+   "src": "roy_sit_back.png",
+   "frameW": 76,
+   "frameH": 139,
+   "frames": 1,
+   "anchorX": 38,
+   "anchorY": 138
+  },
+  "roy_sit_side": {
+   "src": "roy_sit_side.png",
+   "frameW": 76,
+   "frameH": 138,
+   "frames": 1,
+   "anchorX": 38,
+   "anchorY": 137
+  },
+  "roy_type_side": {
+   "src": "roy_type_side.png",
+   "frameW": 78,
+   "frameH": 138,
+   "frames": 2,
+   "anchorX": 39,
+   "anchorY": 137
+  },
+  "roy_phone_side": {
+   "src": "roy_phone_side.png",
+   "frameW": 77,
+   "frameH": 140,
+   "frames": 1,
+   "anchorX": 38,
+   "anchorY": 139
+  },
+  "roy_react_gasp": {
+   "src": "roy_react_gasp.png",
+   "frameW": 73,
+   "frameH": 138,
+   "frames": 1,
+   "anchorX": 36,
+   "anchorY": 137
+  },
+  "roy_react_laugh": {
+   "src": "roy_react_laugh.png",
+   "frameW": 70,
+   "frameH": 138,
+   "frames": 1,
+   "anchorX": 35,
+   "anchorY": 137
+  },
+  "roy_react_sad": {
+   "src": "roy_react_sad.png",
+   "frameW": 70,
+   "frameH": 138,
+   "frames": 1,
+   "anchorX": 35,
+   "anchorY": 137
+  },
+  "roy_react_facepalm": {
+   "src": "roy_react_facepalm.png",
+   "frameW": 72,
+   "frameH": 137,
+   "frames": 1,
+   "anchorX": 36,
+   "anchorY": 136
+  },
+  "roy_react_look": {
+   "src": "roy_react_look.png",
+   "frameW": 70,
+   "frameH": 138,
+   "frames": 1,
+   "anchorX": 35,
+   "anchorY": 137
+  },
+  "darryl_walk_front": {
+   "src": "darryl_walk_front.png",
+   "frameW": 75,
+   "frameH": 147,
+   "frames": 5,
+   "anchorX": 37,
+   "anchorY": 146
+  },
+  "darryl_walk_back": {
+   "src": "darryl_walk_back.png",
+   "frameW": 74,
+   "frameH": 146,
+   "frames": 5,
+   "anchorX": 37,
+   "anchorY": 145
+  },
+  "darryl_walk_side": {
+   "src": "darryl_walk_side.png",
+   "frameW": 74,
+   "frameH": 141,
+   "frames": 5,
+   "anchorX": 37,
+   "anchorY": 140
+  },
+  "darryl_sit_front": {
+   "src": "darryl_sit_front.png",
+   "frameW": 78,
+   "frameH": 144,
+   "frames": 1,
+   "anchorX": 39,
+   "anchorY": 143
+  },
+  "darryl_sit_back": {
+   "src": "darryl_sit_back.png",
+   "frameW": 80,
+   "frameH": 145,
+   "frames": 1,
+   "anchorX": 40,
+   "anchorY": 144
+  },
+  "darryl_sit_side": {
+   "src": "darryl_sit_side.png",
+   "frameW": 82,
+   "frameH": 144,
+   "frames": 1,
+   "anchorX": 41,
+   "anchorY": 143
+  },
+  "darryl_type_side": {
+   "src": "darryl_type_side.png",
+   "frameW": 86,
+   "frameH": 143,
+   "frames": 2,
+   "anchorX": 43,
+   "anchorY": 142
+  },
+  "darryl_phone_side": {
+   "src": "darryl_phone_side.png",
+   "frameW": 84,
+   "frameH": 146,
+   "frames": 1,
+   "anchorX": 42,
+   "anchorY": 145
+  },
+  "darryl_react_gasp": {
+   "src": "darryl_react_gasp.png",
+   "frameW": 76,
+   "frameH": 143,
+   "frames": 1,
+   "anchorX": 38,
+   "anchorY": 142
+  },
+  "darryl_react_laugh": {
+   "src": "darryl_react_laugh.png",
+   "frameW": 76,
+   "frameH": 144,
+   "frames": 1,
+   "anchorX": 38,
+   "anchorY": 143
+  },
+  "darryl_react_sad": {
+   "src": "darryl_react_sad.png",
+   "frameW": 76,
+   "frameH": 142,
+   "frames": 1,
+   "anchorX": 38,
+   "anchorY": 141
+  },
+  "darryl_react_facepalm": {
+   "src": "darryl_react_facepalm.png",
+   "frameW": 76,
+   "frameH": 141,
+   "frames": 1,
+   "anchorX": 38,
+   "anchorY": 140
+  },
+  "darryl_react_look": {
+   "src": "darryl_react_look.png",
+   "frameW": 76,
+   "frameH": 142,
+   "frames": 1,
+   "anchorX": 38,
+   "anchorY": 141
+  },
+  "david_walk_front": {
+   "src": "david_walk_front.png",
+   "frameW": 67,
+   "frameH": 139,
+   "frames": 5,
+   "anchorX": 33,
+   "anchorY": 138
+  },
+  "david_walk_back": {
+   "src": "david_walk_back.png",
+   "frameW": 65,
+   "frameH": 141,
+   "frames": 5,
+   "anchorX": 32,
+   "anchorY": 140
+  },
+  "david_walk_side": {
+   "src": "david_walk_side.png",
+   "frameW": 68,
+   "frameH": 141,
+   "frames": 5,
+   "anchorX": 34,
+   "anchorY": 140
+  },
+  "david_sit_front": {
+   "src": "david_sit_front.png",
+   "frameW": 81,
+   "frameH": 159,
+   "frames": 1,
+   "anchorX": 40,
+   "anchorY": 158
+  },
+  "david_sit_back": {
+   "src": "david_sit_back.png",
+   "frameW": 86,
+   "frameH": 160,
+   "frames": 1,
+   "anchorX": 43,
+   "anchorY": 159
+  },
+  "david_sit_side": {
+   "src": "david_sit_side.png",
+   "frameW": 84,
+   "frameH": 160,
+   "frames": 1,
+   "anchorX": 42,
+   "anchorY": 159
+  },
+  "david_type_side": {
+   "src": "david_type_side.png",
+   "frameW": 84,
+   "frameH": 160,
+   "frames": 2,
+   "anchorX": 42,
+   "anchorY": 159
+  },
+  "david_phone_side": {
+   "src": "david_phone_side.png",
+   "frameW": 82,
+   "frameH": 161,
+   "frames": 1,
+   "anchorX": 41,
+   "anchorY": 160
+  },
+  "david_react_gasp": {
+   "src": "david_react_gasp.png",
+   "frameW": 67,
+   "frameH": 138,
+   "frames": 1,
+   "anchorX": 33,
+   "anchorY": 137
+  },
+  "david_react_laugh": {
+   "src": "david_react_laugh.png",
+   "frameW": 67,
+   "frameH": 139,
+   "frames": 1,
+   "anchorX": 33,
+   "anchorY": 138
+  },
+  "david_react_sad": {
+   "src": "david_react_sad.png",
+   "frameW": 67,
+   "frameH": 139,
+   "frames": 1,
+   "anchorX": 33,
+   "anchorY": 138
+  },
+  "david_react_facepalm": {
+   "src": "david_react_facepalm.png",
+   "frameW": 68,
+   "frameH": 140,
+   "frames": 1,
+   "anchorX": 34,
+   "anchorY": 139
+  },
+  "david_react_look": {
+   "src": "david_react_look.png",
+   "frameW": 67,
+   "frameH": 139,
+   "frames": 1,
+   "anchorX": 33,
+   "anchorY": 138
   }
  },
  "images": {
