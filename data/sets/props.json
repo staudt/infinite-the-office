@@ -14,7 +14,6 @@
     "break_room": { "desk": ["kitchen_counter", "counter_boxes"], "desk_tall": ["round_table", "conference_table"] }
   },
   "sets": {
-    "office": { "blocks": { "10,3": "michael_desk", "8,22": "reception_desk_curved_2", "3,4": "couch_lamp" } },
     "parking_lot": { "kinds": { "prop": [], "shelf": [], "plant": ["plant_tall", "plant_tall_2"] } },
     "warehouse": { "kinds": { "prop": [], "shelf": [], "machine": [] } },
     "offsite": { "kinds": { "prop": [], "shelf": [] } }

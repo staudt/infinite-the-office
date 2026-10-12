@@ -1,0 +1,24 @@
+; Kitchen, 40 x 12 (logic grid; drawn procedurally like the break room)
+1 = kitchen_1
+2 = kitchen_2
+3 = kitchen_3
+4 = kitchen_4
+5 = kitchen_5
+6 = kitchen_6
+m = microwave .
+n = fridge .
+V = vending .
+> = exit:office
+---
+########################################
+#  ** ==&=====       KITCHEN     $$ $$ #
+#  **   m                          V   #
+#  n                                   #
+#                                      #
+#              1   2   3               #
+#           ===============            #
+>           ===============            #
+>              4   5   6               #
+#                                      #
+# %                                   %#
+########################################

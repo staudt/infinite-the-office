@@ -54,6 +54,34 @@ export function keyMagenta(img: Img, o: KeyOpts = {}): void {
   }
 }
 
+/**
+ * Keys out any flat background color (not just magenta): flood-fills from the border over pixels close to the
+ * border color, then drops the 1 px blended fringe. Only background connected to the edge goes, so similar
+ * colors inside the art survive.
+ */
+export function keyBorder(img: Img, tol = 70): void {
+  const bg = borderColor(img), { w, h, data: d } = img;
+  const dist = (p: number) => Math.hypot(d[p * 4] - bg[0], d[p * 4 + 1] - bg[1], d[p * 4 + 2] - bg[2]);
+  for (let p = 0; p < w * h; p++) d[p * 4 + 3] = 255;
+  const stack: number[] = [];
+  const push = (p: number) => { if (d[p * 4 + 3] === 255 && dist(p) < tol) { d[p * 4 + 3] = 0; stack.push(p); } };
+  for (let x = 0; x < w; x++) { push(x); push((h - 1) * w + x); }
+  for (let y = 0; y < h; y++) { push(y * w); push(y * w + w - 1); }
+  while (stack.length) {
+    const p = stack.pop()!, x = p % w, y = (p - x) / w;
+    if (x > 0) push(p - 1); if (x < w - 1) push(p + 1); if (y > 0) push(p - w); if (y < h - 1) push(p + w);
+  }
+  const fringe: number[] = [];
+  for (let p = 0; p < w * h; p++) {
+    if (d[p * 4 + 3] !== 255 || dist(p) > tol * 2) continue;
+    const x = p % w;
+    if ((x > 0 && !d[(p - 1) * 4 + 3]) || (x < w - 1 && !d[(p + 1) * 4 + 3]) || (p >= w && !d[(p - w) * 4 + 3]) || (p < w * (h - 1) && !d[(p + w) * 4 + 3])) fringe.push(p);
+  }
+  for (const p of fringe) d[p * 4 + 3] = 0;
+  // Pockets of background enclosed by the art (between strands of hair): near-exact matches only.
+  for (let p = 0; p < w * h; p++) if (d[p * 4 + 3] && dist(p) < tol * 0.6) d[p * 4 + 3] = 0;
+}
+
 // 8-connected components over alpha > thr, labels row-major order of first pixel.
 export function components(img: Img, thr = 127): { comps: Comp[]; labels: Int32Array } {
   const { w, h, data: d } = img;

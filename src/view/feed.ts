@@ -1,7 +1,7 @@
 import { firstName } from '../engine/cast';
 import type { EngineEvent } from '../engine/events';
 import type { Stage } from '../engine/stage';
-import { esc } from './grid';
+import { esc } from './text';
 import { NameIndex } from './names';
 import { clock, REACTION_TEXT, sceneHeading } from './transcript';
 

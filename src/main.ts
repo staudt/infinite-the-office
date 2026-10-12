@@ -8,13 +8,12 @@ import type { EngineEvent } from './engine/events';
 import { Stage, TICK } from './engine/stage';
 import type { Task } from './engine/tasks';
 import type { Episode } from './schema/episode';
-import { CardView } from './view/card';
+import { CardView, type EpisodeNav } from './view/card';
 import { firstName } from './engine/cast';
 import { FeedView } from './view/feed';
-import { esc } from './view/grid';
+import { esc } from './view/text';
 import { art } from './view/art';
 import { HeadView } from './view/head';
-import { FRAME_H, FRAME_W, MapView } from './view/set';
 import { SpriteMapView } from './view/sprites';
 import { connectionText, StartScreen } from './view/start';
 import { sceneHeading } from './view/transcript';
@@ -35,7 +34,6 @@ const SEED = Number(params.get('seed') ?? 1);
 // and screenshots the page, so it only needs the page to look right (any view will do).
 //   ?render=1&format=horizontal|vertical  &clip=1 (with scene=N: stop when that scene ends)
 const RENDER = params.has('render');
-art.enabled = params.get('gfx') !== '0';
 const CLIP = RENDER && params.has('clip');
 const renderState = { ready: false, done: false, error: '', changed: true, clock: 0, ticks: 0, subUntil: 0 };
 if (RENDER) {
@@ -59,8 +57,7 @@ let cur: Playable = { episode: DEMO_EPISODE, roster: DEMO_ROSTER, label: 'Demo',
 // Every run plays on a fresh stage, so jumping (to a scene or a log line) replays the
 // episode silently up to that point: the engine is deterministic for a given seed.
 let stage!: Stage;
-let map!: MapView;
-let gfx!: SpriteMapView;
+let map!: SpriteMapView;
 let head!: HeadView;
 let feed!: FeedView;
 let card!: CardView;
@@ -70,7 +67,6 @@ let status = '';
 
 function onEvent(e: EngineEvent): void {
   map.onEvent(e);
-  gfx.onEvent(e);
   feed.onEvent(e);
   card.onEvent(e);
   if (RENDER) subtitle(e);
@@ -119,13 +115,12 @@ function fastForward(task: Task, until: () => boolean): void {
 function start(target?: Target, done: () => void = () => start()): void {
   const { episode, roster, series } = cur;
   stage = new Stage(cur.seed, CAST, episode, roster, series ?? {});
-  map = new MapView($('map'), stage);
-  gfx = new SpriteMapView($('map-gfx'), stage);
-  head = new HeadView($('head'), $('head-gfx'), stage);
+  map = new SpriteMapView($('map-gfx'), stage);
+  head = new HeadView($('head-gfx'), stage);
   feed = new FeedView($('feed'), stage);
   feed.clear();
   card = new CardView($('card'), stage);
-  card.setEpisode(episode);
+  card.setEpisode(episode, navFor());
   stage.on(onEvent);
   $('subtitle').innerHTML = '';
   const task = stage.spawn(new Director(stage, episode, roster, cur.label).play());
@@ -173,6 +168,11 @@ function renderStatus(): void {
 
 // Clicks: a scene in the card, or a line in the script.
 $('card').addEventListener('click', (e) => {
+  const ep = (e.target as HTMLElement).closest<HTMLButtonElement>('[data-ep]');
+  if (ep) {
+    if (!ep.disabled) void run(nowPlaying + Number(ep.dataset.ep));
+    return;
+  }
   const i = (e.target as HTMLElement).closest<HTMLElement>('[data-scene]')?.dataset.scene;
   if (i !== undefined) jump({ scene: Number(i) });
 });
@@ -200,6 +200,14 @@ let nowPlaying = 0;
 let generation = 0;
 let lastUnavailable: Unavailable | null = null;
 let currentSeries: Series | null = null;
+/** Episodes already written or loaded, so the card's › arrow knows when the next one is ready. */
+const ready = new Set<number>();
+
+/** The card's episode arrows: back to any earlier episode of this run, forward once the next is ready. */
+function navFor(): EpisodeNav | null {
+  if (!cur.series) return null;
+  return { label: cur.label, prev: !!base && nowPlaying > base.n, next: ready.has(nowPlaying + 1) };
+}
 
 /** Episode n: this session's, or written from the state after episode n-1 (stored first, then the LLM). */
 function entryFor(n: number): Promise<Entry | null> {
@@ -223,7 +231,9 @@ function entryFor(n: number): Promise<Entry | null> {
   })();
   entries.set(n, promise);
   void promise.then((e) => {
-    if (!e) entries.delete(n); // let a later attempt try again
+    if (!e) return void entries.delete(n); // let a later attempt try again
+    ready.add(n);
+    if (card && n === nowPlaying + 1) card.setNav(navFor());
   });
   return promise;
 }
@@ -438,15 +448,11 @@ async function main(): Promise<void> {
 // Fixed-step simulation, decoupled from the frame rate.
 let last = performance.now();
 let acc = 0;
-/** The set as sprites when art is loaded, else ASCII; hidden on a talking head. True if the sprite picture changed. */
+/** The set on its canvas, hidden on a talking head. True if the picture changed. */
 function drawMap(onHead: boolean): boolean {
-  const sprites = !onHead && art.loaded;
-  const show = (el: HTMLElement, on: boolean) => { if (el.hidden === on) el.hidden = !on; };
-  show($('map'), !onHead && !sprites);
-  show($('map-gfx'), sprites);
-  if (sprites) return gfx.render();
-  if (!onHead) map.render();
-  return false;
+  const el = $('map-gfx');
+  if (el.hidden === !onHead) el.hidden = onHead;
+  return !onHead && map.render();
 }
 
 function frame(now: number): void {
@@ -486,8 +492,6 @@ window.addEventListener('keydown', (e) => {
     e.preventDefault();
   } else if (e.key >= '1' && e.key <= '4') {
     speed = SPEEDS[Number(e.key) - 1];
-  } else if (e.key === 'g') {
-    art.enabled = !art.enabled;
   } else if (e.key === 'd') {
     $('debug').hidden = !$('debug').hidden;
   } else if (e.key === 'f') {
@@ -504,31 +508,6 @@ window.addEventListener('keydown', (e) => {
   }
 });
 
-function fit(): void {
-  if (RENDER) {
-    // Broadcast layout: the map as large as the frame allows between the title bar and the subtitle.
-    const vertical = document.body.classList.contains('vertical');
-    const byWidth = (window.innerWidth - 24 - 18) / (FRAME_W * 0.6);
-    const byHeight = (window.innerHeight - 34 - 96 - 36 - 18) / (FRAME_H * 1.3);
-    const px = vertical ? byWidth : Math.min(byWidth, byHeight);
-    document.documentElement.style.setProperty('--cell', `${px}px`);
-    document.documentElement.style.setProperty('--rows', String(FRAME_H));
-    document.documentElement.style.setProperty('--cols', String(FRAME_W));
-    return;
-  }
-  // As big as fits beside the side panel and above the script.
-  const phone = window.innerWidth <= 900;
-  const side = phone ? 0 : 394;
-  const width = Math.min(window.innerWidth - (phone ? 24 : 48) - side, 1500);
-  let px = Math.min(22, (width - 18) / (FRAME_W * 0.6));
-  if (!phone) px = Math.min(px, (window.innerHeight - 250) / (FRAME_H * 1.3));
-  document.documentElement.style.setProperty('--cell', `${Math.max(phone ? 9 : 7, px)}px`);
-  document.documentElement.style.setProperty('--rows', String(FRAME_H));
-  document.documentElement.style.setProperty('--cols', String(FRAME_W));
-}
-window.addEventListener('resize', fit);
-fit();
-
 if (RENDER) {
   const view = () => {
     const onHead = stage.head !== null;
@@ -541,6 +520,8 @@ if (RENDER) {
     get done() { return renderState.done; },
     get time() { return stage?.time ?? 0; },
     get label() { return cur.label; },
+    /** For test scripts: the live stage (read-only use). */
+    get stage() { return stage; },
     /** Advance the show by `dt` seconds of simulated time (exactly, in 60 Hz ticks); true if the picture changed. */
     step(dt: number): boolean {
       renderState.clock += dt;

@@ -81,3 +81,37 @@ describe('director with a sloppy episode', () => {
     expect(task.done).toBe(true);
   });
 });
+
+describe('kitchen and annex sets', () => {
+  const scene = (set: string, region: string, present: string[]) => ({
+    part: 'act1', set, region, present, recap: 'x', beats: [{ type: 'say', who: present[0], text: 'Hello there.', to: 'none', mood: 'neutral' }],
+  });
+
+  it('plays old office scenes with a kitchen or annex region in the new sets, with the annex crew at their desks', () => {
+    const ep = Episode.parse({ title: 'Old', logline: '', scenes: [scene('office', 'kitchen', ['kevin']), scene('office', 'annex', ['kelly']), scene('annex', 'annex', ['ryan'])] });
+    const roster = [...DEMO_ROSTER, 'ryan', 'toby'];
+    const st = new Stage(1, CAST, ep, roster);
+    const sets: string[] = [], seated: string[] = [];
+    st.on((e) => {
+      if (e.type === 'sceneStart') sets.push(`${e.set}/${e.region}`);
+      if (e.type === 'said' && st.setId === 'annex') seated.push(...st.visibleActors().filter((a) => a.seated).map((a) => a.id));
+    });
+    const task = st.spawn(new Director(st, ep, roster).play());
+    while (!task.done && st.time < 600) st.update(TICK);
+    expect(task.done).toBe(true);
+    expect(sets).toEqual(['kitchen/kitchen', 'annex/annex', 'annex/annex']);
+    expect(seated).toContain('toby');
+  });
+
+  it('walks at a uniform pixel speed on a square-cell set', () => {
+    const ep = Episode.parse({ title: 'Walk', logline: '', scenes: [scene('office', 'bullpen', ['jim'])] });
+    const st = new Stage(1, CAST, ep, DEMO_ROSTER);
+    st.enterSet('office');
+    const jim = st.actor('jim'), a = st.set.spots.jim_desk;
+    st.show(jim, a);
+    const start = st.wt;
+    st.walk(jim, { x: a.x, y: a.y + 10 });
+    while (jim.moving) st.update(TICK);
+    expect(st.wt - start).toBeCloseTo((10 * st.set.cellH) / 80, 0);
+  });
+});

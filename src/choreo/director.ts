@@ -15,17 +15,20 @@ import { key, type Point } from '../sets/index.ts';
 
 /** What the title card says when the show cuts to a set. */
 const SET_CARD: Record<SetId, string> = {
-  office: 'DUNDER MIFFLIN', break_room: 'BREAK ROOM', parking_lot: 'PARKING LOT', warehouse: 'WAREHOUSE', offsite: '',
+  office: 'DUNDER MIFFLIN', kitchen: 'KITCHEN', annex: 'ANNEX', break_room: 'BREAK ROOM', parking_lot: 'PARKING LOT', warehouse: 'WAREHOUSE', offsite: '',
 };
 /** Where a scene happens when it names no region. */
 const DEFAULT_REGION: Record<SetId, string> = {
-  office: 'bullpen', break_room: 'break_room', parking_lot: 'parking_lot', warehouse: 'warehouse', offsite: 'venue',
+  office: 'bullpen', kitchen: 'kitchen', annex: 'annex', break_room: 'break_room', parking_lot: 'parking_lot', warehouse: 'warehouse', offsite: 'venue',
 };
-const AMBIENT_STOPS = ['copier', 'water_cooler', 'kitchen_1', 'kitchen_2', 'kitchen_3'];
+const AMBIENT_STOPS = ['copier', 'water_cooler'];
 const PACE_OF: Record<string, Pace> = { walk: 'walk', hurry: 'hurry', sneak: 'sneak', storm_off: 'hurry', run: 'hurry' };
 
 const list = (v: string | string[]) => (Array.isArray(v) ? v : [v]);
-const dist = (a: Point, b: Point) => Math.abs(a.x - b.x) + 2 * Math.abs(a.y - b.y); // cells are ~2x taller than wide
+/** Sets where an actor not on screen can be conjured at their desk. */
+const DESK_SETS = new Set<SetId>(['office', 'annex']);
+/** Episodes stored before the kitchen and annex became their own sets put them in the office as regions. */
+const remap = (sc: Scene): Scene => (sc.set === 'office' && (sc.region === 'kitchen' || sc.region === 'annex') ? { ...sc, set: sc.region } : sc);
 
 export class Director {
   /** Bumped per scene so ambient coroutines of an earlier scene stop themselves. */
@@ -51,7 +54,7 @@ export class Director {
         yield* this.card('THE OFFICE', ep.title, 3);
       }
       yield* this.scene(i, scene, prev);
-      prev = scene.set;
+      prev = remap(scene).set;
     }
     yield* this.card('END OF EPISODE', ep.title, 3);
     st.bus.emit({ type: 'episodeEnd' });
@@ -72,8 +75,9 @@ export class Director {
     return regions[DEFAULT_REGION[sc.set]] ? DEFAULT_REGION[sc.set] : Object.keys(regions)[0];
   }
 
-  private *scene(index: number, sc: Scene, prev: SetId | null): Co {
+  private *scene(index: number, scene: Scene, prev: SetId | null): Co {
     const { st } = this;
+    const sc = remap(scene);
     const token = ++this.token;
     st.enterSet(sc.set);
     const region = this.sceneRegion(sc);
@@ -97,7 +101,7 @@ export class Director {
     for (const id of this.roster) {
       const a = st.actor(id);
       const desk = a.desk ? st.set.spots[a.desk] : undefined;
-      if (sc.present.includes(id) || !desk || (sc.set !== 'office' && a.home !== sc.set)) continue;
+      if (sc.present.includes(id) || !desk) continue;
       st.show(a, desk);
       if (!busy.has(id)) background.push(a);
     }
@@ -142,6 +146,7 @@ export class Director {
   private *ambient(token: number, rng: Rng, people: Actor[]): Co {
     const { st } = this;
     const stops = AMBIENT_STOPS.filter((s) => st.set.spots[s]);
+    if (!stops.length) return;
     while (true) {
       yield* st.sleepW(rng.range(8, 20));
       if (token !== this.token) return;
@@ -159,6 +164,12 @@ export class Director {
   }
 
   // ---------------------------------------------------------------- helpers
+
+  /** Manhattan distance in world px (cells are not square in the ASCII sets). */
+  private dist(a: Point, b: Point): number {
+    const { cellW, cellH } = this.st.set;
+    return Math.abs(a.x - b.x) * cellW + Math.abs(a.y - b.y) * cellH;
+  }
 
   /** "everyone" means everyone on screen. */
   private ids(who: string | string[]): string[] {
@@ -189,7 +200,7 @@ export class Director {
     const { st } = this;
     const occ = st.occupied();
     const cells = Object.values(st.set.exits).flat();
-    const score = (p: Point) => (occ.has(key(p)) ? 1000 : 0) + (near ? dist(p, near) : 0);
+    const score = (p: Point) => (occ.has(key(p)) ? 1000 : 0) + (near ? this.dist(p, near) : 0);
     return cells.reduce((best, p) => (score(p) < score(best) ? p : best));
   }
 
@@ -209,7 +220,7 @@ export class Director {
   private *bringIn(a: Actor, toward: Actor | null, region: string): Co {
     const { st } = this;
     const desk = a.desk ? st.set.spots[a.desk] : undefined;
-    if (st.setId === 'office' && desk && !st.occupied().has(key(desk))) st.show(a, desk);
+    if (DESK_SETS.has(st.setId) && desk && !st.occupied().has(key(desk))) st.show(a, desk);
     else this.walkIn(a, toward ? toward.id : region, region);
     yield* this.settle([a.id]);
   }
@@ -320,7 +331,7 @@ export class Director {
     for (const a of people) {
       if (!a.visible) st.show(a, this.exitCell(set.regions[place].cells[0]), true);
       const seats = this.seatsIn(place).filter((p) => !occ.has(key(p)) && !taken.has(key(p)));
-      const seat = seats.sort((p, q) => dist(p, a) - dist(q, a))[0];
+      const seat = seats.sort((p, q) => this.dist(p, a) - this.dist(q, a))[0];
       const spot = seat ?? set.freeCellIn(place, new Set([...occ, ...taken]), () => st.rng.next());
       if (!spot) continue;
       taken.add(key(spot));
@@ -339,7 +350,7 @@ export class Director {
       const desk = a.desk ? st.set.spots[a.desk] : undefined;
       const occ = st.occupied(a);
       const seats = [...(desk ? [desk] : []), ...(region ? this.seatsIn(region) : [])].filter((p) => !occ.has(key(p)) && st.set.regionAt(p) === region);
-      const seat = seats.sort((p, q) => dist(p, a) - dist(q, a))[0];
+      const seat = seats.sort((p, q) => this.dist(p, a) - this.dist(q, a))[0];
       if (seat) st.walk(a, seat, 'walk');
     }
   }
@@ -367,7 +378,7 @@ export class Director {
     const { st } = this;
     const a = st.actor(b.who);
     yield* this.settle([a.id]);
-    if (!a.visible && st.setId === 'office') yield* this.bringIn(a, null, region);
+    if (!a.visible && DESK_SETS.has(st.setId)) yield* this.bringIn(a, null, region);
     const seconds = Math.max(2.2, Math.min(4, readTime(b.caption, 'narrated') + 0.8));
     st.note = { who: a.visible ? a.id : null, text: b.caption, until: st.wt + seconds };
     st.bus.emit({ type: 'action', who: a.id, caption: b.caption });

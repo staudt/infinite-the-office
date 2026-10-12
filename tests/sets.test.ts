@@ -9,12 +9,14 @@ const EXPECT: Record<string, { spots: string[]; regions: string[]; exits: string
   office: {
     spots: [
       'michael_desk', 'michael_guest_1', 'michael_guest_2', 'pam_desk', 'jim_desk', 'dwight_desk', 'stanley_desk',
-      'phyllis_desk', 'andy_desk', 'ryan_desk', 'creed_desk', 'meredith_desk', 'oscar_desk', 'angela_desk', 'kevin_desk',
-      'kelly_desk', 'toby_desk', 'erin_desk', ...range('conf_', 10), 'conf_front', ...range('kitchen_', 3), 'copier', 'water_cooler',
+      'phyllis_desk', 'andy_desk', 'creed_desk', 'meredith_desk', 'oscar_desk', 'angela_desk', 'kevin_desk',
+      'erin_desk', ...range('conf_', 10), 'conf_front', 'copier', 'water_cooler',
     ],
-    regions: ['michael_office', 'conference_room', 'kitchen', 'annex', 'reception', 'bullpen', 'accounting'],
-    exits: ['parking_lot', 'warehouse', 'break_room'],
+    regions: ['michael_office', 'conference_room', 'reception', 'bullpen', 'accounting'],
+    exits: ['parking_lot', 'warehouse', 'break_room', 'kitchen', 'annex'],
   },
+  kitchen: { spots: [...range('kitchen_', 3), 'microwave', 'fridge', 'vending'], regions: ['kitchen'], exits: ['office'] },
+  annex: { spots: ['ryan_desk', 'kelly_desk', 'toby_desk'], regions: ['annex'], exits: ['office'] },
   break_room: { spots: range('table_', 6), regions: ['break_room'], exits: ['office'] },
   parking_lot: {
     spots: ['car_michael', 'car_dwight', 'car_jim', 'car_stanley', 'smoking_spot', 'dumpster'],
@@ -93,6 +95,35 @@ describe('sets', () => {
       });
     });
   }
+});
+
+describe('office layout', () => {
+  const office = SETS.office;
+
+  it('is built from office.layout.json on a square grid', () => {
+    expect(office.layout).toBeDefined();
+    expect(office.cellW).toBe(office.cellH);
+    expect(office.cellW * office.width).toBeGreaterThanOrEqual(office.layout!.width);
+  });
+
+  it('every seat is a seat cell, reachable from the main entrance', () => {
+    const door = office.exits.parking_lot[0];
+    for (const [name, p] of Object.entries(office.spots)) {
+      expect(office.path(door, p), name).not.toBeNull();
+      const seat = office.layout!.spots[name].seat;
+      expect(office.kinds[p.y][p.x], name).toBe(seat ? 'seat' : 'spot');
+    }
+  });
+
+  it('walls block, door gaps do not, and people keep a gap when picking cells', () => {
+    const { layout } = office;
+    const c = office.cellW, wall = layout!.walls[0];
+    expect(office.walkable({ x: Math.floor((wall.x + wall.w / 2) / c), y: Math.floor((wall.y + wall.h / 2) / c) })).toBe(false);
+    for (const cells of Object.values(office.exits)) for (const p of cells) expect(office.walkable(p)).toBe(true);
+    const spot = office.spots.jim_desk;
+    const next = office.nextTo(spot, new Set([key(spot)]))!;
+    expect(Math.max(Math.abs(next.x - spot.x), Math.abs(next.y - spot.y))).toBeGreaterThanOrEqual(2);
+  });
 });
 
 describe('parseSet', () => {

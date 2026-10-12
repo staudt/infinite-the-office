@@ -207,18 +207,23 @@
   },
   "chair_front": {
    "src": "props/chair_front.png",
-   "w": 267,
-   "h": 357
-  },
-  "chair_back": {
-   "src": "props/chair_back.png",
-   "w": 266,
-   "h": 299
+   "w": 69,
+   "h": 79
   },
   "chair_side": {
    "src": "props/chair_side.png",
-   "w": 229,
-   "h": 358
+   "w": 59,
+   "h": 81
+  },
+  "chair_back": {
+   "src": "props/chair_back.png",
+   "w": 72,
+   "h": 79
+  },
+  "couch_side": {
+   "src": "props/couch_side.png",
+   "w": 97,
+   "h": 213
   }
  },
  "anims": {
@@ -245,12 +250,107 @@
    "frames": 5,
    "anchorX": 33,
    "anchorY": 128
+  },
+  "pam_sit_front": {
+   "src": "pam_sit_front.png",
+   "frameW": 75,
+   "frameH": 150,
+   "frames": 1,
+   "anchorX": 37,
+   "anchorY": 149
+  },
+  "pam_sit_back": {
+   "src": "pam_sit_back.png",
+   "frameW": 74,
+   "frameH": 151,
+   "frames": 1,
+   "anchorX": 37,
+   "anchorY": 150
+  },
+  "pam_sit_side": {
+   "src": "pam_sit_side.png",
+   "frameW": 79,
+   "frameH": 150,
+   "frames": 1,
+   "anchorX": 39,
+   "anchorY": 149
+  },
+  "pam_type_side": {
+   "src": "pam_type_side.png",
+   "frameW": 79,
+   "frameH": 150,
+   "frames": 2,
+   "anchorX": 39,
+   "anchorY": 149
+  },
+  "pam_phone_side": {
+   "src": "pam_phone_side.png",
+   "frameW": 79,
+   "frameH": 150,
+   "frames": 1,
+   "anchorX": 39,
+   "anchorY": 149
+  },
+  "pam_react_gasp": {
+   "src": "pam_react_gasp.png",
+   "frameW": 71,
+   "frameH": 129,
+   "frames": 1,
+   "anchorX": 35,
+   "anchorY": 128
+  },
+  "pam_react_laugh": {
+   "src": "pam_react_laugh.png",
+   "frameW": 71,
+   "frameH": 130,
+   "frames": 1,
+   "anchorX": 35,
+   "anchorY": 129
+  },
+  "pam_react_sad": {
+   "src": "pam_react_sad.png",
+   "frameW": 71,
+   "frameH": 129,
+   "frames": 1,
+   "anchorX": 35,
+   "anchorY": 128
+  },
+  "pam_react_facepalm": {
+   "src": "pam_react_facepalm.png",
+   "frameW": 70,
+   "frameH": 128,
+   "frames": 1,
+   "anchorX": 35,
+   "anchorY": 127
+  },
+  "pam_react_look": {
+   "src": "pam_react_look.png",
+   "frameW": 71,
+   "frameH": 129,
+   "frames": 1,
+   "anchorX": 35,
+   "anchorY": 128
   }
  },
  "images": {
   "pam_head": {
    "src": "pam_head.png",
-   "w": 601,
+   "w": 515,
+   "h": 800
+  },
+  "pam_head_talk": {
+   "src": "pam_head_talk.png",
+   "w": 515,
+   "h": 800
+  },
+  "pam_head_happy": {
+   "src": "pam_head_happy.png",
+   "w": 515,
+   "h": 800
+  },
+  "pam_head_happy_talk": {
+   "src": "pam_head_happy_talk.png",
+   "w": 515,
    "h": 800
   },
   "head_bg": {

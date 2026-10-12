@@ -42,7 +42,7 @@ Call the \`${tool}\` tool exactly once with the complete result. Do not answer i
 export function episodeSystemPrompt(): string {
   const constraints = readData('writer/constraints.md').replace('{{SETS}}', setListing());
   return [
-    'You are the head writer of an endless, never-ending version of *The Office* (US). You write one episode at a time as structured data; an engine stages it as ASCII animation with a camera crew. Continuity matters: follow the season bible and the story so far.',
+    'You are the head writer of an endless, never-ending version of *The Office* (US). You write one episode at a time as structured data; an engine stages it as pixel-art animation with a camera crew. Continuity matters: follow the season bible and the story so far.',
     readData('writer/style.md'), constraints, readData('writer/format.md'), TOOL_USE('write_episode'),
   ].join('\n\n');
 }
@@ -58,7 +58,7 @@ export function bibleSystemPrompt(): string {
 - Regulars: pick the roster from the cast list (about 14-20 people). Use recurring characters as regulars when their story needs them. Do not use characters outside the era you chose unless the story justifies it.
 - You may invent 0-3 new recurring side characters (a client, a rival, a new hire) with a distinct voice. Give them lowercase_snake_case ids.
 - Schedule 3-5 tentpole episodes from the tentpole list (the finale is always episode ${SEASON_LENGTH}) and say what each does for the story.
-- \`deskOverrides\` use spot names from the office set (e.g. "dwight_desk"), only when someone changes seats. \`manager\` is the character id of whoever runs the branch.
+- \`deskOverrides\` use desk spot names from the office or annex sets (e.g. "dwight_desk", "ryan_desk"), only when someone changes seats. \`manager\` is the character id of whoever runs the branch.
 - Keep \`plan\`/\`summary\`/\`beat\` strings concrete and short (one or two sentences).`,
     TOOL_USE('plan_season'),
   ].join('\n\n');

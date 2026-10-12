@@ -27,8 +27,8 @@ URL params: `show`, `ep`, `scene` (1-based), `demo=1`, `seed`, `play`, `id`, `na
 2. **Series state** (`src/world/`): roster, relationships, gags, notes, arc progress, storySoFar, history, recentPlots. `applyEpisode` is pure, so state is replayed from stored episodes.
 3. **Director** (`src/choreo/director.ts`): turns beats into coroutines. Movement beats start walks and the director continues; a later beat waits for the actors it involves. Talking heads freeze world time and cut to the confessional. Office background cast sits at their desks, and ambient life (copier and water-cooler trips) runs on a seeded rng. Unknown targets degrade gracefully.
 4. **Engine** (`src/engine/`): a fixed 60 Hz scheduler of generator coroutines (copied from wrestling), seeded, so the same episode always plays identically. Tests assert this.
-5. **Sets** (`data/sets/*.txt`, `src/sets/`): hand-editable ASCII grids. Labels written in the grid (`CONFERENCE ROOM`) become regions, header-declared chars are spots/seats/exits, and A* runs on the grid. The LLM only ever sees region and spot names. The legend is in `data/sets/README.md`. Sets: office (97×28), break_room, parking_lot, warehouse, offsite (relabeled per scene via `venue`). `tests/sets.test.ts` guards the spot/region names the writer relies on.
-6. **Views** (`src/view/`): `set.ts` (ASCII map + character-cell balloons), `head.ts` (talking-head confessional), feed/transcript, card, start screen. Views only read engine state and events, so they are swappable.
+5. **Sets** (`data/sets/`, `src/sets/`): invisible logic maps (A* walking, seats, regions, exits). The LLM only ever sees region and spot names. The **office** is an art-scale floor plan, `office.layout.json` (world px at native sprite scale, rasterized onto a 16 px grid by `src/sets/layout.ts`; walls, doors, windows, props, spots, regions), modeled on the user's reference `art/raw/office-reference.png`. The other sets (break_room, kitchen, annex, parking_lot, warehouse, offsite) are still ASCII grids (16×32 px cells), drawn procedurally until they get art. Kitchen and annex are separate sets; old episodes with `office` + region `kitchen`/`annex` are remapped. Format docs in `data/sets/README.md`. `tests/sets.test.ts` guards the spot/region names the writer relies on.
+6. **Views** (`src/view/`): `sprites.ts` (canvas sprite map with camera framing and an HTML balloon layer; the only map view, placeholders where art is missing), `head.ts` (drawn confessional: portrait art, or a placeholder bust in the actor's color), feed/transcript, card, start screen. The map and confessional share one 16:9 box (`#stage`; text scales with it via container units). Views only read engine state and events, so they are swappable.
 7. **Storage**: `sessions/<id>/` (git-ignored: `series.json`, `ep-NNN.json`) and `library/<id>/` (committed, bundled into the Pages build by the Vite library plugin and `.github/workflows/pages.yml`). Cast canon is in `data/cast.json`. The hand-written demo episode is `data/demo/episode.json` (`?demo=1`, and the fallback when nothing else is available).
 
 ## Working conventions (user preferences)
@@ -43,25 +43,15 @@ URL params: `show`, `ep`, `scene` (1-based), `demo=1`, `seed`, `play`, `id`, `na
 - Match wrestling's code style: compact, short "why" comments, lenient parsing.
 
 ## Status (2026-10-11)
-Done: ASCII renderer with all sets, AI writer (bible + episodes), stored shows, start screen, CLI (pregen/preview/library/render), MP4 export (horizontal and vertical), README, first push, and Pages enabled (Actions build).
+Done: sprite renderer (ASCII removed) with the office floor plan, Pam's sprites and portrait, sprite pipeline (`npm run sprites`: `art/raw/` → `public/sprites/`, manifest `art/sprites.json`), AI writer (bible + episodes), stored shows, start screen, CLI (pregen/preview/library/render), MP4 export (horizontal and vertical), README, first push, and Pages enabled (Actions build).
 
 In progress: a 2-season pregen of "The Office" (direction: classic mid-run Scranton). It got the id `the-office-2` because an older 2-episode `sessions/the-office` already existed (origin unclear; don't delete it without asking). Plan: review the episodes and `sessions/failures/`, then copy the series to `library/the-office` with the id fixed in `series.json`, commit, and push to redeploy. This is also the first live test of the season-1 → season-2 bible transition.
 
 ## Next steps
-1. **Sprites** (the user is preparing art; it is the main next feature). Keep the ASCII sets as the logic layer and add a canvas sprite view alongside ASCII (toggle key). The user's samples are ChatGPT pixel art: an angled office floor image (they'll extract elements into tiles) and a 3/4-view Pam. Agreed needs:
-   - Tiles: orthographic top-down tiles mapped from the ASCII legend, with furniture layers drawn over characters for occlusion.
-   - Map sprite per character: Tier 1 is idle, walk ×4 frames, sit, and sit+typing, in 3 directions (left is mirrored), about 23 frames. Tier 2 adds talk gesture, front-facing reactions (look at camera, laugh, facepalm, shrug, cheer, gasp), phone, hold-item, point. Tier 3 is per-character signature moves.
-   - Subtle reactions use shared emote icons.
-   - Talking-head portraits per character: neutral, talking, and 3–4 moods.
-   - Generic palette-swappable bodies for extras and anyone not yet drawn.
-   - Shared props.
-   - Spec to give the art tools: fixed frame size (e.g. 32×64), feet anchored at the bottom, transparent background, one animation per row.
-   - Plan: take one character (Pam) through end to end first.
-   - Renderer changes: interpolate movement between cells, a 4-way facing, **camera framing** of the scene's region (also fixes the small text in vertical videos), and balloons as an HTML layer.
-   - Likeness and asset licenses were raised but not decided (LimeZu Modern Interiors/Office and LPC were the alternatives discussed).
+1. **Art** (the user generates it with ChatGPT; magenta backgrounds key out cleanly). Only Pam is drawn; everyone else is a colored placeholder (`<id>_walk_front|back|side` and `<id>_head[_talk|_<mood>]` plug in by name). Wanted next: walk sheets for the main cast, Pam sitting/typing, portrait variants (mouth open, moods), water cooler/vending/fridge, and art for the other sets (they'll come as separate reference images like the office). Fine-tune the office by editing `office.layout.json` (`?cam=all` frames the whole floor).
 2. Writing quality: Haiku is serviceable. Try `WRITER_MODEL=claude-sonnet-5-5` for curated library seasons. Watch `sessions/failures/` and tune `data/writer/*.md`.
 3. Rough edges:
-   - Present characters start at their desk only if it's in the scene's region.
+   - Present characters start at their desk only if it's in the scene's region (keep region rects covering their desks).
    - The conference room seats 10.
    - Moving walkers can overlap in doorways.
    - Offsite venues all share one generic layout.

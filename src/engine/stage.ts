@@ -1,7 +1,7 @@
 // The stage: scheduler, event bus, actors and the current set. All motion is driven by
 // coroutines on the fixed-step clock, so an episode replays identically for a given seed.
 import type { Episode, Mood, SetId } from '../schema/episode';
-import { findPath, getSet, key, type Point, type SetMap } from '../sets/index.ts';
+import { findPath, getSet, key, SETS, type Point, type SetMap } from '../sets/index.ts';
 import { Actor, type Pace, SPEED } from './actor';
 import type { CastMember } from './cast';
 import { distinctColor } from './colors';
@@ -69,8 +69,8 @@ export class Stage {
     this.rng = new Rng(seed);
     this.set = getSet('office');
     const desks = series.deskOverrides ?? {};
-    // A desk override only counts if the spot exists in the office.
-    const deskOf = (id: string, d: string | null) => (desks[id] && this.set.spots[desks[id]] ? desks[id] : d);
+    // A desk override only counts if the spot exists in some set (office desks, annex desks).
+    const deskOf = (id: string, d: string | null) => (desks[id] && Object.values(SETS).some((s) => s.spots[desks[id]]) ? desks[id] : d);
     for (const c of cast) this.actors.set(c.id, new Actor(c.id, c.name, c.glyph, c.color, c.title, c.home, deskOf(c.id, c.desk)));
     // The series' recurring side characters keep the glyph and color they were given once.
     for (const x of series.extras ?? []) {
@@ -201,11 +201,11 @@ export class Stage {
     a.seated = false;
     let due = this.wt;
     for (const p of path ?? [to]) {
-      const diag = p.x !== a.x && p.y !== a.y;
       a.stepFrom = a.pos;
       a.stepTo = p;
       a.stepStart = due;
-      due += (diag ? Math.SQRT2 : 1) / SPEED[pace];
+      // Uniform walking speed in world px, whatever the cell shape (SPEED is cells of 16 px per second).
+      due += Math.hypot((p.x - a.x) * set.cellW, (p.y - a.y) * set.cellH) / (SPEED[pace] * 16);
       a.stepEnd = due;
       yield () => this.wt >= due - 1e-9;
       if (a.walkId !== id) return;

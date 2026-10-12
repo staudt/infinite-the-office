@@ -4,7 +4,7 @@
 Call `write_episode` exactly once with the complete episode. `beats` is ONE flat, ordered list for the whole episode. Every scene starts with a scene marker, followed by that scene's beats:
 
 ```
-{ "type": "scene", "part": "cold_open|act1|act2|tag", "plot": "cold_open|A|B|C|tag", "set": "office|break_room|parking_lot|warehouse|offsite", "region": "bullpen", "venue": "", "present": ["jim","pam"], "recap": "One sentence: what happens in this scene" }
+{ "type": "scene", "part": "cold_open|act1|act2|tag", "plot": "cold_open|A|B|C|tag", "set": "office|kitchen|annex|break_room|parking_lot|warehouse|offsite", "region": "bullpen", "venue": "", "present": ["jim","pam"], "recap": "One sentence: what happens in this scene" }
 ```
 
 Beat shapes (use exactly these field names; `who` is always a character id, never a name):

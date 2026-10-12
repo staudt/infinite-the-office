@@ -1,0 +1,124 @@
+{
+  "_doc": "Dunder Mifflin Scranton at art scale: world px, y down. See data/sets/README.md for the format.",
+  "width": 1088, "height": 1008, "cell": 16,
+
+  "floor": [
+    { "x": 192, "y": 112, "w": 304, "h": 256, "style": "carpet" },
+    { "x": 512, "y": 112, "w": 456, "h": 256, "style": "carpet" },
+    { "x": 16, "y": 384, "w": 176, "h": 560, "style": "carpet" },
+    { "x": 192, "y": 448, "w": 880, "h": 496, "style": "carpet" }
+  ],
+
+  "walls": [
+    { "x": 176, "y": 0, "w": 808, "h": 112 },
+    { "x": 176, "y": 112, "w": 16, "h": 336 },
+    { "x": 496, "y": 112, "w": 16, "h": 256 },
+    { "x": 968, "y": 112, "w": 16, "h": 256 },
+    { "x": 176, "y": 368, "w": 912, "h": 80 },
+    { "x": 0, "y": 304, "w": 176, "h": 80 },
+    { "x": 0, "y": 384, "w": 16, "h": 560 },
+    { "x": 0, "y": 944, "w": 1088, "h": 64 },
+    { "x": 1072, "y": 448, "w": 16, "h": 496 }
+  ],
+
+  "doors": [
+    { "x": 64, "y": 304, "w": 64, "h": 80, "exit": ["warehouse", "break_room"] },
+    { "x": 336, "y": 368, "w": 64, "h": 80 },
+    { "x": 576, "y": 368, "w": 64, "h": 80 },
+    { "x": 352, "y": 944, "w": 64, "h": 64, "exit": "parking_lot" },
+    { "x": 1072, "y": 560, "w": 16, "h": 64, "exit": "kitchen" },
+    { "x": 1072, "y": 768, "w": 16, "h": 64, "exit": "annex" }
+  ],
+
+  "windows": [
+    { "x": 290, "y": 40, "w": 72, "h": 56 },
+    { "x": 560, "y": 40, "w": 72, "h": 56 },
+    { "x": 830, "y": 40, "w": 72, "h": 56 },
+    { "x": 232, "y": 392, "w": 72, "h": 48 },
+    { "x": 640, "y": 964, "w": 72, "h": 30 },
+    { "x": 860, "y": 964, "w": 72, "h": 30 }
+  ],
+
+  "decor": [
+    { "sprite": "wall_picture", "x": 222, "y": 84, "scale": 0.6 },
+    { "sprite": "wall_picture", "x": 736, "y": 86, "scale": 0.8 },
+    { "sprite": "wall_picture", "x": 470, "y": 78, "scale": 0.6 },
+    { "sprite": "wall_map", "x": 780, "y": 430, "scale": 0.6 },
+    { "sprite": "wall_picture", "x": 520, "y": 428, "scale": 0.6 }
+  ],
+
+  "props": [
+    { "sprite": "michael_desk", "x": 330, "y": 278, "split": 58, "solid": [{ "x": 0, "y": 2, "w": 166, "h": 50 }, { "x": 0, "y": 78, "w": 166, "h": 72 }] },
+    { "sprite": "filing_cabinet_plant", "x": 222, "y": 150 },
+    { "sprite": "wardrobe", "x": 450, "y": 150 },
+    { "sprite": "plant_tall_2", "x": 478, "y": 346 },
+    { "sprite": "plant_tall", "x": 212, "y": 346 },
+
+    { "sprite": "conference_table", "x": 743, "y": 310, "solid": { "x": 0, "y": 14, "w": 305, "h": 96 } },
+    { "sprite": "whiteboard", "x": 922, "y": 170 },
+    { "sprite": "plant_tall", "x": 542, "y": 152 },
+    { "sprite": "plant_tall_3", "x": 944, "y": 350 },
+
+    { "sprite": "couch_side", "x": 65, "y": 653, "solid": { "x": 0, "y": 30, "w": 97, "h": 183 } },
+    { "sprite": "reception_desk_curved_2", "x": 275, "y": 635 },
+    { "sprite": "counter_printer", "x": 147, "y": 760 },
+    { "sprite": "plant_tall_2", "x": 52, "y": 930 },
+
+    { "sprite": "water_cooler", "x": 696, "y": 470, "w": 24, "h": 46 },
+    { "sprite": "credenza_shelf", "x": 840, "y": 474 },
+    { "sprite": "bookshelf_low", "x": 960, "y": 478 },
+    { "sprite": "plant_tall_4", "x": 1034, "y": 484 },
+
+    { "sprite": "desk_pod_b", "x": 623, "y": 675, "solid": { "x": 14, "y": 30, "w": 137, "h": 150 } },
+    { "sprite": "desk_pod_c", "x": 852, "y": 676, "solid": { "x": 14, "y": 28, "w": 136, "h": 142 } },
+
+    { "sprite": "desk_manager", "x": 243, "y": 896, "solid": { "x": 0, "y": 0, "w": 186, "h": 84 } },
+    { "sprite": "desk_pod_a", "x": 491, "y": 896, "solid": { "x": 12, "y": 20, "w": 117, "h": 129 } },
+    { "sprite": "desk_pod_a", "x": 751, "y": 896, "solid": { "x": 12, "y": 20, "w": 117, "h": 129 } },
+    { "sprite": "desk_small_2", "x": 955, "y": 896, "solid": { "x": 0, "y": 20, "w": 150, "h": 70 } },
+    { "sprite": "coat_rack_jackets", "x": 450, "y": 934 }
+  ],
+
+  "spots": {
+    "michael_desk": { "x": 328, "y": 200, "seat": "down" },
+    "michael_guest_1": { "x": 296, "y": 296, "seat": "up" },
+    "michael_guest_2": { "x": 360, "y": 296, "seat": "up" },
+
+    "conf_1": { "x": 664, "y": 216, "seat": "down", "chair": false },
+    "conf_2": { "x": 712, "y": 216, "seat": "down", "chair": false },
+    "conf_3": { "x": 776, "y": 216, "seat": "down", "chair": false },
+    "conf_4": { "x": 824, "y": 216, "seat": "down", "chair": false },
+    "conf_5": { "x": 664, "y": 312, "seat": "up", "chair": false },
+    "conf_6": { "x": 712, "y": 312, "seat": "up", "chair": false },
+    "conf_7": { "x": 776, "y": 312, "seat": "up", "chair": false },
+    "conf_8": { "x": 824, "y": 312, "seat": "up", "chair": false },
+    "conf_9": { "x": 568, "y": 248, "seat": "right" },
+    "conf_10": { "x": 920, "y": 248, "seat": "left" },
+    "conf_front": { "x": 920, "y": 200 },
+
+    "pam_desk": { "x": 248, "y": 568, "seat": "right", "front": true },
+    "erin_desk": { "x": 296, "y": 568, "seat": "up", "front": true },
+    "copier": { "x": 296, "y": 744 },
+    "water_cooler": { "x": 696, "y": 488 },
+
+    "jim_desk": { "x": 552, "y": 616, "seat": "right", "chair": false },
+    "dwight_desk": { "x": 696, "y": 616, "seat": "left", "chair": false },
+    "stanley_desk": { "x": 776, "y": 616, "seat": "right", "chair": false },
+    "phyllis_desk": { "x": 936, "y": 616, "seat": "left", "chair": false },
+
+    "andy_desk": { "x": 248, "y": 888, "seat": "up", "chair": false },
+    "creed_desk": { "x": 424, "y": 840, "seat": "right", "chair": false },
+    "meredith_desk": { "x": 552, "y": 840, "seat": "left", "chair": false },
+    "angela_desk": { "x": 680, "y": 840, "seat": "right", "chair": false },
+    "oscar_desk": { "x": 824, "y": 840, "seat": "left", "chair": false },
+    "kevin_desk": { "x": 952, "y": 888, "seat": "up", "chair": false }
+  },
+
+  "regions": {
+    "michael_office": [{ "x": 192, "y": 112, "w": 304, "h": 256 }],
+    "conference_room": [{ "x": 512, "y": 112, "w": 456, "h": 256 }],
+    "reception": [{ "x": 16, "y": 384, "w": 504, "h": 416 }],
+    "accounting": [{ "x": 640, "y": 720, "w": 432, "h": 224 }],
+    "bullpen": [{ "x": 192, "y": 448, "w": 880, "h": 496 }, { "x": 16, "y": 720, "w": 176, "h": 224 }]
+  }
+}

@@ -4,9 +4,7 @@
   --fg: #d7d7e0;
   --dim: #5c5c70;
   --accent: #ffd23f;
-  --cell: 14px;
-  --rows: 28;
-  --cols: 97;
+  --side: 394px; /* the side panel plus its gap */
   color-scheme: dark;
 }
 
@@ -50,45 +48,40 @@ main { flex: 1; min-height: 0; display: flex; gap: 14px; }
 
 #left { display: flex; flex-direction: column; gap: 10px; min-height: 0; flex: none; }
 
-/* The map and the confessional share one box, so the cut between them is a clean swap. */
-#stage { max-width: 100%; overflow-x: auto; }
-#map, #head {
-  margin: 0;
-  font-size: var(--cell);
-  line-height: 1.3;
-  width: calc(var(--cols) * 1ch + 16px);
-  height: calc(var(--rows) * 1.3em + 12px);
-  background: #050508;
-  padding: 6px 8px;
-  border: 1px solid #1c1c28;
-  border-radius: 4px;
-  overflow: hidden;
-  white-space: pre;
-}
-#map[hidden], #head[hidden], #head-gfx[hidden], #map-gfx[hidden] { display: none; }
+/* The map and the confessional share one 16:9 box (--u scales their text with it), so the cut between them is a clean swap. */
+#left { --stage-w: min(calc(100vw - 48px - var(--side)), calc((100vh - 250px) * 16 / 9), 1500px); width: max(480px, var(--stage-w)); }
+#stage { position: relative; flex: none; width: 100%; aspect-ratio: 16 / 9; container-type: inline-size; --u: 1.7cqw; }
+#head-gfx[hidden], #map-gfx[hidden] { display: none; }
 
 /* The drawn confessional: same box as the map, layered images plus HTML text. */
 #head-gfx, #map-gfx {
-  position: relative;
-  font-size: var(--cell);
-  width: calc(var(--cols) * 1ch + 16px);
-  height: calc(var(--rows) * 1.3em + 12px);
+  position: absolute;
+  inset: 0;
+  font-size: var(--u);
   border: 1px solid #1c1c28;
   border-radius: 4px;
   overflow: hidden;
-  background: #050508;
+  background: linear-gradient(#10101c, #050508);
 }
 #head-gfx img { position: absolute; image-rendering: pixelated; user-select: none; }
 #head-gfx .hg-bg { inset: 0; width: 100%; height: 100%; object-fit: cover; }
 /* Seated slightly off-center, like the show; cropped at the waist by the frame. */
 #head-gfx .hg-who { left: 50%; bottom: 0; height: 88%; translate: -42% 0; }
+#head-gfx .hg-who[hidden] { display: none; }
+/* Stand-in bust for a character with no portrait art yet. */
+#head-gfx .hg-ph { position: absolute; aspect-ratio: 5 / 6; }
+#head-gfx .hg-ph svg { display: block; width: 100%; height: 100%; filter: drop-shadow(0 0.4em 0.8em #0008); }
 #head-gfx .hg-rec { position: absolute; top: 3%; left: 2.5%; color: #e8e8f0; font-size: 1.4em; text-shadow: 0 1px 3px #000; }
 #head-gfx .hg-dot { color: #ff4d4d; }
 #head-gfx .hg-vf { position: absolute; top: 3%; right: 2.5%; color: #e8e8f0; opacity: 0.8; font-size: 1.2em; text-shadow: 0 1px 3px #000; }
-#head-gfx .hg-third { position: absolute; left: 3%; bottom: 7%; display: flex; flex-direction: column; padding: 0.4em 1em 0.4em 0.8em; background: #1c1c2ce6; border-left: 0.35em solid currentColor; font-size: 1.5em; }
+#head-gfx .hg-third { position: absolute; left: 3%; bottom: 7%; display: flex; flex-direction: column; max-width: 26%; padding: 0.4em 1em 0.4em 0.8em; background: #1c1c2ce6; border-left: 0.35em solid currentColor; font-size: 1.5em; }
 #head-gfx .hg-name { font-weight: 700; }
 #head-gfx .hg-title { color: #a8a8c0; font-size: 0.8em; }
 #head-gfx .hg-sub { position: absolute; left: 30%; right: 6%; bottom: 5%; text-align: center; font-size: 1.7em; line-height: 1.35; }
+/* Narrow pictures (phone, vertical video): the subtitle spans the width, the lower third moves to the top. */
+@media (max-width: 900px) { #head-gfx .hg-third { top: 11%; bottom: auto; max-width: 62%; font-size: 1.15em; } #head-gfx .hg-sub { left: 4%; right: 4%; bottom: 3%; font-size: 1.4em; } }
+body.render.vertical #head-gfx .hg-third { top: 11%; bottom: auto; max-width: 62%; font-size: 1.15em; }
+body.render.vertical #head-gfx .hg-sub { left: 4%; right: 4%; bottom: 3%; font-size: 1.4em; }
 #head-gfx .hg-sub span { background: #0c0c14d9; color: #f4f4f4; padding: 0.1em 0.4em; box-decoration-break: clone; -webkit-box-decoration-break: clone; }
 /* The sprite map: a canvas with an HTML layer for balloons and cards. */
 #map-gfx canvas { display: block; width: 100%; height: 100%; }
@@ -106,61 +99,6 @@ main { flex: 1; min-height: 0; display: flex; gap: 14px; }
 #map-gfx .sg-card b { color: var(--accent); font-size: 2.6em; letter-spacing: 0.25em; }
 #map-gfx .sg-card span { color: #cfd3ea; font-size: 1.4em; }
 #map-gfx .sg-cap { position: absolute; left: 0; right: 0; bottom: 3%; text-align: center; color: #9a9ab4; font-style: italic; font-size: 1.4em; text-shadow: 0 1px 3px #000; }
-/* One fixed cell for every non-ASCII glyph, whatever font draws it. */
-#map .w, #head .w { display: inline-block; width: 1ch; height: 1.3em; line-height: 1.3em; text-align: center; overflow: hidden; vertical-align: top; font-style: normal; }
-
-/* set tiles */
-.k-wall { color: #4b4b70; }
-.k-window { color: #5b93c9; }
-.k-desk { color: #8f6e3c; }
-.k-plant { color: #3fa05a; font-weight: 700; }
-.k-door { color: #c29a5a; font-weight: 700; }
-.k-machine { color: #8a9ab8; }
-.k-vending { color: #b06ab0; }
-.k-appliance { color: #6bb0b6; }
-.k-shelf { color: #86704a; }
-.k-prop { color: #5a5a72; }
-.k-deco { color: #2e4258; }
-.k-label { color: #4a4a64; }
-.k-seat { color: #3c5068; }
-.k-exit { color: #a08a3a; font-weight: 700; }
-
-#map .actor { font-weight: 700; }
-#map .actor.seated { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 2px; }
-#map .actor.speaking { background: #2a2610; }
-#map .actor.blink { opacity: 0.2; }
-#map .marker { color: #ffe066; font-weight: 700; }
-#map .pause { color: #7c7c96; font-style: italic; }
-#map .bubble { background: #181826; }
-#map .bubble.name { font-weight: 700; }
-#map .bubble.dir { font-style: italic; }
-#map .tail { font-weight: 700; }
-#map .card-title { color: var(--accent); font-weight: 700; }
-#map .card-sub { color: #cfd3ea; }
-#map .card-rule { color: #34344c; }
-
-/* confessional */
-#head .h-frame { color: #5a6a86; }
-#head .h-blind { color: #7a8ca8; }
-#head .h-shelf { color: #6a5636; }
-#head .h-books { color: #4a3a5e; }
-#head .h-chair { color: #3b2a1c; }
-#head .h-floor { color: #2a2a3a; }
-#head .h-vf { color: #4a4a5e; }
-#head .h-skin, #head .h-body { opacity: 0.8; }
-#head .h-fill { background: color-mix(in srgb, currentColor 14%, #050508); }
-#head .h-suit { background: color-mix(in srgb, currentColor 24%, #050508); }
-#head .h-face { font-weight: 700; }
-#head .h-collar { color: #d8d8e8; }
-#head .h-tie { color: #c0392b; font-weight: 700; }
-#head .h-rec { color: #ff4d4d; font-weight: 700; }
-#head .h-rec-text { color: #c8c8d8; }
-#head .bubble { background: #0c0c14; color: #f4f4f4; }
-#head .bubble.name { font-weight: 700; }
-#head .h-third { background: #1c1c2c; }
-#head .h-name { font-weight: 700; }
-#head .h-title { color: #a8a8c0; }
-
 #side { flex: none; width: 380px; min-height: 0; overflow-y: auto; padding-right: 4px; }
 
 #feed {
@@ -205,6 +143,13 @@ kbd { background: #1a1a26; border: 1px solid #2a2a3a; border-radius: 3px; paddin
 
 #card { font-size: 13px; }
 #card h3 { margin: 0 0 4px; font-size: 16px; color: var(--accent); letter-spacing: 0.04em; }
+#card .ep-head { display: flex; align-items: center; gap: 8px; margin-bottom: 4px; }
+#card .ep-name { flex: 1; min-width: 0; text-align: center; }
+#card .ep-name h3 { margin: 0; }
+#card .ep-num { color: #8a8aa8; font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; margin-bottom: 2px; }
+#card .ep-arrow { flex: none; width: 30px; height: 30px; padding: 0; font: inherit; font-size: 20px; line-height: 1; color: var(--accent); background: #16161f; border: 1px solid #2c2c3c; border-radius: 4px; cursor: pointer; }
+#card .ep-arrow:hover:not(:disabled) { background: #22222e; }
+#card .ep-arrow:disabled { color: #3c3c4c; cursor: default; }
 #card .logline { margin: 0 0 12px; color: #a8a8c0; line-height: 1.4; }
 #card ol { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 5px; }
 #card .part { margin-top: 8px; font-size: 10px; letter-spacing: 0.14em; color: #7a7a96; }
@@ -221,7 +166,7 @@ kbd { background: #1a1a26; border: 1px solid #2a2a3a; border-radius: 3px; paddin
 
 @keyframes in { from { opacity: 0; transform: translateY(4px); } }
 
-/* Phones: stack everything; the set scrolls sideways inside its box. */
+/* Phones: stack everything; the picture is squarer and its text relatively larger. */
 @media (max-width: 900px) {
   html, body { height: auto; }
   body { padding: 8px; display: block; }
@@ -230,7 +175,7 @@ kbd { background: #1a1a26; border: 1px solid #2a2a3a; border-radius: 3px; paddin
   #hud { font-size: 12px; gap: 2px 10px; margin-bottom: 8px; }
   main { flex-direction: column; gap: 10px; }
   #left { display: contents; }
-  #stage { order: 1; }
+  #stage { order: 1; width: auto; aspect-ratio: 4 / 3; --u: 3cqw; }
   #side { order: 2; overflow: visible; padding-right: 0; width: 100%; }
   #feed { order: 3; width: auto; font-size: 12px; max-height: 40vh; min-height: 0; }
   footer { flex-direction: column; gap: 4px; margin-top: 8px; }
@@ -371,21 +316,24 @@ body.render #hud #ep { flex: 1; }
 body.render #hud #seg { color: #9ad; white-space: nowrap; }
 body.render main { flex-direction: column; align-items: center; }
 body.render #left { display: flex; flex-direction: column; align-items: center; width: 100%; gap: 8px; }
-body.render #stage { overflow: hidden; }
+/* The picture as large as fits between the title bar and the subtitle; the subtitle matches its width. */
+body.render.horizontal #left { --stage-w: min(calc(100vw - 24px), calc((100vh - 188px) * 16 / 9)); }
+body.render #stage { overflow: hidden; width: var(--stage-w); }
 body.render #subtitle {
-  display: block; width: calc(var(--cols) * var(--cell) * 0.6 + 18px); min-height: 96px; max-width: 100%;
+  display: block; width: var(--stage-w); min-height: 96px; max-width: 100%;
   padding: 10px 16px; background: var(--panel); border: 1px solid #1c1c28; border-radius: 4px;
-  font-size: calc(var(--cell) * 1.25); line-height: 1.35; overflow: hidden;
+  font-size: calc(var(--stage-w) * 0.022); line-height: 1.35; overflow: hidden;
 }
 body.render #subtitle b { margin-right: 0.8em; letter-spacing: 0.06em; }
 body.render #subtitle .q { color: #f5f0dc; }
 body.render #subtitle .dir { color: #9a9ab4; font-style: italic; }
+body.render.vertical #left { --stage-w: calc(100vw - 24px); }
 body.render.vertical #frame { padding: 16px 12px; gap: 12px; }
 body.render.vertical #frame > #hud { flex-wrap: wrap; height: auto; font-size: 17px; gap: 6px 14px; justify-content: space-between; }
 body.render.vertical #hud .brand { white-space: nowrap; }
 body.render.vertical #hud #seg { order: 2; }
 body.render.vertical #hud #ep { flex: 1 0 100%; order: 3; font-size: 26px; font-weight: 700; color: var(--accent); }
-body.render.vertical #stage { order: 1; }
+body.render.vertical #stage { order: 1; aspect-ratio: 1; --u: 3cqw; }
 body.render.vertical #subtitle { order: 2; width: 100%; font-size: 26px; min-height: 150px; }
 body.render.vertical #feed { order: 3; display: flex; flex-direction: column; justify-content: flex-end; width: 100%; max-height: none; flex: 1; min-height: 0; overflow: hidden; font-size: 17px; }
 body.render.vertical #feed .ts { display: none; }

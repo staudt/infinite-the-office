@@ -1,25 +1,42 @@
-// The sprite map view: the current set on a canvas (procedural floors and walls, sprite
-// furniture and people, y-sorted for occlusion) with an HTML layer for balloons and cards.
-// Same events and Stage reads as MapView, so the two are swappable per frame. The ASCII
-// grid stays the logic layer: props are found as solid blocks, chairs as seat cells.
+// The sprite map view: the current set on a canvas (floors and walls, sprite furniture and
+// people, y-sorted for occlusion) with an HTML layer for balloons and cards. Layout sets
+// (plan.ts) are drawn from their floor plan; the ASCII sets are drawn procedurally: props
+// are found as solid blocks, chairs as seat cells. The grids are the logic layer either way.
 import PROPS from '../../data/sets/props.json';
 import { firstName } from '../engine/cast';
 import type { Actor } from '../engine/actor';
 import type { EngineEvent } from '../engine/events';
 import { readTime, type Stage } from '../engine/stage';
+import type { Reaction } from '../schema/episode';
 import type { SetMap } from '../sets/index.ts';
 import { art } from './art';
-import { esc } from './grid';
+import { esc } from './text';
 import { NameIndex } from './names';
-import { MARKER } from './set';
+import { MARKER } from './markers';
+import { buildPlan, chairItem, planFoot, type Chair, type Dir, type Plan } from './plan';
 
-/** World units: a cell is 16 x 32 (the grid is ~2:1). */
+/** ASCII sets: a cell is 16 x 32 world px (the grid is ~2:1). */
 const CW = 16, CH = 32;
 const BG_SCALE = 2; // static layer resolution, so zoomed-in cameras stay sharp
-const PERSON_H = 80; // a standing character, in world px
-const SEAT_DROP = 10; // seated people sink into the chair
-const CHAIR_W = 30;
-const MAX_ZOOM = 3;
+/** `?cam=all` frames the whole set in every scene (for looking at a floor plan). */
+const CAM_ALL = typeof location !== 'undefined' && new URLSearchParams(location.search).get('cam') === 'all';
+const VIEW_PAD = { top: 100, side: 28, bottom: 28 }; // around a region's cells in a layout set: the wall behind it, a little air
+
+/** How a set maps cells to world px, and how big people are in it. */
+interface Geo {
+  cw: number; ch: number;
+  /** A standing character, in world px. */
+  personH: number;
+  /** Seated people sink into the chair. */
+  seatDrop: number;
+  maxZoom: number;
+  /** Feet position of a (possibly fractional) cell. */
+  foot(x: number, y: number): [number, number];
+}
+const GEO_ASCII: Geo = { cw: CW, ch: CH, personH: 80, seatDrop: 10, maxZoom: 3, foot: (x, y) => [x * CW + 8, (y + 1) * CH - 4] };
+const geoOf = (set: SetMap): Geo => (set.layout
+  ? { cw: set.cellW, ch: set.cellH, personH: 96, seatDrop: 10, maxZoom: 2.5, foot: (x, y) => planFoot(set, x, y) }
+  : GEO_ASCII);
 const VOID = '#050508';
 const SOLID = new Set(['desk', 'shelf', 'plant', 'machine', 'appliance', 'vending', 'prop']);
 const BOX: Record<string, [string, string, number]> = {
@@ -43,9 +60,7 @@ const hash = (x: number, y: number, k = 0): number => {
 };
 
 interface Block { x0: number; y0: number; w: number; h: number; kind: string; sprite: string | null; set: string }
-interface Chair { x: number; y: number; dir: 'front' | 'back' | 'side'; face: 1 | -1 }
-interface Layout { bg: HTMLCanvasElement; W: number; H: number; blocks: Block[]; chairs: Chair[]; seats: Map<string, Chair> }
-type Dir = 'front' | 'back' | 'side';
+interface Built { bg: HTMLCanvasElement; W: number; H: number; blocks: Block[]; chairs: Chair[]; seats: Map<string, Chair>; plan: Plan | null }
 
 /** Greedy rectangles over same-kind solid cells. */
 function findBlocks(set: SetMap): Block[] {
@@ -95,17 +110,19 @@ function chooseSprite(set: SetMap, b: Block): string | null {
 /** Which way a sitter faces: toward the adjacent (or nearest) desk. */
 function seatOf(set: SetMap, x: number, y: number): Chair {
   const desk = (cx: number, cy: number) => set.kinds[cy]?.[cx] === 'desk';
-  if (desk(x, y + 1)) return { x, y, dir: 'front', face: 1 };
-  if (desk(x, y - 1)) return { x, y, dir: 'back', face: 1 };
-  if (desk(x - 1, y)) return { x, y, dir: 'side', face: -1 };
-  if (desk(x + 1, y)) return { x, y, dir: 'side', face: 1 };
+  const [fx, fy] = GEO_ASCII.foot(x, y);
+  const at = (dir: Dir, face: 1 | -1): Chair => ({ x, y, fx, fy, dir, face, draw: true, front: null });
+  if (desk(x, y + 1)) return at('front', 1);
+  if (desk(x, y - 1)) return at('back', 1);
+  if (desk(x - 1, y)) return at('side', -1);
+  if (desk(x + 1, y)) return at('side', 1);
   let best: [number, number] | null = null, bd = Infinity;
   for (let dy = -2; dy <= 2; dy++) {
     for (let dx = -2; dx <= 2; dx++) if (desk(x + dx, y + dy) && dx * dx + dy * dy * 2 < bd) { bd = dx * dx + dy * dy * 2; best = [dx, dy]; }
   }
-  if (!best) return { x, y, dir: 'front', face: 1 };
+  if (!best) return at('front', 1);
   const [dx, dy] = best;
-  return Math.abs(dy) >= Math.abs(dx) ? { x, y, dir: dy > 0 ? 'front' : 'back', face: 1 } : { x, y, dir: 'side', face: dx > 0 ? 1 : -1 };
+  return Math.abs(dy) >= Math.abs(dx) ? at(dy > 0 ? 'front' : 'back', 1) : at('side', dx > 0 ? 1 : -1);
 }
 
 // ---------------------------------------------------------------- static layer
@@ -113,7 +130,7 @@ function seatOf(set: SetMap, x: number, y: number): Chair {
 function floorColor(set: SetMap, x: number, y: number): string {
   const n = hash(x, y, 1) - 0.5;
   const region = set.regionAt({ x, y }) ?? '';
-  const tile = set.id === 'break_room' || region === 'kitchen' || region === 'break_room';
+  const tile = ['break_room', 'kitchen'].includes(set.id) || region === 'kitchen' || region === 'break_room';
   if (set.id === 'warehouse') return `hsl(210 3% ${46 + n * 3}%)`;
   if (set.id === 'parking_lot') return `hsl(220 6% ${24 + n * 2.5}%)`;
   if (set.id === 'offsite') return `hsl(30 26% ${38 + n * 3}%)`;
@@ -164,7 +181,7 @@ function paintBg(set: SetMap): HTMLCanvasElement {
       }
       g.fillStyle = floorColor(set, x, y);
       g.fillRect(px, py, CW, CH);
-      if (set.regionAt({ x, y }) === 'kitchen' || set.id === 'break_room') {
+      if (set.regionAt({ x, y }) === 'kitchen' || set.id === 'break_room' || set.id === 'kitchen') {
         g.fillStyle = 'rgba(0,0,0,0.12)';
         g.fillRect(px, py, CW, 1);
         g.fillRect(px, py, 1, CH);
@@ -194,16 +211,22 @@ function paintBg(set: SetMap): HTMLCanvasElement {
   return c;
 }
 
-const layouts = new WeakMap<SetMap, Layout>();
-function layoutFor(set: SetMap): Layout {
-  let l = layouts.get(set);
+const built = new WeakMap<SetMap, Built>();
+function builtFor(set: SetMap): Built {
+  let l = built.get(set);
   if (l && l.blocks.every((b) => b.sprite === null || art.image(b.sprite))) return l;
+  if (set.layout) {
+    const plan = buildPlan(set, geoOf(set).seatDrop);
+    l = { bg: plan.bg, W: plan.W, H: plan.H, blocks: [], chairs: plan.chairs, seats: new Map(plan.chairs.map((c) => [`${c.x},${c.y}`, c])), plan };
+    built.set(set, l);
+    return l;
+  }
   const blocks = findBlocks(set);
   for (const b of blocks) b.sprite = chooseSprite(set, b);
   const chairs: Chair[] = [];
   for (let y = 0; y < set.height; y++) for (let x = 0; x < set.width; x++) if (set.kinds[y][x] === 'seat') chairs.push(seatOf(set, x, y));
-  l = { bg: l?.bg ?? paintBg(set), W: set.width * CW, H: set.height * CH, blocks, chairs, seats: new Map(chairs.map((c) => [`${c.x},${c.y}`, c])) };
-  layouts.set(set, l);
+  l = { bg: l?.bg ?? paintBg(set), W: set.width * CW, H: set.height * CH, blocks, chairs, seats: new Map(chairs.map((c) => [`${c.x},${c.y}`, c])), plan: null };
+  built.set(set, l);
   return l;
 }
 
@@ -212,7 +235,15 @@ function layoutFor(set: SetMap): Layout {
 interface GBalloon { who: string; text: string; el: HTMLDivElement; at: number; until: number; note: boolean; w: number; h: number; mw: number; pos: string; tail: string; t: string }
 interface Rect { x0: number; y0: number; x1: number; y1: number }
 interface Cam { cx: number; cy: number; w: number }
-interface Pose { a: Actor; x: number; y: number; moving: boolean; dir: Dir; face: 1 | -1; seated: boolean; frame: number; chair: Chair | null }
+/** Reactions drawn as standing pose art (`<id>_react_<pose>`); without 'look' art, a look just turns to the camera. Others keep the emote. */
+const REACT_POSE: Partial<Record<Reaction, string>> = {
+  gasp: 'gasp', laugh: 'laugh', cheer: 'laugh', facepalm: 'facepalm', cringe: 'facepalm', sigh: 'sad', look_at_camera: 'look', stare: 'look',
+};
+
+/** An anim's name if its art is loaded. */
+const poseArt = (name: string): string | null => (art.index.anims?.[name] && art.image(name) ? name : null);
+
+interface Pose { a: Actor; x: number; y: number; moving: boolean; dir: Dir; face: 1 | -1; seated: boolean; frame: number; chair: Chair | null; /** Pose art drawn instead of the walk sheet (sit/type/phone/react), and whether it brings its own chair. */ art: string | null; ownChair: boolean }
 
 export class SpriteMapView {
   private canvas = document.createElement('canvas');
@@ -285,18 +316,19 @@ export class SpriteMapView {
 
   // ---------------------------------------------------------------- camera
 
-  private regionBox(set: SetMap): Rect {
-    const cells = set.regions[this.region]?.cells;
-    if (!cells?.length) return { x0: 0, y0: 0, x1: set.width * CW, y1: set.height * CH };
+  private regionBox(set: SetMap, geo: Geo): Rect {
+    const cells = CAM_ALL ? undefined : set.regions[this.region]?.cells;
+    if (!cells?.length) return { x0: 0, y0: 0, x1: set.width * geo.cw, y1: set.height * geo.ch };
     let x0 = Infinity, y0 = Infinity, x1 = -Infinity, y1 = -Infinity;
     for (const c of cells) { x0 = Math.min(x0, c.x); y0 = Math.min(y0, c.y); x1 = Math.max(x1, c.x); y1 = Math.max(y1, c.y); }
-    return { x0: (x0 - 2) * CW, y0: (y0 - 2) * CH, x1: (x1 + 3) * CW, y1: (y1 + 3) * CH };
+    if (set.layout) return { x0: x0 * geo.cw - VIEW_PAD.side, y0: y0 * geo.ch - VIEW_PAD.top, x1: (x1 + 1) * geo.cw + VIEW_PAD.side, y1: (y1 + 1) * geo.ch + VIEW_PAD.bottom };
+    return { x0: (x0 - 2) * geo.cw, y0: (y0 - 2) * geo.ch, x1: (x1 + 3) * geo.cw, y1: (y1 + 3) * geo.ch };
   }
 
-  /** The camera that frames a box at the canvas aspect, never wider than the whole set nor tighter than MAX_ZOOM. */
-  private frame(box: Rect, W: number, H: number, aspect: number): Cam {
+  /** The camera that frames a box at the canvas aspect, never wider than the whole set nor tighter than the zoom cap. */
+  private frame(box: Rect, W: number, H: number, aspect: number, maxZoom: number): Cam {
     const fitW = Math.max(W, H * aspect);
-    const w = Math.min(fitW, Math.max(fitW / MAX_ZOOM, box.x1 - box.x0, (box.y1 - box.y0) * aspect));
+    const w = Math.min(fitW, Math.max(fitW / maxZoom, box.x1 - box.x0, (box.y1 - box.y0) * aspect));
     return this.clamp({ cx: (box.x0 + box.x1) / 2, cy: (box.y0 + box.y1) / 2, w }, W, H, aspect);
   }
 
@@ -307,7 +339,7 @@ export class SpriteMapView {
 
   // ---------------------------------------------------------------- poses
 
-  private poseOf(a: Actor, t: number, layout: Layout): Pose {
+  private poseOf(a: Actor, t: number, layout: Built): Pose {
     let x = a.x, y = a.y, moving = false;
     const hd = this.heading.get(a.id) ?? { dir: 'front' as Dir, face: a.facing };
     if (a.dest && a.stepFrom && a.stepTo && a.stepEnd > a.stepStart) {
@@ -321,7 +353,25 @@ export class SpriteMapView {
     this.heading.set(a.id, hd);
     const chair = a.seated ? layout.seats.get(`${a.x},${a.y}`) ?? null : null;
     const dir = chair ? chair.dir : hd.dir, face = chair ? chair.face : hd.face;
-    return { a, x, y, moving, dir, face, seated: !!chair, chair, frame: moving ? 1 + (Math.floor(t * 8) % 4) : 0 };
+    const base = { a, x, y, moving, dir, face, chair, ownChair: false };
+    const busy = a.speaking || (a.reaction !== null && a.reactionUntil > t);
+    if (chair) {
+      // At a desk: phone when a stage direction says so, else type in bursts (sometimes a call instead),
+      // phased per person so a room never types in sync; show time, so renders match.
+      const note = this.stage.note, called = !!note && note.who === a.id && note.until > t && /phone|call/i.test(note.text);
+      const desk = this.deskCells(this.stage.set).has(`${a.x},${a.y}`);
+      const ph = [...a.id].reduce((h, c) => (h * 31 + c.charCodeAt(0)) % 997, 7) / 997, cyc = t / 7 + ph, on = desk && !busy && cyc % 1 < 0.65;
+      const phone = poseArt(`${a.id}_phone_${dir}`), type = poseArt(`${a.id}_type_${dir}`), sit = poseArt(`${a.id}_sit_${dir}`);
+      if (phone && (called || (on && Math.floor(cyc) % 4 === 0))) return { ...base, seated: true, frame: 0, art: phone, ownChair: true };
+      if (type && on) return { ...base, seated: true, frame: Math.floor(t * 6) % 2, art: type, ownChair: true };
+      return { ...base, seated: true, frame: 0, art: sit, ownChair: !!sit };
+    }
+    // Standing still with a reaction: its pose art, or turn to the camera for a look.
+    const r = !moving && a.reaction && a.reactionUntil > t ? REACT_POSE[a.reaction] : undefined;
+    const react = r ? poseArt(`${a.id}_react_${r}`) : null;
+    if (react) return { ...base, seated: false, frame: 0, art: react };
+    if (r === 'look') return { ...base, dir: 'front', seated: false, frame: 0, art: null };
+    return { ...base, seated: false, frame: moving ? 1 + (Math.floor(t * 8) % 4) : 0, art: null };
   }
 
   // ---------------------------------------------------------------- render
@@ -332,7 +382,7 @@ export class SpriteMapView {
     let changed = this.syncCard();
     if (st.card && st.card.until > st.time) return changed;
     const set = st.set;
-    const layout = layoutFor(set);
+    const layout = builtFor(set), geo = geoOf(set);
     if (set !== this.lastSet) { this.lastSet = set; this.snap = true; this.lastSig = ''; }
     const cw = this.el.clientWidth, chh = this.el.clientHeight;
     if (!cw || !chh) return changed;
@@ -349,17 +399,18 @@ export class SpriteMapView {
     for (const [k, b] of this.balloons) if (b.until <= t || (!b.note && !st.actor(b.who).visible)) this.removeBalloon(k);
 
     const poses = st.visibleActors().map((a) => this.poseOf(a, t, layout));
+    const feet = (p: Pose) => geo.foot(p.x, p.y);
     // Camera: the scene's region, widened to keep whoever is talking in frame. Not for mere
     // walkers: background copier trips would keep pulling the shot wide.
-    const box = { ...this.regionBox(set) };
+    const box = { ...this.regionBox(set, geo) };
     const talking = new Set([...this.balloons.values()].map((b) => b.who));
     for (const p of poses) {
       if (!p.a.speaking && !talking.has(p.a.id)) continue;
-      const fx = p.x * CW + 8, fy = (p.y + 1) * CH;
+      const [fx, fy] = feet(p);
       box.x0 = Math.min(box.x0, fx - 28); box.x1 = Math.max(box.x1, fx + 28);
-      box.y0 = Math.min(box.y0, fy - PERSON_H - 8); box.y1 = Math.max(box.y1, fy + 8);
+      box.y0 = Math.min(box.y0, fy - geo.personH - 8); box.y1 = Math.max(box.y1, fy + 8);
     }
-    const goal = this.frame(box, layout.W, layout.H, aspect);
+    const goal = this.frame(box, layout.W, layout.H, aspect, geo.maxZoom);
     const dt = Math.min(0.5, Math.max(0, t - this.lastWt));
     this.lastWt = t;
     if (!this.cam || this.snap) { this.cam = goal; this.snap = false; } else {
@@ -371,19 +422,19 @@ export class SpriteMapView {
     const sig = [
       st.pauseCaption && st.pauseCaption.until > st.time ? st.pauseCaption.text : '',
       `${Math.round(cam.cx)},${Math.round(cam.cy)},${Math.round(cam.w)}`,
-      ...poses.map((p) => `${p.a.id}:${Math.round(p.x * CW)},${Math.round(p.y * CH)},${p.frame},${p.dir},${p.face},${p.seated ? 1 : 0},${p.a.reaction && p.a.reactionUntil > t ? p.a.reaction : ''}`),
+      ...poses.map((p) => `${p.a.id}:${Math.round(p.x * geo.cw)},${Math.round(p.y * geo.ch)},${p.frame},${p.dir},${p.face},${p.seated ? 1 : 0},${p.art ?? ''},${p.a.reaction && p.a.reactionUntil > t ? p.a.reaction : ''}`),
       ...[...this.balloons.values()].map((b) => `${b.who}|${b.text}`),
     ].join(';');
     changed = this.syncCaption() || changed;
     if (sig === this.lastSig) return changed;
     this.lastSig = sig;
 
-    this.draw(layout, poses, cam, aspect, pw, ph);
-    this.placeBalloons(poses, cam, cw, chh);
+    this.draw(layout, geo, poses, cam, aspect, pw, ph);
+    this.placeBalloons(poses, geo, cam, cw, chh);
     return true;
   }
 
-  private draw(layout: Layout, poses: Pose[], cam: Cam, aspect: number, pw: number, ph: number): void {
+  private draw(layout: Built, geo: Geo, poses: Pose[], cam: Cam, aspect: number, pw: number, ph: number): void {
     const ctx = this.canvas.getContext('2d')!;
     ctx.imageSmoothingEnabled = true;
     ctx.imageSmoothingQuality = 'high';
@@ -395,24 +446,35 @@ export class SpriteMapView {
     ctx.drawImage(layout.bg, 0, 0, layout.W, layout.H);
 
     const vis = (x0: number, y0: number, x1: number, y1: number) => x1 >= vx && x0 <= vx + cam.w && y1 >= vy && y0 <= vy + cam.w / aspect;
-    const items: { k: number; f: () => void }[] = [];
+    const items: { k: number; f: (c: CanvasRenderingContext2D) => void }[] = [];
+    // A sitter drawn with sit art brings their own chair, so the empty one at that seat goes.
+    const taken = new Set(poses.filter((p) => p.seated && p.ownChair).map((p) => `${p.a.x},${p.a.y}`));
+    const keep = (i: { seat?: string }) => !i.seat || !taken.has(i.seat);
+    if (layout.plan) for (const i of layout.plan.items) if (keep(i) && vis(i.x0, i.y0, i.x1, i.y1)) items.push(i);
     for (const b of layout.blocks) {
       const B = (b.y0 + b.h) * CH;
       if (vis(b.x0 * CW - 40, b.y0 * CH - 120, (b.x0 + b.w) * CW + 40, B)) items.push({ k: B, f: () => this.drawBlock(ctx, b) });
     }
-    for (const c of layout.chairs) {
-      const B = (c.y + 1) * CH;
-      if (vis(c.x * CW - 20, B - 60, c.x * CW + 40, B)) items.push({ k: B + (c.dir === 'back' ? 6.5 : 5.5), f: () => this.drawChair(ctx, c) });
-    }
+    if (!layout.plan) for (const c of layout.chairs) if (c.draw && !taken.has(`${c.x},${c.y}`) && vis(c.fx - 30, c.fy - 60, c.fx + 30, c.fy + 12)) items.push(chairItem(c, geo.seatDrop));
     for (const p of poses) {
-      const fy = (p.y + 1) * CH - 4 + (p.seated ? SEAT_DROP : 0);
-      items.push({ k: fy, f: () => this.drawActor(ctx, p) });
-      // A sitter facing the camera sits behind the desk in front of them: redraw the torso over it, legs stay hidden.
-      const desk = p.seated && p.dir === 'front' ? layout.blocks.find((b) => p.a.x >= b.x0 && p.a.x < b.x0 + b.w && p.a.y + 1 >= b.y0 && p.a.y + 1 < b.y0 + b.h) : null;
-      if (desk) items.push({ k: (desk.y0 + desk.h) * CH + 0.1, f: () => this.drawActor(ctx, p, fy - 26) });
+      const [, fy0] = geo.foot(p.x, p.y), fy = fy0 + (p.seated ? geo.seatDrop : 0);
+      // A sitter at a prop's side (pod chairs) is drawn over it; the rest sort by their feet.
+      let k = p.seated && p.chair?.front ? Math.max(fy, p.chair.front) : fy;
+      // Anyone beside a prop's base (not behind it) overlaps its side, so they draw in front of it,
+      // walking or seated; otherwise feet-sorting hides them whenever their feet are above its base.
+      if (layout.plan) {
+        const [fx] = geo.foot(p.x, p.y), half = 18;
+        for (const s of layout.plan.sides) {
+          if (fy > s.top && fy < s.B && fx + half > s.x0 && fx - half < s.x1 && (fx <= s.sx0 || fx >= s.sx1)) k = Math.max(k, s.B + 0.2);
+        }
+      }
+      items.push({ k, f: () => this.drawActor(ctx, p, geo) });
+      // ASCII sets: a sitter facing the camera sits behind the desk in front of them: redraw the torso over it, legs stay hidden.
+      const desk = !layout.plan && p.seated && p.dir === 'front' ? layout.blocks.find((b) => p.a.x >= b.x0 && p.a.x < b.x0 + b.w && p.a.y + 1 >= b.y0 && p.a.y + 1 < b.y0 + b.h) : null;
+      if (desk) items.push({ k: (desk.y0 + desk.h) * CH + 0.1, f: () => this.drawActor(ctx, p, geo, fy - 26) });
     }
     items.sort((a, b) => a.k - b.k);
-    for (const i of items) i.f();
+    for (const i of items) i.f(ctx);
 
     // Reaction emotes in screen space, so they stay legible at any zoom.
     ctx.setTransform(1, 0, 0, 1, 0, 0);
@@ -421,9 +483,10 @@ export class SpriteMapView {
     ctx.textAlign = 'center';
     ctx.textBaseline = 'middle';
     for (const p of poses) {
-      if (!p.a.reaction || p.a.reactionUntil <= this.stage.wt) continue;
+      if (!p.a.reaction || p.a.reactionUntil <= this.stage.wt || p.art?.includes('_react_')) continue;
       const m = MARKER[p.a.reaction], w = ctx.measureText(m).width + font;
-      const sx = (p.x * CW + 8 - vx) * k, sy = ((p.y + 1) * CH - PERSON_H - 16 - vy) * k;
+      const [fx, fy] = geo.foot(p.x, p.y);
+      const sx = (fx - vx) * k, sy = (fy - geo.personH - 16 - vy) * k;
       ctx.fillStyle = 'rgba(20,20,34,0.9)';
       ctx.beginPath();
       ctx.roundRect(sx - w / 2, sy - font * 0.9, w, font * 1.8, font * 0.9);
@@ -467,36 +530,48 @@ export class SpriteMapView {
     ctx.strokeRect(x + 0.5, y - H + 0.5, w - 1, h + H - 1);
   }
 
-  private drawChair(ctx: CanvasRenderingContext2D, c: Chair): void {
-    const name = `chair_${c.dir}`, e = art.index.props?.[name];
-    if (!e) return;
-    const s = CHAIR_W / e.w, w = e.w * s, h = e.h * s;
-    // The side chair is drawn facing right; mirror it when the desk is on the left.
-    this.sprite(ctx, name, c.x * CW + 8 - w / 2, (c.y + 1) * CH + 4 - h + (c.dir === 'back' ? -4 : 0), w, h, c.dir === 'side' && c.face === -1);
+  private desks = new WeakMap<SetMap, Set<string>>();
+  /** Cells of `*_desk` seats: where people type (not guest chairs or the conference table). */
+  private deskCells(set: SetMap): Set<string> {
+    let d = this.desks.get(set);
+    if (!d) this.desks.set(set, (d = new Set(Object.entries(set.spots).filter(([n]) => n.endsWith('_desk')).map(([, p]) => `${p.x},${p.y}`))));
+    return d;
   }
 
-  private drawActor(ctx: CanvasRenderingContext2D, p: Pose, clipBelow?: number): void {
-    const a = p.a, fx = p.x * CW + 8, drop = p.seated ? SEAT_DROP : 0;
-    const fy = (p.y + 1) * CH - 4 + drop;
+  private drawActor(ctx: CanvasRenderingContext2D, p: Pose, geo: Geo, clipBelow?: number): void {
+    const a = p.a, u = geo.personH / 80, [fx, fy0] = geo.foot(p.x, p.y);
+    const fy = fy0 + (p.seated ? geo.seatDrop : 0);
     if (clipBelow !== undefined) {
       ctx.save();
       ctx.beginPath();
       ctx.rect(fx - 60, fy - 160, 120, clipBelow - (fy - 160));
       ctx.clip();
-      this.drawActor(ctx, p);
+      this.drawActor(ctx, p, geo);
       ctx.restore();
       return;
     }
     if (!p.seated) {
       ctx.fillStyle = 'rgba(0,0,0,0.28)';
       ctx.beginPath();
-      ctx.ellipse(fx, fy, 11, 4, 0, 0, Math.PI * 2);
+      ctx.ellipse(fx, fy, 11 * u, 4 * u, 0, 0, Math.PI * 2);
       ctx.fill();
+    }
+    const pa = p.art ? art.index.anims?.[p.art] : undefined, pim = p.art ? art.image(p.art) : null;
+    if (pa && pim) {
+      // Pose art shares the walk art's pixel density. Seated art includes the chair, so its base sits where the
+      // empty chair stood; standing reactions stand on the feet like the walk sheet.
+      const ref = art.index.anims?.[`${a.id}_walk_front`] ?? pa, s = geo.personH / ref.frameH;
+      ctx.save();
+      ctx.translate(fx, p.seated ? fy0 + 8 : fy);
+      if (p.seated && p.dir === 'side' && p.face === -1) ctx.scale(-1, 1); // seated side art faces right
+      ctx.drawImage(pim, p.frame * pa.frameW, 0, pa.frameW, pa.frameH, -pa.anchorX * s, -pa.anchorY * s, pa.frameW * s, pa.frameH * s);
+      ctx.restore();
+      return;
     }
     const an = art.index.anims?.[`${a.id}_walk_${p.dir}`] && art.image(`${a.id}_walk_${p.dir}`) ? `${a.id}_walk_${p.dir}` : art.index.anims?.[`${a.id}_walk_front`] && art.image(`${a.id}_walk_front`) ? `${a.id}_walk_front` : null;
     const anim = an ? art.index.anims![an] : null;
     if (anim && an) {
-      const s = PERSON_H / anim.frameH, im = art.image(an)!;
+      const s = geo.personH / anim.frameH, im = art.image(an)!;
       // Side art faces left; mirror for right. The front and back views are symmetric enough.
       const flip = an.endsWith('_side') && p.face === 1;
       ctx.save();
@@ -506,23 +581,27 @@ export class SpriteMapView {
       ctx.restore();
       return;
     }
-    // Placeholder for anyone not drawn yet: a colored body, a head, and their letter.
-    const bob = p.moving ? Math.sin(this.stage.wt * 18) * 2 : 0, by = fy - 2 + bob;
+    // Placeholder for anyone not drawn yet: a colored body, a head, and their letter (drawn at 80 px tall, scaled).
+    const bob = p.moving ? Math.sin(this.stage.wt * 18) * 2 : 0;
+    ctx.save();
+    ctx.translate(fx, fy - 2 + bob);
+    ctx.scale(u, u);
     ctx.fillStyle = a.color;
     ctx.beginPath();
-    ctx.roundRect(fx - 13, by - 48, 26, 48, 9);
+    ctx.roundRect(-13, -48, 26, 48, 9);
     ctx.fill();
     ctx.fillStyle = 'rgba(0,0,0,0.25)';
-    ctx.fillRect(fx - 13, by - 14, 26, 14);
+    ctx.fillRect(-13, -14, 26, 14);
     ctx.fillStyle = '#e8c19a';
     ctx.beginPath();
-    ctx.arc(fx, by - 60, 12, 0, Math.PI * 2);
+    ctx.arc(0, -60, 12, 0, Math.PI * 2);
     ctx.fill();
     ctx.fillStyle = '#10101a';
     ctx.font = '700 20px "JetBrains Mono", monospace';
     ctx.textAlign = 'center';
     ctx.textBaseline = 'middle';
-    ctx.fillText(a.glyph, fx, by - 28);
+    ctx.fillText(a.glyph, 0, -28);
+    ctx.restore();
   }
 
   // ---------------------------------------------------------------- HTML layer
@@ -548,13 +627,13 @@ export class SpriteMapView {
   }
 
   /** Balloons sit above the head; if that is taken or off-screen, try beside, higher, then below. */
-  private placeBalloons(poses: Pose[], cam: Cam, cw: number, chh: number): void {
+  private placeBalloons(poses: Pose[], geo: Geo, cam: Cam, cw: number, chh: number): void {
     const k = cw / cam.w, vx = cam.cx - cam.w / 2, vy = cam.cy - cam.w / (cw / chh) / 2;
     const sx = (x: number) => (x - vx) * k, sy = (y: number) => (y - vy) * k;
-    const kc = k, body = (p: Pose) => ({ x: sx(p.x * CW + 8), feet: sy((p.y + 1) * CH) });
+    const kc = k, body = (p: Pose) => { const [fx, fy] = geo.foot(p.x, p.y); return { x: sx(fx), feet: sy(fy + (geo.ch === CH ? 4 : 0)) }; };
     const taken: Rect[] = poses.map((p) => {
       const b = body(p);
-      return { x0: b.x - 22 * kc, x1: b.x + 22 * kc, y0: b.feet - PERSON_H * kc, y1: b.feet };
+      return { x0: b.x - 22 * kc, x1: b.x + 22 * kc, y0: b.feet - geo.personH * kc, y1: b.feet };
     });
     const hit = (r: Rect) => taken.some((o) => r.x0 < o.x1 && r.x1 > o.x0 && r.y0 < o.y1 && r.y1 > o.y0);
     for (const b of [...this.balloons.values()].sort((a, c) => a.at - c.at)) {
@@ -567,7 +646,7 @@ export class SpriteMapView {
       const p = poses.find((q) => q.a.id === b.who);
       if (!p) continue;
       const { x: hx, feet } = body(p);
-      const top = feet - PERSON_H * kc, G = 9, w = b.w, h = b.h, mid = top + 14 * kc;
+      const top = feet - geo.personH * kc, G = 9, w = b.w, h = b.h, mid = top + 14 * kc;
       type Cand = { l: number; t: number; side: 'b' | 't' | 'l' | 'r' };
       const above = (dx: number, lift: number): Cand => ({ l: hx - w / 2 + dx, t: top - h - G - lift, side: 'b' });
       const cands: Cand[] = [

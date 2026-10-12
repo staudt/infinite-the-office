@@ -133,6 +133,8 @@ export function reviewEpisode(series: Series, raw: unknown, sets: Sets): Episode
   const scenes: Scene[] = [];
   ep.scenes.slice(0, MAX_SCENES).forEach((sc, si) => {
     const where = `scene ${si + 1}`;
+    // The kitchen and annex used to be regions of the office; a writer that still says so gets the set.
+    if (sc.set === 'office' && (sc.region === 'kitchen' || sc.region === 'annex')) sc.set = sc.region;
     const set = sets[sc.set] ?? sets.office;
     if (sc.region !== 'none' && !set.regions[sc.region]) {
       problems.push(`${where}: unknown region "${sc.region}" in ${sc.set}, using none`);
@@ -289,10 +291,10 @@ export function reviewBible(series: Series, raw: unknown, sets: Sets): BibleRevi
   for (const x of b.extras) if (!b.roster.includes(x.id)) b.roster.push(x.id);
   b.manager = one(b.manager) ?? (b.roster.includes('michael') ? 'michael' : b.roster[0] ?? 'michael');
   if (!b.roster.includes(b.manager) && castById(b.manager)) b.roster.push(b.manager);
-  const spots = sets.office?.spots ?? {};
+  const hasSpot = (n: string) => !!(sets.office?.spots[n] ?? sets.annex?.spots[n]);
   b.deskOverrides = b.deskOverrides.flatMap((d) => {
     const id = one(d.id);
-    if (!id || !spots[d.spot]) { problems.push(`desk override ${d.id} -> ${d.spot} dropped`); return []; }
+    if (!id || !hasSpot(d.spot)) { problems.push(`desk override ${d.id} -> ${d.spot} dropped`); return []; }
     return [{ id, spot: d.spot }];
   });
   b.relationships = b.relationships.flatMap((r) => {

@@ -20,7 +20,7 @@ const listOf = <T extends z.ZodType>(item: T) =>
   z.preprocess((v) => (Array.isArray(v) ? v.filter((x) => item.safeParse(x).success) : []), z.array(item));
 
 export { Extra };
-export const SetId = z.enum(['office', 'break_room', 'parking_lot', 'warehouse', 'offsite']);
+export const SetId = z.enum(['office', 'kitchen', 'annex', 'break_room', 'parking_lot', 'warehouse', 'offsite']);
 export const Part = z.enum(['cold_open', 'act1', 'act2', 'tag']);
 export const Plot = z.enum(['cold_open', 'A', 'B', 'C', 'tag']);
 export const Mood = z.enum([

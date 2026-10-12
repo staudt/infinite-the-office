@@ -56,8 +56,19 @@
    "gap": 6,
    "names": [
     "chair_front",
-    "chair_back",
-    "chair_side"
+    "chair_side",
+    "chair_back"
+   ],
+   "scale": 0.171
+  },
+  {
+   "file": "couch-side.png",
+   "kind": "props",
+   "key": true,
+   "gap": 40,
+   "scale": 0.24,
+   "names": [
+    "couch_side"
    ]
   },
   {
@@ -82,9 +93,133 @@
    "scale": 0.5
   },
   {
+   "file": "pam-sit-front.png",
+   "kind": "frames",
+   "name": "pam_sit_front",
+   "key": true,
+   "gap": 60,
+   "scale": 0.132
+  },
+  {
+   "file": "pam-sit-back.png",
+   "kind": "frames",
+   "name": "pam_sit_back",
+   "key": true,
+   "gap": 60,
+   "scale": 0.132
+  },
+  {
+   "file": "pam-sit-side.png",
+   "kind": "frames",
+   "name": "pam_sit_side",
+   "key": true,
+   "gap": 60,
+   "scale": 0.132
+  },
+  {
+   "file": "pam-type-side.png",
+   "kind": "frames",
+   "name": "pam_type_side",
+   "key": true,
+   "gap": 60,
+   "scale": 0.132
+  },
+  {
+   "file": "pam-phone-side.png",
+   "kind": "frames",
+   "name": "pam_phone_side",
+   "key": true,
+   "gap": 60,
+   "scale": 0.132
+  },
+  {
+   "file": "pam-react-gasp.png",
+   "kind": "frames",
+   "name": "pam_react_gasp",
+   "key": true,
+   "gap": 60,
+   "scale": 0.119
+  },
+  {
+   "file": "pam-react-laugh.png",
+   "kind": "frames",
+   "name": "pam_react_laugh",
+   "key": true,
+   "gap": 60,
+   "scale": 0.119
+  },
+  {
+   "file": "pam-react-sad.png",
+   "kind": "frames",
+   "name": "pam_react_sad",
+   "key": true,
+   "gap": 60,
+   "scale": 0.119
+  },
+  {
+   "file": "pam-react-facepalm.png",
+   "kind": "frames",
+   "name": "pam_react_facepalm",
+   "key": true,
+   "gap": 60,
+   "scale": 0.119
+  },
+  {
+   "file": "pam-react-look.png",
+   "kind": "frames",
+   "name": "pam_react_look",
+   "key": true,
+   "gap": 60,
+   "scale": 0.119
+  },
+  {
    "file": "pam-head.png",
    "kind": "image",
    "name": "pam_head",
+   "maxHeight": 800,
+   "box": [
+    107,
+    51,
+    899,
+    1397
+   ]
+  },
+  {
+   "file": "pam-head-talk.png",
+   "kind": "image",
+   "name": "pam_head_talk",
+   "maxHeight": 800,
+   "box": [
+    107,
+    51,
+    899,
+    1397
+   ]
+  },
+  {
+   "file": "pam-head-happy.png",
+   "kind": "image",
+   "name": "pam_head_happy",
+   "key": "border",
+   "box": [
+    107,
+    51,
+    899,
+    1397
+   ],
+   "maxHeight": 800
+  },
+  {
+   "file": "pam-head-happy-talk.png",
+   "kind": "image",
+   "name": "pam_head_happy_talk",
+   "key": "border",
+   "box": [
+    107,
+    51,
+    899,
+    1397
+   ],
    "maxHeight": 800
   },
   {

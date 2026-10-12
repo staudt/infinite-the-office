@@ -5,9 +5,10 @@
 You can only use these sets. Scenes name a set and, optionally, a region of it. `move`, `enter`, and `gather` targets must be a region or spot of the scene's set, or a character id (walk up to that person).
 {{SETS}}
 
+- The `kitchen` and the `annex` (Ryan, Kelly and Toby's corner) are their own sets, reached from the office: a scene in either names that set, never `office` with a kitchen or annex region. Use `break_room` for a bigger staff room.
 - Talking heads are not scenes: they are `talking_head` beats inside any scene, and the show cuts to the confessional and back.
 - `offsite` is a generic venue (restaurant, bar, someone's home, a client's office, Schrute Farms...). Always set `venue` to the name shown on its title card, e.g. "CHILI'S".
-- In `office` scenes, cast members who are not in `present` sit at their desks in the background. They can be pulled in with `move` or `gather` without an `enter`. In every other set, anyone not in `present` must `enter` before they act or speak.
+- In `office` scenes, cast members who are not in `present` sit at their desks in the background (in `annex` scenes, Ryan, Kelly and Toby do). They can be pulled in with `move` or `gather` without an `enter`. In every other set, anyone not in `present` must `enter` before they act or speak.
 - People leave a scene with `exit`. They don't need to exit at the end of a scene; the cut takes care of it.
 
 ## Beats

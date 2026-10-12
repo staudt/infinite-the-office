@@ -1,6 +1,6 @@
 # Infinite The Office
 
-**Never-ending generative *The Office* (US).** A screensaver-style sitcom that writes itself. Claude writes each season's plan and every ~10-minute episode. A deterministic engine stages it on ASCII floor plans of Dunder Mifflin Scranton: characters walk around, talk in speech balloons, hold conference-room meetings, and cut to a confessional close-up for talking heads.
+**Never-ending generative *The Office* (US).** A screensaver-style sitcom that writes itself. Claude writes each season's plan and every ~10-minute episode. A deterministic engine stages it on a sprite-drawn floor plan of Dunder Mifflin Scranton: characters walk around, talk in speech balloons, hold conference-room meetings, and cut to a confessional close-up for talking heads.
 
 ```
 # MICHAEL'S OFFICE            # CONFERENCE ROOM               # KITCHEN       # ANNEX           #
@@ -85,7 +85,7 @@ Model output that needed repairs is saved to `sessions/failures/` for prompt tun
 
 ## Floor plans and cast
 
-- `data/sets/*.txt` are hand-editable ASCII maps. The file name is the set id. See `data/sets/README.md` for the header format and tile legend.
+- `data/sets/` holds the logic maps (walking, seats, regions). The office is an art-scale floor plan (`office.layout.json`); the other sets are ASCII grids (`*.txt`) drawn procedurally until they get art. The file name is the set id. See `data/sets/README.md`.
 - Labels become regions (`MICHAEL'S OFFICE` becomes `michael_office`). Header-declared characters are seats, standing spots, and exits.
 - `npm test` checks that every spot and region the writer relies on exists.
 - `data/cast.json` defines each character: glyph, color, job title, seasons, desk, voice, and quirks. Characters are colored letters, with case used to tell apart pairs like `M` (Michael) and `m` (Meredith).
@@ -98,7 +98,7 @@ Three layers. The writer decides **what** happens; the engine decides **how**.
 2. **Director** (`src/choreo/director.ts`): turns beats into coroutines over actor primitives (walk, say, act), handling blocking rules and ambient office life.
 3. **Engine** (`src/engine/`): a fixed-step 60 Hz scheduler with seeded randomness. The same episode always plays identically, which is what makes jumping to a moment and rendering video possible.
 
-Series state (roster, relationships, gags, notes, arcs, story so far) lives in `src/world/` and is rebuilt purely by replaying stored episodes. Views (`src/view/`) subscribe to engine events. The ASCII view is the only one for now. Sprite views are planned, and a new renderer can replace it without touching the engine or the episodes.
+Series state (roster, relationships, gags, notes, arcs, story so far) lives in `src/world/` and is rebuilt purely by replaying stored episodes. Views (`src/view/`) subscribe to engine events. The sprite map (canvas) and the drawn confessional are the only views, and a new renderer can replace them without touching the engine or the episodes.
 
 ## Tests
 

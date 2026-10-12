@@ -1,0 +1,182 @@
+{
+ "wardrobe": {
+  "w": 73,
+  "h": 142
+ },
+ "wall_picture": {
+  "w": 84,
+  "h": 54
+ },
+ "plant_tall": {
+  "w": 68,
+  "h": 123
+ },
+ "reception_desk_curved": {
+  "w": 206,
+  "h": 150
+ },
+ "couch_lamp": {
+  "w": 188,
+  "h": 109
+ },
+ "armchair": {
+  "w": 77,
+  "h": 85
+ },
+ "credenza_shelf": {
+  "w": 118,
+  "h": 99
+ },
+ "filing_cabinet_plant": {
+  "w": 51,
+  "h": 103
+ },
+ "conference_table": {
+  "w": 305,
+  "h": 116
+ },
+ "whiteboard": {
+  "w": 87,
+  "h": 118
+ },
+ "desk_small": {
+  "w": 142,
+  "h": 103
+ },
+ "counter_boxes": {
+  "w": 288,
+  "h": 107
+ },
+ "reception_desk_curved_2": {
+  "w": 209,
+  "h": 165
+ },
+ "bookshelf_tall": {
+  "w": 106,
+  "h": 172
+ },
+ "printer_filing_cabinet": {
+  "w": 80,
+  "h": 92
+ },
+ "desk_copier": {
+  "w": 119,
+  "h": 93
+ },
+ "bookshelf_low": {
+  "w": 95,
+  "h": 114
+ },
+ "desk_pod_stacked": {
+  "w": 220,
+  "h": 140
+ },
+ "desk_pod_a": {
+  "w": 141,
+  "h": 149
+ },
+ "desk_pod_b": {
+  "w": 165,
+  "h": 185
+ },
+ "desk_pod_c": {
+  "w": 164,
+  "h": 172
+ },
+ "counter_printer": {
+  "w": 253,
+  "h": 105
+ },
+ "plant_tall_2": {
+  "w": 62,
+  "h": 125
+ },
+ "kitchen_counter": {
+  "w": 292,
+  "h": 107
+ },
+ "plant_tall_3": {
+  "w": 65,
+  "h": 131
+ },
+ "bookshelf_files": {
+  "w": 94,
+  "h": 160
+ },
+ "desk_manager": {
+  "w": 186,
+  "h": 117
+ },
+ "desk_small_2": {
+  "w": 150,
+  "h": 116
+ },
+ "coat_rack": {
+  "w": 29,
+  "h": 110
+ },
+ "file_cabinet_plant": {
+  "w": 51,
+  "h": 99
+ },
+ "shelf_papers": {
+  "w": 67,
+  "h": 154
+ },
+ "plant_tall_4": {
+  "w": 66,
+  "h": 131
+ },
+ "michael_desk": {
+  "w": 166,
+  "h": 153
+ },
+ "coat_rack_jackets": {
+  "w": 33,
+  "h": 96
+ },
+ "bookshelf_dark": {
+  "w": 78,
+  "h": 118
+ },
+ "globe_cabinet": {
+  "w": 85,
+  "h": 108
+ },
+ "copier_cabinet": {
+  "w": 99,
+  "h": 110
+ },
+ "supply_counter": {
+  "w": 340,
+  "h": 126
+ },
+ "wall_map": {
+  "w": 64,
+  "h": 84
+ },
+ "round_table": {
+  "w": 86,
+  "h": 84
+ },
+ "filing_cabinet_stack": {
+  "w": 78,
+  "h": 117
+ },
+ "chair_front": {
+  "w": 69,
+  "h": 79
+ },
+ "chair_side": {
+  "w": 59,
+  "h": 81
+ },
+ "chair_back": {
+  "w": 72,
+  "h": 79
+ },
+ "couch_side": {
+  "w": 97,
+  "h": 213
+ }
+}

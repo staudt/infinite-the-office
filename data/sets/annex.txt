@@ -1,0 +1,15 @@
+; Annex, 44 x 12 (logic grid; Ryan, Kelly and Toby's corner)
+r = ryan_desk
+q = kelly_desk
+t = toby_desk
+> = exit:office
+---
+############################################
+# ANNEX                              [[[   #
+#    =====      =====      =====     [[[   #
+#      r          q          t             #
+#                                          #
+>                                          #
+>                                          #
+#  %                                   %   #
+############################################

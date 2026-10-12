@@ -2,7 +2,7 @@ import type { Point } from '../sets/index.ts';
 import type { Reaction } from '../schema/episode';
 
 export type Pace = 'walk' | 'hurry' | 'sneak';
-/** Cells per second. */
+/** Speed in 16 px units per second (so a walk crosses ~80 px/s). */
 export const SPEED: Record<Pace, number> = { walk: 5, hurry: 9, sneak: 3 };
 
 /** One person (or extra) on screen. Positions are whole grid cells of the current set. */

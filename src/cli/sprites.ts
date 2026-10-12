@@ -4,11 +4,11 @@ import { execFileSync } from 'node:child_process';
 import { mkdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { PNG } from 'pngjs';
-import { type Img, anchorStrip, alphaBox, components, crop, fitMax, keyMagenta, mergeComps, readingOrder, removeSpecks, scaleBy, trim } from './sprites/pixels';
+import { type Img, anchorStrip, keyBorder, alphaBox, components, crop, fitMax, keyMagenta, mergeComps, readingOrder, removeSpecks, scaleBy, trim } from './sprites/pixels';
 
 interface Sheet {
-  file: string; kind: 'props' | 'frames' | 'image'; key?: boolean;
-  names?: string[]; gap?: number; minArea?: number; scale?: number; maxWidth?: number; maxHeight?: number; name?: string;
+  file: string; kind: 'props' | 'frames' | 'image'; key?: boolean | 'border';
+  names?: string[]; gap?: number; minArea?: number; scale?: number; maxWidth?: number; maxHeight?: number; name?: string; box?: [number, number, number, number];
 }
 const RAW = 'art/raw', OUT = 'public/sprites', DEV = 'art/out';
 const sheets: Sheet[] = JSON.parse(readFileSync('art/sprites.json', 'utf8')).sheets;
@@ -18,13 +18,15 @@ const save = (path: string, im: Img) => { const p = new PNG({ width: im.w, heigh
 const stem = (f: string) => f.replace(/\.png$/, '');
 
 rmSync(OUT, { recursive: true, force: true }); mkdirSync(OUT, { recursive: true }); mkdirSync(DEV, { recursive: true });
-const index = { props: {} as Record<string, unknown>, anims: {} as Record<string, unknown>, images: {} as Record<string, unknown> };
+const index = { props: {} as Record<string, { src: string; w: number; h: number }>, anims: {} as Record<string, unknown>, images: {} as Record<string, unknown> };
 
 for (const s of sheets) {
   const img = load(s.file);
-  if (s.key) { keyMagenta(img); removeSpecks(img, s.minArea ?? 150); }
+  // key: true for magenta sheets; 'border' for any other flat background color.
+  if (s.key) { if (s.key === 'border') keyBorder(img); else keyMagenta(img); removeSpecks(img, s.minArea ?? 150); }
   if (s.kind === 'image') {
-    const t = s.key || alphaBox(img, 0) ? trim(img) : img;
+    // `box` [x, y, w, h] crops every variant of a portrait to the same frame, so swapping faces never shifts it.
+    const t = s.box ? crop(img, { x0: s.box[0], y0: s.box[1], x1: s.box[0] + s.box[2] - 1, y1: s.box[1] + s.box[3] - 1 }) : s.key || alphaBox(img, 0) ? trim(img) : img;
     const o = fitMax(t, s.maxWidth, s.maxHeight), name = s.name ?? stem(s.file);
     save(join(OUT, `${name}.png`), o);
     index.images[name] = { src: `${name}.png`, w: o.w, h: o.h };
@@ -64,3 +66,5 @@ for (const s of sheets) {
   } catch { console.log('  (magick missing, skipped contact sheet)'); }
 }
 writeFileSync(join(OUT, 'index.json'), JSON.stringify(index, null, 1));
+// Prop sizes for the layout builder (collision), importable from Node and Vite alike (public/ is not).
+writeFileSync('data/sets/prop-sizes.json', JSON.stringify(Object.fromEntries(Object.entries(index.props).map(([k, v]) => [k, { w: v.w, h: v.h }])), null, 1) + '\n');
