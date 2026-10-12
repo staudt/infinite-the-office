@@ -2,15 +2,15 @@
 
 **Never-ending generative *The Office* (US).** A screensaver-style sitcom that writes itself. Claude writes each season's plan and every ~10-minute episode. A deterministic engine stages it on a sprite-drawn floor plan of Dunder Mifflin Scranton: characters walk around, talk in speech balloons, hold conference-room meetings, and cut to a confessional close-up for talking heads.
 
-```
-# MICHAEL'S OFFICE            # CONFERENCE ROOM               # KITCHEN       # ANNEX           #
-#              m           [[ #         1  2  3  4  5       % # ** ==&==== $$ #                 #
-#         ============     [[ #=      =================     [[#               # ===== ===== === #
-#  :::::  ============        #=  ^   =================     [[#   =======     #   r     q    t  #
-#                             #=      =================       #   =======     #                 #
-```
+![Michael's conference room meeting](docs/conference-room.png)
 
-Fan project, not affiliated with NBC/Universal. It uses the characters' names and no official assets. The engine is built on [infinite-wrestling](https://github.com/staudt/infinite-wrestling).
+| | |
+|---|---|
+| ![The bullpen](docs/bullpen.png) | ![A talking head](docs/talking-head.png) |
+
+**Watch it:** https://staudt.github.io/infinite-the-office/ plays *Scranton: The Golden Years*, a pre-generated 12-episode season written by Claude, with no API key needed. Then make your own: give it a direction ("Andy's era", "Michael's last year", "what if Dwight ran the branch") and Claude writes a new show.
+
+Fan project, not affiliated with NBC/Universal. It uses the characters' names and no official assets; the pixel art is AI-generated. The engine is built on [infinite-wrestling](https://github.com/staudt/infinite-wrestling).
 
 ## Run it
 
@@ -37,9 +37,9 @@ The first visit opens the **start screen** (press `N` to reopen it):
 - **Stored shows**: every series you watch live is saved and plays back from Episode 1 for free, even with the server down. When a stored show runs out, new episodes are written live and saved.
 - **Continue** the current show.
 
-Episode N+1 is written while N airs. The footer shows the connection: live (with model names), server up without a key, or not connected.
+Episode N+1 is written while N airs; the arrows next to the episode title in the side panel switch episodes once the next one is ready. After the cold open, the show's logo and the episode title play over the office. The footer shows the connection: live (with model names), server up without a key, or not connected.
 
-Keys: `space` pause · `1`–`4` speed (1/2/4/8x) · `←`/`→` previous/next episode · `d` debug panel · `f` fullscreen · `N` shows · `Esc` close the start screen.
+Keys: `space` pause · `1`–`4` speed (1/2/4/8x) · `←`/`→` previous/next scene · `d` debug panel · `f` fullscreen · `N` shows · `Esc` close the start screen.
 
 URL params (read in `src/main.ts`): `?show=<id>` opens a stored show, `?ep=N` and `?scene=N` jump to an episode and scene (1-based scene), `?play=new|library` and `?id=<id>` select a program, `?direction=` and `?name=` prefill a new series, `?demo` plays the built-in demo episode, and `?seed=N` sets the seed.
 
@@ -57,7 +57,7 @@ npm run library -- add <id>                                 # copy a saved show 
 npm run preview -- --show <id> --ep 3 [--quiet]             # headless transcript -> sessions/<id>/ep-003.md
 ```
 
-`pregen` prints calls, tokens, and estimated cost when it finishes. Rough costs: an episode on Haiku is about $0.01–0.02, and a season bible on Sonnet about $0.04.
+`pregen` prints calls, tokens, and estimated cost when it finishes. Rough costs: an episode is about $0.01–0.02 on Haiku and $0.07–0.12 on Sonnet; a season bible on Sonnet is about $0.04. The published demo season was written entirely by Sonnet (`WRITER_MODEL=claude-sonnet-5-5 WRITER_PLAN_MODEL=claude-sonnet-5-5 npm run pregen -- …`; shell variables override `.env`).
 
 Saved shows live in `sessions/<id>/` (git-ignored). Curated shows live in `library/<id>/` (committed). `library/` is bundled into the GitHub Pages build by `.github/workflows/pages.yml`, which runs on push to `master`. To publish a show, pregen it, run `npm run library -- add <id>`, then commit `library/`.
 
@@ -85,10 +85,19 @@ Model output that needed repairs is saved to `sessions/failures/` for prompt tun
 
 ## Floor plans and cast
 
-- `data/sets/` holds the logic maps (walking, seats, regions). The office is an art-scale floor plan (`office.layout.json`); the other sets are ASCII grids (`*.txt`) drawn procedurally until they get art. The file name is the set id. See `data/sets/README.md`.
-- Labels become regions (`MICHAEL'S OFFICE` becomes `michael_office`). Header-declared characters are seats, standing spots, and exits.
-- `npm test` checks that every spot and region the writer relies on exists.
-- `data/cast.json` defines each character: glyph, color, job title, seasons, desk, voice, and quirks. Characters are colored letters, with case used to tell apart pairs like `M` (Michael) and `m` (Meredith).
+- `data/sets/` holds the logic maps (walking, seats, regions, exits). The office is an art-scale floor plan, `office.layout.json` (walls, doors, windows, furniture, named spots and rooms in pixels), rasterized onto a hidden 16 px walking grid. The other sets (break room, kitchen, annex, parking lot, warehouse, offsite) are still ASCII grids drawn procedurally until they get art. The file name is the set id. See `data/sets/README.md`.
+- `npm test` checks that every spot and region the writer relies on exists and that every seat is reachable.
+- `data/cast.json` defines each character: color, job title, seasons, desk, voice, and quirks. Characters without art are drawn as a placeholder body in their color with their letter.
+
+## Art
+
+Source art lives in `art/raw/` (AI-generated pixel art on a flat magenta background); `npm run sprites` keys, slices and aligns it into `public/sprites/` using the manifest `art/sprites.json`. Restart `npm run dev` afterwards.
+
+- **Characters:** one sheet per character in the layout of `art/templates/pam-sheet.png`: walk front/back/side (5 frames each), sit front/back/side, typing ×2, phone, and five reactions (gasp, laugh, sad, facepalm, look at camera). Add it as `{ "kind": "character", "name": "<id>", "key": true, "gap": 12, "height": 132 }`; `height` sets how tall they stand (Pam is 128).
+- **Talking heads:** `<id>_head` plus optional `_talk` (mouth open), `_happy` and `_happy_talk`, framed like `art/templates/pam-confessional.png`.
+- **Furniture:** sliced from sheets into named props and placed in `office.layout.json`.
+
+Anything missing falls back gracefully: placeholder bodies, a placeholder portrait, empty chairs, or emote icons.
 
 ## How it works
 

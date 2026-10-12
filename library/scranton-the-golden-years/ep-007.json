@@ -1,0 +1,735 @@
+{
+  "title": "The Office Olympics Qualifier",
+  "logline": "Michael stages a day-long office competition to win everyone's love, while Pam quietly signs up for an art class and Dwight chases a title.",
+  "outline": "A: Michael runs \"Scott's Tots Cup\" contest to be loved; it sours, then he gets an honest moment. B: Pam signs up for art class; Jim alone asks to see her work. C: Dwight/Ryan: Dwight competes for the title; Ryan acts above it. Order: cold, A, B, A, C, B, A, C, A, B, tag",
+  "theme": "Wanting to be picked, and who actually looks at you",
+  "storySoFar": "Michael's dinner with Jan was canceled; Jan mocked his costume then privately softened. Ryan pitched David Wallace; Jan hinted corporate interest. Dwight campaigns for Assistant Regional Manager. Jim holds a real beet. Pam keeps Jim's lamp on; Roy keeps canceling. Ep 7: Michael ran an Office Games contest; Pam signed up for an art class and Jim asked to see her sketchbook; Dwight won the title of contest champion, not the job; Ryan was named a judge and Michael felt it.",
+  "extras": [],
+  "stateChanges": [
+    {
+      "type": "arc",
+      "arc": "Will They, Won't They",
+      "progress": "Pam signed up for a community art class; Jim was the only one to ask to see her sketchbook. She showed him a drawing of the office."
+    },
+    {
+      "type": "arc",
+      "arc": "Assistant (to the) Regional Manager",
+      "progress": "Dwight won the Office Games gold but no title; Michael gave him a 'Champion' ribbon."
+    },
+    {
+      "type": "note",
+      "text": "(ep 7) Pam's sketchbook has a drawing of Jim she didn't show him; art class starts Thursday."
+    },
+    {
+      "type": "gag",
+      "text": "Dwight's homemade gold medal from beet-colored ribbon."
+    }
+  ],
+  "scenes": [
+    {
+      "part": "cold_open",
+      "plot": "cold_open",
+      "set": "office",
+      "region": "bullpen",
+      "venue": "",
+      "present": [
+        "jim",
+        "dwight",
+        "pam"
+      ],
+      "recap": "Jim pranks Dwight with a ringing desk phone that is actually Jim's cell.",
+      "beats": [
+        {
+          "type": "action",
+          "who": "jim",
+          "verb": "prank",
+          "target": "dwight",
+          "caption": "calls Dwight's desk phone from his cell, hanging up each time"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Dunder Mifflin, Dwight Schrute. Hello? Hello?",
+          "to": "none",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Question: who is calling me and breathing?",
+          "to": "jim",
+          "mood": "angry"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "Wasn't me. Maybe it's Creed.",
+          "to": "dwight",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "creed",
+          "text": "I only breathe on calls I'm paid for.",
+          "to": "none",
+          "mood": "neutral"
+        },
+        {
+          "type": "react",
+          "who": [
+            "pam"
+          ],
+          "reaction": "laugh"
+        },
+        {
+          "type": "talking_head",
+          "who": "dwight",
+          "lines": [
+            "Someone is harassing me by phone. My prime suspect is Creed. My second suspect is also Creed."
+          ],
+          "mood": "deadpan"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "A",
+      "set": "office",
+      "region": "conference_room",
+      "venue": "",
+      "present": [
+        "michael",
+        "dwight",
+        "jim",
+        "pam",
+        "ryan",
+        "stanley",
+        "kevin",
+        "angela",
+        "oscar",
+        "toby"
+      ],
+      "recap": "Michael announces the Office Games to boost morale.",
+      "beats": [
+        {
+          "type": "gather",
+          "who": [
+            "everyone"
+          ],
+          "to": "conference_room"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Today, we are having the Office Games. Events, medals, glory. Winner gets lunch with me. Loser also gets lunch with me.",
+          "to": "all",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "toby",
+          "text": "Technically, any prize requires an approved budget form.",
+          "to": "michael",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Toby, the only thing I need from you is to be gone.",
+          "to": "toby",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "ryan",
+          "text": "Do I have to compete? I feel like I'm more of an observer.",
+          "to": "michael",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Ryan, you will be head judge. Of everything. Judges are like kings, but with clipboards.",
+          "to": "ryan",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Question: does the winner become Assistant Regional Manager?",
+          "to": "michael",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "No. But there's a ribbon.",
+          "to": "dwight",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "I will take the ribbon and the principle.",
+          "to": "michael",
+          "mood": "deadpan"
+        },
+        {
+          "type": "talking_head",
+          "who": "michael",
+          "lines": [
+            "People say I do these things for attention. I do them for love. Which is attention, but warmer."
+          ],
+          "mood": "sad"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "B",
+      "set": "office",
+      "region": "reception",
+      "venue": "",
+      "present": [
+        "pam",
+        "jim"
+      ],
+      "recap": "Pam hides an art class flyer; Jim asks to see her work.",
+      "beats": [
+        {
+          "type": "action",
+          "who": "pam",
+          "verb": "hide",
+          "target": "none",
+          "caption": "slides an art class flyer under her keyboard"
+        },
+        {
+          "type": "move",
+          "who": "jim",
+          "to": "pam_desk",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "What's that? The flyer.",
+          "to": "pam",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Nothing. Night class at the Scranton Community Center. Drawing. Roy thinks it's a phase.",
+          "to": "jim",
+          "mood": "awkward"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "Can I see some of your stuff?",
+          "to": "pam",
+          "mood": "happy"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": "nobody has asked before"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Really? It's just a sketchbook. It's not very good.",
+          "to": "jim",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "Pam. I've seen your Dundies speech. I trust you.",
+          "to": "pam",
+          "mood": "happy"
+        },
+        {
+          "type": "action",
+          "who": "pam",
+          "verb": "present",
+          "target": "jim",
+          "caption": "opens her sketchbook to a drawing of the office"
+        },
+        {
+          "type": "talking_head",
+          "who": "pam",
+          "lines": [
+            "I put that drawing of Jim on the last page. I'm not showing that one. It's, uh, still a work in progress."
+          ],
+          "mood": "nervous"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "A",
+      "set": "office",
+      "region": "bullpen",
+      "venue": "",
+      "present": [
+        "michael",
+        "ryan",
+        "kevin",
+        "oscar",
+        "stanley",
+        "phyllis",
+        "angela",
+        "dwight"
+      ],
+      "recap": "Event one: paper-ream toss; Ryan judges coldly.",
+      "beats": [
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Event one: Ream Toss. Throw paper like it's your ex-wife. Or your mom. Either way.",
+          "to": "all",
+          "mood": "excited"
+        },
+        {
+          "type": "action",
+          "who": "kevin",
+          "verb": "fall",
+          "target": "none",
+          "caption": "hurls a ream into the water cooler"
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "Oops.",
+          "to": "none",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "ryan",
+          "text": "I'm giving that a six. Aesthetically, it's chaos.",
+          "to": "michael",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Ryan said six! Kevin, it's a strong six.",
+          "to": "kevin",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "stanley",
+          "text": "I'm doing my crossword. Count me out of all events. Did I stutter?",
+          "to": "michael",
+          "mood": "annoyed"
+        },
+        {
+          "type": "react",
+          "who": [
+            "oscar"
+          ],
+          "reaction": "eye_roll"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Stanley is disqualified for being the only one who is not having fun.",
+          "to": "all",
+          "mood": "annoyed"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "C",
+      "set": "office",
+      "region": "bullpen",
+      "venue": "",
+      "present": [
+        "dwight",
+        "ryan",
+        "jim",
+        "michael"
+      ],
+      "recap": "Dwight pressures Ryan, the judge, for a high score.",
+      "beats": [
+        {
+          "type": "move",
+          "who": "dwight",
+          "to": "ryan",
+          "pace": "hurry"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Judge Howard. I have a gift. Organic beet jerky.",
+          "to": "ryan",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "ryan",
+          "text": "Is it a bribe or a startup?",
+          "to": "dwight",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Both.",
+          "to": "ryan",
+          "mood": "neutral"
+        },
+        {
+          "type": "action",
+          "who": "jim",
+          "verb": "prank",
+          "target": "dwight",
+          "caption": "quietly swaps Dwight's gold medal paperwork with a lunch menu"
+        },
+        {
+          "type": "talking_head",
+          "who": "ryan",
+          "lines": [
+            "I'm not here for the games. I'm here because Jan said corporate is watching. I just judge slower."
+          ],
+          "mood": "smug"
+        },
+        {
+          "type": "react",
+          "who": [
+            "jim"
+          ],
+          "reaction": "look_at_camera"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "B",
+      "set": "office",
+      "region": "reception",
+      "venue": "",
+      "present": [
+        "pam",
+        "jim"
+      ],
+      "recap": "Roy calls and cancels; Pam shows Jim another sketch.",
+      "beats": [
+        {
+          "type": "action",
+          "who": "pam",
+          "verb": "phone_call",
+          "target": "none",
+          "caption": "talks to Roy, voice small"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "No, it's fine. I'll just pick something up. It's fine.",
+          "to": "none",
+          "mood": "sad"
+        },
+        {
+          "type": "move",
+          "who": "jim",
+          "to": "pam_desk",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "You okay?",
+          "to": "pam",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Yeah. Class starts Thursday. I was going to ask Roy to come. Then I thought, he'd rather not.",
+          "to": "jim",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "I'd go. I mean, I can't draw. But I'd hold the pencil case.",
+          "to": "pam",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "I might hold you to that.",
+          "to": "jim",
+          "mood": "happy"
+        },
+        {
+          "type": "react",
+          "who": [
+            "pam"
+          ],
+          "reaction": "look_at_camera"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "A",
+      "set": "break_room",
+      "region": "break_room",
+      "venue": "",
+      "present": [
+        "michael",
+        "dwight",
+        "ryan",
+        "kevin",
+        "oscar",
+        "phyllis",
+        "angela",
+        "toby"
+      ],
+      "recap": "The final event goes wrong; Michael is alone with the results.",
+      "beats": [
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Final event: Trivia about me. Question one: what is my favorite thing in the world?",
+          "to": "all",
+          "mood": "excited"
+        },
+        {
+          "type": "pause",
+          "seconds": 3,
+          "caption": "silence"
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "Chili?",
+          "to": "michael",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Wrong. It's being asked.",
+          "to": "kevin",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Michael Scott's favorite thing is loyalty. Then Bears. Then Jan.",
+          "to": "michael",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "That's... correct. Dwight wins.",
+          "to": "dwight",
+          "mood": "awkward"
+        },
+        {
+          "type": "say",
+          "who": "angela",
+          "text": "He knows you better than anyone here.",
+          "to": "michael",
+          "mood": "neutral"
+        },
+        {
+          "type": "react",
+          "who": [
+            "toby"
+          ],
+          "reaction": "cringe"
+        },
+        {
+          "type": "say",
+          "who": "toby",
+          "text": "For what it's worth, I'd have said 'the Bears' too.",
+          "to": "michael",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Thanks, Toby. Please leave.",
+          "to": "toby",
+          "mood": "awkward"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "C",
+      "set": "office",
+      "region": "michael_office",
+      "venue": "",
+      "present": [
+        "michael",
+        "ryan"
+      ],
+      "recap": "Ryan tells Michael he might leave someday; Michael takes it well.",
+      "beats": [
+        {
+          "type": "say",
+          "who": "ryan",
+          "text": "Michael, if corporate calls me, I'd probably take it.",
+          "to": "michael",
+          "mood": "neutral"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": "Michael processes"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Good. You should. A good boss wants his people to leave. That's what she said.",
+          "to": "ryan",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "ryan",
+          "text": "That doesn't work there.",
+          "to": "michael",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "I know. I just needed to say something.",
+          "to": "ryan",
+          "mood": "sad"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "A",
+      "set": "office",
+      "region": "bullpen",
+      "venue": "",
+      "present": [
+        "michael",
+        "dwight",
+        "jim",
+        "pam",
+        "kevin",
+        "stanley",
+        "oscar",
+        "phyllis",
+        "angela"
+      ],
+      "recap": "Medal ceremony; Dwight gets a ribbon and the office applauds Michael.",
+      "beats": [
+        {
+          "type": "gather",
+          "who": [
+            "everyone"
+          ],
+          "to": "bullpen"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Gold goes to Dwight Schrute. He is Champion. Not Assistant Regional Manager. Champion.",
+          "to": "dwight",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "I will wear it in the shower.",
+          "to": "michael",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Thanks for doing this, Michael. It was kind of fun.",
+          "to": "michael",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "Best day of the quarter.",
+          "to": "michael",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Really?",
+          "to": "all",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "stanley",
+          "text": "I finished my crossword. So yes.",
+          "to": "michael",
+          "mood": "neutral"
+        },
+        {
+          "type": "talking_head",
+          "who": "michael",
+          "lines": [
+            "I didn't win love. But I did get a pretty good ribbon budget. Ryan said I'm a solid six."
+          ],
+          "mood": "happy"
+        }
+      ]
+    },
+    {
+      "part": "tag",
+      "plot": "tag",
+      "set": "office",
+      "region": "bullpen",
+      "venue": "",
+      "present": [
+        "dwight",
+        "jim"
+      ],
+      "recap": "Dwight finds his stapler in Jell-O wearing his medal.",
+      "beats": [
+        {
+          "type": "action",
+          "who": "dwight",
+          "verb": "search",
+          "target": "none",
+          "caption": "opens his drawer, medal swinging"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Creed.",
+          "to": "none",
+          "mood": "angry"
+        },
+        {
+          "type": "say",
+          "who": "creed",
+          "text": "Nice medal. I won one in 1973. Different circumstances.",
+          "to": "dwight",
+          "mood": "neutral"
+        },
+        {
+          "type": "react",
+          "who": [
+            "jim"
+          ],
+          "reaction": "look_at_camera"
+        }
+      ]
+    }
+  ]
+}

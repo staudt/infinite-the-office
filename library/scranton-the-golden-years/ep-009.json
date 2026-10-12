@@ -1,0 +1,642 @@
+{
+  "title": "Booze Cruise Control",
+  "logline": "On a company lake outing, Michael tries to impress Jan, Pam and Roy fight, and Pam tells Jim she isn't sure about the wedding.",
+  "outline": "A: Michael runs a company lake outing to impress Jan, with a spiraling all-hands meeting. B: Pam and Roy fight, and Jim and Pam talk on deck. C: Dwight and Ryan jockey for position near Jan; Kevin shows surprising competence. Order: cold, A, B, A, C, B, A, B, A, C, tag",
+  "theme": "Being chosen, and saying the true thing out loud",
+  "storySoFar": "Michael's dinner with Jan was canceled; Jan mocked his costume then softened. Ryan has a corporate lunch with Jan. Dwight campaigns for Assistant Regional Manager. Jim holds a real beet. Pam keeps Jim's lamp on and attends art class. Ep 9: at the lake outing Roy snapped at Pam; Pam told Jim she isn't sure about the wedding. Michael got a small honest moment with Jan. Kevin saved the day with competence. Pam has not yet ended the engagement.",
+  "extras": [],
+  "stateChanges": [
+    {
+      "type": "arc",
+      "arc": "Will They, Won't They",
+      "progress": "Roy snapped at Pam; Pam told Jim on the deck she isn't sure about the wedding. Engagement not yet ended."
+    },
+    {
+      "type": "arc",
+      "arc": "Michael Needs a Date",
+      "progress": "Jan joined the outing; Michael got a small honest moment from her."
+    },
+    {
+      "type": "arc",
+      "arc": "Ryan the Temp",
+      "progress": "Ryan sat with Jan; Michael let him go."
+    },
+    {
+      "type": "gag",
+      "text": "Kevin competence: he actually knew how to dock the boat."
+    },
+    {
+      "type": "note",
+      "text": "Jim and Pam have a coffee promise after the lake."
+    }
+  ],
+  "scenes": [
+    {
+      "part": "cold_open",
+      "plot": "cold_open",
+      "set": "office",
+      "region": "bullpen",
+      "venue": "",
+      "present": [
+        "jim",
+        "dwight",
+        "pam"
+      ],
+      "recap": "Jim tells Dwight the lake outing requires a survival test.",
+      "beats": [
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "Dwight, for the lake trip, corporate requires everyone to hold their breath for two minutes. Just a heads up.",
+          "to": "dwight",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "I can do four. Question: do they award points for style?",
+          "to": "jim",
+          "mood": "excited"
+        },
+        {
+          "type": "action",
+          "who": "dwight",
+          "verb": "hide",
+          "target": "none",
+          "caption": "holds his breath at his desk, turning purple"
+        },
+        {
+          "type": "react",
+          "who": [
+            "pam"
+          ],
+          "reaction": "laugh"
+        },
+        {
+          "type": "talking_head",
+          "who": "jim",
+          "lines": [
+            "There's no test. But he's been practicing since nine."
+          ],
+          "mood": "smug"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "A",
+      "set": "office",
+      "region": "conference_room",
+      "venue": "",
+      "present": [
+        "michael",
+        "jim",
+        "pam",
+        "dwight",
+        "ryan",
+        "stanley",
+        "phyllis",
+        "angela",
+        "oscar",
+        "kevin",
+        "kelly",
+        "meredith",
+        "creed",
+        "toby"
+      ],
+      "recap": "Michael calls an unnecessary all-staff meeting about the lake outing.",
+      "beats": [
+        {
+          "type": "gather",
+          "who": [
+            "everyone"
+          ],
+          "to": "conference_room"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Tomorrow, Lake Wallenpaupack. Jan is coming. This meeting is to prepare for the other meeting, which is on the boat.",
+          "to": "all",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "stanley",
+          "text": "This could have been a memo.",
+          "to": "none",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Or a meeting about a memo. Toby, do not say anything about liability.",
+          "to": "toby",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "toby",
+          "text": "I just think life jackets should be—",
+          "to": "michael",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Life jackets are for people who fear life. Moving on. Kevin has volunteered to be captain.",
+          "to": "all",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "I did not.",
+          "to": "michael",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "You will. Now everyone say what they want out of this trip. Go around.",
+          "to": "all",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "meredith",
+          "text": "A boat with a bar.",
+          "to": "all",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "creed",
+          "text": "I'd like to see the lake again. The last time it was frozen, and I was not alone.",
+          "to": "all",
+          "mood": "neutral"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": "nobody follows up"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Great, we are two hours into this meeting.",
+          "to": "all",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "oscar",
+          "text": "It's been nine minutes.",
+          "to": "michael",
+          "mood": "annoyed"
+        },
+        {
+          "type": "react",
+          "who": [
+            "oscar"
+          ],
+          "reaction": "look_at_camera"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "B",
+      "set": "offsite",
+      "region": "venue",
+      "venue": "LAKE WALLENPAUPACK",
+      "present": [
+        "pam",
+        "roy",
+        "jim"
+      ],
+      "recap": "On the dock, Roy snaps at Pam about her art class, and Jim overhears.",
+      "beats": [
+        {
+          "type": "caption",
+          "text": "THE NEXT DAY"
+        },
+        {
+          "type": "enter",
+          "who": [
+            "pam",
+            "roy"
+          ],
+          "to": "entrance"
+        },
+        {
+          "type": "enter",
+          "who": [
+            "jim"
+          ],
+          "to": "seat_1"
+        },
+        {
+          "type": "say",
+          "who": "roy",
+          "text": "I'm not paying for a boat cruise so you can sit there and draw the lake.",
+          "to": "pam",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Nobody asked you to pay. I just brought a sketchbook.",
+          "to": "roy",
+          "mood": "awkward"
+        },
+        {
+          "type": "say",
+          "who": "roy",
+          "text": "Can you just be normal for one day? Jeez, Pam.",
+          "to": "pam",
+          "mood": "angry"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": "Jim hears it"
+        },
+        {
+          "type": "exit",
+          "who": [
+            "roy"
+          ],
+          "how": "storm_off"
+        },
+        {
+          "type": "react",
+          "who": [
+            "jim"
+          ],
+          "reaction": "look_at_camera"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "I'm fine. It's fine.",
+          "to": "jim",
+          "mood": "sad"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "A",
+      "set": "offsite",
+      "region": "venue",
+      "venue": "LAKE WALLENPAUPACK",
+      "present": [
+        "michael",
+        "jan",
+        "kevin",
+        "dwight",
+        "ryan"
+      ],
+      "recap": "Michael tries to impress Jan on the boat; Kevin is made captain.",
+      "beats": [
+        {
+          "type": "enter",
+          "who": [
+            "michael",
+            "jan",
+            "kevin",
+            "dwight",
+            "ryan"
+          ],
+          "to": "seat_2"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Jan, welcome aboard the S.S. Scott. I had the lake delivered. Kidding. Ha.",
+          "to": "jan",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "jan",
+          "text": "Michael, this is a public lake.",
+          "to": "michael",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Ma'am, I am Assistant Regional Manager and a certified lifeguard in three counties.",
+          "to": "jan",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "ryan",
+          "text": "Jan, I'm saving the lunch discussion for the right moment. Just leveraging the vibe.",
+          "to": "jan",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Ryan, you can talk to her later. When I'm done. Which is later.",
+          "to": "ryan",
+          "mood": "awkward"
+        },
+        {
+          "type": "talking_head",
+          "who": "michael",
+          "lines": [
+            "I'm not jealous of Ryan. I'm his mentor. Mentors don't get jealous. They get quiet."
+          ],
+          "mood": "sad"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "C",
+      "set": "offsite",
+      "region": "venue",
+      "venue": "LAKE WALLENPAUPACK",
+      "present": [
+        "kevin",
+        "dwight",
+        "ryan",
+        "michael"
+      ],
+      "recap": "The boat drifts toward the rocks and Kevin steps up.",
+      "beats": [
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Kevin, steer us toward Jan. I mean, toward the shore.",
+          "to": "kevin",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Wind is northeast. We'll hit the rocks in forty seconds.",
+          "to": "all",
+          "mood": "panicked"
+        },
+        {
+          "type": "say",
+          "who": "ryan",
+          "text": "Is that bad? I'm not a boat guy.",
+          "to": "all",
+          "mood": "nervous"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": "everyone panics"
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "Everybody move left. Dwight, rope. Michael, stop touching things.",
+          "to": "all",
+          "mood": "neutral"
+        },
+        {
+          "type": "action",
+          "who": "kevin",
+          "verb": "present",
+          "target": "none",
+          "caption": "turns the wheel and calmly brings the boat around"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Kevin! Who knew?",
+          "to": "kevin",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "My uncle had a boat. Also, I read the manual.",
+          "to": "michael",
+          "mood": "happy"
+        },
+        {
+          "type": "talking_head",
+          "who": "kevin",
+          "lines": [
+            "Sometimes I'm smart on purpose. Mostly nobody asks."
+          ],
+          "mood": "happy"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "B",
+      "set": "offsite",
+      "region": "venue",
+      "venue": "LAKE WALLENPAUPACK",
+      "present": [
+        "pam",
+        "jim"
+      ],
+      "recap": "On the deck, Pam tells Jim she isn't sure about the wedding.",
+      "beats": [
+        {
+          "type": "enter",
+          "who": [
+            "pam",
+            "jim"
+          ],
+          "to": "bar_stool"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "You okay?",
+          "to": "pam",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Roy and I have been engaged three years. I keep waiting to feel something about a date.",
+          "to": "jim",
+          "mood": "sad"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": ""
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "I'm not sure about the wedding, Jim. I haven't said that out loud.",
+          "to": "jim",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "Thanks for telling me. For what it's worth, you don't owe anyone a date.",
+          "to": "pam",
+          "mood": "sad"
+        },
+        {
+          "type": "action",
+          "who": "pam",
+          "verb": "search",
+          "target": "none",
+          "caption": "opens her sketchbook and shows him the lake"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "That's really good.",
+          "to": "pam",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Maybe after this weekend we get coffee? Away from the office.",
+          "to": "jim",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "I'd like that. A lot.",
+          "to": "pam",
+          "mood": "happy"
+        },
+        {
+          "type": "talking_head",
+          "who": "pam",
+          "lines": [
+            "I didn't plan that. It just came out. Which might be the point."
+          ],
+          "mood": "nervous"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "A",
+      "set": "offsite",
+      "region": "venue",
+      "venue": "LAKE WALLENPAUPACK",
+      "present": [
+        "michael",
+        "jan"
+      ],
+      "recap": "Michael gets an honest moment with Jan.",
+      "beats": [
+        {
+          "type": "enter",
+          "who": [
+            "michael",
+            "jan"
+          ],
+          "to": "seat_5"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "I planned a whole speech. It had a toast and a slideshow. I left both at home on purpose.",
+          "to": "jan",
+          "mood": "awkward"
+        },
+        {
+          "type": "say",
+          "who": "jan",
+          "text": "Michael, you're exhausting. You know that.",
+          "to": "michael",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "I know. I just want someone to be happy I showed up.",
+          "to": "jan",
+          "mood": "sad"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": ""
+        },
+        {
+          "type": "say",
+          "who": "jan",
+          "text": "I'm happy you showed up. Don't make it a meeting.",
+          "to": "michael",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Okay. That's the best meeting I never had.",
+          "to": "jan",
+          "mood": "happy"
+        },
+        {
+          "type": "talking_head",
+          "who": "jan",
+          "lines": [
+            "He's a lot. But the lake was nicer with him on it."
+          ],
+          "mood": "neutral"
+        }
+      ]
+    },
+    {
+      "part": "tag",
+      "plot": "tag",
+      "set": "offsite",
+      "region": "entrance",
+      "venue": "LAKE WALLENPAUPACK",
+      "present": [
+        "jim",
+        "dwight",
+        "creed"
+      ],
+      "recap": "Dwight finishes his breath-hold.",
+      "beats": [
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Four minutes, thirty seconds. Where is the judge?",
+          "to": "jim",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "The judge went home yesterday.",
+          "to": "dwight",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "creed",
+          "text": "I'd have given you five.",
+          "to": "dwight",
+          "mood": "neutral"
+        },
+        {
+          "type": "react",
+          "who": [
+            "jim"
+          ],
+          "reaction": "look_at_camera"
+        }
+      ]
+    }
+  ]
+}

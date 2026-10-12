@@ -1,0 +1,644 @@
+{
+  "title": "Costume Party Line",
+  "logline": "On Halloween, Michael dresses as Jan to impress the real Jan, who arrives for a surprise visit while Dwight spies and Jim and Pam's prank spirals.",
+  "outline": "A: Michael comes as Jan; Jan visits, cuts him down, then gives a small honest moment. B: Dwight, dressed as a nobleman, spies on Jan to learn whom Michael trusts; Jim and Pam's prank on him escalates. C: Ryan in a startup tee, waiting on David. Order: cold, A, B, A, C, B, A, B, A, tag",
+  "theme": "Everyone wants to be seen as who they really are, not their costume.",
+  "storySoFar": "Michael's dinner with Jan was canceled; the office gave him warm moments. Ryan pitched a website to David Wallace, who said he'd look at it. Dwight campaigns for Assistant Regional Manager, owes beet refunds; Jim holds one real beet. Pam keeps Jim's lamp on; Roy keeps canceling. On Halloween, Michael dressed as Jan; Jan visited unannounced, mocked it, then gave a small kind word. Dwight spied on Jan as Lord Schrute. Jim and Pam's prank on Dwight got out of hand. Ryan wore a startup tee, and Jan noticed his pitch.",
+  "extras": [],
+  "stateChanges": [
+    {
+      "type": "note",
+      "text": "Jan saw Ryan's startup pitch note and said corporate might talk to him; Michael overheard."
+    },
+    {
+      "type": "gag",
+      "text": "Dwight's nobleman costume; Jim and Pam's fake 'royal decree' prank spiraled."
+    },
+    {
+      "type": "arc",
+      "arc": "Michael Needs a Date",
+      "progress": "Jan mocked Michael's Jan costume, then privately said she was touched; dinner still open."
+    },
+    {
+      "type": "arc",
+      "arc": "Assistant (to the) Regional Manager",
+      "progress": "Dwight spied on Jan and learned Michael trusts Dwight more than he admits; no title yet."
+    },
+    {
+      "type": "arc",
+      "arc": "Ryan the Temp",
+      "progress": "Jan hints corporate may take interest in Ryan; Michael half-knows."
+    }
+  ],
+  "scenes": [
+    {
+      "part": "cold_open",
+      "plot": "cold_open",
+      "set": "office",
+      "region": "bullpen",
+      "venue": "",
+      "present": [
+        "jim",
+        "pam",
+        "dwight"
+      ],
+      "recap": "Jim and Pam start a Halloween prank on Dwight.",
+      "beats": [
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Okay. He's coming. Act natural.",
+          "to": "jim",
+          "mood": "nervous"
+        },
+        {
+          "type": "enter",
+          "who": [
+            "dwight"
+          ],
+          "to": "dwight_desk"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Behold. Lord Dwight Schrute, Baron of the Lackawanna Valley.",
+          "to": "all",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "Your Grace. A messenger came while you were away.",
+          "to": "dwight",
+          "mood": "deadpan"
+        },
+        {
+          "type": "action",
+          "who": "pam",
+          "verb": "present",
+          "target": "dwight",
+          "caption": "hands Dwight a scroll sealed with red wax"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "A royal decree. It says I must surrender my stapler to the Crown.",
+          "to": "jim",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "Wow. Seems legit.",
+          "to": "dwight",
+          "mood": "deadpan"
+        },
+        {
+          "type": "react",
+          "who": [
+            "pam"
+          ],
+          "reaction": "look_at_camera"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "A",
+      "set": "office",
+      "region": "michael_office",
+      "venue": "",
+      "present": [
+        "michael",
+        "pam",
+        "toby"
+      ],
+      "recap": "Michael arrives dressed as Jan and announces a costume contest.",
+      "beats": [
+        {
+          "type": "enter",
+          "who": [
+            "michael"
+          ],
+          "to": "michael_desk"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Pam. Who am I? Do not say Michael.",
+          "to": "pam",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "You're wearing a blonde wig and a blazer. Jan?",
+          "to": "michael",
+          "mood": "awkward"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Janus. The Roman god of doorways. Also Jan. Both.",
+          "to": "pam",
+          "mood": "smug"
+        },
+        {
+          "type": "gather",
+          "who": [
+            "everyone"
+          ],
+          "to": "conference_room"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Costume contest at four. Winner gets a Dunder Mifflin mug. A good mug.",
+          "to": "all",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "toby",
+          "text": "Just a reminder, costumes can't be offensive or—",
+          "to": "michael",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Toby, you're not wearing a costume. You're wearing Toby. Sit down.",
+          "to": "toby",
+          "mood": "annoyed"
+        },
+        {
+          "type": "talking_head",
+          "who": "michael",
+          "lines": [
+            "I dressed as Jan because imitation is the sincerest form of flattery. Also because I'm hoping she sees it and asks me to dinner."
+          ],
+          "mood": "smug"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "B",
+      "set": "office",
+      "region": "bullpen",
+      "venue": "",
+      "present": [
+        "dwight",
+        "jim",
+        "ryan",
+        "kevin"
+      ],
+      "recap": "The phone rings: Jan is on her way. Dwight plans to spy.",
+      "beats": [
+        {
+          "type": "action",
+          "who": "pam",
+          "verb": "phone_call",
+          "target": "none",
+          "caption": "takes a call, goes pale"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Jan's in the parking lot. She's early. Michael's dressed as her.",
+          "to": "all",
+          "mood": "panicked"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Everyone act like a functioning office. Look busy. Kevin, stop eating.",
+          "to": "all",
+          "mood": "angry"
+        },
+        {
+          "type": "action",
+          "who": "kevin",
+          "verb": "eat",
+          "target": "none",
+          "caption": "freezes with a fun-size Snickers"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Jan is here to see who Michael trusts. I will observe and report. From within.",
+          "to": "jim",
+          "mood": "smug"
+        },
+        {
+          "type": "talking_head",
+          "who": "dwight",
+          "lines": [
+            "Question: who does the boss trust? Answer: the person standing closest to him. I will stand very close."
+          ],
+          "mood": "deadpan"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "A",
+      "set": "office",
+      "region": "michael_office",
+      "venue": "",
+      "present": [
+        "michael",
+        "jan",
+        "dwight"
+      ],
+      "recap": "Jan arrives and cuts down Michael's costume.",
+      "beats": [
+        {
+          "type": "enter",
+          "who": [
+            "jan"
+          ],
+          "to": "michael_desk"
+        },
+        {
+          "type": "say",
+          "who": "jan",
+          "text": "Michael. Why do you look like me?",
+          "to": "michael",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Tribute. Imitation. Love. Pick one.",
+          "to": "jan",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "jan",
+          "text": "It's mocking. The wig is a bird's nest. I'm in a meeting with David tomorrow.",
+          "to": "michael",
+          "mood": "sarcastic"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": "Michael's smile slowly fades"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "It's... it's a joke. Ha. Ha.",
+          "to": "jan",
+          "mood": "sad"
+        },
+        {
+          "type": "move",
+          "who": "dwight",
+          "to": "michael_desk",
+          "pace": "sneak"
+        },
+        {
+          "type": "say",
+          "who": "jan",
+          "text": "Why is there a nobleman standing behind me?",
+          "to": "michael",
+          "mood": "annoyed"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "C",
+      "set": "office",
+      "region": "bullpen",
+      "venue": "",
+      "present": [
+        "ryan",
+        "kelly",
+        "pam"
+      ],
+      "recap": "Ryan wears a startup tee and waits for David.",
+      "beats": [
+        {
+          "type": "say",
+          "who": "kelly",
+          "text": "Ryan, your shirt is so cute. What's a Fluxly?",
+          "to": "ryan",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "ryan",
+          "text": "It's a company I may or may not start. You wouldn't get it.",
+          "to": "kelly",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "jan",
+          "text": "Ryan, right? I got your note. Come by my office after lunch.",
+          "to": "ryan",
+          "mood": "neutral"
+        },
+        {
+          "type": "react",
+          "who": [
+            "ryan"
+          ],
+          "reaction": "gasp"
+        },
+        {
+          "type": "talking_head",
+          "who": "ryan",
+          "lines": [
+            "I'm not nervous. I'm just... aligned with the moment."
+          ],
+          "mood": "nervous"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "B",
+      "set": "office",
+      "region": "bullpen",
+      "venue": "",
+      "present": [
+        "jim",
+        "pam",
+        "dwight"
+      ],
+      "recap": "Dwight reports; Jim and Pam's prank spirals.",
+      "beats": [
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "The Crown has summoned me to Corporate. By decree. I'm to bring my stapler.",
+          "to": "jim",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "Dwight, that was... a joke. Pam made it.",
+          "to": "dwight",
+          "mood": "awkward"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "I wrote it with a quill. It was supposed to be a one-minute thing.",
+          "to": "jim",
+          "mood": "awkward"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Too late. I've already told Jan the King wants me as Knight of the Realm.",
+          "to": "all",
+          "mood": "excited"
+        },
+        {
+          "type": "action",
+          "who": "dwight",
+          "verb": "present",
+          "target": "jan",
+          "caption": "kneels and offers his stapler to Jan"
+        },
+        {
+          "type": "react",
+          "who": [
+            "jim",
+            "pam"
+          ],
+          "reaction": "cringe"
+        },
+        {
+          "type": "say",
+          "who": "jan",
+          "text": "Is this a stapler? Why is it in Jell-O?",
+          "to": "dwight",
+          "mood": "annoyed"
+        },
+        {
+          "type": "talking_head",
+          "who": "jim",
+          "lines": [
+            "This was supposed to be a prank. Now Jan thinks Dwight's a knight. I think we won?"
+          ],
+          "mood": "deadpan"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "A",
+      "set": "office",
+      "region": "conference_room",
+      "venue": "",
+      "present": [
+        "michael",
+        "jan",
+        "dwight"
+      ],
+      "recap": "Michael hurt; Jan softens in private.",
+      "beats": [
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "I just wanted you to like it. Like me.",
+          "to": "jan",
+          "mood": "sad"
+        },
+        {
+          "type": "pause",
+          "seconds": 3,
+          "caption": "Jan looks at the wig"
+        },
+        {
+          "type": "say",
+          "who": "jan",
+          "text": "It's... a little flattering. Nobody's ever dressed as me before.",
+          "to": "michael",
+          "mood": "awkward"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Really?",
+          "to": "jan",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "jan",
+          "text": "Don't make it weird. Maybe dinner. Maybe.",
+          "to": "michael",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "I'll be the best man. At the dinner.",
+          "to": "michael",
+          "mood": "excited"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "B",
+      "set": "office",
+      "region": "bullpen",
+      "venue": "",
+      "present": [
+        "dwight",
+        "jim",
+        "pam",
+        "oscar"
+      ],
+      "recap": "Dwight learns whom Michael trusts.",
+      "beats": [
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Michael said I could be at the dinner. That's trust.",
+          "to": "oscar",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "oscar",
+          "text": "Actually, that's a third wheel.",
+          "to": "dwight",
+          "mood": "sarcastic"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "Dwight, I'm sorry about the scroll.",
+          "to": "dwight",
+          "mood": "awkward"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Don't be. It got me in Jan's office. Best prank ever. Never speak of this.",
+          "to": "jim",
+          "mood": "neutral"
+        },
+        {
+          "type": "react",
+          "who": [
+            "jim"
+          ],
+          "reaction": "look_at_camera"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "A",
+      "set": "office",
+      "region": "conference_room",
+      "venue": "",
+      "present": [
+        "michael",
+        "jan",
+        "ryan",
+        "pam",
+        "stanley",
+        "kevin",
+        "creed"
+      ],
+      "recap": "The costume contest.",
+      "beats": [
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Contest time. Stanley, who are you?",
+          "to": "stanley",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "stanley",
+          "text": "A man who wants to go home.",
+          "to": "michael",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "creed",
+          "text": "I'm just wearing my regular clothes. They're from 1973.",
+          "to": "all",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "jan",
+          "text": "The winner is the person who looks the most like they want to be here.",
+          "to": "all",
+          "mood": "sarcastic"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "That's... me. Obviously.",
+          "to": "all",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "jan",
+          "text": "Fine. Michael wins.",
+          "to": "michael",
+          "mood": "neutral"
+        },
+        {
+          "type": "talking_head",
+          "who": "michael",
+          "lines": [
+            "She said I win. I have never won anything. Not even second place. This is it."
+          ],
+          "mood": "happy"
+        }
+      ]
+    },
+    {
+      "part": "tag",
+      "plot": "tag",
+      "set": "office",
+      "region": "bullpen",
+      "venue": "",
+      "present": [
+        "dwight",
+        "jim"
+      ],
+      "recap": "Dwight finds the stapler in Jell-O.",
+      "beats": [
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Jell-O. Again. Creed!",
+          "to": "all",
+          "mood": "angry"
+        },
+        {
+          "type": "say",
+          "who": "creed",
+          "text": "I'd do it. But I'd also rob you.",
+          "to": "dwight",
+          "mood": "neutral"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": "nobody follows up"
+        }
+      ]
+    }
+  ]
+}

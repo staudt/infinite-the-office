@@ -1,0 +1,698 @@
+{
+  "title": "Inspection Day",
+  "logline": "As Jan and David inspect a branch rumored to be downsized, Michael gives a clumsy, heartfelt speech, Dwight becomes Assistant to the Regional Manager, and Pam tells Jim she wants to talk.",
+  "outline": "A: Michael must save the branch from downsizing rumors with a heartfelt speech at an offsite lunch. B: Dwight is named Assistant, overreaches with power, then cries in the stairwell; Pam ends engagement and wants to talk to Jim. C: Ryan's corporate lunch outcome; Michael lets him go. Order: cold, A, B, A, C, B, A, B(Pam/Jim), A, tag",
+  "theme": "Being chosen",
+  "storySoFar": "Season 1 finale: Jan and David inspected the branch amid downsizing rumors. Michael's clumsy speech at an offsite lunch saved the branch, and Jan said something kind and genuine to him. Dwight was named Assistant to the Regional Manager, overreached, then cried in the stairwell. Roy broke off the engagement; Pam told Jim she wants to talk, and Jim smiled; the coffee is still pending. Ryan stays for now but is on a path to corporate; Michael is learning to let him go. Jan hinted at a possible transfer for Michael's branch next season.",
+  "extras": [],
+  "stateChanges": [
+    {
+      "type": "arc",
+      "arc": "Will They, Won't They",
+      "progress": "Roy ended the engagement; Pam told Jim she wants to talk; Jim smiled; coffee still pending."
+    },
+    {
+      "type": "arc",
+      "arc": "Assistant (to the) Regional Manager",
+      "progress": "Dwight named Assistant to the Regional Manager; overreached, cried in stairwell."
+    },
+    {
+      "type": "arc",
+      "arc": "Michael Needs a Date",
+      "progress": "Jan said something kind and genuine to Michael; he cherishes it."
+    },
+    {
+      "type": "arc",
+      "arc": "Ryan the Temp",
+      "progress": "Ryan stays for now, heading to corporate; Michael lets him go."
+    },
+    {
+      "type": "relationship",
+      "a": "pam",
+      "b": "roy",
+      "status": "engagement over"
+    },
+    {
+      "type": "relationship",
+      "a": "jim",
+      "b": "pam",
+      "status": "about to talk; coffee pending"
+    },
+    {
+      "type": "note",
+      "text": "Jan mentioned a possible transfer for Michael's branch next season."
+    }
+  ],
+  "scenes": [
+    {
+      "part": "cold_open",
+      "plot": "cold_open",
+      "set": "office",
+      "region": "bullpen",
+      "venue": "",
+      "present": [
+        "jim",
+        "dwight",
+        "pam"
+      ],
+      "recap": "Jim pranks Dwight before inspection day.",
+      "beats": [
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Today is inspection day. I have shined my shoes with beet wax.",
+          "to": "all",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "Dwight, your phone's been ringing for a while.",
+          "to": "dwight",
+          "mood": "deadpan"
+        },
+        {
+          "type": "action",
+          "who": "dwight",
+          "verb": "phone_call",
+          "target": "none",
+          "caption": "answers a phone that is clearly Jim's cell"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Hello? This is Assistant to the Regional Manager.",
+          "to": "none",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "Assistant Regional Manager. It's Jan. She says you're fired.",
+          "to": "dwight",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "False. She would never. Jan?",
+          "to": "none",
+          "mood": "panicked"
+        },
+        {
+          "type": "react",
+          "who": [
+            "pam"
+          ],
+          "reaction": "look_at_camera"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "A",
+      "set": "office",
+      "region": "conference_room",
+      "venue": "",
+      "present": [
+        "michael",
+        "dwight",
+        "jim",
+        "pam",
+        "oscar",
+        "kevin",
+        "toby",
+        "stanley",
+        "angela",
+        "creed"
+      ],
+      "recap": "Michael announces inspection and rumors of downsizing.",
+      "beats": [
+        {
+          "type": "gather",
+          "who": [
+            "everyone"
+          ],
+          "to": "conference_room"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Jan and David Wallace arrive at noon. There are rumors. Rumors are like beavers: they build dams. Of fear.",
+          "to": "all",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "oscar",
+          "text": "Actually, the rumor is that they close Scranton and fold us into Stamford.",
+          "to": "michael",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Nobody is closing anything. Toby, did you start this?",
+          "to": "toby",
+          "mood": "angry"
+        },
+        {
+          "type": "say",
+          "who": "toby",
+          "text": "I just read the memo, Michael.",
+          "to": "michael",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "What memo? Who reads memos? Dwight, your binder.",
+          "to": "dwight",
+          "mood": "annoyed"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": "Dwight holds a three-inch binder"
+        },
+        {
+          "type": "say",
+          "who": "creed",
+          "text": "The last time a branch closed, I was already out of the country.",
+          "to": "all",
+          "mood": "neutral"
+        },
+        {
+          "type": "talking_head",
+          "who": "michael",
+          "lines": [
+            "If Scranton closes, where do these people go? Where do I go? These people are my family. Mostly.",
+            "Okay, some of them are cousins."
+          ],
+          "mood": "nervous"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "B",
+      "set": "office",
+      "region": "bullpen",
+      "venue": "",
+      "present": [
+        "dwight",
+        "jim",
+        "pam",
+        "angela"
+      ],
+      "recap": "Dwight spots a chance to seize power.",
+      "beats": [
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "If Michael names me today, I will need a title that intimidates. Assistant to the Regional Manager.",
+          "to": "angela",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "angela",
+          "text": "Don't smile in front of the VPs. Your teeth are not your best feature.",
+          "to": "dwight",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "Dwight, I heard Jan loves a firm handshake. Like, a bone-crusher.",
+          "to": "dwight",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Obviously. I practice on a ham.",
+          "to": "jim",
+          "mood": "smug"
+        },
+        {
+          "type": "talking_head",
+          "who": "jim",
+          "lines": [
+            "I don't even have to try anymore. It's just a gift."
+          ],
+          "mood": "smug"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "A",
+      "set": "offsite",
+      "region": "venue",
+      "venue": "CHILI'S",
+      "present": [
+        "michael",
+        "jan",
+        "david",
+        "dwight"
+      ],
+      "recap": "Inspection lunch at Chili's begins badly.",
+      "beats": [
+        {
+          "type": "enter",
+          "who": [
+            "jan",
+            "david",
+            "michael",
+            "dwight"
+          ],
+          "to": "seat_1"
+        },
+        {
+          "type": "say",
+          "who": "david",
+          "text": "So, Michael, we're looking at all the numbers across the Northeast.",
+          "to": "michael",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Numbers are great. I love numbers. Dwight, say something numbers.",
+          "to": "dwight",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Question: have you considered that Stamford is full of weaklings?",
+          "to": "david",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "jan",
+          "text": "Michael, we need a candid sense of morale. Honestly.",
+          "to": "michael",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "david",
+          "text": "Nothing is decided. We just want to understand what Scranton is.",
+          "to": "michael",
+          "mood": "neutral"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": "Michael looks at his appetizers"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "C",
+      "set": "offsite",
+      "region": "entrance",
+      "venue": "CHILI'S",
+      "present": [
+        "ryan",
+        "michael"
+      ],
+      "recap": "Ryan is back from corporate; Michael lets go.",
+      "beats": [
+        {
+          "type": "enter",
+          "who": [
+            "ryan"
+          ],
+          "to": "entrance"
+        },
+        {
+          "type": "move",
+          "who": "michael",
+          "to": "ryan",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Ryan! The lunch with corporate. Did they offer you the world?",
+          "to": "ryan",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "ryan",
+          "text": "They said maybe in the spring. There's a track. It's a whole thing.",
+          "to": "michael",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "That's great. That's, uh. Great. Use the mug.",
+          "to": "ryan",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "ryan",
+          "text": "I'll... yeah. The mug.",
+          "to": "michael",
+          "mood": "awkward"
+        },
+        {
+          "type": "talking_head",
+          "who": "ryan",
+          "lines": [
+            "Scranton was supposed to be a stepping stone. It's a little bit of a nice stone."
+          ],
+          "mood": "neutral"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "B",
+      "set": "office",
+      "region": "bullpen",
+      "venue": "",
+      "present": [
+        "dwight",
+        "jim",
+        "pam",
+        "angela",
+        "kevin",
+        "oscar",
+        "stanley"
+      ],
+      "recap": "Dwight, left in charge, goes too far.",
+      "beats": [
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Michael has left me in charge. Effective now, I am Assistant to the Regional Manager.",
+          "to": "all",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "stanley",
+          "text": "Did I stutter? I'm doing my crossword.",
+          "to": "dwight",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Stanley, crosswords are prohibited. Also, everyone will do one minute of sit-ups.",
+          "to": "all",
+          "mood": "angry"
+        },
+        {
+          "type": "say",
+          "who": "oscar",
+          "text": "Actually, that's a lawsuit.",
+          "to": "dwight",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Kevin, you're demoted. To Kevin.",
+          "to": "kevin",
+          "mood": "angry"
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "Okay.",
+          "to": "dwight",
+          "mood": "neutral"
+        },
+        {
+          "type": "react",
+          "who": [
+            "oscar"
+          ],
+          "reaction": "look_at_camera"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Dwight, Michael isn't even here.",
+          "to": "dwight",
+          "mood": "awkward"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Which is why I am.",
+          "to": "pam",
+          "mood": "smug"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "A",
+      "set": "offsite",
+      "region": "venue",
+      "venue": "CHILI'S",
+      "present": [
+        "michael",
+        "jan",
+        "david",
+        "dwight"
+      ],
+      "recap": "Michael's heartfelt speech.",
+      "beats": [
+        {
+          "type": "say",
+          "who": "david",
+          "text": "Michael, in your words: why should Scranton stay open?",
+          "to": "michael",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "I don't have a binder. I have a family.",
+          "to": "david",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Stanley does crosswords. Pam is an artist. Kevin makes chili once a year and it's a holiday.",
+          "to": "david",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "They aren't numbers. They're what makes the numbers worth caring about. That's what she said. Sorry. Reflex.",
+          "to": "david",
+          "mood": "awkward"
+        },
+        {
+          "type": "pause",
+          "seconds": 3,
+          "caption": "David is quiet"
+        },
+        {
+          "type": "say",
+          "who": "david",
+          "text": "That's... actually the first time anyone's said that to me this month.",
+          "to": "michael",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "jan",
+          "text": "Michael, that was really lovely. I mean it.",
+          "to": "michael",
+          "mood": "happy"
+        },
+        {
+          "type": "talking_head",
+          "who": "michael",
+          "lines": [
+            "She said lovely. Jan. Lovely. I'm going to remember that when I'm very old and alone."
+          ],
+          "mood": "happy"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "B",
+      "set": "office",
+      "region": "bullpen",
+      "venue": "",
+      "present": [
+        "michael",
+        "dwight",
+        "jan",
+        "david",
+        "pam",
+        "jim"
+      ],
+      "recap": "Michael names Dwight Assistant; Dwight cries.",
+      "beats": [
+        {
+          "type": "gather",
+          "who": [
+            "everyone"
+          ],
+          "to": "bullpen"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Before we go, I'd like to name my Assistant to the Regional Manager. Dwight.",
+          "to": "all",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Thank you. I will serve with honor and a small amount of fear.",
+          "to": "michael",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Also, Dwight, you made Kevin cry. We'll talk.",
+          "to": "dwight",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Understood. Excuse me.",
+          "to": "michael",
+          "mood": "nervous"
+        },
+        {
+          "type": "exit",
+          "who": [
+            "dwight"
+          ],
+          "how": "walk"
+        },
+        {
+          "type": "talking_head",
+          "who": "dwight",
+          "lines": [
+            "I did not cry in the stairwell. Allergies. Beet pollen is a real thing."
+          ],
+          "mood": "deadpan"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "A",
+      "set": "office",
+      "region": "reception",
+      "venue": "",
+      "present": [
+        "pam",
+        "jim"
+      ],
+      "recap": "Pam tells Jim she wants to talk.",
+      "beats": [
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Roy and I are done. I ended it last night.",
+          "to": "jim",
+          "mood": "nervous"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": "Jim takes it in"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "I want to talk. Not here. About... a lot of things.",
+          "to": "jim",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "Okay.",
+          "to": "pam",
+          "mood": "happy"
+        },
+        {
+          "type": "react",
+          "who": [
+            "jim"
+          ],
+          "reaction": "look_at_camera"
+        },
+        {
+          "type": "pause",
+          "seconds": 4,
+          "caption": "They hold the look"
+        }
+      ]
+    },
+    {
+      "part": "tag",
+      "plot": "tag",
+      "set": "office",
+      "region": "michael_office",
+      "venue": "",
+      "present": [
+        "michael",
+        "jan"
+      ],
+      "recap": "Jan hints at a transfer.",
+      "beats": [
+        {
+          "type": "say",
+          "who": "jan",
+          "text": "Michael, one more thing. There may be a transfer for Scranton next season.",
+          "to": "michael",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "A transfer. Like, Hawaii?",
+          "to": "jan",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "jan",
+          "text": "We'll talk.",
+          "to": "michael",
+          "mood": "neutral"
+        },
+        {
+          "type": "react",
+          "who": [
+            "michael"
+          ],
+          "reaction": "gasp"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": ""
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,730 @@
+{
+  "title": "Promoted, Allegedly",
+  "logline": "A overheard half-sentence about Ryan turns into office-wide rumor, while Michael seeks Toby's dating advice at a client lunch and Dwight sabotages the temp.",
+  "outline": "A: Michael, wanting Jan, asks Toby for advice at a client lunch offsite and fantasizes firing him. B: Dwight sabotages Ryan after a telephone-game rumor says Ryan's been promoted; Angela covers. C: Ryan briefly treated as boss; Jim and Pam pass the rumor along and Pam draws. Order: cold, A, B, C, A, B, C, A, B, A, tag",
+  "theme": "Everyone wants to be chosen, and everyone hears what they fear.",
+  "storySoFar": "Michael's dinner with Jan was canceled; Jan mocked his costume then softened. Ryan pitched David Wallace; Jan hinted corporate interest. Dwight campaigns for Assistant Regional Manager, holds a Champion ribbon. Jim holds a real beet. Pam keeps Jim's lamp on, attends art class; Roy keeps canceling. Ep 8: a garbled rumor says Ryan was promoted; Dwight sabotaged Ryan with Angela's cover; Michael asked Toby for date advice at a client lunch and fantasized firing him; Ryan's actual news was a corporate lunch invitation from Jan.",
+  "extras": [],
+  "stateChanges": [
+    {
+      "type": "arc",
+      "arc": "Ryan the Temp",
+      "progress": "Rumor of promotion spreads; real news is Jan wants to meet Ryan about corporate. Michael half-knows and lets him go to the lunch."
+    },
+    {
+      "type": "arc",
+      "arc": "Assistant (to the) Regional Manager",
+      "progress": "Dwight sabotaged Ryan's phone and files; Angela covered for him. Still no title."
+    },
+    {
+      "type": "arc",
+      "arc": "Michael Needs a Date",
+      "progress": "Michael asked Toby for advice, imagined firing him; Toby kept his job and gave decent advice. Jan dinner still open."
+    },
+    {
+      "type": "gag",
+      "text": "Telephone-game rumor: 'Ryan got promoted' started as 'Ryan got prompted.'"
+    },
+    {
+      "type": "note",
+      "text": "Ryan has a lunch with Jan at corporate next week."
+    }
+  ],
+  "scenes": [
+    {
+      "part": "cold_open",
+      "plot": "cold_open",
+      "set": "office",
+      "region": "bullpen",
+      "venue": "",
+      "present": [
+        "jim",
+        "dwight",
+        "pam"
+      ],
+      "recap": "Jim tells Dwight a sentence one word at a time through Pam and Creed.",
+      "beats": [
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "Pam, tell Dwight the fax machine is hungry.",
+          "to": "pam",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Dwight, Jim says the fax machine is angry.",
+          "to": "dwight",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Question: why would a fax machine be angry? Did someone insult it?",
+          "to": "jim",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "creed",
+          "text": "I once insulted a fax machine in Macau. Never saw that guy again.",
+          "to": "none",
+          "mood": "neutral"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": ""
+        },
+        {
+          "type": "talking_head",
+          "who": "jim",
+          "lines": [
+            "I just wanted to see how far a sentence goes. Turns out, not very."
+          ],
+          "mood": "deadpan"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "A",
+      "set": "office",
+      "region": "michael_office",
+      "venue": "",
+      "present": [
+        "michael",
+        "toby"
+      ],
+      "recap": "Michael invites Toby, of all people, to a client lunch and asks for relationship advice.",
+      "beats": [
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Toby. I need you at the Alfredo's client lunch. You're driving. And you are also advising.",
+          "to": "toby",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "toby",
+          "text": "Advising on what?",
+          "to": "michael",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Hypothetically, a man loves a woman who is his boss. Hypothetically, it's me and Jan.",
+          "to": "toby",
+          "mood": "awkward"
+        },
+        {
+          "type": "say",
+          "who": "toby",
+          "text": "I'd say be honest, and maybe not do anything in the office.",
+          "to": "michael",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Wow. Great. So, lie and hide. Thank you, HR.",
+          "to": "toby",
+          "mood": "sarcastic"
+        },
+        {
+          "type": "talking_head",
+          "who": "toby",
+          "lines": [
+            "He asked for my advice. I've waited years for that. I'm going to be so careful."
+          ],
+          "mood": "nervous"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "B",
+      "set": "office",
+      "region": "reception",
+      "venue": "",
+      "present": [
+        "ryan",
+        "pam",
+        "jim",
+        "kevin",
+        "oscar"
+      ],
+      "recap": "Ryan takes a call and the rumor starts.",
+      "beats": [
+        {
+          "type": "say",
+          "who": "ryan",
+          "text": "Jan's office. Yes. Thursday. I'd be honored to be prompted.",
+          "to": "none",
+          "mood": "smug"
+        },
+        {
+          "type": "action",
+          "who": "ryan",
+          "verb": "phone_call",
+          "target": "none",
+          "caption": "hangs up and smirks at his phone"
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "Ryan got promoted?",
+          "to": "oscar",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "oscar",
+          "text": "Actually, I heard 'prompted.' Which isn't a thing.",
+          "to": "kevin",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "Ryan is boss.",
+          "to": "pam",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Ryan's... boss?",
+          "to": "jim",
+          "mood": "awkward"
+        },
+        {
+          "type": "react",
+          "who": [
+            "jim"
+          ],
+          "reaction": "look_at_camera"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "C",
+      "set": "office",
+      "region": "bullpen",
+      "venue": "",
+      "present": [
+        "dwight",
+        "angela",
+        "ryan",
+        "phyllis"
+      ],
+      "recap": "Dwight hears the rumor from Phyllis and panics.",
+      "beats": [
+        {
+          "type": "say",
+          "who": "phyllis",
+          "text": "Dwight, did you hear? Ryan got promoted. Over you, I think.",
+          "to": "dwight",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "False. That is impossible. I am Assistant to the Regional Manager.",
+          "to": "phyllis",
+          "mood": "angry"
+        },
+        {
+          "type": "move",
+          "who": "dwight",
+          "to": "angela_desk",
+          "pace": "hurry"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Angela. Ryan must be neutralized. I need an alibi, starting now.",
+          "to": "angela",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "angela",
+          "text": "I saw nothing. I always see nothing. Nothing is my favorite thing.",
+          "to": "dwight",
+          "mood": "smug"
+        },
+        {
+          "type": "talking_head",
+          "who": "dwight",
+          "lines": [
+            "Ryan has been here six months. I have been here nine years. Hypothetically, I would never sabotage a temp. But if I did, it would be perfect."
+          ],
+          "mood": "deadpan"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "A",
+      "set": "offsite",
+      "region": "venue",
+      "venue": "ALFREDO'S PIZZA CAFE",
+      "present": [
+        "michael",
+        "toby"
+      ],
+      "recap": "At the client lunch Michael practices dating lines on Toby.",
+      "beats": [
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Okay, Toby, you be Jan. Hello Michael, you look handsome.",
+          "to": "toby",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "toby",
+          "text": "Hello Michael. You look... handsome.",
+          "to": "michael",
+          "mood": "awkward"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Stop. You sound sad. Jan is never sad. She is mysteriously unavailable.",
+          "to": "toby",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "toby",
+          "text": "Maybe just ask her if she's free for coffee. Low pressure.",
+          "to": "michael",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Low pressure. Yes. Like a tire. That's a good point and I hate it.",
+          "to": "toby",
+          "mood": "annoyed"
+        },
+        {
+          "type": "action",
+          "who": "michael",
+          "verb": "drink",
+          "target": "none",
+          "caption": "stares into his soda, imagining firing Toby"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Toby Flenderson, you're fired. Pack your sad little box. Goodbye, forever.",
+          "to": "toby",
+          "mood": "angry"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": "Toby has no idea"
+        },
+        {
+          "type": "say",
+          "who": "toby",
+          "text": "Michael, did you say that out loud?",
+          "to": "michael",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "No. Eat your breadsticks.",
+          "to": "toby",
+          "mood": "awkward"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "B",
+      "set": "office",
+      "region": "reception",
+      "venue": "",
+      "present": [
+        "dwight",
+        "ryan",
+        "angela",
+        "kelly"
+      ],
+      "recap": "Dwight sabotages Ryan's desk and Angela lies for him.",
+      "beats": [
+        {
+          "type": "action",
+          "who": "dwight",
+          "verb": "snoop",
+          "target": "none",
+          "caption": "unplugs Ryan's monitor and swaps his stapler"
+        },
+        {
+          "type": "say",
+          "who": "kelly",
+          "text": "Ryan! Did you get promoted? Are you rich now? Can we go to Cancun?",
+          "to": "ryan",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "ryan",
+          "text": "I was invited to something. It's not a thing yet.",
+          "to": "kelly",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "ryan",
+          "text": "My computer is dead. And my phone list is gone.",
+          "to": "all",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "angela",
+          "text": "Dwight was with me all morning. Discussing cats. Eleven hours.",
+          "to": "ryan",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "ryan",
+          "text": "It's ten-fifteen.",
+          "to": "angela",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "angela",
+          "text": "It was a very long cat conversation.",
+          "to": "ryan",
+          "mood": "nervous"
+        },
+        {
+          "type": "react",
+          "who": [
+            "jim"
+          ],
+          "reaction": "look_at_camera"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "C",
+      "set": "office",
+      "region": "bullpen",
+      "venue": "",
+      "present": [
+        "pam",
+        "jim",
+        "stanley"
+      ],
+      "recap": "Jim and Pam watch the rumor mutate; Pam shows Jim a drawing.",
+      "beats": [
+        {
+          "type": "say",
+          "who": "stanley",
+          "text": "I heard Ryan's the new regional manager and Michael is moving to Utica.",
+          "to": "jim",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "That's... remarkable, considering it started as 'prompted'.",
+          "to": "stanley",
+          "mood": "sarcastic"
+        },
+        {
+          "type": "say",
+          "who": "stanley",
+          "text": "I don't care. Tell him Pretzel Day stays.",
+          "to": "jim",
+          "mood": "annoyed"
+        },
+        {
+          "type": "move",
+          "who": "jim",
+          "to": "pam_desk",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "I drew the whole rumor. See? Telephone wires, and Ryan with a crown.",
+          "to": "jim",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "You gave Dwight a tiny crown too. Good call.",
+          "to": "pam",
+          "mood": "happy"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": "a look that lasts a beat too long"
+        },
+        {
+          "type": "talking_head",
+          "who": "pam",
+          "lines": [
+            "It's nice when someone looks at your drawing like it matters. That's all. It's just nice."
+          ],
+          "mood": "neutral"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "A",
+      "set": "office",
+      "region": "michael_office",
+      "venue": "",
+      "present": [
+        "michael",
+        "toby",
+        "ryan",
+        "dwight"
+      ],
+      "recap": "Michael returns to a chaotic office, hears the rumor, and confronts Ryan.",
+      "beats": [
+        {
+          "type": "enter",
+          "who": [
+            "michael",
+            "toby"
+          ],
+          "to": "michael_desk"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Michael, Ryan is trying to take your job. I have evidence. It is mostly feelings.",
+          "to": "michael",
+          "mood": "panicked"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Ryan. Are you my boss now?",
+          "to": "ryan",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "ryan",
+          "text": "No. Jan invited me to lunch at corporate. To talk about my future.",
+          "to": "michael",
+          "mood": "neutral"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": ""
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Okay. Well. That's... great. Go to the lunch. Wear the good tie.",
+          "to": "ryan",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Michael, he is a mole.",
+          "to": "michael",
+          "mood": "panicked"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Dwight, be quiet. Fix Ryan's computer. Now.",
+          "to": "dwight",
+          "mood": "angry"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "I... it might already be plugged back in.",
+          "to": "michael",
+          "mood": "nervous"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "B",
+      "set": "office",
+      "region": "bullpen",
+      "venue": "",
+      "present": [
+        "dwight",
+        "jim",
+        "angela",
+        "creed"
+      ],
+      "recap": "Dwight's guilt and a Jell-O reveal.",
+      "beats": [
+        {
+          "type": "say",
+          "who": "angela",
+          "text": "I lied for you. You owe me. Kitten food. A year of it.",
+          "to": "dwight",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Agreed. Also, I love you, in a strictly professional way.",
+          "to": "angela",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "creed",
+          "text": "I heard that. I've said it to a hostage before.",
+          "to": "none",
+          "mood": "neutral"
+        },
+        {
+          "type": "action",
+          "who": "dwight",
+          "verb": "search",
+          "target": "none",
+          "caption": "opens drawer, finds stapler in lime Jell-O"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Creed!",
+          "to": "creed",
+          "mood": "angry"
+        },
+        {
+          "type": "react",
+          "who": [
+            "jim"
+          ],
+          "reaction": "stare"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "A",
+      "set": "office",
+      "region": "michael_office",
+      "venue": "",
+      "present": [
+        "michael",
+        "toby"
+      ],
+      "recap": "Michael thanks Toby and calls Jan.",
+      "beats": [
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Toby. Your advice was... fine. Don't let it go to your head.",
+          "to": "toby",
+          "mood": "awkward"
+        },
+        {
+          "type": "say",
+          "who": "toby",
+          "text": "Thanks, Michael. That means more than you know.",
+          "to": "michael",
+          "mood": "sad"
+        },
+        {
+          "type": "action",
+          "who": "michael",
+          "verb": "phone_call",
+          "target": "none",
+          "caption": "dials Jan, hangs up, dials again"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Jan. It's Michael. Coffee. Low pressure. Like a tire.",
+          "to": "none",
+          "mood": "nervous"
+        },
+        {
+          "type": "pause",
+          "seconds": 3,
+          "caption": "a very long silence on the line"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "She said maybe. I'm going to be sick. It was a great maybe.",
+          "to": "toby",
+          "mood": "excited"
+        },
+        {
+          "type": "talking_head",
+          "who": "michael",
+          "lines": [
+            "Ryan is leaving, and Jan said maybe. A man can only lose and win so much in one day."
+          ],
+          "mood": "sad"
+        }
+      ]
+    },
+    {
+      "part": "tag",
+      "plot": "tag",
+      "set": "office",
+      "region": "bullpen",
+      "venue": "",
+      "present": [
+        "jim",
+        "dwight",
+        "pam",
+        "ryan"
+      ],
+      "recap": "Final rumor.",
+      "beats": [
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "Pam, tell Dwight the beets are ready.",
+          "to": "pam",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Dwight, Jim says your feet are ready.",
+          "to": "dwight",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "My feet have been ready since birth.",
+          "to": "pam",
+          "mood": "neutral"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,748 @@
+{
+  "title": "The Dundies",
+  "logline": "Michael hosts the Dundies at Chili's, Pam gets brave, Dwight's secret business cards surface, and Michael finds one sincere moment.",
+  "outline": "A: Michael hosts the Dundies at Chili's; Pam gets drunk and brave while Jim watches; Michael's sincere speech. B: Dwight secretly prints Assistant Regional Manager cards; it comes out at the worst moment; warehouse vs office, Darryl reasonable. C: Ryan is Michael's reluctant protege, the designated driver. Order: cold, A, B, C, A, B, A, B, A, C, A, tag",
+  "theme": "Being chosen, and being seen.",
+  "storySoFar": "Michael's special friend was Jan; the dinner invitation is open. Ryan is Michael's reluctant protege and hates the mentor mug. Dwight lobbies for Assistant Regional Manager and secretly printed business cards; Michael pretended it was a joke. Jim pranks Dwight. At the Dundies at Chili's, Pam got drunk and brave, Jim watched, and Michael gave a sincere speech. Warehouse and office clashed; Darryl was the voice of reason.",
+  "extras": [],
+  "stateChanges": [
+    {
+      "type": "note",
+      "text": "Pam said something brave and public at the Dundies about wanting more; Jim heard it and neither mentioned it after."
+    },
+    {
+      "type": "note",
+      "text": "Dwight's Assistant Regional Manager business cards are now known to the whole office."
+    },
+    {
+      "type": "arc",
+      "arc": "Will They, Won't They",
+      "progress": "Drunk Pam tells Jim he's her favorite; Roy sees it; Pam pretends not to remember."
+    },
+    {
+      "type": "arc",
+      "arc": "Assistant (to the) Regional Manager",
+      "progress": "Dwight's cards exposed; Michael keeps stalling but is moved by his loyalty."
+    },
+    {
+      "type": "arc",
+      "arc": "Ryan the Temp",
+      "progress": "Ryan drives Michael home and is grudgingly touched."
+    },
+    {
+      "type": "gag",
+      "text": "Creed unsettling non sequitur at Chili's, ignored."
+    }
+  ],
+  "scenes": [
+    {
+      "part": "cold_open",
+      "plot": "cold_open",
+      "set": "office",
+      "region": "bullpen",
+      "venue": "",
+      "present": [
+        "jim",
+        "dwight",
+        "pam"
+      ],
+      "recap": "Jim tapes a Dundies flyer prank on Dwight.",
+      "beats": [
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Question: why does my phone say Dundies Nominee: Most Likely To Be A Beet?",
+          "to": "jim",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "Weird. I don't know how that got there.",
+          "to": "dwight",
+          "mood": "deadpan"
+        },
+        {
+          "type": "react",
+          "who": [
+            "jim"
+          ],
+          "reaction": "look_at_camera"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "I accept. Beets are the most dignified of the root vegetables.",
+          "to": "all",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "That's not an insult, technically.",
+          "to": "jim",
+          "mood": "happy"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "A",
+      "set": "office",
+      "region": "conference_room",
+      "venue": "",
+      "present": [
+        "michael",
+        "jim",
+        "pam",
+        "dwight",
+        "stanley",
+        "phyllis",
+        "angela",
+        "oscar",
+        "kevin",
+        "kelly",
+        "meredith",
+        "creed",
+        "toby",
+        "ryan"
+      ],
+      "recap": "Michael announces the Dundies tonight at Chili's.",
+      "beats": [
+        {
+          "type": "gather",
+          "who": [
+            "everyone"
+          ],
+          "to": "conference_room"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Tonight, Chili's. The Dundies. Mandatory fun, which is the best kind of fun.",
+          "to": "all",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "toby",
+          "text": "Technically attendance can't be mandatory outside work hours.",
+          "to": "michael",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Toby, nobody asked you. Not today, not ever, not in the womb.",
+          "to": "toby",
+          "mood": "angry"
+        },
+        {
+          "type": "say",
+          "who": "stanley",
+          "text": "Is there an open bar?",
+          "to": "michael",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Two drink maximum. Meredith, that means two.",
+          "to": "meredith",
+          "mood": "awkward"
+        },
+        {
+          "type": "say",
+          "who": "meredith",
+          "text": "Two at a time. Got it.",
+          "to": "michael",
+          "mood": "happy"
+        },
+        {
+          "type": "talking_head",
+          "who": "michael",
+          "lines": [
+            "The Dundies are my gift to this office. Some people get a plaque. My people get a trophy and a standing ovation. From me."
+          ],
+          "mood": "smug"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "B",
+      "set": "office",
+      "region": "bullpen",
+      "venue": "",
+      "present": [
+        "dwight",
+        "jim",
+        "oscar",
+        "michael"
+      ],
+      "recap": "Dwight's business cards appear.",
+      "beats": [
+        {
+          "type": "action",
+          "who": "dwight",
+          "verb": "present",
+          "target": "none",
+          "caption": "hands out business cards to the bullpen"
+        },
+        {
+          "type": "say",
+          "who": "oscar",
+          "text": "Assistant Regional Manager. Michael approved this?",
+          "to": "dwight",
+          "mood": "sarcastic"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "He will. It's a formality, like a trial.",
+          "to": "oscar",
+          "mood": "smug"
+        },
+        {
+          "type": "move",
+          "who": "michael",
+          "to": "dwight_desk",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Ha! Dwight, great joke. Very funny prank card. Obviously a joke.",
+          "to": "all",
+          "mood": "awkward"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "It is not a joke. I printed five hundred.",
+          "to": "michael",
+          "mood": "neutral"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": "Michael looks at the box of cards"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Then it is a very big joke. Put them away until tonight.",
+          "to": "dwight",
+          "mood": "nervous"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "C",
+      "set": "office",
+      "region": "bullpen",
+      "venue": "",
+      "present": [
+        "michael",
+        "ryan",
+        "kelly"
+      ],
+      "recap": "Michael makes Ryan the designated driver.",
+      "beats": [
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Ryan, my protege. You'll be my wingman and my designated driver.",
+          "to": "ryan",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "ryan",
+          "text": "I was going to skip it, actually.",
+          "to": "michael",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "kelly",
+          "text": "Oh my God, are you coming? I'm wearing the dress from the Kardashian thing.",
+          "to": "ryan",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "ryan",
+          "text": "Fine. I'll drive.",
+          "to": "michael",
+          "mood": "annoyed"
+        },
+        {
+          "type": "talking_head",
+          "who": "ryan",
+          "lines": [
+            "I'm here for the experience. And the paycheck. Mostly the paycheck."
+          ],
+          "mood": "deadpan"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "B",
+      "set": "warehouse",
+      "region": "warehouse",
+      "venue": "",
+      "present": [
+        "darryl"
+      ],
+      "recap": "Warehouse guys feel excluded from the Dundies.",
+      "beats": [
+        {
+          "type": "enter",
+          "who": [
+            "dwight"
+          ],
+          "to": "darryl"
+        },
+        {
+          "type": "say",
+          "who": "darryl",
+          "text": "So the warehouse isn't invited to the Dundies?",
+          "to": "dwight",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "The Dundies are for office personnel. Warehouse personnel are, respectfully, lesser.",
+          "to": "darryl",
+          "mood": "neutral"
+        },
+        {
+          "type": "enter",
+          "who": [
+            "roy"
+          ],
+          "to": "darryl"
+        },
+        {
+          "type": "say",
+          "who": "roy",
+          "text": "I'm going anyway. Pam's there.",
+          "to": "dwight",
+          "mood": "angry"
+        },
+        {
+          "type": "say",
+          "who": "darryl",
+          "text": "Dwight, go tell Michael we're coming. Or I tell him you said 'lesser.'",
+          "to": "dwight",
+          "mood": "deadpan"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "A",
+      "set": "offsite",
+      "region": "venue",
+      "venue": "CHILI'S",
+      "present": [
+        "michael",
+        "ryan",
+        "jim",
+        "pam",
+        "dwight",
+        "stanley",
+        "phyllis",
+        "angela",
+        "oscar",
+        "kevin",
+        "kelly",
+        "meredith",
+        "creed",
+        "toby",
+        "darryl",
+        "roy"
+      ],
+      "recap": "The Dundies begin at Chili's.",
+      "beats": [
+        {
+          "type": "caption",
+          "text": "CHILI'S, 8:00 PM"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Welcome to the Dundies! Tonight, we honor you. Because I said so.",
+          "to": "all",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Kevin Malone, Don't Go in There After Me Award.",
+          "to": "kevin",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "Thank you. I did my best.",
+          "to": "all",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Creed Bratton, Tuesday Morning Wake Up Call Award.",
+          "to": "creed",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "creed",
+          "text": "I once slept in a car for a year. The car was moving.",
+          "to": "all",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Meredith, Cutest Tush. Which is totally my area of authority.",
+          "to": "meredith",
+          "mood": "awkward"
+        },
+        {
+          "type": "react",
+          "who": [
+            "pam"
+          ],
+          "reaction": "cringe"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "B",
+      "set": "offsite",
+      "region": "venue",
+      "venue": "CHILI'S",
+      "present": [
+        "michael",
+        "dwight",
+        "darryl",
+        "roy",
+        "jim",
+        "oscar"
+      ],
+      "recap": "Dwight's cards come out at the worst moment.",
+      "beats": [
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "And now, Hottest in the Office. Dwight, you're up.",
+          "to": "dwight",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Thank you. Everyone, please take a card.",
+          "to": "all",
+          "mood": "smug"
+        },
+        {
+          "type": "action",
+          "who": "dwight",
+          "verb": "present",
+          "target": "none",
+          "caption": "throws business cards across the table like a dealer"
+        },
+        {
+          "type": "say",
+          "who": "darryl",
+          "text": "Assistant Regional Manager? Man, I've been here twelve years and I don't get a card.",
+          "to": "michael",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Darryl, it's a joke. Dwight, tell him.",
+          "to": "dwight",
+          "mood": "panicked"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Not a joke. Soon to be official.",
+          "to": "all",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "oscar",
+          "text": "So the secret all week was a box of cards.",
+          "to": "jim",
+          "mood": "sarcastic"
+        },
+        {
+          "type": "say",
+          "who": "darryl",
+          "text": "Everybody calm down. Dwight, take it back. Michael, make a decision on Monday. Done.",
+          "to": "all",
+          "mood": "deadpan"
+        },
+        {
+          "type": "talking_head",
+          "who": "darryl",
+          "lines": [
+            "Michael doesn't need an assistant. He needs a nap and a guardian. I'd take the guardian job."
+          ],
+          "mood": "deadpan"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "A",
+      "set": "offsite",
+      "region": "venue",
+      "venue": "CHILI'S",
+      "present": [
+        "pam",
+        "jim",
+        "roy",
+        "michael"
+      ],
+      "recap": "Drunk Pam takes the mic.",
+      "beats": [
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Pam Beesly, Whitest Sneakers. Come on up.",
+          "to": "pam",
+          "mood": "happy"
+        },
+        {
+          "type": "action",
+          "who": "pam",
+          "verb": "drink",
+          "target": "none",
+          "caption": "finishes her fourth margarita"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "I've been at that desk for years. I'm an artist. Nobody knows that.",
+          "to": "all",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Jim knows. Jim is my best friend. He is the best part of my day.",
+          "to": "all",
+          "mood": "happy"
+        },
+        {
+          "type": "react",
+          "who": [
+            "jim"
+          ],
+          "reaction": "stare"
+        },
+        {
+          "type": "pause",
+          "seconds": 3,
+          "caption": "Roy is not clapping"
+        },
+        {
+          "type": "say",
+          "who": "roy",
+          "text": "Pam. Let's go.",
+          "to": "pam",
+          "mood": "angry"
+        },
+        {
+          "type": "talking_head",
+          "who": "jim",
+          "lines": [
+            "She won't remember that tomorrow. I will."
+          ],
+          "mood": "sad"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "C",
+      "set": "offsite",
+      "region": "entrance",
+      "venue": "CHILI'S",
+      "present": [
+        "ryan",
+        "michael"
+      ],
+      "recap": "Ryan finds Michael outside, sad.",
+      "beats": [
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Nobody laughs at my jokes. They laugh at the trophies.",
+          "to": "ryan",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "ryan",
+          "text": "They're laughing. They're just... drunk.",
+          "to": "michael",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "You're a good friend, Ryan.",
+          "to": "ryan",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "ryan",
+          "text": "I'm the designated driver. It's a contract.",
+          "to": "michael",
+          "mood": "deadpan"
+        },
+        {
+          "type": "react",
+          "who": [
+            "ryan"
+          ],
+          "reaction": "look_at_camera"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "A",
+      "set": "offsite",
+      "region": "venue",
+      "venue": "CHILI'S",
+      "present": [
+        "michael",
+        "jim",
+        "pam",
+        "dwight",
+        "stanley",
+        "phyllis",
+        "angela",
+        "oscar",
+        "kevin",
+        "kelly",
+        "meredith",
+        "creed",
+        "toby",
+        "darryl",
+        "roy",
+        "ryan"
+      ],
+      "recap": "Michael gives a sincere speech.",
+      "beats": [
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Last one. I know I'm not great at this. I just wanted you all in one room.",
+          "to": "all",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "You are my family. Some of you, anyway. Not you, Toby.",
+          "to": "all",
+          "mood": "sad"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": "Nobody laughs. Then Darryl starts clapping."
+        },
+        {
+          "type": "say",
+          "who": "darryl",
+          "text": "That was real, Michael.",
+          "to": "michael",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Dwight, you are Assistant to the Regional Manager. The rest we'll discuss.",
+          "to": "dwight",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Understood. I will not stop.",
+          "to": "michael",
+          "mood": "happy"
+        },
+        {
+          "type": "talking_head",
+          "who": "michael",
+          "lines": [
+            "I did not cry. Chili's has onions in the air."
+          ],
+          "mood": "sad"
+        }
+      ]
+    },
+    {
+      "part": "tag",
+      "plot": "tag",
+      "set": "office",
+      "region": "reception",
+      "venue": "",
+      "present": [
+        "pam",
+        "jim"
+      ],
+      "recap": "Morning after: Pam doesn't remember.",
+      "beats": [
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Did I say anything last night? I have a headache and no memory.",
+          "to": "jim",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "Nope. You were great. Totally normal.",
+          "to": "pam",
+          "mood": "deadpan"
+        },
+        {
+          "type": "react",
+          "who": [
+            "jim"
+          ],
+          "reaction": "look_at_camera"
+        },
+        {
+          "type": "say",
+          "who": "creed",
+          "text": "I'm told I won something last night. I don't recall the car ride.",
+          "to": "none",
+          "mood": "neutral"
+        }
+      ]
+    }
+  ]
+}

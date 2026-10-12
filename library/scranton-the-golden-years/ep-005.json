@@ -1,0 +1,667 @@
+{
+  "title": "Lunch Hour",
+  "logline": "Michael's mandatory \"Team Lunch Efficiency\" initiative runs into Pam's canceled lunch with Roy, Dwight's title scheming, and Ryan's website pitch.",
+  "outline": "A: Michael bans desk lunches and forces a \"family lunch\" in the conference room, wanting to be loved. B: Roy cancels on Pam; Jim eats with her in the parking lot (Pam/Jim), while Dwight tries to become the lunch enforcer. C: Ryan pitches a website to David on the phone; Andy tries too hard. Order: cold, A, B, C, A, B, A, C, B, A, tag",
+  "theme": "Who do you eat lunch with: being chosen.",
+  "storySoFar": "Michael's dinner with Jan was canceled earlier; the office gave him a warm moment. Ryan is his reluctant protege and this week pitched a website to David Wallace, who said he'd look at it. Dwight campaigns for Assistant Regional Manager; owes beet refunds; Jim holds one real beet. Pam keeps Jim's lamp on; Roy canceled lunch on her again and Jim sat with her in the parking lot, nothing said. Andy tried too hard to be liked and got iced out of the family lunch. Michael's family lunch ended with him eating alone, then the office joining him.",
+  "extras": [],
+  "stateChanges": [
+    {
+      "type": "arc",
+      "arc": "Will They, Won't They",
+      "progress": "Roy cancelled on Pam again; Jim ate lunch with her in the parking lot. Pam quietly noticed Roy never asks what she wants."
+    },
+    {
+      "type": "arc",
+      "arc": "Ryan the Temp",
+      "progress": "Ryan pitched a website idea to David Wallace; David said he'd look at it. Michael half-knows."
+    },
+    {
+      "type": "arc",
+      "arc": "Assistant (to the) Regional Manager",
+      "progress": "Dwight appointed himself Lunch Monitor; Michael still stalling on the title."
+    },
+    {
+      "type": "note",
+      "text": "David Wallace may follow up on Ryan's website pitch."
+    },
+    {
+      "type": "gag",
+      "text": "Andy tries too hard (a cappella lunch song) and is ignored."
+    }
+  ],
+  "scenes": [
+    {
+      "part": "cold_open",
+      "plot": "cold_open",
+      "set": "office",
+      "region": "bullpen",
+      "venue": "",
+      "present": [
+        "jim",
+        "dwight",
+        "pam"
+      ],
+      "recap": "Jim convinces Dwight that lunch smells are a security risk.",
+      "beats": [
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "Dwight, quick question. Do you smell tuna?",
+          "to": "dwight",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Yes. Tuna is a known bear attractant. Who is eating tuna?",
+          "to": "jim",
+          "mood": "panicked"
+        },
+        {
+          "type": "action",
+          "who": "jim",
+          "verb": "prank",
+          "target": "dwight",
+          "caption": "slides a tuna can under Dwight's desk"
+        },
+        {
+          "type": "move",
+          "who": "dwight",
+          "to": "jim_desk",
+          "pace": "hurry"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "I am sweeping the building for bears. Nobody move.",
+          "to": "all",
+          "mood": "angry"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "It's a tuna sandwich, Dwight. In Stanley's hand.",
+          "to": "dwight",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "stanley",
+          "text": "Did I stutter? It's tuna.",
+          "to": "dwight",
+          "mood": "annoyed"
+        },
+        {
+          "type": "react",
+          "who": [
+            "jim"
+          ],
+          "reaction": "look_at_camera"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "A",
+      "set": "office",
+      "region": "conference_room",
+      "venue": "",
+      "present": [
+        "michael",
+        "dwight",
+        "jim",
+        "pam",
+        "stanley",
+        "andy",
+        "oscar",
+        "kevin",
+        "toby",
+        "angela",
+        "phyllis"
+      ],
+      "recap": "Michael bans desk lunches and announces mandatory Family Lunch.",
+      "beats": [
+        {
+          "type": "gather",
+          "who": [
+            "everyone"
+          ],
+          "to": "conference_room"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "People. I read that families who eat together stay together. We are a family. Therefore, lunch together. Mandatory.",
+          "to": "all",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "stanley",
+          "text": "My lunch is the one hour I don't know you.",
+          "to": "michael",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "toby",
+          "text": "Technically a mandatory lunch has to be paid time, so—",
+          "to": "michael",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Toby, nobody asked you. Not now, not ever, not at lunch.",
+          "to": "toby",
+          "mood": "angry"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "I volunteer as Lunch Monitor. I will take attendance and confiscate unauthorized sandwiches.",
+          "to": "michael",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "We'll see. Wait, no. We'll see.",
+          "to": "dwight",
+          "mood": "awkward"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "I wrote a lunch song. It's a cappella. I'll do all four parts.",
+          "to": "all",
+          "mood": "excited"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": "Nobody responds"
+        },
+        {
+          "type": "talking_head",
+          "who": "michael",
+          "lines": [
+            "Lunch is the heart of the day. Also the stomach. That's what she said. I don't know why."
+          ],
+          "mood": "smug"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "B",
+      "set": "office",
+      "region": "reception",
+      "venue": "",
+      "present": [
+        "pam",
+        "jim"
+      ],
+      "recap": "Roy cancels on Pam by phone; Jim notices.",
+      "beats": [
+        {
+          "type": "action",
+          "who": "pam",
+          "verb": "phone_call",
+          "target": "none",
+          "caption": "listens to Roy on the phone"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "No, it's fine. Guys from the warehouse. No, totally. Okay. Bye.",
+          "to": "none",
+          "mood": "sad"
+        },
+        {
+          "type": "move",
+          "who": "jim",
+          "to": "pam_desk",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "Everything okay?",
+          "to": "pam",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Roy's lunch thing. It's fine. It's the third time. It's fine.",
+          "to": "jim",
+          "mood": "awkward"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "I have a sandwich. And a parking lot. Well, the lot isn't mine.",
+          "to": "pam",
+          "mood": "happy"
+        },
+        {
+          "type": "react",
+          "who": [
+            "pam"
+          ],
+          "reaction": "laugh"
+        },
+        {
+          "type": "talking_head",
+          "who": "toby",
+          "lines": [
+            "I'm not saying I noticed Pam is sad. I'm saying I noticed. Which is different, I think."
+          ],
+          "mood": "sad"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "C",
+      "set": "office",
+      "region": "michael_office",
+      "venue": "",
+      "present": [
+        "ryan",
+        "michael"
+      ],
+      "recap": "Ryan takes a call from David and pitches a website.",
+      "beats": [
+        {
+          "type": "say",
+          "who": "ryan",
+          "text": "David. Ryan Howard. I'm thinking direct online orders. Paper, but on the internet.",
+          "to": "none",
+          "mood": "neutral"
+        },
+        {
+          "type": "move",
+          "who": "michael",
+          "to": "michael_desk",
+          "pace": "hurry"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Is that David? Tell him I taught you everything. Say Michael Scott, mentor.",
+          "to": "ryan",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "ryan",
+          "text": "Michael, this is a one-on-one. Can you not hover?",
+          "to": "michael",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Hover. Yes. Like a hummingbird. A supportive one.",
+          "to": "ryan",
+          "mood": "awkward"
+        },
+        {
+          "type": "talking_head",
+          "who": "ryan",
+          "lines": [
+            "If David likes it, I'm out of here. Not out of here out of here. Up. Out and up."
+          ],
+          "mood": "smug"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "A",
+      "set": "office",
+      "region": "conference_room",
+      "venue": "",
+      "present": [
+        "michael",
+        "dwight",
+        "stanley",
+        "andy",
+        "oscar",
+        "kevin",
+        "angela",
+        "phyllis",
+        "meredith",
+        "creed"
+      ],
+      "recap": "Family Lunch is held; Andy's song, Dwight's confiscations.",
+      "beats": [
+        {
+          "type": "caption",
+          "text": "12:00 PM. FAMILY LUNCH"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Attendance. Kevin. Present. Oscar. Present, regretfully.",
+          "to": "all",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "Okay, everybody. This one's called 'Lunchtime, Anytime.' Ahem.",
+          "to": "all",
+          "mood": "excited"
+        },
+        {
+          "type": "action",
+          "who": "andy",
+          "verb": "sing",
+          "target": "none",
+          "caption": "sings a four-part lunch song alone"
+        },
+        {
+          "type": "say",
+          "who": "angela",
+          "text": "My cats don't even do that.",
+          "to": "andy",
+          "mood": "annoyed"
+        },
+        {
+          "type": "react",
+          "who": [
+            "oscar"
+          ],
+          "reaction": "cringe"
+        },
+        {
+          "type": "say",
+          "who": "creed",
+          "text": "I ate lunch with a man once. Only one of us left the room.",
+          "to": "all",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Great. Wonderful. Who wants to share something about their week?",
+          "to": "all",
+          "mood": "excited"
+        },
+        {
+          "type": "pause",
+          "seconds": 3,
+          "caption": "Everyone stares at their sandwiches"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "B",
+      "set": "parking_lot",
+      "region": "parking_lot",
+      "venue": "",
+      "present": [
+        "jim",
+        "pam"
+      ],
+      "recap": "Jim and Pam eat in the lot.",
+      "beats": [
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Can I tell you something dumb? I wasn't even upset about the lunch.",
+          "to": "jim",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "What were you upset about?",
+          "to": "pam",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "That I wasn't surprised. And that I didn't really mind who I was eating with.",
+          "to": "jim",
+          "mood": "awkward"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": "A long look"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "Well. I'm very glad I'm the one with the sandwich.",
+          "to": "pam",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Me too.",
+          "to": "jim",
+          "mood": "happy"
+        },
+        {
+          "type": "react",
+          "who": [
+            "jim"
+          ],
+          "reaction": "look_at_camera"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "A",
+      "set": "office",
+      "region": "conference_room",
+      "venue": "",
+      "present": [
+        "michael",
+        "dwight",
+        "kevin"
+      ],
+      "recap": "Everyone has left; Michael is left alone at his own lunch.",
+      "beats": [
+        {
+          "type": "action",
+          "who": "michael",
+          "verb": "eat",
+          "target": "none",
+          "caption": "eats alone at the long table"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Everyone sneaked out. I tried to stop them. Stanley used a stairwell.",
+          "to": "michael",
+          "mood": "angry"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "It's fine. Families grow apart. It's natural. It's sad.",
+          "to": "dwight",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "I'll stay. I have chili.",
+          "to": "michael",
+          "mood": "happy"
+        },
+        {
+          "type": "talking_head",
+          "who": "michael",
+          "lines": [
+            "I just wanted one lunch where nobody looked at their watch. Is that a lot? Don't answer."
+          ],
+          "mood": "sad"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "C",
+      "set": "office",
+      "region": "michael_office",
+      "venue": "",
+      "present": [
+        "ryan",
+        "michael"
+      ],
+      "recap": "David calls back; Michael learns Ryan pitched alone.",
+      "beats": [
+        {
+          "type": "say",
+          "who": "ryan",
+          "text": "David wants to see a proposal. I may need Thursday off.",
+          "to": "michael",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "You went over my head. To my boss's boss. Who is my friend.",
+          "to": "ryan",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "ryan",
+          "text": "I didn't go over. I went around. Up.",
+          "to": "michael",
+          "mood": "neutral"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": ""
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Take Thursday. And Ryan? Take me with you. In spirit.",
+          "to": "ryan",
+          "mood": "awkward"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "A",
+      "set": "office",
+      "region": "bullpen",
+      "venue": "",
+      "present": [
+        "michael",
+        "jim",
+        "pam",
+        "stanley",
+        "kevin",
+        "oscar",
+        "andy",
+        "dwight",
+        "phyllis"
+      ],
+      "recap": "The office quietly brings lunches to Michael.",
+      "beats": [
+        {
+          "type": "move",
+          "who": "pam",
+          "to": "conf_1",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Michael, we're all going to eat in the conference room. If that's okay.",
+          "to": "michael",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Voluntarily? Is this a prank?",
+          "to": "pam",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "stanley",
+          "text": "I had a pretzel. It was a good day. Sit down.",
+          "to": "michael",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "Lunchtime, anytime—",
+          "to": "all",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "oscar",
+          "text": "Andy. No.",
+          "to": "andy",
+          "mood": "annoyed"
+        },
+        {
+          "type": "talking_head",
+          "who": "andy",
+          "lines": [
+            "I think it's going great. I feel closer to everybody. Mostly physically."
+          ],
+          "mood": "nervous"
+        }
+      ]
+    },
+    {
+      "part": "tag",
+      "plot": "tag",
+      "set": "office",
+      "region": "bullpen",
+      "venue": "",
+      "present": [
+        "jim",
+        "dwight"
+      ],
+      "recap": "Dwight finds the tuna can.",
+      "beats": [
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Found it. The tuna. Under my desk. Whoever did this is a bear.",
+          "to": "jim",
+          "mood": "angry"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "Probably Creed.",
+          "to": "dwight",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "creed",
+          "text": "Probably.",
+          "to": "none",
+          "mood": "neutral"
+        }
+      ]
+    }
+  ]
+}

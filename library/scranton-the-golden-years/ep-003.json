@@ -1,0 +1,573 @@
+{
+  "title": "Dinner for Two, Table for One",
+  "logline": "Michael plans an elaborate dinner for Jan and calls a meeting to hype it, Jim gives Pam a fixed lamp, and Dwight campaigns for a title while Andy tries way too hard.",
+  "outline": "A: Michael plans an elaborate dinner for Jan, calls an all-staff meeting, Jan cancels, office gives him an honest moment. B: Dwight pushes for Assistant title; Andy tries too hard to be liked. C: Jim fixes Pam's lamp; Pam quietly touched. Order: cold, A, C, B, A, B, C, A, B, A, tag",
+  "theme": "Wanting to be chosen, and the small kindnesses that say you are.",
+  "storySoFar": "Michael's special friend is Jan; he planned an elaborate dinner, she canceled by phone, and the office gave him a small honest moment. Ryan is his reluctant protege, hates the mentor mug, and drove him home. Dwight lobbies for Assistant Regional Manager; his cards are known to all. Jim pranks Dwight and gave Pam a repaired desk lamp; Pam is quietly moved while engaged to Roy. Andy tried too hard to be liked and got ignored.",
+  "extras": [],
+  "stateChanges": [
+    {
+      "type": "note",
+      "text": "Jim fixed Pam's desk lamp; she kept it on all day and told no one it mattered."
+    },
+    {
+      "type": "note",
+      "text": "Jan canceled the dinner by phone; Michael got a kind moment from the office."
+    },
+    {
+      "type": "arc",
+      "arc": "Michael Needs a Date",
+      "progress": "Dinner planned and canceled by Jan; office gave Michael a warm moment."
+    },
+    {
+      "type": "arc",
+      "arc": "Will They, Won't They",
+      "progress": "Jim gave Pam a fixed lamp; she is touched, nothing said."
+    },
+    {
+      "type": "arc",
+      "arc": "Assistant (to the) Regional Manager",
+      "progress": "Dwight keeps campaigning; Michael still stalling but touched."
+    },
+    {
+      "type": "gag",
+      "text": "Jim put Dwight's stapler in Jell-O again; Dwight blamed Creed."
+    }
+  ],
+  "scenes": [
+    {
+      "part": "cold_open",
+      "plot": "cold_open",
+      "set": "office",
+      "region": "bullpen",
+      "venue": "",
+      "present": [
+        "jim",
+        "dwight",
+        "creed"
+      ],
+      "recap": "Dwight finds his stapler in Jell-O and blames Creed.",
+      "beats": [
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Jell-O. Again. Creed, you have crossed a line.",
+          "to": "creed",
+          "mood": "angry"
+        },
+        {
+          "type": "say",
+          "who": "creed",
+          "text": "I did that in '73. Different stapler. Same jail.",
+          "to": "dwight",
+          "mood": "neutral"
+        },
+        {
+          "type": "react",
+          "who": [
+            "jim"
+          ],
+          "reaction": "look_at_camera"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Do not change the subject with prison.",
+          "to": "creed",
+          "mood": "annoyed"
+        },
+        {
+          "type": "talking_head",
+          "who": "dwight",
+          "lines": [
+            "Creed is the only one capable of this. Also he has a shifty look. Like a raccoon that went to college."
+          ],
+          "mood": "deadpan"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "A",
+      "set": "office",
+      "region": "michael_office",
+      "venue": "",
+      "present": [
+        "michael",
+        "pam"
+      ],
+      "recap": "Michael plans an elaborate dinner and calls an all-staff meeting.",
+      "beats": [
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Pam, all-staff meeting. Conference room. Five minutes. Important.",
+          "to": "pam",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "What's it about?",
+          "to": "michael",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "I will tell everyone at the meeting. That is what a meeting is for.",
+          "to": "pam",
+          "mood": "smug"
+        },
+        {
+          "type": "gather",
+          "who": [
+            "everyone"
+          ],
+          "to": "conference_room"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Tonight, I am having dinner with Jan. Candles. A tablecloth. Possibly a violinist.",
+          "to": "all",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "oscar",
+          "text": "Is this an all-staff meeting about your date?",
+          "to": "michael",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "It's about love, Oscar. Which affects us all.",
+          "to": "oscar",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "stanley",
+          "text": "I have a crossword.",
+          "to": "michael",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "I need a poem. Everyone write one line. Go.",
+          "to": "all",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "Roses red. Food.",
+          "to": "all",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "toby",
+          "text": "Michael, this isn't really a work-related—",
+          "to": "michael",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Toby, no. Not today. Not ever.",
+          "to": "toby",
+          "mood": "angry"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": "Toby sighs"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "C",
+      "set": "office",
+      "region": "reception",
+      "venue": "",
+      "present": [
+        "jim",
+        "pam"
+      ],
+      "recap": "Jim gives Pam a fixed lamp.",
+      "beats": [
+        {
+          "type": "action",
+          "who": "jim",
+          "verb": "present",
+          "target": "pam",
+          "caption": "sets a repaired desk lamp on her desk"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "It was flickering. I had a spare screw. And an hour.",
+          "to": "pam",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "You fixed my lamp?",
+          "to": "jim",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "Technically I fixed a lamp. Yours happened to be nearby.",
+          "to": "pam",
+          "mood": "awkward"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": "a long look"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Thank you. Really.",
+          "to": "jim",
+          "mood": "happy"
+        },
+        {
+          "type": "talking_head",
+          "who": "pam",
+          "lines": [
+            "Nobody's ever fixed anything of mine on purpose. Roy would just say buy a new one."
+          ],
+          "mood": "sad"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "B",
+      "set": "office",
+      "region": "bullpen",
+      "venue": "",
+      "present": [
+        "dwight",
+        "andy",
+        "jim",
+        "ryan"
+      ],
+      "recap": "Dwight lobbies while Andy tries too hard.",
+      "beats": [
+        {
+          "type": "enter",
+          "who": [
+            "andy"
+          ],
+          "to": "andy_desk"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "Hey, hey! Who wants to hear me sing a cappella? Nard Dog is in the house.",
+          "to": "all",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "ryan",
+          "text": "No.",
+          "to": "andy",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "I'll take that as a yes, if you're into limited engagement.",
+          "to": "ryan",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Question: who needs a second-in-command? Answer: this office. Me.",
+          "to": "all",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "Dwight, nobody asked that question.",
+          "to": "dwight",
+          "mood": "deadpan"
+        },
+        {
+          "type": "talking_head",
+          "who": "andy",
+          "lines": [
+            "I went to Cornell. Did I mention Cornell? I try not to."
+          ],
+          "mood": "nervous"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "A",
+      "set": "office",
+      "region": "michael_office",
+      "venue": "",
+      "present": [
+        "michael",
+        "jan"
+      ],
+      "recap": "Jan cancels the dinner by phone.",
+      "beats": [
+        {
+          "type": "action",
+          "who": "michael",
+          "verb": "phone_call",
+          "target": "none",
+          "caption": "takes Jan's call, smiling"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Jan! Tonight, still on. I got a table by the window.",
+          "to": "none",
+          "mood": "happy"
+        },
+        {
+          "type": "pause",
+          "seconds": 3,
+          "caption": "Jan is talking"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "No, no, a work thing. Of course. Totally. Business first.",
+          "to": "none",
+          "mood": "awkward"
+        },
+        {
+          "type": "action",
+          "who": "michael",
+          "verb": "hide",
+          "target": "none",
+          "caption": "hangs up and stares at the wall"
+        },
+        {
+          "type": "talking_head",
+          "who": "michael",
+          "lines": [
+            "I'm fine. I made a reservation for two. Now it's for one, plus a candle."
+          ],
+          "mood": "sad"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "B",
+      "set": "office",
+      "region": "bullpen",
+      "venue": "",
+      "present": [
+        "dwight",
+        "andy",
+        "kevin",
+        "oscar"
+      ],
+      "recap": "Andy's overeager song backfires; Dwight keeps campaigning.",
+      "beats": [
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "Kevin, I wrote you a song! 'Chili Kevin, Chili Kevin, Kev-in!'",
+          "to": "kevin",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "I don't like it. It's too much.",
+          "to": "andy",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "oscar",
+          "text": "Actually, that's the first honest thing Kevin's said all week.",
+          "to": "andy",
+          "mood": "sarcastic"
+        },
+        {
+          "type": "react",
+          "who": [
+            "oscar"
+          ],
+          "reaction": "look_at_camera"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Andy, you try too hard. I try the correct amount, which is maximum.",
+          "to": "andy",
+          "mood": "neutral"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "C",
+      "set": "office",
+      "region": "reception",
+      "venue": "",
+      "present": [
+        "pam",
+        "jim"
+      ],
+      "recap": "Pam keeps the lamp on.",
+      "beats": [
+        {
+          "type": "action",
+          "who": "pam",
+          "verb": "typing",
+          "target": "none",
+          "caption": "works under the repaired lamp"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "It's the only desk in Scranton with good light now.",
+          "to": "jim",
+          "mood": "happy"
+        },
+        {
+          "type": "react",
+          "who": [
+            "jim"
+          ],
+          "reaction": "look_at_camera"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "Glad it's working out.",
+          "to": "pam",
+          "mood": "happy"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "A",
+      "set": "office",
+      "region": "conference_room",
+      "venue": "",
+      "present": [
+        "michael",
+        "ryan",
+        "pam",
+        "jim",
+        "dwight",
+        "kevin"
+      ],
+      "recap": "The office gives Michael an honest moment.",
+      "beats": [
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Dinner's off. Jan has work. It's fine. Meeting adjourned.",
+          "to": "all",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "ryan",
+          "text": "Michael, I'm free tonight. We could get wings.",
+          "to": "michael",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "We're all going. Kevin's bringing chili.",
+          "to": "michael",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "I will bring a lot of chili.",
+          "to": "michael",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "You'd do that? For me?",
+          "to": "all",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "I'll bring a bear-safe vegetable tray.",
+          "to": "michael",
+          "mood": "neutral"
+        },
+        {
+          "type": "talking_head",
+          "who": "michael",
+          "lines": [
+            "People think I do meetings because I'm lonely. I do meetings because that's when everyone is in one room."
+          ],
+          "mood": "sad"
+        }
+      ]
+    },
+    {
+      "part": "tag",
+      "plot": "tag",
+      "set": "office",
+      "region": "bullpen",
+      "venue": "",
+      "present": [
+        "dwight",
+        "jim",
+        "creed"
+      ],
+      "recap": "Dwight finds Jell-O again.",
+      "beats": [
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Creed. Again.",
+          "to": "creed",
+          "mood": "angry"
+        },
+        {
+          "type": "say",
+          "who": "creed",
+          "text": "The first rule of prison: never tell them the Jell-O recipe.",
+          "to": "dwight",
+          "mood": "neutral"
+        },
+        {
+          "type": "react",
+          "who": [
+            "jim"
+          ],
+          "reaction": "stare"
+        }
+      ]
+    }
+  ]
+}
