@@ -119,7 +119,7 @@ function start(target?: Target, done: () => void = () => start()): void {
   head = new HeadView($('head-gfx'), stage);
   feed = new FeedView($('feed'), stage);
   feed.clear();
-  card = new CardView($('card'), stage);
+  card = new CardView($('card'));
   card.setEpisode(episode, navFor());
   stage.on(onEvent);
   $('subtitle').innerHTML = '';
@@ -474,7 +474,6 @@ function frame(now: number): void {
     const onHead = stage.head !== null;
     drawMap(onHead);
     head.show(onHead);
-    card.tick();
     renderStatus();
   }
   requestAnimationFrame(frame);

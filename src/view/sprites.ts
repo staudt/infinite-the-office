@@ -8,7 +8,7 @@ import { readTime, type Stage } from '../engine/stage';
 import type { SetMap } from '../sets/index.ts';
 import { art } from './art';
 import { buildAscii } from './ascii';
-import { bodyRect, placeBalloon } from './balloons';
+import { bodyRect, placeBalloon, type ScreenRect } from './balloons';
 import { ease, frame, regionBox, shotBox, widenFor, type Cam } from './camera';
 import { CAM_EASE, EMOTE, geoOf, SIDE_HALF, type Geo } from './geometry';
 import { drawGrid, GRID } from './grid';
@@ -264,7 +264,7 @@ export class SpriteMapView {
   private placeBalloons(poses: Pose[], geo: Geo, cam: Cam, cw: number, chh: number): void {
     const k = cw / cam.w, vx = cam.cx - cam.w / 2, vy = cam.cy - cam.w / (cw / chh) / 2;
     const body = (p: Pose) => { const [fx, fy] = geo.foot(p.x, p.y); return { x: (fx - vx) * k, feet: (fy + geo.feetPad - vy) * k }; };
-    const taken = poses.map((p) => { const b = body(p); return bodyRect(b.x, b.feet, geo.personH * k, k); });
+    const bodies = poses.map((p) => { const b = body(p); return bodyRect(b.x, b.feet, geo.personH * k, k); }), placed: ScreenRect[] = [];
     for (const b of [...this.balloons.values()].sort((a, c) => a.at - c.at)) {
       if (!b.mw || !b.w) {
         b.el.style.transform = '';
@@ -275,8 +275,8 @@ export class SpriteMapView {
       const p = poses.find((q) => q.a.id === b.who);
       if (!p) continue;
       const { x, feet } = body(p);
-      const pick = placeBalloon(b.w, b.h, x, feet, geo.personH * k, k, cw, chh, taken);
-      taken.push(pick.rect);
+      const pick = placeBalloon(b.w, b.h, x, feet, geo.personH * k, k, cw, chh, bodies, placed);
+      placed.push(pick.rect);
       const pos = `translate(${Math.round(pick.l)}px,${Math.round(pick.t)}px)`;
       if (b.pos !== pos) { b.pos = pos; b.el.style.transform = pos; }
       if (b.tail !== pick.side) { b.tail = pick.side; b.el.dataset.tail = pick.side; }

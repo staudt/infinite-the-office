@@ -51,6 +51,12 @@ export const BALLOON = {
   bodyHalf: 22, // world px: half width of a body for avoiding collisions
   tailMin: 10,  // screen px: a tail stays this far from a balloon's corners
   tailMinSide: 8,
+  // Placement scores in screen px of distance from the head: covering someone costs this much per world px² of them hidden
+  // (a face is ~1300), and going beside / below costs a flat extra.
+  coverCost: 0.08,
+  offCenterCost: 0.15, // per px the balloon's center is off the speaker
+  sideCost: 30,
+  belowCost: 120,
 };
 /** Reaction emote pill: above the head by this much (world px), font size in CSS px (x dpr). */
 export const EMOTE = { lift: 16, font: 13 };

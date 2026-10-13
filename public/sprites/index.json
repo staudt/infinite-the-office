@@ -205,6 +205,16 @@
    "w": 78,
    "h": 117
   },
+  "michael_credenza": {
+   "src": "props/michael_credenza.png",
+   "w": 144,
+   "h": 63
+  },
+  "michael_desk_front": {
+   "src": "props/michael_desk_front.png",
+   "w": 166,
+   "h": 99
+  },
   "chair_front": {
    "src": "props/chair_front.png",
    "w": 69,

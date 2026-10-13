@@ -48,7 +48,8 @@
   ],
 
   "props": [
-    { "sprite": "michael_desk", "x": 330, "y": 278, "split": 58, "solid": [{ "x": 0, "y": 2, "w": 166, "h": 50 }, { "x": 0, "y": 78, "w": 166, "h": 72 }] },
+    { "sprite": "michael_credenza", "x": 330, "y": 160 },
+    { "sprite": "michael_desk_front", "x": 330, "y": 278, "solid": { "x": 0, "y": 24, "w": 166, "h": 72 } },
     { "sprite": "filing_cabinet_plant", "x": 222, "y": 150 },
     { "sprite": "wardrobe", "x": 450, "y": 150 },
     { "sprite": "plant_tall_2", "x": 478, "y": 346 },
@@ -64,7 +65,7 @@
     { "sprite": "counter_printer", "x": 147, "y": 760 },
     { "sprite": "plant_tall_2", "x": 52, "y": 930 },
 
-    { "sprite": "water_cooler", "x": 696, "y": 470, "w": 24, "h": 46 },
+    { "sprite": "water_cooler", "x": 696, "y": 470, "w": 34, "h": 64 },
     { "sprite": "credenza_shelf", "x": 840, "y": 474 },
     { "sprite": "bookshelf_low", "x": 960, "y": 478 },
     { "sprite": "plant_tall_4", "x": 1034, "y": 484 },

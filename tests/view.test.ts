@@ -58,7 +58,14 @@ describe('balloon placement', () => {
   const CW = 800, CH = 450, k = 2, bodyH = 96 * k;
   const sized = { w: 160, h: 50 };
   const inside = (r: ScreenRect) => r.x0 >= 0 && r.y0 >= 0 && r.x1 <= CW && r.y1 <= CH;
-  const place = (x: number, feet: number, taken: ScreenRect[] = []) => placeBalloon(sized.w, sized.h, x, feet, bodyH, k, CW, CH, taken);
+  const overlap = (a: ScreenRect, b: ScreenRect) => a.x0 < b.x1 && a.x1 > b.x0 && a.y0 < b.y1 && a.y1 > b.y0;
+  const place = (x: number, feet: number, bodies: ScreenRect[] = [], balloons: ScreenRect[] = []) => placeBalloon(sized.w, sized.h, x, feet, bodyH, k, CW, CH, bodies, balloons);
+  /** The tail sits on the edge facing the speaker, right at them. */
+  const pointsAt = (p: ReturnType<typeof place>, x: number) => {
+    if (p.side === 'b' || p.side === 't') expect(p.l + p.tail).toBeCloseTo(x);
+    expect(p.tail).toBeGreaterThan(0);
+    expect(p.tail).toBeLessThan(p.side === 'b' || p.side === 't' ? sized.w : sized.h);
+  };
 
   it('prefers above the head, centered on the speaker', () => {
     const p = place(400, 400, [bodyRect(400, 400, bodyH, k)]);
@@ -67,31 +74,45 @@ describe('balloon placement', () => {
     expect((p.rect.x0 + p.rect.x1) / 2).toBe(400);
     expect(p.tail).toBe(80);
   });
-  it('slides sideways to stay on the canvas', () => {
-    const p = place(10, 400);
-    expect(p.l).toBe(2);
+  it('near a canvas edge, slides and moves the tail so it still points at the speaker', () => {
+    const p = place(40, 400);
     expect(p.side).toBe('b');
-    expect(p.tail).toBeGreaterThanOrEqual(10);
+    expect(p.l).toBe(2);
+    pointsAt(p, 40);
+    const q = place(780, 400);
+    expect(q.l + sized.w).toBe(CW - 2);
+    pointsAt(q, 780);
   });
   it('goes beside the speaker when above is off-screen', () => {
     const p = place(400, 200, [bodyRect(400, 200, bodyH, k)]);
     expect(p.side === 'l' || p.side === 'r').toBe(true);
     expect(inside(p.rect)).toBe(true);
+    pointsAt(p, 400);
   });
-  it('moves away from another balloon or body in the way', () => {
+  it('never overlaps another balloon, and stays close', () => {
     const first = place(400, 400);
-    const second = place(400, 400, [first.rect]);
-    expect(second.rect).not.toEqual(first.rect);
-    expect(second.rect.x0 < first.rect.x1 && second.rect.x1 > first.rect.x0 && second.rect.y0 < first.rect.y1 && second.rect.y1 > first.rect.y0).toBe(false);
+    const second = place(400, 400, [], [first.rect]);
+    expect(overlap(second.rect, first.rect)).toBe(false);
+    pointsAt(second, 400);
+    expect(Math.abs(second.rect.y1 - (400 - bodyH))).toBeLessThan(sized.h * 2 + 30);
   });
-  it('falls below when nothing else fits, and never leaves the canvas', () => {
+  it('shifts off the head of someone standing behind when that is cheap', () => {
+    const other = bodyRect(400 + 60, 300, bodyH, k);
+    const p = place(400, 400, [bodyRect(400, 400, bodyH, k), other]);
+    expect(p.side).toBe('b');
+    pointsAt(p, 400);
+    expect(p.rect.x1).toBeLessThanOrEqual(other.x0 + 1);
+  });
+  it('never covers the speaker and never leaves the canvas', () => {
     for (const [x, feet] of [[400, 60], [5, 30], [795, 440], [400, 225], [0, 0], [820, 460]] as [number, number][]) {
-      const p = place(x, feet, [bodyRect(x, feet, bodyH, k)]);
+      const own = bodyRect(x, feet, bodyH, k);
+      const p = place(x, feet, [own]);
       expect(p.rect.x0).toBeGreaterThanOrEqual(2);
       expect(p.rect.y0).toBeGreaterThanOrEqual(2);
-      if (x >= 0 && x <= CW && feet >= 60) expect(inside(p.rect)).toBe(true);
+      if (x >= 0 && x <= CW && feet >= 60) {
+        expect(inside(p.rect)).toBe(true);
+        expect(overlap(p.rect, { ...own, y0: Math.max(own.y0, 0) })).toBe(false);
+      }
     }
-    const below = place(400, 60, [bodyRect(400, 60, bodyH, k)]);
-    expect(['t', 'l', 'r']).toContain(below.side);
   });
 });

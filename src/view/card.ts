@@ -1,8 +1,7 @@
 // The side panel: episode title and logline, then every scene grouped by part
-// (cold open, acts, tag) with its recap. The live scene is boxed and shows who is on
-// screen; clicking a scene watches it from its start.
+// (cold open, acts, tag) with its recap. The live scene is boxed; clicking a scene
+// watches it from its start.
 import type { EngineEvent } from '../engine/events';
-import type { Stage } from '../engine/stage';
 import type { Episode, Part } from '../schema/episode';
 import { esc } from './text';
 import { sceneHeading } from './transcript';
@@ -21,7 +20,7 @@ export class CardView {
   private last = '';
   private nav: EpisodeNav | null = null;
 
-  constructor(private el: HTMLElement, private stage: Stage) {}
+  constructor(private el: HTMLElement) {}
 
   setEpisode(ep: Episode, nav: EpisodeNav | null = null): void {
     this.nav = nav;
@@ -43,26 +42,13 @@ export class CardView {
     this.render();
   }
 
-  /** Called every frame: refreshes the list of people on screen. */
-  tick(): void {
-    this.render();
-  }
-
-  /** Who is on screen right now (live scene only). */
-  private people(): string {
-    const items = this.stage.visibleActors().map(
-      (a) => `<span class="who" style="color:${a.color}" title="${esc(a.name)}"><b>${esc(a.glyph)}</b> ${esc(a.name.split(' ')[0])}</span>`,
-    );
-    return items.length ? `<div class="people">${items.join('')}</div>` : '';
-  }
-
   private render(): void {
     let part: Part | null = null;
     const rows = this.entries.map((s, i) => {
       const head = s.part !== part ? `<li class="part">${PART_LABEL[(part = s.part)]}</li>` : '';
       const live = s.state === 'live';
       const body = `<div class="slug">${live ? '<span class="onair">● LIVE</span> ' : ''}${esc(s.heading)}</div><div class="recap">${esc(s.recap)}</div>`;
-      return `${head}<li class="scene ${s.state}" data-scene="${i}" title="Watch this scene">${body}${live ? this.people() : ''}</li>`;
+      return `${head}<li class="scene ${s.state}" data-scene="${i}" title="Watch this scene">${body}</li>`;
     });
     const n = this.nav;
     const arrow = (d: -1 | 1, ok: boolean) =>

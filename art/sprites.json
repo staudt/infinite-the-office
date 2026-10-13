@@ -50,6 +50,14 @@
    ]
   },
   {
+   "file": "michael-desk-split.png",
+   "kind": "props",
+   "names": [
+    "michael_credenza",
+    "michael_desk_front"
+   ]
+  },
+  {
    "file": "chairs.png",
    "kind": "props",
    "key": true,
