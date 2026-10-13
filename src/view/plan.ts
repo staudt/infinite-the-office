@@ -7,7 +7,7 @@ import { BG_SCALE, CHAIR_BOX, CHAIR_SCALE, layoutFoot, SEAT_BASE, SEAT_DROP } fr
 
 export type Dir = 'front' | 'back' | 'side';
 /** A seat cell: where the sitter's feet go, which way they face, and whether a chair is drawn. */
-export interface Chair { x: number; y: number; fx: number; fy: number; dir: Dir; face: 1 | -1; draw: boolean; /** Sort the sitter after the prop they sit at (px y), or null. */ front: number | null }
+export interface Chair { x: number; y: number; fx: number; fy: number; dir: Dir; face: 1 | -1; draw: boolean; /** The base (px y) of the prop they sit at, drawn over it; or null. */ front: number | null }
 export interface Item { k: number; x0: number; y0: number; x1: number; y1: number; f: (ctx: CanvasRenderingContext2D) => void; /** A chair's seat cell (hidden while someone with sit art is in it). */ seat?: string }
 /** A prop's sprite box and the x-range of its solid base: people beside the base overlap the prop's side. */
 export interface Side { x0: number; x1: number; top: number; B: number; sx0: number; sx1: number }
@@ -279,7 +279,7 @@ function chairs(set: SetMap, L: Layout): Chair[] {
     // The prop they sit at: under their feet, or (side seats) just ahead of them, where their hands and knees go.
     const ahead = dir === 'side' ? fx + face * DESK_REACH : fx;
     const under = Math.max(0, ...rects.filter((q) => hit(q.r, fx, fy) || hit(q.r, ahead, fy)).map((q) => q.B));
-    out.push({ x: cell.x, y: cell.y, fx, fy, dir, face, draw: s.chair !== false, front: (s.front ?? dir === 'side') && under > 0 ? under + 0.2 : null });
+    out.push({ x: cell.x, y: cell.y, fx, fy, dir, face, draw: s.chair !== false, front: (s.front ?? dir === 'side') && under > 0 ? under : null });
   }
   return out;
 }

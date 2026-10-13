@@ -21,6 +21,9 @@ import { esc } from './text';
 /** `?cam=all` frames the whole set in every scene (for looking at a floor plan). */
 const CAM_ALL = typeof location !== 'undefined' && new URLSearchParams(location.search).get('cam') === 'all';
 const VOID = '#050508';
+/** Sort key for someone drawn over a prop whose base is at `B`: right after it, and among everyone else drawn over it
+ *  in feet order, so a person standing in front of a sitter still covers the sitter's arms (and not the other way round). */
+const overProp = (B: number, fy: number) => B + 0.1 + fy * 1e-5;
 
 interface Built { plan: Plan; seats: Map<string, Plan['chairs'][number]> }
 const built = new WeakMap<SetMap, Built>();
@@ -196,15 +199,15 @@ export class SpriteMapView {
       // A side sitter at a desk: whole behind it (legs under the desktop), then from the lap up over it (arms on top).
       if (atDeskSide(p)) {
         items.push({ k: fy, f: () => drawActor(ctx, p, geo, this.stage.wt) });
-        items.push({ k: Math.max(fy, p.chair!.front!), f: () => drawActor(ctx, p, geo, this.stage.wt, lapY(p, geo)) });
+        items.push({ k: Math.max(fy, overProp(p.chair!.front!, fy)), f: () => drawActor(ctx, p, geo, this.stage.wt, lapY(p, geo)) });
         continue;
       }
       // Other sitters marked `front` are drawn over the prop they sit at; the rest sort by their feet.
-      let k = p.seated && p.chair?.front ? Math.max(fy, p.chair.front) : fy;
+      let k = p.seated && p.chair?.front ? Math.max(fy, overProp(p.chair.front, fy)) : fy;
       // Anyone beside a prop's base (not behind it) overlaps its side, so they draw in front of it,
       // walking or seated; otherwise feet-sorting hides them whenever their feet are above its base.
       for (const s of plan.sides) {
-        if (fy > s.top && fy < s.B && fx + SIDE_HALF > s.x0 && fx - SIDE_HALF < s.x1 && (fx <= s.sx0 || fx >= s.sx1)) k = Math.max(k, s.B + 0.2);
+        if (fy > s.top && fy < s.B && fx + SIDE_HALF > s.x0 && fx - SIDE_HALF < s.x1 && (fx <= s.sx0 || fx >= s.sx1)) k = Math.max(k, overProp(s.B, fy));
       }
       items.push({ k, f: () => drawActor(ctx, p, geo, this.stage.wt) });
       // A sitter facing the camera sits behind the desk in front of them (ASCII sets): redraw the torso over it.
