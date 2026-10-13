@@ -26,6 +26,8 @@ const COLOR = {
   cap: '#f2e6c6', capShade: '#d9c9a0', face: '#e0cfa6', faceLow: '#cbb68a', base: '#8a7352', edge: '#26242b',
   wood: '#b06d2a', woodDark: '#6d4320', outside: '#6f7d96', frame: '#2a2f3a',
 };
+/** How far ahead of a side seat (world px) the desk they work at may start. */
+const DESK_REACH = 24;
 const FACING: Record<string, [Dir, 1 | -1]> = { down: ['front', 1], up: ['back', 1], left: ['side', -1], right: ['side', 1] };
 
 const hit = (r: Rect, x: number, y: number) => x >= r.x && x < r.x + r.w && y >= r.y && y < r.y + r.h;
@@ -274,7 +276,9 @@ function chairs(set: SetMap, L: Layout): Chair[] {
     if (!s.seat || !cell) continue;
     const [fx, fy] = layoutFoot(set, cell.x, cell.y), [dir, face] = FACING[s.seat] ?? FACING.down;
     // Left/right sitters (pod chairs) are drawn over the pod; up/down only when the layout says so.
-    const under = Math.max(0, ...rects.filter((q) => hit(q.r, fx, fy)).map((q) => q.B));
+    // The prop they sit at: under their feet, or (side seats) just ahead of them, where their hands and knees go.
+    const ahead = dir === 'side' ? fx + face * DESK_REACH : fx;
+    const under = Math.max(0, ...rects.filter((q) => hit(q.r, fx, fy) || hit(q.r, ahead, fy)).map((q) => q.B));
     out.push({ x: cell.x, y: cell.y, fx, fy, dir, face, draw: s.chair !== false, front: (s.front ?? dir === 'side') && under > 0 ? under + 0.2 : null });
   }
   return out;

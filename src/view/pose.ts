@@ -5,7 +5,7 @@ import { hashId } from '../engine/rng';
 import type { Stage } from '../engine/stage';
 import type { Reaction } from '../schema/episode';
 import { art } from './art';
-import { ART_H, PLACEHOLDER_H, SEAT_BASE, SEAT_DROP, SHADOW, TORSO, type Geo } from './geometry';
+import { ART_H, DESK_SIT, PLACEHOLDER_H, SEAT_BASE, SEAT_DROP, SHADOW, TORSO, type Geo } from './geometry';
 import type { Chair, Dir } from './plan';
 
 /** Reactions drawn as standing pose art (`<id>_react_<pose>`); without 'look' art, a look just turns to the camera. Others keep the emote. */
@@ -64,19 +64,30 @@ export function poseOf(a: Actor, t: number, env: PoseEnv): Pose {
   return { ...base, seated: false, frame: moving ? 1 + (Math.floor(t * 8) % 4) : 0, art: null };
 }
 
-/** Where a pose's feet are (world px): seated people sink into the chair. */
+/** A side-facing sitter at a desk: drawn in two layers around the desk (see DESK_SIT). */
+export const atDeskSide = (p: Pose): boolean => p.seated && p.dir === 'side' && p.chair?.front != null;
+
+/** Where a pose's feet are (world px): seated people sink into the chair; side sitters at a desk sit back from it. */
 export function poseFeet(p: Pose, geo: Geo): { fx: number; fy0: number; fy: number } {
-  const [fx, fy0] = geo.foot(p.x, p.y);
+  const [x, fy0] = geo.foot(p.x, p.y);
+  const fx = atDeskSide(p) ? x - p.face * DESK_SIT.back : x;
   return { fx, fy0, fy: fy0 + (p.seated ? SEAT_DROP : 0) };
 }
 
-/** Draw one person. `torso`: only the part above the desk in front of them (ASCII sets), legs stay hidden. `wt` is show time (placeholder bob). */
-export function drawActor(ctx: CanvasRenderingContext2D, p: Pose, geo: Geo, wt: number, torso = false): void {
+/** The lap line of a seated pose (world y): above it is what shows over the desk in front of them. */
+export function lapY(p: Pose, geo: Geo): number {
+  const { fy0, fy } = poseFeet(p, geo), pa = p.art ? art.anim(p.art) : undefined;
+  return pa ? fy0 + SEAT_BASE - DESK_SIT.lap * pa.frameH * (geo.personH / ART_H) : fy - TORSO.keep; // placeholder: ASCII torso line
+}
+
+/** Draw one person. `cut`: only the part above this world y (the torso over a desk in front of them; the legs stay
+ *  hidden under it). `wt` is show time (placeholder bob). */
+export function drawActor(ctx: CanvasRenderingContext2D, p: Pose, geo: Geo, wt: number, cut?: number): void {
   const a = p.a, u = geo.personH / PLACEHOLDER_H, { fx, fy0, fy } = poseFeet(p, geo);
-  if (torso) {
+  if (cut !== undefined) {
     ctx.save();
     ctx.beginPath();
-    ctx.rect(fx - TORSO.half, fy - TORSO.up, TORSO.half * 2, fy - TORSO.keep - (fy - TORSO.up));
+    ctx.rect(fx - TORSO.half, fy - TORSO.up, TORSO.half * 2, cut - (fy - TORSO.up));
     ctx.clip();
     drawActor(ctx, p, geo, wt);
     ctx.restore();

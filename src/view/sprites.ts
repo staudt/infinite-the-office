@@ -10,12 +10,12 @@ import { art } from './art';
 import { buildAscii } from './ascii';
 import { headRect, placeBalloon, type Anchor, type ScreenRect } from './balloons';
 import { ease, frame, regionBox, shotBox, widenFor, type Cam } from './camera';
-import { BALLOON, CAM_EASE, EMOTE, geoOf, SIDE_HALF, type Geo } from './geometry';
+import { BALLOON, CAM_EASE, EMOTE, geoOf, SIDE_HALF, TORSO, type Geo } from './geometry';
 import { drawGrid, GRID } from './grid';
 import { MARKER } from './markers';
 import { NameIndex } from './names';
 import { buildPlan, type Dir, type Item, type Plan } from './plan';
-import { drawActor, poseFeet, poseOf, type Pose, type PoseEnv } from './pose';
+import { atDeskSide, drawActor, lapY, poseFeet, poseOf, type Pose, type PoseEnv } from './pose';
 import { esc } from './text';
 
 /** `?cam=all` frames the whole set in every scene (for looking at a floor plan). */
@@ -193,7 +193,13 @@ export class SpriteMapView {
     const items: { k: number; f: (c: CanvasRenderingContext2D) => void }[] = plan.items.filter((i) => (!i.seat || !taken.has(i.seat)) && vis(i));
     for (const p of poses) {
       const { fx, fy } = poseFeet(p, geo);
-      // A sitter at a prop's side (pod chairs) is drawn over it; the rest sort by their feet.
+      // A side sitter at a desk: whole behind it (legs under the desktop), then from the lap up over it (arms on top).
+      if (atDeskSide(p)) {
+        items.push({ k: fy, f: () => drawActor(ctx, p, geo, this.stage.wt) });
+        items.push({ k: Math.max(fy, p.chair!.front!), f: () => drawActor(ctx, p, geo, this.stage.wt, lapY(p, geo)) });
+        continue;
+      }
+      // Other sitters marked `front` are drawn over the prop they sit at; the rest sort by their feet.
       let k = p.seated && p.chair?.front ? Math.max(fy, p.chair.front) : fy;
       // Anyone beside a prop's base (not behind it) overlaps its side, so they draw in front of it,
       // walking or seated; otherwise feet-sorting hides them whenever their feet are above its base.
@@ -203,7 +209,7 @@ export class SpriteMapView {
       items.push({ k, f: () => drawActor(ctx, p, geo, this.stage.wt) });
       // A sitter facing the camera sits behind the desk in front of them (ASCII sets): redraw the torso over it.
       const tk = p.seated && p.dir === 'front' ? plan.torsoKey?.(p.a.x, p.a.y) ?? null : null;
-      if (tk !== null) items.push({ k: tk, f: () => drawActor(ctx, p, geo, this.stage.wt, true) });
+      if (tk !== null) items.push({ k: tk, f: () => drawActor(ctx, p, geo, this.stage.wt, fy - TORSO.keep) });
     }
     items.sort((a, b) => a.k - b.k);
     for (const i of items) i.f(ctx);
