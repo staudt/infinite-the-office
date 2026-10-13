@@ -15,8 +15,9 @@ npm run pregen -- --name "..." --direction "..." --seasons 1    # or --episodes 
 npm run preview -- --show <id> --ep N                            # headless transcript (no API calls)
 npm run library [-- add <id>]                                    # list / copy sessions/<id> into library/<id>
 npm run render -- --show <id> --ep N [--scene M] [--format vertical]   # MP4 (needs ffmpeg + chromium); --demo, --season
+npm run shot -- --show <id> --ep N [--scene M] [--at SEC] [--every SEC --count K] [--cam all] [--grid]   # PNGs in shots/ (same frames as the MP4); --demo
 ```
-URL params: `show`, `ep`, `scene` (1-based), `demo=1`, `seed`, `play`, `id`, `name`, `direction`, `render=1` (used by the renderer). Keys: space, 1–4 speed, ←/→ scene, d debug, f fullscreen, N start screen.
+URL params: `show`, `ep`, `scene` (1-based), `demo=1`, `seed`, `play`, `id`, `name`, `direction`, `render=1` (used by the renderer), `cam=all` (frame the whole set), `grid=1` (logic-grid overlay: blocked cells, seats/spots/exits, regions, walker paths). Keys: space, 1–4 speed, ←/→ scene, d debug, f fullscreen, N start screen.
 
 ## Architecture (the LLM decides *what* happens, the engine decides *how*)
 1. **Writer** (`server/writer.ts`, `src/writer/`, `src/schema/`). Mirrors wrestling's booker: `callTool`/`callWithRetry`, prompt caching, lenient Zod parsing, and one retry only when the result is unplayable. Repairs are logged to `sessions/failures/`.
@@ -28,8 +29,15 @@ URL params: `show`, `ep`, `scene` (1-based), `demo=1`, `seed`, `play`, `id`, `na
 3. **Director** (`src/choreo/director.ts`): turns beats into coroutines. Movement beats start walks and the director continues; a later beat waits for the actors it involves. Talking heads freeze world time and cut to the confessional. Office background cast sits at their desks, and ambient life (copier and water-cooler trips) runs on a seeded rng. Unknown targets degrade gracefully.
 4. **Engine** (`src/engine/`): a fixed 60 Hz scheduler of generator coroutines (copied from wrestling), seeded, so the same episode always plays identically. Tests assert this.
 5. **Sets** (`data/sets/`, `src/sets/`): invisible logic maps (A* walking, seats, regions, exits). The LLM only ever sees region and spot names. The **office** is an art-scale floor plan, `office.layout.json` (world px at native sprite scale, rasterized onto a 16 px grid by `src/sets/layout.ts`; walls, doors, windows, props, spots, regions), modeled on the user's reference `art/raw/office-reference.png`. The other sets (break_room, kitchen, annex, parking_lot, warehouse, offsite) are still ASCII grids (16×32 px cells), drawn procedurally until they get art. Kitchen and annex are separate sets; old episodes with `office` + region `kitchen`/`annex` are remapped. Format docs in `data/sets/README.md`. `tests/sets.test.ts` guards the spot/region names the writer relies on.
-6. **Views** (`src/view/`): `sprites.ts` (canvas sprite map with camera framing and an HTML balloon layer; the only map view, placeholders where art is missing), `head.ts` (drawn confessional: portrait art, or a placeholder bust in the actor's color), feed/transcript, card, start screen. The map and confessional share one 16:9 box (`#stage`; text scales with it via container units). Views only read engine state and events, so they are swappable.
+6. **Views** (`src/view/`): `sprites.ts` (canvas sprite map orchestration and its HTML balloon/card layer; the only map view, placeholders where art is missing; layout sets come from `plan.ts`, ASCII sets from `ascii.ts`, both as a `Plan` of y-sorted items), `head.ts` (drawn confessional: portrait art, or a placeholder bust in the actor's color), feed/transcript, card, start screen. The map and confessional share one 16:9 box (`#stage`; text scales with it via container units). Views only read engine state and events, so they are swappable.
 7. **Storage**: `sessions/<id>/` (git-ignored: `series.json`, `ep-NNN.json`) and `library/<id>/` (committed, bundled into the Pages build by the Vite library plugin and `.github/workflows/pages.yml`). Cast canon is in `data/cast.json`. The hand-written demo episode is `data/demo/episode.json` (`?demo=1`, and the fallback when nothing else is available).
+
+### Where to tweak what (sprite map)
+- Any placement/size number (person height, seat drop and base, chair scale, camera padding and zoom, balloon gaps, emote offset, ASCII cell size): `src/view/geometry.ts`. Dependent values are derived there.
+- Camera framing: `camera.ts` (pure). Balloon placement: `balloons.ts` (pure). Both unit-tested in `tests/view.test.ts`.
+- Poses (sit/type/phone/react/walk frame choice) and drawing a person: `pose.ts`. Draw order (y-sort keys) of walls/props/chairs: `plan.ts`; of ASCII-set blocks: `ascii.ts`.
+- Office furniture, walls, spots, regions: `data/sets/office.layout.json`. Walk paths: check with `npm run shot -- ... --grid`.
+- For a pure refactor of the view, shoot a frame list before and after and compare pixels (pngjs is a devDependency).
 
 ## Working conventions (user preferences)
 - **Delegate to cheaper models by complexity** to save tokens. Use Sonnet subagents for substantial implementation and Haiku for mechanical work (copying, docs). The main session designs contracts (schema, prompts), reviews, and verifies.

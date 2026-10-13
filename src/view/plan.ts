@@ -3,6 +3,7 @@
 // World units are px at native sprite scale; walls are screen rects (cap on top, face below).
 import { propRect, solidRects, type Layout, type LProp, type Rect, type SetMap } from '../sets/index.ts';
 import { art } from './art';
+import { BG_SCALE, CHAIR_BOX, CHAIR_SCALE, layoutFoot, SEAT_BASE, SEAT_DROP } from './geometry';
 
 export type Dir = 'front' | 'back' | 'side';
 /** A seat cell: where the sitter's feet go, which way they face, and whether a chair is drawn. */
@@ -10,25 +11,26 @@ export interface Chair { x: number; y: number; fx: number; fy: number; dir: Dir;
 export interface Item { k: number; x0: number; y0: number; x1: number; y1: number; f: (ctx: CanvasRenderingContext2D) => void; /** A chair's seat cell (hidden while someone with sit art is in it). */ seat?: string }
 /** A prop's sprite box and the x-range of its solid base: people beside the base overlap the prop's side. */
 export interface Side { x0: number; x1: number; top: number; B: number; sx0: number; sx1: number }
-export interface Plan { bg: HTMLCanvasElement; W: number; H: number; items: Item[]; chairs: Chair[]; sides: Side[] }
+/** Everything static about a set, in the one shape the view draws from (layout sets: plan.ts, ASCII sets: ascii.ts). */
+export interface Plan {
+  bg: HTMLCanvasElement; W: number; H: number; items: Item[]; chairs: Chair[]; sides: Side[];
+  /** Sort key of a torso redraw for a seated, front-facing person at this cell (they sit behind the desk in front), or null. */
+  torsoKey?: (x: number, y: number) => number | null;
+  /** False while a chosen sprite is still loading: the view rebuilds the plan. */
+  ready?: () => boolean;
+}
 
 const CAP = 16; // cap thickness (the plan depth of a wall)
 const END_FACE = 56; // the visible end of a vertical wall
-const BG_SCALE = 2;
 const COLOR = {
   cap: '#f2e6c6', capShade: '#d9c9a0', face: '#e0cfa6', faceLow: '#cbb68a', base: '#8a7352', edge: '#26242b',
   wood: '#b06d2a', woodDark: '#6d4320', outside: '#6f7d96', frame: '#2a2f3a',
 };
-/** Chair art shares the character art's pixel density (people: 96 px drawn from ~130 px frames), so a sitter's own chair swaps in seamlessly. */
-const CHAIR_SCALE = 0.74;
 const FACING: Record<string, [Dir, 1 | -1]> = { down: ['front', 1], up: ['back', 1], left: ['side', -1], right: ['side', 1] };
 
 const hit = (r: Rect, x: number, y: number) => x >= r.x && x < r.x + r.w && y >= r.y && y < r.y + r.h;
 const meets = (a: Rect, b: Rect) => a.x < b.x + b.w && a.x + a.w > b.x && a.y < b.y + b.h && a.y + a.h > b.y;
 const isHoriz = (w: Rect) => w.w >= w.h;
-
-/** Pixel position of a (possibly fractional) cell: feet at the cell center. */
-export const planFoot = (set: SetMap, x: number, y: number): [number, number] => [(x + 0.5) * set.cellW, (y + 0.5) * set.cellH];
 
 /** Cut a wall along its length around the doors in it. */
 function segments(w: Rect, doors: Rect[]): Rect[] {
@@ -270,7 +272,7 @@ function chairs(set: SetMap, L: Layout): Chair[] {
   for (const [name, s] of Object.entries(L.spots)) {
     const cell = set.spots[name];
     if (!s.seat || !cell) continue;
-    const [fx, fy] = planFoot(set, cell.x, cell.y), [dir, face] = FACING[s.seat] ?? FACING.down;
+    const [fx, fy] = layoutFoot(set, cell.x, cell.y), [dir, face] = FACING[s.seat] ?? FACING.down;
     // Left/right sitters (pod chairs) are drawn over the pod; up/down only when the layout says so.
     const under = Math.max(0, ...rects.filter((q) => hit(q.r, fx, fy)).map((q) => q.B));
     out.push({ x: cell.x, y: cell.y, fx, fy, dir, face, draw: s.chair !== false, front: (s.front ?? dir === 'side') && under > 0 ? under + 0.2 : null });
@@ -278,14 +280,14 @@ function chairs(set: SetMap, L: Layout): Chair[] {
   return out;
 }
 
-export function chairItem(c: Chair, drop: number): Item {
+export function chairItem(c: Chair): Item {
   const name = `chair_${c.dir}`;
   return {
-    k: c.fy + drop + (c.dir === 'back' ? 0.5 : -0.5), x0: c.fx - 30, y0: c.fy - 70, x1: c.fx + 30, y1: c.fy + 12, seat: `${c.x},${c.y}`,
+    k: c.fy + SEAT_DROP + (c.dir === 'back' ? 0.5 : -0.5), x0: c.fx - CHAIR_BOX.half, y0: c.fy - CHAIR_BOX.up, x1: c.fx + CHAIR_BOX.half, y1: c.fy + CHAIR_BOX.down, seat: `${c.x},${c.y}`,
     f: (ctx) => {
       const e = art.index.props?.[name], im = art.image(name);
       if (!e || !im) return;
-      const w = e.w * CHAIR_SCALE, h = e.h * CHAIR_SCALE, x = c.fx - w / 2, y = c.fy + 8 - h; // base where sit art puts it
+      const w = e.w * CHAIR_SCALE, h = e.h * CHAIR_SCALE, x = c.fx - w / 2, y = c.fy + SEAT_BASE - h; // base where sit art puts it
       if (c.dir === 'side' && c.face === -1) { ctx.save(); ctx.translate(x + w, y); ctx.scale(-1, 1); ctx.drawImage(im, 0, 0, w, h); ctx.restore(); } else ctx.drawImage(im, x, y, w, h);
     },
   };
@@ -293,11 +295,11 @@ export function chairItem(c: Chair, drop: number): Item {
 
 // ---------------------------------------------------------------- build
 
-/** Everything static about a layout set. `drop` is how far a sitter sinks (chairs sort against it). */
-export function buildPlan(set: SetMap, drop: number): Plan {
+/** Everything static about a layout set. */
+export function buildPlan(set: SetMap): Plan {
   const L = set.layout!;
   const seats = chairs(set, L);
-  const items = [...wallItems(L), ...propItems(L), ...seats.filter((c) => c.draw).map((c) => chairItem(c, drop))];
+  const items = [...wallItems(L), ...propItems(L), ...seats.filter((c) => c.draw).map(chairItem)];
   const sides = L.props.flatMap((p): Side[] => {
     const r = propRect(p), sol = solidRects(p);
     return sol.length ? [{ x0: r.x, x1: r.x + r.w, top: r.y, B: p.y, sx0: Math.min(...sol.map((q) => q.x)), sx1: Math.max(...sol.map((q) => q.x + q.w)) }] : [];
