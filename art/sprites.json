@@ -5,6 +5,11 @@
    "kind": "props",
    "key": true,
    "gap": -2,
+   "erase": {
+    "desk_pod_a": [[0, 0, 6, 149], [133, 0, 8, 149]],
+    "desk_pod_b": [[0, 78, 13, 107], [153, 78, 12, 107]],
+    "desk_pod_c": [[0, 66, 12, 106], [145, 66, 19, 106]]
+   },
    "names": [
     "wardrobe",
     "wall_picture",

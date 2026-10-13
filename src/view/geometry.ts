@@ -24,8 +24,9 @@ export const SEAT_BASE = 8;
 export const CHAIR_SCALE = Math.round((PERSON_H.layout / ART_H) * 100) / 100;
 /** Side-facing sitters at a desk (pods, reception) are drawn twice: whole, behind the desk (legs go under the desktop),
  *  and from the lap up in front of it (arms on the desktop). `lap`: the lap line as a fraction of the seated frame's height
- *  above its base; `back`: world px they sit away from the desk they face. */
-export const DESK_SIT = { lap: 0.41, back: 6 };
+ *  above its base; `back`: world px they sit away from the desk they face; `down`: world px lower than the seat cell, so
+ *  their hands land on the keyboard. */
+export const DESK_SIT = { lap: 0.41, back: 6, down: 16 };
 /** Visibility box of a chair around its feet (world px), for culling. */
 export const CHAIR_BOX = { half: 30, up: 70, down: 12 };
 

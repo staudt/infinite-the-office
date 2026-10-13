@@ -69,8 +69,8 @@ export const atDeskSide = (p: Pose): boolean => p.seated && p.dir === 'side' && 
 
 /** Where a pose's feet are (world px): seated people sink into the chair; side sitters at a desk sit back from it. */
 export function poseFeet(p: Pose, geo: Geo): { fx: number; fy0: number; fy: number } {
-  const [x, fy0] = geo.foot(p.x, p.y);
-  const fx = atDeskSide(p) ? x - p.face * DESK_SIT.back : x;
+  const [x, y] = geo.foot(p.x, p.y), desk = atDeskSide(p);
+  const fx = desk ? x - p.face * DESK_SIT.back : x, fy0 = desk ? y + DESK_SIT.down : y;
   return { fx, fy0, fy: fy0 + (p.seated ? SEAT_DROP : 0) };
 }
 
