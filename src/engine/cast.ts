@@ -12,6 +12,8 @@ export interface CastMember {
   /** Spot name of their desk, or null. */
   desk: string | null;
   voice: string;
+  /** Generic body when they have no sprite art of their own. */
+  look?: string;
   quirks: string[];
 }
 

@@ -27,6 +27,9 @@ export class Actor {
   stepStart = 0;
   stepEnd = 0;
 
+  /** Generic body (office_m, office_f, warehouse) for anyone without their own sprite art. */
+  look: string | null = null;
+
   constructor(
     readonly id: string,
     readonly name: string,

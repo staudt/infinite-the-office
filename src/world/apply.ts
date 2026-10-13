@@ -16,7 +16,7 @@ export function addExtra(s: Series, x: Extra, since: number): SeriesExtra | null
   const glyph = letters.find((l) => !taken.has(l)) ?? '?';
   const used = [...CAST.filter((c) => s.roster.includes(c.id)).map((c) => c.color), ...s.extras.map((e) => e.color)];
   const color = used.length ? distinctColor(farthestColor(used), used) : '#cfcfcf';
-  return { id: x.id, name: x.name.trim(), title: x.title || 'Guest', voice: x.voice, glyph, color, since };
+  return { id: x.id, name: x.name.trim(), title: x.title || 'Guest', voice: x.voice, glyph, color, ...(x.look ? { look: x.look } : {}), since };
 }
 
 const known = (s: Series, id: string) => CAST.some((c) => c.id === id) || s.extras.some((e) => e.id === id);

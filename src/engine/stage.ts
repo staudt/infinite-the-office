@@ -37,7 +37,7 @@ export function mentionedIds(ep: Episode): Set<string> {
 
 /** What a series adds to the canon cast on stage: its own regulars and seating changes. */
 export interface StageSeries {
-  extras?: { id: string; name: string; title: string; glyph: string; color: string }[];
+  extras?: { id: string; name: string; title: string; glyph: string; color: string; look?: string }[];
   deskOverrides?: Record<string, string>;
 }
 
@@ -79,9 +79,11 @@ export class Stage {
     // A desk override only counts if the spot exists in some set (office desks, annex desks).
     const deskOf = (id: string, d: string | null) => (desks[id] && Object.values(SETS).some((s) => s.spots[desks[id]]) ? desks[id] : d);
     for (const c of cast) this.actors.set(c.id, new Actor(c.id, c.name, c.glyph, c.color, c.title, c.home, deskOf(c.id, c.desk)));
+    for (const c of cast) if (c.look) this.actors.get(c.id)!.look = c.look;
     // The series' recurring side characters keep the glyph and color they were given once.
     for (const x of series.extras ?? []) {
       this.actors.set(x.id, new Actor(x.id, x.name, x.glyph, x.color, x.title, 'offsite', deskOf(x.id, null)));
+      this.actors.get(x.id)!.look = x.look ?? null;
       this.usedGlyphs.add(x.glyph);
     }
     // Extras get a letter nobody in the episode uses and a color distinct from the cast on screen.
@@ -93,6 +95,7 @@ export class Stage {
       const color = distinctColor('#cfcfcf', colors);
       colors.push(color);
       this.actors.set(x.id, new Actor(x.id, x.name, this.freeGlyph(x.name), color, x.title, 'offsite', null));
+      this.actors.get(x.id)!.look = x.look ?? null;
     }
   }
 

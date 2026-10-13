@@ -2202,6 +2202,318 @@
    "frames": 1,
    "anchorX": 33,
    "anchorY": 138
+  },
+  "generic_office_m_walk_front": {
+   "src": "generic_office_m_walk_front.png",
+   "frameW": 70,
+   "frameH": 138,
+   "frames": 5,
+   "anchorX": 35,
+   "anchorY": 137
+  },
+  "generic_office_m_walk_back": {
+   "src": "generic_office_m_walk_back.png",
+   "frameW": 68,
+   "frameH": 139,
+   "frames": 5,
+   "anchorX": 34,
+   "anchorY": 138
+  },
+  "generic_office_m_walk_side": {
+   "src": "generic_office_m_walk_side.png",
+   "frameW": 75,
+   "frameH": 141,
+   "frames": 5,
+   "anchorX": 37,
+   "anchorY": 140
+  },
+  "generic_office_m_sit_front": {
+   "src": "generic_office_m_sit_front.png",
+   "frameW": 81,
+   "frameH": 158,
+   "frames": 1,
+   "anchorX": 40,
+   "anchorY": 157
+  },
+  "generic_office_m_sit_back": {
+   "src": "generic_office_m_sit_back.png",
+   "frameW": 81,
+   "frameH": 159,
+   "frames": 1,
+   "anchorX": 40,
+   "anchorY": 158
+  },
+  "generic_office_m_sit_side": {
+   "src": "generic_office_m_sit_side.png",
+   "frameW": 82,
+   "frameH": 156,
+   "frames": 1,
+   "anchorX": 41,
+   "anchorY": 155
+  },
+  "generic_office_m_type_side": {
+   "src": "generic_office_m_type_side.png",
+   "frameW": 82,
+   "frameH": 157,
+   "frames": 2,
+   "anchorX": 41,
+   "anchorY": 156
+  },
+  "generic_office_m_phone_side": {
+   "src": "generic_office_m_phone_side.png",
+   "frameW": 82,
+   "frameH": 158,
+   "frames": 1,
+   "anchorX": 41,
+   "anchorY": 157
+  },
+  "generic_office_m_react_gasp": {
+   "src": "generic_office_m_react_gasp.png",
+   "frameW": 71,
+   "frameH": 138,
+   "frames": 1,
+   "anchorX": 35,
+   "anchorY": 137
+  },
+  "generic_office_m_react_laugh": {
+   "src": "generic_office_m_react_laugh.png",
+   "frameW": 71,
+   "frameH": 138,
+   "frames": 1,
+   "anchorX": 35,
+   "anchorY": 137
+  },
+  "generic_office_m_react_sad": {
+   "src": "generic_office_m_react_sad.png",
+   "frameW": 71,
+   "frameH": 138,
+   "frames": 1,
+   "anchorX": 35,
+   "anchorY": 137
+  },
+  "generic_office_m_react_facepalm": {
+   "src": "generic_office_m_react_facepalm.png",
+   "frameW": 71,
+   "frameH": 138,
+   "frames": 1,
+   "anchorX": 35,
+   "anchorY": 137
+  },
+  "generic_office_m_react_look": {
+   "src": "generic_office_m_react_look.png",
+   "frameW": 72,
+   "frameH": 137,
+   "frames": 1,
+   "anchorX": 36,
+   "anchorY": 136
+  },
+  "generic_office_f_walk_front": {
+   "src": "generic_office_f_walk_front.png",
+   "frameW": 75,
+   "frameH": 126,
+   "frames": 5,
+   "anchorX": 37,
+   "anchorY": 125
+  },
+  "generic_office_f_walk_back": {
+   "src": "generic_office_f_walk_back.png",
+   "frameW": 73,
+   "frameH": 124,
+   "frames": 5,
+   "anchorX": 36,
+   "anchorY": 123
+  },
+  "generic_office_f_walk_side": {
+   "src": "generic_office_f_walk_side.png",
+   "frameW": 69,
+   "frameH": 125,
+   "frames": 5,
+   "anchorX": 34,
+   "anchorY": 124
+  },
+  "generic_office_f_sit_front": {
+   "src": "generic_office_f_sit_front.png",
+   "frameW": 78,
+   "frameH": 148,
+   "frames": 1,
+   "anchorX": 39,
+   "anchorY": 147
+  },
+  "generic_office_f_sit_back": {
+   "src": "generic_office_f_sit_back.png",
+   "frameW": 75,
+   "frameH": 148,
+   "frames": 1,
+   "anchorX": 37,
+   "anchorY": 147
+  },
+  "generic_office_f_sit_side": {
+   "src": "generic_office_f_sit_side.png",
+   "frameW": 85,
+   "frameH": 149,
+   "frames": 1,
+   "anchorX": 42,
+   "anchorY": 148
+  },
+  "generic_office_f_type_side": {
+   "src": "generic_office_f_type_side.png",
+   "frameW": 84,
+   "frameH": 149,
+   "frames": 2,
+   "anchorX": 42,
+   "anchorY": 148
+  },
+  "generic_office_f_phone_side": {
+   "src": "generic_office_f_phone_side.png",
+   "frameW": 84,
+   "frameH": 149,
+   "frames": 1,
+   "anchorX": 42,
+   "anchorY": 148
+  },
+  "generic_office_f_react_gasp": {
+   "src": "generic_office_f_react_gasp.png",
+   "frameW": 74,
+   "frameH": 121,
+   "frames": 1,
+   "anchorX": 37,
+   "anchorY": 120
+  },
+  "generic_office_f_react_laugh": {
+   "src": "generic_office_f_react_laugh.png",
+   "frameW": 75,
+   "frameH": 121,
+   "frames": 1,
+   "anchorX": 37,
+   "anchorY": 120
+  },
+  "generic_office_f_react_sad": {
+   "src": "generic_office_f_react_sad.png",
+   "frameW": 76,
+   "frameH": 121,
+   "frames": 1,
+   "anchorX": 38,
+   "anchorY": 120
+  },
+  "generic_office_f_react_facepalm": {
+   "src": "generic_office_f_react_facepalm.png",
+   "frameW": 74,
+   "frameH": 120,
+   "frames": 1,
+   "anchorX": 37,
+   "anchorY": 119
+  },
+  "generic_office_f_react_look": {
+   "src": "generic_office_f_react_look.png",
+   "frameW": 74,
+   "frameH": 121,
+   "frames": 1,
+   "anchorX": 37,
+   "anchorY": 120
+  },
+  "generic_warehouse_walk_front": {
+   "src": "generic_warehouse_walk_front.png",
+   "frameW": 71,
+   "frameH": 138,
+   "frames": 5,
+   "anchorX": 35,
+   "anchorY": 137
+  },
+  "generic_warehouse_walk_back": {
+   "src": "generic_warehouse_walk_back.png",
+   "frameW": 68,
+   "frameH": 139,
+   "frames": 5,
+   "anchorX": 34,
+   "anchorY": 138
+  },
+  "generic_warehouse_walk_side": {
+   "src": "generic_warehouse_walk_side.png",
+   "frameW": 75,
+   "frameH": 142,
+   "frames": 5,
+   "anchorX": 37,
+   "anchorY": 141
+  },
+  "generic_warehouse_sit_front": {
+   "src": "generic_warehouse_sit_front.png",
+   "frameW": 78,
+   "frameH": 147,
+   "frames": 1,
+   "anchorX": 39,
+   "anchorY": 146
+  },
+  "generic_warehouse_sit_back": {
+   "src": "generic_warehouse_sit_back.png",
+   "frameW": 76,
+   "frameH": 146,
+   "frames": 1,
+   "anchorX": 38,
+   "anchorY": 145
+  },
+  "generic_warehouse_sit_side": {
+   "src": "generic_warehouse_sit_side.png",
+   "frameW": 83,
+   "frameH": 147,
+   "frames": 1,
+   "anchorX": 41,
+   "anchorY": 146
+  },
+  "generic_warehouse_type_side": {
+   "src": "generic_warehouse_type_side.png",
+   "frameW": 83,
+   "frameH": 147,
+   "frames": 2,
+   "anchorX": 41,
+   "anchorY": 146
+  },
+  "generic_warehouse_phone_side": {
+   "src": "generic_warehouse_phone_side.png",
+   "frameW": 80,
+   "frameH": 147,
+   "frames": 1,
+   "anchorX": 40,
+   "anchorY": 146
+  },
+  "generic_warehouse_react_gasp": {
+   "src": "generic_warehouse_react_gasp.png",
+   "frameW": 72,
+   "frameH": 137,
+   "frames": 1,
+   "anchorX": 36,
+   "anchorY": 136
+  },
+  "generic_warehouse_react_laugh": {
+   "src": "generic_warehouse_react_laugh.png",
+   "frameW": 71,
+   "frameH": 137,
+   "frames": 1,
+   "anchorX": 35,
+   "anchorY": 136
+  },
+  "generic_warehouse_react_sad": {
+   "src": "generic_warehouse_react_sad.png",
+   "frameW": 71,
+   "frameH": 136,
+   "frames": 1,
+   "anchorX": 35,
+   "anchorY": 135
+  },
+  "generic_warehouse_react_facepalm": {
+   "src": "generic_warehouse_react_facepalm.png",
+   "frameW": 72,
+   "frameH": 136,
+   "frames": 1,
+   "anchorX": 36,
+   "anchorY": 135
+  },
+  "generic_warehouse_react_look": {
+   "src": "generic_warehouse_react_look.png",
+   "frameW": 72,
+   "frameH": 136,
+   "frames": 1,
+   "anchorX": 36,
+   "anchorY": 135
   }
  },
  "images": {
@@ -2229,6 +2541,126 @@
    "src": "head_bg.png",
    "w": 1280,
    "h": 720
+  },
+  "kevin_head": {
+   "src": "kevin_head.png",
+   "w": 649,
+   "h": 800
+  },
+  "kevin_head_talk": {
+   "src": "kevin_head_talk.png",
+   "w": 649,
+   "h": 800
+  },
+  "stanley_head": {
+   "src": "stanley_head.png",
+   "w": 645,
+   "h": 800
+  },
+  "stanley_head_talk": {
+   "src": "stanley_head_talk.png",
+   "w": 645,
+   "h": 800
+  },
+  "dwight_head": {
+   "src": "dwight_head.png",
+   "w": 611,
+   "h": 800
+  },
+  "dwight_head_talk": {
+   "src": "dwight_head_talk.png",
+   "w": 611,
+   "h": 800
+  },
+  "angela_head": {
+   "src": "angela_head.png",
+   "w": 613,
+   "h": 800
+  },
+  "angela_head_talk": {
+   "src": "angela_head_talk.png",
+   "w": 613,
+   "h": 800
+  },
+  "michael_head": {
+   "src": "michael_head.png",
+   "w": 617,
+   "h": 800
+  },
+  "michael_head_talk": {
+   "src": "michael_head_talk.png",
+   "w": 617,
+   "h": 800
+  },
+  "kelly_head": {
+   "src": "kelly_head.png",
+   "w": 621,
+   "h": 800
+  },
+  "kelly_head_talk": {
+   "src": "kelly_head_talk.png",
+   "w": 621,
+   "h": 800
+  },
+  "ryan_head": {
+   "src": "ryan_head.png",
+   "w": 616,
+   "h": 800
+  },
+  "ryan_head_talk": {
+   "src": "ryan_head_talk.png",
+   "w": 616,
+   "h": 800
+  },
+  "andy_head": {
+   "src": "andy_head.png",
+   "w": 611,
+   "h": 800
+  },
+  "andy_head_talk": {
+   "src": "andy_head_talk.png",
+   "w": 611,
+   "h": 800
+  },
+  "oscar_head": {
+   "src": "oscar_head.png",
+   "w": 620,
+   "h": 800
+  },
+  "oscar_head_talk": {
+   "src": "oscar_head_talk.png",
+   "w": 620,
+   "h": 800
+  },
+  "phyllis_head": {
+   "src": "phyllis_head.png",
+   "w": 614,
+   "h": 800
+  },
+  "phyllis_head_talk": {
+   "src": "phyllis_head_talk.png",
+   "w": 614,
+   "h": 800
+  },
+  "creed_head": {
+   "src": "creed_head.png",
+   "w": 619,
+   "h": 800
+  },
+  "creed_head_talk": {
+   "src": "creed_head_talk.png",
+   "w": 619,
+   "h": 800
+  },
+  "meredith_head": {
+   "src": "meredith_head.png",
+   "w": 616,
+   "h": 800
+  },
+  "meredith_head_talk": {
+   "src": "meredith_head_talk.png",
+   "w": 616,
+   "h": 800
   }
  }
 }

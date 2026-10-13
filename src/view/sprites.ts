@@ -245,7 +245,7 @@ const REACT_POSE: Partial<Record<Reaction, string>> = {
 const ART_H = 130;
 
 /** An anim's name if its art is loaded. */
-const poseArt = (name: string): string | null => (art.index.anims?.[name] && art.image(name) ? name : null);
+const poseArt = (name: string): string | null => (art.anim(name) && art.image(name) ? name : null);
 
 interface Pose { a: Actor; x: number; y: number; moving: boolean; dir: Dir; face: 1 | -1; seated: boolean; frame: number; chair: Chair | null; /** Pose art drawn instead of the walk sheet (sit/type/phone/react), and whether it brings its own chair. */ art: string | null; ownChair: boolean }
 
@@ -388,6 +388,8 @@ export class SpriteMapView {
   /** Draws the frame; true when the picture changed since the last call (the renderer reads this). */
   render(): boolean {
     const st = this.stage;
+    // Undrawn characters wear a generic body in their color (cheap: a no-op once dressed).
+    for (const a of st.actors.values()) art.dress(a.id, a.look, a.color, a.home);
     let changed = this.syncCard();
     if (st.card && st.card.until > st.time) return changed;
     const set = st.set;
@@ -569,7 +571,7 @@ export class SpriteMapView {
       ctx.ellipse(fx, fy, 11 * u, 4 * u, 0, 0, Math.PI * 2);
       ctx.fill();
     }
-    const pa = p.art ? art.index.anims?.[p.art] : undefined, pim = p.art ? art.image(p.art) : null;
+    const pa = p.art ? art.anim(p.art) : undefined, pim = p.art ? art.image(p.art) : null;
     if (pa && pim) {
       // Pose art shares the walk art's pixel density. Seated art includes the chair, so its base sits where the
       // empty chair stood; standing reactions stand on the feet like the walk sheet.
@@ -581,8 +583,8 @@ export class SpriteMapView {
       ctx.restore();
       return;
     }
-    const an = art.index.anims?.[`${a.id}_walk_${p.dir}`] && art.image(`${a.id}_walk_${p.dir}`) ? `${a.id}_walk_${p.dir}` : art.index.anims?.[`${a.id}_walk_front`] && art.image(`${a.id}_walk_front`) ? `${a.id}_walk_front` : null;
-    const anim = an ? art.index.anims![an] : null;
+    const an = art.anim(`${a.id}_walk_${p.dir}`) && art.image(`${a.id}_walk_${p.dir}`) ? `${a.id}_walk_${p.dir}` : art.anim(`${a.id}_walk_front`) && art.image(`${a.id}_walk_front`) ? `${a.id}_walk_front` : null;
+    const anim = an ? art.anim(an)! : null;
     if (anim && an) {
       const s = geo.personH / ART_H, im = art.image(an)!;
       // Side art faces left; mirror for right. The front and back views are symmetric enough.

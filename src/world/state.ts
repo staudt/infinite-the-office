@@ -10,6 +10,8 @@ export interface SeriesExtra {
   /** Assigned once when the character is invented, so they look the same forever. */
   glyph: string;
   color: string;
+  /** Generic body when they have no art (see Look). */
+  look?: string;
   since: number;
 }
 

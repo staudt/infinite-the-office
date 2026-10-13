@@ -371,6 +371,198 @@
    "key": true,
    "gap": 12,
    "height": 134
+  },
+  {
+   "file": "generic-office-m-sheet.png",
+   "kind": "character",
+   "name": "generic_office_m",
+   "key": true,
+   "gap": 12,
+   "height": 132
+  },
+  {
+   "file": "generic-office-f-sheet.png",
+   "kind": "character",
+   "name": "generic_office_f",
+   "key": true,
+   "gap": 12,
+   "height": 124
+  },
+  {
+   "file": "generic-warehouse-sheet.png",
+   "kind": "character",
+   "name": "generic_warehouse",
+   "key": true,
+   "gap": 12,
+   "height": 136
+  },
+  {
+   "file": "kevin-head.png",
+   "kind": "image",
+   "name": "kevin_head",
+   "key": true,
+   "maxHeight": 800
+  },
+  {
+   "file": "kevin-head-talk.png",
+   "kind": "image",
+   "name": "kevin_head_talk",
+   "key": true,
+   "maxHeight": 800
+  },
+  {
+   "file": "stanley-head.png",
+   "kind": "image",
+   "name": "stanley_head",
+   "key": true,
+   "maxHeight": 800
+  },
+  {
+   "file": "stanley-head-talk.png",
+   "kind": "image",
+   "name": "stanley_head_talk",
+   "key": true,
+   "maxHeight": 800
+  },
+  {
+   "file": "dwight-head.png",
+   "kind": "image",
+   "name": "dwight_head",
+   "key": true,
+   "maxHeight": 800
+  },
+  {
+   "file": "dwight-head-talk.png",
+   "kind": "image",
+   "name": "dwight_head_talk",
+   "key": true,
+   "maxHeight": 800
+  },
+  {
+   "file": "angela-head.png",
+   "kind": "image",
+   "name": "angela_head",
+   "key": true,
+   "maxHeight": 800
+  },
+  {
+   "file": "angela-head-talk.png",
+   "kind": "image",
+   "name": "angela_head_talk",
+   "key": true,
+   "maxHeight": 800
+  },
+  {
+   "file": "michael-head.png",
+   "kind": "image",
+   "name": "michael_head",
+   "key": true,
+   "maxHeight": 800
+  },
+  {
+   "file": "michael-head-talk.png",
+   "kind": "image",
+   "name": "michael_head_talk",
+   "key": true,
+   "maxHeight": 800
+  },
+  {
+   "file": "kelly-head.png",
+   "kind": "image",
+   "name": "kelly_head",
+   "key": true,
+   "maxHeight": 800
+  },
+  {
+   "file": "kelly-head-talk.png",
+   "kind": "image",
+   "name": "kelly_head_talk",
+   "key": true,
+   "maxHeight": 800
+  },
+  {
+   "file": "ryan-head.png",
+   "kind": "image",
+   "name": "ryan_head",
+   "key": true,
+   "maxHeight": 800
+  },
+  {
+   "file": "ryan-head-talk.png",
+   "kind": "image",
+   "name": "ryan_head_talk",
+   "key": true,
+   "maxHeight": 800
+  },
+  {
+   "file": "andy-head.png",
+   "kind": "image",
+   "name": "andy_head",
+   "key": true,
+   "maxHeight": 800
+  },
+  {
+   "file": "andy-head-talk.png",
+   "kind": "image",
+   "name": "andy_head_talk",
+   "key": true,
+   "maxHeight": 800
+  },
+  {
+   "file": "oscar-head.png",
+   "kind": "image",
+   "name": "oscar_head",
+   "key": true,
+   "maxHeight": 800
+  },
+  {
+   "file": "oscar-head-talk.png",
+   "kind": "image",
+   "name": "oscar_head_talk",
+   "key": true,
+   "maxHeight": 800
+  },
+  {
+   "file": "phyllis-head.png",
+   "kind": "image",
+   "name": "phyllis_head",
+   "key": true,
+   "maxHeight": 800
+  },
+  {
+   "file": "phyllis-head-talk.png",
+   "kind": "image",
+   "name": "phyllis_head_talk",
+   "key": true,
+   "maxHeight": 800
+  },
+  {
+   "file": "creed-head.png",
+   "kind": "image",
+   "name": "creed_head",
+   "key": true,
+   "maxHeight": 800
+  },
+  {
+   "file": "creed-head-talk.png",
+   "kind": "image",
+   "name": "creed_head_talk",
+   "key": true,
+   "maxHeight": 800
+  },
+  {
+   "file": "meredith-head.png",
+   "kind": "image",
+   "name": "meredith_head",
+   "key": true,
+   "maxHeight": 800
+  },
+  {
+   "file": "meredith-head-talk.png",
+   "kind": "image",
+   "name": "meredith_head_talk",
+   "key": true,
+   "maxHeight": 800
   }
  ]
 }

@@ -24,7 +24,7 @@ const faces = new Map<string, string | null>();
 function cropFace(id: string, anim: string): string | null {
   const k = `${id}_${anim}`;
   if (faces.has(k)) return faces.get(k)!;
-  const a = art.index.anims?.[k], im = art.image(k);
+  const a = art.anim(k), im = art.image(k);
   let url: string | null = null;
   if (a && im) {
     // Keep head to waist (frames are anchored at the feet, so the head is at the top). The sprite is a soft
@@ -113,8 +113,10 @@ export class HeadView {
    */
   private spriteFace(): string | null {
     const h = this.stage.head!;
+    const who = this.stage.actor(h.who);
+    art.dress(who.id, who.look, who.color, who.home);
     const still = SPRITE_MOOD[h.mood] ?? 'walk_front';
-    if (!art.index.anims?.[`${h.who}_walk_front`]) return null;
+    if (!art.anim(`${h.who}_walk_front`)) return null;
     const open = !!h.text && Math.floor(this.stage.time * 7) % 2 === 0 && still === 'walk_front';
     return cropFace(h.who, open ? 'react_gasp' : still) ?? cropFace(h.who, 'walk_front');
   }

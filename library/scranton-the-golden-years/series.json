@@ -39,7 +39,8 @@
       "voice": "Dry, clipped, carries a clipboard, never smiles, says 'noted' after anything.",
       "glyph": "Y",
       "color": "#00e5ff",
-      "since": 1
+      "since": 1,
+      "look": "office_f"
     }
   ],
   "relationships": [
@@ -278,7 +279,8 @@
         "id": "cheryl_dunder",
         "name": "Cheryl Palumbo",
         "title": "Corporate Auditor",
-        "voice": "Dry, clipped, carries a clipboard, never smiles, says 'noted' after anything."
+        "voice": "Dry, clipped, carries a clipboard, never smiles, says 'noted' after anything.",
+        "look": "office_f"
       }
     ],
     "runningGags": [
