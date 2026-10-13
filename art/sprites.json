@@ -563,6 +563,20 @@
    "name": "meredith_head_talk",
    "key": true,
    "maxHeight": 800
+  },
+  {
+   "file": "toby-head.png",
+   "kind": "image",
+   "name": "toby_head",
+   "key": true,
+   "maxHeight": 800
+  },
+  {
+   "file": "toby-head-talk.png",
+   "kind": "image",
+   "name": "toby_head_talk",
+   "key": true,
+   "maxHeight": 800
   }
  ]
 }

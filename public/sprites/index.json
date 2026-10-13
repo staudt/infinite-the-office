@@ -2661,6 +2661,16 @@
    "src": "meredith_head_talk.png",
    "w": 616,
    "h": 800
+  },
+  "toby_head": {
+   "src": "toby_head.png",
+   "w": 615,
+   "h": 800
+  },
+  "toby_head_talk": {
+   "src": "toby_head_talk.png",
+   "w": 615,
+   "h": 800
   }
  }
 }
