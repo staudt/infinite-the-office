@@ -99,6 +99,8 @@ export function propKind(sprite: string): string {
   return 'prop';
 }
 
+/** A standing person's height in world px (the sprite view draws people this tall in layout sets). */
+const STAND_H = 96;
 const overlap = (a: Rect, b: Rect) => Math.max(0, Math.min(a.x + a.w, b.x + b.w) - Math.max(a.x, b.x)) * Math.max(0, Math.min(a.y + a.h, b.y + b.h) - Math.max(a.y, b.y));
 const inside = (r: Rect, x: number, y: number) => x >= r.x && x < r.x + r.w && y >= r.y && y < r.y + r.h;
 
@@ -142,6 +144,18 @@ export function buildLayoutSet(id: string, L: Layout): SetMap {
     }
   }
 
+  // Standing spots a prop hides: the feet are inside a prop's sprite that is drawn later (its base is lower) and the sprite
+  // reaches up over more than half of a standing person. Walkable, but placement avoids them.
+  const hidden = grid(false);
+  const rects = L.props.map((p) => ({ r: propRect(p), B: p.y }));
+  for (let y = 0; y < height; y++) {
+    for (let x = 0; x < width; x++) {
+      if (!walk[y][x] || kinds[y][x] !== 'floor') continue;
+      const fx = x * c + c / 2, fy = y * c + c / 2;
+      hidden[y][x] = rects.some(({ r, B }) => inside(r, fx, fy) && B > fy && fy - r.y > STAND_H / 2);
+    }
+  }
+
   // Regions are rects: a walkable non-door cell belongs to the first region whose rect holds its center.
   const regions: Record<string, Region> = {};
   for (const [name, rs] of Object.entries(L.regions)) {
@@ -159,5 +173,5 @@ export function buildLayoutSet(id: string, L: Layout): SetMap {
     regions[name] = { cells, label: { text: name.replace(/_/g, ' ').toUpperCase(), at } };
   }
 
-  return assemble({ id, width, height, cellW: c, cellH: c, kinds, walk, spots, exits, regions, owner, gap: 2, layout: L });
+  return assemble({ id, width, height, cellW: c, cellH: c, kinds, walk, spots, exits, regions, owner, gap: 2, layout: L, hidden });
 }

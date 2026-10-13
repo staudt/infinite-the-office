@@ -25,10 +25,14 @@ export interface SetMap {
   regionAt(p: Point): string | null;
   /** Shortest walkable path (8-directional, no corner cutting), excluding start, including goal. null if unreachable. */
   path(from: Point, to: Point): Point[] | null;
-  /** A walkable non-spot, non-exit cell in the region not in `occupied`, preferring the middle; `pick` is an rng in [0,1). */
+  /** A walkable non-spot, non-exit cell in the region clear of `occupied` (personal space if possible), preferring the middle; `pick` is an rng in [0,1). */
   freeCellIn(region: string, occupied: Set<string>, pick: () => number): Point | null;
-  /** Nearest walkable cell adjacent to p not in occupied (for "walk up to someone"). */
+  /** Nearest walkable cell around p clear of occupied (personal space if possible). */
   nextTo(p: Point, occupied: Set<string>): Point | null;
+  /** Would someone standing here overlap a person at an occupied cell on screen? */
+  crowded(p: Point, occupied: Set<string>): boolean;
+  /** Would a prop drawn in front of someone standing here hide most of them? (Walkable, but no place to stand.) */
+  hidden(p: Point): boolean;
 }
 
 /** Fixed tile legend: char -> [css kind, walkable]. */
@@ -38,6 +42,9 @@ const LEGEND: Record<string, [string, boolean]> = {
   '$': ['vending', false], '*': ['appliance', false], '[': ['shelf', false], ']': ['shelf', false],
   ':': ['prop', false], '~': ['deco', true],
 };
+
+/** Room a standing person takes on screen (world px), see `crowded`. */
+const SPACE = { x: 44, y: 40 };
 
 const NEIGHBORS4: [number, number][] = [[0, -1], [1, 0], [0, 1], [-1, 0]];
 
@@ -161,6 +168,8 @@ export interface Parts {
   regions: Record<string, Region>; owner: (string | null)[][];
   /** Min spacing between people in cells: 1 for the 16 x 32 ASCII cells, 2 for 16 px square cells. */
   gap: number;
+  /** Cells where a prop in front would hide a standing person (layout sets). */
+  hidden?: boolean[][];
   layout?: Layout;
 }
 
@@ -174,12 +183,20 @@ export function assemble(a: Parts): SetMap {
     for (let dy = 1 - gap; dy < gap; dy++) for (let dx = 1 - gap; dx < gap; dx++) if (occ.has(`${q.x + dx},${q.y + dy}`)) return true;
     return false;
   };
+  // Personal space: a standing person closer than this (world px, both axes) overlaps another's sprite. Placement keeps it
+  // when it can and falls back to `taken` in a packed room.
+  const sx = Math.ceil(SPACE.x / cellW) - 1, sy = Math.ceil(SPACE.y / cellH) - 1;
+  const hidden = (q: Point) => !!a.hidden?.[q.y]?.[q.x];
+  const crowded = (q: Point, occ: Set<string>) => {
+    for (let dy = -sy; dy <= sy; dy++) for (let dx = -sx; dx <= sx; dx++) if (occ.has(`${q.x + dx},${q.y + dy}`)) return true;
+    return false;
+  };
   const middle = new Map<string, Point[]>();
   const candidates = (region: string): Point[] => {
     let c = middle.get(region);
     if (c) return c;
     const cells = regions[region]?.cells ?? [];
-    const plain = cells.filter((p) => ['floor', 'deco'].includes(kinds[p.y][p.x]));
+    const plain = cells.filter((p) => ['floor', 'deco'].includes(kinds[p.y][p.x]) && !hidden(p));
     const pool = plain.length ? plain : cells.filter((p) => !['exit'].includes(kinds[p.y][p.x]));
     const cx = cells.reduce((s, p) => s + p.x, 0) / (cells.length || 1), cy = cells.reduce((s, p) => s + p.y, 0) / (cells.length || 1);
     const d = (p: Point) => ((p.x - cx) * cellW) ** 2 + ((p.y - cy) * cellH) ** 2;
@@ -193,27 +210,34 @@ export function assemble(a: Parts): SetMap {
     regionAt: (p) => (inBounds(p) ? owner[p.y][p.x] : null),
     path: (from, to) => findPath(width, height, (x, y) => walk[y][x], from, to),
     freeCellIn(region, occupied, pick) {
-      const free = candidates(region).filter((p) => !taken(p, occupied));
+      const roomy = candidates(region).filter((p) => !crowded(p, occupied));
+      const free = roomy.length ? roomy : candidates(region).filter((p) => !taken(p, occupied));
       if (!free.length) return null;
       const pool = free.slice(0, Math.max(1, Math.ceil(free.length / 2)));
       return pool[Math.floor(pick() * pool.length)];
     },
     nextTo(p, occupied) {
-      for (let r = gap; r <= 6; r++) {
-        let best: Point | null = null, bestScore = Infinity;
-        for (let dy = -r; dy <= r; dy++) {
-          for (let dx = -r; dx <= r; dx++) {
-            if (Math.max(Math.abs(dx), Math.abs(dy)) !== r) continue;
-            const q = { x: p.x + dx, y: p.y + dy };
-            if (!walkable(q) || taken(q, occupied)) continue;
-            const kind = kinds[q.y][q.x];
-            const score = (dx * dx * cellW * cellW + dy * dy * cellH * cellH) / (cellW * cellW) + (kind === 'floor' || kind === 'deco' ? 0 : 3);
-            if (score < bestScore) { best = q; bestScore = score; }
+      // First pass: open floor with personal space (no chairs: walking up to someone shouldn't sit them down).
+      const roomy = (q: Point, occ: Set<string>) => hidden(q) || crowded(q, occ) || kinds[q.y][q.x] === 'seat';
+      for (const [clear, far] of [[roomy, 8], [taken, 6]] as const) {
+        for (let r = gap; r <= far; r++) {
+          let best: Point | null = null, bestScore = Infinity;
+          for (let dy = -r; dy <= r; dy++) {
+            for (let dx = -r; dx <= r; dx++) {
+              if (Math.max(Math.abs(dx), Math.abs(dy)) !== r) continue;
+              const q = { x: p.x + dx, y: p.y + dy };
+              if (!walkable(q) || clear(q, occupied)) continue;
+              const kind = kinds[q.y][q.x];
+              const score = (dx * dx * cellW * cellW + dy * dy * cellH * cellH) / (cellW * cellW) + (kind === 'floor' || kind === 'deco' ? 0 : 3);
+              if (score < bestScore) { best = q; bestScore = score; }
+            }
           }
+          if (best) return best;
         }
-        if (best) return best;
       }
       return null;
     },
+    crowded,
+    hidden,
   };
 }

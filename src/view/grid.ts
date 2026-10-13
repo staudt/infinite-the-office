@@ -59,6 +59,16 @@ export function drawGrid(ctx: CanvasRenderingContext2D, set: SetMap, actors: Act
   for (const [name, p] of Object.entries(set.spots)) mark(p.x, p.y, kinds[p.y][p.x] === 'seat' ? 'rgba(40,120,255,0.45)' : 'rgba(40,200,120,0.4)', name);
   for (const [name, cells] of Object.entries(set.exits)) for (const p of cells) mark(p.x, p.y, 'rgba(255,200,0,0.45)', `>${name}`);
 
+  // Everyone's cell (where the logic thinks they stand), with their id.
+  for (const a of actors) {
+    const [px, py] = mid(a.x, a.y);
+    ctx.strokeStyle = '#fff';
+    ctx.lineWidth = 1.5;
+    ctx.strokeRect(a.x * cw + 1, a.y * ch + 1, cw - 2, ch - 2);
+    ctx.fillStyle = a.color;
+    ctx.fillText(a.id, px, py + ch * 0.9);
+  }
+
   // Remaining path of everyone walking.
   ctx.lineWidth = 2;
   for (const a of actors) {

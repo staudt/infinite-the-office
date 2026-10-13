@@ -152,7 +152,7 @@ export class Director {
     if (beside) return beside;
     for (const s of HANGOUTS) {
       const p = set.spots[s];
-      if (p && set.regionAt(p) === region && !occ.has(key(p))) return p;
+      if (p && set.regionAt(p) === region && !set.crowded(p, occ)) return p;
     }
     return set.freeCellIn(region, occ, () => st.rng.next()) ?? set.nextTo(set.regions[region].cells[0], occ) ?? set.regions[region].cells[0];
   }
@@ -216,7 +216,8 @@ export class Director {
     const other = st.actors.get(to);
     if (other && other !== a && other.visible) return this.besideOf(other, occ);
     const spot = set.spots[to];
-    if (spot) return occ.has(key(spot)) ? set.nextTo(spot, occ) : spot;
+    // A standing spot next to someone counts as taken (a seat beside someone is fine).
+    if (spot) return occ.has(key(spot)) || (set.kinds[spot.y][spot.x] !== 'seat' && set.crowded(spot, occ)) ? set.nextTo(spot, occ) : spot;
     if (set.regions[to]) return set.freeCellIn(to, occ, () => st.rng.next());
     return null;
   }
@@ -225,12 +226,7 @@ export class Director {
    *  on plain floor, in their region if possible; else the nearest free cell. */
   private besideOf(other: Actor, occ: Set<string>): Point | null {
     const set = this.st.set, at = other.dest ?? other.pos, region = set.regionAt(at);
-    // Square cells (layout sets) keep people a cell apart, like set.nextTo does.
-    const near = set.cellW === set.cellH ? 1 : 0;
-    const free = (p: Point) => {
-      for (let dy = -near; dy <= near; dy++) for (let dx = -near; dx <= near; dx++) if (occ.has(`${p.x + dx},${p.y + dy}`)) return false;
-      return true;
-    };
+    const free = (p: Point) => !set.crowded(p, occ) && !set.hidden(p);
     // Their own region first (region rects can end right beside a desk), then anywhere.
     for (const strict of [true, false]) {
       for (const dy of [0, 1, -1, 2, -2]) {
