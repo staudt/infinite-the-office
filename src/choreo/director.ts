@@ -22,6 +22,8 @@ const DEFAULT_REGION: Record<SetId, string> = {
   office: 'bullpen', kitchen: 'kitchen', annex: 'annex', break_room: 'break_room', parking_lot: 'parking_lot', warehouse: 'warehouse', offsite: 'venue',
 };
 const AMBIENT_STOPS = ['copier', 'water_cooler'];
+/** Where someone with no desk or partner in a scene hangs out, in order of preference. */
+const HANGOUTS = ['water_cooler', 'copier'];
 const PACE_OF: Record<string, Pace> = { walk: 'walk', hurry: 'hurry', sneak: 'sneak', storm_off: 'hurry', run: 'hurry' };
 
 const list = (v: string | string[]) => (Array.isArray(v) ? v : [v]);
@@ -118,9 +120,11 @@ export class Director {
       st.show(a, desk);
       if (!busy.has(id)) background.push(a);
     }
-    for (const id of sc.present) {
+    // People at their desks first, so the others can start beside whoever they talk with.
+    const atDesk = (id: string) => { const d = st.actor(id).desk; return !!d && !!st.set.spots[d] && st.set.regionAt(st.set.spots[d]) === region; };
+    for (const id of [...sc.present].sort((x, y) => Number(atDesk(y)) - Number(atDesk(x)))) {
       const a = st.actor(id);
-      if (!entrants.has(id) && !a.visible) st.show(a, this.startCell(a, region));
+      if (!entrants.has(id) && !a.visible) st.show(a, this.startCell(a, region, sc));
     }
     if (title) yield* this.card(title, '', 1.5);
     if (sc.set === 'office') st.spawn(this.ambient(token, new Rng(hashSeed('ambient', index)), background));
@@ -133,14 +137,23 @@ export class Director {
     yield 0.4;
   }
 
-  /** Desk if it is in the scene's region, else a free seat there, else a free cell. */
-  private startCell(a: Actor, region: string): Point {
+  /** Desk if it is in the scene's region, else a free seat there, else beside the first person they talk with,
+   *  else a hangout spot (water cooler, copier), else a free cell. */
+  private startCell(a: Actor, region: string, sc: Scene): Point {
     const { st } = this;
     const set = st.set, occ = st.occupied();
     const desk = a.desk ? set.spots[a.desk] : undefined;
     if (desk && set.regionAt(desk) === region && !occ.has(key(desk))) return desk;
     const seats = this.seatsIn(region).filter((p) => !occ.has(key(p)));
     if (seats.length) return seats[Math.floor(st.rng.next() * seats.length)];
+    const talk = sc.beats.find((b) => b.type === 'say' && ((b.who === a.id && st.actors.has(b.to)) || b.to === a.id)) as BeatOf<'say'> | undefined;
+    const mate = talk && st.actors.get(talk.who === a.id ? talk.to : talk.who);
+    const beside = mate?.visible && mate !== a ? this.besideOf(mate, occ) : null;
+    if (beside) return beside;
+    for (const s of HANGOUTS) {
+      const p = set.spots[s];
+      if (p && set.regionAt(p) === region && !occ.has(key(p))) return p;
+    }
     return set.freeCellIn(region, occ, () => st.rng.next()) ?? set.nextTo(set.regions[region].cells[0], occ) ?? set.regions[region].cells[0];
   }
 
@@ -201,11 +214,33 @@ export class Director {
     const { st } = this;
     const set = st.set, occ = st.occupied(a);
     const other = st.actors.get(to);
-    if (other && other !== a && other.visible) return set.nextTo(other.dest ?? other.pos, occ);
+    if (other && other !== a && other.visible) return this.besideOf(other, occ);
     const spot = set.spots[to];
     if (spot) return occ.has(key(spot)) ? set.nextTo(spot, occ) : spot;
     if (set.regions[to]) return set.freeCellIn(to, occ, () => st.rng.next());
     return null;
+  }
+
+  /** Where to stand to talk with someone: 3-4 cells to their side (so neither sprite covers the other, seated or not),
+   *  on plain floor, in their region if possible; else the nearest free cell. */
+  private besideOf(other: Actor, occ: Set<string>): Point | null {
+    const set = this.st.set, at = other.dest ?? other.pos, region = set.regionAt(at);
+    // Square cells (layout sets) keep people a cell apart, like set.nextTo does.
+    const near = set.cellW === set.cellH ? 1 : 0;
+    const free = (p: Point) => {
+      for (let dy = -near; dy <= near; dy++) for (let dx = -near; dx <= near; dx++) if (occ.has(`${p.x + dx},${p.y + dy}`)) return false;
+      return true;
+    };
+    // Their own region first (region rects can end right beside a desk), then anywhere.
+    for (const strict of [true, false]) {
+      for (const dy of [0, 1, -1, 2, -2]) {
+        for (const dx of [-3, 3, -4, 4]) {
+          const p = { x: at.x + dx, y: at.y + dy }, kind = set.kinds[p.y]?.[p.x];
+          if ((kind === 'floor' || kind === 'deco') && set.walkable(p) && free(p) && (!strict || !region || set.regionAt(p) === region)) return p;
+        }
+      }
+    }
+    return set.nextTo(at, occ);
   }
 
   /** The exit cell closest to `near` (or the emptiest one). */

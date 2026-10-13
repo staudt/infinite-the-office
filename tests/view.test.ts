@@ -103,6 +103,16 @@ describe('balloon placement', () => {
     pointsAt(p, 400);
     expect(p.rect.x1).toBeLessThanOrEqual(other.x0 + 1);
   });
+  it('stays where it was while that spot is still valid, even if a better one appears', () => {
+    const behind = bodyRect(400, 300, bodyH, k);
+    const first = place(400, 400, []);
+    const again = placeBalloon(sized.w, sized.h, 400, 400, bodyH, k, CW, CH, [behind], [], first.anchor);
+    expect(again.rect).toEqual(first.rect);
+    const moved = placeBalloon(sized.w, sized.h, 420, 400, bodyH, k, CW, CH, [], [], first.anchor);
+    expect(moved.rect.x0).toBe(first.rect.x0 + 20); // follows the speaker
+    const clash = placeBalloon(sized.w, sized.h, 400, 400, bodyH, k, CW, CH, [], [first.rect], first.anchor);
+    expect(overlap(clash.rect, first.rect)).toBe(false); // gives way to another balloon
+  });
   it('never covers the speaker and never leaves the canvas', () => {
     for (const [x, feet] of [[400, 60], [5, 30], [795, 440], [400, 225], [0, 0], [820, 460]] as [number, number][]) {
       const own = bodyRect(x, feet, bodyH, k);

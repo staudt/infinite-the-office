@@ -8,9 +8,9 @@ import { readTime, type Stage } from '../engine/stage';
 import type { SetMap } from '../sets/index.ts';
 import { art } from './art';
 import { buildAscii } from './ascii';
-import { bodyRect, placeBalloon, type ScreenRect } from './balloons';
+import { headRect, placeBalloon, type Anchor, type ScreenRect } from './balloons';
 import { ease, frame, regionBox, shotBox, widenFor, type Cam } from './camera';
-import { CAM_EASE, EMOTE, geoOf, SIDE_HALF, type Geo } from './geometry';
+import { BALLOON, CAM_EASE, EMOTE, geoOf, SIDE_HALF, type Geo } from './geometry';
 import { drawGrid, GRID } from './grid';
 import { MARKER } from './markers';
 import { NameIndex } from './names';
@@ -33,7 +33,7 @@ function builtFor(set: SetMap): Built {
   return l;
 }
 
-interface GBalloon { who: string; text: string; el: HTMLDivElement; at: number; until: number; note: boolean; w: number; h: number; mw: number; pos: string; tail: string; t: string }
+interface GBalloon { anchor?: Anchor; who: string; text: string; el: HTMLDivElement; at: number; until: number; note: boolean; w: number; h: number; mw: number; pos: string; tail: string; t: string }
 
 export class SpriteMapView {
   private canvas = document.createElement('canvas');
@@ -138,7 +138,7 @@ export class SpriteMapView {
       this.canvas.width = pw;
       this.canvas.height = ph;
       this.lastSig = '';
-      for (const b of this.balloons.values()) b.mw = 0;
+      for (const b of this.balloons.values()) { b.mw = 0; b.anchor = undefined; }
     }
     const aspect = pw / ph, t = st.wt;
     this.syncNote();
@@ -264,7 +264,8 @@ export class SpriteMapView {
   private placeBalloons(poses: Pose[], geo: Geo, cam: Cam, cw: number, chh: number): void {
     const k = cw / cam.w, vx = cam.cx - cam.w / 2, vy = cam.cy - cam.w / (cw / chh) / 2;
     const body = (p: Pose) => { const [fx, fy] = geo.foot(p.x, p.y); return { x: (fx - vx) * k, feet: (fy + geo.feetPad - vy) * k }; };
-    const bodies = poses.map((p) => { const b = body(p); return bodyRect(b.x, b.feet, geo.personH * k, k); }), placed: ScreenRect[] = [];
+    // Walkers pass by: covering them for a moment is fine (and avoiding them would chase them around).
+    const heads = poses.filter((p) => !p.moving).map((p) => { const b = body(p); return headRect(b.x, b.feet, geo.personH * k * (p.seated ? BALLOON.seatedH : 1), k); }), placed: ScreenRect[] = [];
     for (const b of [...this.balloons.values()].sort((a, c) => a.at - c.at)) {
       if (!b.mw || !b.w) {
         b.el.style.transform = '';
@@ -275,7 +276,8 @@ export class SpriteMapView {
       const p = poses.find((q) => q.a.id === b.who);
       if (!p) continue;
       const { x, feet } = body(p);
-      const pick = placeBalloon(b.w, b.h, x, feet, geo.personH * k, k, cw, chh, bodies, placed);
+      const pick = placeBalloon(b.w, b.h, x, feet, geo.personH * k, k, cw, chh, heads, placed, b.anchor);
+      b.anchor = pick.anchor;
       placed.push(pick.rect);
       const pos = `translate(${Math.round(pick.l)}px,${Math.round(pick.t)}px)`;
       if (b.pos !== pos) { b.pos = pos; b.el.style.transform = pos; }

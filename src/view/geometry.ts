@@ -43,16 +43,18 @@ export const BG_SCALE = 2;
 
 // ---- balloons and emotes
 export const BALLOON = {
-  gap: 9,       // between a balloon and the head (above) or the feet (below)
+  gap: 18,      // between a balloon and the head (above) or the feet (below); the tail pokes ~7 px into it
   midDown: 14,  // world px below the head top: where side balloons point
   sideOff: 26,  // world px from the body center to a side balloon
   lift: 6,      // screen px between stacked "higher" candidates
   margin: 2,    // screen px kept clear of the canvas edge
   bodyHalf: 22, // world px: half width of a body for avoiding collisions
+  head: 38,     // world px: the top of a body that counts as the head (covering it costs, the rest is free)
+  seatedH: 0.8, // a sitter's head is this fraction of a standing height above the feet
   tailMin: 10,  // screen px: a tail stays this far from a balloon's corners
   tailMinSide: 8,
   // Placement scores in screen px of distance from the head: covering someone costs this much per world px² of them hidden
-  // (a face is ~1300), and going beside / below costs a flat extra.
+  // (a head is ~1700), and going beside / below costs a flat extra.
   coverCost: 0.08,
   offCenterCost: 0.15, // per px the balloon's center is off the speaker
   sideCost: 30,

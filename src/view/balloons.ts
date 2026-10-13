@@ -5,9 +5,14 @@ export interface ScreenRect { x0: number; y0: number; x1: number; y1: number }
 /** Which edge of the balloon its tail points from: 'b' = bottom (balloon above), 't' = top (below), 'l'/'r' = left/right edge (beside). */
 export type TailSide = 'b' | 't' | 'l' | 'r';
 export interface Placed { l: number; t: number; side: TailSide; /** Tail offset along its edge (px from the balloon's left/top): it sits right at the speaker. */ tail: number; rect: ScreenRect }
+/** Where a balloon sat relative to the speaker's head (screen px), so the next frame can keep it there. */
+export interface Anchor { side: TailSide; dx: number; dy: number }
 
 /** The screen box of a standing body: centered on `x`, `h` tall above `feet`. */
 export const bodyRect = (x: number, feet: number, h: number, k: number): ScreenRect => ({ x0: x - BALLOON.bodyHalf * k, x1: x + BALLOON.bodyHalf * k, y0: feet - h, y1: feet });
+
+/** Just the head of that body (`h` from the feet to the top of the head): what a balloon should not hide. */
+export const headRect = (x: number, feet: number, h: number, k: number): ScreenRect => ({ ...bodyRect(x, feet, h, k), y1: feet - h + BALLOON.head * k });
 
 const area = (a: ScreenRect, b: ScreenRect) => Math.max(0, Math.min(a.x1, b.x1) - Math.max(a.x0, b.x0)) * Math.max(0, Math.min(a.y1, b.y1) - Math.max(a.y0, b.y0));
 
@@ -16,9 +21,11 @@ const area = (a: ScreenRect, b: ScreenRect) => Math.max(0, Math.min(a.x1, b.x1) 
  * plus a cost for being off-center and for covering other people (soft) and other balloons (hard), plus a small preference for above > beside > below.
  * The tail always sits on the edge facing the speaker, at the speaker's x (or y), so it points at them wherever the balloon
  * slides. `x`/`feet`: the speaker's screen position, `bodyH`: their screen height, `k`: screen px per world px,
- * `bodies`: people to avoid covering (the speaker's own body is never covered), `balloons`: balloons already placed.
+ * `bodies`: heads to avoid covering (the speaker is never covered at all), `balloons`: balloons already placed.
+ * `prev`: where this balloon sat last frame; it stays there while that spot is still valid (on the canvas, clear of the
+ * speaker and other balloons), so a line never hops around while it is up.
  */
-export function placeBalloon(w: number, h: number, x: number, feet: number, bodyH: number, k: number, cw: number, chh: number, bodies: ScreenRect[], balloons: ScreenRect[] = []): Placed {
+export function placeBalloon(w: number, h: number, x: number, feet: number, bodyH: number, k: number, cw: number, chh: number, bodies: ScreenRect[], balloons: ScreenRect[] = [], prev?: Anchor): Placed & { anchor: Anchor } {
   const { gap: G, margin: M, tailMin: TM, tailMinSide: TS } = BALLOON;
   const top = feet - bodyH, mid = top + BALLOON.midDown * k, half = BALLOON.bodyHalf * k;
   const own = bodyRect(x, feet, bodyH, k);
@@ -40,6 +47,12 @@ export function placeBalloon(w: number, h: number, x: number, feet: number, body
     const clash = balloons.reduce((s, b) => s + area(rect, b), 0);
     cands.push({ l, t, side, tail, rect, score: dist + Math.abs(l + w / 2 - x) * BALLOON.offCenterCost + cover * BALLOON.coverCost + clash * 1e3 + bias } as Placed & { score: number });
   };
+  const done = (p: Placed): Placed & { anchor: Anchor } => ({ ...p, anchor: { side: p.side, dx: p.l - x, dy: p.t - top } });
+  if (prev) {
+    add(x + prev.dx, top + prev.dy, prev.side, 0);
+    const kept = cands.pop() as (Placed & { score: number }) | undefined;
+    if (kept && kept.l === x + prev.dx && kept.t === top + prev.dy && !balloons.some((b) => area(kept.rect, b) > 0)) return done(kept);
+  }
   // Above: slide along so the tail can be anywhere on the bottom edge, at a few heights.
   for (const lift of [0, h * 0.5, h + BALLOON.lift]) for (let i = 0; i <= 8; i++) add(x - TM - ((w - 2 * TM) * i) / 8, top - h - G - lift, 'b', 0);
   // Beside, at a few heights around the face.
@@ -50,8 +63,8 @@ export function placeBalloon(w: number, h: number, x: number, feet: number, body
   // Below the feet, last resort.
   for (let i = 0; i <= 8; i++) add(x - TM - ((w - 2 * TM) * i) / 8, feet + G, 't', BALLOON.belowCost);
   const best = (cands as (Placed & { score: number })[]).sort((a, b) => a.score - b.score)[0];
-  if (best) return { l: best.l, t: best.t, side: best.side, tail: best.tail, rect: best.rect };
+  if (best) return done({ l: best.l, t: best.t, side: best.side, tail: best.tail, rect: best.rect });
   // Speaker off-screen or the canvas is tiny: centered above, clamped, tail clamped.
   const l = Math.max(M, Math.min(cw - w - M, x - w / 2)), t = Math.max(M, top - h - G);
-  return { l, t, side: 'b', tail: Math.max(TM, Math.min(w - TM, x - l)), rect: { x0: l, y0: t, x1: l + w, y1: t + h } };
+  return done({ l, t, side: 'b', tail: Math.max(TM, Math.min(w - TM, x - l)), rect: { x0: l, y0: t, x1: l + w, y1: t + h } });
 }
