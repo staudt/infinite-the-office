@@ -3,7 +3,7 @@
 import type { Episode, Mood, SetId } from '../schema/episode';
 import { findPath, getSet, key, SETS, type Point, type SetMap } from '../sets/index.ts';
 import { Actor, type Pace, SPEED } from './actor';
-import type { CastMember } from './cast';
+import { type CastMember, pickGlyph } from './cast';
 import { distinctColor } from './colors';
 import { type EngineEvent, EventBus } from './events';
 import { Rng } from './rng';
@@ -42,7 +42,7 @@ export interface StageSeries {
 }
 
 export interface Card { text: string; sub: string; until: number }
-/** A camera shot the director forces (intro montage): center cell and visible width in cells. */
+/** A camera shot the director forces (the opening title shot over the office): center cell and visible width in cells. */
 export interface Shot { at: Point; span: number }
 /** The show's logo over the map, with the episode title. */
 export interface Logo { title: string; label: string }
@@ -61,7 +61,7 @@ export class Stage {
   frozen = false;
   /** Full-screen title card (show time). */
   card: Card | null = null;
-  /** Intro montage: forced camera shot and logo overlay (views only). */
+  /** Opening-title shot: forced camera and logo overlay (views only). */
   shot: Shot | null = null;
   logo: Logo | null = null;
   /** Dim caption at the bottom of the map (show time). */
@@ -100,9 +100,7 @@ export class Stage {
   }
 
   private freeGlyph(name: string): string {
-    const letters = [...name.toUpperCase().replace(/[^A-Z]/g, ''), ...name.toLowerCase().replace(/[^a-z]/g, ''),
-      ...'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'];
-    const g = letters.find((l) => !this.usedGlyphs.has(l)) ?? '?';
+    const g = pickGlyph(name, this.usedGlyphs);
     this.usedGlyphs.add(g);
     return g;
   }

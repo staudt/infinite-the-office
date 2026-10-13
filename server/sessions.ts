@@ -8,7 +8,7 @@
 import { existsSync, mkdirSync, readdirSync, readFileSync, statSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import type { Episode } from '../src/schema/episode.ts';
-import { slugId, type Series } from '../src/world/state.ts';
+import { type LibraryEntry, slugId, type Series } from '../src/world/state.ts';
 
 // Read lazily so tests (and callers that load .env late) can point them elsewhere.
 const sessionsDir = () => process.env.SESSIONS_DIR || 'sessions';
@@ -16,16 +16,6 @@ const libraryDir = () => process.env.LIBRARY_DIR || 'library';
 /** Where stored series are read from; new material is always written to sessions. */
 const roots = () => [sessionsDir(), libraryDir()];
 const pad = (n: number) => String(n).padStart(3, '0');
-
-export interface LibraryEntry {
-  id: string;
-  seed: number;
-  source: 'sessions' | 'library';
-  name: string;
-  direction: string;
-  episodes: number;
-  updated: number;
-}
 
 function readJson<T>(path: string): T | null {
   try {

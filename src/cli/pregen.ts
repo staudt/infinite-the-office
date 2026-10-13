@@ -7,6 +7,7 @@ import { createSeries, llmAvailable, usage, writeEpisode } from '../../server/wr
 import { applyEpisode } from '../world/apply';
 import { episodeLabel, SEASON_LENGTH } from '../world/season';
 import { randomSeed, type Series } from '../world/state';
+import { arg } from './args';
 import { replayStored } from './replay';
 
 try {
@@ -15,11 +16,6 @@ try {
   // no .env file
 }
 
-const args = process.argv.slice(2);
-const arg = (f: string) => {
-  const i = args.indexOf(`--${f}`);
-  return i >= 0 ? args[i + 1] : undefined;
-};
 
 if (!llmAvailable()) {
   console.error('pregen needs ANTHROPIC_API_KEY.');

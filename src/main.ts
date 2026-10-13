@@ -20,9 +20,9 @@ import { sceneHeading } from './view/transcript';
 import { CAST } from './world/cast';
 import { applyEpisode } from './world/apply';
 import { episodeLabel } from './world/season';
-import { loadSeriesFromStorage, loadWatching, randomSeed, saveSeriesToStorage, saveWatching, type Series } from './world/state';
+import { findShow, loadSeriesFromStorage, loadWatching, randomSeed, saveSeriesToStorage, saveWatching, type Series } from './world/state';
 import {
-  fetchEpisode, fetchHealth, fetchLibrary, fetchNewSeries, fetchStoredSeries, type Health, type LibraryEntry, type Source, type Unavailable,
+  fetchEpisode, fetchHealth, fetchLibrary, fetchNewSeries, fetchStoredSeries, type Health, type Source, type Unavailable,
 } from './writer/client';
 
 const $ = <T extends HTMLElement>(id: string) => document.getElementById(id) as T;
@@ -341,14 +341,6 @@ async function openStart(canClose: boolean, saved: Series | null = canClose ? lo
   startScreen.open({ current: saved, library: await fetchLibrary(), health, canClose });
 }
 
-/** Match a ?show= value against stored series: id, seed, or (part of) the name. */
-function findShow(library: LibraryEntry[], query: string): LibraryEntry | undefined {
-  const slug = (x: string) => x.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
-  const q = slug(query);
-  return library.find((e) => e.id === query || String(e.seed) === query)
-    ?? library.find((e) => slug(e.name) === q) ?? library.find((e) => slug(e.name).startsWith(q));
-}
-
 const CHOSEN_KEY = 'office.chosen';
 const chosenThisTab = () => {
   try {
@@ -546,6 +538,11 @@ if (RENDER) {
       const changed = renderState.changed;
       renderState.changed = false;
       return changed;
+    },
+    /** Step `seconds` in video-sized frames (the camera eases per render, so stepping must match the video); returns show time. */
+    advance(seconds: number, frameDt = 1 / 30): number {
+      for (let n = Math.round(seconds / frameDt); n > 0; n--) (this as { step(dt: number): boolean }).step(frameDt);
+      return stage.time;
     },
   };
 } else requestAnimationFrame(frame);

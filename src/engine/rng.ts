@@ -62,3 +62,6 @@ export function hashSeed(...parts: (string | number)[]): number {
   }
   return h >>> 0;
 }
+
+/** Stable small hash of an id, for picks that must not change between runs. */
+export const hashId = (id: string): number => [...id].reduce((h, c) => (h * 31 + c.charCodeAt(0)) >>> 0, 7);

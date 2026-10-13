@@ -10,13 +10,9 @@ import { CAST } from '../world/cast';
 import { episodeInSeason, episodeLabel, seasonOf } from '../world/season';
 import { applyEpisode } from '../world/apply';
 import { clock, transcriptLine } from '../view/transcript';
+import { arg, has } from './args';
 import { replayStored } from './replay';
 
-const args = process.argv.slice(2);
-const arg = (f: string) => {
-  const i = args.indexOf(`--${f}`);
-  return i >= 0 ? args[i + 1] : undefined;
-};
 const id = arg('show');
 const n = Number(arg('ep') ?? 1);
 if (!id) {
@@ -38,7 +34,7 @@ stage.on((e) => {
   const l = transcriptLine(stage, e);
   if (l === null) return;
   lines.push(l);
-  if (!args.includes('--quiet')) console.log(l);
+  if (!has('quiet')) console.log(l);
 });
 const task = stage.spawn(new Director(stage, ep, after.roster, episodeLabel(after, n)).play());
 while (!task.done && stage.time < 3600) stage.update(TICK);

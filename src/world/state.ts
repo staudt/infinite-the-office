@@ -103,3 +103,22 @@ export function saveSeriesToStorage(s: Series): void {
     // storage full or unavailable: the show still plays, it just won't resume
   }
 }
+
+/** A stored series as listed by the library index (sessions on disk and the committed library). */
+export interface LibraryEntry {
+  id: string;
+  seed: number;
+  source: 'sessions' | 'library';
+  name: string;
+  direction: string;
+  episodes: number;
+  updated: number;
+}
+
+/** Match a show query against stored series: id, seed, or (part of) the name. */
+export function findShow(library: LibraryEntry[], query: string): LibraryEntry | undefined {
+  const slug = (x: string) => x.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+  const q = slug(query);
+  return library.find((e) => e.id === query || String(e.seed) === query)
+    ?? library.find((e) => slug(e.name) === q) ?? library.find((e) => slug(e.name).startsWith(q));
+}

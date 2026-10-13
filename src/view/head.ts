@@ -1,6 +1,7 @@
 // The confessional: a close-up of one person in front of the blinds, in the same box as the
 // map so cutting to it and back is a clean swap. Uses the speaker's portrait art, else a
 // simple bust drawn in their color.
+import { hashId } from '../engine/rng';
 import type { Stage } from '../engine/stage';
 import type { Mood } from '../schema/episode';
 import { art } from './art';
@@ -57,7 +58,7 @@ interface Gfx { bg: HTMLImageElement; who: HTMLImageElement; ph: HTMLElement; do
 const SKIN = ['#f1c9a5', '#e0ac85', '#c68a64', '#8d5a3c'];
 const HAIR = ['#2b2018', '#5a3a22', '#8a6a3a', '#b8b0a0', '#1c1c24'];
 /** Stable pick per character, so a placeholder always looks the same. */
-const pick = <T,>(xs: T[], id: string): T => xs[[...id].reduce((h, c) => (h * 31 + c.charCodeAt(0)) >>> 0, 7) % xs.length];
+const pick = <T,>(xs: T[], id: string): T => xs[hashId(id) % xs.length];
 
 /** A stand-in bust: head and shoulders in the actor's color, their letter on the chest. */
 function bust(id: string, color: string, glyph: string, mouthOpen: boolean): string {

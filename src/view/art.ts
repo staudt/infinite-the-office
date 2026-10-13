@@ -4,6 +4,8 @@
 //
 // Anyone without their own sheet wears a generic body (`generic_<look>_*`) whose green clothes
 // are recolored to their own color: `dress()` maps `<id>_<anim>` names onto it.
+import { hashId } from '../engine/rng';
+
 interface Entry { src: string; w: number; h: number }
 export interface Anim { src: string; frameW: number; frameH: number; frames: number; anchorX: number; anchorY: number }
 interface ArtIndex { props?: Record<string, Entry>; anims?: Record<string, Anim>; images?: Record<string, Entry> }
@@ -47,7 +49,7 @@ class Art {
     const pool = have.filter((l) => (home === 'warehouse' ? l === 'warehouse' : l !== 'warehouse'));
     const from = pool.length ? pool : have;
     if (!from.length) return;
-    const pick = look && have.includes(look) ? look : from[[...id].reduce((h, c) => (h * 31 + c.charCodeAt(0)) >>> 0, 7) % from.length];
+    const pick = look && have.includes(look) ? look : from[hashId(id) % from.length];
     this.dressed.set(id, { base: `generic_${pick}`, color });
   }
 

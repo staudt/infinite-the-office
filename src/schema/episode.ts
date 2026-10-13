@@ -170,3 +170,7 @@ export type StateChange = z.infer<typeof StateChange>;
 export type Episode = z.infer<typeof Episode>;
 export type EpisodeDraft = z.infer<typeof EpisodeDraft>;
 export type BeatOf<T extends Beat['type']> = Extract<Beat, { type: T }>;
+
+/** Episodes written before the kitchen and annex became their own sets put them in the office as regions. */
+export const remapLegacySet = <T extends { set: string; region: string }>(sc: T): T =>
+  (sc.set === 'office' && (sc.region === 'kitchen' || sc.region === 'annex') ? { ...sc, set: sc.region } : sc);

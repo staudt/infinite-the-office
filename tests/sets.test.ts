@@ -90,7 +90,7 @@ describe('sets', () => {
 
       it('parse is deterministic', () => {
         const again = loadSetsFromDir(new URL('../data/sets', import.meta.url).pathname)[id];
-        expect(again.tiles).toEqual(set.tiles);
+        expect(again.kinds).toEqual(set.kinds);
         expect(again.regions).toEqual(set.regions);
       });
     });
@@ -132,11 +132,11 @@ describe('parseSet', () => {
   it('pads ragged rows and marks the outside as void', () => {
     const s = parseSet('t', header + '####\n#a #\n#  #>\n####\n# b');
     expect(s.width).toBe(5);
-    expect(s.tiles.every((r) => r.length === 5)).toBe(true);
+    expect(s.kinds.every((r) => r.length === 5)).toBe(true);
     expect(s.kinds[0][4]).toBe('void');
     expect(s.kinds[1][2]).toBe('floor');
     expect(s.spots.alice).toEqual({ x: 1, y: 1 });
-    expect(s.tiles[1][1]).toBe('_');
+    expect(s.kinds[1][1]).toBe('seat');
     expect(s.walkable({ x: 4, y: 2 })).toBe(true);
   });
 

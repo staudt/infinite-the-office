@@ -14,6 +14,7 @@
     "pregen": "tsx src/cli/pregen.ts",
     "library": "tsx src/cli/library.ts",
     "render": "tsx src/cli/render.ts",
+    "shot": "tsx src/cli/shot.ts",
     "sprites": "tsx src/cli/sprites.ts"
   },
   "dependencies": {

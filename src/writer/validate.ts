@@ -2,7 +2,7 @@
 // (names -> ids, unknown places -> 'none', overlong lines), drops what it can't, and
 // returns an episode that is always safe to stage, or null when too little is left.
 // Sets are passed in so this runs in the browser (Vite glob) and in node (fs) alike.
-import { type Beat, draftToEpisode, Episode, EpisodeDraft, type Scene } from '../schema/episode';
+import { type Beat, draftToEpisode, Episode, EpisodeDraft, remapLegacySet, type Scene } from '../schema/episode';
 import { SeasonBible } from '../schema/season';
 import type { SetMap } from '../sets/index.ts';
 import { castById, CAST } from '../world/cast';
@@ -134,7 +134,7 @@ export function reviewEpisode(series: Series, raw: unknown, sets: Sets): Episode
   ep.scenes.slice(0, MAX_SCENES).forEach((sc, si) => {
     const where = `scene ${si + 1}`;
     // The kitchen and annex used to be regions of the office; a writer that still says so gets the set.
-    if (sc.set === 'office' && (sc.region === 'kitchen' || sc.region === 'annex')) sc.set = sc.region;
+    sc.set = remapLegacySet(sc).set;
     const set = sets[sc.set] ?? sets.office;
     if (sc.region !== 'none' && !set.regions[sc.region]) {
       problems.push(`${where}: unknown region "${sc.region}" in ${sc.set}, using none`);

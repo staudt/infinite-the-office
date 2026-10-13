@@ -16,9 +16,7 @@ export interface SetMap {
   cellH: number;
   /** The parsed `*.layout.json` this set was rasterized from (the renderer draws it); absent for ASCII sets. */
   layout?: Layout;
-  /** Display char per cell after substitution (spots -> seat marker, labels kept as letters). */
-  tiles: string[][];
-  /** Tile class per cell for CSS: wall|floor|desk|window|plant|door|machine|vending|appliance|shelf|prop|deco|label|seat|spot|exit|void. */
+  /** Cell kind, used by drawing and placement: wall|floor|desk|window|plant|door|machine|vending|appliance|shelf|prop|deco|label|seat|spot|exit|void. */
   kinds: string[][];
   walkable(p: Point): boolean;
   spots: Record<string, Point>;
@@ -80,7 +78,6 @@ export function parseSet(id: string, text: string): SetMap {
   const height = rows.length, width = Math.max(...rows.map((r) => r.length));
   const raw = rows.map((r) => r.padEnd(width, ' ').split(''));
 
-  const tiles = raw.map((r) => r.slice());
   const kinds: string[][] = raw.map((r) => r.map(() => 'floor'));
   const walk: boolean[][] = raw.map((r) => r.map(() => true));
   const isLabel: boolean[][] = raw.map((r) => r.map(() => false));
@@ -108,13 +105,11 @@ export function parseSet(id: string, text: string): SetMap {
       } else if (def) {
         if (spots[def.name]) throw new Error(`${id}: duplicate spot ${def.name}`);
         spots[def.name] = p;
-        tiles[y][x] = def.render;
         kinds[y][x] = def.render === '_' ? 'seat' : 'spot';
       } else if (LEGEND[ch]) {
         const [kind, w] = LEGEND[ch];
         kinds[y][x] = kind;
         walk[y][x] = w;
-        if (ch === '.') tiles[y][x] = ' ';
       } else throw new Error(`${id}: unknown tile '${ch}' at ${x},${y}`);
     }
   }
@@ -156,12 +151,12 @@ export function parseSet(id: string, text: string): SetMap {
   queue = [];
   for (const r of Object.values(regions)) r.cells.sort((a, b) => a.y - b.y || a.x - b.x);
 
-  return assemble({ id, width, height, cellW: 16, cellH: 32, tiles, kinds, walk, spots, exits, regions, owner, gap: 1 });
+  return assemble({ id, width, height, cellW: 16, cellH: 32, kinds, walk, spots, exits, regions, owner, gap: 1 });
 }
 
 export interface Parts {
   id: string; width: number; height: number; cellW: number; cellH: number;
-  tiles: string[][]; kinds: string[][]; walk: boolean[][];
+  kinds: string[][]; walk: boolean[][];
   spots: Record<string, Point>; exits: Record<string, Point[]>;
   regions: Record<string, Region>; owner: (string | null)[][];
   /** Min spacing between people in cells: 1 for the 16 x 32 ASCII cells, 2 for 16 px square cells. */
@@ -171,7 +166,7 @@ export interface Parts {
 
 /** The SetMap behaviour (queries and path-finding) over finished grids; shared by the ASCII parser and the layout builder. */
 export function assemble(a: Parts): SetMap {
-  const { id, width, height, cellW, cellH, tiles, kinds, walk, spots, exits, regions, owner, gap } = a;
+  const { id, width, height, cellW, cellH, kinds, walk, spots, exits, regions, owner, gap } = a;
   const inBounds = (p: Point) => p.x >= 0 && p.y >= 0 && p.x < width && p.y < height;
   const walkable = (p: Point) => inBounds(p) && walk[p.y][p.x];
   /** A cell is taken when someone stands on it or (for square cells) right next to it. */
@@ -194,7 +189,7 @@ export function assemble(a: Parts): SetMap {
   };
 
   return {
-    id, width, height, cellW, cellH, layout: a.layout, tiles, kinds, spots, exits, regions, walkable,
+    id, width, height, cellW, cellH, layout: a.layout, kinds, spots, exits, regions, walkable,
     regionAt: (p) => (inBounds(p) ? owner[p.y][p.x] : null),
     path: (from, to) => findPath(width, height, (x, y) => walk[y][x], from, to),
     freeCellIn(region, occupied, pick) {

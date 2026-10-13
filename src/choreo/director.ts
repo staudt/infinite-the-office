@@ -10,7 +10,7 @@ import { type Actor, type Pace } from '../engine/actor';
 import { readTime, type Stage } from '../engine/stage';
 import { Rng, hashSeed } from '../engine/rng';
 import type { Co } from '../engine/tasks';
-import type { Beat, BeatOf, Episode, Scene, SetId } from '../schema/episode';
+import { type Beat, type BeatOf, type Episode, remapLegacySet, type Scene, type SetId } from '../schema/episode';
 import { key, type Point } from '../sets/index.ts';
 
 /** What the title card says when the show cuts to a set. */
@@ -27,8 +27,6 @@ const PACE_OF: Record<string, Pace> = { walk: 'walk', hurry: 'hurry', sneak: 'sn
 const list = (v: string | string[]) => (Array.isArray(v) ? v : [v]);
 /** Sets where an actor not on screen can be conjured at their desk. */
 const DESK_SETS = new Set<SetId>(['office', 'annex']);
-/** Episodes stored before the kitchen and annex became their own sets put them in the office as regions. */
-const remap = (sc: Scene): Scene => (sc.set === 'office' && (sc.region === 'kitchen' || sc.region === 'annex') ? { ...sc, set: sc.region } : sc);
 
 export class Director {
   /** Bumped per scene so ambient coroutines of an earlier scene stop themselves. */
@@ -54,7 +52,7 @@ export class Director {
         yield* this.intro();
       }
       yield* this.scene(i, scene, prev);
-      prev = remap(scene).set;
+      prev = remapLegacySet(scene).set;
     }
     yield* this.card('END OF EPISODE', ep.title, 3);
     st.bus.emit({ type: 'episodeEnd' });
@@ -92,7 +90,7 @@ export class Director {
 
   private *scene(index: number, scene: Scene, prev: SetId | null): Co {
     const { st } = this;
-    const sc = remap(scene);
+    const sc = remapLegacySet(scene);
     const token = ++this.token;
     st.enterSet(sc.set);
     const region = this.sceneRegion(sc);

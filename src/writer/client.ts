@@ -4,7 +4,7 @@
 // When neither has the episode the show stops and says why.
 import type { Episode } from '../schema/episode';
 import { SETS } from '../sets/index.ts';
-import { type Series } from '../world/state';
+import { type LibraryEntry, type Series } from '../world/state';
 import { reviewEpisode } from './validate';
 
 export type Source = 'llm' | 'stored';
@@ -17,16 +17,6 @@ export interface Unavailable {
 }
 
 export interface Health { llm: boolean; model: string; planModel: string }
-
-export interface LibraryEntry {
-  id: string;
-  seed: number;
-  source: 'sessions' | 'library';
-  name: string;
-  direction: string;
-  episodes: number;
-  updated: number;
-}
 
 const sourceOf = (s: unknown): Source => (s === 'cache' ? 'stored' : 'llm');
 const OFFLINE_REASON: Unavailable = { reason: 'offline', message: 'not connected to a writer server' };

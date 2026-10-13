@@ -10,7 +10,7 @@ export class Actor {
   x = 0;
   y = 0;
   visible = false;
-  /** Standing on a seat cell (drawn underlined). */
+  /** Standing on a seat cell (sitting). */
   seated = false;
   facing: 1 | -1 = 1;
   speaking = false;

@@ -1,6 +1,7 @@
 // Tiny writer proxy: keeps the API key server-side. The browser POSTs its series state
 // and gets back the next episode (written by the LLM, or read from the store).
 import { createServer } from 'node:http';
+import { SERIES_ID } from './sessions';
 
 try {
   process.loadEnvFile();
@@ -36,7 +37,7 @@ const server = createServer(async (req, res) => {
         return send(200, created);
       }
       const { series } = body;
-      if (!series || series.version !== 1 || !/^[a-z0-9][a-z0-9-]{0,39}$/.test(series.id ?? '')) return send(400, { error: 'missing or invalid series' });
+      if (!series || series.version !== 1 || !SERIES_ID.test(series.id ?? '')) return send(400, { error: 'missing or invalid series' });
       const written = await writeEpisode(series);
       if (!written.episode) {
         console.error(`[server] episode ${series.episode + 1} unavailable: ${written.message}`);

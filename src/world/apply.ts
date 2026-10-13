@@ -1,4 +1,5 @@
 // Pure state transitions: a season bible starting, and an episode having aired.
+import { pickGlyph } from '../engine/cast';
 import { distinctColor, farthestColor } from '../engine/colors';
 import type { Episode, Extra } from '../schema/episode';
 import type { SeasonStart } from '../schema/season';
@@ -12,8 +13,7 @@ const ID = /^[a-z][a-z0-9_]*$/;
 export function addExtra(s: Series, x: Extra, since: number): SeriesExtra | null {
   if (!ID.test(x.id) || CAST.some((c) => c.id === x.id) || s.extras.some((e) => e.id === x.id) || !x.name.trim()) return null;
   const taken = new Set([...CAST.map((c) => c.glyph), ...s.extras.map((e) => e.glyph)]);
-  const letters = [...x.name.toUpperCase().replace(/[^A-Z]/g, ''), ...x.name.toLowerCase().replace(/[^a-z]/g, ''), ...'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'];
-  const glyph = letters.find((l) => !taken.has(l)) ?? '?';
+  const glyph = pickGlyph(x.name, taken);
   const used = [...CAST.filter((c) => s.roster.includes(c.id)).map((c) => c.color), ...s.extras.map((e) => e.color)];
   const color = used.length ? distinctColor(farthestColor(used), used) : '#cfcfcf';
   return { id: x.id, name: x.name.trim(), title: x.title || 'Guest', voice: x.voice, glyph, color, ...(x.look ? { look: x.look } : {}), since };

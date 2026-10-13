@@ -1,9 +1,9 @@
 // The start screen: continue the current series, create a new one (with an optional name
 // and direction), or watch a stored one from the beginning. Choices reload the page with
 // ?play=... so every run starts from a clean stage.
-import type { Health, LibraryEntry } from '../writer/client';
+import type { Health } from '../writer/client';
 import { episodeLabel } from '../world/season';
-import type { Series } from '../world/state';
+import type { LibraryEntry, Series } from '../world/state';
 
 const PRESETS: { label: string; text: string }[] = [
   { label: 'Classic seasons 2-3', text: 'Classic seasons 2-3: Jim and Pam will-they-won\'t-they, Michael desperate for a girlfriend and trying to impress Jan, Dwight scheming for power, Roy still around.' },

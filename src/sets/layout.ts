@@ -101,7 +101,6 @@ export function propKind(sprite: string): string {
 
 const overlap = (a: Rect, b: Rect) => Math.max(0, Math.min(a.x + a.w, b.x + b.w) - Math.max(a.x, b.x)) * Math.max(0, Math.min(a.y + a.h, b.y + b.h) - Math.max(a.y, b.y));
 const inside = (r: Rect, x: number, y: number) => x >= r.x && x < r.x + r.w && y >= r.y && y < r.y + r.h;
-const TILE: Record<string, string> = { wall: '#', floor: ' ', desk: '=', door: '+', seat: '_', spot: ' ', exit: '>', void: ' ', plant: '%', shelf: '[', machine: '&', prop: ':' };
 
 /** Rasterize a layout onto its square grid: a cell is blocked when mostly covered by a wall (door gaps excepted) or a prop's solid rect. */
 export function buildLayoutSet(id: string, L: Layout): SetMap {
@@ -160,6 +159,5 @@ export function buildLayoutSet(id: string, L: Layout): SetMap {
     regions[name] = { cells, label: { text: name.replace(/_/g, ' ').toUpperCase(), at } };
   }
 
-  const tiles = kinds.map((r) => r.map((k) => TILE[k] ?? ' '));
-  return assemble({ id, width, height, cellW: c, cellH: c, tiles, kinds, walk, spots, exits, regions, owner, gap: 2, layout: L });
+  return assemble({ id, width, height, cellW: c, cellH: c, kinds, walk, spots, exits, regions, owner, gap: 2, layout: L });
 }

@@ -10,6 +10,7 @@ import { readTime, type Stage } from '../engine/stage';
 import type { Reaction } from '../schema/episode';
 import type { SetMap } from '../sets/index.ts';
 import { art } from './art';
+import { drawGrid, GRID } from './grid';
 import { esc } from './text';
 import { NameIndex } from './names';
 import { MARKER } from './markers';
@@ -413,7 +414,7 @@ export class SpriteMapView {
     const feet = (p: Pose) => geo.foot(p.x, p.y);
     // Camera: the scene's region, widened to keep whoever is talking in frame. Not for mere
     // walkers: background copier trips would keep pulling the shot wide.
-    // The intro montage forces its shots: each new one is a hard cut, and may go tighter than scenes.
+    // The opening-title shot is forced: a hard cut, and may go tighter than scenes.
     const shot = st.shot;
     if (shot !== this.lastShot) { this.lastShot = shot; this.snap = true; }
     const box = shot ? this.shotBox(shot, geo, aspect) : { ...this.regionBox(set, geo) };
@@ -490,6 +491,7 @@ export class SpriteMapView {
     }
     items.sort((a, b) => a.k - b.k);
     for (const i of items) i.f(ctx);
+    if (GRID) drawGrid(ctx, this.stage.set, poses.map((p) => p.a));
 
     // Reaction emotes in screen space, so they stay legible at any zoom.
     ctx.setTransform(1, 0, 0, 1, 0, 0);
