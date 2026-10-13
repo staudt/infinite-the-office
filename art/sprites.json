@@ -577,6 +577,20 @@
    "name": "toby_head_talk",
    "key": true,
    "maxHeight": 800
+  },
+  {
+   "file": "jim-head.png",
+   "kind": "image",
+   "name": "jim_head",
+   "key": true,
+   "maxHeight": 800
+  },
+  {
+   "file": "jim-head-talk.png",
+   "kind": "image",
+   "name": "jim_head_talk",
+   "key": true,
+   "maxHeight": 800
   }
  ]
 }

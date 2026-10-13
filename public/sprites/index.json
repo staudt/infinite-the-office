@@ -2671,6 +2671,16 @@
    "src": "toby_head_talk.png",
    "w": 615,
    "h": 800
+  },
+  "jim_head": {
+   "src": "jim_head.png",
+   "w": 608,
+   "h": 800
+  },
+  "jim_head_talk": {
+   "src": "jim_head_talk.png",
+   "w": 608,
+   "h": 800
   }
  }
 }
