@@ -20,7 +20,7 @@ import { sceneHeading } from './view/transcript';
 import { CAST } from './world/cast';
 import { applyEpisode } from './world/apply';
 import { episodeLabel } from './world/season';
-import { loadSeriesFromStorage, randomSeed, saveSeriesToStorage, type Series } from './world/state';
+import { loadSeriesFromStorage, loadWatching, randomSeed, saveSeriesToStorage, saveWatching, type Series } from './world/state';
 import {
   fetchEpisode, fetchHealth, fetchLibrary, fetchNewSeries, fetchStoredSeries, type Health, type LibraryEntry, type Source, type Unavailable,
 } from './writer/client';
@@ -256,6 +256,7 @@ async function run(n: number, target?: Target): Promise<void> {
     return;
   }
   nowPlaying = n;
+  if (!RENDER) saveWatching(entry.before.id, n);
   const after = applyEpisode(entry.before, entry.episode);
   currentSeries = after;
   cur = { episode: entry.episode, roster: after.roster, label: episodeLabel(after, n), seed: after.seed + n, series: after };
@@ -390,6 +391,7 @@ async function main(): Promise<void> {
   const program = showParam ? 'library' : params.get('play');
   const deepEp = Number(params.get('ep') ?? 0);
   let series: Series | null = null;
+  let resumeEp: number | undefined;
   if (program === 'new') {
     const direction = params.get('direction') ?? '';
     setStatus('creating a new series…');
@@ -404,7 +406,12 @@ async function main(): Promise<void> {
     series = id ? await fetchStoredSeries(id) : null;
     if (!series) setStatus(`couldn't find the stored show "${showParam ?? params.get('id')}"`);
   } else {
-    series = loadSeriesFromStorage();
+    // Resume: a stored show restarts from its real beginning (so earlier episodes stay reachable) at the
+    // episode that was on screen; a show that only lives in this browser resumes from its saved state.
+    const saved = loadSeriesFromStorage();
+    const origin = saved ? await fetchStoredSeries(saved.id) : null;
+    series = origin ?? saved;
+    resumeEp = saved ? loadWatching(saved.id) ?? saved.episode + 1 : undefined;
   }
   // Keep the URL clean so a reload continues the show instead of restarting it.
   for (const k of ['play', 'direction', 'name', 'id', 'show', 'ep', 'scene']) params.delete(k);
@@ -436,13 +443,13 @@ async function main(): Promise<void> {
     startScreen.onContinue = () => {
       startScreen.onContinue = null;
       markChosen();
-      startShow(fresh);
+      startShow(fresh, undefined, resumeEp);
     };
     await openStart(true, fresh);
     return;
   }
   markChosen();
-  startShow(series, target, deepEp >= 1 ? deepEp : undefined);
+  startShow(series, target, deepEp >= 1 ? deepEp : resumeEp);
 }
 
 // Fixed-step simulation, decoupled from the frame rate.

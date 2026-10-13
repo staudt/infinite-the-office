@@ -78,6 +78,24 @@ export function loadSeriesFromStorage(): Series | null {
     return null;
   }
 }
+const WATCHING = 'infinite-office.watching';
+/** The episode on screen, saved as it starts, so a reload resumes there (not at the last finished one). */
+export function saveWatching(id: string, n: number): void {
+  try {
+    localStorage.setItem(WATCHING, JSON.stringify({ id, n }));
+  } catch {
+    // no storage: resume falls back to the saved series state
+  }
+}
+export function loadWatching(id: string): number | null {
+  try {
+    const w = JSON.parse(localStorage.getItem(WATCHING) ?? 'null');
+    return w?.id === id && Number.isInteger(w.n) && w.n >= 1 ? w.n : null;
+  } catch {
+    return null;
+  }
+}
+
 export function saveSeriesToStorage(s: Series): void {
   try {
     localStorage.setItem(KEY, JSON.stringify(s));
