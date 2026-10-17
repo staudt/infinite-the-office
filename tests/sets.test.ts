@@ -15,7 +15,7 @@ const EXPECT: Record<string, { spots: string[]; regions: string[]; exits: string
     regions: ['michael_office', 'conference_room', 'reception', 'bullpen', 'accounting'],
     exits: ['parking_lot', 'warehouse', 'break_room', 'kitchen', 'annex'],
   },
-  kitchen: { spots: [...range('kitchen_', 3), 'microwave', 'fridge', 'vending'], regions: ['kitchen'], exits: ['office'] },
+  kitchen: { spots: [...range('kitchen_', 3), 'microwave', 'fridge'], regions: ['kitchen'], exits: ['office'] },
   annex: { spots: ['ryan_desk', 'kelly_desk', 'toby_desk'], regions: ['annex'], exits: ['office'] },
   break_room: { spots: range('table_', 6), regions: ['break_room'], exits: ['office'] },
   parking_lot: {

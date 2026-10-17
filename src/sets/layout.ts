@@ -6,7 +6,7 @@ import { assemble, key, type Point, type Region, type SetMap } from './parse.ts'
 
 export interface Rect { x: number; y: number; w: number; h: number }
 export type Facing = 'down' | 'up' | 'left' | 'right';
-export interface LDoor extends Rect { exit?: string | string[] }
+export interface LDoor extends Rect { exit?: string | string[]; /** Shut: drawn as a door, walked like a wall (restrooms). */ closed?: boolean }
 export type LWindow = Rect;
 export interface LDecor { sprite: string; x: number; y: number; scale?: number }
 export interface LProp {
@@ -57,7 +57,7 @@ export function parseLayout(raw: any): Layout {
     width: num(raw?.width), height: num(raw?.height), cell: num(raw?.cell, 16) || 16,
     floor: list(raw?.floor, (f) => ({ ...rect(f), style: typeof f?.style === 'string' ? f.style : 'carpet' })),
     walls: list(raw?.walls, rect),
-    doors: list(raw?.doors, (d) => ({ ...rect(d), exit: d?.exit })),
+    doors: list(raw?.doors, (d) => ({ ...rect(d), exit: d?.exit, closed: !!d?.closed })),
     windows: list(raw?.windows, rect),
     decor: list(raw?.decor, (d) => ({ sprite: String(d?.sprite ?? ''), x: num(d?.x), y: num(d?.y), scale: d?.scale })),
     props: list(raw?.props, (p) => ({ sprite: String(p?.sprite ?? ''), x: num(p?.x), y: num(p?.y), flip: !!p?.flip, scale: p?.scale, w: p?.w, h: p?.h, split: p?.split, solid: p?.solid === null ? null : Array.isArray(p?.solid) ? p.solid.map(rect) : p?.solid ? rect(p.solid) : undefined })),
@@ -125,7 +125,8 @@ export function buildLayoutSet(id: string, L: Layout): SetMap {
     for (let x = 0; x < width; x++) {
       const r = cellRect(x, y), cx = r.x + c / 2, cy = r.y + c / 2;
       if (L.floor.some((f) => inside(f, cx, cy))) { kinds[y][x] = 'floor'; walk[y][x] = true; }
-      if (L.doors.some((d) => inside(d, cx, cy))) { kinds[y][x] = 'door'; walk[y][x] = true; continue; }
+      const door = L.doors.find((d) => inside(d, cx, cy));
+      if (door) { kinds[y][x] = door.closed ? 'wall' : 'door'; walk[y][x] = !door.closed; continue; }
       if (mostly(r, L.walls)) { kinds[y][x] = 'wall'; walk[y][x] = false; continue; }
       const s = solids.find((o) => overlap(r, o.s) > c * c * 0.4);
       if (s) { kinds[y][x] = s.kind; walk[y][x] = false; }

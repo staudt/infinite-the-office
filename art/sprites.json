@@ -619,6 +619,9 @@
   },
   { "file": "office-furniture.png", "kind": "props", "key": true, "gap": 6, "sharpen": 1.2,
    "names": ["lamp_cabinet","michael_back_cabinet","filing_cabinet_tall","michael_desk_2","wardrobe_2","bookcase_tall","armchair_2","side_table","conference_table_2","easel","plant_2","wall_shelf_side","plant_small","credenza_printer","shelf_dark","pod_jim_dwight","pod_phyllis_stanley","accounting_shelf","pod_accounting","plant_floor","low_shelf_1","low_shelf_2","pod_meredith","pod_creed"] },
-  { "file": "warehouse.png", "kind": "props", "names": ["warehouse_bg"] }
+  { "file": "warehouse.png", "kind": "props", "names": ["warehouse_bg"] },
+  { "file": "wing-furniture.png", "kind": "props", "key": true, "gap": 6, "sharpen": 1.2,
+   "names": ["wing_counter","vending_row","microwave_table","fridge_cooler","water_jugs","round_table_2","annex_desk_l","annex_desk_a","annex_desk_b","copy_station","plant_white","plant_blue","plant_white_2","plant_big","sink","toilet","trash_bin","janitor_cart","vending_single"] },
+  { "file": "plant-corner.png", "kind": "props", "key": true, "names": ["plant_corner"] }
  ]
 }

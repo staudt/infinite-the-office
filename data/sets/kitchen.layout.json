@@ -1,0 +1,145 @@
+{
+  "_doc": "Office kitchen: counter, a table for four, a plant in the corner; the restroom doors (closed) in the bottom wall. Props from art/raw/wing-furniture.png at 1.35x.",
+  "width": 480,
+  "height": 464,
+  "cell": 16,
+  "floor": [
+    {
+      "x": 16,
+      "y": 112,
+      "w": 448,
+      "h": 288,
+      "style": "carpet"
+    }
+  ],
+  "walls": [
+    {
+      "x": 0,
+      "y": 0,
+      "w": 480,
+      "h": 112
+    },
+    {
+      "x": 0,
+      "y": 112,
+      "w": 16,
+      "h": 288
+    },
+    {
+      "x": 464,
+      "y": 112,
+      "w": 16,
+      "h": 288
+    },
+    {
+      "x": 0,
+      "y": 400,
+      "w": 480,
+      "h": 64
+    }
+  ],
+  "doors": [
+    {
+      "x": 0,
+      "y": 240,
+      "w": 16,
+      "h": 64,
+      "exit": "office"
+    },
+    {
+      "x": 96,
+      "y": 400,
+      "w": 64,
+      "h": 64,
+      "closed": true
+    },
+    {
+      "x": 224,
+      "y": 400,
+      "w": 64,
+      "h": 64,
+      "closed": true
+    }
+  ],
+  "windows": [
+    {
+      "x": 300,
+      "y": 40,
+      "w": 72,
+      "h": 56
+    }
+  ],
+  "decor": [],
+  "props": [
+    {
+      "sprite": "wing_counter",
+      "x": 141,
+      "y": 256,
+      "scale": 1.35,
+      "solid": {
+        "x": 0,
+        "y": 40,
+        "w": 185,
+        "h": 95
+      }
+    },
+    {
+      "sprite": "plant_corner",
+      "x": 428,
+      "y": 200,
+      "scale": 1.1
+    },
+    {
+      "sprite": "round_table_2",
+      "x": 290,
+      "y": 355,
+      "scale": 1.35,
+      "solid": {
+        "x": 8,
+        "y": 10,
+        "w": 40,
+        "h": 38
+      }
+    }
+  ],
+  "spots": {
+    "microwave": {
+      "x": 200,
+      "y": 288
+    },
+    "fridge": {
+      "x": 72,
+      "y": 304
+    },
+    "kitchen_1": {
+      "x": 230,
+      "y": 335,
+      "seat": "right"
+    },
+    "kitchen_2": {
+      "x": 350,
+      "y": 335,
+      "seat": "left"
+    },
+    "kitchen_3": {
+      "x": 290,
+      "y": 279,
+      "seat": "down"
+    },
+    "kitchen_4": {
+      "x": 290,
+      "y": 385,
+      "seat": "up"
+    }
+  },
+  "regions": {
+    "kitchen": [
+      {
+        "x": 16,
+        "y": 112,
+        "w": 448,
+        "h": 288
+      }
+    ]
+  }
+}

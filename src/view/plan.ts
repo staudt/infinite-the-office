@@ -68,8 +68,18 @@ function carpetPattern(g: CanvasRenderingContext2D, style: string): CanvasPatter
 }
 
 /** An open doorway: a darker threshold (outside tint for exits), jamb posts and a door leaf swung back. */
-function paintDoor(g: CanvasRenderingContext2D, d: Rect & { exit?: string | string[] }): void {
+function paintDoor(g: CanvasRenderingContext2D, d: Rect & { exit?: string | string[]; closed?: boolean }): void {
   const horiz = d.w >= d.h;
+  if (d.closed) {
+    // A shut door filling the gap: frame, leaf, knob.
+    g.fillStyle = COLOR.woodDark;
+    g.fillRect(d.x, d.y, d.w, d.h);
+    g.fillStyle = COLOR.wood;
+    if (horiz) g.fillRect(d.x + 3, d.y + CAP, d.w - 6, d.h - CAP - 2); else g.fillRect(d.x + 2, d.y + 3, d.w - 4, d.h - 6);
+    g.fillStyle = '#e8c35a';
+    if (horiz) g.fillRect(d.x + d.w - 12, d.y + CAP + (d.h - CAP) / 2, 3, 3); else g.fillRect(d.x + d.w / 2 - 1, d.y + d.h - 12, 3, 3);
+    return;
+  }
   g.fillStyle = d.exit ? COLOR.outside : 'rgba(20,22,34,0.35)';
   g.fillRect(d.x, d.y, d.w, d.h);
   g.fillStyle = COLOR.woodDark;

@@ -374,6 +374,106 @@
    "src": "props/warehouse_bg.png",
    "w": 1254,
    "h": 1254
+  },
+  "wing_counter": {
+   "src": "props/wing_counter.png",
+   "w": 185,
+   "h": 135
+  },
+  "vending_row": {
+   "src": "props/vending_row.png",
+   "w": 148,
+   "h": 134
+  },
+  "microwave_table": {
+   "src": "props/microwave_table.png",
+   "w": 63,
+   "h": 80
+  },
+  "fridge_cooler": {
+   "src": "props/fridge_cooler.png",
+   "w": 62,
+   "h": 130
+  },
+  "water_jugs": {
+   "src": "props/water_jugs.png",
+   "w": 44,
+   "h": 88
+  },
+  "round_table_2": {
+   "src": "props/round_table_2.png",
+   "w": 55,
+   "h": 51
+  },
+  "annex_desk_l": {
+   "src": "props/annex_desk_l.png",
+   "w": 132,
+   "h": 106
+  },
+  "annex_desk_a": {
+   "src": "props/annex_desk_a.png",
+   "w": 88,
+   "h": 104
+  },
+  "annex_desk_b": {
+   "src": "props/annex_desk_b.png",
+   "w": 104,
+   "h": 83
+  },
+  "copy_station": {
+   "src": "props/copy_station.png",
+   "w": 119,
+   "h": 190
+  },
+  "plant_white": {
+   "src": "props/plant_white.png",
+   "w": 51,
+   "h": 76
+  },
+  "plant_blue": {
+   "src": "props/plant_blue.png",
+   "w": 49,
+   "h": 71
+  },
+  "plant_white_2": {
+   "src": "props/plant_white_2.png",
+   "w": 42,
+   "h": 70
+  },
+  "plant_big": {
+   "src": "props/plant_big.png",
+   "w": 68,
+   "h": 97
+  },
+  "sink": {
+   "src": "props/sink.png",
+   "w": 54,
+   "h": 112
+  },
+  "toilet": {
+   "src": "props/toilet.png",
+   "w": 36,
+   "h": 95
+  },
+  "trash_bin": {
+   "src": "props/trash_bin.png",
+   "w": 27,
+   "h": 36
+  },
+  "janitor_cart": {
+   "src": "props/janitor_cart.png",
+   "w": 42,
+   "h": 79
+  },
+  "vending_single": {
+   "src": "props/vending_single.png",
+   "w": 57,
+   "h": 103
+  },
+  "plant_corner": {
+   "src": "props/plant_corner.png",
+   "w": 68,
+   "h": 97
   }
  },
  "anims": {

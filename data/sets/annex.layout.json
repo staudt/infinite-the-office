@@ -1,0 +1,27 @@
+{
+  "_doc": "The annex: Kelly and Ryan at a shared double desk, Toby's desk, the copy station. Wing props at 1.35x, the office pod at 1.45x.",
+  "width": 672, "height": 576, "cell": 16,
+  "floor": [{ "x": 16, "y": 112, "w": 640, "h": 400, "style": "carpet" }],
+  "walls": [
+    { "x": 0, "y": 0, "w": 672, "h": 112 },
+    { "x": 0, "y": 112, "w": 16, "h": 400 },
+    { "x": 656, "y": 112, "w": 16, "h": 400 },
+    { "x": 0, "y": 512, "w": 672, "h": 64 }
+  ],
+  "doors": [{ "x": 0, "y": 320, "w": 16, "h": 64, "exit": "office" }],
+  "windows": [{ "x": 180, "y": 40, "w": 72, "h": 56 }, { "x": 460, "y": 40, "w": 72, "h": 56 }],
+  "decor": [],
+  "props": [
+    { "sprite": "pod_meredith", "x": 220, "y": 470, "scale": 1.45, "solid": { "x": 0, "y": 30, "w": 105, "h": 131 } },
+    { "sprite": "annex_desk_a", "x": 580, "y": 330, "scale": 1.35, "solid": { "x": 5, "y": 15, "w": 83, "h": 89 } },
+    { "sprite": "copy_station", "x": 430, "y": 505, "scale": 1.35, "solid": { "x": 0, "y": 100, "w": 119, "h": 90 } },
+    { "sprite": "plant_big", "x": 50, "y": 200, "scale": 1.35 },
+    { "sprite": "plant_white", "x": 625, "y": 505, "scale": 1.35 }
+  ],
+  "spots": {
+    "kelly_desk": { "x": 142, "y": 396, "seat": "right" },
+    "ryan_desk": { "x": 290, "y": 396, "seat": "left" },
+    "toby_desk": { "x": 512, "y": 280, "seat": "right" }
+  },
+  "regions": { "annex": [{ "x": 16, "y": 112, "w": 640, "h": 400 }] }
+}

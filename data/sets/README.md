@@ -1,6 +1,6 @@
 # Set maps
 
-A set is either an ASCII grid (`*.txt`, below) or an art-scale floor plan (`*.layout.json`, see the end). The file name is the set id. The office and the warehouse are layouts; break_room, kitchen, annex, parking_lot and offsite are ASCII grids, drawn procedurally.
+A set is either an ASCII grid (`*.txt`, below) or an art-scale floor plan (`*.layout.json`, see the end). The file name is the set id. The office, warehouse, kitchen, annex and break_room are layouts; parking_lot and offsite are ASCII grids, drawn procedurally.
 
 ## ASCII sets
 
@@ -90,6 +90,7 @@ corridors 32 px or wider.
   north of it is hidden by it). Vertical walls are sorted in 16 px slices.
 - **doors**: openings cut through walls (give them the wall's full y/h or x/w extent). Walkable; drawn as a threshold
   with jambs and an open leaf. `exit` (a name or a list of names) makes every cell of the door an exit to that set.
+  `"closed": true` draws a shut door that blocks walking (the restrooms off the kitchen).
 - **windows**: screen rects painted on a wall face (blue glass with blinds); **decor**: sprites hung on a face,
   `x` is the center and `y` the bottom edge; no collision.
 - **props**: `x`,`y` is the **bottom-center** of the sprite at native size. `solid` is the blocking rect (or a list)

@@ -298,5 +298,85 @@
  "warehouse_bg": {
   "w": 1254,
   "h": 1254
+ },
+ "wing_counter": {
+  "w": 185,
+  "h": 135
+ },
+ "vending_row": {
+  "w": 148,
+  "h": 134
+ },
+ "microwave_table": {
+  "w": 63,
+  "h": 80
+ },
+ "fridge_cooler": {
+  "w": 62,
+  "h": 130
+ },
+ "water_jugs": {
+  "w": 44,
+  "h": 88
+ },
+ "round_table_2": {
+  "w": 55,
+  "h": 51
+ },
+ "annex_desk_l": {
+  "w": 132,
+  "h": 106
+ },
+ "annex_desk_a": {
+  "w": 88,
+  "h": 104
+ },
+ "annex_desk_b": {
+  "w": 104,
+  "h": 83
+ },
+ "copy_station": {
+  "w": 119,
+  "h": 190
+ },
+ "plant_white": {
+  "w": 51,
+  "h": 76
+ },
+ "plant_blue": {
+  "w": 49,
+  "h": 71
+ },
+ "plant_white_2": {
+  "w": 42,
+  "h": 70
+ },
+ "plant_big": {
+  "w": 68,
+  "h": 97
+ },
+ "sink": {
+  "w": 54,
+  "h": 112
+ },
+ "toilet": {
+  "w": 36,
+  "h": 95
+ },
+ "trash_bin": {
+  "w": 27,
+  "h": 36
+ },
+ "janitor_cart": {
+  "w": 42,
+  "h": 79
+ },
+ "vending_single": {
+  "w": 57,
+  "h": 103
+ },
+ "plant_corner": {
+  "w": 68,
+  "h": 97
  }
 }
