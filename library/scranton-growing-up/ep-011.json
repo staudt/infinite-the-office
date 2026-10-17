@@ -1,0 +1,897 @@
+{
+  "title": "Year in Review",
+  "logline": "Michael premieres his homemade 'Year in Review' video at the Christmas party as a gift for Holly, and the car wash footage shows Dwight and Angela kissing behind the dumpster, which ends with Andy and Dwight dueling in the parking lot.",
+  "outline": "A: Michael makes a Year in Review video for Holly and premieres it at the Christmas party; it exposes Dwight and Angela, and Michael has to live with ruining Christmas. B: The secret explodes: Andy confronts Angela, learns Phyllis knew, and duels Dwight in the parking lot; Angela walks away from both. C: Erin's first office Christmas: she made everyone an ornament, and hers for Andy is the one that helps. Order: cold, A, B, C, A, B, A, B, A, B, C, tag",
+  "theme": "The truth comes out at Christmas whether you're ready or not",
+  "storySoFar": "Michael's homemade 'Year in Review' video for Holly premiered at Phyllis's Christmas-in-Hawaii party and showed Dwight and Angela kissing behind the dumpster at the car wash. Andy learned Phyllis knew since October, challenged Dwight to a slap duel in the parking lot (Andy slapped his car, Dwight slipped on ice), and Angela left them both for her cats; Andy and Dwight called a truce. The wedding is off. Erin gave Andy an ornament of four singing Andys. Michael called Holly for the first time in a month; she laughed, comforted him and said she misses him. Jim's proposal is next Friday at five in the parking lot (sparklers spelling PAM, with Andy and Kevin helping); he made Michael promise to be 'extremely nowhere'. Darryl starts in sales in January.",
+  "extras": [],
+  "away": [
+    "holly"
+  ],
+  "stateChanges": [
+    {
+      "type": "relationship",
+      "a": "andy",
+      "b": "angela",
+      "status": "Engagement over after the Christmas video exposed her affair"
+    },
+    {
+      "type": "relationship",
+      "a": "dwight",
+      "b": "angela",
+      "status": "Exposed; Angela left both men"
+    },
+    {
+      "type": "relationship",
+      "a": "andy",
+      "b": "dwight",
+      "status": "Uneasy truce after a terrible slap duel"
+    },
+    {
+      "type": "relationship",
+      "a": "andy",
+      "b": "erin",
+      "status": "She gave him a quartet-of-Andys ornament; a spark"
+    },
+    {
+      "type": "relationship",
+      "a": "michael",
+      "b": "holly",
+      "status": "Talking again; she misses him"
+    },
+    {
+      "type": "arc",
+      "arc": "The Wedding of the Century",
+      "progress": "Exploded at Christmas; the wedding is off and Angela left both men"
+    },
+    {
+      "type": "arc",
+      "arc": "Michael and Holly",
+      "progress": "Michael called Holly after the video disaster; she misses him"
+    },
+    {
+      "type": "note",
+      "text": "Michael promised Jim to be 'extremely nowhere' next Friday at five"
+    }
+  ],
+  "scenes": [
+    {
+      "part": "cold_open",
+      "plot": "cold_open",
+      "set": "office",
+      "region": "bullpen",
+      "venue": "",
+      "present": [
+        "creed",
+        "meredith"
+      ],
+      "recap": "Creed gives Meredith her Secret Santa gift early, and it's a mink coat with someone else's name sewn in.",
+      "beats": [
+        {
+          "type": "caption",
+          "text": "CHRISTMAS PARTY DAY"
+        },
+        {
+          "type": "move",
+          "who": "creed",
+          "to": "meredith_desk",
+          "pace": "walk"
+        },
+        {
+          "type": "action",
+          "who": "creed",
+          "verb": "present",
+          "target": "meredith",
+          "caption": "hands Meredith a lumpy package"
+        },
+        {
+          "type": "say",
+          "who": "creed",
+          "text": "Secret Santa. It's a mink coat. Don't read the name inside.",
+          "to": "meredith",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "meredith",
+          "text": "It says 'Property of Bonnie.'",
+          "to": "creed",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "creed",
+          "text": "Bonnie's in a better place. Florida.",
+          "to": "meredith",
+          "mood": "deadpan"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": ""
+        },
+        {
+          "type": "say",
+          "who": "meredith",
+          "text": "Fits great.",
+          "to": "creed",
+          "mood": "happy"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "A",
+      "set": "office",
+      "region": "michael_office",
+      "venue": "",
+      "present": [
+        "michael",
+        "jim",
+        "pam"
+      ],
+      "recap": "Michael shows Jim and Pam the Year in Review video he made for Holly; he'll premiere it at the party and mail it to Nashua.",
+      "beats": [
+        {
+          "type": "move",
+          "who": "pam",
+          "to": "michael_guest_1",
+          "pace": "walk"
+        },
+        {
+          "type": "move",
+          "who": "jim",
+          "to": "michael_guest_2",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Feast your eyes. 'Scranton: A Year in Review.' Forty-one minutes. Directed by me.",
+          "to": "pam",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Forty-one minutes?",
+          "to": "michael",
+          "mood": "awkward"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "It's for Holly. Everything she's missing. I'll premiere it at the party, then mail it to... the N-place.",
+          "to": "pam",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "Did you watch all the footage first?",
+          "to": "michael",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Jim, I lived it. I don't need to watch it.",
+          "to": "jim",
+          "mood": "smug"
+        },
+        {
+          "type": "react",
+          "who": [
+            "jim"
+          ],
+          "reaction": "look_at_camera"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "B",
+      "set": "office",
+      "region": "accounting",
+      "venue": "",
+      "present": [
+        "phyllis",
+        "angela",
+        "oscar"
+      ],
+      "recap": "Phyllis tells Angela that after today they're even; Angela doesn't trust it.",
+      "beats": [
+        {
+          "type": "move",
+          "who": "phyllis",
+          "to": "angela_desk",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "phyllis",
+          "text": "Angela, after today's party, I'll give you back the gavel. We'll be even.",
+          "to": "angela",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "angela",
+          "text": "Even. And you'll forget what you saw.",
+          "to": "phyllis",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "phyllis",
+          "text": "I've already forgotten. Mostly. Bob says I have a mind like a steel trap.",
+          "to": "angela",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "oscar",
+          "text": "What did she see? I'll pay. I have forty dollars and a gift card.",
+          "to": "phyllis",
+          "mood": "neutral"
+        },
+        {
+          "type": "talking_head",
+          "who": "angela",
+          "lines": [
+            "Six more months and I'll be married to a lovely man with a carriage.",
+            "Nothing will happen at this party. I've checked every detail. Twice."
+          ],
+          "mood": "nervous"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "C",
+      "set": "office",
+      "region": "reception",
+      "venue": "",
+      "present": [
+        "erin",
+        "kevin",
+        "andy"
+      ],
+      "recap": "Erin hands out handmade ornaments, one for everyone, and saves Andy's for later.",
+      "beats": [
+        {
+          "type": "action",
+          "who": "erin",
+          "verb": "present",
+          "target": "kevin",
+          "caption": "hands Kevin a tiny ornament shaped like a chili pot"
+        },
+        {
+          "type": "say",
+          "who": "erin",
+          "text": "I made everyone an ornament. I never had an office Christmas. Or, like, a lot of Christmases.",
+          "to": "kevin",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "It's a chili pot. Erin. It's my whole life.",
+          "to": "erin",
+          "mood": "sad"
+        },
+        {
+          "type": "move",
+          "who": "andy",
+          "to": "erin_desk",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "Do I get one?",
+          "to": "erin",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "erin",
+          "text": "Yours isn't ready. It's very detailed. You'll get it at the end.",
+          "to": "andy",
+          "mood": "nervous"
+        },
+        {
+          "type": "talking_head",
+          "who": "erin",
+          "lines": [
+            "Andy's ornament is a little choir of four Andys singing.",
+            "I made it, and then I felt weird about it because he's engaged. So it's in my drawer."
+          ],
+          "mood": "awkward"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "A",
+      "set": "break_room",
+      "region": "break_room",
+      "venue": "",
+      "present": [
+        "michael",
+        "phyllis",
+        "kevin",
+        "stanley",
+        "meredith",
+        "creed",
+        "jim",
+        "pam",
+        "ryan",
+        "kelly"
+      ],
+      "recap": "The party starts; Michael announces the premiere of his video at three o'clock sharp.",
+      "beats": [
+        {
+          "type": "caption",
+          "text": "THE CHRISTMAS PARTY"
+        },
+        {
+          "type": "say",
+          "who": "phyllis",
+          "text": "Welcome to Christmas in Hawaii! There's pineapple. There's a ukulele. Bob paid for both.",
+          "to": "all",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "And at three o'clock: the world premiere of my film. There will be tears. Bring tissues.",
+          "to": "all",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "stanley",
+          "text": "How long is the film?",
+          "to": "michael",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Forty-one minutes. Forty-three with the credits.",
+          "to": "stanley",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "stanley",
+          "text": "One thousand and four days.",
+          "to": "none",
+          "mood": "deadpan"
+        },
+        {
+          "type": "action",
+          "who": "kevin",
+          "verb": "eat",
+          "target": "none",
+          "caption": "eats pineapple straight off the platter"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "B",
+      "set": "kitchen",
+      "region": "kitchen",
+      "venue": "",
+      "present": [
+        "dwight",
+        "angela"
+      ],
+      "recap": "Dwight secretly gives Angela a cat carved out of a beet; she's moved, and they almost get caught again.",
+      "beats": [
+        {
+          "type": "action",
+          "who": "dwight",
+          "verb": "present",
+          "target": "angela",
+          "caption": "hands her a small cat carved out of a beet"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "It's Garbage. Your cat. Carved from my finest beet.",
+          "to": "angela",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "angela",
+          "text": "Dwight. It's... it's beautiful. It's staining my hand.",
+          "to": "dwight",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "That's how you know it's real.",
+          "to": "angela",
+          "mood": "happy"
+        },
+        {
+          "type": "enter",
+          "who": [
+            "andy"
+          ],
+          "to": "kitchen_1"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "Hey, the movie's starting! Babe, why is your hand purple?",
+          "to": "angela",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "angela",
+          "text": "Beet salad. Phyllis's recipe. Let's go.",
+          "to": "andy",
+          "mood": "nervous"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "A",
+      "set": "break_room",
+      "region": "break_room",
+      "venue": "",
+      "present": [
+        "michael",
+        "phyllis",
+        "kevin",
+        "stanley",
+        "jim",
+        "pam",
+        "andy",
+        "angela",
+        "dwight",
+        "oscar",
+        "erin",
+        "kelly"
+      ],
+      "recap": "Michael's film plays; at the car wash segment, Dwight and Angela are kissing behind the dumpster in the background.",
+      "beats": [
+        {
+          "type": "caption",
+          "text": "3:00 PM"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "And here's Toby leaving. Good riddance. I mean, good luck.",
+          "to": "all",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "And now: the car wash. Look at Holly. Look at that hose work.",
+          "to": "all",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "Who's behind the dumpster?",
+          "to": "michael",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "That's... huh. Is that Dwight? Kissing... Pause it. Who has the remote? Angela?",
+          "to": "all",
+          "mood": "nervous"
+        },
+        {
+          "type": "pause",
+          "seconds": 4,
+          "caption": "nobody breathes"
+        },
+        {
+          "type": "react",
+          "who": [
+            "andy"
+          ],
+          "reaction": "stare"
+        },
+        {
+          "type": "react",
+          "who": [
+            "jim",
+            "pam"
+          ],
+          "reaction": "cringe"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Okay. That's the end of the film. Forty-one minutes was a lie. It was six.",
+          "to": "all",
+          "mood": "panicked"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "B",
+      "set": "break_room",
+      "region": "break_room",
+      "venue": "",
+      "present": [
+        "andy",
+        "angela",
+        "dwight",
+        "phyllis",
+        "oscar",
+        "michael"
+      ],
+      "recap": "Andy asks Angela if it's true, learns Phyllis knew since October, and challenges Dwight to a duel.",
+      "beats": [
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "Angela. Was that... inventory?",
+          "to": "angela",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "angela",
+          "text": "Andrew. It was one time. Several times. It was a few dozen times.",
+          "to": "andy",
+          "mood": "panicked"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "Did anyone else know?",
+          "to": "all",
+          "mood": "angry"
+        },
+        {
+          "type": "say",
+          "who": "phyllis",
+          "text": "Since October, honey. I'm sorry.",
+          "to": "andy",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "oscar",
+          "text": "So that's what it was. I feel terrible. Also, finally.",
+          "to": "all",
+          "mood": "awkward"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "Dwight Schrute. Parking lot. Now. I challenge you to a duel.",
+          "to": "dwight",
+          "mood": "angry"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "I accept. Choose your weapon.",
+          "to": "andy",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "Hands. Open hands. I have a very good slap.",
+          "to": "dwight",
+          "mood": "angry"
+        },
+        {
+          "type": "exit",
+          "who": [
+            "andy",
+            "dwight"
+          ],
+          "how": "storm_off"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "A",
+      "set": "office",
+      "region": "michael_office",
+      "venue": "",
+      "present": [
+        "michael"
+      ],
+      "recap": "Michael calls Holly to confess he ruined Christmas and a wedding with a home movie; she comforts him.",
+      "beats": [
+        {
+          "type": "action",
+          "who": "michael",
+          "verb": "phone_call",
+          "target": "none",
+          "caption": "calls Nashua for the first time in a month"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Holly. It's me. I made you a movie and it ruined a wedding.",
+          "to": "none",
+          "mood": "sad"
+        },
+        {
+          "type": "pause",
+          "seconds": 3,
+          "caption": ""
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "No, I didn't know. I didn't watch it. I lived it.",
+          "to": "none",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "You're laughing. Are you laughing? Okay. It's a little funny. Oh, it's so funny.",
+          "to": "none",
+          "mood": "happy"
+        },
+        {
+          "type": "talking_head",
+          "who": "michael",
+          "lines": [
+            "She said the truth was going to come out anyway, and that I'm a terrible editor.",
+            "She also said she misses me. I didn't charge her a dollar."
+          ],
+          "mood": "happy"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "B",
+      "set": "parking_lot",
+      "region": "parking_lot",
+      "venue": "",
+      "present": [
+        "andy",
+        "dwight",
+        "jim",
+        "pam",
+        "kevin",
+        "ryan",
+        "kelly",
+        "stanley"
+      ],
+      "recap": "Andy and Dwight duel with open-handed slaps in the parking lot, badly; Angela leaves them both.",
+      "beats": [
+        {
+          "type": "move",
+          "who": "andy",
+          "to": "car_dwight",
+          "pace": "walk"
+        },
+        {
+          "type": "move",
+          "who": "dwight",
+          "to": "andy",
+          "pace": "walk"
+        },
+        {
+          "type": "action",
+          "who": "andy",
+          "verb": "sing",
+          "target": "dwight",
+          "caption": "hums a war chant in a low bass"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Your humming does not frighten me, Bernard.",
+          "to": "andy",
+          "mood": "deadpan"
+        },
+        {
+          "type": "action",
+          "who": "andy",
+          "verb": "prank",
+          "target": "dwight",
+          "caption": "slaps Dwight, misses, and slaps his own car"
+        },
+        {
+          "type": "action",
+          "who": "dwight",
+          "verb": "fall",
+          "target": "none",
+          "caption": "dodges, slips on ice, and goes down"
+        },
+        {
+          "type": "say",
+          "who": "stanley",
+          "text": "Best Christmas party we've ever had.",
+          "to": "kevin",
+          "mood": "happy"
+        },
+        {
+          "type": "enter",
+          "who": [
+            "angela"
+          ],
+          "to": "entrance"
+        },
+        {
+          "type": "say",
+          "who": "angela",
+          "text": "Stop it. Both of you. I don't want either of you. I want my cats.",
+          "to": "all",
+          "mood": "angry"
+        },
+        {
+          "type": "exit",
+          "who": [
+            "angela"
+          ],
+          "how": "storm_off"
+        },
+        {
+          "type": "pause",
+          "seconds": 3,
+          "caption": "two men lie on the cold asphalt"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Truce?",
+          "to": "andy",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "Truce.",
+          "to": "dwight",
+          "mood": "sad"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "C",
+      "set": "office",
+      "region": "reception",
+      "venue": "",
+      "present": [
+        "erin"
+      ],
+      "recap": "Andy, cold and defeated, stops at reception; Erin gives him his ornament after all.",
+      "beats": [
+        {
+          "type": "enter",
+          "who": [
+            "andy"
+          ],
+          "to": "erin_desk"
+        },
+        {
+          "type": "say",
+          "who": "erin",
+          "text": "Andy. Are you okay? You're wet. And sad. Wet-sad.",
+          "to": "andy",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "I lost a fiancée and a slap fight in the same hour. It's a personal record.",
+          "to": "erin",
+          "mood": "sad"
+        },
+        {
+          "type": "action",
+          "who": "erin",
+          "verb": "present",
+          "target": "andy",
+          "caption": "hands him a tiny ornament of four Andys singing"
+        },
+        {
+          "type": "say",
+          "who": "erin",
+          "text": "It's a quartet. Of you. So you never have to sing alone.",
+          "to": "andy",
+          "mood": "nervous"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": ""
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "Erin. That's the nicest thing anyone's ever made me.",
+          "to": "erin",
+          "mood": "happy"
+        },
+        {
+          "type": "talking_head",
+          "who": "andy",
+          "lines": [
+            "Worst Christmas of my life. I have a tiny choir of me, though.",
+            "I'm going to put it on my rearview mirror. They can sing me home."
+          ],
+          "mood": "sad"
+        }
+      ]
+    },
+    {
+      "part": "tag",
+      "plot": "tag",
+      "set": "office",
+      "region": "michael_office",
+      "venue": "",
+      "present": [
+        "michael",
+        "jim"
+      ],
+      "recap": "Jim asks Michael to promise not to film, plan or throw anything next Friday at five.",
+      "beats": [
+        {
+          "type": "move",
+          "who": "jim",
+          "to": "michael_guest_1",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "Michael. Next Friday, five o'clock. Promise me no parties. No movies. No anything.",
+          "to": "michael",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Why? What's next Friday at five?",
+          "to": "jim",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "Nothing. Absolutely nothing.",
+          "to": "michael",
+          "mood": "awkward"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "I promise. I will be extremely nowhere.",
+          "to": "jim",
+          "mood": "smug"
+        },
+        {
+          "type": "react",
+          "who": [
+            "jim"
+          ],
+          "reaction": "sigh"
+        }
+      ]
+    }
+  ]
+}

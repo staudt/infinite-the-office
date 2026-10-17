@@ -130,6 +130,7 @@ export function reviewEpisode(series: Series, raw: unknown, sets: Sets): Episode
     return [...new Set(out)];
   };
 
+  ep.away = list(ep.away, 'away').filter((p) => p !== 'everyone');
   const scenes: Scene[] = [];
   ep.scenes.slice(0, MAX_SCENES).forEach((sc, si) => {
     const where = `scene ${si + 1}`;

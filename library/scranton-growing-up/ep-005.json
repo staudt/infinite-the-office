@@ -1,0 +1,885 @@
+{
+  "title": "The Reverend",
+  "logline": "Michael gets ordained online to officiate Andy's wedding, Phyllis walks in on Dwight and Angela in the warehouse, and Dwight trains Erin to guard the door a little too well.",
+  "outline": "A: Michael is hurt Andy chose someone else to officiate; he gets ordained online and auditions with a mock wedding. B: Phyllis catches Dwight and Angela in Darryl's office and starts sweetly collecting favors. C: Dwight drills Erin on door security, and she locks Michael out. Order: cold, A, B, A, C, B, A, C, A, B, A, tag",
+  "theme": "Wanting to be part of someone else's big moment",
+  "storySoFar": "Pam is in New York at Pratt; Jim is lonely and tried to recruit Erin as a prank partner, but she's too honest. Michael got ordained online as the Reverend Michael Scott to officiate Andy's wedding; Angela refused, but Andy asked him to do a two-minute reading instead. Phyllis caught Dwight and Angela in Darryl's office and is collecting favors: she now picks the Halloween party theme (glitter). Dwight and Angela agreed to stop seeing each other, and didn't. Dwight made Erin the office's 'moat'; she locked out Michael and then Dwight with passwords. Michael and Holly are happy. Andy's wedding is June 20.",
+  "extras": [],
+  "away": [
+    "pam",
+    "ryan"
+  ],
+  "stateChanges": [
+    {
+      "type": "arc",
+      "arc": "The Wedding of the Century",
+      "progress": "Phyllis caught Dwight and Angela in Darryl's office and is blackmailing Angela sweetly; she controls the Halloween theme"
+    },
+    {
+      "type": "arc",
+      "arc": "Erin at the Front Desk",
+      "progress": "Dwight made Erin the gatekeeper; she takes passwords very seriously"
+    },
+    {
+      "type": "arc",
+      "arc": "Jim and Pam, For Real",
+      "progress": "Long distance; Jim is lonely and pranks without Pam fall flat"
+    },
+    {
+      "type": "relationship",
+      "a": "phyllis",
+      "b": "angela",
+      "status": "Phyllis knows Angela's secret and sweetly collects favors"
+    },
+    {
+      "type": "note",
+      "text": "Michael is ordained online (Universal Light Fellowship, $19.99) and will do a reading at Andy's wedding"
+    },
+    {
+      "type": "gag",
+      "text": "Erin's door passwords (she keeps changing them)"
+    }
+  ],
+  "scenes": [
+    {
+      "part": "cold_open",
+      "plot": "cold_open",
+      "set": "office",
+      "region": "reception",
+      "venue": "",
+      "present": [
+        "jim",
+        "erin",
+        "dwight"
+      ],
+      "recap": "Jim tries to recruit Erin as his new prank partner; she's too honest to lie to Dwight.",
+      "beats": [
+        {
+          "type": "move",
+          "who": "jim",
+          "to": "erin_desk",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "Erin. Small favor. Tell Dwight corporate banned beets from the building.",
+          "to": "erin",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "erin",
+          "text": "Okay!",
+          "to": "jim",
+          "mood": "excited"
+        },
+        {
+          "type": "move",
+          "who": "erin",
+          "to": "dwight_desk",
+          "pace": "hurry"
+        },
+        {
+          "type": "say",
+          "who": "erin",
+          "text": "Dwight! Jim wants me to tell you a lie. That corporate banned beets.",
+          "to": "dwight",
+          "mood": "happy"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": ""
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Thank you, Erin. Your loyalty is noted. Halpert, your accomplice is a patriot.",
+          "to": "jim",
+          "mood": "smug"
+        },
+        {
+          "type": "react",
+          "who": [
+            "jim"
+          ],
+          "reaction": "look_at_camera"
+        },
+        {
+          "type": "talking_head",
+          "who": "jim",
+          "lines": [
+            "Pam has been gone eleven days. I'm trying to keep the pranks going.",
+            "It's hard. Turns out she was the talent."
+          ],
+          "mood": "sad"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "A",
+      "set": "office",
+      "region": "bullpen",
+      "venue": "",
+      "present": [
+        "andy",
+        "michael",
+        "kevin",
+        "oscar"
+      ],
+      "recap": "Andy says his officiant will be his old a cappella director, and Michael is deeply wounded.",
+      "beats": [
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "Big news. Professor Larry Dewitt of Here Comes Treble is officiating. In song.",
+          "to": "all",
+          "mood": "excited"
+        },
+        {
+          "type": "move",
+          "who": "michael",
+          "to": "andy",
+          "pace": "hurry"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "A professor? Andy, I assumed I was officiating. I'm your boss. It's implied.",
+          "to": "andy",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "Are you even ordained?",
+          "to": "michael",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Not yet. But I have the spirit. And a robe. It's a bathrobe, but it's long.",
+          "to": "andy",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "I'll marry you, Andy.",
+          "to": "andy",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "oscar",
+          "text": "He means officiate, Kevin.",
+          "to": "kevin",
+          "mood": "deadpan"
+        },
+        {
+          "type": "talking_head",
+          "who": "michael",
+          "lines": [
+            "I've been to forty weddings. I've cried at all of them. Even the one I was asked to leave.",
+            "I'm basically a priest already."
+          ],
+          "mood": "sad"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "B",
+      "set": "warehouse",
+      "region": "darryl_office",
+      "venue": "",
+      "present": [
+        "dwight",
+        "angela"
+      ],
+      "recap": "Phyllis comes down to the warehouse for yarn samples and walks in on Dwight and Angela in Darryl's office.",
+      "beats": [
+        {
+          "type": "say",
+          "who": "angela",
+          "text": "Not here. Darryl could come back any minute.",
+          "to": "dwight",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Darryl is on lunch for thirty-four more minutes. I timed him.",
+          "to": "angela",
+          "mood": "smug"
+        },
+        {
+          "type": "enter",
+          "who": [
+            "phyllis"
+          ],
+          "to": "darryl_desk"
+        },
+        {
+          "type": "say",
+          "who": "phyllis",
+          "text": "Darryl said the holiday samples are on the top shelf. Bob wants the red ones.",
+          "to": "none",
+          "mood": "happy"
+        },
+        {
+          "type": "react",
+          "who": [
+            "dwight",
+            "angela"
+          ],
+          "reaction": "gasp"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Phyllis. We were inventorying. The inventory. Of each other's... clipboards.",
+          "to": "phyllis",
+          "mood": "panicked"
+        },
+        {
+          "type": "say",
+          "who": "phyllis",
+          "text": "Of course you were.",
+          "to": "dwight",
+          "mood": "smug"
+        },
+        {
+          "type": "action",
+          "who": "phyllis",
+          "verb": "search",
+          "target": "none",
+          "caption": "takes the box of red samples, very slowly"
+        },
+        {
+          "type": "talking_head",
+          "who": "phyllis",
+          "lines": [
+            "People think I'm sweet. I am sweet.",
+            "I'm just also very, very patient."
+          ],
+          "mood": "smug"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "A",
+      "set": "office",
+      "region": "michael_office",
+      "venue": "",
+      "present": [
+        "michael",
+        "holly"
+      ],
+      "recap": "Michael gets ordained online in four minutes, with Holly reading the questions aloud.",
+      "beats": [
+        {
+          "type": "move",
+          "who": "holly",
+          "to": "michael_guest_1",
+          "pace": "walk"
+        },
+        {
+          "type": "action",
+          "who": "michael",
+          "verb": "typing",
+          "target": "none",
+          "caption": "types on the Universal Light Fellowship website"
+        },
+        {
+          "type": "say",
+          "who": "holly",
+          "text": "Question three. 'Do you believe in love?' Check yes or no.",
+          "to": "michael",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Yes. With my whole heart. And my credit card.",
+          "to": "holly",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "holly",
+          "text": "Nineteen ninety-nine. Congratulations. You're the Reverend Michael Scott.",
+          "to": "michael",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Reverend. Say it again. Slower.",
+          "to": "holly",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "holly",
+          "text": "Reverend... Michael... Scott.",
+          "to": "michael",
+          "mood": "sarcastic"
+        },
+        {
+          "type": "react",
+          "who": [
+            "michael"
+          ],
+          "reaction": "cheer"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "C",
+      "set": "office",
+      "region": "reception",
+      "venue": "",
+      "present": [
+        "dwight",
+        "erin"
+      ],
+      "recap": "Dwight trains Erin: nobody enters the office without today's password.",
+      "beats": [
+        {
+          "type": "move",
+          "who": "dwight",
+          "to": "erin_desk",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Erin. You are the first line of defense. The gate. The moat.",
+          "to": "erin",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "erin",
+          "text": "I've always wanted to be a moat.",
+          "to": "dwight",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Today's password is 'Battlestar.' Nobody enters without it. Nobody.",
+          "to": "erin",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "erin",
+          "text": "Not even you?",
+          "to": "dwight",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Especially not me. I could be compromised.",
+          "to": "erin",
+          "mood": "smug"
+        },
+        {
+          "type": "talking_head",
+          "who": "erin",
+          "lines": [
+            "Dwight says I'm the moat. I looked it up. A moat is a ditch with water.",
+            "I'm going to be the best ditch."
+          ],
+          "mood": "happy"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "B",
+      "set": "office",
+      "region": "accounting",
+      "venue": "",
+      "present": [
+        "phyllis",
+        "angela"
+      ],
+      "recap": "Phyllis sweetly asks Angela to let her choose the Halloween theme; Angela can't refuse.",
+      "beats": [
+        {
+          "type": "move",
+          "who": "phyllis",
+          "to": "angela_desk",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "phyllis",
+          "text": "Angela, I've been thinking. I'd love to pick the theme for the Halloween party.",
+          "to": "angela",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "angela",
+          "text": "The Party Planning Committee picks the theme. I am the Party Planning Committee.",
+          "to": "phyllis",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "phyllis",
+          "text": "I know. And I know a lot of things. About clipboards.",
+          "to": "angela",
+          "mood": "smug"
+        },
+        {
+          "type": "pause",
+          "seconds": 3,
+          "caption": ""
+        },
+        {
+          "type": "say",
+          "who": "angela",
+          "text": "What theme would you like, Phyllis.",
+          "to": "phyllis",
+          "mood": "angry"
+        },
+        {
+          "type": "say",
+          "who": "phyllis",
+          "text": "Something with a lot of glitter.",
+          "to": "angela",
+          "mood": "happy"
+        },
+        {
+          "type": "talking_head",
+          "who": "angela",
+          "lines": [
+            "Glitter is the herpes of craft supplies.",
+            "I'll be fine. I'm fine."
+          ],
+          "mood": "angry"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "A",
+      "set": "office",
+      "region": "conference_room",
+      "venue": "",
+      "present": [
+        "michael",
+        "kevin",
+        "meredith",
+        "holly",
+        "andy",
+        "oscar",
+        "stanley",
+        "creed"
+      ],
+      "recap": "Michael auditions for Andy with a practice wedding, marrying Kevin and Meredith.",
+      "beats": [
+        {
+          "type": "gather",
+          "who": [
+            "everyone"
+          ],
+          "to": "conference_room"
+        },
+        {
+          "type": "move",
+          "who": "michael",
+          "to": "conf_front",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Dearly beloved. We are gathered here today to show Andy what he's missing.",
+          "to": "all",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Kevin, do you take Meredith to be your lawfully practice wife?",
+          "to": "kevin",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "Is there cake after?",
+          "to": "michael",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Close enough. Meredith?",
+          "to": "meredith",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "meredith",
+          "text": "Sure. I've done worse on a Tuesday.",
+          "to": "michael",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "You may now kiss the bride. Not really. Do not. HR is here.",
+          "to": "kevin",
+          "mood": "panicked"
+        },
+        {
+          "type": "say",
+          "who": "creed",
+          "text": "I'll take her if he won't.",
+          "to": "michael",
+          "mood": "neutral"
+        },
+        {
+          "type": "react",
+          "who": [
+            "holly"
+          ],
+          "reaction": "laugh"
+        },
+        {
+          "type": "react",
+          "who": [
+            "oscar"
+          ],
+          "reaction": "look_at_camera"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "That was... honestly kind of moving? I'll ask Angela.",
+          "to": "michael",
+          "mood": "awkward"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "C",
+      "set": "parking_lot",
+      "region": "entrance",
+      "venue": "",
+      "present": [
+        "michael"
+      ],
+      "recap": "Coming back from lunch, Michael doesn't know the password, and Erin won't open the door.",
+      "beats": [
+        {
+          "type": "caption",
+          "text": "AFTER LUNCH"
+        },
+        {
+          "type": "action",
+          "who": "michael",
+          "verb": "search",
+          "target": "none",
+          "caption": "pulls on the locked glass door"
+        },
+        {
+          "type": "enter",
+          "who": [
+            "erin"
+          ],
+          "to": "entrance"
+        },
+        {
+          "type": "say",
+          "who": "erin",
+          "text": "Password, please!",
+          "to": "michael",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Erin, it's me. Michael. Your boss. I hired you. Hired-hired.",
+          "to": "erin",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "erin",
+          "text": "That's exactly what someone compromised would say.",
+          "to": "michael",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Is it... 'Dwight is the best'?",
+          "to": "erin",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "erin",
+          "text": "No, but that's sweet.",
+          "to": "michael",
+          "mood": "happy"
+        },
+        {
+          "type": "react",
+          "who": [
+            "michael"
+          ],
+          "reaction": "facepalm"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "A",
+      "set": "office",
+      "region": "bullpen",
+      "venue": "",
+      "present": [
+        "andy",
+        "angela",
+        "michael",
+        "holly"
+      ],
+      "recap": "Angela flatly refuses to be married by Michael, and he's crushed.",
+      "beats": [
+        {
+          "type": "move",
+          "who": "michael",
+          "to": "andy",
+          "pace": "hurry"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "So? Did she say yes? I already wrote a homily. It has a slideshow.",
+          "to": "andy",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "angela",
+          "text": "Michael, I will not be married by a man who got his license from a pop-up ad.",
+          "to": "michael",
+          "mood": "angry"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "Sorry, Mike. Bride's call.",
+          "to": "michael",
+          "mood": "awkward"
+        },
+        {
+          "type": "pause",
+          "seconds": 3,
+          "caption": ""
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "No. That's fine. That's totally... I have other weddings. Probably.",
+          "to": "andy",
+          "mood": "sad"
+        },
+        {
+          "type": "move",
+          "who": "michael",
+          "to": "michael_office",
+          "pace": "walk"
+        },
+        {
+          "type": "react",
+          "who": [
+            "holly"
+          ],
+          "reaction": "sigh"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "B",
+      "set": "kitchen",
+      "region": "kitchen",
+      "venue": "",
+      "present": [
+        "dwight",
+        "angela"
+      ],
+      "recap": "Dwight and Angela panic about Phyllis; Angela blames Dwight, and they agree to stop. They don't.",
+      "beats": [
+        {
+          "type": "say",
+          "who": "angela",
+          "text": "This is your fault. You and your 'inventory.'",
+          "to": "dwight",
+          "mood": "angry"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Phyllis has no proof. I wiped the clipboards.",
+          "to": "angela",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "angela",
+          "text": "We have to stop. Effective immediately. Forever.",
+          "to": "dwight",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Agreed. Forever starts at five?",
+          "to": "angela",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "angela",
+          "text": "Five thirty. I have a cat thing.",
+          "to": "dwight",
+          "mood": "awkward"
+        },
+        {
+          "type": "talking_head",
+          "who": "dwight",
+          "lines": [
+            "Angela and I have ended our relationship. Permanently.",
+            "We'll be ending it again tomorrow."
+          ],
+          "mood": "deadpan"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "A",
+      "set": "office",
+      "region": "michael_office",
+      "venue": "",
+      "present": [
+        "michael",
+        "holly",
+        "andy"
+      ],
+      "recap": "Andy, feeling bad, asks Michael to do a reading at the wedding; Michael is overjoyed.",
+      "beats": [
+        {
+          "type": "move",
+          "who": "andy",
+          "to": "michael_guest_1",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "Mike. What if you did a reading? At the ceremony. Two minutes.",
+          "to": "michael",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "A reading. From the Bible?",
+          "to": "andy",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "From anything. Except your homily.",
+          "to": "michael",
+          "mood": "awkward"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Andy. I accept. I'm going to read something by... Shakespeare. Or Jimmy Buffett.",
+          "to": "andy",
+          "mood": "happy"
+        },
+        {
+          "type": "talking_head",
+          "who": "holly",
+          "lines": [
+            "Michael just wants to be in the picture. Every picture.",
+            "It's a weird thing to find attractive. I find it so attractive."
+          ],
+          "mood": "happy"
+        }
+      ]
+    },
+    {
+      "part": "tag",
+      "plot": "tag",
+      "set": "office",
+      "region": "reception",
+      "venue": "",
+      "present": [
+        "erin",
+        "dwight"
+      ],
+      "recap": "Dwight tries to get back in from the warehouse; Erin demands the password, and it's been changed.",
+      "beats": [
+        {
+          "type": "enter",
+          "who": [
+            "dwight"
+          ],
+          "to": "erin_desk"
+        },
+        {
+          "type": "say",
+          "who": "erin",
+          "text": "Password!",
+          "to": "dwight",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Battlestar.",
+          "to": "erin",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "erin",
+          "text": "I changed it. For security. You'd be so proud.",
+          "to": "dwight",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "I am proud. And I am also locked out.",
+          "to": "erin",
+          "mood": "sad"
+        }
+      ]
+    }
+  ]
+}

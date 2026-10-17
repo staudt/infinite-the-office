@@ -174,11 +174,11 @@ $('card').addEventListener('click', (e) => {
     return;
   }
   const i = (e.target as HTMLElement).closest<HTMLElement>('[data-scene]')?.dataset.scene;
-  if (i !== undefined) jump({ scene: Number(i) });
+  if (i !== undefined) { paused = false; jump({ scene: Number(i) }); } // clicking a scene means "play it"
 });
 $('feed').addEventListener('click', (e) => {
   const t = (e.target as HTMLElement).closest<HTMLElement>('[data-t]')?.dataset.t;
-  if (t !== undefined) jump({ time: Number(t) });
+  if (t !== undefined) { paused = false; jump({ time: Number(t) }); }
 });
 
 /** Replay the current episode from a point, keeping the way it hands over to the next one. */

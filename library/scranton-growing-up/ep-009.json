@@ -1,0 +1,742 @@
+{
+  "title": "The Consultant",
+  "logline": "Ryan comes back in a fedora claiming to be a 'consultant' and Michael rehires him as a temp to have someone to fix, Pam comes home from New York early after failing one class, and Kelly tries to win Ryan back by ignoring him.",
+  "outline": "A: Michael rehires a humbled Ryan as a temp and tries to rehabilitate him, defending his ridiculous app pitch until Ryan admits he has nothing. B: Pam comes back for good after failing one class; Jim is relieved, and Pam and Erin become friends. C: Kelly aggressively ignores Ryan to win him back. Order: cold, A, B, A, C, B, A, C, B, A, tag",
+  "theme": "Coming back after you failed",
+  "storySoFar": "Pam is back from New York for good after failing typography; Jim is overjoyed, and the ring is still in his pocket. Pam is in sales; she told Erin the reception desk is Erin's, and is teaching her to prank Dwight (Erin's first one worked). Ryan returned in a fedora claiming to be a consultant, and Michael rehired him as a temp at Holly's old desk in the annex; Ryan admitted his startup 'Papr' doesn't exist and he lives with his mom. Kelly ignored him for four seconds and asked him to dinner, which she's paying for. Michael still misses Holly. Phyllis runs the Party Planning Committee and is blackmailing Angela, who is still secretly seeing Dwight. Andy's wedding is June 20.",
+  "extras": [],
+  "away": [
+    "holly",
+    "pam",
+    "ryan"
+  ],
+  "stateChanges": [
+    {
+      "type": "arc",
+      "arc": "Jim and Pam, For Real",
+      "progress": "Pam is back for good after failing one class; Jim is relieved and still holding the ring"
+    },
+    {
+      "type": "arc",
+      "arc": "Erin at the Front Desk",
+      "progress": "Pam told Erin reception is hers; Pam is teaching her pranks"
+    },
+    {
+      "type": "arc",
+      "arc": "Ryan Hits Bottom",
+      "progress": "Ryan is back as a temp, admitted Papr doesn't exist; Michael is mentoring him"
+    },
+    {
+      "type": "relationship",
+      "a": "ryan",
+      "b": "kelly",
+      "status": "Back on, sort of; Kelly is paying for dinner"
+    },
+    {
+      "type": "relationship",
+      "a": "pam",
+      "b": "erin",
+      "status": "Friends; Pam is Erin's prank mentor"
+    },
+    {
+      "type": "relationship",
+      "a": "michael",
+      "b": "ryan",
+      "status": "Mentor and humbled temp, again"
+    }
+  ],
+  "scenes": [
+    {
+      "part": "cold_open",
+      "plot": "cold_open",
+      "set": "office",
+      "region": "bullpen",
+      "venue": "",
+      "present": [
+        "erin",
+        "dwight",
+        "jim"
+      ],
+      "recap": "Erin, coached by Jim, tells Dwight he is NOT being pranked, and Dwight unravels.",
+      "beats": [
+        {
+          "type": "move",
+          "who": "erin",
+          "to": "dwight_desk",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "erin",
+          "text": "Dwight, I just want you to know that Jim is not pranking you today.",
+          "to": "dwight",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Why would you say that? What has he done?",
+          "to": "erin",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "erin",
+          "text": "Nothing! That's what I'm telling you.",
+          "to": "dwight",
+          "mood": "excited"
+        },
+        {
+          "type": "action",
+          "who": "dwight",
+          "verb": "search",
+          "target": "none",
+          "caption": "checks his drawers, his stapler, and under his chair"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "The absence of a prank is the most dangerous prank of all.",
+          "to": "jim",
+          "mood": "panicked"
+        },
+        {
+          "type": "react",
+          "who": [
+            "jim"
+          ],
+          "reaction": "look_at_camera"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "A",
+      "set": "office",
+      "region": "michael_office",
+      "venue": "",
+      "present": [
+        "michael"
+      ],
+      "recap": "Ryan shows up in a fedora, says he's 'consulting', and asks for his old temp job; Michael is thrilled to have someone to fix.",
+      "beats": [
+        {
+          "type": "enter",
+          "who": [
+            "ryan"
+          ],
+          "to": "michael_guest_1"
+        },
+        {
+          "type": "say",
+          "who": "ryan",
+          "text": "Michael. Hey. I'm consulting now. Freelance. Between ventures.",
+          "to": "michael",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Ryan! Are you here to fire me? Is this a corporate thing?",
+          "to": "ryan",
+          "mood": "panicked"
+        },
+        {
+          "type": "say",
+          "who": "ryan",
+          "text": "No. I'm here because... I need a temp job. For research. For my startup.",
+          "to": "michael",
+          "mood": "awkward"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "You're hired. You start now. I am going to mentor you back to greatness.",
+          "to": "ryan",
+          "mood": "excited"
+        },
+        {
+          "type": "talking_head",
+          "who": "michael",
+          "lines": [
+            "Ryan was my protégé. Then he was my boss. Then he was arrested.",
+            "Now he's my protégé again. It's the circle of life. Like in The Lion King. He's Simba."
+          ],
+          "mood": "happy"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "B",
+      "set": "office",
+      "region": "reception",
+      "venue": "",
+      "present": [
+        "erin"
+      ],
+      "recap": "Pam comes back for good; Erin asks for the password and Pam accidentally knows it.",
+      "beats": [
+        {
+          "type": "enter",
+          "who": [
+            "pam"
+          ],
+          "to": "erin_desk"
+        },
+        {
+          "type": "say",
+          "who": "erin",
+          "text": "Pam! Password, please!",
+          "to": "pam",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "I have no idea. 'Proposal'?",
+          "to": "erin",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "erin",
+          "text": "How did you know?! I changed it today!",
+          "to": "pam",
+          "mood": "panicked"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Lucky guess. I'm back, Erin. For good.",
+          "to": "erin",
+          "mood": "awkward"
+        },
+        {
+          "type": "talking_head",
+          "who": "pam",
+          "lines": [
+            "I failed one class. Typography. Who fails fonts?",
+            "They said I could retake it in the summer. I said I'd rather go home. So, I'm home."
+          ],
+          "mood": "sad"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "A",
+      "set": "annex",
+      "region": "annex",
+      "venue": "",
+      "present": [
+        "kelly"
+      ],
+      "recap": "Michael installs Ryan at Holly's old desk in the annex; Kelly loses her mind with joy, and Michael gets sad about the desk.",
+      "beats": [
+        {
+          "type": "enter",
+          "who": [
+            "michael",
+            "ryan"
+          ],
+          "to": "toby_desk"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Kelly, look who's back. Ryan will be sitting at... this desk.",
+          "to": "kelly",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "kelly",
+          "text": "Oh my God. Oh my God. Ryan. Hi. I'm totally over you.",
+          "to": "ryan",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "ryan",
+          "text": "Cool. Same.",
+          "to": "kelly",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Holly sat here. She left a sticky note. It says 'Feed the fish.' There's no fish.",
+          "to": "ryan",
+          "mood": "sad"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": ""
+        },
+        {
+          "type": "say",
+          "who": "ryan",
+          "text": "Can I sit now?",
+          "to": "michael",
+          "mood": "annoyed"
+        },
+        {
+          "type": "sit",
+          "who": [
+            "ryan"
+          ]
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "C",
+      "set": "kitchen",
+      "region": "kitchen",
+      "venue": "",
+      "present": [
+        "kelly",
+        "phyllis",
+        "meredith"
+      ],
+      "recap": "Kelly announces her plan to win Ryan back by ignoring him so hard he notices.",
+      "beats": [
+        {
+          "type": "say",
+          "who": "kelly",
+          "text": "Okay, my plan. I'm going to ignore Ryan so hard he can feel it in his body.",
+          "to": "phyllis",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "phyllis",
+          "text": "That's healthy, Kelly.",
+          "to": "kelly",
+          "mood": "sarcastic"
+        },
+        {
+          "type": "say",
+          "who": "meredith",
+          "text": "Just sleep with him. It's faster.",
+          "to": "kelly",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "kelly",
+          "text": "Meredith, ew. Also, maybe. But ignoring first.",
+          "to": "meredith",
+          "mood": "annoyed"
+        },
+        {
+          "type": "talking_head",
+          "who": "kelly",
+          "lines": [
+            "Ryan went to corporate, and then to jail, and then to Thailand to find himself.",
+            "He didn't find himself. He found a fedora. I still love him so much."
+          ],
+          "mood": "excited"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "B",
+      "set": "office",
+      "region": "bullpen",
+      "venue": "",
+      "present": [
+        "jim",
+        "pam"
+      ],
+      "recap": "Pam tells Jim she failed a class and came home; Jim is overjoyed, and says it badly.",
+      "beats": [
+        {
+          "type": "move",
+          "who": "pam",
+          "to": "jim_desk",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "Pam? It's Tuesday. Why are you here on a Tuesday?",
+          "to": "pam",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "I failed typography. I'm done. I came home. I feel so stupid.",
+          "to": "jim",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "I'm so glad you failed. That came out wrong.",
+          "to": "pam",
+          "mood": "panicked"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "I mean. I'm sorry. And I'm glad you're home. Mostly the second one.",
+          "to": "pam",
+          "mood": "happy"
+        },
+        {
+          "type": "action",
+          "who": "pam",
+          "verb": "hug",
+          "target": "jim",
+          "caption": "hugs him and doesn't let go"
+        },
+        {
+          "type": "talking_head",
+          "who": "jim",
+          "lines": [
+            "She thinks she failed. She got into Pratt. She went to New York by herself.",
+            "And she came back. To this. On purpose. I'm marrying her. Eventually. When Michael's not around."
+          ],
+          "mood": "happy"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "A",
+      "set": "office",
+      "region": "conference_room",
+      "venue": "",
+      "present": [
+        "michael",
+        "ryan",
+        "oscar",
+        "dwight",
+        "kevin",
+        "stanley",
+        "andy",
+        "angela"
+      ],
+      "recap": "Ryan pitches his startup to the office; Oscar takes it apart, and Michael defends it blindly.",
+      "beats": [
+        {
+          "type": "gather",
+          "who": [
+            "everyone"
+          ],
+          "to": "conference_room"
+        },
+        {
+          "type": "move",
+          "who": "ryan",
+          "to": "conf_front",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "ryan",
+          "text": "Paper is dead. My startup is called Papr. No 'e.' It's paper, but on your phone.",
+          "to": "all",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "oscar",
+          "text": "So it's a picture of paper?",
+          "to": "ryan",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "ryan",
+          "text": "It's a platform for paper experiences.",
+          "to": "oscar",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "I would like to invest. Is a thousand dollars a lot? I'll do two.",
+          "to": "ryan",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "stanley",
+          "text": "I am going to be retired before this meeting ends.",
+          "to": "all",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Papr is a clear threat to our livelihoods. I'd like to report it to the police.",
+          "to": "michael",
+          "mood": "angry"
+        },
+        {
+          "type": "react",
+          "who": [
+            "oscar"
+          ],
+          "reaction": "look_at_camera"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "C",
+      "set": "annex",
+      "region": "annex",
+      "venue": "",
+      "present": [
+        "kelly",
+        "ryan"
+      ],
+      "recap": "Kelly ignores Ryan dramatically for four seconds, then breaks.",
+      "beats": [
+        {
+          "type": "action",
+          "who": "kelly",
+          "verb": "typing",
+          "target": "none",
+          "caption": "types loudly, staring straight ahead"
+        },
+        {
+          "type": "say",
+          "who": "kelly",
+          "text": "I'm not talking to you right now, Ryan. Just so you know.",
+          "to": "ryan",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "ryan",
+          "text": "Okay.",
+          "to": "kelly",
+          "mood": "neutral"
+        },
+        {
+          "type": "pause",
+          "seconds": 3,
+          "caption": ""
+        },
+        {
+          "type": "say",
+          "who": "kelly",
+          "text": "Do you want to get dinner? Not as a date. Like, as a date.",
+          "to": "ryan",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "ryan",
+          "text": "Are you paying?",
+          "to": "kelly",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "kelly",
+          "text": "Yes! Oh my God, yes.",
+          "to": "ryan",
+          "mood": "excited"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "B",
+      "set": "office",
+      "region": "reception",
+      "venue": "",
+      "present": [
+        "erin",
+        "pam"
+      ],
+      "recap": "Erin offers Pam her old desk back; Pam says it's Erin's, and they become friends.",
+      "beats": [
+        {
+          "type": "move",
+          "who": "pam",
+          "to": "erin_desk",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "erin",
+          "text": "Pam, if you want reception back, I can move. I don't mind. I'm portable.",
+          "to": "pam",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Erin, no. I'm in sales now. This is your desk. You're better at it than I was.",
+          "to": "erin",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "erin",
+          "text": "Really? Nobody's ever said I'm better at something. Except shoplifting, once. As a kid.",
+          "to": "pam",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Want me to teach you how to prank Dwight properly?",
+          "to": "erin",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "erin",
+          "text": "Yes. Yes. Yes.",
+          "to": "pam",
+          "mood": "excited"
+        },
+        {
+          "type": "talking_head",
+          "who": "erin",
+          "lines": [
+            "Pam is like the big sister I never had. I had eleven foster sisters.",
+            "But they were all younger. Or in jail."
+          ],
+          "mood": "happy"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "A",
+      "set": "office",
+      "region": "michael_office",
+      "venue": "",
+      "present": [
+        "michael",
+        "ryan"
+      ],
+      "recap": "Ryan admits there's no startup and no money; Michael tells him he doesn't have to pretend here, and Ryan asks for two hundred dollars anyway.",
+      "beats": [
+        {
+          "type": "move",
+          "who": "ryan",
+          "to": "michael_guest_1",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "ryan",
+          "text": "Michael. About the investment. There's no Papr. There's no startup. I live with my mom.",
+          "to": "michael",
+          "mood": "sad"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": ""
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Ryan. You don't have to pretend here. This is the one place nobody's impressed by you.",
+          "to": "ryan",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "ryan",
+          "text": "That's... weirdly comforting.",
+          "to": "michael",
+          "mood": "awkward"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "And I'm proud of you. For telling the truth. That's what grown-ups do. I've been told.",
+          "to": "ryan",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "ryan",
+          "text": "Thanks. Can I still have the two hundred dollars?",
+          "to": "michael",
+          "mood": "neutral"
+        },
+        {
+          "type": "react",
+          "who": [
+            "michael"
+          ],
+          "reaction": "facepalm"
+        },
+        {
+          "type": "talking_head",
+          "who": "ryan",
+          "lines": [
+            "I'm not humbled. I'm in a humble phase. It's different.",
+            "Humility is very big right now. In Silicon Valley."
+          ],
+          "mood": "smug"
+        }
+      ]
+    },
+    {
+      "part": "tag",
+      "plot": "tag",
+      "set": "office",
+      "region": "bullpen",
+      "venue": "",
+      "present": [
+        "erin",
+        "dwight",
+        "pam"
+      ],
+      "recap": "Coached by Pam, Erin pulls off her first real prank on Dwight.",
+      "beats": [
+        {
+          "type": "move",
+          "who": "erin",
+          "to": "dwight_desk",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "erin",
+          "text": "Dwight, corporate called. Beets are now classified as candy. You have to declare them.",
+          "to": "dwight",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "That is an outrage. I'm calling my senator.",
+          "to": "erin",
+          "mood": "angry"
+        },
+        {
+          "type": "action",
+          "who": "dwight",
+          "verb": "phone_call",
+          "target": "none",
+          "caption": "dials furiously"
+        },
+        {
+          "type": "react",
+          "who": [
+            "pam"
+          ],
+          "reaction": "look_at_camera"
+        }
+      ]
+    }
+  ]
+}

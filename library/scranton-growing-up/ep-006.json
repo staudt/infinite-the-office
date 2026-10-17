@@ -1,0 +1,892 @@
+{
+  "title": "Two Dwights",
+  "logline": "At the Halloween talent show, Michael and Holly secretly prepared the same act, a Dwight impression; Phyllis rigs the judging for Bob Vance's scary story; and Jim needs Pam, on speakerphone, to pull off the annual Halloween scare.",
+  "outline": "A: Michael prepares a secret Dwight impression for the Halloween talent show to make Holly laugh, and Holly prepared the same act; their Dwight-off wins the room, and Michael realizes they're a couple. B: Phyllis runs Halloween and rigs the judging for Bob Vance; Angela suffers, and Andy wonders why Dwight smells like Angela's perfume. C: Jim's yearly Halloween scare on Dwight falls flat without Pam, until she joins on speakerphone. Order: cold, A, B, A, C, B, A, C, A, B, A, tag",
+  "theme": "Finding the person who gets the joke",
+  "storySoFar": "At the Halloween talent show, Michael and Holly had secretly prepared the same act, a Dwight impression; their Dwight-off won the room, though Phyllis gave the prize to Bob Vance for a scary story about warm shrimp. Michael almost said 'I love you'. Phyllis is still blackmailing Angela and ran Halloween. Andy noticed Dwight smelled exactly like Angela's lavender perfume and is quietly bothered. Pam is in New York; over speakerphone she did the voice of Dwight's ghostly great-grandfather for Jim's annual Halloween scare. Erin's passwords keep changing. Andy's wedding is June 20; Michael will do a reading.",
+  "extras": [],
+  "away": [
+    "pam",
+    "ryan"
+  ],
+  "stateChanges": [
+    {
+      "type": "relationship",
+      "a": "michael",
+      "b": "holly",
+      "status": "Very much in love; Michael almost said 'I love you'"
+    },
+    {
+      "type": "arc",
+      "arc": "Michael and Holly",
+      "progress": "Their matching Dwight impressions at Halloween made the office call them soulmates"
+    },
+    {
+      "type": "arc",
+      "arc": "The Wedding of the Century",
+      "progress": "Andy noticed Dwight smells like Angela's lavender and is quietly suspicious"
+    },
+    {
+      "type": "arc",
+      "arc": "Jim and Pam, For Real",
+      "progress": "Lonely, but Pam pulled off the annual Halloween scare on Dwight over speakerphone"
+    },
+    {
+      "type": "note",
+      "text": "Andy's suspicion: Dwight smelled like Angela's lavender perfume"
+    },
+    {
+      "type": "gag",
+      "text": "Michael and Holly's matching bits (Yoda, Dwight impressions)"
+    }
+  ],
+  "scenes": [
+    {
+      "part": "cold_open",
+      "plot": "cold_open",
+      "set": "office",
+      "region": "reception",
+      "venue": "",
+      "present": [
+        "erin"
+      ],
+      "recap": "Erin's Halloween password confounds Dwight.",
+      "beats": [
+        {
+          "type": "caption",
+          "text": "HALLOWEEN"
+        },
+        {
+          "type": "enter",
+          "who": [
+            "dwight"
+          ],
+          "to": "erin_desk"
+        },
+        {
+          "type": "say",
+          "who": "erin",
+          "text": "Halloween password! Trick or treat?",
+          "to": "dwight",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Trick.",
+          "to": "erin",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "erin",
+          "text": "Wrong!",
+          "to": "dwight",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Treat.",
+          "to": "erin",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "erin",
+          "text": "Also wrong! It's 'pumpkin spice.' It was a trick question. Get it? Trick?",
+          "to": "dwight",
+          "mood": "excited"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": ""
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "I have never been prouder or more frustrated.",
+          "to": "erin",
+          "mood": "sad"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "A",
+      "set": "office",
+      "region": "michael_office",
+      "venue": "",
+      "present": [
+        "michael"
+      ],
+      "recap": "Michael rehearses his secret talent show act: an impression of Dwight, to make Holly laugh.",
+      "beats": [
+        {
+          "type": "talking_head",
+          "who": "michael",
+          "lines": [
+            "This year, no costumes. Phyllis says it's a Halloween talent show.",
+            "My talent? Becoming another man. Completely. Like Daniel Day-Lewis, or a werewolf."
+          ],
+          "mood": "smug"
+        },
+        {
+          "type": "action",
+          "who": "michael",
+          "verb": "present",
+          "target": "none",
+          "caption": "pushes up imaginary glasses and squints"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Question. What kind of bear is best? False. Black bear.",
+          "to": "none",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Identity theft is not a joke, Jim. Millions of families suffer every year.",
+          "to": "none",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Oh, that's good. That's so good. Holly's going to die.",
+          "to": "none",
+          "mood": "excited"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "B",
+      "set": "office",
+      "region": "accounting",
+      "venue": "",
+      "present": [
+        "phyllis",
+        "angela",
+        "oscar",
+        "kevin"
+      ],
+      "recap": "Phyllis has taken over Halloween with a talent show and a 'spooky story' category; Angela isn't allowed to judge.",
+      "beats": [
+        {
+          "type": "say",
+          "who": "phyllis",
+          "text": "This year, a Halloween talent show. Acts, impressions, scary stories. I'll be judging.",
+          "to": "all",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "angela",
+          "text": "The Party Planning Committee always judges. I am the Party Planning Committee.",
+          "to": "phyllis",
+          "mood": "angry"
+        },
+        {
+          "type": "say",
+          "who": "phyllis",
+          "text": "And I'm the Party Planning Committee's best friend. Aren't I, Angela?",
+          "to": "angela",
+          "mood": "smug"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": ""
+        },
+        {
+          "type": "say",
+          "who": "angela",
+          "text": "Yes, Phyllis.",
+          "to": "phyllis",
+          "mood": "angry"
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "Can my talent be eating?",
+          "to": "phyllis",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "oscar",
+          "text": "It's the only one he's ever had certified.",
+          "to": "phyllis",
+          "mood": "deadpan"
+        },
+        {
+          "type": "talking_head",
+          "who": "phyllis",
+          "lines": [
+            "Every year Angela's theme is something like 'Autumn Restraint.'",
+            "This year I decided. Bob says he's never seen me so relaxed."
+          ],
+          "mood": "smug"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "A",
+      "set": "annex",
+      "region": "annex",
+      "venue": "",
+      "present": [
+        "holly",
+        "kelly"
+      ],
+      "recap": "Holly rehearses her own secret act for Kelly: the exact same Dwight impression.",
+      "beats": [
+        {
+          "type": "say",
+          "who": "holly",
+          "text": "Okay, tell me honestly. Is this good? Question.",
+          "to": "kelly",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "holly",
+          "text": "Through concentration, I can raise and lower my cholesterol at will.",
+          "to": "kelly",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "kelly",
+          "text": "Oh my God. That's Dwight. That's literally Dwight. Michael is gonna die.",
+          "to": "holly",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "holly",
+          "text": "That's the plan. It's a surprise.",
+          "to": "kelly",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "kelly",
+          "text": "He's doing a surprise too. He won't tell anyone. He just keeps squinting.",
+          "to": "holly",
+          "mood": "neutral"
+        },
+        {
+          "type": "react",
+          "who": [
+            "holly"
+          ],
+          "reaction": "stare"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "C",
+      "set": "office",
+      "region": "bullpen",
+      "venue": "",
+      "present": [
+        "jim",
+        "erin"
+      ],
+      "recap": "Jim explains the annual Halloween scare he and Pam pull on Dwight; without Pam, he's out of ideas.",
+      "beats": [
+        {
+          "type": "move",
+          "who": "erin",
+          "to": "jim_desk",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "erin",
+          "text": "Jim, are you doing an act?",
+          "to": "jim",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "No. Every Halloween, Pam and I scare Dwight. That's our act. Pam does the voice.",
+          "to": "erin",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "erin",
+          "text": "What voice?",
+          "to": "jim",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "The ghost of his great-grandfather. She's terrifying. I'm not.",
+          "to": "erin",
+          "mood": "sad"
+        },
+        {
+          "type": "talking_head",
+          "who": "jim",
+          "lines": [
+            "It's been a month. I'm fine. I've watched eleven documentaries about bridges.",
+            "I'm doing fine."
+          ],
+          "mood": "deadpan"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "B",
+      "set": "kitchen",
+      "region": "kitchen",
+      "venue": "",
+      "present": [
+        "angela",
+        "dwight"
+      ],
+      "recap": "Angela vents to Dwight about Phyllis; they are almost caught by Andy.",
+      "beats": [
+        {
+          "type": "say",
+          "who": "angela",
+          "text": "She's judging. Bob is entering. It's a dictatorship with a knitting circle.",
+          "to": "dwight",
+          "mood": "angry"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "I could destroy her. Quietly. Tonight.",
+          "to": "angela",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "angela",
+          "text": "You'll do nothing. You've done enough.",
+          "to": "dwight",
+          "mood": "annoyed"
+        },
+        {
+          "type": "action",
+          "who": "angela",
+          "verb": "hug",
+          "target": "dwight",
+          "caption": "straightens his tie, a little too tenderly"
+        },
+        {
+          "type": "enter",
+          "who": [
+            "andy"
+          ],
+          "to": "kitchen_1"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "Hey! What are you two doing in here?",
+          "to": "angela",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "angela",
+          "text": "Discussing the talent show. Dwight is not entering.",
+          "to": "andy",
+          "mood": "nervous"
+        },
+        {
+          "type": "exit",
+          "who": [
+            "angela"
+          ],
+          "how": "walk"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "A",
+      "set": "office",
+      "region": "conference_room",
+      "venue": "",
+      "present": [
+        "michael",
+        "holly",
+        "dwight",
+        "jim",
+        "andy",
+        "kevin",
+        "oscar",
+        "stanley",
+        "creed",
+        "meredith",
+        "kelly",
+        "erin",
+        "phyllis"
+      ],
+      "recap": "At the talent show, Michael and Holly both start the same act; the Dwight-off brings the house down, and the real Dwight loses at being himself.",
+      "beats": [
+        {
+          "type": "gather",
+          "who": [
+            "everyone"
+          ],
+          "to": "conference_room"
+        },
+        {
+          "type": "say",
+          "who": "phyllis",
+          "text": "First act. Michael.",
+          "to": "all",
+          "mood": "neutral"
+        },
+        {
+          "type": "move",
+          "who": "michael",
+          "to": "conf_front",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Question. Who here is the Assistant to the Regional Manager?",
+          "to": "all",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "holly",
+          "text": "Fact. I am.",
+          "to": "michael",
+          "mood": "deadpan"
+        },
+        {
+          "type": "pause",
+          "seconds": 3,
+          "caption": "two Dwights lock eyes across the room"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "You did him too? You did HIM?",
+          "to": "holly",
+          "mood": "excited"
+        },
+        {
+          "type": "move",
+          "who": "holly",
+          "to": "conf_front",
+          "pace": "hurry"
+        },
+        {
+          "type": "say",
+          "who": "holly",
+          "text": "Michael, you ignorant slut. Bears. Beets.",
+          "to": "michael",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Battlestar Galactica.",
+          "to": "holly",
+          "mood": "deadpan"
+        },
+        {
+          "type": "react",
+          "who": [
+            "kevin",
+            "kelly",
+            "erin"
+          ],
+          "reaction": "laugh"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "That is NOT how I talk. I'm entering. I'll show you a real Dwight.",
+          "to": "all",
+          "mood": "angry"
+        },
+        {
+          "type": "say",
+          "who": "stanley",
+          "text": "That one's the worst.",
+          "to": "dwight",
+          "mood": "deadpan"
+        },
+        {
+          "type": "react",
+          "who": [
+            "oscar"
+          ],
+          "reaction": "look_at_camera"
+        },
+        {
+          "type": "talking_head",
+          "who": "dwight",
+          "lines": [
+            "I lost an impression of myself to two people who know nothing about beets.",
+            "I've been studying their technique. I'll be better at being me next year."
+          ],
+          "mood": "angry"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "C",
+      "set": "office",
+      "region": "bullpen",
+      "venue": "",
+      "present": [
+        "jim",
+        "erin",
+        "dwight"
+      ],
+      "recap": "Pam calls in, and over speakerphone does the voice of Dwight's ghostly great-grandfather; Dwight is terrified.",
+      "beats": [
+        {
+          "type": "action",
+          "who": "jim",
+          "verb": "phone_call",
+          "target": "none",
+          "caption": "dials New York and puts it on speaker"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "Pam's here. Well. Pam's in New York. But her voice is here.",
+          "to": "erin",
+          "mood": "happy"
+        },
+        {
+          "type": "move",
+          "who": "jim",
+          "to": "dwight_desk",
+          "pace": "sneak"
+        },
+        {
+          "type": "action",
+          "who": "jim",
+          "verb": "hide",
+          "target": "dwight",
+          "caption": "slides the speakerphone under Dwight's desk"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Who's there? Who is moaning under my desk?",
+          "to": "none",
+          "mood": "panicked"
+        },
+        {
+          "type": "say",
+          "who": "erin",
+          "text": "She says she's your great-grandfather Dwide. And you have shamed the beets.",
+          "to": "dwight",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Great-Grandfather! I'm sorry! I'll rotate the crops!",
+          "to": "none",
+          "mood": "panicked"
+        },
+        {
+          "type": "react",
+          "who": [
+            "jim"
+          ],
+          "reaction": "look_at_camera"
+        },
+        {
+          "type": "talking_head",
+          "who": "erin",
+          "lines": [
+            "I'm going to marry someone who does a scary voice for me from another city.",
+            "Or from the same city. I'm flexible."
+          ],
+          "mood": "happy"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "A",
+      "set": "break_room",
+      "region": "break_room",
+      "venue": "",
+      "present": [
+        "michael",
+        "holly",
+        "phyllis",
+        "angela",
+        "andy",
+        "kevin",
+        "stanley",
+        "oscar",
+        "dwight"
+      ],
+      "recap": "Phyllis awards the prize to Bob Vance for a scary story about a refrigerator; Michael says he already won.",
+      "beats": [
+        {
+          "type": "caption",
+          "text": "SCARY STORY ROUND"
+        },
+        {
+          "type": "enter",
+          "who": [
+            "bob_vance"
+          ],
+          "to": "phyllis"
+        },
+        {
+          "type": "say",
+          "who": "bob_vance",
+          "text": "Bob Vance, Vance Refrigeration. It was a dark night. A walk-in freezer in Wilkes-Barre.",
+          "to": "all",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "bob_vance",
+          "text": "The compressor... stopped. Six hundred pounds of shrimp. Room temperature.",
+          "to": "all",
+          "mood": "deadpan"
+        },
+        {
+          "type": "react",
+          "who": [
+            "kevin"
+          ],
+          "reaction": "gasp"
+        },
+        {
+          "type": "say",
+          "who": "phyllis",
+          "text": "And the winner of the Halloween talent show is... Bob Vance!",
+          "to": "all",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "oscar",
+          "text": "He doesn't work here.",
+          "to": "phyllis",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "phyllis",
+          "text": "Rules allow spouses. Angela wrote the rules.",
+          "to": "oscar",
+          "mood": "smug"
+        },
+        {
+          "type": "react",
+          "who": [
+            "angela"
+          ],
+          "reaction": "eye_roll"
+        },
+        {
+          "type": "say",
+          "who": "holly",
+          "text": "Sorry, Michael. We lost to warm shrimp.",
+          "to": "michael",
+          "mood": "awkward"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Holly, I don't care. I think I won something better today.",
+          "to": "holly",
+          "mood": "happy"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "B",
+      "set": "office",
+      "region": "bullpen",
+      "venue": "",
+      "present": [
+        "andy",
+        "dwight",
+        "angela"
+      ],
+      "recap": "Andy notices Dwight smells exactly like Angela's lavender perfume, and can't figure out why.",
+      "beats": [
+        {
+          "type": "move",
+          "who": "andy",
+          "to": "dwight_desk",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "D, you smell like lavender. You smell exactly like Angela.",
+          "to": "dwight",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Lavender is a natural tick repellent. All farmers wear it.",
+          "to": "andy",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "Huh. The exact same lavender, though.",
+          "to": "dwight",
+          "mood": "neutral"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": ""
+        },
+        {
+          "type": "say",
+          "who": "angela",
+          "text": "Andrew, help me carry the talent show chairs.",
+          "to": "andy",
+          "mood": "nervous"
+        },
+        {
+          "type": "talking_head",
+          "who": "andy",
+          "lines": [
+            "Something about the lavender is bugging me. I don't know what.",
+            "Probably nothing. I'm a very trusting guy. Ask anyone. Don't ask Dwight."
+          ],
+          "mood": "awkward"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "A",
+      "set": "parking_lot",
+      "region": "parking_lot",
+      "venue": "",
+      "present": [
+        "michael",
+        "holly"
+      ],
+      "recap": "Walking out, Michael almost says 'I love you', in Dwight's voice, then in his own.",
+      "beats": [
+        {
+          "type": "move",
+          "who": "michael",
+          "to": "car_michael",
+          "pace": "walk"
+        },
+        {
+          "type": "move",
+          "who": "holly",
+          "to": "michael",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "holly",
+          "text": "Best Halloween I've ever had. And I once spent one in a dentist's chair.",
+          "to": "michael",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Question. Do I... really, really... like you a lot?",
+          "to": "holly",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "holly",
+          "text": "Fact. You do. And I like you a lot, Michael.",
+          "to": "michael",
+          "mood": "happy"
+        },
+        {
+          "type": "action",
+          "who": "michael",
+          "verb": "hug",
+          "target": "holly",
+          "caption": "hugs her in the parking lot"
+        },
+        {
+          "type": "talking_head",
+          "who": "michael",
+          "lines": [
+            "I almost said the L-word. Not 'lame.' The other one.",
+            "Next time. Not in Dwight's voice. That would be a weird first time."
+          ],
+          "mood": "happy"
+        }
+      ]
+    },
+    {
+      "part": "tag",
+      "plot": "tag",
+      "set": "office",
+      "region": "reception",
+      "venue": "",
+      "present": [
+        "erin",
+        "dwight"
+      ],
+      "recap": "Dwight asks Erin whether he's a good Dwight.",
+      "beats": [
+        {
+          "type": "move",
+          "who": "dwight",
+          "to": "erin_desk",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Erin. Honestly. Am I a convincing Dwight?",
+          "to": "erin",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "erin",
+          "text": "You're my favorite one!",
+          "to": "dwight",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Thank you. Tomorrow's password is 'shrimp.' I'm going home.",
+          "to": "erin",
+          "mood": "sad"
+        }
+      ]
+    }
+  ]
+}

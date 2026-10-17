@@ -24,6 +24,7 @@ export interface Plan {
 
 const CAP = 16; // cap thickness (the plan depth of a wall)
 const END_FACE = 56; // the visible end of a vertical wall
+type WallColors = { cap: string; capShade: string; face: string; faceLow: string; base: string };
 const COLOR = {
   cap: '#f2e6c6', capShade: '#d9c9a0', face: '#e0cfa6', faceLow: '#cbb68a', base: '#8a7352', edge: '#26242b',
   wood: '#b06d2a', woodDark: '#6d4320', outside: '#6f7d96', frame: '#2a2f3a',
@@ -134,19 +135,19 @@ function paintBg(L: Layout): HTMLCanvasElement {
 
 // ---------------------------------------------------------------- walls
 
-function drawHoriz(ctx: CanvasRenderingContext2D, s: Rect): void {
+function drawHoriz(ctx: CanvasRenderingContext2D, s: Rect, c: WallColors): void {
   const { x, y, w, h } = s;
-  ctx.fillStyle = COLOR.cap;
+  ctx.fillStyle = c.cap;
   ctx.fillRect(x, y, w, Math.min(CAP, h));
   if (h > CAP) {
     const f = ctx.createLinearGradient(0, y + CAP, 0, y + h);
-    f.addColorStop(0, COLOR.face);
-    f.addColorStop(1, COLOR.faceLow);
+    f.addColorStop(0, c.face);
+    f.addColorStop(1, c.faceLow);
     ctx.fillStyle = f;
     ctx.fillRect(x, y + CAP, w, h - CAP);
-    ctx.fillStyle = COLOR.capShade;
+    ctx.fillStyle = c.capShade;
     ctx.fillRect(x, y + CAP, w, 2);
-    ctx.fillStyle = COLOR.base; // baseboard
+    ctx.fillStyle = c.base; // baseboard
     ctx.fillRect(x, y + h - 6, w, 6);
     ctx.fillStyle = 'rgba(0,0,0,0.3)';
     ctx.fillRect(x, y + h - 6, w, 1);
@@ -186,7 +187,7 @@ function doorItems(L: Layout): { items: Item[]; near: Rect[]; open: Set<number> 
     if (!w) return;
     const i = near.length;
     near.push(d.closed ? { x: 0, y: 0, w: 0, h: 0 } : { x: d.x - DOOR_NEAR, y: d.y - DOOR_NEAR, w: d.w + DOOR_NEAR * 2, h: d.h + DOOR_NEAR * 2 });
-    const kind = d.exit ? 'lever' : 'knob', face = w.h - CAP, s = face / 259;
+    const kind = d.exit ? 'lever' : 'knob', face = w.h - CAP, s = w.h / 259; // as tall as the wall, cap included
     const roomBelow = L.floor.some((f) => hit(f, d.x + d.w / 2, w.y + w.h + 4));
     const floorY = roomBelow ? w.y + w.h : w.y + CAP; // the floor line on the room side
     const draw = (ctx: CanvasRenderingContext2D, name: string, x: number, y: number, sx: number) => {
@@ -196,8 +197,9 @@ function doorItems(L: Layout): { items: Item[]; near: Rect[]; open: Set<number> 
     // Shut: in the gap on the wall face.
     items.push({ k: w.y + w.h + 0.02, x0: d.x, y0: w.y, x1: d.x + d.w, y1: w.y + w.h, f: (ctx) => {
       if (open.has(i)) return;
-      const e = art.index.props?.[`door_${kind}`];
-      if (e) draw(ctx, `door_${kind}`, d.x + (d.w - e.w * s) / 2, w.y + CAP, 1);
+      // Fills the gap between the jambs, top of the wall to the floor.
+      const im = art.image(`door_${kind}`);
+      if (im) ctx.drawImage(im, d.x + 2, w.y, d.w - 4, w.h);
     } });
     // Ajar: the leaf stands in the gap from the left jamb, its free edge swung toward the room.
     const bottom = floorY + 349 * s * (1 - DOOR_HINGE);
@@ -209,6 +211,7 @@ function doorItems(L: Layout): { items: Item[]; near: Rect[]; open: Set<number> 
 }
 
 function wallItems(L: Layout): Item[] {
+  const c: WallColors = { ...COLOR, ...L.wallColors };
   const out: Item[] = [];
   for (const w of L.walls) {
     if (isHoriz(w)) {
@@ -216,7 +219,7 @@ function wallItems(L: Layout): Item[] {
       out.push({
         k: w.y + w.h + 0.01, x0: w.x, y0: w.y, x1: w.x + w.w, y1: w.y + w.h,
         f: (ctx) => {
-          for (const s of segs) drawHoriz(ctx, s);
+          for (const s of segs) drawHoriz(ctx, s, c);
           for (const win of L.windows) if (win.y >= w.y && win.y < w.y + w.h && win.x >= w.x && win.x + win.w <= w.x + w.w) drawWindow(ctx, win);
           for (const d of L.decor) {
             const e = art.index.props?.[d.sprite], im = art.image(d.sprite);
@@ -237,15 +240,15 @@ function wallItems(L: Layout): Item[] {
         out.push({
           k: y1, x0: w.x, y0: y, x1: w.x + w.w, y1,
           f: (ctx) => {
-            ctx.fillStyle = COLOR.cap;
+            ctx.fillStyle = c.cap;
             ctx.fillRect(w.x, y, w.w, y1 - y);
-            if (shade[0]) { ctx.fillStyle = COLOR.faceLow; ctx.fillRect(w.x, y, 4, y1 - y); }
-            if (shade[1]) { ctx.fillStyle = COLOR.faceLow; ctx.fillRect(w.x + w.w - 4, y, 4, y1 - y); }
+            if (shade[0]) { ctx.fillStyle = c.faceLow; ctx.fillRect(w.x, y, 4, y1 - y); }
+            if (shade[1]) { ctx.fillStyle = c.faceLow; ctx.fillRect(w.x + w.w - 4, y, 4, y1 - y); }
             if (y1 > send - END_FACE) { // the end of a wall shows its face
               const a = Math.max(y, send - END_FACE);
-              ctx.fillStyle = COLOR.face;
+              ctx.fillStyle = c.face;
               ctx.fillRect(w.x, a, w.w, y1 - a);
-              if (y1 > send - 6) { ctx.fillStyle = COLOR.base; ctx.fillRect(w.x, Math.max(a, send - 6), w.w, y1 - Math.max(a, send - 6)); }
+              if (y1 > send - 6) { ctx.fillStyle = c.base; ctx.fillRect(w.x, Math.max(a, send - 6), w.w, y1 - Math.max(a, send - 6)); }
             }
             ctx.fillStyle = COLOR.edge;
             ctx.fillRect(w.x, y, 1.5, y1 - y);

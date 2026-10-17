@@ -1,0 +1,36 @@
+{
+  "_doc": "Generic offsite venue (Chili's, a bar, someone's home...): a small room with two tables of four, a wood floor and warm walls so it doesn't read as the office. The title card names the venue.",
+  "width": 672, "height": 528, "cell": 16,
+  "wallColors": { "cap": "#c9805a", "capShade": "#a8603e", "face": "#b4573a", "faceLow": "#8e3f2a", "base": "#4a2a1c" },
+  "floor": [{ "x": 16, "y": 112, "w": 640, "h": 352, "style": "wood" }],
+  "walls": [
+    { "x": 0, "y": 0, "w": 672, "h": 112 },
+    { "x": 0, "y": 112, "w": 16, "h": 352 },
+    { "x": 656, "y": 112, "w": 16, "h": 352 },
+    { "x": 0, "y": 464, "w": 672, "h": 64 }
+  ],
+  "doors": [{ "x": 304, "y": 464, "w": 64, "h": 64, "exit": "parking_lot" }],
+  "windows": [{ "x": 120, "y": 40, "w": 72, "h": 56 }, { "x": 300, "y": 40, "w": 72, "h": 56 }, { "x": 480, "y": 40, "w": 72, "h": 56 }],
+  "decor": [],
+  "props": [
+    { "sprite": "round_table_2", "x": 200, "y": 330, "scale": 1.35, "solid": { "x": 8, "y": 10, "w": 40, "h": 38 } },
+    { "sprite": "round_table_2", "x": 470, "y": 330, "scale": 1.35, "solid": { "x": 8, "y": 10, "w": 40, "h": 38 } },
+    { "sprite": "plant_corner", "x": 50, "y": 200, "scale": 1.1 },
+    { "sprite": "plant_corner", "x": 622, "y": 200, "scale": 1.1 }
+  ],
+  "spots": {
+    "seat_1": { "x": 140, "y": 310, "seat": "right" },
+    "seat_2": { "x": 260, "y": 310, "seat": "left" },
+    "seat_3": { "x": 200, "y": 254, "seat": "down" },
+    "seat_4": { "x": 200, "y": 360, "seat": "up" },
+    "seat_5": { "x": 410, "y": 310, "seat": "right" },
+    "seat_6": { "x": 530, "y": 310, "seat": "left" },
+    "seat_7": { "x": 470, "y": 254, "seat": "down" },
+    "seat_8": { "x": 470, "y": 360, "seat": "up" },
+    "bar_stool": { "x": 600, "y": 420 }
+  },
+  "regions": {
+    "entrance": [{ "x": 240, "y": 400, "w": 192, "h": 64 }],
+    "venue": [{ "x": 16, "y": 112, "w": 640, "h": 352 }]
+  }
+}

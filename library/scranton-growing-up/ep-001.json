@@ -1,0 +1,1002 @@
+{
+  "title": "Out With the Old",
+  "logline": "Michael throws Toby the happiest goodbye party of his life, until Toby's replacement turns out to be the funniest woman he has ever met, while Dwight confiscates the engagement ring Jim is hiding.",
+  "outline": "A: Michael celebrates Toby leaving for Costa Rica, then falls for Holly, the new HR rep. B: Jim hides an engagement ring; Dwight finds it and 'secures' it. C: Andy recruits groomsmen. Order: cold, A, B, A, C, A, B, A, C, B, A, tag",
+  "theme": "First impressions, and the things we hide from people we love",
+  "storySoFar": "Toby has left for Costa Rica to write a novel, and Michael is smitten with his replacement, Holly Flax, who laughs at his jokes and does a bad Yoda just like him. Jim has bought an engagement ring for Pam and is waiting for a moment without Michael; Dwight found it, 'secured' it in his sock, and gave it back only after Jim called him Assistant Regional Manager. Andy is recruiting seven groomsmen for his wedding to Angela and has Kevin (for the open bar). Stanley has 1,040 days left until retirement.",
+  "extras": [],
+  "away": [
+    "holly",
+    "erin",
+    "ryan"
+  ],
+  "stateChanges": [
+    {
+      "type": "relationship",
+      "a": "michael",
+      "b": "holly",
+      "status": "Michael is instantly smitten; Holly finds him funny"
+    },
+    {
+      "type": "arc",
+      "arc": "Michael and Holly",
+      "progress": "Holly has arrived; she and Michael bonded over terrible Yoda voices"
+    },
+    {
+      "type": "arc",
+      "arc": "Jim and Pam, For Real",
+      "progress": "Jim has a ring and is waiting for the right moment; Dwight knows"
+    },
+    {
+      "type": "note",
+      "text": "Dwight knows about Jim's ring and might use it as leverage"
+    },
+    {
+      "type": "note",
+      "text": "Andy needs seven groomsmen and has Kevin"
+    },
+    {
+      "type": "gag",
+      "text": "Stanley's retirement countdown: 1,040 days"
+    }
+  ],
+  "scenes": [
+    {
+      "part": "cold_open",
+      "plot": "cold_open",
+      "set": "office",
+      "region": "bullpen",
+      "venue": "",
+      "present": [
+        "dwight",
+        "jim",
+        "kevin",
+        "creed",
+        "stanley"
+      ],
+      "recap": "Dwight runs an unauthorized intruder drill; only Kevin takes it seriously.",
+      "beats": [
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Attention. This is an intruder drill. An armed man is in the building. Hide.",
+          "to": "all",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "Is the armed man you?",
+          "to": "dwight",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "That's classified. Also yes. Hide, Jim.",
+          "to": "jim",
+          "mood": "annoyed"
+        },
+        {
+          "type": "action",
+          "who": "kevin",
+          "verb": "hide",
+          "target": "none",
+          "caption": "squeezes himself under his desk, mostly"
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "I'm hidden.",
+          "to": "all",
+          "mood": "nervous"
+        },
+        {
+          "type": "move",
+          "who": "dwight",
+          "to": "creed_desk",
+          "pace": "sneak"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Creed, you're dead. You didn't hide.",
+          "to": "creed",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "creed",
+          "text": "I've been dead before. Nineteen seventy-one. It's overrated.",
+          "to": "dwight",
+          "mood": "deadpan"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": ""
+        },
+        {
+          "type": "say",
+          "who": "stanley",
+          "text": "Wake me when the armed man shoots me.",
+          "to": "none",
+          "mood": "annoyed"
+        },
+        {
+          "type": "react",
+          "who": [
+            "jim"
+          ],
+          "reaction": "look_at_camera"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "A",
+      "set": "office",
+      "region": "reception",
+      "venue": "",
+      "present": [
+        "michael",
+        "pam"
+      ],
+      "recap": "Michael orders Toby a cake that says GOOD RIDDANCE for his last day.",
+      "beats": [
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Pam. Today is the happiest day of my life. Toby is leaving. Forever.",
+          "to": "pam",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "He's moving to Costa Rica. It's kind of brave.",
+          "to": "michael",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "It's kind of the best thing that's ever happened to me. I need a cake.",
+          "to": "pam",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Chocolate. And on top, in big letters: GOOD RIDDANCE. Exclamation point. Two.",
+          "to": "pam",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "I'm going to write 'Good Luck' and tell them it's a typo.",
+          "to": "michael",
+          "mood": "deadpan"
+        },
+        {
+          "type": "action",
+          "who": "pam",
+          "verb": "phone_call",
+          "target": "none",
+          "caption": "orders a cake, whispering the word 'riddance'"
+        },
+        {
+          "type": "talking_head",
+          "who": "michael",
+          "lines": [
+            "Toby is going to Costa Rica to find himself.",
+            "I hope he does. And I hope he stays there with himself, forever."
+          ],
+          "mood": "smug"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "B",
+      "set": "office",
+      "region": "bullpen",
+      "venue": "",
+      "present": [
+        "jim"
+      ],
+      "recap": "Jim tells the camera he bought an engagement ring and hides it in his desk drawer.",
+      "beats": [
+        {
+          "type": "action",
+          "who": "jim",
+          "verb": "hide",
+          "target": "none",
+          "caption": "slides a small velvet box into his desk drawer"
+        },
+        {
+          "type": "talking_head",
+          "who": "jim",
+          "lines": [
+            "I bought a ring. I've had it for a week.",
+            "The plan is to propose when the moment is right. I haven't found a moment where Michael isn't."
+          ],
+          "mood": "nervous"
+        },
+        {
+          "type": "move",
+          "who": "dwight",
+          "to": "jim_desk",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "What did you put in your drawer just now?",
+          "to": "jim",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "Staples. Very small, very valuable staples.",
+          "to": "dwight",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Interesting. I'll be watching that drawer.",
+          "to": "jim",
+          "mood": "smug"
+        },
+        {
+          "type": "move",
+          "who": "dwight",
+          "to": "dwight_desk",
+          "pace": "walk"
+        },
+        {
+          "type": "react",
+          "who": [
+            "jim"
+          ],
+          "reaction": "sigh"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "A",
+      "set": "office",
+      "region": "conference_room",
+      "venue": "",
+      "present": [
+        "michael",
+        "pam",
+        "jim",
+        "dwight",
+        "oscar",
+        "angela",
+        "kevin",
+        "phyllis",
+        "stanley",
+        "andy",
+        "meredith"
+      ],
+      "recap": "Michael roasts Toby at his farewell meeting; Toby's sincere goodbye lands with a thud.",
+      "beats": [
+        {
+          "type": "gather",
+          "who": [
+            "everyone"
+          ],
+          "to": "conference_room"
+        },
+        {
+          "type": "enter",
+          "who": [
+            "toby"
+          ],
+          "to": "conf_front"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "We are gathered here today to say goodbye to Toby. Finally. Some of us have been waiting years.",
+          "to": "all",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Toby, you were the worst. You were like a wet sock that files complaints.",
+          "to": "toby",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "toby",
+          "text": "Thanks, Michael. I just want to say, I'll miss you all. Even the complaints.",
+          "to": "all",
+          "mood": "sad"
+        },
+        {
+          "type": "pause",
+          "seconds": 3,
+          "caption": "nobody knows what to say"
+        },
+        {
+          "type": "say",
+          "who": "phyllis",
+          "text": "Send us a postcard, Toby.",
+          "to": "toby",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Don't. Do not send a postcard. Do not send anything.",
+          "to": "toby",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "Is there cake?",
+          "to": "michael",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "There is cake. It says GOOD RIDDANCE. Pam, the cake.",
+          "to": "pam",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "It says 'Good Luck, Toby.' The bakery made a mistake.",
+          "to": "michael",
+          "mood": "deadpan"
+        },
+        {
+          "type": "react",
+          "who": [
+            "michael"
+          ],
+          "reaction": "facepalm"
+        },
+        {
+          "type": "talking_head",
+          "who": "toby",
+          "lines": [
+            "I'm going to Costa Rica to write a novel. It's about a man who works in HR.",
+            "He moves to Costa Rica. It's not finished."
+          ],
+          "mood": "happy"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "C",
+      "set": "office",
+      "region": "accounting",
+      "venue": "",
+      "present": [
+        "andy",
+        "oscar",
+        "kevin"
+      ],
+      "recap": "Andy recruits groomsmen in accounting; Oscar declines, Kevin asks about the open bar.",
+      "beats": [
+        {
+          "type": "move",
+          "who": "andy",
+          "to": "oscar_desk",
+          "pace": "hurry"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "Oscar. My man. How would you like to be in the wedding party of the century?",
+          "to": "oscar",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "oscar",
+          "text": "I wouldn't. But I'm flattered, I think.",
+          "to": "andy",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "Kevin? Groomsman? Matching seersucker. Mandatory harmonies.",
+          "to": "kevin",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "Is there an open bar?",
+          "to": "andy",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "Two open bars. One just for the groomsmen.",
+          "to": "kevin",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "I do.",
+          "to": "andy",
+          "mood": "happy"
+        },
+        {
+          "type": "talking_head",
+          "who": "andy",
+          "lines": [
+            "I need seven groomsmen. I have Kevin and my brother Walter.",
+            "And Walter hasn't confirmed."
+          ],
+          "mood": "nervous"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "A",
+      "set": "office",
+      "region": "reception",
+      "venue": "",
+      "present": [
+        "pam",
+        "michael",
+        "dwight"
+      ],
+      "recap": "Holly arrives; Michael tries to haze the new HR rep, and she laughs at his joke and does a voice.",
+      "beats": [
+        {
+          "type": "enter",
+          "who": [
+            "holly"
+          ],
+          "to": "pam"
+        },
+        {
+          "type": "say",
+          "who": "holly",
+          "text": "Hi! I'm Holly Flax, I'm the new HR. I'm told I replace someone named Toby?",
+          "to": "pam",
+          "mood": "happy"
+        },
+        {
+          "type": "move",
+          "who": "michael",
+          "to": "holly",
+          "pace": "hurry"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Ah. New HR. I'm Michael Scott. I'm the boss. And I'll warn you, I'm a bit of a jokester.",
+          "to": "holly",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "holly",
+          "text": "Oh no. Am I gonna have to write you up?",
+          "to": "michael",
+          "mood": "sarcastic"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Only if you can catch me. Like the gingerbread man. Who is in HR. Run, run—",
+          "to": "holly",
+          "mood": "excited"
+        },
+        {
+          "type": "react",
+          "who": [
+            "holly"
+          ],
+          "reaction": "laugh"
+        },
+        {
+          "type": "say",
+          "who": "holly",
+          "text": "As fast as you can, you can't catch me, I'm the HR man!",
+          "to": "michael",
+          "mood": "excited"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": "Michael is stunned"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Michael, she is mocking you. I can neutralize her.",
+          "to": "michael",
+          "mood": "deadpan"
+        },
+        {
+          "type": "react",
+          "who": [
+            "pam"
+          ],
+          "reaction": "look_at_camera"
+        },
+        {
+          "type": "talking_head",
+          "who": "michael",
+          "lines": [
+            "She laughed. At my joke. Nobody laughs at that joke.",
+            "I don't even think it's a joke. I think I'm in love."
+          ],
+          "mood": "nervous"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "B",
+      "set": "office",
+      "region": "bullpen",
+      "venue": "",
+      "present": [
+        "dwight",
+        "jim"
+      ],
+      "recap": "Dwight snoops in Jim's drawer and 'secures' the ring; Jim panics.",
+      "beats": [
+        {
+          "type": "exit",
+          "who": [
+            "jim"
+          ],
+          "how": "walk"
+        },
+        {
+          "type": "move",
+          "who": "dwight",
+          "to": "jim_desk",
+          "pace": "sneak"
+        },
+        {
+          "type": "action",
+          "who": "dwight",
+          "verb": "snoop",
+          "target": "jim",
+          "caption": "opens Jim's drawer and finds the velvet box"
+        },
+        {
+          "type": "talking_head",
+          "who": "dwight",
+          "lines": [
+            "An unsecured diamond in an open-plan office. That's how wars start.",
+            "I took it into protective custody. Which is my sock."
+          ],
+          "mood": "smug"
+        },
+        {
+          "type": "move",
+          "who": "dwight",
+          "to": "dwight_desk",
+          "pace": "hurry"
+        },
+        {
+          "type": "enter",
+          "who": [
+            "jim"
+          ],
+          "to": "jim_desk"
+        },
+        {
+          "type": "action",
+          "who": "jim",
+          "verb": "search",
+          "target": "none",
+          "caption": "opens his drawer, then every drawer"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "Okay. Okay. No. Okay.",
+          "to": "none",
+          "mood": "panicked"
+        },
+        {
+          "type": "react",
+          "who": [
+            "dwight"
+          ],
+          "reaction": "stare"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "A",
+      "set": "annex",
+      "region": "annex",
+      "venue": "",
+      "present": [
+        "holly",
+        "kelly"
+      ],
+      "recap": "Michael keeps finding reasons to visit Holly's desk; they discover they do the same Yoda voice.",
+      "beats": [
+        {
+          "type": "enter",
+          "who": [
+            "michael"
+          ],
+          "to": "toby_desk"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Holly. Hi. I just came by to see if you have everything. Staples? Toby's ghost?",
+          "to": "holly",
+          "mood": "awkward"
+        },
+        {
+          "type": "say",
+          "who": "holly",
+          "text": "Third time you've asked. I'm starting to think you like me, Michael.",
+          "to": "michael",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Like you, I do not. Hmm? Respect you, I must.",
+          "to": "holly",
+          "mood": "awkward"
+        },
+        {
+          "type": "say",
+          "who": "holly",
+          "text": "Judge me by my size, do you? Hmm?",
+          "to": "michael",
+          "mood": "excited"
+        },
+        {
+          "type": "react",
+          "who": [
+            "michael",
+            "holly"
+          ],
+          "reaction": "laugh"
+        },
+        {
+          "type": "say",
+          "who": "kelly",
+          "text": "Oh my God. Are you guys flirting in Yoda? That is so weird and so cute.",
+          "to": "all",
+          "mood": "excited"
+        },
+        {
+          "type": "exit",
+          "who": [
+            "michael"
+          ],
+          "how": "run"
+        },
+        {
+          "type": "talking_head",
+          "who": "holly",
+          "lines": [
+            "Michael seems nice. Very... energetic.",
+            "I've never met anyone who could do a Yoda that bad. It's so bad it's good."
+          ],
+          "mood": "happy"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "C",
+      "set": "kitchen",
+      "region": "kitchen",
+      "venue": "",
+      "present": [
+        "andy",
+        "stanley"
+      ],
+      "recap": "Andy asks Stanley to be a groomsman; Stanley tells him how many days he has left until retirement.",
+      "beats": [
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "Stan the man. Groomsman. You'd look amazing in seersucker.",
+          "to": "stanley",
+          "mood": "excited"
+        },
+        {
+          "type": "action",
+          "who": "stanley",
+          "verb": "drink",
+          "target": "none",
+          "caption": "sips his coffee very slowly"
+        },
+        {
+          "type": "say",
+          "who": "stanley",
+          "text": "I have one thousand and forty days until retirement. I will not spend one of them in seersucker.",
+          "to": "andy",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "That's a no?",
+          "to": "stanley",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "stanley",
+          "text": "It's a one thousand and forty no.",
+          "to": "andy",
+          "mood": "deadpan"
+        },
+        {
+          "type": "action",
+          "who": "andy",
+          "verb": "sing",
+          "target": "none",
+          "caption": "hums a sad a cappella bass line"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "B",
+      "set": "office",
+      "region": "bullpen",
+      "venue": "",
+      "present": [
+        "jim",
+        "dwight",
+        "pam"
+      ],
+      "recap": "Jim finds the ring in Dwight's sock and buys it back with a title, just before Pam walks over.",
+      "beats": [
+        {
+          "type": "move",
+          "who": "jim",
+          "to": "dwight_desk",
+          "pace": "hurry"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "Dwight. Where is it.",
+          "to": "dwight",
+          "mood": "angry"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "In protective custody. You may claim it with a signed statement of gratitude.",
+          "to": "jim",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "Fine. 'Thank you, Assistant to the Regional Manager.'",
+          "to": "dwight",
+          "mood": "sarcastic"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Assistant Regional Manager. Say it.",
+          "to": "jim",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "Assistant Regional Manager.",
+          "to": "dwight",
+          "mood": "deadpan"
+        },
+        {
+          "type": "action",
+          "who": "dwight",
+          "verb": "search",
+          "target": "none",
+          "caption": "pulls the velvet box out of his sock"
+        },
+        {
+          "type": "move",
+          "who": "pam",
+          "to": "jim_desk",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Why is Dwight taking things out of his sock?",
+          "to": "jim",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "He's... just a very private man.",
+          "to": "pam",
+          "mood": "nervous"
+        },
+        {
+          "type": "react",
+          "who": [
+            "jim"
+          ],
+          "reaction": "look_at_camera"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "A",
+      "set": "parking_lot",
+      "region": "parking_lot",
+      "venue": "",
+      "present": [
+        "michael",
+        "toby"
+      ],
+      "recap": "Michael walks Toby to his car, and Holly's arrival makes him almost kind to him.",
+      "beats": [
+        {
+          "type": "move",
+          "who": "toby",
+          "to": "car_stanley",
+          "pace": "walk"
+        },
+        {
+          "type": "move",
+          "who": "michael",
+          "to": "toby",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "toby",
+          "text": "You walked me out. That's... nice, Michael.",
+          "to": "michael",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "I wanted to make sure you actually left.",
+          "to": "toby",
+          "mood": "deadpan"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": ""
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Also, your replacement is great. So, thank you for leaving. Sincerely.",
+          "to": "toby",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "toby",
+          "text": "That's the nicest thing you've ever said to me.",
+          "to": "michael",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Don't ruin it. Go. Find yourself. Write your book.",
+          "to": "toby",
+          "mood": "awkward"
+        },
+        {
+          "type": "exit",
+          "who": [
+            "toby"
+          ],
+          "how": "walk"
+        },
+        {
+          "type": "talking_head",
+          "who": "michael",
+          "lines": [
+            "Did I hug Toby? No. Did I almost hug Toby? Also no. Moving on."
+          ],
+          "mood": "awkward"
+        }
+      ]
+    },
+    {
+      "part": "tag",
+      "plot": "tag",
+      "set": "office",
+      "region": "reception",
+      "venue": "",
+      "present": [
+        "michael",
+        "pam",
+        "holly"
+      ],
+      "recap": "Michael sends the leftover 'Good Luck, Toby' cake to Holly, with an edit.",
+      "beats": [
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Pam. Is there any cake left?",
+          "to": "pam",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Half. It still says 'Good Luck, Toby.'",
+          "to": "michael",
+          "mood": "deadpan"
+        },
+        {
+          "type": "action",
+          "who": "michael",
+          "verb": "present",
+          "target": "holly",
+          "caption": "scrapes off 'Toby' and writes 'Holly' in pen on a napkin"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Welcome to Dunder Mifflin. Good luck, Holly.",
+          "to": "holly",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "holly",
+          "text": "Is this used cake?",
+          "to": "michael",
+          "mood": "awkward"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Pre-loved.",
+          "to": "holly",
+          "mood": "smug"
+        },
+        {
+          "type": "react",
+          "who": [
+            "holly"
+          ],
+          "reaction": "laugh"
+        }
+      ]
+    }
+  ]
+}

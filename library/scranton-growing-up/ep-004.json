@@ -1,0 +1,866 @@
+{
+  "title": "Pam-alooza",
+  "logline": "On Pam's last day before New York, Michael throws a farewell party that's mostly about himself and refuses to accept her cheerful new replacement, Erin, while Jim insists he's fine.",
+  "outline": "A: Michael can't let Pam go: he throws Pam-alooza, tries to scare off the new receptionist, then says a real goodbye. B: Erin's first day at reception; Pam trains her, Andy helps. C: Jim pretends he's fine; Dwight gives him a solitude survival guide, and Michael hijacks his almost-proposal. Order: cold, A, B, A, C, A, B, C, A, B, A, tag",
+  "theme": "Letting go of someone you love so they can grow",
+  "storySoFar": "Pam has left for three months at Pratt in New York; Michael gave her a real goodbye and her own watercolor of the building, which he secretly bought at her art show. Erin Hannon is the new receptionist: sunny, literal, grew up in foster care, and Michael made her permanent on day one. Andy got tongue-tied helping Erin. Jim almost proposed in the kitchen and Michael burst in for a group photo; the ring is still in his pocket, and Dwight gave him the 'Schrute Guide to Solitude'. Michael and Holly are dating happily. Dwight and Angela are secretly seeing each other again; Creed knows. Andy's wedding is June 20. Stanley: 1,030 days left.",
+  "extras": [],
+  "away": [
+    "erin",
+    "ryan"
+  ],
+  "stateChanges": [
+    {
+      "type": "arc",
+      "arc": "Jim and Pam, For Real",
+      "progress": "Pam is in New York for three months; Jim's kitchen proposal was interrupted by Michael"
+    },
+    {
+      "type": "arc",
+      "arc": "Erin at the Front Desk",
+      "progress": "Erin is hired permanently; Andy got flustered around her"
+    },
+    {
+      "type": "relationship",
+      "a": "jim",
+      "b": "pam",
+      "status": "Long distance for three months; nightly phone calls"
+    },
+    {
+      "type": "relationship",
+      "a": "andy",
+      "b": "erin",
+      "status": "Andy gets tongue-tied around her; he is engaged"
+    },
+    {
+      "type": "note",
+      "text": "Dwight's 'Schrute Guide to Solitude' booklet for Jim"
+    },
+    {
+      "type": "gag",
+      "text": "Erin's twenty-word phone greeting"
+    }
+  ],
+  "scenes": [
+    {
+      "part": "cold_open",
+      "plot": "cold_open",
+      "set": "office",
+      "region": "bullpen",
+      "venue": "",
+      "present": [
+        "dwight",
+        "jim",
+        "pam"
+      ],
+      "recap": "Jim, using a robot voice on the phone, convinces Dwight that Pam is being replaced by a machine.",
+      "beats": [
+        {
+          "type": "action",
+          "who": "jim",
+          "verb": "phone_call",
+          "target": "dwight",
+          "caption": "dials Dwight's extension, holding his nose"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "Greetings, Dwight Schrute. I am PAM 2.0. I will be your receptionist now.",
+          "to": "dwight",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Identify your manufacturer, machine.",
+          "to": "jim",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "I was built in Japan. I do not require breaks. Or bathrooms. Or kindness.",
+          "to": "dwight",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Finally. A worthy colleague.",
+          "to": "jim",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Dwight, I'm right here. It's my last day.",
+          "to": "dwight",
+          "mood": "sarcastic"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Goodbye, flesh Pam.",
+          "to": "pam",
+          "mood": "deadpan"
+        },
+        {
+          "type": "react",
+          "who": [
+            "pam"
+          ],
+          "reaction": "laugh"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "A",
+      "set": "office",
+      "region": "conference_room",
+      "venue": "",
+      "present": [
+        "michael",
+        "holly",
+        "pam",
+        "jim",
+        "dwight",
+        "angela",
+        "andy",
+        "kevin",
+        "oscar",
+        "phyllis",
+        "stanley",
+        "kelly",
+        "meredith"
+      ],
+      "recap": "Michael announces Pam-alooza and refuses to replace Pam; Holly says a temp starts today.",
+      "beats": [
+        {
+          "type": "gather",
+          "who": [
+            "everyone"
+          ],
+          "to": "conference_room"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "As you know, Pam is leaving us. To go to New York. To learn computer pictures.",
+          "to": "all",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "So at three o'clock: Pam-alooza. A celebration of Pam. And of me, for discovering her.",
+          "to": "all",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "You didn't discover me. I answered an ad.",
+          "to": "michael",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Pam has covered the phones since she moved to sales. I will not replace her. She is irreplaceable. Like a kidney.",
+          "to": "all",
+          "mood": "angry"
+        },
+        {
+          "type": "say",
+          "who": "holly",
+          "text": "Kidneys are replaceable, actually. And the temp agency is sending someone. Today.",
+          "to": "michael",
+          "mood": "awkward"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": ""
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Then she'll have to get through me.",
+          "to": "holly",
+          "mood": "angry"
+        },
+        {
+          "type": "talking_head",
+          "who": "stanley",
+          "lines": [
+            "One thousand and thirty days. I'll miss Pam. She never made me talk."
+          ],
+          "mood": "deadpan"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "B",
+      "set": "office",
+      "region": "reception",
+      "venue": "",
+      "present": [
+        "pam"
+      ],
+      "recap": "Erin arrives, delighted by everything, and Pam shows her the phones; Erin's greeting is twenty words long.",
+      "beats": [
+        {
+          "type": "enter",
+          "who": [
+            "erin"
+          ],
+          "to": "pam"
+        },
+        {
+          "type": "say",
+          "who": "erin",
+          "text": "Hi! I'm Erin. I'm the temp? I've never had a desk before. Is this a desk?",
+          "to": "pam",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "It's a desk. Come on, I'll show you the phones.",
+          "to": "erin",
+          "mood": "happy"
+        },
+        {
+          "type": "sit",
+          "who": [
+            "erin"
+          ]
+        },
+        {
+          "type": "action",
+          "who": "erin",
+          "verb": "phone_call",
+          "target": "none",
+          "caption": "picks up the ringing phone with both hands"
+        },
+        {
+          "type": "say",
+          "who": "erin",
+          "text": "Good morning, Dunder Mifflin Scranton, this is Erin, the paper people, how may I direct your wonderful call?",
+          "to": "none",
+          "mood": "excited"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": ""
+        },
+        {
+          "type": "say",
+          "who": "erin",
+          "text": "They hung up. Was it too long?",
+          "to": "pam",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "It was perfect. Maybe drop 'wonderful.'",
+          "to": "erin",
+          "mood": "happy"
+        },
+        {
+          "type": "talking_head",
+          "who": "erin",
+          "lines": [
+            "This is my first real office. I grew up in foster care, so I've had a lot of firsts.",
+            "This one has a stapler. It's mine."
+          ],
+          "mood": "happy"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "A",
+      "set": "office",
+      "region": "michael_office",
+      "venue": "",
+      "present": [
+        "michael",
+        "erin"
+      ],
+      "recap": "Michael tries to scare Erin off with how hard the job is; she takes every warning as a fun fact.",
+      "beats": [
+        {
+          "type": "move",
+          "who": "erin",
+          "to": "michael_guest_1",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Erin. I'll be honest. This job is very, very hard. People have cried.",
+          "to": "erin",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "erin",
+          "text": "Oh, I cry all the time. At commercials. At birds.",
+          "to": "michael",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "The phones ring constantly. Sometimes two at once.",
+          "to": "erin",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "erin",
+          "text": "Two at once? That's like a party!",
+          "to": "michael",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "And the boss... is very demanding. He's a perfectionist. And a heartbreaker.",
+          "to": "erin",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "erin",
+          "text": "I'll work super hard. I promise, Mr. Scott.",
+          "to": "michael",
+          "mood": "happy"
+        },
+        {
+          "type": "talking_head",
+          "who": "michael",
+          "lines": [
+            "She called me Mr. Scott. Nobody calls me Mr. Scott.",
+            "I don't want to like her. I can't promise anything."
+          ],
+          "mood": "awkward"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "C",
+      "set": "office",
+      "region": "bullpen",
+      "venue": "",
+      "present": [
+        "jim",
+        "dwight"
+      ],
+      "recap": "Dwight presents Jim with a handwritten survival guide for being alone.",
+      "beats": [
+        {
+          "type": "move",
+          "who": "dwight",
+          "to": "jim_desk",
+          "pace": "walk"
+        },
+        {
+          "type": "action",
+          "who": "dwight",
+          "verb": "present",
+          "target": "jim",
+          "caption": "drops a stapled booklet: SCHRUTE GUIDE TO SOLITUDE"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Chapter one. Talk to a rock. A good rock never leaves for New York.",
+          "to": "jim",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "I'm fine, Dwight. It's three months. Pam is going to do great.",
+          "to": "dwight",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Chapter two. Denial. You are on chapter two.",
+          "to": "jim",
+          "mood": "smug"
+        },
+        {
+          "type": "talking_head",
+          "who": "jim",
+          "lines": [
+            "I'm fine. Really. I'm honestly so proud of her.",
+            "I might read chapter three. Just to see what it says."
+          ],
+          "mood": "sad"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "A",
+      "set": "break_room",
+      "region": "break_room",
+      "venue": "",
+      "present": [
+        "michael",
+        "pam",
+        "jim",
+        "holly",
+        "kevin",
+        "phyllis",
+        "andy",
+        "angela",
+        "oscar",
+        "kelly",
+        "meredith"
+      ],
+      "recap": "At Pam-alooza, Michael's speech about Pam becomes a speech about Michael.",
+      "beats": [
+        {
+          "type": "caption",
+          "text": "PAM-ALOOZA"
+        },
+        {
+          "type": "action",
+          "who": "kevin",
+          "verb": "eat",
+          "target": "none",
+          "caption": "eats cake before the cake has been cut"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Pam. When I hired you, you were just a girl with a dream. And the dream was me.",
+          "to": "pam",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "I taught her so much. Fax. Coffee. How to roll her eyes so I can't see.",
+          "to": "all",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "I learned that one on my own.",
+          "to": "michael",
+          "mood": "sarcastic"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "And now I want to sing the song I wrote. It's called 'Michael, Pam's Mentor.'",
+          "to": "all",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "holly",
+          "text": "Maybe let Pam say something first?",
+          "to": "michael",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "phyllis",
+          "text": "We'll miss you, honey.",
+          "to": "pam",
+          "mood": "happy"
+        },
+        {
+          "type": "react",
+          "who": [
+            "oscar"
+          ],
+          "reaction": "look_at_camera"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "B",
+      "set": "office",
+      "region": "reception",
+      "venue": "",
+      "present": [
+        "erin",
+        "andy"
+      ],
+      "recap": "Andy helps Erin with a transfer and gets tongue-tied for a moment.",
+      "beats": [
+        {
+          "type": "move",
+          "who": "andy",
+          "to": "erin_desk",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "Hey. New girl. Andy Bernard. Cornell. You need help with the transfer button?",
+          "to": "erin",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "erin",
+          "text": "Yes please! Is Andy short for something? Andrew? Androgynous?",
+          "to": "andy",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "Andrew. It's... yeah. You have a really nice... phone voice.",
+          "to": "erin",
+          "mood": "awkward"
+        },
+        {
+          "type": "say",
+          "who": "erin",
+          "text": "Thank you! I practiced on my foster brothers.",
+          "to": "andy",
+          "mood": "happy"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": "Andy forgets why he's there"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "Right. Transfer. It's the button with the arrow. I'm engaged.",
+          "to": "erin",
+          "mood": "nervous"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "C",
+      "set": "kitchen",
+      "region": "kitchen",
+      "venue": "",
+      "present": [
+        "jim",
+        "pam"
+      ],
+      "recap": "Jim almost proposes in the kitchen, and Michael bursts in for a group photo.",
+      "beats": [
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Promise me you'll call every night. Even if it's boring. Especially if it's boring.",
+          "to": "jim",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "I promise. Pam, actually. There's something I've wanted to—",
+          "to": "pam",
+          "mood": "nervous"
+        },
+        {
+          "type": "action",
+          "who": "jim",
+          "verb": "search",
+          "target": "none",
+          "caption": "reaches into his pocket"
+        },
+        {
+          "type": "enter",
+          "who": [
+            "michael"
+          ],
+          "to": "pam"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Group photo! Pam-alooza group photo! Everyone in the break room, now!",
+          "to": "all",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "What were you going to say?",
+          "to": "jim",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "That... I'll call. Every night.",
+          "to": "pam",
+          "mood": "awkward"
+        },
+        {
+          "type": "react",
+          "who": [
+            "jim"
+          ],
+          "reaction": "look_at_camera"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "A",
+      "set": "office",
+      "region": "michael_office",
+      "venue": "",
+      "present": [
+        "michael",
+        "pam"
+      ],
+      "recap": "Alone with Pam, Michael says a real goodbye and gives her a watercolor of hers he once bought.",
+      "beats": [
+        {
+          "type": "move",
+          "who": "pam",
+          "to": "michael_guest_1",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "I have a present. It's not from a store. Well, it was, originally.",
+          "to": "pam",
+          "mood": "nervous"
+        },
+        {
+          "type": "action",
+          "who": "michael",
+          "verb": "present",
+          "target": "pam",
+          "caption": "hands her a framed watercolor of the office building"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "This is my painting. From the art show. Nobody bought it.",
+          "to": "michael",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Somebody bought it. It's been on my wall for a year. Take it. Show them where you're from.",
+          "to": "pam",
+          "mood": "sad"
+        },
+        {
+          "type": "pause",
+          "seconds": 3,
+          "caption": ""
+        },
+        {
+          "type": "action",
+          "who": "pam",
+          "verb": "hug",
+          "target": "michael",
+          "caption": "hugs Michael"
+        },
+        {
+          "type": "talking_head",
+          "who": "pam",
+          "lines": [
+            "Every so often Michael does something that makes the other ninety-nine things okay.",
+            "Not all ninety-nine. Most of them."
+          ],
+          "mood": "happy"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "B",
+      "set": "office",
+      "region": "reception",
+      "venue": "",
+      "present": [
+        "erin",
+        "michael"
+      ],
+      "recap": "Michael, softened, officially welcomes Erin, and she tells him it's the best day of her life.",
+      "beats": [
+        {
+          "type": "move",
+          "who": "michael",
+          "to": "erin_desk",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Erin. You're hired. Not temp. Real. Hired-hired.",
+          "to": "erin",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "erin",
+          "text": "Oh my gosh. Is this the best day of my life? I think it is.",
+          "to": "michael",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Mine too. No. Mine was worse. But yours is great.",
+          "to": "erin",
+          "mood": "awkward"
+        },
+        {
+          "type": "action",
+          "who": "erin",
+          "verb": "hug",
+          "target": "michael",
+          "caption": "hugs him, then hugs the stapler"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "A",
+      "set": "parking_lot",
+      "region": "parking_lot",
+      "venue": "",
+      "present": [
+        "pam",
+        "jim",
+        "michael",
+        "holly",
+        "kelly",
+        "phyllis",
+        "erin"
+      ],
+      "recap": "The office sees Pam off in the parking lot; Michael wears sunglasses so no one sees him cry.",
+      "beats": [
+        {
+          "type": "move",
+          "who": "pam",
+          "to": "car_jim",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Okay. Okay. I'm going. Bye, everybody.",
+          "to": "all",
+          "mood": "sad"
+        },
+        {
+          "type": "action",
+          "who": "jim",
+          "verb": "hug",
+          "target": "pam",
+          "caption": "hugs her for a long time"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "I am not crying. These are sunglasses. Sunglasses are for crying.",
+          "to": "holly",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "holly",
+          "text": "You're doing great.",
+          "to": "michael",
+          "mood": "happy"
+        },
+        {
+          "type": "exit",
+          "who": [
+            "pam"
+          ],
+          "how": "walk"
+        },
+        {
+          "type": "action",
+          "who": "jim",
+          "verb": "high_five",
+          "target": "none",
+          "caption": "waves at the car until it's gone, then keeps waving"
+        },
+        {
+          "type": "say",
+          "who": "kelly",
+          "text": "This is like the end of a movie. Or the middle. The sad part in the middle.",
+          "to": "all",
+          "mood": "sad"
+        }
+      ]
+    },
+    {
+      "part": "tag",
+      "plot": "tag",
+      "set": "office",
+      "region": "reception",
+      "venue": "",
+      "present": [
+        "erin",
+        "jim"
+      ],
+      "recap": "Pam calls from the turnpike; Erin answers with the full greeting and doesn't know who Pam is.",
+      "beats": [
+        {
+          "type": "action",
+          "who": "erin",
+          "verb": "phone_call",
+          "target": "none",
+          "caption": "picks up the phone with both hands"
+        },
+        {
+          "type": "say",
+          "who": "erin",
+          "text": "Good afternoon, Dunder Mifflin Scranton, this is Erin, the paper people, how may I direct your call?",
+          "to": "none",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "erin",
+          "text": "Jim? It's for you. A 'Pam'? She says she misses you already.",
+          "to": "jim",
+          "mood": "neutral"
+        },
+        {
+          "type": "move",
+          "who": "jim",
+          "to": "erin_desk",
+          "pace": "hurry"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "Hi. Yeah. Me too. You're only on the turnpike.",
+          "to": "none",
+          "mood": "happy"
+        }
+      ]
+    }
+  ]
+}

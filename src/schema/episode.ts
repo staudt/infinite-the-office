@@ -119,6 +119,7 @@ export const Episode = z.object({
   theme: str().describe('The episode theme that ties the A, B and C plots together'),
   storySoFar: str().describe('Updated summary of the ongoing storylines, max ~150 words'),
   extras: listOf(Extra).describe('New recurring side characters introduced this episode'),
+  away: strs().describe('Regulars who are away all episode (not drawn at their desks), e.g. on vacation or not hired yet'),
   scenes: z.array(Scene),
   stateChanges: listOf(StateChange),
   /** Set by the server on a season's first episode: the new bible (and cast changes) that this episode airs under. */

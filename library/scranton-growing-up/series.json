@@ -1,0 +1,329 @@
+{
+  "version": 1,
+  "id": "scranton-growing-up",
+  "seed": 518200417,
+  "name": "Scranton: Growing Up",
+  "direction": "The sequel to The Golden Years, with seasons 5-6 energy. Everyone finally got what they wanted, and now they have to grow up and keep it. Michael meets his match in Holly, Jim and Pam try to make the real thing work across a distance, Angela's engagement to Andy hides a secret, Erin brightens reception, and Ryan comes back humbled. Warm, grounded, cringe mockumentary with a romantic, hopeful finale. Written by Claude Opus, by hand.",
+  "season": 1,
+  "episode": 0,
+  "roster": [
+    "michael",
+    "dwight",
+    "jim",
+    "pam",
+    "andy",
+    "stanley",
+    "phyllis",
+    "angela",
+    "oscar",
+    "kevin",
+    "kelly",
+    "meredith",
+    "creed",
+    "darryl",
+    "erin",
+    "holly",
+    "ryan"
+  ],
+  "deskOverrides": {
+    "pam": "ryan_desk",
+    "ryan": "toby_desk"
+  },
+  "extras": [],
+  "relationships": [
+    {
+      "a": "jim",
+      "b": "pam",
+      "status": "Together and happy for months; Pam just moved from reception to sales. The whole office knows, and Michael wants to be involved."
+    },
+    {
+      "a": "andy",
+      "b": "angela",
+      "status": "Engaged; Andy is planning the wedding of the century, Angela is cold about it."
+    },
+    {
+      "a": "dwight",
+      "b": "angela",
+      "status": "Broken up after the cat incident; Dwight still loves her and seethes at Andy."
+    },
+    {
+      "a": "michael",
+      "b": "toby",
+      "status": "Mortal enemies; Toby is about to leave for Costa Rica."
+    },
+    {
+      "a": "ryan",
+      "b": "kelly",
+      "status": "Over, as far as Ryan is concerned; Kelly has not been informed."
+    },
+    {
+      "a": "michael",
+      "b": "jan",
+      "status": "Broken up, finally; Michael is lonely and says he is 'on the market, like a fish'."
+    }
+  ],
+  "gags": [
+    "Stanley announces how many days are left until retirement, and the number never seems to go down",
+    "Andy bursts into a cappella when stressed",
+    "Dwight's unauthorized security drills",
+    "Creed claims a past life or job nobody can verify",
+    "Kevin's math is wrong, and somehow he's the accountant"
+  ],
+  "notes": [],
+  "arcProgress": {},
+  "storySoFar": "",
+  "history": [],
+  "recentPlots": [],
+  "bible": {
+    "theme": "Everyone finally got chosen; now they have to figure out how to keep it. Michael finds a woman as silly as he is, Jim and Pam learn that the real thing is harder than the crush, and Angela learns you can't marry one man while loving another.",
+    "era": "Season 5-6 energy: Jim and Pam together, Pam newly in sales (still covering the phones until a receptionist is hired), Pam's art program in New York, Holly replaces Toby in HR, Angela engaged to Andy while secretly seeing Dwight, Erin the new receptionist, Ryan humbled after corporate.",
+    "roster": [
+      "michael",
+      "dwight",
+      "jim",
+      "pam",
+      "andy",
+      "stanley",
+      "phyllis",
+      "angela",
+      "oscar",
+      "kevin",
+      "kelly",
+      "meredith",
+      "creed",
+      "darryl",
+      "erin",
+      "holly",
+      "ryan"
+    ],
+    "deskOverrides": [
+      {
+        "id": "pam",
+        "spot": "ryan_desk"
+      },
+      {
+        "id": "ryan",
+        "spot": "toby_desk"
+      }
+    ],
+    "manager": "michael",
+    "relationships": [
+      {
+        "a": "jim",
+        "b": "pam",
+        "status": "Together and happy for months; Pam just moved from reception to sales. The whole office knows, and Michael wants to be involved."
+      },
+      {
+        "a": "andy",
+        "b": "angela",
+        "status": "Engaged; Andy is planning the wedding of the century, Angela is cold about it."
+      },
+      {
+        "a": "dwight",
+        "b": "angela",
+        "status": "Broken up after the cat incident; Dwight still loves her and seethes at Andy."
+      },
+      {
+        "a": "michael",
+        "b": "toby",
+        "status": "Mortal enemies; Toby is about to leave for Costa Rica."
+      },
+      {
+        "a": "ryan",
+        "b": "kelly",
+        "status": "Over, as far as Ryan is concerned; Kelly has not been informed."
+      },
+      {
+        "a": "michael",
+        "b": "jan",
+        "status": "Broken up, finally; Michael is lonely and says he is 'on the market, like a fish'."
+      }
+    ],
+    "arcs": [
+      {
+        "name": "Michael and Holly",
+        "kind": "A",
+        "summary": "Toby leaves, and his replacement Holly is as goofy as Michael. He falls hard, and for once he is good at it, until corporate splits them up.",
+        "perEpisode": [
+          {
+            "episode": 1,
+            "beat": "Toby leaves for Costa Rica; Holly arrives, laughs at Michael's jokes, and does a voice. Michael is stunned."
+          },
+          {
+            "episode": 2,
+            "beat": "Holly's HR orientation becomes a double act with Michael; he asks her out with a terrible pun and she says yes."
+          },
+          {
+            "episode": 3,
+            "beat": "Michael runs a charity car wash to impress Holly and nearly ruins it; she likes him anyway."
+          },
+          {
+            "episode": 6,
+            "beat": "Michael and Holly both come to Halloween dressed as Dwight, without planning it. It's love."
+          },
+          {
+            "episode": 7,
+            "beat": "David learns the boss is dating HR and transfers Holly to Nashua. Michael is brave until he isn't."
+          },
+          {
+            "episode": 8,
+            "beat": "Michael bans the word Nashua and throws himself into a sales call with Dwight."
+          },
+          {
+            "episode": 11,
+            "beat": "Michael makes a Christmas video for Holly that accidentally exposes a secret."
+          },
+          {
+            "episode": 12,
+            "beat": "David offers Michael the Nashua branch. He chooses Scranton, and long distance with Holly."
+          }
+        ],
+        "payoff": "Michael gives up the easy way to Holly to stay with his office family, and Holly tells him that's why she loves him. A hint that Nashua is on the budget block."
+      },
+      {
+        "name": "Jim and Pam, For Real",
+        "kind": "B",
+        "summary": "Jim and Pam are happy, and that is the problem: Pam gets into a three-month art program in New York, Jim keeps trying to propose, and something always hijacks it.",
+        "perEpisode": [
+          {
+            "episode": 1,
+            "beat": "Jim buys a ring and hides it; he tells only the camera."
+          },
+          {
+            "episode": 2,
+            "beat": "Pam gets a letter: she's in the Pratt graphic design program in New York."
+          },
+          {
+            "episode": 4,
+            "beat": "Pam leaves for New York; Jim helps Erin learn the phones and tries not to be sad."
+          },
+          {
+            "episode": 5,
+            "beat": "Jim and Pam's nightly phone calls; Jim is lonely in a funny way."
+          },
+          {
+            "episode": 8,
+            "beat": "Pam visits for a day; Jim's proposal at the office is wrecked by Michael's welcome-back party. Roy appears, engaged, and wishes Pam well."
+          },
+          {
+            "episode": 9,
+            "beat": "Pam comes back for good after failing one class, embarrassed; Jim is just glad."
+          },
+          {
+            "episode": 10,
+            "beat": "Jim plans a big proposal; Andy and Kevin want in."
+          },
+          {
+            "episode": 12,
+            "beat": "Jim drops the plan and proposes in the parking lot in the rain while the office watches through the glass doors."
+          }
+        ],
+        "payoff": "Pam says yes in the rain; the office cheers through the glass and Michael cries hardest."
+      },
+      {
+        "name": "The Wedding of the Century",
+        "kind": "B",
+        "summary": "Andy plans an absurd wedding to Angela while she secretly sees Dwight again. Phyllis finds out and blackmails her sweetly. It explodes at Christmas.",
+        "perEpisode": [
+          {
+            "episode": 2,
+            "beat": "Andy announces a wedding date and an a cappella ceremony. Dwight seethes."
+          },
+          {
+            "episode": 3,
+            "beat": "Dwight and Angela, alone at the car wash, slip back into it."
+          },
+          {
+            "episode": 5,
+            "beat": "Phyllis catches Dwight and Angela in the warehouse and starts collecting favors."
+          },
+          {
+            "episode": 7,
+            "beat": "Phyllis takes over the Party Planning Committee; Angela smiles through it."
+          },
+          {
+            "episode": 10,
+            "beat": "Andy's wedding plans peak (a horse-drawn carriage, a string quartet of his Cornell friends); Dwight nearly confesses."
+          },
+          {
+            "episode": 11,
+            "beat": "The secret comes out at the Christmas party; Andy and Dwight duel in the parking lot."
+          },
+          {
+            "episode": 12,
+            "beat": "Angela is alone and polite; Andy finds a friend in Erin."
+          }
+        ],
+        "payoff": "Angela loses both men, Andy and Dwight end in an uneasy truce, and Andy and Erin share a shy moment."
+      },
+      {
+        "name": "Erin at the Front Desk",
+        "kind": "C",
+        "summary": "Erin is finally hired for reception, which Pam had been covering since moving to sales: sunny, literal, eager. Dwight tries to train her as a soldier; Andy is quietly smitten.",
+        "perEpisode": [
+          {
+            "episode": 4,
+            "beat": "Erin starts; she answers the phone with a twenty-word greeting and is thrilled to have a desk."
+          },
+          {
+            "episode": 5,
+            "beat": "Dwight drills Erin on security procedures; she takes it all literally."
+          },
+          {
+            "episode": 9,
+            "beat": "Pam comes back to find Erin at her desk, and they turn out to like each other."
+          },
+          {
+            "episode": 12,
+            "beat": "Erin cheers up Andy after Christmas; a small spark."
+          }
+        ],
+        "payoff": "Erin belongs, and a crush with Andy is seeded for next season."
+      },
+      {
+        "name": "Ryan Hits Bottom",
+        "kind": "C",
+        "summary": "Disgraced after corporate, Ryan comes back as a temp, still acting important. Michael tries to rehabilitate him.",
+        "perEpisode": [
+          {
+            "episode": 9,
+            "beat": "Ryan returns as a temp with a fedora and a story about 'consulting'; Kelly is overjoyed."
+          },
+          {
+            "episode": 10,
+            "beat": "Ryan and Darryl both want the open sales job; Ryan pitches an app, Darryl just does the work."
+          }
+        ],
+        "payoff": "Ryan is still a temp, a little humbler; Darryl gets a foot in the office."
+      }
+    ],
+    "extras": [],
+    "runningGags": [
+      "Stanley announces how many days are left until retirement, and the number never seems to go down",
+      "Andy bursts into a cappella when stressed",
+      "Dwight's unauthorized security drills",
+      "Creed claims a past life or job nobody can verify",
+      "Kevin's math is wrong, and somehow he's the accountant"
+    ],
+    "tentpoles": [
+      {
+        "episode": 3,
+        "id": "fun_run",
+        "plan": "A charity car wash in the parking lot for the animal shelter, which Michael makes about impressing Holly; Dwight and Angela slip back together."
+      },
+      {
+        "episode": 6,
+        "id": "halloween",
+        "plan": "Michael and Holly both come as Dwight; Pam is away, so Jim's costume is a sad joke; the costume contest gets political."
+      },
+      {
+        "episode": 11,
+        "id": "christmas",
+        "plan": "Michael's Christmas video for Holly accidentally shows Dwight and Angela kissing; the wedding secret explodes into a parking-lot duel."
+      }
+    ],
+    "finale": "David offers Michael the Nashua branch. Michael hears the office's goodbye and chooses Scranton. Jim gives up on his big proposal plan and proposes to Pam in the parking lot in the rain while everyone watches through the glass. Tag: Toby is back from Costa Rica. Hook: David mentions Nashua is on the budget block.",
+    "changes": "Pam moved to sales over the summer and sits in the bullpen; nobody has replaced her at reception. Toby leaves for Costa Rica in episode 1 and Holly takes over HR. Erin is hired as receptionist in episode 4. Ryan returns as a temp in episode 9 and takes the empty HR desk in the annex."
+  },
+  "bibleSeason": 1
+}

@@ -2789,6 +2789,214 @@
    "frames": 1,
    "anchorX": 36,
    "anchorY": 135
+  },
+  "holly_walk_front": {
+   "src": "holly_walk_front.png",
+   "frameW": 66,
+   "frameH": 126,
+   "frames": 5,
+   "anchorX": 33,
+   "anchorY": 125
+  },
+  "holly_walk_back": {
+   "src": "holly_walk_back.png",
+   "frameW": 65,
+   "frameH": 124,
+   "frames": 5,
+   "anchorX": 32,
+   "anchorY": 123
+  },
+  "holly_walk_side": {
+   "src": "holly_walk_side.png",
+   "frameW": 63,
+   "frameH": 123,
+   "frames": 5,
+   "anchorX": 31,
+   "anchorY": 122
+  },
+  "holly_sit_front": {
+   "src": "holly_sit_front.png",
+   "frameW": 74,
+   "frameH": 147,
+   "frames": 1,
+   "anchorX": 37,
+   "anchorY": 146
+  },
+  "holly_sit_back": {
+   "src": "holly_sit_back.png",
+   "frameW": 73,
+   "frameH": 150,
+   "frames": 1,
+   "anchorX": 36,
+   "anchorY": 149
+  },
+  "holly_sit_side": {
+   "src": "holly_sit_side.png",
+   "frameW": 78,
+   "frameH": 149,
+   "frames": 1,
+   "anchorX": 39,
+   "anchorY": 148
+  },
+  "holly_type_side": {
+   "src": "holly_type_side.png",
+   "frameW": 78,
+   "frameH": 149,
+   "frames": 2,
+   "anchorX": 39,
+   "anchorY": 148
+  },
+  "holly_phone_side": {
+   "src": "holly_phone_side.png",
+   "frameW": 77,
+   "frameH": 149,
+   "frames": 1,
+   "anchorX": 38,
+   "anchorY": 148
+  },
+  "holly_react_gasp": {
+   "src": "holly_react_gasp.png",
+   "frameW": 66,
+   "frameH": 125,
+   "frames": 1,
+   "anchorX": 33,
+   "anchorY": 124
+  },
+  "holly_react_laugh": {
+   "src": "holly_react_laugh.png",
+   "frameW": 67,
+   "frameH": 125,
+   "frames": 1,
+   "anchorX": 33,
+   "anchorY": 124
+  },
+  "holly_react_sad": {
+   "src": "holly_react_sad.png",
+   "frameW": 66,
+   "frameH": 124,
+   "frames": 1,
+   "anchorX": 33,
+   "anchorY": 123
+  },
+  "holly_react_facepalm": {
+   "src": "holly_react_facepalm.png",
+   "frameW": 67,
+   "frameH": 124,
+   "frames": 1,
+   "anchorX": 33,
+   "anchorY": 123
+  },
+  "holly_react_look": {
+   "src": "holly_react_look.png",
+   "frameW": 66,
+   "frameH": 125,
+   "frames": 1,
+   "anchorX": 33,
+   "anchorY": 124
+  },
+  "erin_walk_front": {
+   "src": "erin_walk_front.png",
+   "frameW": 67,
+   "frameH": 125,
+   "frames": 5,
+   "anchorX": 33,
+   "anchorY": 124
+  },
+  "erin_walk_back": {
+   "src": "erin_walk_back.png",
+   "frameW": 63,
+   "frameH": 125,
+   "frames": 5,
+   "anchorX": 31,
+   "anchorY": 124
+  },
+  "erin_walk_side": {
+   "src": "erin_walk_side.png",
+   "frameW": 64,
+   "frameH": 126,
+   "frames": 5,
+   "anchorX": 32,
+   "anchorY": 125
+  },
+  "erin_sit_front": {
+   "src": "erin_sit_front.png",
+   "frameW": 75,
+   "frameH": 152,
+   "frames": 1,
+   "anchorX": 37,
+   "anchorY": 151
+  },
+  "erin_sit_back": {
+   "src": "erin_sit_back.png",
+   "frameW": 72,
+   "frameH": 152,
+   "frames": 1,
+   "anchorX": 36,
+   "anchorY": 151
+  },
+  "erin_sit_side": {
+   "src": "erin_sit_side.png",
+   "frameW": 79,
+   "frameH": 150,
+   "frames": 1,
+   "anchorX": 39,
+   "anchorY": 149
+  },
+  "erin_type_side": {
+   "src": "erin_type_side.png",
+   "frameW": 80,
+   "frameH": 151,
+   "frames": 2,
+   "anchorX": 40,
+   "anchorY": 150
+  },
+  "erin_phone_side": {
+   "src": "erin_phone_side.png",
+   "frameW": 80,
+   "frameH": 151,
+   "frames": 1,
+   "anchorX": 40,
+   "anchorY": 150
+  },
+  "erin_react_gasp": {
+   "src": "erin_react_gasp.png",
+   "frameW": 66,
+   "frameH": 123,
+   "frames": 1,
+   "anchorX": 33,
+   "anchorY": 122
+  },
+  "erin_react_laugh": {
+   "src": "erin_react_laugh.png",
+   "frameW": 67,
+   "frameH": 123,
+   "frames": 1,
+   "anchorX": 33,
+   "anchorY": 122
+  },
+  "erin_react_sad": {
+   "src": "erin_react_sad.png",
+   "frameW": 66,
+   "frameH": 123,
+   "frames": 1,
+   "anchorX": 33,
+   "anchorY": 122
+  },
+  "erin_react_facepalm": {
+   "src": "erin_react_facepalm.png",
+   "frameW": 71,
+   "frameH": 124,
+   "frames": 1,
+   "anchorX": 35,
+   "anchorY": 123
+  },
+  "erin_react_look": {
+   "src": "erin_react_look.png",
+   "frameW": 66,
+   "frameH": 123,
+   "frames": 1,
+   "anchorX": 33,
+   "anchorY": 122
   }
  },
  "images": {
@@ -2955,6 +3163,26 @@
   "jim_head_talk": {
    "src": "jim_head_talk.png",
    "w": 608,
+   "h": 800
+  },
+  "holly_head": {
+   "src": "holly_head.png",
+   "w": 620,
+   "h": 800
+  },
+  "holly_head_talk": {
+   "src": "holly_head_talk.png",
+   "w": 620,
+   "h": 800
+  },
+  "erin_head": {
+   "src": "erin_head.png",
+   "w": 652,
+   "h": 800
+  },
+  "erin_head_talk": {
+   "src": "erin_head_talk.png",
+   "w": 652,
    "h": 800
   }
  }

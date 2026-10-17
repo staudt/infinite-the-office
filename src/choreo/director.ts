@@ -40,7 +40,10 @@ export class Director {
     /** Season roster: members not in a scene sit at their desks as background. */
     private roster: string[],
     private label = 'Episode',
-  ) {}
+  ) {
+    // Regulars who are away this episode don't sit at their desks.
+    this.roster = roster.filter((id) => !ep.away.includes(id));
+  }
 
   *play(): Co {
     const { st, ep } = this;

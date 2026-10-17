@@ -1,0 +1,974 @@
+{
+  "title": "Friday at Five",
+  "logline": "David offers Michael the Nashua branch, and with it Holly, and Michael must decide by five o'clock, the exact moment Jim has planned to propose to Pam in the parking lot with sparklers, a humming Andy, and Kevin holding the M.",
+  "outline": "A: David offers Michael the Nashua branch; he weighs Holly against the office, chooses Scranton, and Holly drives down to tell him that's why she loves him. B: Jim's big proposal at five goes wrong in the rain, so he just asks, and Pam says yes as the office watches. C: Angela politely returns what she owes Andy and Dwight; Andy asks Erin to hold the A. Order: cold, A, B, A, C, B, A, C, A, B, A, tag",
+  "theme": "Home is the people who watch through the glass",
+  "storySoFar": "Michael turned down the Nashua branch to stay with his people, and Holly drove down from Nashua to tell him that's why she loves him; he said it back, and they're doing long distance. David hinted that Nashua is on the budget list, which could bring Holly back to Scranton. Jim proposed to Pam in the pouring rain in the parking lot after his sparkler plan failed (Kevin's M said PAW), and she said yes while the office watched through the glass doors. Angela returned Andy's ring and Dwight's beet cat and adopted two cats named Andrew and Dwight. Andy and Dwight are in a truce. Andy asked Erin to hold the A ('A for Andy'), a spark. Darryl starts in sales in January. And Toby is back from Costa Rica, asking for his old job.",
+  "extras": [],
+  "away": [
+    "holly"
+  ],
+  "stateChanges": [
+    {
+      "type": "relationship",
+      "a": "jim",
+      "b": "pam",
+      "status": "Engaged"
+    },
+    {
+      "type": "relationship",
+      "a": "michael",
+      "b": "holly",
+      "status": "In love, said it out loud; long distance between Scranton and Nashua"
+    },
+    {
+      "type": "relationship",
+      "a": "andy",
+      "b": "erin",
+      "status": "A shy spark; she held the A for Andy"
+    },
+    {
+      "type": "relationship",
+      "a": "michael",
+      "b": "toby",
+      "status": "Toby is back. Michael is devastated."
+    },
+    {
+      "type": "arc",
+      "arc": "Michael and Holly",
+      "progress": "Michael chose Scranton; Holly said that's why she loves him; long distance, and Nashua may close"
+    },
+    {
+      "type": "arc",
+      "arc": "Jim and Pam, For Real",
+      "progress": "Engaged, in the rain, in the parking lot"
+    },
+    {
+      "type": "arc",
+      "arc": "The Wedding of the Century",
+      "progress": "Angela returned the ring and the beet cat; she's alone with more cats; Andy and Dwight have a truce"
+    },
+    {
+      "type": "arc",
+      "arc": "Erin at the Front Desk",
+      "progress": "Erin belongs; she and Andy share a spark"
+    },
+    {
+      "type": "note",
+      "text": "Nashua is on the corporate budget list; Holly might come back to Scranton"
+    },
+    {
+      "type": "note",
+      "text": "Toby is back from Costa Rica and wants his old job, which Holly no longer has"
+    }
+  ],
+  "scenes": [
+    {
+      "part": "cold_open",
+      "plot": "cold_open",
+      "set": "break_room",
+      "region": "break_room",
+      "venue": "",
+      "present": [
+        "jim",
+        "kevin",
+        "andy"
+      ],
+      "recap": "In rehearsal, Kevin holds his M upside down, and the sparklers spell PAW.",
+      "beats": [
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "Okay. Rehearsal. Andy, P. Me, A. Kevin, M. Go.",
+          "to": "all",
+          "mood": "nervous"
+        },
+        {
+          "type": "action",
+          "who": "kevin",
+          "verb": "present",
+          "target": "none",
+          "caption": "proudly holds up an unlit sparkler shaped like a W"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "Kev, your M is upside down. It says PAW.",
+          "to": "kevin",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "Pam has paws. She's a person, but she has hands. Hands are human paws.",
+          "to": "andy",
+          "mood": "neutral"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": ""
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "Just... rotate it, Kevin.",
+          "to": "kevin",
+          "mood": "awkward"
+        },
+        {
+          "type": "action",
+          "who": "kevin",
+          "verb": "present",
+          "target": "none",
+          "caption": "rotates it ninety degrees. It's now a sideways E."
+        },
+        {
+          "type": "react",
+          "who": [
+            "jim"
+          ],
+          "reaction": "look_at_camera"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "A",
+      "set": "office",
+      "region": "michael_office",
+      "venue": "",
+      "present": [
+        "michael"
+      ],
+      "recap": "David offers Michael the manager job in Nashua, where Holly is; he has until five o'clock to decide.",
+      "beats": [
+        {
+          "type": "enter",
+          "who": [
+            "david"
+          ],
+          "to": "michael_guest_1"
+        },
+        {
+          "type": "say",
+          "who": "david",
+          "text": "Michael, Nashua's manager is retiring. I'd like you to take the branch.",
+          "to": "michael",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Nashua. Where Holly is. The N-word. In real life.",
+          "to": "david",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "david",
+          "text": "Different branch, no reporting conflict. You'd be a fresh start. I need an answer by five.",
+          "to": "michael",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Five today? David, that is so soon. That's barely a day. That's a lunch.",
+          "to": "david",
+          "mood": "panicked"
+        },
+        {
+          "type": "exit",
+          "who": [
+            "david"
+          ],
+          "how": "walk"
+        },
+        {
+          "type": "talking_head",
+          "who": "michael",
+          "lines": [
+            "Everything I want is four hours and forty minutes away.",
+            "And everything I have is right outside that door. Making noise."
+          ],
+          "mood": "sad"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "B",
+      "set": "office",
+      "region": "bullpen",
+      "venue": "",
+      "present": [
+        "jim",
+        "pam"
+      ],
+      "recap": "Jim makes sure Pam will leave by the front door at exactly five, without raising any suspicion. He raises a lot.",
+      "beats": [
+        {
+          "type": "move",
+          "who": "pam",
+          "to": "jim_desk",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "I'm meeting my mom for dinner tonight, so I'll go a little early, like four forty-five.",
+          "to": "jim",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "Five. Leave at five. Exactly five. By the front door. Not the side door.",
+          "to": "pam",
+          "mood": "panicked"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Why?",
+          "to": "jim",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "Because the side door is... haunted. Ask Dwight.",
+          "to": "pam",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "It's true. A man died there in nineteen forty. Of a draft.",
+          "to": "pam",
+          "mood": "deadpan"
+        },
+        {
+          "type": "talking_head",
+          "who": "pam",
+          "lines": [
+            "Jim is planning something. He's been weird for a week. Kevin keeps winking at me.",
+            "I really hope it's what I think it is. If it's a surprise party, I'm leaving him."
+          ],
+          "mood": "happy"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "A",
+      "set": "office",
+      "region": "conference_room",
+      "venue": "",
+      "present": [
+        "michael",
+        "dwight",
+        "jim",
+        "pam",
+        "andy",
+        "kevin",
+        "oscar",
+        "angela",
+        "phyllis",
+        "stanley",
+        "kelly",
+        "ryan",
+        "meredith",
+        "creed",
+        "erin"
+      ],
+      "recap": "Michael tells the office he might leave for Nashua, and the reactions are not what he expected.",
+      "beats": [
+        {
+          "type": "gather",
+          "who": [
+            "everyone"
+          ],
+          "to": "conference_room"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "I have been offered a job. In Nashua. Near Holly. I might be leaving you.",
+          "to": "all",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "I accept your position. I'll need the keys and your chair. And your mug.",
+          "to": "michael",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "kelly",
+          "text": "Oh my God, this is like when Rachel almost went to Paris. I can't.",
+          "to": "all",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "creed",
+          "text": "I'll take the parking spot.",
+          "to": "michael",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Does anyone... want me to stay?",
+          "to": "all",
+          "mood": "nervous"
+        },
+        {
+          "type": "pause",
+          "seconds": 3,
+          "caption": ""
+        },
+        {
+          "type": "say",
+          "who": "stanley",
+          "text": "Don't go.",
+          "to": "michael",
+          "mood": "deadpan"
+        },
+        {
+          "type": "react",
+          "who": [
+            "michael"
+          ],
+          "reaction": "gasp"
+        },
+        {
+          "type": "say",
+          "who": "stanley",
+          "text": "The next one might make me work.",
+          "to": "michael",
+          "mood": "annoyed"
+        },
+        {
+          "type": "react",
+          "who": [
+            "oscar"
+          ],
+          "reaction": "look_at_camera"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "C",
+      "set": "office",
+      "region": "accounting",
+      "venue": "",
+      "present": [
+        "angela",
+        "andy",
+        "dwight"
+      ],
+      "recap": "Angela politely returns Andy's ring and Dwight's beet cat; the two men commiserate.",
+      "beats": [
+        {
+          "type": "move",
+          "who": "andy",
+          "to": "angela_desk",
+          "pace": "walk"
+        },
+        {
+          "type": "move",
+          "who": "dwight",
+          "to": "angela_desk",
+          "pace": "walk"
+        },
+        {
+          "type": "action",
+          "who": "angela",
+          "verb": "present",
+          "target": "andy",
+          "caption": "returns a ring box to Andy"
+        },
+        {
+          "type": "action",
+          "who": "angela",
+          "verb": "present",
+          "target": "dwight",
+          "caption": "returns a slightly shriveled beet cat to Dwight"
+        },
+        {
+          "type": "say",
+          "who": "angela",
+          "text": "I'm sorry. To both of you. I'm going to take some time for myself. And my cats.",
+          "to": "andy",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "Thanks, Angela. I hope you find... whatever cats you need.",
+          "to": "angela",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "He's being very gracious. I am also gracious. I am the most gracious.",
+          "to": "angela",
+          "mood": "deadpan"
+        },
+        {
+          "type": "talking_head",
+          "who": "angela",
+          "lines": [
+            "I've adopted two more cats. It's a normal response.",
+            "They're named Andrew and Dwight. They hate each other. It's very soothing."
+          ],
+          "mood": "deadpan"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "B",
+      "set": "kitchen",
+      "region": "kitchen",
+      "venue": "",
+      "present": [
+        "jim",
+        "andy",
+        "kevin",
+        "dwight"
+      ],
+      "recap": "Dwight joins the proposal crew under the truce with Andy, and warns of rain at four fifty-eight.",
+      "beats": [
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Halpert. I'm in. I'll hold an exclamation point. I'm very upright.",
+          "to": "jim",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "D and I are working together now. Truce. We're like a duo. Like Simon and Garfunkel. I'm both.",
+          "to": "jim",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Also, there's a seventy percent chance of rain at four fifty-eight.",
+          "to": "jim",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "No, there isn't. I checked. It's clear.",
+          "to": "dwight",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "I checked my knee. My knee is never wrong.",
+          "to": "jim",
+          "mood": "deadpan"
+        },
+        {
+          "type": "react",
+          "who": [
+            "jim"
+          ],
+          "reaction": "sigh"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "A",
+      "set": "office",
+      "region": "michael_office",
+      "venue": "",
+      "present": [
+        "michael",
+        "pam"
+      ],
+      "recap": "Pam tells Michael she came back from New York because this is home; then Holly calls and tells him not to come for her.",
+      "beats": [
+        {
+          "type": "move",
+          "who": "pam",
+          "to": "michael_guest_1",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Pam. If you were me. What would you do?",
+          "to": "pam",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "I went to New York for something I wanted. And I came back, because this place is home. Even the weird parts.",
+          "to": "michael",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Holly is home too. That's the problem. I have two homes. I'm like a divorced kid.",
+          "to": "pam",
+          "mood": "sad"
+        },
+        {
+          "type": "action",
+          "who": "michael",
+          "verb": "phone_call",
+          "target": "none",
+          "caption": "answers his phone; it's Nashua calling"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Holly. David told you. No, I haven't decided.",
+          "to": "none",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "She says don't come for her. She says I'd be miserable without my people.",
+          "to": "pam",
+          "mood": "sad"
+        },
+        {
+          "type": "talking_head",
+          "who": "pam",
+          "lines": [
+            "Michael's going to make the right call. He always does, eventually.",
+            "Usually after the wrong two or three."
+          ],
+          "mood": "happy"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "C",
+      "set": "office",
+      "region": "reception",
+      "venue": "",
+      "present": [
+        "erin",
+        "andy"
+      ],
+      "recap": "Andy asks Erin to hold the A in the proposal sparklers; she is honored.",
+      "beats": [
+        {
+          "type": "move",
+          "who": "andy",
+          "to": "erin_desk",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "Erin. We need one more letter. Jim was going to hold the A, but he'll be busy proposing.",
+          "to": "erin",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "erin",
+          "text": "I get to be a letter? In a proposal? Andy, that's like being a bridesmaid of the alphabet.",
+          "to": "andy",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "A for... you know. Awesome.",
+          "to": "erin",
+          "mood": "awkward"
+        },
+        {
+          "type": "say",
+          "who": "erin",
+          "text": "A for Andy.",
+          "to": "andy",
+          "mood": "happy"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": ""
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "Five o'clock. Parking lot. Wear something waterproof. Dwight's knee.",
+          "to": "erin",
+          "mood": "happy"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "A",
+      "set": "office",
+      "region": "bullpen",
+      "venue": "",
+      "present": [
+        "michael",
+        "jim",
+        "dwight",
+        "phyllis",
+        "kevin",
+        "oscar"
+      ],
+      "recap": "Michael calls David at 4:55 and turns down Nashua; David hints that Nashua may not survive the year.",
+      "beats": [
+        {
+          "type": "caption",
+          "text": "4:55 PM"
+        },
+        {
+          "type": "action",
+          "who": "michael",
+          "verb": "phone_call",
+          "target": "none",
+          "caption": "dials David, looking out at the bullpen"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "David. It's Michael. Thank you. But I'm staying in Scranton. These are my people.",
+          "to": "none",
+          "mood": "sad"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": ""
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "What do you mean, 'Nashua's on the budget list anyway'? David? David, what does that mean?",
+          "to": "none",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "You're staying? You coward. Thank God.",
+          "to": "michael",
+          "mood": "angry"
+        },
+        {
+          "type": "say",
+          "who": "phyllis",
+          "text": "Good, Michael.",
+          "to": "michael",
+          "mood": "happy"
+        },
+        {
+          "type": "talking_head",
+          "who": "michael",
+          "lines": [
+            "If Nashua closes, Holly might need a job. Maybe in a branch with a very good HR desk.",
+            "I'm not saying anything. I'm just saying the desk is there. And it misses her."
+          ],
+          "mood": "happy"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "B",
+      "set": "parking_lot",
+      "region": "entrance",
+      "venue": "",
+      "present": [
+        "jim",
+        "andy",
+        "kevin",
+        "dwight",
+        "erin"
+      ],
+      "recap": "At five it pours; the sparklers won't light, Andy hums, Jim gives up the plan, and when Pam comes out he just asks. She says yes, while the office watches through the glass doors.",
+      "beats": [
+        {
+          "type": "caption",
+          "text": "5:00 PM. IT IS POURING."
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Four fifty-eight. My knee. I'm never wrong.",
+          "to": "jim",
+          "mood": "smug"
+        },
+        {
+          "type": "action",
+          "who": "kevin",
+          "verb": "search",
+          "target": "none",
+          "caption": "tries to light a soggy sparkler with a soggy lighter"
+        },
+        {
+          "type": "action",
+          "who": "andy",
+          "verb": "sing",
+          "target": "none",
+          "caption": "hums the flash mob song, alone, in the rain"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "Okay. Stop. Everyone stop. Forget the plan.",
+          "to": "all",
+          "mood": "sad"
+        },
+        {
+          "type": "enter",
+          "who": [
+            "pam"
+          ],
+          "to": "jim"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Jim? Why is everyone standing in the rain holding wet sticks?",
+          "to": "jim",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "There was a whole thing. Sparklers. A flash mob. Kevin was the M.",
+          "to": "pam",
+          "mood": "awkward"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "But it's just you. It was always just you. Pam, will you marry me?",
+          "to": "pam",
+          "mood": "nervous"
+        },
+        {
+          "type": "pause",
+          "seconds": 3,
+          "caption": "the rain keeps falling"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Yes. Yes. Obviously yes.",
+          "to": "jim",
+          "mood": "happy"
+        },
+        {
+          "type": "action",
+          "who": "jim",
+          "verb": "hug",
+          "target": "pam",
+          "caption": "kisses her in the pouring rain"
+        },
+        {
+          "type": "enter",
+          "who": [
+            "michael",
+            "phyllis",
+            "kelly",
+            "stanley",
+            "oscar"
+          ],
+          "to": "entrance"
+        },
+        {
+          "type": "react",
+          "who": [
+            "kelly",
+            "phyllis",
+            "erin",
+            "andy",
+            "kevin"
+          ],
+          "reaction": "cheer"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "I'm not crying! It's the rain! It's raining on my face from inside my eyes!",
+          "to": "all",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "stanley",
+          "text": "Can I go home now?",
+          "to": "oscar",
+          "mood": "deadpan"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "A",
+      "set": "parking_lot",
+      "region": "parking_lot",
+      "venue": "",
+      "present": [
+        "michael"
+      ],
+      "recap": "Holly drives in from Nashua; she says choosing his people is why she loves him, and Michael finally says it back.",
+      "beats": [
+        {
+          "type": "caption",
+          "text": "LATER"
+        },
+        {
+          "type": "move",
+          "who": "michael",
+          "to": "car_michael",
+          "pace": "walk"
+        },
+        {
+          "type": "enter",
+          "who": [
+            "holly"
+          ],
+          "to": "michael"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Holly? You drove four hours and forty minutes?",
+          "to": "holly",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "holly",
+          "text": "Four thirty-two. I sped. David told me you said no.",
+          "to": "michael",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "I'm sorry. I couldn't leave them. They need me. Stanley said so. Sort of.",
+          "to": "holly",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "holly",
+          "text": "Michael. That's why I love you. You picked your people.",
+          "to": "michael",
+          "mood": "happy"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": ""
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "I love you too. Not in Yoda. Not as Dwight. As me.",
+          "to": "holly",
+          "mood": "happy"
+        },
+        {
+          "type": "action",
+          "who": "michael",
+          "verb": "hug",
+          "target": "holly",
+          "caption": "holds her in the wet parking lot"
+        },
+        {
+          "type": "say",
+          "who": "holly",
+          "text": "Long distance, then? Weekends. Audiobooks.",
+          "to": "michael",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "I'm going to learn French. Or just how to say 'Nashua' again.",
+          "to": "holly",
+          "mood": "happy"
+        }
+      ]
+    },
+    {
+      "part": "tag",
+      "plot": "tag",
+      "set": "annex",
+      "region": "annex",
+      "venue": "",
+      "present": [
+        "kelly",
+        "ryan"
+      ],
+      "recap": "Toby is back from Costa Rica, and Michael's joy ends instantly.",
+      "beats": [
+        {
+          "type": "enter",
+          "who": [
+            "toby"
+          ],
+          "to": "kelly_desk"
+        },
+        {
+          "type": "say",
+          "who": "toby",
+          "text": "Hi, guys. Costa Rica didn't really work out. I broke my neck a little. Is my old job still open?",
+          "to": "kelly",
+          "mood": "awkward"
+        },
+        {
+          "type": "enter",
+          "who": [
+            "michael"
+          ],
+          "to": "toby"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": ""
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "No. No. God. No. Please, no. NO!",
+          "to": "toby",
+          "mood": "panicked"
+        },
+        {
+          "type": "react",
+          "who": [
+            "ryan"
+          ],
+          "reaction": "look_at_camera"
+        }
+      ]
+    }
+  ]
+}

@@ -34,6 +34,7 @@ An `action` caption is a stage direction WITHOUT the actor's name, starting with
 - `title`: a short, funny title (no "Episode N"). `logline`: one sentence for the whole episode. `theme`: the unstated theme.
 - `storySoFar`: the UPDATED running summary of all ongoing storylines in under 150 words, as of the end of this episode.
 - `extras`: only when you introduce a new recurring side character: `{ "id": "gary", "name": "Gary Trundle", "title": "Owner, Trundle Storage", "voice": "how they talk" }`. Then use their id in beats.
+- `away`: ids of regulars who are absent the whole episode (vacation, not hired yet, transferred), so they aren't drawn at their desks. Usually empty.
 - `stateChanges`: what changed, so the next writer remembers. Each is one of:
   `{ "type": "relationship", "a": "jim", "b": "pam", "status": "dating" }`,
   `{ "type": "note", "text": "a setup to pay off later" }`,

@@ -1,0 +1,863 @@
+{
+  "title": "Suds",
+  "logline": "Michael turns a charity car wash for the animal shelter into a grand romantic gesture for Holly and floods her car, while Dwight and Angela, stuck on rinse duty, slip back into old habits.",
+  "outline": "A: Michael's charity car wash, really a show for Holly, ends with him soaking her and her car. B: Michael's chart puts Dwight and Angela on rinse duty together; they kiss behind the dumpster, and Creed sees. C: Kevin runs the cash box. Order: cold, A, B, A, C, A, B, A, C, B, A, tag",
+  "theme": "Doing the right thing for the wrong reasons",
+  "storySoFar": "Michael and Holly had their first real date at his charity car wash: he soaked her and her car, she said it was the best date in five years, and they raised $312 for the animal shelter (Kevin counted right, for once). Assigned to rinse together, Dwight and Angela kissed behind the dumpster; Creed saw and is hinting cryptically. Angela is still engaged to Andy, who serenaded her with a car wash shanty. Pam leaves for Pratt in New York in about two weeks; Jim is keeping the ring in his pocket. Andy's wedding is June 20.",
+  "extras": [],
+  "away": [
+    "erin",
+    "ryan"
+  ],
+  "stateChanges": [
+    {
+      "type": "relationship",
+      "a": "michael",
+      "b": "holly",
+      "status": "Dating, happily; she likes his chaos"
+    },
+    {
+      "type": "relationship",
+      "a": "dwight",
+      "b": "angela",
+      "status": "Secretly back together while she is engaged to Andy"
+    },
+    {
+      "type": "arc",
+      "arc": "Michael and Holly",
+      "progress": "Their first date was the car wash; they're officially dating"
+    },
+    {
+      "type": "arc",
+      "arc": "The Wedding of the Century",
+      "progress": "Angela kissed Dwight behind the dumpster; Creed saw"
+    },
+    {
+      "type": "note",
+      "text": "Creed saw Dwight and Angela kiss and drops cryptic hints"
+    },
+    {
+      "type": "gag",
+      "text": "Kevin's math: wildly wrong, except once when the money was wet"
+    }
+  ],
+  "scenes": [
+    {
+      "part": "cold_open",
+      "plot": "cold_open",
+      "set": "office",
+      "region": "accounting",
+      "venue": "",
+      "present": [
+        "kevin",
+        "oscar",
+        "angela"
+      ],
+      "recap": "Kevin forecasts the car wash's earnings with alarming confidence.",
+      "beats": [
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "I did the math on the car wash. We will make nine hundred thousand dollars.",
+          "to": "oscar",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "oscar",
+          "text": "How many cars is that, Kevin?",
+          "to": "kevin",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "Twelve.",
+          "to": "oscar",
+          "mood": "happy"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": ""
+        },
+        {
+          "type": "say",
+          "who": "angela",
+          "text": "Kevin, you are an accountant.",
+          "to": "kevin",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "I know. That's why I'm so good at this.",
+          "to": "angela",
+          "mood": "smug"
+        },
+        {
+          "type": "react",
+          "who": [
+            "oscar"
+          ],
+          "reaction": "look_at_camera"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "A",
+      "set": "office",
+      "region": "conference_room",
+      "venue": "",
+      "present": [
+        "michael",
+        "holly",
+        "jim",
+        "pam",
+        "dwight",
+        "angela",
+        "andy",
+        "kevin",
+        "oscar",
+        "phyllis",
+        "stanley",
+        "kelly"
+      ],
+      "recap": "Michael announces a charity car wash for the animal shelter, with a banner that mostly mentions Holly.",
+      "beats": [
+        {
+          "type": "gather",
+          "who": [
+            "everyone"
+          ],
+          "to": "conference_room"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Today, we give back. Holly suggested a bake sale for the animal shelter. I said: bigger.",
+          "to": "all",
+          "mood": "excited"
+        },
+        {
+          "type": "action",
+          "who": "michael",
+          "verb": "present",
+          "target": "none",
+          "caption": "unrolls a banner: MICHAEL SCOTT'S CHARITY CAR WASH (FOR HOLLY AND ANIMALS)"
+        },
+        {
+          "type": "say",
+          "who": "holly",
+          "text": "Oh. That's... my name is on it. Big.",
+          "to": "michael",
+          "mood": "awkward"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Animals are on it too. In parentheses. Where they belong.",
+          "to": "holly",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "stanley",
+          "text": "I'm not washing a car.",
+          "to": "michael",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Everyone has a station. Dwight and Angela, rinse. You're a great team.",
+          "to": "all",
+          "mood": "neutral"
+        },
+        {
+          "type": "react",
+          "who": [
+            "angela"
+          ],
+          "reaction": "gasp"
+        },
+        {
+          "type": "talking_head",
+          "who": "holly",
+          "lines": [
+            "Nobody has ever put my name on a banner. Well, once. At a dentist. For an unpaid bill.",
+            "This is better."
+          ],
+          "mood": "happy"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "B",
+      "set": "office",
+      "region": "bullpen",
+      "venue": "",
+      "present": [
+        "angela",
+        "andy",
+        "dwight"
+      ],
+      "recap": "Angela asks Andy to swap stations with Dwight; Andy is busy writing a car wash song.",
+      "beats": [
+        {
+          "type": "move",
+          "who": "angela",
+          "to": "andy_desk",
+          "pace": "hurry"
+        },
+        {
+          "type": "say",
+          "who": "angela",
+          "text": "Andrew. Switch stations with Dwight. I want to rinse with you.",
+          "to": "andy",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "Can't, my sweet. I'm on 'morale.' I've written a car wash shanty.",
+          "to": "angela",
+          "mood": "excited"
+        },
+        {
+          "type": "action",
+          "who": "andy",
+          "verb": "sing",
+          "target": "angela",
+          "caption": "sings 'Oh, the suds are high and the water's fine'"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "I'll be at rinse, Angela. Do try to keep up.",
+          "to": "angela",
+          "mood": "smug"
+        },
+        {
+          "type": "talking_head",
+          "who": "angela",
+          "lines": [
+            "I'm engaged to a wonderful man who sings about soap.",
+            "I'm not worried about rinse. I'm a professional. Rinse is nothing."
+          ],
+          "mood": "nervous"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "A",
+      "set": "parking_lot",
+      "region": "parking_lot",
+      "venue": "",
+      "present": [
+        "michael",
+        "holly",
+        "jim",
+        "pam",
+        "andy",
+        "kelly"
+      ],
+      "recap": "The car wash opens to no customers, so Michael takes the sign to the road and dances.",
+      "beats": [
+        {
+          "type": "caption",
+          "text": "11:00 AM"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Any minute now. The cars will come. Like salmon.",
+          "to": "holly",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "It's been forty minutes. The salmon are at work.",
+          "to": "michael",
+          "mood": "deadpan"
+        },
+        {
+          "type": "move",
+          "who": "michael",
+          "to": "entrance",
+          "pace": "hurry"
+        },
+        {
+          "type": "action",
+          "who": "michael",
+          "verb": "dance",
+          "target": "none",
+          "caption": "waves the banner at traffic and dances like a wind sock"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "Oh, the suds are high—",
+          "to": "all",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "kelly",
+          "text": "Andy, if you sing that again I'm going to drown in this bucket.",
+          "to": "andy",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "He's kind of great at the dancing, though.",
+          "to": "holly",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "holly",
+          "text": "He's kind of great.",
+          "to": "pam",
+          "mood": "happy"
+        },
+        {
+          "type": "react",
+          "who": [
+            "pam"
+          ],
+          "reaction": "look_at_camera"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "C",
+      "set": "parking_lot",
+      "region": "entrance",
+      "venue": "",
+      "present": [
+        "kevin",
+        "oscar",
+        "phyllis"
+      ],
+      "recap": "Kevin guards the cash box like it's the crown jewels; there is four dollars in it.",
+      "beats": [
+        {
+          "type": "action",
+          "who": "kevin",
+          "verb": "hide",
+          "target": "none",
+          "caption": "hugs a shoebox labeled CASH"
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "Nobody touches the box. I am the box now.",
+          "to": "oscar",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "oscar",
+          "text": "How much is in the box?",
+          "to": "kevin",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "Four dollars. Two of them are mine.",
+          "to": "oscar",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "phyllis",
+          "text": "Bob says he'll bring the van by. Vance Refrigeration has three vans.",
+          "to": "kevin",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "That's three hundred thousand dollars.",
+          "to": "phyllis",
+          "mood": "excited"
+        },
+        {
+          "type": "react",
+          "who": [
+            "oscar"
+          ],
+          "reaction": "facepalm"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "A",
+      "set": "parking_lot",
+      "region": "parking_lot",
+      "venue": "",
+      "present": [
+        "michael",
+        "holly",
+        "jim",
+        "pam"
+      ],
+      "recap": "The first customer is Holly's own car; Michael washes it with too much passion and too many open windows.",
+      "beats": [
+        {
+          "type": "say",
+          "who": "holly",
+          "text": "Okay, first customer. Me. Ten dollars. For the kitties.",
+          "to": "michael",
+          "mood": "happy"
+        },
+        {
+          "type": "move",
+          "who": "holly",
+          "to": "car_jim",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Stand back. I am going to give this car the wash of its life.",
+          "to": "all",
+          "mood": "excited"
+        },
+        {
+          "type": "move",
+          "who": "michael",
+          "to": "car_jim",
+          "pace": "hurry"
+        },
+        {
+          "type": "action",
+          "who": "michael",
+          "verb": "prank",
+          "target": "holly",
+          "caption": "aims the hose at the car and blasts it through the open window"
+        },
+        {
+          "type": "say",
+          "who": "holly",
+          "text": "Michael. Michael, the window's—",
+          "to": "michael",
+          "mood": "panicked"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "I know! I'm getting the inside too! Full service!",
+          "to": "holly",
+          "mood": "excited"
+        },
+        {
+          "type": "pause",
+          "seconds": 3,
+          "caption": "Holly is soaked"
+        },
+        {
+          "type": "react",
+          "who": [
+            "jim",
+            "pam"
+          ],
+          "reaction": "cringe"
+        },
+        {
+          "type": "talking_head",
+          "who": "michael",
+          "lines": [
+            "In my defense, the window was open.",
+            "In her defense, she's very wet."
+          ],
+          "mood": "sad"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "B",
+      "set": "parking_lot",
+      "region": "parking_lot",
+      "venue": "",
+      "present": [
+        "dwight",
+        "angela",
+        "creed"
+      ],
+      "recap": "At the rinse station behind the dumpster, Dwight and Angela argue about Andy, then kiss; Creed sees.",
+      "beats": [
+        {
+          "type": "move",
+          "who": "dwight",
+          "to": "dumpster",
+          "pace": "walk"
+        },
+        {
+          "type": "move",
+          "who": "angela",
+          "to": "dumpster",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "angela",
+          "text": "You're rinsing wrong. You rinse top down. Everyone knows that.",
+          "to": "dwight",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Andy rinses bottom up. Is that why you chose him?",
+          "to": "angela",
+          "mood": "angry"
+        },
+        {
+          "type": "say",
+          "who": "angela",
+          "text": "I chose him because he's kind. And he doesn't freeze my cats.",
+          "to": "dwight",
+          "mood": "angry"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "One cat. Once. And I miss you every day, Monkey.",
+          "to": "angela",
+          "mood": "sad"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": ""
+        },
+        {
+          "type": "action",
+          "who": "angela",
+          "verb": "hug",
+          "target": "dwight",
+          "caption": "grabs his collar and kisses him behind the dumpster"
+        },
+        {
+          "type": "move",
+          "who": "creed",
+          "to": "smoking_spot",
+          "pace": "walk"
+        },
+        {
+          "type": "react",
+          "who": [
+            "creed"
+          ],
+          "reaction": "stare"
+        },
+        {
+          "type": "talking_head",
+          "who": "creed",
+          "lines": [
+            "I see things. I don't tell people things.",
+            "That's how I've survived four marriages, two of them mine."
+          ],
+          "mood": "deadpan"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "A",
+      "set": "parking_lot",
+      "region": "entrance",
+      "venue": "",
+      "present": [
+        "michael",
+        "holly"
+      ],
+      "recap": "Michael apologizes to a soaked Holly, who decides it's the best first date she has had.",
+      "beats": [
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "I ruined it. I ruined the car wash. I ruined your car. I ruined the kitties.",
+          "to": "holly",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "holly",
+          "text": "Michael. My last boyfriend took me to a lecture on tax law.",
+          "to": "michael",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "holly",
+          "text": "This is the best date I've been on in five years. And I'm not even sure it's a date.",
+          "to": "michael",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "It's a date. It was always a date. That's what she said.",
+          "to": "holly",
+          "mood": "nervous"
+        },
+        {
+          "type": "react",
+          "who": [
+            "holly"
+          ],
+          "reaction": "laugh"
+        },
+        {
+          "type": "action",
+          "who": "holly",
+          "verb": "prank",
+          "target": "michael",
+          "caption": "turns the hose on Michael"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Okay. Okay! I deserved that!",
+          "to": "holly",
+          "mood": "excited"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "C",
+      "set": "office",
+      "region": "accounting",
+      "venue": "",
+      "present": [
+        "kevin",
+        "oscar",
+        "angela"
+      ],
+      "recap": "Back inside, Kevin counts the money, and Angela can't concentrate on numbers for once.",
+      "beats": [
+        {
+          "type": "caption",
+          "text": "4:30 PM"
+        },
+        {
+          "type": "action",
+          "who": "kevin",
+          "verb": "search",
+          "target": "none",
+          "caption": "counts damp bills into piles"
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "Final total. Three hundred and twelve dollars. For the animals.",
+          "to": "oscar",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "oscar",
+          "text": "That's... actually right. Kevin, that's right.",
+          "to": "kevin",
+          "mood": "awkward"
+        },
+        {
+          "type": "say",
+          "who": "angela",
+          "text": "Hmm? What? Yes. Numbers.",
+          "to": "oscar",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "oscar",
+          "text": "Angela, you're holding the stapler upside down.",
+          "to": "angela",
+          "mood": "deadpan"
+        },
+        {
+          "type": "talking_head",
+          "who": "kevin",
+          "lines": [
+            "I'm good at money when it's wet. Dry money is hard."
+          ],
+          "mood": "neutral"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "B",
+      "set": "office",
+      "region": "bullpen",
+      "venue": "",
+      "present": [
+        "andy",
+        "angela",
+        "dwight"
+      ],
+      "recap": "Andy serenades Angela with the car wash shanty, while Dwight types very hard.",
+      "beats": [
+        {
+          "type": "move",
+          "who": "andy",
+          "to": "angela",
+          "pace": "walk"
+        },
+        {
+          "type": "action",
+          "who": "andy",
+          "verb": "sing",
+          "target": "angela",
+          "caption": "sings the car wash shanty, final verse, on one knee"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "I love you, Angela Martin. Soon to be Angela Bernard.",
+          "to": "angela",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "angela",
+          "text": "Thank you, Andrew.",
+          "to": "andy",
+          "mood": "awkward"
+        },
+        {
+          "type": "action",
+          "who": "dwight",
+          "verb": "typing",
+          "target": "none",
+          "caption": "types very loudly, staring at the screen"
+        },
+        {
+          "type": "react",
+          "who": [
+            "jim"
+          ],
+          "reaction": "stare"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "A",
+      "set": "office",
+      "region": "michael_office",
+      "venue": "",
+      "present": [
+        "michael",
+        "holly",
+        "pam"
+      ],
+      "recap": "Michael and Holly, both still damp, hand the shelter its check, and Pam sees how happy he is.",
+      "beats": [
+        {
+          "type": "move",
+          "who": "holly",
+          "to": "michael_guest_1",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Three hundred and twelve dollars. Do you know how many cats that buys?",
+          "to": "holly",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "holly",
+          "text": "You don't buy them, Michael. You save them.",
+          "to": "michael",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Then we saved three hundred and twelve cats.",
+          "to": "holly",
+          "mood": "happy"
+        },
+        {
+          "type": "talking_head",
+          "who": "pam",
+          "lines": [
+            "I've seen Michael in love before. Usually with a lamp, or a celebrity.",
+            "This is different. He's not performing. Well, he's performing less."
+          ],
+          "mood": "happy"
+        }
+      ]
+    },
+    {
+      "part": "tag",
+      "plot": "tag",
+      "set": "office",
+      "region": "bullpen",
+      "venue": "",
+      "present": [
+        "creed",
+        "jim"
+      ],
+      "recap": "Creed hints to Jim that he knows a secret, then doesn't follow up.",
+      "beats": [
+        {
+          "type": "move",
+          "who": "creed",
+          "to": "jim_desk",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "creed",
+          "text": "Jim. You ever see something behind a dumpster and just keep walking?",
+          "to": "jim",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "Like... what?",
+          "to": "creed",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "creed",
+          "text": "Exactly.",
+          "to": "jim",
+          "mood": "deadpan"
+        },
+        {
+          "type": "move",
+          "who": "creed",
+          "to": "creed_desk",
+          "pace": "walk"
+        },
+        {
+          "type": "react",
+          "who": [
+            "jim"
+          ],
+          "reaction": "look_at_camera"
+        }
+      ]
+    }
+  ]
+}

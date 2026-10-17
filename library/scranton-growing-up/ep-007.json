@@ -1,0 +1,760 @@
+{
+  "title": "Nashua",
+  "logline": "David Wallace visits for a routine review, notices the regional manager is dating his HR rep, and quietly transfers Holly back to Nashua, while Phyllis takes the Party Planning Committee's gavel and Erin prepares an over-the-top welcome.",
+  "outline": "A: Michael tries to act professional during David's visit, gives away his romance with Holly, and David transfers her to Nashua; Michael and Holly part gently. B: Phyllis demands the Party Planning Committee chair; Angela surrenders the gavel and stops Dwight from retaliating. C: Erin prepares for her first corporate visitor with a password and a gift basket. Order: cold, A, C, A, B, A, B, C, A, A, tag",
+  "theme": "Doing the right thing when it costs you",
+  "storySoFar": "David Wallace visited, realized Michael and Holly were dating, and transferred Holly back to the Nashua branch; she leaves Monday. Michael and Holly gently agreed to stop rather than fade through long distance (four hours forty minutes). Michael is heartbroken; Jim passed him Dwight's 'Schrute Guide to Solitude'. Phyllis took the Party Planning Committee gavel from Angela and will run Christmas; Oscar suspects she has something on Angela. Angela is torn between Dwight and Andy and forbade Dwight from retaliating. Erin charmed David with a muffin basket and a stress ball. Pam is still at Pratt in New York. Andy's wedding is June 20.",
+  "extras": [],
+  "away": [
+    "pam",
+    "ryan"
+  ],
+  "stateChanges": [
+    {
+      "type": "relationship",
+      "a": "michael",
+      "b": "holly",
+      "status": "Broke up gently because of her transfer to Nashua; still in love"
+    },
+    {
+      "type": "arc",
+      "arc": "Michael and Holly",
+      "progress": "David transferred Holly to Nashua; they broke up rather than try long distance"
+    },
+    {
+      "type": "arc",
+      "arc": "The Wedding of the Century",
+      "progress": "Phyllis took the Party Planning Committee gavel and will run Christmas; Oscar suspects something"
+    },
+    {
+      "type": "note",
+      "text": "Michael asked David if he could go to Nashua instead; David said the branch needs him"
+    },
+    {
+      "type": "note",
+      "text": "Erin gave David a stress ball; he squeezes it twice"
+    },
+    {
+      "type": "gag",
+      "text": "The 'Schrute Guide to Solitude' gets passed from heartbroken person to heartbroken person"
+    }
+  ],
+  "scenes": [
+    {
+      "part": "cold_open",
+      "plot": "cold_open",
+      "set": "office",
+      "region": "accounting",
+      "venue": "",
+      "present": [
+        "creed",
+        "oscar",
+        "kevin"
+      ],
+      "recap": "Creed claims he once worked at corporate, possibly as David Wallace.",
+      "beats": [
+        {
+          "type": "say",
+          "who": "oscar",
+          "text": "David Wallace is coming today. Everyone, try to look employed.",
+          "to": "all",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "creed",
+          "text": "I worked at corporate once. Nineteen eighty-six. Two weeks.",
+          "to": "oscar",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "What was your job?",
+          "to": "creed",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "creed",
+          "text": "CFO. They thought I was a man named Gary. I let them.",
+          "to": "kevin",
+          "mood": "deadpan"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": ""
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "Cool.",
+          "to": "creed",
+          "mood": "happy"
+        },
+        {
+          "type": "react",
+          "who": [
+            "oscar"
+          ],
+          "reaction": "look_at_camera"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "A",
+      "set": "office",
+      "region": "michael_office",
+      "venue": "",
+      "present": [
+        "michael",
+        "holly"
+      ],
+      "recap": "Michael and Holly agree to be extremely professional during David's visit.",
+      "beats": [
+        {
+          "type": "move",
+          "who": "holly",
+          "to": "michael_guest_1",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "holly",
+          "text": "So when David's here, maybe we keep things... professional? No Yoda.",
+          "to": "michael",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Holly. I am a professional. I have a tie for this. It's my serious tie.",
+          "to": "holly",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "holly",
+          "text": "Good. Then, Mr. Scott. Ms. Flax. Colleagues.",
+          "to": "michael",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Colleagues. Who have never kissed in a supply closet.",
+          "to": "holly",
+          "mood": "deadpan"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": ""
+        },
+        {
+          "type": "say",
+          "who": "holly",
+          "text": "Michael.",
+          "to": "michael",
+          "mood": "awkward"
+        },
+        {
+          "type": "talking_head",
+          "who": "michael",
+          "lines": [
+            "Today I'm going to be so professional that David will forget I'm fun.",
+            "And then, after he leaves, I'm going to be so fun."
+          ],
+          "mood": "smug"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "C",
+      "set": "office",
+      "region": "reception",
+      "venue": "",
+      "present": [
+        "erin",
+        "dwight"
+      ],
+      "recap": "David arrives; Erin greets her first corporate visitor with a password, a welcome sign and a gift basket.",
+      "beats": [
+        {
+          "type": "enter",
+          "who": [
+            "david"
+          ],
+          "to": "erin_desk"
+        },
+        {
+          "type": "say",
+          "who": "erin",
+          "text": "Welcome to Dunder Mifflin Scranton, Mr. Wallace! Password, please?",
+          "to": "david",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "david",
+          "text": "Password? I'm the CFO. I... sign your checks.",
+          "to": "erin",
+          "mood": "awkward"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Let him in, Erin. I can vouch. I've studied his face.",
+          "to": "erin",
+          "mood": "deadpan"
+        },
+        {
+          "type": "action",
+          "who": "erin",
+          "verb": "present",
+          "target": "david",
+          "caption": "hands him a gift basket of mini muffins and a stress ball"
+        },
+        {
+          "type": "say",
+          "who": "erin",
+          "text": "I made you a basket. The stress ball is for corporate stress. Do you have a lot?",
+          "to": "david",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "david",
+          "text": "Honestly? So much.",
+          "to": "erin",
+          "mood": "sad"
+        },
+        {
+          "type": "talking_head",
+          "who": "david",
+          "lines": [
+            "Every time I come to Scranton, something happens that has never happened at any other branch.",
+            "Today it was a muffin basket. I'll take it."
+          ],
+          "mood": "neutral"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "A",
+      "set": "office",
+      "region": "conference_room",
+      "venue": "",
+      "present": [
+        "michael",
+        "holly",
+        "david"
+      ],
+      "recap": "In the review meeting, Michael and Holly can't stop finishing each other's bits, and David realizes they're dating.",
+      "beats": [
+        {
+          "type": "say",
+          "who": "david",
+          "text": "So, the HR report. Complaints are down. That's great, Holly.",
+          "to": "holly",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "holly",
+          "text": "Thank you, David. We've had very few incidents. Well, one hose incident.",
+          "to": "david",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Which was consensual. On the car's part.",
+          "to": "david",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "david",
+          "text": "And productivity? Michael?",
+          "to": "michael",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Productivity, high it is. Hmm.",
+          "to": "david",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "holly",
+          "text": "Judge us by our numbers, do you?",
+          "to": "david",
+          "mood": "deadpan"
+        },
+        {
+          "type": "react",
+          "who": [
+            "michael",
+            "holly"
+          ],
+          "reaction": "laugh"
+        },
+        {
+          "type": "pause",
+          "seconds": 3,
+          "caption": ""
+        },
+        {
+          "type": "say",
+          "who": "david",
+          "text": "Are you two... seeing each other?",
+          "to": "michael",
+          "mood": "awkward"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "No. Yes. Define 'seeing.' Define 'each other.'",
+          "to": "david",
+          "mood": "panicked"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "B",
+      "set": "office",
+      "region": "accounting",
+      "venue": "",
+      "present": [
+        "phyllis",
+        "angela",
+        "oscar"
+      ],
+      "recap": "Phyllis asks Angela to make her chair of the Party Planning Committee, gavel and all.",
+      "beats": [
+        {
+          "type": "move",
+          "who": "phyllis",
+          "to": "angela_desk",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "phyllis",
+          "text": "Angela, Christmas is coming. I think the committee needs a new chair.",
+          "to": "angela",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "angela",
+          "text": "I am the chair. I've been the chair for six years. I have a gavel.",
+          "to": "phyllis",
+          "mood": "angry"
+        },
+        {
+          "type": "say",
+          "who": "phyllis",
+          "text": "It's a lovely gavel. I'd take such good care of it.",
+          "to": "angela",
+          "mood": "smug"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": ""
+        },
+        {
+          "type": "action",
+          "who": "angela",
+          "verb": "present",
+          "target": "phyllis",
+          "caption": "slowly hands over a small wooden gavel"
+        },
+        {
+          "type": "say",
+          "who": "oscar",
+          "text": "What just happened? Did I just witness a coup?",
+          "to": "all",
+          "mood": "neutral"
+        },
+        {
+          "type": "talking_head",
+          "who": "oscar",
+          "lines": [
+            "Phyllis has something on Angela. I don't know what it is.",
+            "I want to know so badly that it's affecting my sleep."
+          ],
+          "mood": "deadpan"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "A",
+      "set": "office",
+      "region": "michael_office",
+      "venue": "",
+      "present": [
+        "michael",
+        "david"
+      ],
+      "recap": "David explains a manager dating his HR rep is a liability; Holly is being transferred back to Nashua.",
+      "beats": [
+        {
+          "type": "say",
+          "who": "david",
+          "text": "Michael, I like Holly. I like you. But she's your HR. That's a lawsuit with a bow on it.",
+          "to": "michael",
+          "mood": "awkward"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "So fire Toby. Oh, he's gone. Fire... someone else. Fire Creed.",
+          "to": "david",
+          "mood": "panicked"
+        },
+        {
+          "type": "say",
+          "who": "david",
+          "text": "Nashua needs an HR rep. Holly worked there before. She'll go back Monday.",
+          "to": "michael",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "What if I went to Nashua instead?",
+          "to": "david",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "david",
+          "text": "Nashua has a manager, Michael. You have a branch. These people need you.",
+          "to": "michael",
+          "mood": "neutral"
+        },
+        {
+          "type": "pause",
+          "seconds": 3,
+          "caption": ""
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Okay. Okay, David. I understand. I'm a professional. I have the tie.",
+          "to": "david",
+          "mood": "sad"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "B",
+      "set": "kitchen",
+      "region": "kitchen",
+      "venue": "",
+      "present": [
+        "dwight",
+        "angela"
+      ],
+      "recap": "Dwight offers to 'handle' Phyllis; Angela forbids it, because Phyllis could tell Andy.",
+      "beats": [
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "She took your gavel. Say the word and I will take her yarn.",
+          "to": "angela",
+          "mood": "angry"
+        },
+        {
+          "type": "say",
+          "who": "angela",
+          "text": "You will do nothing. If she tells Andrew, I lose everything.",
+          "to": "dwight",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "You wouldn't lose me.",
+          "to": "angela",
+          "mood": "sad"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": ""
+        },
+        {
+          "type": "say",
+          "who": "angela",
+          "text": "That's what I'm afraid of.",
+          "to": "dwight",
+          "mood": "sad"
+        },
+        {
+          "type": "exit",
+          "who": [
+            "angela"
+          ],
+          "how": "walk"
+        },
+        {
+          "type": "talking_head",
+          "who": "dwight",
+          "lines": [
+            "Angela is a complicated woman. Like a beet.",
+            "Hard on the outside. Hard on the inside. Stains everything."
+          ],
+          "mood": "sad"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "C",
+      "set": "office",
+      "region": "reception",
+      "venue": "",
+      "present": [
+        "erin",
+        "david"
+      ],
+      "recap": "Leaving, David thanks Erin for the basket; she cheerfully asks if he's sad, and he admits he is.",
+      "beats": [
+        {
+          "type": "move",
+          "who": "david",
+          "to": "erin_desk",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "erin",
+          "text": "Bye, Mr. Wallace! Did your visit go well?",
+          "to": "david",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "david",
+          "text": "I had to break up a very happy couple today, Erin.",
+          "to": "erin",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "erin",
+          "text": "Oh no. Keep the stress ball. Squeeze it twice for me.",
+          "to": "david",
+          "mood": "sad"
+        },
+        {
+          "type": "action",
+          "who": "david",
+          "verb": "present",
+          "target": "none",
+          "caption": "squeezes the stress ball twice"
+        },
+        {
+          "type": "exit",
+          "who": [
+            "david"
+          ],
+          "how": "walk"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "A",
+      "set": "annex",
+      "region": "annex",
+      "venue": "",
+      "present": [
+        "holly",
+        "kelly"
+      ],
+      "recap": "Michael tells Holly; they try long distance in theory, and gently agree it would only make them sad.",
+      "beats": [
+        {
+          "type": "enter",
+          "who": [
+            "michael"
+          ],
+          "to": "holly"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Holly. David told you?",
+          "to": "holly",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "holly",
+          "text": "Monday. Nashua. It's four hours and forty minutes. I looked it up. Twice.",
+          "to": "michael",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "I could drive. I love driving. I could listen to audiobooks. I could learn French.",
+          "to": "holly",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "holly",
+          "text": "Michael. Long distance is sad phone calls and missing birthdays. I don't want to watch us fade.",
+          "to": "michael",
+          "mood": "sad"
+        },
+        {
+          "type": "pause",
+          "seconds": 3,
+          "caption": ""
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Then let's not fade. Let's just... stop. While it's perfect.",
+          "to": "holly",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "kelly",
+          "text": "This is worse than every movie. I'm going to the bathroom to cry.",
+          "to": "all",
+          "mood": "sad"
+        },
+        {
+          "type": "exit",
+          "who": [
+            "kelly"
+          ],
+          "how": "run"
+        },
+        {
+          "type": "talking_head",
+          "who": "holly",
+          "lines": [
+            "It's the right thing. It's what grown-ups do.",
+            "I don't love being a grown-up today."
+          ],
+          "mood": "sad"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "A",
+      "set": "office",
+      "region": "michael_office",
+      "venue": "",
+      "present": [
+        "michael"
+      ],
+      "recap": "Alone in his office, Michael's professional face finally cracks.",
+      "beats": [
+        {
+          "type": "action",
+          "who": "michael",
+          "verb": "search",
+          "target": "none",
+          "caption": "takes off his serious tie and folds it carefully"
+        },
+        {
+          "type": "talking_head",
+          "who": "michael",
+          "lines": [
+            "I'm fine. I'm a professional. Professionals don't...",
+            "I just think that if you find someone who does the same bad Yoda as you, the universe should leave it alone."
+          ],
+          "mood": "sad"
+        },
+        {
+          "type": "pause",
+          "seconds": 3,
+          "caption": ""
+        },
+        {
+          "type": "react",
+          "who": [
+            "michael"
+          ],
+          "reaction": "sigh"
+        }
+      ]
+    },
+    {
+      "part": "tag",
+      "plot": "tag",
+      "set": "office",
+      "region": "michael_office",
+      "venue": "",
+      "present": [
+        "michael",
+        "jim"
+      ],
+      "recap": "Jim passes Dwight's 'Schrute Guide to Solitude' on to Michael.",
+      "beats": [
+        {
+          "type": "move",
+          "who": "jim",
+          "to": "michael_guest_1",
+          "pace": "walk"
+        },
+        {
+          "type": "action",
+          "who": "jim",
+          "verb": "present",
+          "target": "michael",
+          "caption": "slides a stapled booklet across the desk"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "Dwight wrote this for me when Pam left. Chapter one is 'talk to a rock.'",
+          "to": "michael",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Does it work?",
+          "to": "jim",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "No. But chapter four has a good chili recipe.",
+          "to": "michael",
+          "mood": "happy"
+        },
+        {
+          "type": "react",
+          "who": [
+            "michael"
+          ],
+          "reaction": "laugh"
+        }
+      ]
+    }
+  ]
+}

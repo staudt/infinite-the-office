@@ -1,0 +1,813 @@
+{
+  "title": "Upstairs",
+  "logline": "Ryan and Darryl both want the new sales job and Michael wants to pick his protégé; Andy's wedding plans reach horse-drawn proportions while Dwight nearly confesses; and Jim plans a big proposal with the worst possible helpers.",
+  "outline": "A: Michael runs interviews for a new sales job, wants Ryan, and gets a lesson from Darryl, who just does the work. B: Andy's wedding plans peak, and Dwight nearly confesses to him before Angela stops it. C: Jim plans a big proposal for next Friday; Andy and Kevin insist on helping. Order: cold, A, B, A, C, A, B, C, A, B, A, tag",
+  "theme": "Earning your way up versus talking your way up",
+  "storySoFar": "Darryl won the new sales job over Ryan by fixing a Merkle order mid-interview; he moves upstairs in January (and taught Michael 'bubble on the come-up, homeslice'). Ryan lost it by missing his interview for a lava cake with Kelly, and is 'pivoting to strategic temping'. Jim plans to propose next Friday at five in the parking lot with sparklers spelling PAM; Andy (a 'flash mob of one, humming') and Kevin (holding the M) are helping. Andy booked a horse-drawn carriage and an a cappella 'string' quartet; Dwight nearly confessed to him and Angela stopped it, then told Dwight it ends after the wedding, which neither believes. Christmas is next week, and Phyllis runs the party. Stanley's countdown went up to 1,004 (a cruise).",
+  "extras": [],
+  "away": [
+    "holly"
+  ],
+  "stateChanges": [
+    {
+      "type": "arc",
+      "arc": "Ryan Hits Bottom",
+      "progress": "Lost the sales job to Darryl by missing his interview; still a temp"
+    },
+    {
+      "type": "arc",
+      "arc": "Jim and Pam, For Real",
+      "progress": "Jim plans to propose Friday at five in the parking lot with sparklers; Andy and Kevin are helping"
+    },
+    {
+      "type": "arc",
+      "arc": "The Wedding of the Century",
+      "progress": "Wedding plans peaked; Dwight nearly confessed to Andy; Angela says it ends after the wedding"
+    },
+    {
+      "type": "note",
+      "text": "Darryl moves upstairs to sales in January"
+    },
+    {
+      "type": "note",
+      "text": "Jim's proposal plan: Friday 5pm, parking lot, sparklers spelling PAM; Kevin holds the M"
+    },
+    {
+      "type": "gag",
+      "text": "Stanley's countdown goes up instead of down (now 1,004 days, because of a cruise)"
+    }
+  ],
+  "scenes": [
+    {
+      "part": "cold_open",
+      "plot": "cold_open",
+      "set": "office",
+      "region": "bullpen",
+      "venue": "",
+      "present": [
+        "stanley",
+        "oscar",
+        "kevin"
+      ],
+      "recap": "Oscar notices Stanley's retirement countdown has gone up.",
+      "beats": [
+        {
+          "type": "say",
+          "who": "stanley",
+          "text": "One thousand and four days.",
+          "to": "none",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "oscar",
+          "text": "Stanley, last month you said nine hundred and ninety.",
+          "to": "stanley",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "stanley",
+          "text": "I recalculated. I'm taking a cruise first. Cruises cost money.",
+          "to": "oscar",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "So you're retiring later so you can retire better.",
+          "to": "stanley",
+          "mood": "neutral"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": ""
+        },
+        {
+          "type": "say",
+          "who": "stanley",
+          "text": "Don't explain my life to me, Kevin.",
+          "to": "kevin",
+          "mood": "annoyed"
+        },
+        {
+          "type": "react",
+          "who": [
+            "oscar"
+          ],
+          "reaction": "look_at_camera"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "A",
+      "set": "office",
+      "region": "conference_room",
+      "venue": "",
+      "present": [
+        "michael",
+        "ryan",
+        "dwight",
+        "jim",
+        "pam",
+        "andy",
+        "phyllis",
+        "kevin"
+      ],
+      "recap": "Michael announces a new sales position; Ryan and, to everyone's surprise, Darryl both apply.",
+      "beats": [
+        {
+          "type": "gather",
+          "who": [
+            "everyone"
+          ],
+          "to": "conference_room"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Thanks to my Merkle deal, corporate has given us a new sales job. Applications are open.",
+          "to": "all",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "ryan",
+          "text": "I'll take it. Saves everyone time.",
+          "to": "michael",
+          "mood": "smug"
+        },
+        {
+          "type": "enter",
+          "who": [
+            "darryl"
+          ],
+          "to": "conf_front"
+        },
+        {
+          "type": "say",
+          "who": "darryl",
+          "text": "I'm applying too. I've been doing half the Merkle shipping math anyway.",
+          "to": "michael",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Darryl! Upstairs! It's like when a fish learns to walk. Evolution.",
+          "to": "darryl",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "darryl",
+          "text": "I'm gonna let that one go.",
+          "to": "michael",
+          "mood": "deadpan"
+        },
+        {
+          "type": "talking_head",
+          "who": "michael",
+          "lines": [
+            "Two candidates. Ryan, who I love like a son. Darryl, who I love like a cool uncle.",
+            "This is Sophie's Choice. I've never seen it, but I assume it's about hiring."
+          ],
+          "mood": "nervous"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "B",
+      "set": "office",
+      "region": "accounting",
+      "venue": "",
+      "present": [
+        "andy",
+        "angela",
+        "oscar",
+        "dwight"
+      ],
+      "recap": "Andy unveils the latest wedding plans: a horse-drawn carriage and a quartet of Cornell friends; Dwight sours.",
+      "beats": [
+        {
+          "type": "move",
+          "who": "dwight",
+          "to": "accounting",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "Update. We've booked a horse-drawn carriage. The horses are named Cornell and Also Cornell.",
+          "to": "all",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "And the Here Comes Treble alumni string quartet. They don't play strings. They sing like strings.",
+          "to": "all",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "angela",
+          "text": "It's going to be very... loud.",
+          "to": "andy",
+          "mood": "awkward"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Horses are skittish around a cappella. Everyone knows that.",
+          "to": "andy",
+          "mood": "angry"
+        },
+        {
+          "type": "say",
+          "who": "oscar",
+          "text": "Is that true?",
+          "to": "dwight",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "It will be.",
+          "to": "oscar",
+          "mood": "deadpan"
+        },
+        {
+          "type": "talking_head",
+          "who": "angela",
+          "lines": [
+            "Andrew is a good man. A good, loud man with a carriage.",
+            "I'm going to be very happy. I've decided."
+          ],
+          "mood": "nervous"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "A",
+      "set": "office",
+      "region": "michael_office",
+      "venue": "",
+      "present": [
+        "michael",
+        "ryan"
+      ],
+      "recap": "Ryan's interview is all buzzwords and no answers; Michael loves it anyway.",
+      "beats": [
+        {
+          "type": "move",
+          "who": "ryan",
+          "to": "michael_guest_1",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Ryan. Why do you want this job?",
+          "to": "ryan",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "ryan",
+          "text": "I want to disrupt the paper vertical with a synergy-first, customer-adjacent mindset.",
+          "to": "michael",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Wow. What does that mean?",
+          "to": "ryan",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "ryan",
+          "text": "It means I'd be really good. At the job.",
+          "to": "michael",
+          "mood": "awkward"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "And your sales experience?",
+          "to": "ryan",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "ryan",
+          "text": "I was your boss.",
+          "to": "michael",
+          "mood": "deadpan"
+        },
+        {
+          "type": "react",
+          "who": [
+            "michael"
+          ],
+          "reaction": "stare"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "C",
+      "set": "kitchen",
+      "region": "kitchen",
+      "venue": "",
+      "present": [
+        "jim",
+        "andy",
+        "kevin"
+      ],
+      "recap": "Andy overhears that Jim is planning to propose, and he and Kevin insist on helping.",
+      "beats": [
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "Okay, keep this quiet. Next Friday, I'm proposing to Pam. A big one. No more interruptions.",
+          "to": "andy",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "Big Tuna! A proposal! You need a flash mob. I have a flash mob. It's me, in many outfits.",
+          "to": "jim",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "I can bring chili.",
+          "to": "jim",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "Why would there be chili at a proposal?",
+          "to": "kevin",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "Why wouldn't there be?",
+          "to": "jim",
+          "mood": "neutral"
+        },
+        {
+          "type": "talking_head",
+          "who": "jim",
+          "lines": [
+            "I have proposed zero times, and been interrupted twice.",
+            "So this time I'm going big. And somehow I now have a flash mob and a chili."
+          ],
+          "mood": "awkward"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "A",
+      "set": "warehouse",
+      "region": "darryl_office",
+      "venue": "",
+      "present": [
+        "darryl",
+        "michael"
+      ],
+      "recap": "Michael interviews Darryl, who fixes a botched Merkle order on the phone mid-interview.",
+      "beats": [
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Darryl. Where do you see yourself in five years?",
+          "to": "darryl",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "darryl",
+          "text": "Upstairs. With a window. And benefits that cover my teeth.",
+          "to": "michael",
+          "mood": "neutral"
+        },
+        {
+          "type": "action",
+          "who": "darryl",
+          "verb": "phone_call",
+          "target": "none",
+          "caption": "answers the ringing phone mid-question"
+        },
+        {
+          "type": "say",
+          "who": "darryl",
+          "text": "Gil. Yeah. They shipped letter, you wanted legal. I'll have it to you by four. No charge.",
+          "to": "none",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "darryl",
+          "text": "Sorry. Merkle's order got mixed up. What was the question?",
+          "to": "michael",
+          "mood": "neutral"
+        },
+        {
+          "type": "pause",
+          "seconds": 3,
+          "caption": ""
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "You just... sold. While I was interviewing you about selling.",
+          "to": "darryl",
+          "mood": "awkward"
+        },
+        {
+          "type": "talking_head",
+          "who": "darryl",
+          "lines": [
+            "Upstairs folks think sales is talking. Sales is calling a man back when you said you would.",
+            "That, and nice shoes. I've been saving for the shoes."
+          ],
+          "mood": "deadpan"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "B",
+      "set": "parking_lot",
+      "region": "parking_lot",
+      "venue": "",
+      "present": [
+        "andy",
+        "dwight"
+      ],
+      "recap": "Andy asks Dwight to plan the bachelor party, and Dwight nearly confesses; Angela interrupts.",
+      "beats": [
+        {
+          "type": "move",
+          "who": "andy",
+          "to": "car_dwight",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "D. As my groomsman, will you plan my bachelor party? Something classy. A wine tasting.",
+          "to": "dwight",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Andy. There is something you should know. About Angela. And me. And the inventory.",
+          "to": "andy",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "What inventory?",
+          "to": "dwight",
+          "mood": "neutral"
+        },
+        {
+          "type": "enter",
+          "who": [
+            "angela"
+          ],
+          "to": "andy"
+        },
+        {
+          "type": "say",
+          "who": "angela",
+          "text": "Andrew! The carriage company is on the phone. They need to know the horses' dietary needs.",
+          "to": "andy",
+          "mood": "panicked"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "Oats! Cornell eats oats! Coming!",
+          "to": "angela",
+          "mood": "excited"
+        },
+        {
+          "type": "exit",
+          "who": [
+            "andy"
+          ],
+          "how": "run"
+        },
+        {
+          "type": "say",
+          "who": "angela",
+          "text": "Don't you dare.",
+          "to": "dwight",
+          "mood": "angry"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "C",
+      "set": "break_room",
+      "region": "break_room",
+      "venue": "",
+      "present": [
+        "jim",
+        "andy",
+        "kevin"
+      ],
+      "recap": "Jim, Andy and Kevin settle the proposal plan: Friday at five in the parking lot, with sparklers spelling PAM.",
+      "beats": [
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "Final plan. Friday, five o'clock, the parking lot. Sparklers that spell PAM. That's it.",
+          "to": "andy",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "And a flash mob.",
+          "to": "jim",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "No flash mob.",
+          "to": "andy",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "I'll hold the M. M is my best letter.",
+          "to": "jim",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "Fine. A small flash mob. Of one. Humming.",
+          "to": "jim",
+          "mood": "sad"
+        },
+        {
+          "type": "react",
+          "who": [
+            "jim"
+          ],
+          "reaction": "sigh"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "A",
+      "set": "office",
+      "region": "michael_office",
+      "venue": "",
+      "present": [
+        "michael",
+        "ryan",
+        "kelly"
+      ],
+      "recap": "Ryan misses his second interview for a two-hour lunch with Kelly, and Michael finally sees it.",
+      "beats": [
+        {
+          "type": "caption",
+          "text": "3:45 PM"
+        },
+        {
+          "type": "enter",
+          "who": [
+            "ryan",
+            "kelly"
+          ],
+          "to": "michael_guest_1"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Ryan. Your second interview was at one.",
+          "to": "ryan",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "ryan",
+          "text": "Lunch ran long. Kelly ordered dessert. It was a whole thing.",
+          "to": "michael",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "kelly",
+          "text": "It was a lava cake, Michael. You can't rush a lava cake.",
+          "to": "michael",
+          "mood": "excited"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": ""
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Ryan, I love you. But I'm giving the job to someone who calls people back.",
+          "to": "ryan",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "ryan",
+          "text": "Honestly? Fair.",
+          "to": "michael",
+          "mood": "neutral"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "B",
+      "set": "kitchen",
+      "region": "kitchen",
+      "venue": "",
+      "present": [
+        "angela",
+        "dwight"
+      ],
+      "recap": "Angela tells Dwight that after the wedding it's over, really over; he doesn't believe her, and neither does she.",
+      "beats": [
+        {
+          "type": "say",
+          "who": "angela",
+          "text": "After June twentieth, it's over. Really over. I'll be Mrs. Bernard.",
+          "to": "dwight",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "You said that in October. And November. And Tuesday.",
+          "to": "angela",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "angela",
+          "text": "This time I mean it.",
+          "to": "dwight",
+          "mood": "sad"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": ""
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Then why are you still standing here?",
+          "to": "angela",
+          "mood": "sad"
+        },
+        {
+          "type": "exit",
+          "who": [
+            "angela"
+          ],
+          "how": "storm_off"
+        },
+        {
+          "type": "talking_head",
+          "who": "dwight",
+          "lines": [
+            "Christmas is next week. The Party Planning Committee is run by a blackmailer.",
+            "Something is going to happen. I can feel it in my sinuses."
+          ],
+          "mood": "deadpan"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "A",
+      "set": "warehouse",
+      "region": "warehouse",
+      "venue": "",
+      "present": [
+        "darryl"
+      ],
+      "recap": "Michael gives Darryl the job, starting in January; Darryl teaches Michael a 'street' phrase that isn't real.",
+      "beats": [
+        {
+          "type": "enter",
+          "who": [
+            "michael"
+          ],
+          "to": "darryl"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Darryl Philbin. Congratulations. You're in sales. Starting January. Upstairs.",
+          "to": "darryl",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "darryl",
+          "text": "For real? Michael. Thank you, man.",
+          "to": "michael",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "How do the kids say congratulations? On the street?",
+          "to": "darryl",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "darryl",
+          "text": "You say 'bubble on the come-up, homeslice.'",
+          "to": "michael",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Bubble on the come-up, homeslice!",
+          "to": "darryl",
+          "mood": "excited"
+        },
+        {
+          "type": "react",
+          "who": [
+            "darryl"
+          ],
+          "reaction": "look_at_camera"
+        }
+      ]
+    },
+    {
+      "part": "tag",
+      "plot": "tag",
+      "set": "annex",
+      "region": "annex",
+      "venue": "",
+      "present": [
+        "ryan",
+        "kelly"
+      ],
+      "recap": "Ryan announces he is 'pivoting' to Kelly.",
+      "beats": [
+        {
+          "type": "say",
+          "who": "ryan",
+          "text": "I'm pivoting. From sales to... strategic temping.",
+          "to": "kelly",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "kelly",
+          "text": "That's so hot.",
+          "to": "ryan",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "ryan",
+          "text": "I know.",
+          "to": "kelly",
+          "mood": "smug"
+        }
+      ]
+    }
+  ]
+}

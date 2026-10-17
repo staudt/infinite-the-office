@@ -12,6 +12,7 @@
     "test": "vitest run",
     "preview": "tsx src/cli/preview.ts",
     "pregen": "tsx src/cli/pregen.ts",
+    "import": "tsx src/cli/import.ts",
     "library": "tsx src/cli/library.ts",
     "render": "tsx src/cli/render.ts",
     "shot": "tsx src/cli/shot.ts",

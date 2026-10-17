@@ -1,0 +1,856 @@
+{
+  "title": "Orientation",
+  "logline": "Holly's HR orientation turns into a two-person comedy show with Michael, Andy announces an a cappella wedding, and Pam hides a letter from New York.",
+  "outline": "A: Michael hijacks Holly's HR orientation, they become a double act, and he asks her out. B: Andy announces the wedding date and an a cappella ceremony; Dwight seethes. C: Pam gets into the Pratt program and hides the letter, then tells Jim. Order: cold, A, B, A, C, A, B, C, A, B, A, tag",
+  "theme": "Saying yes to something that scares you",
+  "storySoFar": "Holly ran an HR orientation that became a double act with Michael, and she said yes to a Friday dinner at Chili's (with crayons). Pam got into a three-month graphic design program at Pratt in New York and leaves in three weeks; Jim told her to go and is keeping the ring in his pocket for now. Andy set the wedding for June 20, with an a cappella ceremony, and asked Dwight to be a groomsman; Dwight said yes too intensely, and Angela tried to keep him out with a lie. Kevin is a groomsman for the open bar. Jim and Pam's fake 're-introduction handshake' is now known to Holly, who added a tenth step.",
+  "extras": [],
+  "away": [
+    "erin",
+    "ryan"
+  ],
+  "stateChanges": [
+    {
+      "type": "relationship",
+      "a": "michael",
+      "b": "holly",
+      "status": "First date set: Friday at Chili's"
+    },
+    {
+      "type": "arc",
+      "arc": "Michael and Holly",
+      "progress": "They are a comedy double act; she said yes to dinner"
+    },
+    {
+      "type": "arc",
+      "arc": "Jim and Pam, For Real",
+      "progress": "Pam got into Pratt and leaves in three weeks; Jim is holding the ring"
+    },
+    {
+      "type": "arc",
+      "arc": "The Wedding of the Century",
+      "progress": "Date set for June 20, a cappella ceremony; Dwight is a groomsman and Angela is nervous"
+    },
+    {
+      "type": "gag",
+      "text": "The nine-step re-introduction handshake (Holly knows a tenth step)"
+    },
+    {
+      "type": "note",
+      "text": "Angela told Andy that Dwight is 'allergic to weddings'"
+    }
+  ],
+  "scenes": [
+    {
+      "part": "cold_open",
+      "plot": "cold_open",
+      "set": "office",
+      "region": "bullpen",
+      "venue": "",
+      "present": [
+        "jim",
+        "dwight",
+        "pam"
+      ],
+      "recap": "Jim convinces Dwight that Holly's arrival means everyone must re-introduce themselves, with a handshake ritual.",
+      "beats": [
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "Dwight, did you do your re-introduction? New HR means everyone re-introduces themselves.",
+          "to": "dwight",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "That's not a rule.",
+          "to": "jim",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "It's in the handbook. Section four. The secret handshake.",
+          "to": "dwight",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Show me the handshake.",
+          "to": "jim",
+          "mood": "nervous"
+        },
+        {
+          "type": "action",
+          "who": "jim",
+          "verb": "high_five",
+          "target": "dwight",
+          "caption": "demonstrates a handshake with nine steps and a hip bump"
+        },
+        {
+          "type": "move",
+          "who": "dwight",
+          "to": "kelly",
+          "pace": "hurry"
+        },
+        {
+          "type": "action",
+          "who": "dwight",
+          "verb": "high_five",
+          "target": "kelly",
+          "caption": "performs all nine steps on Kelly, with great seriousness"
+        },
+        {
+          "type": "say",
+          "who": "kelly",
+          "text": "Dwight, did you just hip-bump me? I'm telling Holly.",
+          "to": "dwight",
+          "mood": "annoyed"
+        },
+        {
+          "type": "react",
+          "who": [
+            "pam"
+          ],
+          "reaction": "laugh"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "A",
+      "set": "office",
+      "region": "conference_room",
+      "venue": "",
+      "present": [
+        "holly",
+        "michael",
+        "jim",
+        "pam",
+        "dwight",
+        "oscar",
+        "angela",
+        "kevin",
+        "phyllis",
+        "stanley",
+        "andy",
+        "meredith",
+        "creed",
+        "kelly"
+      ],
+      "recap": "Holly starts her HR orientation; Michael insists on co-hosting, and the two of them start doing bits.",
+      "beats": [
+        {
+          "type": "gather",
+          "who": [
+            "everyone"
+          ],
+          "to": "conference_room"
+        },
+        {
+          "type": "move",
+          "who": "holly",
+          "to": "conf_front",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "holly",
+          "text": "Hi, everyone. This is a short HR orientation. Very short. Ten slides. Painless.",
+          "to": "all",
+          "mood": "happy"
+        },
+        {
+          "type": "move",
+          "who": "michael",
+          "to": "conf_front",
+          "pace": "hurry"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "And I will be co-hosting. Like Regis and Kelly. I'm Kelly.",
+          "to": "all",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "holly",
+          "text": "Okay, Kelly. Slide one: what is harassment?",
+          "to": "michael",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Harassment is when you don't like somebody and they're there. Like Toby.",
+          "to": "all",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "holly",
+          "text": "Close. Let's act it out. I'll be a cowboy. Howdy, partner.",
+          "to": "michael",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Well howdy yourself. Nice spurs. Is that... inappropriate?",
+          "to": "holly",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "holly",
+          "text": "Only if you say it to my horse.",
+          "to": "michael",
+          "mood": "sarcastic"
+        },
+        {
+          "type": "react",
+          "who": [
+            "michael",
+            "holly"
+          ],
+          "reaction": "laugh"
+        },
+        {
+          "type": "react",
+          "who": [
+            "oscar"
+          ],
+          "reaction": "look_at_camera"
+        },
+        {
+          "type": "talking_head",
+          "who": "oscar",
+          "lines": [
+            "We were promised a replacement for Toby.",
+            "We got a second Michael. With a better attendance policy."
+          ],
+          "mood": "deadpan"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "B",
+      "set": "office",
+      "region": "accounting",
+      "venue": "",
+      "present": [
+        "andy",
+        "angela",
+        "oscar",
+        "kevin",
+        "dwight"
+      ],
+      "recap": "Andy announces his wedding date and an a cappella ceremony; Angela is unmoved and Dwight seethes.",
+      "beats": [
+        {
+          "type": "move",
+          "who": "dwight",
+          "to": "accounting",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "Announcement! Angela and I have a date. June twentieth. Save it. Tattoo it.",
+          "to": "all",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "The ceremony will be entirely a cappella. Even the vows. Especially the vows.",
+          "to": "all",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "angela",
+          "text": "We haven't agreed on the singing.",
+          "to": "andy",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "We haven't disagreed on it either. That's called a mandate.",
+          "to": "angela",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "June is a terrible month for a wedding. Beet harvest. Also bees.",
+          "to": "andy",
+          "mood": "angry"
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "June is good. June has a cake month.",
+          "to": "andy",
+          "mood": "happy"
+        },
+        {
+          "type": "talking_head",
+          "who": "dwight",
+          "lines": [
+            "Andy Bernard is a weak man with a soft neck and a banjo.",
+            "I wish them nothing but the marriage they deserve."
+          ],
+          "mood": "angry"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "A",
+      "set": "office",
+      "region": "michael_office",
+      "venue": "",
+      "present": [
+        "michael",
+        "pam"
+      ],
+      "recap": "Michael asks Pam how to ask Holly out; Pam suggests being normal, and Michael rejects it.",
+      "beats": [
+        {
+          "type": "move",
+          "who": "pam",
+          "to": "michael_guest_1",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Pam. Hypothetically. How would one ask out the head of HR?",
+          "to": "pam",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "You could just ask her to dinner. Like a normal person.",
+          "to": "michael",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Normal. Okay. Or. A pun. Holly, will you be my holly-day?",
+          "to": "pam",
+          "mood": "excited"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": ""
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Dinner. Just dinner, Michael.",
+          "to": "michael",
+          "mood": "awkward"
+        },
+        {
+          "type": "talking_head",
+          "who": "michael",
+          "lines": [
+            "The secret to romance is to say what's in your heart.",
+            "And what's in my heart is a pun. Always has been."
+          ],
+          "mood": "smug"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "C",
+      "set": "office",
+      "region": "bullpen",
+      "venue": "",
+      "present": [
+        "pam"
+      ],
+      "recap": "Pam opens a letter: she's into the Pratt graphic design program in New York, and hides it in her desk.",
+      "beats": [
+        {
+          "type": "action",
+          "who": "pam",
+          "verb": "search",
+          "target": "none",
+          "caption": "opens a thick envelope from the Pratt Institute"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": "she reads it twice"
+        },
+        {
+          "type": "action",
+          "who": "pam",
+          "verb": "hide",
+          "target": "none",
+          "caption": "slips the letter into her desk drawer"
+        },
+        {
+          "type": "talking_head",
+          "who": "pam",
+          "lines": [
+            "I got in. Three months of graphic design in New York.",
+            "I haven't told Jim. I haven't told me, really."
+          ],
+          "mood": "nervous"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "A",
+      "set": "office",
+      "region": "conference_room",
+      "venue": "",
+      "present": [
+        "holly",
+        "michael",
+        "kevin",
+        "meredith",
+        "creed",
+        "stanley",
+        "jim"
+      ],
+      "recap": "The orientation's quiz goes off the rails, and Michael and Holly keep breaking each other up.",
+      "beats": [
+        {
+          "type": "say",
+          "who": "holly",
+          "text": "Quiz time. Kevin: a coworker sends you a joke email. What do you do?",
+          "to": "kevin",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "Laugh. Then forward. Then delete my history.",
+          "to": "holly",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "holly",
+          "text": "Two out of three. Meredith: what's appropriate to drink at the office?",
+          "to": "meredith",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "meredith",
+          "text": "Before or after noon?",
+          "to": "holly",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "creed",
+          "text": "Is this the meeting about my parole?",
+          "to": "holly",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Creed, we talked about this. That's on Thursdays.",
+          "to": "creed",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "stanley",
+          "text": "How many slides are left?",
+          "to": "holly",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "holly",
+          "text": "Nine. We've been on slide one for an hour.",
+          "to": "stanley",
+          "mood": "awkward"
+        },
+        {
+          "type": "react",
+          "who": [
+            "michael",
+            "holly"
+          ],
+          "reaction": "laugh"
+        },
+        {
+          "type": "react",
+          "who": [
+            "jim"
+          ],
+          "reaction": "look_at_camera"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "B",
+      "set": "warehouse",
+      "region": "warehouse",
+      "venue": "",
+      "present": [
+        "darryl"
+      ],
+      "recap": "Dwight asks Darryl how to ruin a wedding without a trace; Darryl recommends therapy.",
+      "beats": [
+        {
+          "type": "enter",
+          "who": [
+            "dwight"
+          ],
+          "to": "darryl"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Darryl. Hypothetically. How long does it take a forklift to cancel a wedding?",
+          "to": "darryl",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "darryl",
+          "text": "That's not a thing forklifts do, man.",
+          "to": "dwight",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "What about a choir. Could a forklift stop a choir.",
+          "to": "darryl",
+          "mood": "angry"
+        },
+        {
+          "type": "say",
+          "who": "darryl",
+          "text": "Dwight, you want to talk about Angela, you go talk to Angela.",
+          "to": "dwight",
+          "mood": "neutral"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": ""
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "I came here for forklift facts. Good day.",
+          "to": "darryl",
+          "mood": "annoyed"
+        },
+        {
+          "type": "exit",
+          "who": [
+            "dwight"
+          ],
+          "how": "storm_off"
+        },
+        {
+          "type": "talking_head",
+          "who": "darryl",
+          "lines": [
+            "Every week somebody from upstairs comes down here with a feeling and calls it a shipping question."
+          ],
+          "mood": "deadpan"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "C",
+      "set": "kitchen",
+      "region": "kitchen",
+      "venue": "",
+      "present": [
+        "pam",
+        "jim"
+      ],
+      "recap": "Pam tells Jim about Pratt; Jim, ring in his pocket, tells her to go.",
+      "beats": [
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "I have to tell you something. I got into Pratt. The graphic design thing.",
+          "to": "jim",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "Pam. That's amazing. When?",
+          "to": "pam",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Three weeks. For three months. In New York. Without... you.",
+          "to": "jim",
+          "mood": "sad"
+        },
+        {
+          "type": "action",
+          "who": "jim",
+          "verb": "hide",
+          "target": "none",
+          "caption": "puts his hand over the ring box in his pocket"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "You're going. You have to go. I'll be fine. I'll have Dwight.",
+          "to": "pam",
+          "mood": "happy"
+        },
+        {
+          "type": "react",
+          "who": [
+            "pam"
+          ],
+          "reaction": "laugh"
+        },
+        {
+          "type": "action",
+          "who": "pam",
+          "verb": "hug",
+          "target": "jim",
+          "caption": "hugs him hard"
+        },
+        {
+          "type": "talking_head",
+          "who": "jim",
+          "lines": [
+            "So, the ring stays in the pocket for a while.",
+            "Pocket's a good place. Pocket's safe. Dwight's not in there."
+          ],
+          "mood": "awkward"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "A",
+      "set": "annex",
+      "region": "annex",
+      "venue": "",
+      "present": [
+        "holly",
+        "kelly"
+      ],
+      "recap": "Michael asks Holly out with the pun anyway, and she says yes.",
+      "beats": [
+        {
+          "type": "enter",
+          "who": [
+            "michael"
+          ],
+          "to": "holly"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Holly. I would like to ask you something, as a man and not as a boss.",
+          "to": "holly",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "holly",
+          "text": "Is this an HR matter?",
+          "to": "michael",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Will you be my... holly-day? For dinner? Friday?",
+          "to": "holly",
+          "mood": "nervous"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": ""
+        },
+        {
+          "type": "say",
+          "who": "holly",
+          "text": "Only if we go somewhere with crayons on the table.",
+          "to": "michael",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "I know a place. It's called Chili's. It has everything.",
+          "to": "holly",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "kelly",
+          "text": "I'm gonna cry. This is like a movie that's really low budget.",
+          "to": "all",
+          "mood": "excited"
+        },
+        {
+          "type": "talking_head",
+          "who": "holly",
+          "lines": [
+            "I'm aware that dating your boss is an HR problem.",
+            "I'm also aware that I'm HR. I'll be stern with myself."
+          ],
+          "mood": "happy"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "B",
+      "set": "office",
+      "region": "bullpen",
+      "venue": "",
+      "present": [
+        "andy",
+        "dwight",
+        "angela"
+      ],
+      "recap": "Andy asks Dwight to be a groomsman; Dwight says yes through gritted teeth, and Angela flinches.",
+      "beats": [
+        {
+          "type": "move",
+          "who": "andy",
+          "to": "dwight_desk",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "D. I know we've had our differences. Will you be my groomsman?",
+          "to": "dwight",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Yes. I will stand beside you. Very close. The whole time.",
+          "to": "andy",
+          "mood": "deadpan"
+        },
+        {
+          "type": "move",
+          "who": "angela",
+          "to": "andy",
+          "pace": "hurry"
+        },
+        {
+          "type": "say",
+          "who": "angela",
+          "text": "Andrew. A word. Dwight cannot be in the wedding.",
+          "to": "andy",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "andy",
+          "text": "Why not? Is there something I should know?",
+          "to": "angela",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "angela",
+          "text": "He's allergic to... weddings.",
+          "to": "andy",
+          "mood": "nervous"
+        },
+        {
+          "type": "react",
+          "who": [
+            "dwight"
+          ],
+          "reaction": "stare"
+        }
+      ]
+    },
+    {
+      "part": "tag",
+      "plot": "tag",
+      "set": "office",
+      "region": "reception",
+      "venue": "",
+      "present": [
+        "dwight",
+        "holly",
+        "pam"
+      ],
+      "recap": "Dwight performs the nine-step handshake on Holly, who knows it.",
+      "beats": [
+        {
+          "type": "move",
+          "who": "dwight",
+          "to": "holly",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Holly. I have not formally re-introduced myself. Section four.",
+          "to": "holly",
+          "mood": "deadpan"
+        },
+        {
+          "type": "action",
+          "who": "dwight",
+          "verb": "high_five",
+          "target": "holly",
+          "caption": "starts the nine-step handshake"
+        },
+        {
+          "type": "action",
+          "who": "holly",
+          "verb": "dance",
+          "target": "dwight",
+          "caption": "finishes it perfectly, with a tenth step"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "There's a tenth step?",
+          "to": "pam",
+          "mood": "panicked"
+        },
+        {
+          "type": "react",
+          "who": [
+            "pam"
+          ],
+          "reaction": "look_at_camera"
+        }
+      ]
+    }
+  ]
+}

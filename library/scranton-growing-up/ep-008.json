@@ -1,0 +1,824 @@
+{
+  "title": "The Nashua Jar",
+  "logline": "Heartbroken, Michael bans the word 'Nashua' and throws himself into a sales call with Dwight, while Pam visits for one day and Jim's secret 5 o'clock proposal is buried under Michael's surprise welcome-back party.",
+  "outline": "A: Michael bans 'Nashua' and drags Dwight to a sales call, where his heartbreak spills into the pitch and somehow closes the deal. B: Pam visits for the day; Jim plans to propose at reception at five, and Michael's instant welcome-back party wrecks it. C: Roy drops off a wedding invitation, sees Pam, and wishes her well. Order: cold, A, B, A, C, B, A, C, A, B, A, tag",
+  "theme": "Moving on without letting go",
+  "storySoFar": "Heartbroken over Holly's move to Nashua, Michael banned the word (the 'N-word jar'; Kevin prepaid) and threw himself into a sales call with Dwight, where he wept and closed a two-year deal with Gil Merkle of Merkle Printing, a recently divorced client. Pam visited for the day. Jim planned to propose at reception at five, where they met, but Michael threw a surprise welcome-back party there at five; the ring is still in his pocket. Roy dropped by with a wedding invitation for Darryl (he's marrying Laura in June) and made peace with Pam, telling Jim not to screw it up. Pam told Michael he's allowed to miss Holly. Phyllis runs the Party Planning Committee. Andy's wedding is June 20.",
+  "extras": [
+    {
+      "id": "gil_merkle",
+      "name": "Gil Merkle",
+      "title": "Owner, Merkle Printing",
+      "voice": "Gruff, tired, recently divorced small-business owner who hates sales pitches and loves honesty.",
+      "look": "office_m"
+    }
+  ],
+  "away": [
+    "pam",
+    "ryan",
+    "holly"
+  ],
+  "stateChanges": [
+    {
+      "type": "arc",
+      "arc": "Michael and Holly",
+      "progress": "Michael is heartbroken; he banned the word Nashua and channels it into work"
+    },
+    {
+      "type": "arc",
+      "arc": "Jim and Pam, For Real",
+      "progress": "Pam visited; Jim's five o'clock proposal at reception was wrecked by Michael's welcome-back party"
+    },
+    {
+      "type": "relationship",
+      "a": "pam",
+      "b": "roy",
+      "status": "At peace; Roy is marrying Laura in June"
+    },
+    {
+      "type": "note",
+      "text": "Gil Merkle of Merkle Printing signed a two-year deal after bonding with Michael over heartbreak"
+    },
+    {
+      "type": "gag",
+      "text": "The Nashua swear jar (Kevin prepays)"
+    }
+  ],
+  "scenes": [
+    {
+      "part": "cold_open",
+      "plot": "cold_open",
+      "set": "office",
+      "region": "bullpen",
+      "venue": "",
+      "present": [
+        "michael",
+        "kevin",
+        "jim",
+        "stanley"
+      ],
+      "recap": "Michael introduces a swear jar for the word 'Nashua'; Kevin prepays.",
+      "beats": [
+        {
+          "type": "action",
+          "who": "michael",
+          "verb": "present",
+          "target": "none",
+          "caption": "sets a jar labeled N-WORD JAR on the counter"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "New rule. Anyone who says the N-word puts a dollar in the jar. The N-word being Nashua.",
+          "to": "all",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "Maybe don't call it the N-word, Michael.",
+          "to": "michael",
+          "mood": "awkward"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "I can't say the real word, Jim. That's the whole point.",
+          "to": "jim",
+          "mood": "annoyed"
+        },
+        {
+          "type": "move",
+          "who": "kevin",
+          "to": "michael",
+          "pace": "walk"
+        },
+        {
+          "type": "action",
+          "who": "kevin",
+          "verb": "present",
+          "target": "none",
+          "caption": "stuffs a five-dollar bill into the jar"
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "Nashua. Nashua. Nashua. Nashua. Nashua. I prepaid.",
+          "to": "michael",
+          "mood": "happy"
+        },
+        {
+          "type": "react",
+          "who": [
+            "michael"
+          ],
+          "reaction": "stare"
+        },
+        {
+          "type": "say",
+          "who": "stanley",
+          "text": "Nine hundred and ninety days.",
+          "to": "none",
+          "mood": "deadpan"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "A",
+      "set": "office",
+      "region": "michael_office",
+      "venue": "",
+      "present": [
+        "michael",
+        "dwight"
+      ],
+      "recap": "Michael announces that work is his wife now and takes Dwight on a sales call.",
+      "beats": [
+        {
+          "type": "move",
+          "who": "dwight",
+          "to": "michael_guest_1",
+          "pace": "hurry"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Dwight. I need to work. Hard. Work is my wife now. Get your coat.",
+          "to": "dwight",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "A sales call? Together? Like the old days?",
+          "to": "michael",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Merkle Printing. Gil Merkle. A tough nut. I am going to crack that nut.",
+          "to": "dwight",
+          "mood": "angry"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "I'll bring the nutcracker. It's a metaphor. I'm also bringing a nutcracker.",
+          "to": "michael",
+          "mood": "smug"
+        },
+        {
+          "type": "talking_head",
+          "who": "dwight",
+          "lines": [
+            "When a man's heart is broken, he becomes a machine. A sales machine.",
+            "Michael is now a machine. I am his oil."
+          ],
+          "mood": "excited"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "B",
+      "set": "office",
+      "region": "reception",
+      "venue": "",
+      "present": [
+        "erin",
+        "jim"
+      ],
+      "recap": "Pam visits for the day; Erin doesn't know her and asks for the password.",
+      "beats": [
+        {
+          "type": "enter",
+          "who": [
+            "pam"
+          ],
+          "to": "erin_desk"
+        },
+        {
+          "type": "say",
+          "who": "erin",
+          "text": "Welcome to Dunder Mifflin! Password, please?",
+          "to": "pam",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Oh. Um. I used to sit right... is it 'Battlestar'?",
+          "to": "erin",
+          "mood": "awkward"
+        },
+        {
+          "type": "say",
+          "who": "erin",
+          "text": "It was, in October! Who are you?",
+          "to": "pam",
+          "mood": "excited"
+        },
+        {
+          "type": "move",
+          "who": "jim",
+          "to": "pam",
+          "pace": "hurry"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "She's with me. She's... she's with me.",
+          "to": "erin",
+          "mood": "happy"
+        },
+        {
+          "type": "action",
+          "who": "jim",
+          "verb": "hug",
+          "target": "pam",
+          "caption": "lifts Pam off the ground"
+        },
+        {
+          "type": "talking_head",
+          "who": "jim",
+          "lines": [
+            "Pam's here till six. The ring is in my pocket.",
+            "Five o'clock. Reception. Where we met. Nothing can go wrong. Michael's out of the office."
+          ],
+          "mood": "excited"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "A",
+      "set": "offsite",
+      "region": "venue",
+      "venue": "MERKLE PRINTING",
+      "present": [
+        "gil_merkle",
+        "michael",
+        "dwight"
+      ],
+      "recap": "Michael and Dwight's pitch to Gil Merkle slides into Michael's love life.",
+      "beats": [
+        {
+          "type": "say",
+          "who": "gil_merkle",
+          "text": "You've got ten minutes. I hate salesmen. I hate paper. I'm in printing, so that's a problem.",
+          "to": "michael",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Gil. Dunder Mifflin paper is reliable. It doesn't leave. It doesn't transfer to a different state.",
+          "to": "gil_merkle",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Our twenty-pound bond has superior tensile strength.",
+          "to": "gil_merkle",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "And when you hold it, it's warm. Like a hand. That you can't hold anymore.",
+          "to": "gil_merkle",
+          "mood": "sad"
+        },
+        {
+          "type": "pause",
+          "seconds": 3,
+          "caption": ""
+        },
+        {
+          "type": "say",
+          "who": "gil_merkle",
+          "text": "Are you okay, pal?",
+          "to": "michael",
+          "mood": "awkward"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "He's fine. He's a machine. Ask him about pricing.",
+          "to": "gil_merkle",
+          "mood": "nervous"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "C",
+      "set": "warehouse",
+      "region": "warehouse",
+      "venue": "",
+      "present": [
+        "darryl"
+      ],
+      "recap": "Roy drops by to give Darryl a wedding invitation and learns Pam is upstairs.",
+      "beats": [
+        {
+          "type": "enter",
+          "who": [
+            "roy"
+          ],
+          "to": "darryl"
+        },
+        {
+          "type": "say",
+          "who": "roy",
+          "text": "Darryl. Brought you something. Don't laugh.",
+          "to": "darryl",
+          "mood": "awkward"
+        },
+        {
+          "type": "action",
+          "who": "roy",
+          "verb": "present",
+          "target": "darryl",
+          "caption": "hands Darryl a cream-colored envelope"
+        },
+        {
+          "type": "say",
+          "who": "darryl",
+          "text": "A wedding invitation? Roy Anderson? Somebody said yes?",
+          "to": "roy",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "roy",
+          "text": "Her name's Laura. She's great. She sets dates and everything.",
+          "to": "darryl",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "darryl",
+          "text": "Pam's upstairs, by the way. Visiting.",
+          "to": "roy",
+          "mood": "neutral"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": ""
+        },
+        {
+          "type": "say",
+          "who": "roy",
+          "text": "Yeah? Okay. Maybe I'll say hi.",
+          "to": "darryl",
+          "mood": "nervous"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "B",
+      "set": "office",
+      "region": "reception",
+      "venue": "",
+      "present": [
+        "jim",
+        "erin"
+      ],
+      "recap": "Jim asks Erin to keep reception clear at five; she swears secrecy, terribly.",
+      "beats": [
+        {
+          "type": "move",
+          "who": "jim",
+          "to": "erin_desk",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "Erin, I need a favor. At five, keep reception clear. No questions.",
+          "to": "erin",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "erin",
+          "text": "Is it a proposal?",
+          "to": "jim",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "No questions, Erin.",
+          "to": "erin",
+          "mood": "awkward"
+        },
+        {
+          "type": "say",
+          "who": "erin",
+          "text": "Okay. I'll make the password 'proposal' so nobody guesses.",
+          "to": "jim",
+          "mood": "happy"
+        },
+        {
+          "type": "react",
+          "who": [
+            "jim"
+          ],
+          "reaction": "facepalm"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "A",
+      "set": "offsite",
+      "region": "venue",
+      "venue": "MERKLE PRINTING",
+      "present": [
+        "gil_merkle",
+        "michael",
+        "dwight"
+      ],
+      "recap": "Michael breaks down; Gil, divorced last spring, relates, and buys a year of paper.",
+      "beats": [
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Her name is Holly. She does voices. And she's in... a city that starts with N.",
+          "to": "gil_merkle",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "gil_merkle",
+          "text": "My wife left in April. Took the dog. Took the good printer.",
+          "to": "michael",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "The good printer? Gil. I'm so sorry.",
+          "to": "gil_merkle",
+          "mood": "sad"
+        },
+        {
+          "type": "action",
+          "who": "michael",
+          "verb": "hug",
+          "target": "gil_merkle",
+          "caption": "hugs Gil across the table"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "So... a one-year contract?",
+          "to": "gil_merkle",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "gil_merkle",
+          "text": "Two years. Anybody who cries that much over a woman won't screw me on toner.",
+          "to": "dwight",
+          "mood": "deadpan"
+        },
+        {
+          "type": "talking_head",
+          "who": "dwight",
+          "lines": [
+            "Michael closed a two-year deal by weeping.",
+            "I've been doing it wrong. Tomorrow I will try weeping."
+          ],
+          "mood": "deadpan"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "C",
+      "set": "parking_lot",
+      "region": "entrance",
+      "venue": "",
+      "present": [
+        "pam",
+        "roy"
+      ],
+      "recap": "Roy tells Pam he's getting married, and wishes her well; Jim watches through the glass.",
+      "beats": [
+        {
+          "type": "say",
+          "who": "roy",
+          "text": "Pam. Hey. You look good. New York good.",
+          "to": "pam",
+          "mood": "awkward"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Roy. Hi. Darryl says you're getting married?",
+          "to": "roy",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "roy",
+          "text": "June. I'm doing it right this time. I'm sorry I didn't, with you.",
+          "to": "pam",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "I'm really happy for you, Roy. I mean it.",
+          "to": "roy",
+          "mood": "happy"
+        },
+        {
+          "type": "enter",
+          "who": [
+            "jim"
+          ],
+          "to": "entrance"
+        },
+        {
+          "type": "say",
+          "who": "roy",
+          "text": "Halpert. You're a lucky guy. Don't screw it up.",
+          "to": "jim",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "Working on it.",
+          "to": "roy",
+          "mood": "nervous"
+        },
+        {
+          "type": "exit",
+          "who": [
+            "roy"
+          ],
+          "how": "walk"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "A",
+      "set": "office",
+      "region": "bullpen",
+      "venue": "",
+      "present": [
+        "michael",
+        "dwight",
+        "pam",
+        "jim",
+        "andy",
+        "kevin",
+        "kelly",
+        "phyllis"
+      ],
+      "recap": "Michael returns triumphant, sees Pam, and instantly declares a welcome-back party at reception, at five.",
+      "beats": [
+        {
+          "type": "enter",
+          "who": [
+            "michael",
+            "dwight"
+          ],
+          "to": "bullpen"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Two-year contract! Who's the best? Me! And... Pam! Pam's here!",
+          "to": "all",
+          "mood": "excited"
+        },
+        {
+          "type": "move",
+          "who": "michael",
+          "to": "pam",
+          "pace": "hurry"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Party. Welcome-back party. Reception. Five o'clock. Kelly, streamers. Kevin, a cake.",
+          "to": "all",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "Five? At reception? What about five thirty? Or in the break room? Or never?",
+          "to": "michael",
+          "mood": "panicked"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Five, Jim. Reception. It's where she belongs.",
+          "to": "jim",
+          "mood": "happy"
+        },
+        {
+          "type": "react",
+          "who": [
+            "jim"
+          ],
+          "reaction": "look_at_camera"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "B",
+      "set": "office",
+      "region": "reception",
+      "venue": "",
+      "present": [
+        "michael",
+        "pam",
+        "jim",
+        "erin",
+        "kelly",
+        "kevin",
+        "andy",
+        "phyllis",
+        "dwight"
+      ],
+      "recap": "The party takes over reception at five; Jim's moment is gone, and the ring goes back in his pocket.",
+      "beats": [
+        {
+          "type": "caption",
+          "text": "5:00 PM"
+        },
+        {
+          "type": "action",
+          "who": "kelly",
+          "verb": "dance",
+          "target": "none",
+          "caption": "throws streamers at Pam"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Pam Beesly, everybody! Home from New York! Where everything is better except us!",
+          "to": "all",
+          "mood": "excited"
+        },
+        {
+          "type": "action",
+          "who": "andy",
+          "verb": "sing",
+          "target": "pam",
+          "caption": "sings 'Welcome Back' in four-part harmony, alone"
+        },
+        {
+          "type": "say",
+          "who": "erin",
+          "text": "Jim, should I tell everyone the password is 'pro—'",
+          "to": "jim",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "No. Erin. Thank you. No.",
+          "to": "erin",
+          "mood": "panicked"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "This is really sweet, Michael. Thank you.",
+          "to": "michael",
+          "mood": "happy"
+        },
+        {
+          "type": "action",
+          "who": "jim",
+          "verb": "hide",
+          "target": "none",
+          "caption": "pats his pocket and leaves the ring where it is"
+        },
+        {
+          "type": "talking_head",
+          "who": "jim",
+          "lines": [
+            "It's fine. The moment will come. Maybe on a day when Michael's in the hospital. Nothing serious.",
+            "A sprain."
+          ],
+          "mood": "deadpan"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "A",
+      "set": "office",
+      "region": "michael_office",
+      "venue": "",
+      "present": [
+        "michael",
+        "pam"
+      ],
+      "recap": "Pam asks Michael about Holly; he admits the party was so he wouldn't have to think about her.",
+      "beats": [
+        {
+          "type": "move",
+          "who": "pam",
+          "to": "michael_guest_1",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Jim told me about Holly. I'm so sorry, Michael.",
+          "to": "michael",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "The party was for you. And also so I didn't have to be quiet for one second.",
+          "to": "pam",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "You can call her, you know. You're allowed to miss her.",
+          "to": "michael",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "That'll be a dollar. You said the N-word. Implied.",
+          "to": "pam",
+          "mood": "deadpan"
+        },
+        {
+          "type": "react",
+          "who": [
+            "pam"
+          ],
+          "reaction": "laugh"
+        }
+      ]
+    },
+    {
+      "part": "tag",
+      "plot": "tag",
+      "set": "office",
+      "region": "bullpen",
+      "venue": "",
+      "present": [
+        "dwight",
+        "jim"
+      ],
+      "recap": "Dwight tries weeping on a sales call, by phone, and it does not work.",
+      "beats": [
+        {
+          "type": "action",
+          "who": "dwight",
+          "verb": "phone_call",
+          "target": "none",
+          "caption": "calls a client, voice trembling"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Mr. Phelps, my heart is broken. Will you buy some paper. Hello? Hello.",
+          "to": "none",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "He hung up. Weeping is a flawed technique.",
+          "to": "jim",
+          "mood": "deadpan"
+        },
+        {
+          "type": "react",
+          "who": [
+            "jim"
+          ],
+          "reaction": "laugh"
+        }
+      ]
+    }
+  ]
+}
