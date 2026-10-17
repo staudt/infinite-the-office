@@ -493,8 +493,9 @@ window.addEventListener('keydown', (e) => {
   } else if (e.key === 'd') {
     $('debug').hidden = !$('debug').hidden;
   } else if (e.key === 'f') {
-    if (document.fullscreenElement) document.exitFullscreen();
-    else document.documentElement.requestFullscreen().catch(() => {});
+    theater(!document.body.classList.contains('theater'));
+  } else if (e.key === 'Escape') {
+    theater(false); // the browser leaves full screen on its own; this covers ?tv=1 and no Fullscreen API (iPhone)
   } else if (e.key === 'N') {
     void openStart(true);
   } else if (e.key === 'ArrowLeft') {
@@ -505,6 +506,29 @@ window.addEventListener('keydown', (e) => {
     else jump();
   }
 });
+
+// ------------------------------------------------------------------ theater: just the picture, full screen
+
+/** Shows only the stage, letterboxed on black; also asks the browser for full screen when it can. */
+function theater(on: boolean): void {
+  document.body.classList.toggle('theater', on);
+  if (on && !document.fullscreenElement) document.documentElement.requestFullscreen?.().catch(() => {});
+  if (!on && document.fullscreenElement) void document.exitFullscreen();
+  idle();
+}
+// Leaving browser full screen (Esc, the browser's own UI) leaves theater too.
+document.addEventListener('fullscreenchange', () => { if (!document.fullscreenElement) theater(false); });
+$('theater-btn').addEventListener('click', () => theater(true));
+$('stage').addEventListener('dblclick', () => theater(!document.body.classList.contains('theater')));
+// The cursor hides after a moment without the mouse moving, like a video player.
+let idleTimer: number | undefined;
+function idle(): void {
+  document.body.classList.remove('idle');
+  window.clearTimeout(idleTimer);
+  if (document.body.classList.contains('theater')) idleTimer = window.setTimeout(() => document.body.classList.add('idle'), 2000);
+}
+window.addEventListener('mousemove', idle);
+if (params.has('tv') && !RENDER) { document.body.classList.add('theater'); idle(); } // windowed (no user gesture yet for full screen)
 
 if (RENDER) {
   const view = () => {

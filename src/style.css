@@ -43,6 +43,8 @@ body { padding: 12px 16px; }
 #hud .brand { color: var(--accent); font-weight: 700; letter-spacing: 0.14em; }
 #hud #ep { color: var(--fg); }
 #hud #seg { color: #9ad; }
+#theater-btn { margin-left: auto; font: inherit; font-size: 12px; color: var(--fg); background: #16161f; border: 1px solid #2c2c3c; border-radius: 4px; padding: 2px 8px; cursor: pointer; }
+#theater-btn:hover { border-color: var(--accent); }
 
 main { flex: 1; min-height: 0; display: flex; gap: 14px; }
 
@@ -319,7 +321,7 @@ kbd { background: #1a1a26; border: 1px solid #2a2a3a; border-radius: 3px; paddin
 #subtitle { display: none; }
 body.render { padding: 0; overflow: hidden; }
 body.render *, body.render *::before, body.render *::after { animation: none !important; transition: none !important; }
-body.render footer, body.render #side, body.render #debug, body.render #ended, body.render #start { display: none !important; }
+body.render footer, body.render #theater-btn, body.render #side, body.render #debug, body.render #ended, body.render #start { display: none !important; }
 body.render #frame { width: 100%; max-width: none; height: 100%; margin: 0; padding: 12px; gap: 8px; }
 body.render #frame > #hud { width: auto; height: 34px; align-items: center; flex-wrap: nowrap; font-size: 15px; gap: 18px; border-bottom: 1px solid #1c1c28; padding-bottom: 6px; }
 body.render #hud #ep { flex: 1; }
@@ -349,3 +351,14 @@ body.render.vertical #feed { order: 3; display: flex; flex-direction: column; ju
 body.render.vertical #feed .ts { display: none; }
 body.render.horizontal #feed { display: none; }
 body.render main { width: 100%; } body.render #left { flex: 1; min-height: 0; }
+
+/* Theater (f, the HUD button, double-click, or ?tv=1): only the picture, letterboxed on black, like a video. */
+html:has(body.theater), body.theater { background: #000; }
+body.theater #frame > :not(main), body.theater #side, body.theater #feed, body.theater #subtitle { display: none; }
+body.theater #stage {
+  position: fixed; z-index: 2; inset: 0; margin: auto;
+  width: min(100vw, 100vh * 16 / 9); aspect-ratio: 16 / 9; --u: 1.7cqw;
+}
+body.theater #head-gfx, body.theater #map-gfx { border: 0; border-radius: 0; }
+body.theater.idle, body.theater.idle * { cursor: none; }
+body.theater #debug { z-index: 3; }

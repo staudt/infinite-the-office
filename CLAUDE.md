@@ -18,7 +18,7 @@ npm run import -- --dir <drafts> [--out library]                 # hand-written 
 npm run render -- --show <id> --ep N [--scene M] [--format vertical]   # MP4 (needs ffmpeg + chromium); --demo, --season
 npm run shot -- --show <id> --ep N [--scene M] [--at SEC] [--every SEC --count K] [--cam all] [--grid]   # PNGs in shots/ (same frames as the MP4); --demo
 ```
-URL params: `show`, `ep`, `scene` (1-based), `demo=1`, `seed`, `play`, `id`, `name`, `direction`, `render=1` (used by the renderer), `cam=all` (frame the whole set), `grid=1` (logic-grid overlay: blocked cells, seats/spots/exits, regions, walker paths). Keys: space, 1–4 speed, ←/→ scene, d debug, f fullscreen, N start screen.
+URL params: `show`, `ep`, `scene` (1-based), `demo=1`, `seed`, `play`, `id`, `name`, `direction`, `render=1` (used by the renderer), `cam=all` (frame the whole set), `grid=1` (logic-grid overlay: blocked cells, seats/spots/exits, regions, walker paths), `tv=1` (theater: only the stage, letterboxed). Keys: space, 1–4 speed, ←/→ scene, d debug, f theater + browser full screen (also the HUD button or double-click; Esc leaves), N start screen.
 
 ## Architecture (the LLM decides *what* happens, the engine decides *how*)
 1. **Writer** (`server/writer.ts`, `src/writer/`, `src/schema/`). Mirrors wrestling's booker: `callTool`/`callWithRetry`, prompt caching, lenient Zod parsing, and one retry only when the result is unplayable. Repairs are logged to `sessions/failures/`.

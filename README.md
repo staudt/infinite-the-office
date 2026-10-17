@@ -39,7 +39,7 @@ The first visit opens the **start screen** (press `N` to reopen it):
 
 Episode N+1 is written while N airs; the arrows next to the episode title in the side panel switch episodes once the next one is ready. After the cold open, the show's logo and the episode title play over the office. The footer shows the connection: live (with model names), server up without a key, or not connected.
 
-Keys: `space` pause · `1`–`4` speed (1/2/4/8x) · `←`/`→` previous/next scene · `d` debug panel · `f` fullscreen · `N` shows · `Esc` close the start screen.
+Keys: `space` pause · `1`–`4` speed (1/2/4/8x) · `←`/`→` previous/next scene · `d` debug panel · `f` full screen (just the picture, like a video; also the HUD button or a double-click on it; `?tv=1` opens in it) · `N` shows · `Esc` close the start screen or leave full screen.
 
 URL params (read in `src/main.ts`): `?show=<id>` opens a stored show, `?ep=N` and `?scene=N` jump to an episode and scene (1-based scene), `?play=new|library` and `?id=<id>` select a program, `?direction=` and `?name=` prefill a new series, `?demo` plays the built-in demo episode, and `?seed=N` sets the seed.
 
