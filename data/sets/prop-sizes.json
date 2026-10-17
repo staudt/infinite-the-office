@@ -198,5 +198,101 @@
  "reception_counter": {
   "w": 272,
   "h": 78
+ },
+ "lamp_cabinet": {
+  "w": 33,
+  "h": 117
+ },
+ "michael_back_cabinet": {
+  "w": 46,
+  "h": 83
+ },
+ "filing_cabinet_tall": {
+  "w": 37,
+  "h": 76
+ },
+ "michael_desk_2": {
+  "w": 94,
+  "h": 69
+ },
+ "wardrobe_2": {
+  "w": 42,
+  "h": 79
+ },
+ "bookcase_tall": {
+  "w": 33,
+  "h": 114
+ },
+ "armchair_2": {
+  "w": 58,
+  "h": 69
+ },
+ "side_table": {
+  "w": 45,
+  "h": 57
+ },
+ "conference_table_2": {
+  "w": 143,
+  "h": 78
+ },
+ "easel": {
+  "w": 51,
+  "h": 76
+ },
+ "plant_2": {
+  "w": 46,
+  "h": 76
+ },
+ "wall_shelf_side": {
+  "w": 39,
+  "h": 92
+ },
+ "plant_small": {
+  "w": 43,
+  "h": 53
+ },
+ "credenza_printer": {
+  "w": 105,
+  "h": 80
+ },
+ "shelf_dark": {
+  "w": 52,
+  "h": 66
+ },
+ "pod_jim_dwight": {
+  "w": 120,
+  "h": 175
+ },
+ "pod_phyllis_stanley": {
+  "w": 112,
+  "h": 167
+ },
+ "accounting_shelf": {
+  "w": 40,
+  "h": 120
+ },
+ "pod_accounting": {
+  "w": 180,
+  "h": 137
+ },
+ "plant_floor": {
+  "w": 44,
+  "h": 74
+ },
+ "low_shelf_1": {
+  "w": 130,
+  "h": 66
+ },
+ "low_shelf_2": {
+  "w": 126,
+  "h": 48
+ },
+ "pod_meredith": {
+  "w": 105,
+  "h": 161
+ },
+ "pod_creed": {
+  "w": 114,
+  "h": 156
  }
 }

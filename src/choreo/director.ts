@@ -126,6 +126,7 @@ export class Director {
       const a = st.actor(id);
       if (!entrants.has(id) && !a.visible) st.show(a, this.startCell(a, region, sc));
     }
+    for (const id of sc.present) if (!entrants.has(id)) this.faceFocus(st.actor(id));
     if (title) yield* this.card(title, '', 1.5);
     if (sc.set === 'office') st.spawn(this.ambient(token, new Rng(hashSeed('ambient', index)), background));
 
@@ -217,8 +218,8 @@ export class Director {
     if (other && other !== a && other.visible) return this.besideOf(other, occ);
     const spot = set.spots[to];
     // A standing spot next to someone counts as taken (a seat beside someone is fine).
-    // Someone's taken seat with a visiting place (reception): go where visitors stand.
-    const sitter = spot && occ.has(key(spot)) && set.visits[key(spot)] ? st.visibleActors().find((o) => o !== a && key(o.dest ?? o.pos) === key(spot)) : undefined;
+    // Someone's taken seat (Michael's desk, reception): stand beside them, or where visitors stand.
+    const sitter = spot && occ.has(key(spot)) ? st.visibleActors().find((o) => o !== a && key(o.dest ?? o.pos) === key(spot)) : undefined;
     if (sitter) return this.besideOf(sitter, occ);
     if (spot) return occ.has(key(spot)) || (set.kinds[spot.y][spot.x] !== 'seat' && set.crowded(spot, occ)) ? set.nextTo(spot, occ) : spot;
     if (set.regions[to]) return set.freeCellIn(to, occ, () => st.rng.next());
@@ -230,10 +231,10 @@ export class Director {
   private besideOf(other: Actor, occ: Set<string>): Point | null {
     const set = this.st.set, at = other.dest ?? other.pos, region = set.regionAt(at);
     const free = (p: Point) => !set.crowded(p, occ) && !set.hidden(p);
-    // A seat with a visiting place (across a reception desk, so the desk hiding their legs is the point): stand there,
-    // or as near it as there is room.
-    const visit = set.visits[key(at)];
-    if (visit) return set.walkable(visit) && !set.crowded(visit, occ) ? visit : set.nextTo(visit, occ);
+    // A seat with visiting places (across a reception desk, even where the desk hides their legs): the first free one,
+    // or as near the first as there is room.
+    const visits = set.visits[key(at)];
+    if (visits) return visits.find((v) => set.walkable(v) && !set.crowded(v, occ)) ?? set.nextTo(visits[0], occ);
     // Their own region first (region rects can end right beside a desk), then anywhere.
     for (const strict of [true, false]) {
       for (const dy of [0, 1, -1, 2, -2]) {
@@ -265,7 +266,7 @@ export class Director {
       goal = (near && st.set.freeCellIn(near, st.occupied(a), () => st.rng.next())) || this.target(a, region) || exit;
     }
     st.show(a, exit, true);
-    st.walk(a, goal, pace);
+    st.walk(a, goal, pace, () => this.faceFocus(a, st.actors.get(to)));
   }
 
   private *bringIn(a: Actor, toward: Actor | null, region: string): Co {
@@ -285,7 +286,25 @@ export class Director {
     const { st } = this;
     let p = this.target(a, to);
     if (!p && st.set.regionAt(a.pos) !== region && st.set.regions[region]) p = st.set.freeCellIn(region, st.occupied(a), () => st.rng.next());
-    if (p && (p.x !== a.x || p.y !== a.y)) this.st.walk(a, p, pace);
+    if (p && (p.x !== a.x || p.y !== a.y)) this.st.walk(a, p, pace, () => this.faceFocus(a, st.actors.get(to)));
+  }
+
+  /** Someone who stopped standing turns toward what they came for: whoever sits at the visiting place they stand on,
+   *  else `toward`, else the middle of the others in their region (the conference table). Sitters keep their seat's way. */
+  private faceFocus(a: Actor, toward?: Actor): void {
+    const { st } = this, set = st.set;
+    if (!a.visible || a.seated) return;
+    const at = key(a.pos), seat = Object.entries(set.visits).find(([, pts]) => pts.some((v) => key(v) === at))?.[0];
+    let to = (seat && st.visibleActors().find((o) => o !== a && key(o.pos) === seat)?.pos) || (toward?.visible && toward !== a ? toward.pos : undefined);
+    if (!to) {
+      const region = set.regionAt(a.pos), others = st.visibleActors().filter((o) => o !== a && region && set.regionAt(o.dest ?? o.pos) === region);
+      if (!others.length) return;
+      const ps = others.map((o) => o.dest ?? o.pos);
+      to = { x: ps.reduce((s, p) => s + p.x, 0) / ps.length, y: ps.reduce((s, p) => s + p.y, 0) / ps.length };
+    }
+    const dx = (to.x - a.x) * set.cellW, dy = (to.y - a.y) * set.cellH;
+    if (!dx && !dy) return;
+    if (Math.abs(dx) >= Math.abs(dy)) { a.turn = 'side'; a.facing = dx > 0 ? 1 : -1; } else a.turn = dy > 0 ? 'front' : 'back';
   }
 
   // ---------------------------------------------------------------- beats
@@ -386,7 +405,7 @@ export class Director {
       const spot = seat ?? set.freeCellIn(place, new Set([...occ, ...taken]), () => st.rng.next());
       if (!spot) continue;
       taken.add(key(spot));
-      if (spot.x !== a.x || spot.y !== a.y || a.moving) st.walk(a, spot, 'walk');
+      if (spot.x !== a.x || spot.y !== a.y || a.moving) st.walk(a, spot, 'walk', () => this.faceFocus(a));
     }
     yield 0.2;
   }

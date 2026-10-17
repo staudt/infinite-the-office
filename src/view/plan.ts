@@ -3,7 +3,7 @@
 // World units are px at native sprite scale; walls are screen rects (cap on top, face below).
 import { propRect, solidRects, type Layout, type LProp, type Rect, type SetMap } from '../sets/index.ts';
 import { art } from './art';
-import { BG_SCALE, CHAIR_BOX, CHAIR_SCALE, layoutFoot, SEAT_BASE, SEAT_DROP } from './geometry';
+import { BG_SCALE, CHAIR_BOX, CHAIR_SCALE, SEAT_BASE, SEAT_DROP } from './geometry';
 
 export type Dir = 'front' | 'back' | 'side';
 /** A seat cell: where the sitter's feet go, which way they face, and whether a chair is drawn. */
@@ -274,7 +274,8 @@ function chairs(set: SetMap, L: Layout): Chair[] {
   for (const [name, s] of Object.entries(L.spots)) {
     const cell = set.spots[name];
     if (!s.seat || !cell) continue;
-    const [fx, fy] = layoutFoot(set, cell.x, cell.y), [dir, face] = FACING[s.seat] ?? FACING.down;
+    // The spot's own px, not its cell centre: seats line up with the desk art (keyboards) finer than the 16 px grid.
+    const [fx, fy] = [s.x, s.y], [dir, face] = FACING[s.seat] ?? FACING.down;
     // Left/right sitters (pod chairs) are drawn over the pod; up/down only when the layout says so.
     // The prop they sit at: under their feet, or (side seats) just ahead of them, where their hands and knees go.
     const ahead = dir === 'side' ? fx + face * DESK_REACH : fx;

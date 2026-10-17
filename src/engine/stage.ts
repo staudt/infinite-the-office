@@ -179,6 +179,7 @@ export class Stage {
     a.dest = null;
     a.walkId++;
     a.seated = this.set.kinds[p.y][p.x] === 'seat';
+    a.turn = null;
     if (!was && announce) this.bus.emit({ type: 'spawn', id: a.id });
   }
 
@@ -207,6 +208,7 @@ export class Stage {
     const set = this.set;
     const path = findPath(set.width, set.height, (x, y) => set.walkable({ x, y }) && !blocked.has(`${x},${y}`), a.pos, to) ?? set.path(a.pos, to);
     a.seated = false;
+    a.turn = null;
     let due = this.wt;
     for (const p of path ?? [to]) {
       a.stepFrom = a.pos;

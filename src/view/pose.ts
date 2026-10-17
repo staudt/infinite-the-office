@@ -39,7 +39,7 @@ export function poseOf(a: Actor, t: number, env: PoseEnv): Pose {
     moving = true;
     const dx = a.stepTo.x - a.stepFrom.x, dy = a.stepTo.y - a.stepFrom.y;
     if (dx) { hd.dir = 'side'; hd.face = dx > 0 ? 1 : -1; } else hd.dir = dy > 0 ? 'front' : 'back';
-  } else if (hd.dir === 'side') hd.face = a.facing;
+  } else if (a.turn) { hd.dir = a.turn; hd.face = a.facing; } else if (hd.dir === 'side') hd.face = a.facing;
   env.heading.set(a.id, hd);
   const chair = a.seated ? env.seats.get(`${a.x},${a.y}`) ?? null : null;
   const dir = chair ? chair.dir : hd.dir, face = chair ? chair.face : hd.face;
@@ -56,11 +56,11 @@ export function poseOf(a: Actor, t: number, env: PoseEnv): Pose {
     if (type && on) return { ...base, seated: true, frame: Math.floor(t * 6) % 2, art: type, ownChair: true };
     return { ...base, seated: true, frame: 0, art: sit, ownChair: !!sit };
   }
-  // Standing still with a reaction: its pose art, or turn to the camera for a look.
-  const r = !moving && a.reaction && a.reactionUntil > t ? REACT_POSE[a.reaction] : undefined;
-  const react = r ? poseArt(`${a.id}_react_${r}`) : null;
-  if (react) return { ...base, seated: false, frame: 0, art: react };
-  if (r === 'look') return { ...base, dir: 'front', seated: false, frame: 0, art: null };
+  // Standing still with a reaction: its pose art, else just turn to the camera (all reaction art faces it).
+  if (!moving && a.reaction && a.reactionUntil > t) {
+    const r = REACT_POSE[a.reaction], react = r ? poseArt(`${a.id}_react_${r}`) : null;
+    return { ...base, dir: 'front', seated: false, frame: 0, art: react };
+  }
   return { ...base, seated: false, frame: moving ? 1 + (Math.floor(t * 8) % 4) : 0, art: null };
 }
 
@@ -69,7 +69,7 @@ export const atDeskSide = (p: Pose): boolean => p.seated && p.dir === 'side' && 
 
 /** Where a pose's feet are (world px): seated people sink into the chair; side sitters at a desk sit back from it. */
 export function poseFeet(p: Pose, geo: Geo): { fx: number; fy0: number; fy: number } {
-  const [x, y] = geo.foot(p.x, p.y), desk = atDeskSide(p);
+  const [x, y] = p.seated && p.chair ? [p.chair.fx, p.chair.fy] : geo.foot(p.x, p.y), desk = atDeskSide(p);
   const fx = desk ? x - p.face * DESK_SIT.back : x, fy0 = desk ? y + DESK_SIT.down : y;
   return { fx, fy0, fy: fy0 + (p.seated ? SEAT_DROP : 0) };
 }

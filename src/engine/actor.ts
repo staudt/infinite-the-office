@@ -13,6 +13,8 @@ export class Actor {
   /** Standing on a seat cell (sitting). */
   seated = false;
   facing: 1 | -1 = 1;
+  /** Which way they stand turned once stopped (side = toward `facing`), e.g. toward the conference table; cleared by walking. */
+  turn: 'front' | 'back' | 'side' | null = null;
   speaking = false;
   /** Where the current walk ends (a reserved cell); null when standing still. */
   dest: Point | null = null;

@@ -78,7 +78,7 @@ corridors 32 px or wider.
   "windows": [{ "x":0,"y":0,"w":0,"h":0 }],
   "decor":   [{ "sprite":"wall_picture","x":0,"y":0,"scale":1 }],
   "props":   [{ "sprite":"desk_pod_b","x":0,"y":0,"flip":false,"scale":1,"w":0,"h":0,"solid":{"x":0,"y":0,"w":0,"h":0},"split":0 }],
-  "spots":   { "jim_desk": { "x":0,"y":0,"seat":"right","chair":false,"front":true,"visit":{"x":0,"y":0} } },
+  "spots":   { "jim_desk": { "x":0,"y":0,"seat":"right","chair":false,"front":true,"visit":[{"x":0,"y":0}] } },
   "regions": { "bullpen": [{ "x":0,"y":0,"w":0,"h":0 }] } }
 ```
 
@@ -97,11 +97,11 @@ corridors 32 px or wider.
   sprite (at most 56 px deep), plants block only their pot. Sprites with no art (the `water_cooler`) take `w`/`h`.
   `split` (px from the sprite's top) draws the rows above it behind whoever stands at the prop, so Michael can sit
   between his hutch and his desk.
-- **spots**: the names the writer and director use. `x`,`y` snap to their cell and the person stands at the cell
-  center. `seat` is the direction the sitter faces (`down`, `up`, `left`, `right`): the spot becomes a seat, a chair
+- **spots**: the names the writer and director use. `x`,`y` snap to their cell for walking; a person stands at the cell center, but a seat (and its
+  sitter) is drawn at the exact `x`,`y`, so it can line up with a keyboard in the desk art. `seat` is the direction the sitter faces (`down`, `up`, `left`, `right`): the spot becomes a seat, a chair
   is drawn (`"chair": false` when the prop art already has one), and a left/right sitter is drawn over the prop
-  beside them (`"front"` forces that for other seats). Put a seat where the art's chair is. `visit` (world px) is where whoever
-  talks to the sitter stands, e.g. across the reception desk, even where the prop hides their legs.
+  beside them (`"front"` forces that for other seats). Put a seat where the art's chair is. `visit` (world px, a list) is where people who
+  talk to the sitter stand, first free one first, e.g. across the reception desk, even where the prop hides their legs.
 - **regions**: lists of rects; a walkable cell belongs to the first region holding its center. Doors belong to none.
 
 Exits and seats must be reachable (`tests/sets.test.ts` checks every spot from the main entrance). `?cam=all`

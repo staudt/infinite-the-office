@@ -9,7 +9,7 @@ const EXPECT: Record<string, { spots: string[]; regions: string[]; exits: string
   office: {
     spots: [
       'michael_desk', 'michael_guest_1', 'michael_guest_2', 'pam_desk', 'jim_desk', 'dwight_desk', 'stanley_desk',
-      'phyllis_desk', 'andy_desk', 'creed_desk', 'meredith_desk', 'oscar_desk', 'angela_desk', 'kevin_desk',
+      'phyllis_desk', 'andy_desk', 'ryan_desk', 'creed_desk', 'meredith_desk', 'oscar_desk', 'angela_desk', 'kevin_desk',
       'erin_desk', ...range('conf_', 10), 'conf_front', 'copier', 'water_cooler',
     ],
     regions: ['michael_office', 'conference_room', 'reception', 'bullpen', 'accounting'],
@@ -118,7 +118,7 @@ describe('office layout', () => {
   it('visiting places are reachable floor (Pam is talked to across the reception desk)', () => {
     const door = office.exits.parking_lot[0];
     expect(office.visits[key(office.spots.pam_desk)]).toBeDefined();
-    for (const p of Object.values(office.visits)) expect(office.path(door, p)).not.toBeNull();
+    for (const p of Object.values(office.visits).flat()) expect(office.path(door, p)).not.toBeNull();
   });
 
   it('walls block, door gaps do not, and people keep a gap when picking cells', () => {

@@ -249,6 +249,126 @@
    "src": "props/reception_counter.png",
    "w": 272,
    "h": 78
+  },
+  "lamp_cabinet": {
+   "src": "props/lamp_cabinet.png",
+   "w": 33,
+   "h": 117
+  },
+  "michael_back_cabinet": {
+   "src": "props/michael_back_cabinet.png",
+   "w": 46,
+   "h": 83
+  },
+  "filing_cabinet_tall": {
+   "src": "props/filing_cabinet_tall.png",
+   "w": 37,
+   "h": 76
+  },
+  "michael_desk_2": {
+   "src": "props/michael_desk_2.png",
+   "w": 94,
+   "h": 69
+  },
+  "wardrobe_2": {
+   "src": "props/wardrobe_2.png",
+   "w": 42,
+   "h": 79
+  },
+  "bookcase_tall": {
+   "src": "props/bookcase_tall.png",
+   "w": 33,
+   "h": 114
+  },
+  "armchair_2": {
+   "src": "props/armchair_2.png",
+   "w": 58,
+   "h": 69
+  },
+  "side_table": {
+   "src": "props/side_table.png",
+   "w": 45,
+   "h": 57
+  },
+  "conference_table_2": {
+   "src": "props/conference_table_2.png",
+   "w": 143,
+   "h": 78
+  },
+  "easel": {
+   "src": "props/easel.png",
+   "w": 51,
+   "h": 76
+  },
+  "plant_2": {
+   "src": "props/plant_2.png",
+   "w": 46,
+   "h": 76
+  },
+  "wall_shelf_side": {
+   "src": "props/wall_shelf_side.png",
+   "w": 39,
+   "h": 92
+  },
+  "plant_small": {
+   "src": "props/plant_small.png",
+   "w": 43,
+   "h": 53
+  },
+  "credenza_printer": {
+   "src": "props/credenza_printer.png",
+   "w": 105,
+   "h": 80
+  },
+  "shelf_dark": {
+   "src": "props/shelf_dark.png",
+   "w": 52,
+   "h": 66
+  },
+  "pod_jim_dwight": {
+   "src": "props/pod_jim_dwight.png",
+   "w": 120,
+   "h": 175
+  },
+  "pod_phyllis_stanley": {
+   "src": "props/pod_phyllis_stanley.png",
+   "w": 112,
+   "h": 167
+  },
+  "accounting_shelf": {
+   "src": "props/accounting_shelf.png",
+   "w": 40,
+   "h": 120
+  },
+  "pod_accounting": {
+   "src": "props/pod_accounting.png",
+   "w": 180,
+   "h": 137
+  },
+  "plant_floor": {
+   "src": "props/plant_floor.png",
+   "w": 44,
+   "h": 74
+  },
+  "low_shelf_1": {
+   "src": "props/low_shelf_1.png",
+   "w": 130,
+   "h": 66
+  },
+  "low_shelf_2": {
+   "src": "props/low_shelf_2.png",
+   "w": 126,
+   "h": 48
+  },
+  "pod_meredith": {
+   "src": "props/pod_meredith.png",
+   "w": 105,
+   "h": 161
+  },
+  "pod_creed": {
+   "src": "props/pod_creed.png",
+   "w": 114,
+   "h": 156
   }
  },
  "anims": {

@@ -107,7 +107,9 @@ describe('kitchen and annex sets', () => {
     const ep = Episode.parse({ title: 'Walk', logline: '', scenes: [scene('office', 'bullpen', ['jim'])] });
     const st = new Stage(1, CAST, ep, DEMO_ROSTER);
     st.enterSet('office');
-    const jim = st.actor('jim'), a = st.set.spots.jim_desk;
+    // The open aisle between Dwight's and Phyllis's desks: a straight run down.
+    const d = st.set.spots.dwight_desk, p = st.set.spots.phyllis_desk;
+    const jim = st.actor('jim'), a = { x: Math.round((d.x + p.x) / 2), y: d.y - 4 };
     st.show(jim, a);
     const start = st.wt;
     st.walk(jim, { x: a.x, y: a.y + 10 });

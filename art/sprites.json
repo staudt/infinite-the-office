@@ -616,6 +616,8 @@
     "reception_desk",
     "reception_counter"
    ]
-  }
+  },
+  { "file": "office-furniture.png", "kind": "props", "key": true, "gap": 6, "sharpen": 1.2,
+   "names": ["lamp_cabinet","michael_back_cabinet","filing_cabinet_tall","michael_desk_2","wardrobe_2","bookcase_tall","armchair_2","side_table","conference_table_2","easel","plant_2","wall_shelf_side","plant_small","credenza_printer","shelf_dark","pod_jim_dwight","pod_phyllis_stanley","accounting_shelf","pod_accounting","plant_floor","low_shelf_1","low_shelf_2","pod_meredith","pod_creed"] }
  ]
 }
