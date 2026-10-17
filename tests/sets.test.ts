@@ -115,6 +115,12 @@ describe('office layout', () => {
     }
   });
 
+  it('visiting places are reachable floor (Pam is talked to across the reception desk)', () => {
+    const door = office.exits.parking_lot[0];
+    expect(office.visits[key(office.spots.pam_desk)]).toBeDefined();
+    for (const p of Object.values(office.visits)) expect(office.path(door, p)).not.toBeNull();
+  });
+
   it('walls block, door gaps do not, and people keep a gap when picking cells', () => {
     const { layout } = office;
     const c = office.cellW, wall = layout!.walls[0];

@@ -2,7 +2,7 @@
 // rasterized onto a square grid so path-finding, spots and regions work like any other set.
 // Everything here is lenient: missing fields get defaults, unknown sprites get a default footprint.
 import SIZES from '../../data/sets/prop-sizes.json';
-import { assemble, type Point, type Region, type SetMap } from './parse.ts';
+import { assemble, key, type Point, type Region, type SetMap } from './parse.ts';
 
 export interface Rect { x: number; y: number; w: number; h: number }
 export type Facing = 'down' | 'up' | 'left' | 'right';
@@ -29,6 +29,8 @@ export interface LSpot {
   chair?: boolean;
   /** Draw the sitter over the prop they sit at (default for left/right seats, e.g. baked-in pod chairs). */
   front?: boolean;
+  /** Where someone talking with the sitter stands (world px), e.g. across a reception desk instead of beside the chair. */
+  visit?: { x: number; y: number };
 }
 export interface Layout {
   width: number; height: number; cell: number;
@@ -56,7 +58,7 @@ export function parseLayout(raw: any): Layout {
     windows: list(raw?.windows, rect),
     decor: list(raw?.decor, (d) => ({ sprite: String(d?.sprite ?? ''), x: num(d?.x), y: num(d?.y), scale: d?.scale })),
     props: list(raw?.props, (p) => ({ sprite: String(p?.sprite ?? ''), x: num(p?.x), y: num(p?.y), flip: !!p?.flip, scale: p?.scale, w: p?.w, h: p?.h, split: p?.split, solid: p?.solid === null ? null : Array.isArray(p?.solid) ? p.solid.map(rect) : p?.solid ? rect(p.solid) : undefined })),
-    spots: Object.fromEntries(Object.entries(raw?.spots ?? {}).map(([k, s]: [string, any]) => [k, { x: num(s?.x), y: num(s?.y), seat: s?.seat, chair: s?.chair, front: s?.front }])),
+    spots: Object.fromEntries(Object.entries(raw?.spots ?? {}).map(([k, s]: [string, any]) => [k, { x: num(s?.x), y: num(s?.y), seat: s?.seat, chair: s?.chair, front: s?.front, visit: s?.visit ? { x: num(s.visit.x), y: num(s.visit.y) } : undefined }])),
     regions: Object.fromEntries(Object.entries(raw?.regions ?? {}).map(([k, v]) => [k, list(v, rect)])),
   };
 }
@@ -125,12 +127,14 @@ export function buildLayoutSet(id: string, L: Layout): SetMap {
       if (s) { kinds[y][x] = s.kind; walk[y][x] = false; }
     }
   }
+  const visits: Record<string, Point> = {};
   const cellOf = (x: number, y: number): Point => ({ x: Math.max(0, Math.min(width - 1, Math.floor(x / c))), y: Math.max(0, Math.min(height - 1, Math.floor(y / c))) });
   for (const [name, s] of Object.entries(L.spots)) {
     const p = cellOf(s.x, s.y);
     spots[name] = p;
     walk[p.y][p.x] = true;
     kinds[p.y][p.x] = s.seat ? 'seat' : 'spot';
+    if (s.visit) visits[key(p)] = cellOf(s.visit.x, s.visit.y);
   }
   for (const d of L.doors) {
     const names = d.exit ? [d.exit].flat() : [];
@@ -173,5 +177,5 @@ export function buildLayoutSet(id: string, L: Layout): SetMap {
     regions[name] = { cells, label: { text: name.replace(/_/g, ' ').toUpperCase(), at } };
   }
 
-  return assemble({ id, width, height, cellW: c, cellH: c, kinds, walk, spots, exits, regions, owner, gap: 2, layout: L, hidden });
+  return assemble({ id, width, height, cellW: c, cellH: c, kinds, walk, spots, exits, regions, owner, gap: 2, layout: L, hidden, visits });
 }

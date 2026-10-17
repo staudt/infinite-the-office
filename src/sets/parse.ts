@@ -33,6 +33,8 @@ export interface SetMap {
   crowded(p: Point, occupied: Set<string>): boolean;
   /** Would a prop drawn in front of someone standing here hide most of them? (Walkable, but no place to stand.) */
   hidden(p: Point): boolean;
+  /** Where to stand to talk with whoever sits at a seat cell (by `key`), when the layout names one. */
+  visits: Record<string, Point>;
 }
 
 /** Fixed tile legend: char -> [css kind, walkable]. */
@@ -170,6 +172,7 @@ export interface Parts {
   gap: number;
   /** Cells where a prop in front would hide a standing person (layout sets). */
   hidden?: boolean[][];
+  visits?: Record<string, Point>;
   layout?: Layout;
 }
 
@@ -239,5 +242,6 @@ export function assemble(a: Parts): SetMap {
     },
     crowded,
     hidden,
+    visits: a.visits ?? {},
   };
 }

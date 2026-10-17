@@ -604,6 +604,18 @@
    "name": "jim_head_talk",
    "key": true,
    "maxHeight": 800
+  },
+  {
+   "file": "reception-corner.png",
+   "kind": "props",
+   "key": true,
+   "gap": 6,
+   "sharpen": 1.2,
+   "names": [
+    "reception_shelf",
+    "reception_desk",
+    "reception_counter"
+   ]
   }
  ]
 }

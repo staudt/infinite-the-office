@@ -4,13 +4,15 @@ import { execFileSync } from 'node:child_process';
 import { mkdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { PNG } from 'pngjs';
-import { type Img, anchorStrip, keyBorder, alphaBox, components, crop, fitMax, keyMagenta, mergeComps, readingOrder, removeSpecks, scaleBy, trim } from './sprites/pixels';
+import { type Img, anchorStrip, keyBorder, alphaBox, components, crop, fitMax, keyMagenta, mergeComps, readingOrder, removeSpecks, scaleBy, sharpen, trim } from './sprites/pixels';
 
 interface Sheet {
   file: string; kind: 'props' | 'frames' | 'image' | 'character'; key?: boolean | 'border';
   names?: string[]; gap?: number;
   /** props: rects [x, y, w, h] (output px) to clear per prop, e.g. chairs baked into desk art; the size stays put. */
   erase?: Record<string, [number, number, number, number][]>; minArea?: number; scale?: number; maxWidth?: number; maxHeight?: number; name?: string; box?: [number, number, number, number]; height?: number;
+  /** props: unsharp-mask amount for soft (generated) art, applied at the output size. */
+  sharpen?: number;
 }
 const RAW = 'art/raw', OUT = 'public/sprites', DEV = 'art/out';
 const sheets: Sheet[] = JSON.parse(readFileSync('art/sprites.json', 'utf8')).sheets;
@@ -83,7 +85,8 @@ for (const s of sheets) {
     const name = s.names?.[n] || `${stem(s.file)}_${String(n).padStart(2, '0')}`;
     const own = new Set(g.labels);
     const box = { x0: g.x0 - pad, y0: g.y0 - pad, x1: g.x1 + pad, y1: g.y1 + pad };
-    const o = trim(scaleBy(crop(img, box, (x, y) => { const l = labels[y * img.w + x]; return l < 0 ? img.data[(y * img.w + x) * 4 + 3] > 0 : own.has(l); }), s.scale ?? 1));
+    let o = trim(scaleBy(crop(img, box, (x, y) => { const l = labels[y * img.w + x]; return l < 0 ? img.data[(y * img.w + x) * 4 + 3] > 0 : own.has(l); }), s.scale ?? 1));
+    if (s.sharpen) o = sharpen(o, s.sharpen);
     for (const [ex, ey, ew, eh] of s.erase?.[name] ?? []) for (let y = ey; y < ey + eh; y++) for (let x = ex; x < ex + ew; x++) if (x < o.w && y < o.h) o.data[(y * o.w + x) * 4 + 3] = 0;
     save(join(OUT, 'props', `${name}.png`), o);
     index.props[name] = { src: `props/${name}.png`, w: o.w, h: o.h };

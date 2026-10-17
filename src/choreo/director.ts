@@ -217,6 +217,9 @@ export class Director {
     if (other && other !== a && other.visible) return this.besideOf(other, occ);
     const spot = set.spots[to];
     // A standing spot next to someone counts as taken (a seat beside someone is fine).
+    // Someone's taken seat with a visiting place (reception): go where visitors stand.
+    const sitter = spot && occ.has(key(spot)) && set.visits[key(spot)] ? st.visibleActors().find((o) => o !== a && key(o.dest ?? o.pos) === key(spot)) : undefined;
+    if (sitter) return this.besideOf(sitter, occ);
     if (spot) return occ.has(key(spot)) || (set.kinds[spot.y][spot.x] !== 'seat' && set.crowded(spot, occ)) ? set.nextTo(spot, occ) : spot;
     if (set.regions[to]) return set.freeCellIn(to, occ, () => st.rng.next());
     return null;
@@ -227,6 +230,10 @@ export class Director {
   private besideOf(other: Actor, occ: Set<string>): Point | null {
     const set = this.st.set, at = other.dest ?? other.pos, region = set.regionAt(at);
     const free = (p: Point) => !set.crowded(p, occ) && !set.hidden(p);
+    // A seat with a visiting place (across a reception desk, so the desk hiding their legs is the point): stand there,
+    // or as near it as there is room.
+    const visit = set.visits[key(at)];
+    if (visit) return set.walkable(visit) && !set.crowded(visit, occ) ? visit : set.nextTo(visit, occ);
     // Their own region first (region rects can end right beside a desk), then anywhere.
     for (const strict of [true, false]) {
       for (const dy of [0, 1, -1, 2, -2]) {

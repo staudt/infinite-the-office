@@ -182,6 +182,27 @@ export function resize(img: Img, w: number, h: number): Img {
   }
   return out;
 }
+/** Unsharp mask on the colour of opaque pixels (soft generated art): c + amount * (c - blur3x3), blur over opaque
+ *  neighbours only so the keyed background never bleeds in. Alpha is untouched. */
+export function sharpen(img: Img, amount: number): Img {
+  const { w, h, data } = img, out = new Uint8Array(data), K = [1, 2, 1, 2, 4, 2, 1, 2, 1];
+  for (let y = 0; y < h; y++) for (let x = 0; x < w; x++) {
+    const i = (y * w + x) * 4;
+    if (data[i + 3] < 128) continue;
+    const sum = [0, 0, 0];
+    let wt = 0;
+    for (let k = 0; k < 9; k++) {
+      const nx = x + (k % 3) - 1, ny = y + ((k / 3) | 0) - 1;
+      if (nx < 0 || ny < 0 || nx >= w || ny >= h) continue;
+      const j = (ny * w + nx) * 4;
+      if (data[j + 3] < 128) continue;
+      for (let c = 0; c < 3; c++) sum[c] += data[j + c] * K[k];
+      wt += K[k];
+    }
+    for (let c = 0; c < 3; c++) out[i + c] = Math.max(0, Math.min(255, Math.round(data[i + c] + amount * (data[i + c] - sum[c] / wt))));
+  }
+  return { w, h, data: out };
+}
 export const scaleBy = (img: Img, s: number): Img => resize(img, Math.max(1, Math.round(img.w * s)), Math.max(1, Math.round(img.h * s)));
 export function fitMax(img: Img, maxW?: number, maxH?: number): Img {
   const s = Math.min(maxW ? maxW / img.w : 1, maxH ? maxH / img.h : 1, 1);

@@ -186,5 +186,17 @@
  "couch_side": {
   "w": 97,
   "h": 213
+ },
+ "reception_shelf": {
+  "w": 61,
+  "h": 115
+ },
+ "reception_desk": {
+  "w": 137,
+  "h": 127
+ },
+ "reception_counter": {
+  "w": 272,
+  "h": 78
  }
 }

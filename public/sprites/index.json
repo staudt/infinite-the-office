@@ -234,6 +234,21 @@
    "src": "props/couch_side.png",
    "w": 97,
    "h": 213
+  },
+  "reception_shelf": {
+   "src": "props/reception_shelf.png",
+   "w": 61,
+   "h": 115
+  },
+  "reception_desk": {
+   "src": "props/reception_desk.png",
+   "w": 137,
+   "h": 127
+  },
+  "reception_counter": {
+   "src": "props/reception_counter.png",
+   "w": 272,
+   "h": 78
   }
  },
  "anims": {
