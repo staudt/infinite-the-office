@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import { Director } from '../src/choreo/director.ts';
 import { CAST, DEMO_EPISODE, DEMO_ROSTER } from '../src/demo.ts';
+import { SPEED } from '../src/engine/actor.ts';
 import type { EngineEvent } from '../src/engine/events.ts';
 import { Stage, TICK } from '../src/engine/stage.ts';
 import { Episode } from '../src/schema/episode.ts';
@@ -125,6 +126,6 @@ describe('kitchen and annex sets', () => {
     const start = st.wt;
     st.walk(jim, { x: a.x, y: a.y + 10 });
     while (jim.moving) st.update(TICK);
-    expect(st.wt - start).toBeCloseTo((10 * st.set.cellH) / 80, 0);
+    expect(st.wt - start).toBeCloseTo((10 * st.set.cellH) / (SPEED.walk * 16), 1);
   });
 });
