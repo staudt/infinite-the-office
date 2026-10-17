@@ -713,6 +713,18 @@
           "text": "5:00 PM. IT IS POURING."
         },
         {
+          "type": "move",
+          "who": "kevin",
+          "to": "andy",
+          "pace": "walk"
+        },
+        {
+          "type": "move",
+          "who": "dwight",
+          "to": "erin",
+          "pace": "walk"
+        },
+        {
           "type": "say",
           "who": "dwight",
           "text": "Four fifty-eight. My knee. I'm never wrong.",

@@ -14,6 +14,10 @@ export const PLACEHOLDER_H = 80;
 export const SHADOW = { rx: 11, ry: 4, alpha: 0.28 };
 /** Half the width of a person's footprint: for overlap with a prop's side, and for balloons to avoid bodies (screen = x zoom). */
 export const SIDE_HALF = 18;
+/** Someone walking into a side seat at a desk (e.g. behind reception) draws their torso over the desk within this many
+ *  cells of it; WAIST is where that cut sits, as a fraction of personH up from the feet. */
+export const WALK_IN = 8;
+export const WAIST = 0.45;
 
 // ---- seats and chairs
 /** A sitter sinks this far into the chair (world px), which also shifts the chair's draw order. */

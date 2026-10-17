@@ -8,7 +8,7 @@
 |---|---|
 | ![The bullpen](docs/bullpen.png) | ![A talking head](docs/talking-head.png) |
 
-**Watch it:** https://staudt.github.io/infinite-the-office/ plays *Scranton: The Golden Years*, a pre-generated 12-episode season written by Claude, with no API key needed. Then make your own: give it a direction ("Andy's era", "Michael's last year", "what if Dwight ran the branch") and Claude writes a new show.
+**Watch it:** https://staudt.github.io/infinite-the-office/ plays *Scranton: The Golden Years*, a pre-generated 12-episode season written by Claude, and its sequel *Scranton: Growing Up* (Michael and Holly, Pam's year in New York, Angela's secret), with no API key needed. Then make your own: give it a direction ("Andy's era", "Michael's last year", "what if Dwight ran the branch") and Claude writes a new show.
 
 Fan project, not affiliated with NBC/Universal. It uses the characters' names and no official assets; the pixel art is AI-generated. The engine is built on [infinite-wrestling](https://github.com/staudt/infinite-wrestling).
 
@@ -54,6 +54,7 @@ npm run pregen -- --direction "…" --name "…" --episodes 12   # or --seasons 
 npm run pregen -- --show <id> --episodes 5                  # extend a stored show
 npm run library                                             # list stored shows
 npm run library -- add <id>                                 # copy a saved show into library/
+npm run import -- --dir <drafts>                            # hand-written bible.json + ep-NN.json drafts -> library/<id>/ (no API)
 npm run preview -- --show <id> --ep 3 [--quiet]             # headless transcript -> sessions/<id>/ep-003.md
 ```
 

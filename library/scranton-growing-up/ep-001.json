@@ -50,7 +50,6 @@
       "present": [
         "dwight",
         "jim",
-        "kevin",
         "creed",
         "stanley"
       ],
@@ -144,6 +143,18 @@
       ],
       "recap": "Michael orders Toby a cake that says GOOD RIDDANCE for his last day.",
       "beats": [
+        {
+          "type": "move",
+          "who": "pam",
+          "to": "pam_desk",
+          "pace": "walk"
+        },
+        {
+          "type": "move",
+          "who": "michael",
+          "to": "pam",
+          "pace": "walk"
+        },
         {
           "type": "say",
           "who": "michael",
@@ -465,6 +476,12 @@
       ],
       "recap": "Holly arrives; Michael tries to haze the new HR rep, and she laughs at his joke and does a voice.",
       "beats": [
+        {
+          "type": "move",
+          "who": "pam",
+          "to": "pam_desk",
+          "pace": "walk"
+        },
         {
           "type": "enter",
           "who": [
@@ -947,6 +964,24 @@
       ],
       "recap": "Michael sends the leftover 'Good Luck, Toby' cake to Holly, with an edit.",
       "beats": [
+        {
+          "type": "move",
+          "who": "pam",
+          "to": "pam_desk",
+          "pace": "walk"
+        },
+        {
+          "type": "move",
+          "who": "michael",
+          "to": "pam",
+          "pace": "walk"
+        },
+        {
+          "type": "move",
+          "who": "holly",
+          "to": "pam",
+          "pace": "walk"
+        },
         {
           "type": "say",
           "who": "michael",

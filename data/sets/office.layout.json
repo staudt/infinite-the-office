@@ -61,7 +61,7 @@
     { "sprite": "armchair_2", "x": 300, "y": 512, "scale": 1.45 },
     { "sprite": "side_table", "x": 380, "y": 509, "scale": 1.45 },
     { "sprite": "reception_shelf", "x": 61, "y": 814, "scale": 1.45, "solid": { "x": 0, "y": 14, "w": 62, "h": 102 } },
-    { "sprite": "reception_desk", "x": 257, "y": 744, "scale": 1.45, "solid": [{ "x": 3, "y": 48, "w": 79, "h": 21 }, { "x": 69, "y": 66, "w": 34, "h": 31 }, { "x": 97, "y": 41, "w": 38, "h": 87 }] },
+    { "sprite": "reception_desk", "x": 257, "y": 744, "scale": 1.45, "solid": [{ "x": 3, "y": 48, "w": 79, "h": 21 }, { "x": -5, "y": 48, "w": 76, "h": 62 }, { "x": 69, "y": 66, "w": 34, "h": 31 }, { "x": 97, "y": 41, "w": 38, "h": 87 }] },
     { "sprite": "reception_counter", "x": 214, "y": 836, "scale": 1.45, "solid": { "x": 0, "y": 21, "w": 272, "h": 58 } },
 
     { "sprite": "plant_small", "x": 770, "y": 471, "scale": 1.45 },

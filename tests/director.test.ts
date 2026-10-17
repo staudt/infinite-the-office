@@ -103,6 +103,17 @@ describe('kitchen and annex sets', () => {
     expect(seated).toContain('toby');
   });
 
+  it('leaves the desks of regulars who are away empty', () => {
+    const ep = Episode.parse({ title: 'Away', logline: '', away: ['kevin'], scenes: [scene('office', 'bullpen', ['jim'])] });
+    const st = new Stage(1, CAST, ep, DEMO_ROSTER);
+    const task = st.spawn(new Director(st, ep, DEMO_ROSTER).play());
+    let seen = false;
+    st.on((e) => { if (e.type === 'said') seen = st.actor('kevin').visible; });
+    while (!task.done && st.time < 600) st.update(TICK);
+    expect(DEMO_ROSTER).toContain('kevin');
+    expect(seen).toBe(false);
+  });
+
   it('walks at a uniform pixel speed on a square-cell set', () => {
     const ep = Episode.parse({ title: 'Walk', logline: '', scenes: [scene('office', 'bullpen', ['jim'])] });
     const st = new Stage(1, CAST, ep, DEMO_ROSTER);

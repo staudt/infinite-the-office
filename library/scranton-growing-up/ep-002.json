@@ -811,6 +811,12 @@
       "beats": [
         {
           "type": "move",
+          "who": "pam",
+          "to": "pam_desk",
+          "pace": "walk"
+        },
+        {
+          "type": "move",
           "who": "dwight",
           "to": "holly",
           "pace": "walk"

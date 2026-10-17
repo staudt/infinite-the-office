@@ -265,6 +265,12 @@
       "recap": "Michael and Dwight's pitch to Gil Merkle slides into Michael's love life.",
       "beats": [
         {
+          "type": "move",
+          "who": "dwight",
+          "to": "michael",
+          "pace": "walk"
+        },
+        {
           "type": "say",
           "who": "gil_merkle",
           "text": "You've got ten minutes. I hate salesmen. I hate paper. I'm in printing, so that's a problem.",
@@ -448,6 +454,12 @@
       ],
       "recap": "Michael breaks down; Gil, divorced last spring, relates, and buys a year of paper.",
       "beats": [
+        {
+          "type": "move",
+          "who": "dwight",
+          "to": "michael",
+          "pace": "walk"
+        },
         {
           "type": "say",
           "who": "michael",

@@ -10,7 +10,7 @@ import { art } from './art';
 import { buildAscii } from './ascii';
 import { headRect, placeBalloon, type Anchor, type ScreenRect } from './balloons';
 import { ease, frame, regionBox, shotBox, widenFor, type Cam } from './camera';
-import { BALLOON, CAM_EASE, EMOTE, geoOf, SIDE_HALF, TORSO, type Geo } from './geometry';
+import { BALLOON, CAM_EASE, EMOTE, geoOf, SIDE_HALF, TORSO, WAIST, WALK_IN, type Geo } from './geometry';
 import { drawGrid, GRID } from './grid';
 import { MARKER } from './markers';
 import { NameIndex } from './names';
@@ -180,7 +180,7 @@ export class SpriteMapView {
   }
 
   private draw(plan: Plan, geo: Geo, poses: Pose[], cam: Cam, aspect: number, pw: number, ph: number): void {
-    const ctx = this.canvas.getContext('2d')!;
+    const ctx = this.canvas.getContext('2d')!, { seats } = builtFor(this.stage.set);
     ctx.imageSmoothingEnabled = true;
     ctx.imageSmoothingQuality = 'high';
     const k = pw / cam.w, vx = cam.cx - cam.w / 2, vy = cam.cy - cam.w / aspect / 2;
@@ -206,6 +206,13 @@ export class SpriteMapView {
       if (atDeskSide(p)) {
         items.push({ k: fy, f: () => drawActor(ctx, p, geo, this.stage.wt) });
         items.push({ k: Math.max(fy, overProp(p.chair!.front!, fy)), f: () => drawActor(ctx, p, geo, this.stage.wt, lapY(p, geo)) });
+        continue;
+      }
+      // Walking the last steps into such a seat (behind the reception desk): the same split, legs behind, torso over.
+      const to = p.moving ? p.a.dest : null, goal = to ? seats.get(`${to.x},${to.y}`) : undefined;
+      if (to && goal?.front != null && goal.dir === 'side' && fy < goal.front && Math.abs(to.x - p.a.x) + Math.abs(to.y - p.a.y) <= WALK_IN) {
+        items.push({ k: fy, f: () => drawActor(ctx, p, geo, this.stage.wt) });
+        items.push({ k: overProp(goal.front, fy), f: () => drawActor(ctx, p, geo, this.stage.wt, fy - geo.personH * WAIST) });
         continue;
       }
       // Other sitters marked `front` are drawn over the prop they sit at; the rest sort by their feet.

@@ -681,10 +681,22 @@
       "recap": "Andy and Dwight duel with open-handed slaps in the parking lot, badly; Angela leaves them both.",
       "beats": [
         {
+          "type": "gather",
+          "who": [
+            "jim",
+            "pam",
+            "kevin",
+            "ryan",
+            "kelly",
+            "stanley"
+          ],
+          "to": "entrance"
+        },
+        {
           "type": "move",
           "who": "andy",
-          "to": "car_dwight",
-          "pace": "walk"
+          "to": "parking_lot",
+          "pace": "hurry"
         },
         {
           "type": "move",
