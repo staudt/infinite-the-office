@@ -369,6 +369,11 @@
    "src": "props/pod_creed.png",
    "w": 114,
    "h": 156
+  },
+  "warehouse_bg": {
+   "src": "props/warehouse_bg.png",
+   "w": 1254,
+   "h": 1254
   }
  },
  "anims": {

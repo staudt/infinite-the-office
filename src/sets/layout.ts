@@ -42,6 +42,9 @@ export interface Layout {
   props: LProp[];
   spots: Record<string, LSpot>;
   regions: Record<string, Rect[]>;
+  /** A flat picture of the whole room (prop sprite, drawn at `scale` from the top-left) under everything; walls and
+   *  solids then only steer walking and are not drawn. Things people could walk behind need solids around them. */
+  background?: { sprite: string; scale: number };
 }
 
 const num = (v: unknown, d = 0) => (typeof v === 'number' && Number.isFinite(v) ? v : d);
@@ -60,6 +63,7 @@ export function parseLayout(raw: any): Layout {
     props: list(raw?.props, (p) => ({ sprite: String(p?.sprite ?? ''), x: num(p?.x), y: num(p?.y), flip: !!p?.flip, scale: p?.scale, w: p?.w, h: p?.h, split: p?.split, solid: p?.solid === null ? null : Array.isArray(p?.solid) ? p.solid.map(rect) : p?.solid ? rect(p.solid) : undefined })),
     spots: Object.fromEntries(Object.entries(raw?.spots ?? {}).map(([k, s]: [string, any]) => [k, { x: num(s?.x), y: num(s?.y), seat: s?.seat, chair: s?.chair, front: s?.front, visit: s?.visit ? list(Array.isArray(s.visit) ? s.visit : [s.visit], (v) => ({ x: num(v?.x), y: num(v?.y) })) : undefined }])),
     regions: Object.fromEntries(Object.entries(raw?.regions ?? {}).map(([k, v]) => [k, list(v, rect)])),
+    background: raw?.background?.sprite ? { sprite: String(raw.background.sprite), scale: num(raw.background.scale, 1) || 1 } : undefined,
   };
 }
 

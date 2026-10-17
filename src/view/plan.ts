@@ -91,6 +91,12 @@ function paintDoor(g: CanvasRenderingContext2D, d: Rect & { exit?: string | stri
   }
 }
 
+function blankBg(): HTMLCanvasElement {
+  const c = document.createElement('canvas');
+  c.width = c.height = 1;
+  return c;
+}
+
 function paintBg(L: Layout): HTMLCanvasElement {
   const c = document.createElement('canvas');
   c.width = L.width * BG_SCALE;
@@ -304,10 +310,16 @@ export function chairItem(c: Chair): Item {
 export function buildPlan(set: SetMap): Plan {
   const L = set.layout!;
   const seats = chairs(set, L);
-  const items = [...wallItems(L), ...propItems(L), ...seats.filter((c) => c.draw).map(chairItem)];
+  const bg = L.background;
+  // A flat room picture replaces the drawn floor and walls (they stay as walking logic only).
+  const under: Item[] = bg ? [{ k: -Infinity, x0: 0, y0: 0, x1: L.width, y1: L.height, f: (ctx) => {
+    const e = art.index.props?.[bg.sprite], im = art.image(bg.sprite);
+    if (e && im) ctx.drawImage(im, 0, 0, e.w * bg.scale, e.h * bg.scale);
+  } }] : wallItems(L);
+  const items = [...under, ...propItems(L), ...seats.filter((c) => c.draw).map(chairItem)];
   const sides = L.props.flatMap((p): Side[] => {
     const r = propRect(p), sol = solidRects(p);
     return sol.length ? [{ x0: r.x, x1: r.x + r.w, top: r.y, B: p.y, sx0: Math.min(...sol.map((q) => q.x)), sx1: Math.max(...sol.map((q) => q.x + q.w)) }] : [];
   });
-  return { bg: paintBg(L), W: L.width, H: L.height, items, chairs: seats, sides };
+  return { bg: bg ? blankBg() : paintBg(L), W: L.width, H: L.height, items, chairs: seats, sides };
 }

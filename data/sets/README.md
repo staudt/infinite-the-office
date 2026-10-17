@@ -1,6 +1,6 @@
 # Set maps
 
-A set is either an ASCII grid (`*.txt`, below) or an art-scale floor plan (`*.layout.json`, see the end). The file name is the set id. The office is a layout; break_room, kitchen, annex, parking_lot, warehouse and offsite are ASCII grids, drawn procedurally.
+A set is either an ASCII grid (`*.txt`, below) or an art-scale floor plan (`*.layout.json`, see the end). The file name is the set id. The office and the warehouse are layouts; break_room, kitchen, annex, parking_lot and offsite are ASCII grids, drawn procedurally.
 
 ## ASCII sets
 
@@ -103,6 +103,9 @@ corridors 32 px or wider.
   beside them (`"front"` forces that for other seats). Put a seat where the art's chair is. `visit` (world px, a list) is where people who
   talk to the sitter stand, first free one first, e.g. across the reception desk, even where the prop hides their legs.
 - **regions**: lists of rects; a walkable cell belongs to the first region holding its center. Doors belong to none.
+- **background** (optional): `{ "sprite": "warehouse_bg", "scale": 1.35 }`, a flat picture of the whole room drawn under
+  everything from the top-left. Floor, walls and doors are then not drawn, only walked: put walls over everything people
+  must walk around, since a flat picture can't hide someone behind a rack (the warehouse does this).
 
 Exits and seats must be reachable (`tests/sets.test.ts` checks every spot from the main entrance). `?cam=all`
 frames the whole floor in every scene when looking at a plan.

@@ -1,0 +1,48 @@
+{
+  "_doc": "Warehouse on a flat picture (art/raw/warehouse.png at 1.35x). Walls below are walking logic only: the outer walls, racks, the closed bathroom and Darryl's office, the pallet jack and the forklift. See data/sets/README.md.",
+  "width": 1696, "height": 1696, "cell": 16,
+  "background": { "sprite": "warehouse_bg", "scale": 1.35 },
+
+  "floor": [
+    { "x": 240, "y": 240, "w": 1360, "h": 1152 }
+  ],
+
+  "walls": [
+    { "x": 0, "y": 0, "w": 1696, "h": 240 },
+    { "x": 0, "y": 0, "w": 240, "h": 1696 },
+    { "x": 1600, "y": 0, "w": 96, "h": 1696 },
+    { "x": 0, "y": 1392, "w": 1696, "h": 304 },
+
+    { "x": 240, "y": 240, "w": 672, "h": 112 },
+    { "x": 240, "y": 240, "w": 144, "h": 1024 },
+    { "x": 240, "y": 592, "w": 464, "h": 224 },
+    { "x": 240, "y": 1248, "w": 1120, "h": 144 },
+
+    { "x": 912, "y": 240, "w": 240, "h": 288 },
+    { "x": 1152, "y": 240, "w": 448, "h": 368 },
+
+    { "x": 1040, "y": 672, "w": 176, "h": 128 },
+    { "x": 848, "y": 960, "w": 352, "h": 192 }
+  ],
+
+  "doors": [
+    { "x": 1600, "y": 1008, "w": 96, "h": 256, "exit": "office" }
+  ],
+
+  "windows": [],
+  "decor": [],
+  "props": [],
+
+  "spots": {
+    "darryl_desk": { "x": 1262, "y": 662 },
+    "forklift": { "x": 1222, "y": 1066 },
+    "dock_1": { "x": 1525, "y": 1080 },
+    "dock_2": { "x": 1525, "y": 1215 }
+  },
+
+  "regions": {
+    "darryl_office": [{ "x": 1152, "y": 608, "w": 448, "h": 208 }],
+    "loading_dock": [{ "x": 1216, "y": 816, "w": 384, "h": 576 }],
+    "warehouse": [{ "x": 240, "y": 240, "w": 1360, "h": 1152 }]
+  }
+}
