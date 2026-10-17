@@ -1,0 +1,144 @@
+{
+ "_doc": "Parking lot on a flat picture (art/raw/parking-lot.png at 1.4x). Walls are walking logic only: the building, hedges, fence and each car (plus a strip behind the bottom row, so nobody stands half-hidden behind a car). See data/sets/README.md.",
+ "width": 2341,
+ "height": 1317,
+ "cell": 16,
+ "background": {
+  "sprite": "parking_lot_bg",
+  "scale": 1.4
+ },
+ "floor": [
+  {
+   "x": 144,
+   "y": 192,
+   "w": 2096,
+   "h": 880
+  }
+ ],
+ "walls": [
+  {
+   "x": 0,
+   "y": 0,
+   "w": 2336,
+   "h": 192
+  },
+  {
+   "x": 0,
+   "y": 0,
+   "w": 144,
+   "h": 1312
+  },
+  {
+   "x": 0,
+   "y": 1072,
+   "w": 2336,
+   "h": 240
+  },
+  {
+   "x": 2240,
+   "y": 0,
+   "w": 96,
+   "h": 1312
+  },
+  {
+   "x": 704,
+   "y": 176,
+   "w": 144,
+   "h": 272
+  },
+  {
+   "x": 1184,
+   "y": 192,
+   "w": 144,
+   "h": 256
+  },
+  {
+   "x": 448,
+   "y": 688,
+   "w": 224,
+   "h": 400
+  },
+  {
+   "x": 944,
+   "y": 736,
+   "w": 176,
+   "h": 352
+  },
+  {
+   "x": 1504,
+   "y": 736,
+   "w": 176,
+   "h": 352
+  }
+ ],
+ "doors": [
+  {
+   "x": 1584,
+   "y": 144,
+   "w": 112,
+   "h": 48,
+   "exit": "office"
+  },
+  {
+   "x": 224,
+   "y": 144,
+   "w": 96,
+   "h": 48,
+   "exit": "warehouse"
+  },
+  {
+   "x": 1824,
+   "y": 1072,
+   "w": 448,
+   "h": 48,
+   "exit": "offsite"
+  }
+ ],
+ "windows": [],
+ "decor": [],
+ "props": [],
+ "spots": {
+  "car_dwight": {
+   "x": 882,
+   "y": 364
+  },
+  "car_michael": {
+   "x": 1358,
+   "y": 364
+  },
+  "car_jim": {
+   "x": 1148,
+   "y": 980
+  },
+  "car_stanley": {
+   "x": 1484,
+   "y": 980
+  },
+  "smoking_spot": {
+   "x": 280,
+   "y": 266
+  },
+  "dumpster": {
+   "x": 1701,
+   "y": 1036
+  }
+ },
+ "regions": {
+  "entrance": [
+   {
+    "x": 1504,
+    "y": 192,
+    "w": 448,
+    "h": 272
+   }
+  ],
+  "parking_lot": [
+   {
+    "x": 144,
+    "y": 192,
+    "w": 2096,
+    "h": 880
+   }
+  ]
+ }
+}

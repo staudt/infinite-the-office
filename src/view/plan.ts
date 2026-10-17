@@ -14,6 +14,8 @@ export interface Side { x0: number; x1: number; top: number; B: number; sx0: num
 /** Everything static about a set, in the one shape the view draws from (layout sets: plan.ts, ASCII sets: ascii.ts). */
 export interface Plan {
   bg: HTMLCanvasElement; W: number; H: number; items: Item[]; chairs: Chair[]; sides: Side[];
+  /** Doors that swing ajar when someone is near (`near`, world px); the view fills `open` with their indexes each frame. */
+  doors?: { near: Rect[]; open: Set<number> };
   /** Sort key of a torso redraw for a seated, front-facing person at this cell (they sit behind the desk in front), or null. */
   torsoKey?: (x: number, y: number) => number | null;
   /** False while a chosen sprite is still loading: the view rebuilds the plan. */
@@ -86,13 +88,6 @@ function paintDoor(g: CanvasRenderingContext2D, d: Rect & { exit?: string | stri
   if (horiz) {
     g.fillRect(d.x - 1, d.y, 4, d.h);
     g.fillRect(d.x + d.w - 3, d.y, 4, d.h);
-    // Leaf: seen edge-on beside the left jamb.
-    g.fillStyle = COLOR.wood;
-    g.fillRect(d.x + 3, d.y + CAP - 2, 9, d.h - CAP - 4);
-    g.fillStyle = 'rgba(255,255,255,0.25)';
-    g.fillRect(d.x + 3, d.y + CAP - 2, 2, d.h - CAP - 4);
-    g.fillStyle = '#e8c35a';
-    g.fillRect(d.x + 9, d.y + CAP + (d.h - CAP) / 2, 2, 3);
   } else {
     g.fillRect(d.x, d.y - 1, d.w, 4);
     g.fillRect(d.x, d.y + d.h - 3, d.w, 4);
@@ -177,6 +172,40 @@ function drawWindow(ctx: CanvasRenderingContext2D, r: Rect): void {
   ctx.fillRect(r.x + r.w / 2 - 1, r.y, 2, r.h);
   ctx.fillStyle = '#e9e1cf'; // sill
   ctx.fillRect(r.x - 4, r.y + r.h + 3, r.w + 8, 3);
+}
+
+/** Door art in horizontal walls: shut in the gap, swung a quarter open (hinged at the left jamb, into the room) while
+ *  someone is near; `closed` doors never open. Exits get the lever handle, rooms the knob. */
+const DOOR_HINGE = 260 / 349; // where the open leaf's hinge edge meets the floor, as a share of its sprite height
+const DOOR_AJAR = 0.55; // horizontal squeeze of the open-leaf art: a quarter open instead of its drawn angle
+const DOOR_NEAR = 28; // world px around the gap that opens a door
+function doorItems(L: Layout): { items: Item[]; near: Rect[]; open: Set<number> } {
+  const items: Item[] = [], near: Rect[] = [], open = new Set<number>();
+  L.doors.forEach((d) => {
+    const w = L.walls.find((q) => isHoriz(q) && meets(q, d));
+    if (!w) return;
+    const i = near.length;
+    near.push(d.closed ? { x: 0, y: 0, w: 0, h: 0 } : { x: d.x - DOOR_NEAR, y: d.y - DOOR_NEAR, w: d.w + DOOR_NEAR * 2, h: d.h + DOOR_NEAR * 2 });
+    const kind = d.exit ? 'lever' : 'knob', face = w.h - CAP, s = face / 259;
+    const roomBelow = L.floor.some((f) => hit(f, d.x + d.w / 2, w.y + w.h + 4));
+    const floorY = roomBelow ? w.y + w.h : w.y + CAP; // the floor line on the room side
+    const draw = (ctx: CanvasRenderingContext2D, name: string, x: number, y: number, sx: number) => {
+      const im = art.image(name), e = art.index.props?.[name];
+      if (im && e) ctx.drawImage(im, x, y, e.w * s * sx, e.h * s);
+    };
+    // Shut: in the gap on the wall face.
+    items.push({ k: w.y + w.h + 0.02, x0: d.x, y0: w.y, x1: d.x + d.w, y1: w.y + w.h, f: (ctx) => {
+      if (open.has(i)) return;
+      const e = art.index.props?.[`door_${kind}`];
+      if (e) draw(ctx, `door_${kind}`, d.x + (d.w - e.w * s) / 2, w.y + CAP, 1);
+    } });
+    // Ajar: the leaf stands in the gap from the left jamb, its free edge swung toward the room.
+    const bottom = floorY + 349 * s * (1 - DOOR_HINGE);
+    items.push({ k: bottom, x0: d.x, y0: floorY - face - 4, x1: d.x + d.w, y1: bottom, f: (ctx) => {
+      if (open.has(i)) draw(ctx, `door_${kind}_open`, d.x + 2, bottom - 349 * s, DOOR_AJAR);
+    } });
+  });
+  return { items, near, open };
 }
 
 function wallItems(L: Layout): Item[] {
@@ -326,10 +355,12 @@ export function buildPlan(set: SetMap): Plan {
     const e = art.index.props?.[bg.sprite], im = art.image(bg.sprite);
     if (e && im) ctx.drawImage(im, 0, 0, e.w * bg.scale, e.h * bg.scale);
   } }] : wallItems(L);
+  const doors = bg ? null : doorItems(L);
+  if (doors) under.push(...doors.items);
   const items = [...under, ...propItems(L), ...seats.filter((c) => c.draw).map(chairItem)];
   const sides = L.props.flatMap((p): Side[] => {
     const r = propRect(p), sol = solidRects(p);
     return sol.length ? [{ x0: r.x, x1: r.x + r.w, top: r.y, B: p.y, sx0: Math.min(...sol.map((q) => q.x)), sx1: Math.max(...sol.map((q) => q.x + q.w)) }] : [];
   });
-  return { bg: bg ? blankBg() : paintBg(L), W: L.width, H: L.height, items, chairs: seats, sides };
+  return { bg: bg ? blankBg() : paintBg(L), W: L.width, H: L.height, items, chairs: seats, sides, doors: doors ? { near: doors.near, open: doors.open } : undefined };
 }

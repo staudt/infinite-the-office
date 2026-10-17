@@ -21,7 +21,7 @@ function esc(s: string): string {
 /** One line describing what the writer can do right now. */
 export function connectionText(h: Health | null | undefined): { text: string; cls: string } {
   if (h === undefined) return { text: 'checking connection…', cls: 'conn-wait' };
-  if (h === null) return { text: '● not connected: stored shows play; new episodes need the AI writer', cls: 'conn-off' };
+  if (h === null) return { text: '● no AI writer connected: stored shows only', cls: 'conn-wait' };
   if (!h.llm) return { text: '● writer server has no API key: stored shows only', cls: 'conn-warn' };
   return { text: `● live: ${h.model} (season bibles: ${h.planModel})`, cls: 'conn-on' };
 }
@@ -81,15 +81,17 @@ export class StartScreen {
     connEl.textContent = conn.text;
     connEl.className = `conn-line ${conn.cls}`;
 
-    // New series are written by the AI; without it, only stored shows play.
+    // New series are written by the AI; without it (the online demo) the form is hidden and only stored shows play.
+    // A local writer server without a key keeps a short note on how to enable it.
     const canCreate = !!opts.health?.llm;
     (this.el.querySelector('#create-area') as HTMLFieldSetElement).disabled = !canCreate;
+    (this.el.querySelector('#create-area') as HTMLElement).hidden = !canCreate;
     this.el.querySelector('.start-panel')!.classList.toggle('no-llm', !canCreate);
     const note = this.el.querySelector('#create-note') as HTMLElement;
     note.hidden = canCreate;
     note.innerHTML = opts.health === null
-      ? '<b>Not connected to an AI writer.</b> New series are written live by Claude, and no writer server is reachable from here (the online demo has none). You can watch the stored shows; to create your own, run the project locally with <code>npm run server</code> and an Anthropic API key.'
-      : '<b>The writer server has no API key.</b> New series are written live by Claude. Set <code>ANTHROPIC_API_KEY</code> in <code>.env</code> and restart <code>npm run server</code>. Stored shows play without it.';
+      ? '<b>No AI writer is available here.</b> New series are written live by Claude; run the project locally with <code>npm run server</code> and an Anthropic API key to create your own.'
+      : '<b>The writer server has no API key.</b> Set <code>ANTHROPIC_API_KEY</code> in <code>.env</code> and restart <code>npm run server</code>.';
 
     const cont = this.el.querySelector('#start-continue')!;
     cont.innerHTML = opts.current && opts.canClose
@@ -104,7 +106,7 @@ export class StartScreen {
         const stored = e.episodes ? `${e.episodes} episode${e.episodes === 1 ? '' : 's'} stored · season${seasons === 1 ? '' : 's'} 1${seasons > 1 ? `–${seasons}` : ''}` : 'no episodes yet';
         return `<li>
           <div><b>${esc(e.name)}</b> <span class="badge">${e.source === 'library' ? 'library' : 'saved'}</span></div>
-          <div class="hint">${esc(e.direction || 'no direction')}</div>
+          <div class="hint desc" title="${esc(e.direction || '')}">${esc(e.direction || 'no direction')}</div>
           <div class="row"><span class="hint">${stored} · <a class="share" href="${shareLink(e)}" title="Link that starts this show right away">share link</a></span><button data-show="${esc(e.id)}">Watch from the start</button></div>
         </li>`;
       }).join('')

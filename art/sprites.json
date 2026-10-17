@@ -622,6 +622,8 @@
   { "file": "warehouse.png", "kind": "props", "names": ["warehouse_bg"] },
   { "file": "wing-furniture.png", "kind": "props", "key": true, "gap": 6, "sharpen": 1.2,
    "names": ["wing_counter","vending_row","microwave_table","fridge_cooler","water_jugs","round_table_2","annex_desk_l","annex_desk_a","annex_desk_b","copy_station","plant_white","plant_blue","plant_white_2","plant_big","sink","toilet","trash_bin","janitor_cart","vending_single"] },
-  { "file": "plant-corner.png", "kind": "props", "key": true, "names": ["plant_corner"] }
+  { "file": "plant-corner.png", "kind": "props", "key": true, "names": ["plant_corner"] },
+  { "file": "parking-lot.png", "kind": "props", "names": ["parking_lot_bg"] },
+  { "file": "doors.png", "kind": "props", "key": true, "gap": 20, "sharpen": 1.2, "names": ["door_knob", "door_knob_open", "door_lever", "door_lever_open"] }
  ]
 }

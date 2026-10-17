@@ -190,6 +190,12 @@ export class SpriteMapView {
     ctx.setTransform(k, 0, 0, k, -vx * k, -vy * k);
     ctx.drawImage(plan.bg, 0, 0, plan.W, plan.H);
 
+    // Doors swing ajar while someone is near (feet from the poses, so it follows show time like everything else).
+    if (plan.doors) {
+      const { near, open } = plan.doors, feet = poses.map((p) => poseFeet(p, geo));
+      open.clear();
+      near.forEach((r, i) => { if (feet.some((f) => f.fx >= r.x && f.fx < r.x + r.w && f.fy >= r.y && f.fy < r.y + r.h)) open.add(i); });
+    }
     const vis = (i: Item) => i.x1 >= vx && i.x0 <= vx + cam.w && i.y1 >= vy && i.y0 <= vy + cam.w / aspect;
     // A sitter drawn with sit art brings their own chair, so the empty one at that seat goes.
     const taken = new Set(poses.filter((p) => p.seated && p.ownChair).map((p) => `${p.a.x},${p.a.y}`));

@@ -378,5 +378,25 @@
  "plant_corner": {
   "w": 68,
   "h": 97
+ },
+ "parking_lot_bg": {
+  "w": 1672,
+  "h": 941
+ },
+ "door_knob": {
+  "w": 218,
+  "h": 259
+ },
+ "door_knob_open": {
+  "w": 186,
+  "h": 349
+ },
+ "door_lever": {
+  "w": 218,
+  "h": 259
+ },
+ "door_lever_open": {
+  "w": 186,
+  "h": 350
  }
 }

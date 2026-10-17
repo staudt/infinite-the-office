@@ -282,6 +282,8 @@ kbd { background: #1a1a26; border: 1px solid #2a2a3a; border-radius: 3px; paddin
 #ended button.primary { background: #3a2f08; border-color: var(--accent); color: #fff; }
 #ended button:hover { border-color: var(--accent); }
 .start-panel button:disabled { opacity: 0.4; cursor: not-allowed; }
+/* Stored show descriptions: two lines at most (the full text is the tooltip). */
+#library-list .desc { display: -webkit-box; -webkit-line-clamp: 2; line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
 #create-area { border: 0; margin: 0; padding: 0; min-width: 0; }
 #create-area:disabled { opacity: 0.35; filter: grayscale(1); }
 #create-area:disabled * { cursor: not-allowed; }
