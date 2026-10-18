@@ -58,7 +58,7 @@ npm run import -- --dir <drafts>                            # hand-written bible
 npm run preview -- --show <id> --ep 3 [--quiet]             # headless transcript -> sessions/<id>/ep-003.md
 ```
 
-`pregen` prints calls, tokens, and estimated cost when it finishes. Rough costs: an episode is about $0.01–0.02 on Haiku and $0.07–0.12 on Sonnet; a season bible on Sonnet is about $0.04. The published demo season was written entirely by Sonnet (`WRITER_MODEL=claude-sonnet-5-5 WRITER_PLAN_MODEL=claude-sonnet-5-5 npm run pregen -- …`; shell variables override `.env`).
+`pregen` prints calls, tokens, and estimated cost when it finishes. Rough costs: an episode is about $0.01–0.02 on Haiku and $0.07–0.12 on Sonnet; a season bible on Sonnet is about $0.04. To use Sonnet for both, run `WRITER_MODEL=claude-sonnet-5-5 WRITER_PLAN_MODEL=claude-sonnet-5-5 npm run pregen -- …` (shell variables override `.env`). The two published seasons were written by hand by Claude Opus in Claude Code sessions, with no API calls, and brought in with `npm run import`.
 
 Saved shows live in `sessions/<id>/` (git-ignored). Curated shows live in `library/<id>/` (committed). `library/` is bundled into the GitHub Pages build by `.github/workflows/pages.yml`, which runs on push to `master`. To publish a show, pregen it, run `npm run library -- add <id>`, then commit `library/`.
 

@@ -1,42 +1,42 @@
 {
-  "title": "Special Friend",
-  "logline": "Michael announces a mystery \"special friend\" is visiting, mentors the new temp Ryan, and Jim pranks Dwight while Roy picks Pam up.",
-  "outline": "A: Michael hypes a \"special friend\" visit (it's Jan) and tries to be kind to new temp Ryan, badly. B: Jim pranks Dwight's assistant ambitions; Pam laughs, Roy picks her up, she checks if Jim noticed. C: Ryan the temp wants more. Order: cold, A, B, C, A, B, A, C, B, A, tag",
-  "theme": "Everyone wants to be chosen",
-  "storySoFar": "Season begins. Michael has teased a \"special friend\" visiting, who is Jan. Ryan is a new temp whom Michael has adopted as protege. Jim pranks Dwight (stapler in Jell-O) while Pam laughs; Roy still in the picture. Dwight angles for the Assistant Regional Manager title.",
+  "title": "The Temp",
+  "logline": "Michael gives the new temp, Ryan, a day-long orientation he did not ask for, Dwight decides Ryan is a corporate spy, and Jim and Pam compete to make Dwight say 'beets'.",
+  "outline": "A: Michael gives Ryan an exhaustive orientation and tries to impress him, including with Jan on speakerphone. B: Jim and Pam's game: who can get Dwight to say 'beets' more times by five. C: Dwight interrogates Ryan as a corporate spy. Order: cold, A, B, A, C, B, A, A, B, C, A, B, tag",
+  "theme": "First impressions, and who we try to impress",
+  "storySoFar": "Ryan Howard started as the temp at Dunder Mifflin Scranton; he's in business school and plans to leave in two months. Michael gave him an exhaustive orientation and his old red stapler, and keeps mentioning Jan Levinson from corporate, who asked to be taken off speakerphone. Dwight thinks Ryan is a corporate spy because branches are rumored to be closing, and keeps a dossier on him (Angela agrees he looks untrustworthy). Kelly calls Ryan 'Ry-Ry'. Jim and Pam's game: Pam got Dwight to say 'beets' eleven times and won a Twix. Pam is engaged to Roy, who honks from the parking lot.",
   "extras": [],
+  "away": [
+    "ryan"
+  ],
   "stateChanges": [
-    {
-      "type": "gag",
-      "text": "Jim put Dwight's stapler in Jell-O; Dwight blamed Creed"
-    },
-    {
-      "type": "note",
-      "text": "Michael gave Ryan a 'mentor mug'; Ryan hates it"
-    },
-    {
-      "type": "note",
-      "text": "Michael and Jan's dinner invitation left open"
-    },
-    {
-      "type": "arc",
-      "arc": "Will They, Won't They",
-      "progress": "Pam laughs at Jim's prank; Roy picks her up and she checks whether Jim noticed."
-    },
-    {
-      "type": "arc",
-      "arc": "Michael Needs a Date",
-      "progress": "Michael hyped a special friend; it's Jan, who is brisk and polite."
-    },
     {
       "type": "arc",
       "arc": "Ryan the Temp",
-      "progress": "Ryan introduced; Michael decides to mentor him."
+      "progress": "Ryan started; Michael idolizes him, Kelly calls him Ry-Ry, Dwight thinks he's a spy"
     },
     {
       "type": "arc",
-      "arc": "Assistant (to the) Regional Manager",
-      "progress": "Dwight lobbies for the title; Michael stalls."
+      "arc": "Jim and Pam",
+      "progress": "The beets game; Pam won a Twix; Roy honked; Jim's talking head gave him away a little"
+    },
+    {
+      "type": "arc",
+      "arc": "Michael, Jan and the Rumor",
+      "progress": "Michael talks about Jan constantly; Dwight has heard branches may close"
+    },
+    {
+      "type": "relationship",
+      "a": "kelly",
+      "b": "ryan",
+      "status": "Kelly has decided he's cute and calls him Ry-Ry"
+    },
+    {
+      "type": "note",
+      "text": "Michael gave Ryan his first stapler, a battered red one from 1993"
+    },
+    {
+      "type": "gag",
+      "text": "Jim and Pam's daily games against Dwight (beets count, front-desk pages)"
     }
   ],
   "scenes": [
@@ -44,35 +44,53 @@
       "part": "cold_open",
       "plot": "cold_open",
       "set": "office",
-      "region": "bullpen",
+      "region": "reception",
       "venue": "",
       "present": [
-        "jim",
-        "dwight",
-        "pam"
+        "pam",
+        "jim"
       ],
-      "recap": "Jim puts Dwight's stapler in Jell-O.",
+      "away": [],
+      "recap": "Pam pages Dwight to the front desk over and over; every time he arrives, she's on a call.",
       "beats": [
         {
           "type": "action",
-          "who": "jim",
-          "verb": "prank",
-          "target": "dwight",
-          "caption": "lowers Dwight's stapler into lime Jell-O"
+          "who": "pam",
+          "verb": "phone_call",
+          "target": "none",
+          "caption": "presses the intercom button"
         },
         {
           "type": "say",
           "who": "pam",
-          "text": "Is that the one from the break room?",
-          "to": "jim",
-          "mood": "happy"
+          "text": "Dwight Schrute to the front desk, please. Dwight Schrute.",
+          "to": "all",
+          "mood": "deadpan"
+        },
+        {
+          "type": "move",
+          "who": "dwight",
+          "to": "pam",
+          "pace": "hurry"
         },
         {
           "type": "say",
-          "who": "jim",
-          "text": "Raspberry was my first choice, but lime felt more like him.",
+          "who": "dwight",
+          "text": "Yes? What is it? Is it a package? Is it a threat?",
           "to": "pam",
-          "mood": "deadpan"
+          "mood": "excited"
+        },
+        {
+          "type": "action",
+          "who": "pam",
+          "verb": "phone_call",
+          "target": "none",
+          "caption": "holds up one finger, deep in a phone call"
+        },
+        {
+          "type": "pause",
+          "seconds": 3,
+          "caption": ""
         },
         {
           "type": "move",
@@ -82,25 +100,32 @@
         },
         {
           "type": "say",
-          "who": "dwight",
-          "text": "Question: who did this? Creed. It was Creed.",
+          "who": "pam",
+          "text": "Dwight Schrute to the front desk.",
           "to": "all",
-          "mood": "angry"
+          "mood": "deadpan"
         },
         {
-          "type": "say",
-          "who": "creed",
-          "text": "I've done worse with Jell-O. Ask the Navy.",
-          "to": "none",
-          "mood": "neutral"
+          "type": "move",
+          "who": "dwight",
+          "to": "pam",
+          "pace": "hurry"
         },
         {
           "type": "talking_head",
           "who": "jim",
           "lines": [
-            "It's a good Jell-O. Firm. I'm proud."
+            "That's nine. Pam's record is fourteen.",
+            "It was a slow Tuesday. We don't talk about that Tuesday."
           ],
-          "mood": "smug"
+          "mood": "deadpan"
+        },
+        {
+          "type": "react",
+          "who": [
+            "jim"
+          ],
+          "reaction": "look_at_camera"
         }
       ]
     },
@@ -112,18 +137,19 @@
       "venue": "",
       "present": [
         "michael",
-        "dwight",
         "jim",
         "pam",
+        "dwight",
+        "stanley",
+        "phyllis",
+        "angela",
         "oscar",
         "kevin",
-        "stanley",
-        "angela",
-        "toby",
-        "ryan",
-        "phyllis"
+        "meredith",
+        "creed"
       ],
-      "recap": "Michael announces a special friend and introduces Ryan.",
+      "away": [],
+      "recap": "Michael introduces the new temp, Ryan, with a speech, and keeps mentioning a 'very important lady from corporate'.",
       "beats": [
         {
           "type": "gather",
@@ -135,59 +161,60 @@
         {
           "type": "say",
           "who": "michael",
-          "text": "Today, a very special friend is visiting this office. Someone I admire. Someone who admires me back.",
+          "text": "Everybody, big day. We have a new member of the Dunder Mifflin family. Like an adoption. But legal.",
           "to": "all",
           "mood": "excited"
         },
         {
-          "type": "say",
-          "who": "kevin",
-          "text": "Is it a clown?",
-          "to": "michael",
-          "mood": "happy"
-        },
-        {
-          "type": "say",
-          "who": "michael",
-          "text": "No, Kevin. Clowns are not friends. They are employees of fear.",
-          "to": "kevin",
-          "mood": "annoyed"
-        },
-        {
-          "type": "say",
-          "who": "toby",
-          "text": "Michael, outside visitors need to sign in with me.",
-          "to": "michael",
-          "mood": "nervous"
-        },
-        {
-          "type": "say",
-          "who": "michael",
-          "text": "Toby, I love when you speak. Because then I know when to stop listening.",
-          "to": "toby",
-          "mood": "sarcastic"
-        },
-        {
-          "type": "say",
-          "who": "michael",
-          "text": "Also, meet Ryan, our new temp. Ryan is my protege. Ryan, say hi.",
-          "to": "ryan",
-          "mood": "happy"
+          "type": "enter",
+          "who": [
+            "ryan"
+          ],
+          "to": "conf_front"
         },
         {
           "type": "say",
           "who": "ryan",
-          "text": "Hey.",
+          "text": "Hi. I'm Ryan. I'm the temp.",
           "to": "all",
-          "mood": "deadpan"
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Ryan is in business school. Which is like real school, but for money.",
+          "to": "all",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "And a very important lady from corporate approved his hire personally. Jan. Levinson. Gould. Just Levinson now.",
+          "to": "all",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "stanley",
+          "text": "Is this meeting about the temp or the lady?",
+          "to": "michael",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "It's about family, Stanley.",
+          "to": "stanley",
+          "mood": "sad"
         },
         {
           "type": "talking_head",
-          "who": "oscar",
+          "who": "michael",
           "lines": [
-            "Michael has a special friend. Based on his hair, it's romantic."
+            "I don't have kids. Yet. I have the office.",
+            "And today the office had a baby, and the baby is Ryan."
           ],
-          "mood": "deadpan"
+          "mood": "happy"
         }
       ]
     },
@@ -195,119 +222,136 @@
       "part": "act1",
       "plot": "B",
       "set": "office",
-      "region": "bullpen",
-      "venue": "",
-      "present": [
-        "jim",
-        "pam",
-        "dwight"
-      ],
-      "recap": "Dwight lobbies; Jim sabotages him.",
-      "beats": [
-        {
-          "type": "say",
-          "who": "dwight",
-          "text": "Michael will need an Assistant Regional Manager today. I am preparing.",
-          "to": "jim",
-          "mood": "neutral"
-        },
-        {
-          "type": "say",
-          "who": "jim",
-          "text": "Assistant TO the Regional Manager.",
-          "to": "dwight",
-          "mood": "deadpan"
-        },
-        {
-          "type": "say",
-          "who": "dwight",
-          "text": "False. Assistant Regional Manager. The 'to' is silent.",
-          "to": "jim",
-          "mood": "annoyed"
-        },
-        {
-          "type": "action",
-          "who": "dwight",
-          "verb": "typing",
-          "target": "none",
-          "caption": "types a self-nominating memo"
-        },
-        {
-          "type": "action",
-          "who": "jim",
-          "verb": "prank",
-          "target": "dwight",
-          "caption": "reprints the memo with 'Assistant to the Assistant'"
-        },
-        {
-          "type": "react",
-          "who": [
-            "pam"
-          ],
-          "reaction": "laugh"
-        },
-        {
-          "type": "talking_head",
-          "who": "dwight",
-          "lines": [
-            "Being second-in-command is a burden. I accept it the way a bear accepts a salmon."
-          ],
-          "mood": "neutral"
-        }
-      ]
-    },
-    {
-      "part": "act1",
-      "plot": "C",
-      "set": "office",
       "region": "reception",
       "venue": "",
       "present": [
-        "ryan",
-        "kelly",
-        "pam"
+        "pam",
+        "jim"
       ],
-      "recap": "Ryan is bored; Kelly swoons.",
+      "away": [],
+      "recap": "Jim and Pam set today's game: whoever gets Dwight to say 'beets' the most by five wins.",
       "beats": [
         {
           "type": "move",
-          "who": "kelly",
-          "to": "pam_desk",
-          "pace": "hurry"
-        },
-        {
-          "type": "say",
-          "who": "kelly",
-          "text": "Okay, the new temp is so cute. Is he single? Does he like me? Ask him.",
+          "who": "jim",
           "to": "pam",
-          "mood": "excited"
+          "pace": "walk"
         },
         {
           "type": "say",
-          "who": "ryan",
-          "text": "I'm actually working on something. A startup. Paper, but online.",
+          "who": "jim",
+          "text": "New game. Whoever gets Dwight to say 'beets' the most times by five o'clock wins.",
           "to": "pam",
           "mood": "smug"
         },
         {
           "type": "say",
           "who": "pam",
-          "text": "We... are paper, but not online.",
-          "to": "ryan",
-          "mood": "awkward"
+          "text": "What do I win?",
+          "to": "jim",
+          "mood": "neutral"
         },
         {
           "type": "say",
-          "who": "ryan",
-          "text": "Exactly. That's the gap.",
+          "who": "jim",
+          "text": "The respect of a nation. And a Twix from the machine.",
           "to": "pam",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Deal. Loser buys the Twix.",
+          "to": "jim",
+          "mood": "happy"
+        },
+        {
+          "type": "action",
+          "who": "pam",
+          "verb": "copy",
+          "target": "none",
+          "caption": "draws a scoreboard on a sticky note: JIM / PAM"
+        },
+        {
+          "type": "talking_head",
+          "who": "pam",
+          "lines": [
+            "Jim and I have a lot of games. It makes the day go faster.",
+            "Roy says it's weird. Roy doesn't work up here, though."
+          ],
+          "mood": "happy"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "A",
+      "set": "warehouse",
+      "region": "warehouse",
+      "venue": "",
+      "present": [
+        "darryl",
+        "roy"
+      ],
+      "away": [],
+      "recap": "Michael takes Ryan to the warehouse to show off his 'street' rapport with Darryl, who is not having it.",
+      "beats": [
+        {
+          "type": "enter",
+          "who": [
+            "michael",
+            "ryan"
+          ],
+          "to": "darryl"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Darryl! My brother from a different... warehouse. Ryan, this is where the magic happens.",
+          "to": "darryl",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "darryl",
+          "text": "The magic is boxes, man.",
+          "to": "ryan",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Darryl, tell Ryan how we say hello down here.",
+          "to": "darryl",
           "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "darryl",
+          "text": "We say 'hello.'",
+          "to": "michael",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Hello, dog.",
+          "to": "roy",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "roy",
+          "text": "Hey.",
+          "to": "michael",
+          "mood": "neutral"
         },
         {
           "type": "talking_head",
           "who": "ryan",
           "lines": [
-            "This is temporary. I'm not here to learn the paper business."
+            "I'm here to learn how a small business runs. For school.",
+            "So far I've learned the warehouse is cold and Michael says 'dog.'"
           ],
           "mood": "deadpan"
         }
@@ -315,6 +359,199 @@
     },
     {
       "part": "act1",
+      "plot": "C",
+      "set": "break_room",
+      "region": "break_room",
+      "venue": "",
+      "present": [
+        "ryan"
+      ],
+      "away": [],
+      "recap": "Dwight corners Ryan at the vending machine and interrogates him as a suspected corporate spy.",
+      "beats": [
+        {
+          "type": "move",
+          "who": "ryan",
+          "to": "vending",
+          "pace": "walk"
+        },
+        {
+          "type": "enter",
+          "who": [
+            "dwight"
+          ],
+          "to": "ryan"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Name. Rank. True purpose.",
+          "to": "ryan",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "ryan",
+          "text": "Ryan. Temp. Getting a granola bar.",
+          "to": "dwight",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Business school. The West Point of spies. Who sent you?",
+          "to": "ryan",
+          "mood": "angry"
+        },
+        {
+          "type": "say",
+          "who": "ryan",
+          "text": "A temp agency. In Wilkes-Barre.",
+          "to": "dwight",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "That's exactly what a spy from Wilkes-Barre would say.",
+          "to": "ryan",
+          "mood": "smug"
+        },
+        {
+          "type": "talking_head",
+          "who": "dwight",
+          "lines": [
+            "Corporate is closing branches. Everybody knows. Nobody has said it. I know.",
+            "And then a 'temp' appears. Temp is short for temptation. Or temperature. Either way: suspicious."
+          ],
+          "mood": "deadpan"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "B",
+      "set": "office",
+      "region": "bullpen",
+      "venue": "",
+      "present": [
+        "jim",
+        "dwight"
+      ],
+      "away": [],
+      "recap": "Jim gets Dwight to say 'beets' three times with a fake question about root vegetables.",
+      "beats": [
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "Dwight, settle something. Strongest root vegetable. Carrots, right?",
+          "to": "dwight",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Carrots? False. Beets. Beets have a higher density, beets store for months, and beets can stain a man for life.",
+          "to": "jim",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "Interesting.",
+          "to": "dwight",
+          "mood": "deadpan"
+        },
+        {
+          "type": "action",
+          "who": "jim",
+          "verb": "typing",
+          "target": "pam",
+          "caption": "instant-messages Pam: 3"
+        },
+        {
+          "type": "react",
+          "who": [
+            "jim"
+          ],
+          "reaction": "look_at_camera"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "A",
+      "set": "annex",
+      "region": "annex",
+      "venue": "",
+      "present": [
+        "kelly",
+        "toby"
+      ],
+      "away": [],
+      "recap": "Michael introduces Ryan to the annex; Kelly gives Ryan a nickname, and Michael is cruel to Toby for no reason.",
+      "beats": [
+        {
+          "type": "enter",
+          "who": [
+            "michael",
+            "ryan"
+          ],
+          "to": "kelly"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "And this is the annex. Kelly, customer service. Toby, nothing.",
+          "to": "ryan",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "toby",
+          "text": "HR, actually. Hi, Ryan. If you ever need—",
+          "to": "ryan",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "He won't need. Nobody needs.",
+          "to": "toby",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "kelly",
+          "text": "Oh my God, you're so cute. I'm going to call you Ry-Ry. Is that okay? It's happening.",
+          "to": "ryan",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "ryan",
+          "text": "I'd prefer Ryan.",
+          "to": "kelly",
+          "mood": "awkward"
+        },
+        {
+          "type": "say",
+          "who": "kelly",
+          "text": "Okay, Ry-Ry.",
+          "to": "ryan",
+          "mood": "happy"
+        },
+        {
+          "type": "react",
+          "who": [
+            "toby"
+          ],
+          "reaction": "look_at_camera"
+        }
+      ]
+    },
+    {
+      "part": "act2",
       "plot": "A",
       "set": "office",
       "region": "michael_office",
@@ -323,7 +560,189 @@
         "michael",
         "ryan"
       ],
-      "recap": "Michael tries to be kind to Ryan, badly.",
+      "away": [],
+      "recap": "To impress Ryan, Michael puts Jan on speakerphone; she asks to be taken off speaker immediately.",
+      "beats": [
+        {
+          "type": "move",
+          "who": "ryan",
+          "to": "michael_guest_1",
+          "pace": "walk"
+        },
+        {
+          "type": "action",
+          "who": "michael",
+          "verb": "phone_call",
+          "target": "none",
+          "caption": "dials corporate and hits speaker with a flourish"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Jan! It's Michael. I'm here with Ryan, the temp you approved. Say hi to Ryan.",
+          "to": "none",
+          "mood": "excited"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": ""
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "She says take her off speaker. She's playing hard to get. Very corporate.",
+          "to": "ryan",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "ryan",
+          "text": "I think she means take her off speaker.",
+          "to": "michael",
+          "mood": "deadpan"
+        },
+        {
+          "type": "talking_head",
+          "who": "michael",
+          "lines": [
+            "Jan and I have a very professional relationship. She's my boss. I'm her... employee.",
+            "There's tension. Not bad tension. Sexy tension. Professionally."
+          ],
+          "mood": "nervous"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "B",
+      "set": "office",
+      "region": "reception",
+      "venue": "",
+      "present": [
+        "pam",
+        "dwight",
+        "jim"
+      ],
+      "away": [],
+      "recap": "Pam asks Dwight one innocent question about the farm and scores eleven 'beets'.",
+      "beats": [
+        {
+          "type": "move",
+          "who": "dwight",
+          "to": "pam",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Dwight, how's the farm this time of year?",
+          "to": "dwight",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "The beets are in the cellar, the beet greens are composted, the beet seed is drying, and the beet—",
+          "to": "pam",
+          "mood": "excited"
+        },
+        {
+          "type": "caption",
+          "text": "FOUR MINUTES LATER"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "—which is why beets are the true king of the cellar. Thank you for asking. Nobody asks.",
+          "to": "pam",
+          "mood": "happy"
+        },
+        {
+          "type": "action",
+          "who": "pam",
+          "verb": "copy",
+          "target": "none",
+          "caption": "writes '11' on the scoreboard under PAM"
+        },
+        {
+          "type": "react",
+          "who": [
+            "jim"
+          ],
+          "reaction": "facepalm"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "C",
+      "set": "office",
+      "region": "bullpen",
+      "venue": "",
+      "present": [
+        "dwight",
+        "ryan",
+        "angela"
+      ],
+      "away": [],
+      "recap": "Dwight reveals his dossier on Ryan to Angela; Ryan overhears and doesn't care.",
+      "beats": [
+        {
+          "type": "move",
+          "who": "angela",
+          "to": "dwight_desk",
+          "pace": "walk"
+        },
+        {
+          "type": "action",
+          "who": "dwight",
+          "verb": "present",
+          "target": "angela",
+          "caption": "slides a thin manila folder labeled RYAN (SPY?) to Angela"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "He drinks his coffee black. Like a man with nothing to hide. Which is what a man with something to hide would do.",
+          "to": "angela",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "angela",
+          "text": "He seems untrustworthy. He has bangs.",
+          "to": "dwight",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "ryan",
+          "text": "I can hear you. I'm right here.",
+          "to": "dwight",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Good. Now you know you're being watched.",
+          "to": "ryan",
+          "mood": "smug"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "A",
+      "set": "office",
+      "region": "michael_office",
+      "venue": "",
+      "present": [
+        "michael",
+        "ryan"
+      ],
+      "away": [],
+      "recap": "At the end of the day, Michael tells Ryan about his own first day, and gives him his old stapler.",
       "beats": [
         {
           "type": "move",
@@ -334,7 +753,14 @@
         {
           "type": "say",
           "who": "michael",
-          "text": "Ryan, I want to be kind to you. So I got you a mentor mug. It says 'Ryan's Mentor Is Me.'",
+          "text": "My first day here was 1993. I wore a tie with a fish on it. Nobody talked to me until Thursday.",
+          "to": "ryan",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "So. I just wanted your first day to be better than mine.",
           "to": "ryan",
           "mood": "happy"
         },
@@ -342,382 +768,101 @@
           "type": "action",
           "who": "michael",
           "verb": "present",
-          "target": "none",
-          "caption": "hands Ryan a mug with his own face on it"
+          "target": "ryan",
+          "caption": "hands Ryan a battered red stapler"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "This was my first stapler. It's been through a lot. It's seen things.",
+          "to": "ryan",
+          "mood": "sad"
         },
         {
           "type": "say",
           "who": "ryan",
-          "text": "Is that... your face?",
+          "text": "Thanks, Michael. That's... actually nice.",
           "to": "michael",
           "mood": "awkward"
         },
         {
-          "type": "say",
-          "who": "michael",
-          "text": "It's a face you can trust. Also I told everyone you're my son. Not literally. Emotionally.",
-          "to": "ryan",
-          "mood": "excited"
-        },
-        {
-          "type": "pause",
-          "seconds": 2,
-          "caption": "Ryan holds the mug like evidence"
-        },
-        {
-          "type": "say",
-          "who": "ryan",
-          "text": "Thanks. I'll... put it somewhere.",
-          "to": "michael",
-          "mood": "nervous"
-        },
-        {
           "type": "talking_head",
-          "who": "michael",
+          "who": "ryan",
           "lines": [
-            "Kindness is just love with a budget. And I overspent."
+            "My plan was to stay two months and learn what not to do.",
+            "I've learned a lot of what not to do. Also, I have a stapler."
           ],
-          "mood": "happy"
+          "mood": "neutral"
         }
       ]
     },
     {
       "part": "act2",
       "plot": "B",
-      "set": "office",
-      "region": "reception",
+      "set": "parking_lot",
+      "region": "entrance",
       "venue": "",
       "present": [
         "pam",
-        "jim",
-        "roy"
+        "jim"
       ],
-      "recap": "Roy picks Pam up; she checks if Jim noticed.",
+      "away": [],
+      "recap": "At five, Pam collects her Twix; Roy honks from the truck, and Jim watches her go.",
       "beats": [
         {
-          "type": "enter",
-          "who": [
-            "roy"
-          ],
-          "to": "pam_desk"
-        },
-        {
-          "type": "say",
-          "who": "roy",
-          "text": "Ready, Pam? Lunch. I got us a table at the diner.",
-          "to": "pam",
-          "mood": "neutral"
-        },
-        {
-          "type": "say",
-          "who": "pam",
-          "text": "Yeah. One sec.",
-          "to": "roy",
-          "mood": "happy"
-        },
-        {
-          "type": "react",
-          "who": [
-            "pam"
-          ],
-          "reaction": "stare"
+          "type": "caption",
+          "text": "5:00 PM"
         },
         {
           "type": "action",
           "who": "jim",
-          "verb": "typing",
-          "target": "none",
-          "caption": "pretends not to watch the front desk"
+          "verb": "present",
+          "target": "pam",
+          "caption": "hands over a Twix, with ceremony"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "Eleven. I'll never recover. My children will hear of this.",
+          "to": "pam",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Tell them their dad lost to a girl with a farm question.",
+          "to": "jim",
+          "mood": "smug"
         },
         {
           "type": "say",
           "who": "roy",
-          "text": "You good?",
+          "text": "Pam! Let's go! Traffic!",
           "to": "pam",
-          "mood": "neutral"
+          "mood": "annoyed"
         },
         {
           "type": "say",
           "who": "pam",
-          "text": "Totally.",
-          "to": "roy",
-          "mood": "awkward"
+          "text": "Coming! Bye, Jim. Good game.",
+          "to": "jim",
+          "mood": "happy"
         },
         {
           "type": "exit",
           "who": [
-            "pam",
-            "roy"
+            "pam"
           ],
           "how": "walk"
         },
         {
-          "type": "react",
-          "who": [
-            "jim"
-          ],
-          "reaction": "look_at_camera"
-        },
-        {
           "type": "talking_head",
-          "who": "pam",
+          "who": "jim",
           "lines": [
-            "It's fine. Jim's just... he's always there. That's nice."
+            "Best part of the day? Probably that. Losing a Twix.",
+            "Don't read into that."
           ],
-          "mood": "awkward"
-        }
-      ]
-    },
-    {
-      "part": "act2",
-      "plot": "A",
-      "set": "office",
-      "region": "michael_office",
-      "venue": "",
-      "present": [
-        "michael",
-        "jan",
-        "toby"
-      ],
-      "recap": "The special friend is Jan.",
-      "beats": [
-        {
-          "type": "enter",
-          "who": [
-            "jan"
-          ],
-          "to": "michael_desk"
-        },
-        {
-          "type": "say",
-          "who": "michael",
-          "text": "Everybody, my special friend: Jan Levinson, my boss, and my... other things.",
-          "to": "all",
-          "mood": "excited"
-        },
-        {
-          "type": "say",
-          "who": "jan",
-          "text": "Michael, I'm here to review quarterlies. That's all.",
-          "to": "michael",
-          "mood": "annoyed"
-        },
-        {
-          "type": "say",
-          "who": "michael",
-          "text": "Yes. And after, a dinner of reviewing. Candles. You love candles.",
-          "to": "jan",
-          "mood": "nervous"
-        },
-        {
-          "type": "say",
-          "who": "toby",
-          "text": "Michael, dating a supervisor is a policy matter.",
-          "to": "michael",
-          "mood": "nervous"
-        },
-        {
-          "type": "say",
-          "who": "michael",
-          "text": "Toby, go away. Go away forever. Like in a nice way.",
-          "to": "toby",
-          "mood": "angry"
-        },
-        {
-          "type": "react",
-          "who": [
-            "jan"
-          ],
-          "reaction": "cringe"
-        },
-        {
-          "type": "say",
-          "who": "jan",
-          "text": "Fine. Dinner. Short dinner.",
-          "to": "michael",
-          "mood": "awkward"
-        },
-        {
-          "type": "react",
-          "who": [
-            "michael"
-          ],
-          "reaction": "cheer"
-        }
-      ]
-    },
-    {
-      "part": "act2",
-      "plot": "C",
-      "set": "break_room",
-      "region": "break_room",
-      "venue": "",
-      "present": [
-        "ryan",
-        "creed"
-      ],
-      "recap": "Ryan tries to hide the mug.",
-      "beats": [
-        {
-          "type": "enter",
-          "who": [
-            "ryan"
-          ],
-          "to": "table_1"
-        },
-        {
-          "type": "action",
-          "who": "ryan",
-          "verb": "hide",
-          "target": "none",
-          "caption": "slides the mug under a stack of napkins"
-        },
-        {
-          "type": "enter",
-          "who": [
-            "creed"
-          ],
-          "to": "table_1"
-        },
-        {
-          "type": "say",
-          "who": "creed",
-          "text": "I had a mentor once. He taught me to disappear. Haven't seen him since.",
-          "to": "ryan",
-          "mood": "neutral"
-        },
-        {
-          "type": "say",
-          "who": "ryan",
-          "text": "Okay.",
-          "to": "creed",
-          "mood": "awkward"
-        },
-        {
-          "type": "talking_head",
-          "who": "ryan",
-          "lines": [
-            "Michael thinks I'm his protege. Honestly, he's the first person who's ever thought I'm anything."
-          ],
-          "mood": "sad"
-        }
-      ]
-    },
-    {
-      "part": "act2",
-      "plot": "B",
-      "set": "office",
-      "region": "bullpen",
-      "venue": "",
-      "present": [
-        "dwight",
-        "jim",
-        "michael",
-        "angela"
-      ],
-      "recap": "Dwight's memo; Michael stalls.",
-      "beats": [
-        {
-          "type": "say",
-          "who": "dwight",
-          "text": "Michael, I have a memo. It says I should be Assistant Regional Manager.",
-          "to": "michael",
-          "mood": "neutral"
-        },
-        {
-          "type": "say",
-          "who": "michael",
-          "text": "It says 'Assistant to the Assistant.' You've demoted yourself. That's brave.",
-          "to": "dwight",
-          "mood": "annoyed"
-        },
-        {
-          "type": "say",
-          "who": "dwight",
-          "text": "Jim!",
-          "to": "jim",
-          "mood": "angry"
-        },
-        {
-          "type": "say",
-          "who": "michael",
-          "text": "I'll think about it. That means maybe. In my language it means probably not.",
-          "to": "dwight",
-          "mood": "neutral"
-        },
-        {
-          "type": "react",
-          "who": [
-            "angela"
-          ],
-          "reaction": "sigh"
-        }
-      ]
-    },
-    {
-      "part": "act2",
-      "plot": "A",
-      "set": "office",
-      "region": "conference_room",
-      "venue": "",
-      "present": [
-        "michael",
-        "jan",
-        "ryan",
-        "kevin",
-        "pam"
-      ],
-      "recap": "Michael gets one sweet moment.",
-      "beats": [
-        {
-          "type": "say",
-          "who": "kevin",
-          "text": "Michael. We made you a card. Special friend.",
-          "to": "michael",
-          "mood": "happy"
-        },
-        {
-          "type": "say",
-          "who": "michael",
-          "text": "You... did? You all did?",
-          "to": "all",
-          "mood": "sad"
-        },
-        {
-          "type": "say",
-          "who": "pam",
-          "text": "It's a nice day for you. We thought it should be nice.",
-          "to": "michael",
-          "mood": "happy"
-        },
-        {
-          "type": "say",
-          "who": "jan",
-          "text": "That's actually... sweet. Michael. Okay.",
-          "to": "michael",
-          "mood": "awkward"
-        },
-        {
-          "type": "react",
-          "who": [
-            "michael"
-          ],
-          "reaction": "gasp"
-        },
-        {
-          "type": "say",
-          "who": "ryan",
-          "text": "It's a good card.",
-          "to": "michael",
-          "mood": "neutral"
-        },
-        {
-          "type": "talking_head",
-          "who": "michael",
-          "lines": [
-            "Nobody has ever signed a card for me without being asked. I'm going to frame it."
-          ],
-          "mood": "sad"
+          "mood": "deadpan"
         }
       ]
     },
@@ -728,39 +873,44 @@
       "region": "bullpen",
       "venue": "",
       "present": [
-        "dwight",
-        "jim",
-        "pam"
+        "ryan",
+        "creed"
       ],
-      "recap": "Dwight finds the Jell-O stapler again.",
+      "away": [],
+      "recap": "Creed introduces himself to Ryan, and Ryan wishes he hadn't.",
       "beats": [
         {
-          "type": "action",
-          "who": "dwight",
-          "verb": "search",
-          "target": "none",
-          "caption": "opens his drawer and finds a stapler in Jell-O"
-        },
-        {
-          "type": "say",
-          "who": "dwight",
-          "text": "Creed!",
-          "to": "all",
-          "mood": "angry"
+          "type": "move",
+          "who": "creed",
+          "to": "ryan",
+          "pace": "walk"
         },
         {
           "type": "say",
           "who": "creed",
-          "text": "I'll take it.",
-          "to": "none",
-          "mood": "neutral"
+          "text": "You're the new guy. I'm Creed. If anybody asks, you've never seen me.",
+          "to": "ryan",
+          "mood": "deadpan"
         },
         {
-          "type": "react",
-          "who": [
-            "pam"
-          ],
-          "reaction": "look_at_camera"
+          "type": "say",
+          "who": "ryan",
+          "text": "We work in the same office.",
+          "to": "creed",
+          "mood": "awkward"
+        },
+        {
+          "type": "say",
+          "who": "creed",
+          "text": "And yet.",
+          "to": "ryan",
+          "mood": "deadpan"
+        },
+        {
+          "type": "move",
+          "who": "creed",
+          "to": "creed_desk",
+          "pace": "sneak"
         }
       ]
     }

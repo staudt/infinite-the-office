@@ -1,32 +1,54 @@
 {
-  "title": "Pretzel Day",
-  "logline": "Michael's pretzel-themed meeting threatens Stanley's one joy while Dwight's beet fundraiser gets a Jim-sized twist.",
-  "outline": "A: Michael hijacks Pretzel Day with a mandatory pretzel-themed meeting; Stanley fights for his pretzel. B: Dwight sells beets to fund his campaign; Jim swaps them for fake beets. C: Ryan is asked to run the pretzel cart and quietly eyes bigger things. Order: cold, A, B, C, A, B, A, C, B, A, tag",
-  "theme": "Protecting the small thing that makes you happy",
-  "storySoFar": "Michael's dinner with Jan was canceled; the office gave him a warm moment. Ryan is his reluctant protege. Dwight campaigns for Assistant Regional Manager; this week he sold beets to fund it and Jim swapped them for fakes. Michael's pretzel meeting nearly cost Stanley his Pretzel Day, but Michael made it right. Pam keeps Jim's lamp on. Ryan was noticed by Jan's corporate world after impressing a pretzel vendor-related task.",
-  "extras": [],
+  "title": "Client Dinner",
+  "logline": "Michael and Jan take a county purchasing director to dinner, where Michael's rambling wins the deal and Jan kisses him in the parking lot, while Jim, left in charge for the afternoon, uses his power for nothing but a desk swap with Pam.",
+  "outline": "A: Michael and Jan pitch the county's purchasing director; Jan's slides fail, Michael's sincere rambling wins, and Jan kisses him, then says it never happened. B: Michael leaves Jim in charge; Jim and Pam swap desks for the afternoon, and Dwight attempts a coup. C: Kelly tells everyone she's dating Ryan, who was not consulted. Order: cold, A, B, A, C, B, A, C, B, A, B, tag",
+  "theme": "Doing it your own way",
+  "storySoFar": "Michael and Jan took Harold Pettibone, purchasing director for Lackawanna County schools, to dinner at The Beef & Barrel; Jan's slides failed, Michael's story about his childhood comic 'Agent Michael Scarn' won the deal, and in the parking lot Jan kissed him, then said it never happened. Michael is bursting to tell someone. The deal may help decide whether Scranton or Stamford closes; Michael promised nobody would lose their job. Jim was Acting Regional Manager for the afternoon: he gave everyone ten minutes and swapped desks with Pam; Dwight's coup failed against Michael's sticky note. Kelly is telling everyone she's dating Ryan, who says they're not. Dwight runs a Loyalty Task Force with Angela; Jim kept Pam's drawing of the office; Pam doesn't remember kissing Jim's cheek at the Dundies.",
+  "extras": [
+    {
+      "id": "harold_pettibone",
+      "name": "Harold Pettibone",
+      "title": "Purchasing Director, Lackawanna County",
+      "voice": "Weary, literal county bureaucrat who has sat through a thousand pitches and trusts nobody with slides.",
+      "look": "office_m"
+    }
+  ],
+  "away": [],
   "stateChanges": [
     {
-      "type": "note",
-      "text": "Dwight still owes the office beet refunds; Jim holds one real beet in his desk drawer."
-    },
-    {
-      "type": "note",
-      "text": "Ryan handled the pretzel vendor and left a business-card-style note for Jan's office; seed for corporate path."
-    },
-    {
-      "type": "gag",
-      "text": "Stanley: Pretzel Day is sacred; Michael gave him the first pretzel."
-    },
-    {
       "type": "arc",
-      "arc": "Assistant (to the) Regional Manager",
-      "progress": "Dwight's beet fundraiser fell apart via Jim's fake beets; Michael still stalling."
+      "arc": "Michael, Jan and the Rumor",
+      "progress": "Michael won the county deal; Jan kissed him in the parking lot and says it never happened"
     },
     {
       "type": "arc",
       "arc": "Ryan the Temp",
-      "progress": "Ryan runs pretzel logistics competently and quietly eyes corporate."
+      "progress": "Kelly announced they're dating; Ryan was not consulted"
+    },
+    {
+      "type": "arc",
+      "arc": "Jim and Pam",
+      "progress": "Jim and Pam swapped desks for an afternoon; it was the best day either has had"
+    },
+    {
+      "type": "relationship",
+      "a": "michael",
+      "b": "jan",
+      "status": "They kissed after the county deal; Jan insists it never happened"
+    },
+    {
+      "type": "relationship",
+      "a": "kelly",
+      "b": "ryan",
+      "status": "Kelly says they're dating; Ryan says they're not"
+    },
+    {
+      "type": "note",
+      "text": "Michael's childhood comic hero: Agent Michael Scarn"
+    },
+    {
+      "type": "note",
+      "text": "Harold Pettibone of Lackawanna County signed with Scranton"
     }
   ],
   "scenes": [
@@ -37,54 +59,59 @@
       "region": "bullpen",
       "venue": "",
       "present": [
-        "jim",
-        "dwight",
-        "pam"
+        "stanley",
+        "michael"
       ],
-      "recap": "Jim tells Dwight the beets he's selling look suspicious.",
+      "away": [],
+      "recap": "Michael 'helps' Stanley with his crossword.",
       "beats": [
         {
+          "type": "move",
+          "who": "michael",
+          "to": "stanley_desk",
+          "pace": "walk"
+        },
+        {
           "type": "say",
-          "who": "dwight",
-          "text": "Beets. Five dollars a bag. Every dollar funds my rise to Assistant Regional Manager.",
-          "to": "all",
+          "who": "michael",
+          "text": "Ooh, crossword. What've you got? I'm very good. I've seen a crossword.",
+          "to": "stanley",
           "mood": "excited"
         },
         {
           "type": "say",
-          "who": "jim",
-          "text": "Is that the rise of Dwight, or the rise of the beet?",
-          "to": "dwight",
+          "who": "stanley",
+          "text": "Seven letters. 'One who runs an office.'",
+          "to": "michael",
           "mood": "deadpan"
         },
         {
           "type": "say",
-          "who": "dwight",
-          "text": "Both. They are the same story.",
-          "to": "jim",
-          "mood": "neutral"
+          "who": "michael",
+          "text": "Michael.",
+          "to": "stanley",
+          "mood": "smug"
         },
         {
-          "type": "talking_head",
-          "who": "jim",
-          "lines": [
-            "Dwight is selling beets to fund his campaign. I'm funding mine too. It's a smaller campaign. It's just me, and a bag of fake beets."
-          ],
+          "type": "say",
+          "who": "stanley",
+          "text": "That's seven letters, but it's 'manager.'",
+          "to": "michael",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Agree to disagree. Put 'Michael' in pencil.",
+          "to": "stanley",
           "mood": "smug"
         },
         {
           "type": "action",
-          "who": "jim",
-          "verb": "prank",
-          "target": "dwight",
-          "caption": "quietly photographs Dwight's beet crate"
-        },
-        {
-          "type": "react",
-          "who": [
-            "pam"
-          ],
-          "reaction": "look_at_camera"
+          "who": "stanley",
+          "verb": "typing",
+          "target": "none",
+          "caption": "writes MANAGER in pen, firmly"
         }
       ]
     },
@@ -92,17 +119,452 @@
       "part": "act1",
       "plot": "A",
       "set": "office",
-      "region": "conference_room",
+      "region": "michael_office",
+      "venue": "",
+      "present": [
+        "michael"
+      ],
+      "away": [],
+      "recap": "Jan arrives to prep the county pitch and tells Michael to let her do the talking.",
+      "beats": [
+        {
+          "type": "enter",
+          "who": [
+            "jan"
+          ],
+          "to": "michael_guest_1"
+        },
+        {
+          "type": "say",
+          "who": "jan",
+          "text": "Harold Pettibone buys paper for every school in the county. This deal could decide which branch survives.",
+          "to": "michael",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "jan",
+          "text": "I have slides. You will smile, nod, and say nothing.",
+          "to": "michael",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Smile, nod, nothing. I'm like a bobblehead. A silent, sexy bobblehead.",
+          "to": "jan",
+          "mood": "smug"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": ""
+        },
+        {
+          "type": "say",
+          "who": "jan",
+          "text": "Starting now, Michael.",
+          "to": "michael",
+          "mood": "annoyed"
+        },
+        {
+          "type": "talking_head",
+          "who": "jan",
+          "lines": [
+            "Michael is... unique. Clients either love him or report him.",
+            "Tonight I need them to love him silently."
+          ],
+          "mood": "deadpan"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "B",
+      "set": "office",
+      "region": "bullpen",
       "venue": "",
       "present": [
         "michael",
-        "stanley",
-        "toby",
-        "oscar",
-        "kevin",
-        "phyllis"
+        "jim",
+        "dwight",
+        "pam"
       ],
-      "recap": "Michael announces a mandatory Pretzel Day meeting that eats Stanley's pretzel time.",
+      "away": [],
+      "recap": "On his way out, Michael leaves Jim in charge; Dwight is outraged, and Jim's first act is to give everyone a ten-minute break.",
+      "beats": [
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "I'm off to a very important dinner with a very important lady. Jim, you're in charge.",
+          "to": "all",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Jim? Michael, I am the Assistant to the Regional Manager.",
+          "to": "michael",
+          "mood": "angry"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "And Jim is the Acting Regional Manager. Acting beats assisting. Like in movies.",
+          "to": "dwight",
+          "mood": "neutral"
+        },
+        {
+          "type": "exit",
+          "who": [
+            "michael"
+          ],
+          "how": "walk"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "As my first act as Acting Regional Manager: everybody take ten minutes.",
+          "to": "all",
+          "mood": "deadpan"
+        },
+        {
+          "type": "react",
+          "who": [
+            "pam"
+          ],
+          "reaction": "laugh"
+        },
+        {
+          "type": "talking_head",
+          "who": "dwight",
+          "lines": [
+            "The line of succession is clear. It is me. It has always been me.",
+            "Michael is testing me. This is a test. I will pass it by seizing power."
+          ],
+          "mood": "angry"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "A",
+      "set": "offsite",
+      "region": "venue",
+      "venue": "THE BEEF & BARREL",
+      "present": [
+        "jan",
+        "michael",
+        "harold_pettibone"
+      ],
+      "away": [],
+      "recap": "Jan's slide pitch puts Harold Pettibone to sleep; Michael is visibly dying to talk.",
+      "beats": [
+        {
+          "type": "action",
+          "who": "jan",
+          "verb": "present",
+          "target": "harold_pettibone",
+          "caption": "flips through a binder of pie charts"
+        },
+        {
+          "type": "say",
+          "who": "jan",
+          "text": "As you can see, our delivery reliability is ninety-eight point four percent.",
+          "to": "harold_pettibone",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "harold_pettibone",
+          "text": "Staples said ninety-nine.",
+          "to": "jan",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "jan",
+          "text": "Staples is a big-box retailer that doesn't know your name.",
+          "to": "harold_pettibone",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "harold_pettibone",
+          "text": "Neither do you. You called me Howard twice.",
+          "to": "jan",
+          "mood": "deadpan"
+        },
+        {
+          "type": "action",
+          "who": "michael",
+          "verb": "eat",
+          "target": "none",
+          "caption": "nods, smiles, and silently vibrates with things to say"
+        },
+        {
+          "type": "react",
+          "who": [
+            "michael"
+          ],
+          "reaction": "stare"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "C",
+      "set": "annex",
+      "region": "annex",
+      "venue": "",
+      "present": [
+        "kelly",
+        "toby",
+        "ryan"
+      ],
+      "away": [],
+      "recap": "Kelly announces to Toby that she and Ryan are dating; Ryan was not consulted.",
+      "beats": [
+        {
+          "type": "say",
+          "who": "kelly",
+          "text": "Toby, I have to disclose something. For HR. Ryan and I are dating.",
+          "to": "toby",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "ryan",
+          "text": "We're not.",
+          "to": "toby",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "kelly",
+          "text": "He's shy. We had coffee. In the kitchen. Together.",
+          "to": "toby",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "ryan",
+          "text": "We were both getting coffee at the same time.",
+          "to": "toby",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "toby",
+          "text": "I'll... make a note.",
+          "to": "kelly",
+          "mood": "awkward"
+        },
+        {
+          "type": "talking_head",
+          "who": "kelly",
+          "lines": [
+            "When you know, you know. And I know. I've known since Tuesday.",
+            "Ryan doesn't know yet. That's so romantic."
+          ],
+          "mood": "excited"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "B",
+      "set": "office",
+      "region": "bullpen",
+      "venue": "",
+      "present": [
+        "jim",
+        "pam",
+        "dwight"
+      ],
+      "away": [],
+      "recap": "Acting Manager Jim decrees a desk swap with Pam; she takes his seat across from Dwight, and loves it.",
+      "beats": [
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "New policy. For one afternoon, Pam and I switch desks. For morale.",
+          "to": "all",
+          "mood": "deadpan"
+        },
+        {
+          "type": "move",
+          "who": "jim",
+          "to": "pam_desk",
+          "pace": "walk"
+        },
+        {
+          "type": "move",
+          "who": "pam",
+          "to": "jim_desk",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Hi, Dwight. I'm your new desk mate. Want to hear about my weekend?",
+          "to": "dwight",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "This is a hostile work environment. I'm writing it down.",
+          "to": "pam",
+          "mood": "angry"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Is that a beet on your mug? What kind of beet is it?",
+          "to": "dwight",
+          "mood": "neutral"
+        },
+        {
+          "type": "talking_head",
+          "who": "pam",
+          "lines": [
+            "Jim's desk has a great view. Of Dwight. But also of the window.",
+            "And you can see reception from here. It looks lonely. Huh."
+          ],
+          "mood": "neutral"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "A",
+      "set": "offsite",
+      "region": "venue",
+      "venue": "THE BEEF & BARREL",
+      "present": [
+        "jan",
+        "michael",
+        "harold_pettibone"
+      ],
+      "away": [],
+      "recap": "Michael breaks his silence with a long, sincere story about his mother and a ream of paper, and Harold signs.",
+      "beats": [
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Harold. Can I tell you a story? When I was nine, my mom bought me a ream of paper. For my birthday.",
+          "to": "harold_pettibone",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "jan",
+          "text": "Michael.",
+          "to": "michael",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "I drew a comic book. Five hundred pages. About a hero called Agent Michael Scarn. It was terrible. It was everything.",
+          "to": "harold_pettibone",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Those kids in your schools? That's their ream. Don't give them Staples. Give them someone who remembers.",
+          "to": "harold_pettibone",
+          "mood": "sad"
+        },
+        {
+          "type": "pause",
+          "seconds": 3,
+          "caption": ""
+        },
+        {
+          "type": "say",
+          "who": "harold_pettibone",
+          "text": "Where do I sign?",
+          "to": "jan",
+          "mood": "neutral"
+        },
+        {
+          "type": "react",
+          "who": [
+            "jan"
+          ],
+          "reaction": "gasp"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "C",
+      "set": "kitchen",
+      "region": "kitchen",
+      "venue": "",
+      "present": [
+        "kelly",
+        "ryan"
+      ],
+      "away": [],
+      "recap": "Kelly brings Ryan a 'couples lunch'; he tries to be honest, and she hears it as a compliment.",
+      "beats": [
+        {
+          "type": "action",
+          "who": "kelly",
+          "verb": "present",
+          "target": "ryan",
+          "caption": "hands Ryan a sandwich cut into a heart"
+        },
+        {
+          "type": "say",
+          "who": "ryan",
+          "text": "Kelly, I need to be honest. I'm not really looking for anything right now.",
+          "to": "kelly",
+          "mood": "awkward"
+        },
+        {
+          "type": "say",
+          "who": "kelly",
+          "text": "Oh my God, you're so honest. That's literally my type.",
+          "to": "ryan",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "ryan",
+          "text": "That's not... okay.",
+          "to": "kelly",
+          "mood": "nervous"
+        },
+        {
+          "type": "action",
+          "who": "ryan",
+          "verb": "eat",
+          "target": "none",
+          "caption": "eats the heart-shaped sandwich, defeated"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "B",
+      "set": "office",
+      "region": "conference_room",
+      "venue": "",
+      "present": [
+        "dwight",
+        "jim",
+        "pam",
+        "angela",
+        "kevin",
+        "oscar"
+      ],
+      "away": [],
+      "recap": "Dwight calls an emergency meeting to seize power; Pam produces Michael's sticky note naming Jim, and the coup collapses.",
       "beats": [
         {
           "type": "gather",
@@ -113,308 +575,45 @@
         },
         {
           "type": "say",
-          "who": "michael",
-          "text": "Today is Pretzel Day, which is a day of bonding. We will be bonding for exactly two hours, starting now.",
-          "to": "all",
-          "mood": "excited"
-        },
-        {
-          "type": "say",
-          "who": "stanley",
-          "text": "The pretzel guy leaves at ten. It is nine fifty.",
-          "to": "michael",
-          "mood": "annoyed"
-        },
-        {
-          "type": "say",
-          "who": "michael",
-          "text": "Stanley, pretzels are a state of mind. We will have a pretzel mind.",
-          "to": "stanley",
-          "mood": "happy"
-        },
-        {
-          "type": "say",
-          "who": "toby",
-          "text": "Technically, a mandatory meeting over lunch needs to be—",
-          "to": "michael",
-          "mood": "nervous"
-        },
-        {
-          "type": "say",
-          "who": "michael",
-          "text": "Toby, you're not even a pretzel.",
-          "to": "toby",
-          "mood": "angry"
-        },
-        {
-          "type": "pause",
-          "seconds": 2,
-          "caption": "Stanley stares at his watch"
-        },
-        {
-          "type": "say",
-          "who": "stanley",
-          "text": "Did I stutter? I said nine fifty.",
-          "to": "michael",
-          "mood": "angry"
-        },
-        {
-          "type": "talking_head",
-          "who": "stanley",
-          "lines": [
-            "Pretzel Day is the one day I look forward to. The pretzel is warm, and nobody is talking to me. Guess which one Michael is ruining."
-          ],
-          "mood": "deadpan"
-        }
-      ]
-    },
-    {
-      "part": "act1",
-      "plot": "B",
-      "set": "office",
-      "region": "bullpen",
-      "venue": "",
-      "present": [
-        "dwight",
-        "jim",
-        "angela",
-        "kevin",
-        "phyllis",
-        "oscar"
-      ],
-      "recap": "Dwight sells beets door to desk; Jim swaps them for fakes.",
-      "beats": [
-        {
-          "type": "say",
           "who": "dwight",
-          "text": "Question: who wants the finest beets in Pennsylvania? Organic. Schrute-grown. No refunds.",
+          "text": "Michael has been unreachable for two hours. By law, power passes to the Assistant to the Regional Manager.",
           "to": "all",
-          "mood": "excited"
+          "mood": "deadpan"
         },
         {
           "type": "say",
-          "who": "kevin",
-          "text": "Beets. Good?",
+          "who": "oscar",
+          "text": "Which law?",
           "to": "dwight",
           "mood": "neutral"
         },
         {
           "type": "say",
           "who": "dwight",
-          "text": "They are the second-best vegetable. After the other beets.",
-          "to": "kevin",
-          "mood": "neutral"
-        },
-        {
-          "type": "move",
-          "who": "dwight",
-          "to": "michael_office",
-          "pace": "walk"
+          "text": "Schrute law.",
+          "to": "oscar",
+          "mood": "smug"
         },
         {
           "type": "action",
-          "who": "jim",
-          "verb": "prank",
+          "who": "pam",
+          "verb": "present",
           "target": "dwight",
-          "caption": "swaps beets for dyed radishes in Dwight's crate"
-        },
-        {
-          "type": "talking_head",
-          "who": "jim",
-          "lines": [
-            "They're radishes. Dyed purple. Honestly, it's not even my best work."
-          ],
-          "mood": "smug"
+          "caption": "holds up a sticky note: JIM IS IN CHARGE. NOT DWIGHT. - M"
         },
         {
           "type": "say",
           "who": "angela",
-          "text": "These smell different, Dwight.",
+          "text": "The coup is over, Dwight. Sit down.",
           "to": "dwight",
           "mood": "annoyed"
         },
         {
           "type": "say",
-          "who": "dwight",
-          "text": "That is the smell of quality, Angela.",
-          "to": "angela",
-          "mood": "nervous"
-        }
-      ]
-    },
-    {
-      "part": "act1",
-      "plot": "C",
-      "set": "parking_lot",
-      "region": "entrance",
-      "venue": "",
-      "present": [
-        "ryan",
-        "michael"
-      ],
-      "recap": "Michael sends Ryan to handle the pretzel vendor.",
-      "beats": [
-        {
-          "type": "say",
-          "who": "michael",
-          "text": "Ryan, you handle the pretzel guy. I need someone with vision. And change.",
-          "to": "ryan",
-          "mood": "excited"
-        },
-        {
-          "type": "say",
-          "who": "ryan",
-          "text": "So I'm doing logistics for a pretzel cart.",
-          "to": "michael",
-          "mood": "deadpan"
-        },
-        {
-          "type": "say",
-          "who": "michael",
-          "text": "You're disrupting the pretzel space.",
-          "to": "ryan",
-          "mood": "happy"
-        },
-        {
-          "type": "say",
-          "who": "ryan",
-          "text": "I mean, sure. I can optimize this.",
-          "to": "michael",
-          "mood": "smug"
-        },
-        {
-          "type": "talking_head",
-          "who": "ryan",
-          "lines": [
-            "Every cart has a funnel. Nobody's seen it. I see it."
-          ],
-          "mood": "smug"
-        }
-      ]
-    },
-    {
-      "part": "act2",
-      "plot": "A",
-      "set": "office",
-      "region": "conference_room",
-      "venue": "",
-      "present": [
-        "michael",
-        "stanley",
-        "toby",
-        "oscar",
-        "kevin",
-        "phyllis"
-      ],
-      "recap": "Meeting drags on; Stanley revolts.",
-      "beats": [
-        {
-          "type": "say",
-          "who": "michael",
-          "text": "Now, let's each share what pretzels mean to us.",
-          "to": "all",
-          "mood": "happy"
-        },
-        {
-          "type": "say",
           "who": "kevin",
-          "text": "Salty.",
-          "to": "all",
+          "text": "Can we keep the ten minutes?",
+          "to": "jim",
           "mood": "happy"
-        },
-        {
-          "type": "say",
-          "who": "phyllis",
-          "text": "Bob Vance likes the soft ones. Bob Vance, Vance Refrigeration.",
-          "to": "all",
-          "mood": "happy"
-        },
-        {
-          "type": "say",
-          "who": "stanley",
-          "text": "It's nine fifty-eight. I am leaving.",
-          "to": "michael",
-          "mood": "angry"
-        },
-        {
-          "type": "say",
-          "who": "michael",
-          "text": "Stanley, if you walk out, this meeting loses its pretzel.",
-          "to": "stanley",
-          "mood": "panicked"
-        },
-        {
-          "type": "stand",
-          "who": [
-            "stanley"
-          ]
-        },
-        {
-          "type": "exit",
-          "who": [
-            "stanley"
-          ],
-          "how": "storm_off"
-        },
-        {
-          "type": "react",
-          "who": [
-            "toby"
-          ],
-          "reaction": "sigh"
-        }
-      ]
-    },
-    {
-      "part": "act2",
-      "plot": "B",
-      "set": "office",
-      "region": "bullpen",
-      "venue": "",
-      "present": [
-        "dwight",
-        "jim",
-        "angela",
-        "oscar",
-        "kevin",
-        "pam"
-      ],
-      "recap": "Customers discover the radishes; Dwight is baffled.",
-      "beats": [
-        {
-          "type": "say",
-          "who": "oscar",
-          "text": "Dwight, actually, these are radishes. Dyed.",
-          "to": "dwight",
-          "mood": "sarcastic"
-        },
-        {
-          "type": "say",
-          "who": "dwight",
-          "text": "False. Those are beets. Those are mine.",
-          "to": "oscar",
-          "mood": "angry"
-        },
-        {
-          "type": "action",
-          "who": "dwight",
-          "verb": "snoop",
-          "target": "none",
-          "caption": "sniffs radish suspiciously"
-        },
-        {
-          "type": "say",
-          "who": "dwight",
-          "text": "Someone has tampered with my crop. Creed.",
-          "to": "all",
-          "mood": "angry"
-        },
-        {
-          "type": "say",
-          "who": "creed",
-          "text": "I did not. But I know a guy who could.",
-          "to": "dwight",
-          "mood": "neutral"
         },
         {
           "type": "react",
@@ -429,104 +628,150 @@
       "part": "act2",
       "plot": "A",
       "set": "parking_lot",
-      "region": "entrance",
+      "region": "parking_lot",
       "venue": "",
       "present": [
-        "stanley",
         "michael",
-        "ryan"
+        "jan"
       ],
-      "recap": "Michael finds Stanley at the cart and makes amends.",
+      "away": [],
+      "recap": "In the parking lot after the deal, a giddy Jan kisses Michael, then tells him it never happened.",
       "beats": [
         {
-          "type": "enter",
-          "who": [
-            "michael"
-          ],
-          "to": "stanley"
+          "type": "move",
+          "who": "jan",
+          "to": "car_michael",
+          "pace": "walk"
+        },
+        {
+          "type": "move",
+          "who": "michael",
+          "to": "jan",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "jan",
+          "text": "That was... the stupidest thing I've ever seen. And it worked.",
+          "to": "michael",
+          "mood": "happy"
         },
         {
           "type": "say",
           "who": "michael",
-          "text": "Stanley. I was wrong. Pretzel Day is yours.",
-          "to": "stanley",
-          "mood": "sad"
-        },
-        {
-          "type": "say",
-          "who": "stanley",
-          "text": "Fine.",
-          "to": "michael",
-          "mood": "neutral"
-        },
-        {
-          "type": "say",
-          "who": "ryan",
-          "text": "I've got you the first pretzel. Extra salt. Michael's treat.",
-          "to": "stanley",
-          "mood": "neutral"
+          "text": "Agent Michael Scarn never fails.",
+          "to": "jan",
+          "mood": "smug"
         },
         {
           "type": "action",
-          "who": "michael",
+          "who": "jan",
           "verb": "hug",
-          "target": "stanley",
-          "caption": "hands Stanley the first pretzel, with both hands"
+          "target": "michael",
+          "caption": "grabs his lapels and kisses him"
+        },
+        {
+          "type": "pause",
+          "seconds": 3,
+          "caption": ""
         },
         {
           "type": "say",
-          "who": "stanley",
-          "text": "Don't make it weird.",
+          "who": "jan",
+          "text": "This never happened.",
           "to": "michael",
-          "mood": "annoyed"
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "What never happened?",
+          "to": "jan",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "jan",
+          "text": "Exactly.",
+          "to": "michael",
+          "mood": "deadpan"
+        },
+        {
+          "type": "exit",
+          "who": [
+            "jan"
+          ],
+          "how": "walk"
         },
         {
           "type": "talking_head",
           "who": "michael",
           "lines": [
-            "I love my employees. Especially the ones who forgive me. Which is Stanley, today."
+            "Nothing happened tonight. Nothing. At all. Happened.",
+            "Best night of my life."
           ],
-          "mood": "sad"
+          "mood": "happy"
         }
       ]
     },
     {
       "part": "act2",
-      "plot": "C",
+      "plot": "B",
       "set": "office",
-      "region": "michael_office",
+      "region": "reception",
       "venue": "",
       "present": [
-        "ryan",
-        "michael"
+        "jim",
+        "pam"
       ],
-      "recap": "Ryan leaves a note for Jan; seed.",
+      "away": [],
+      "recap": "At five, Jim and Pam switch back; it was the best afternoon either of them has had at work.",
       "beats": [
         {
-          "type": "say",
-          "who": "ryan",
-          "text": "Michael, the vendor says corporate asked about this cart.",
-          "to": "michael",
-          "mood": "neutral"
+          "type": "caption",
+          "text": "5:00 PM"
+        },
+        {
+          "type": "move",
+          "who": "pam",
+          "to": "pam_desk",
+          "pace": "walk"
+        },
+        {
+          "type": "move",
+          "who": "jim",
+          "to": "pam",
+          "pace": "walk"
         },
         {
           "type": "say",
-          "who": "michael",
-          "text": "Corporate? Why? Is it Jan? Does she know about my pretzel vision?",
-          "to": "ryan",
-          "mood": "nervous"
+          "who": "jim",
+          "text": "The Acting Regional Manager is now stepping down. Thank you for your service, Chief of Staff.",
+          "to": "pam",
+          "mood": "deadpan"
         },
         {
           "type": "say",
-          "who": "ryan",
-          "text": "I left her office a one-pager. Just in case.",
-          "to": "michael",
-          "mood": "smug"
+          "who": "pam",
+          "text": "Best administration in Dunder Mifflin history.",
+          "to": "jim",
+          "mood": "happy"
         },
         {
-          "type": "pause",
-          "seconds": 2,
-          "caption": "Michael is proud and a little afraid"
+          "type": "say",
+          "who": "jim",
+          "text": "Ten-minute break and a desk swap. They'll write books about us.",
+          "to": "pam",
+          "mood": "happy"
+        },
+        {
+          "type": "talking_head",
+          "who": "jim",
+          "lines": [
+            "Would I want Michael's job? No. Absolutely not.",
+            "I'd want the desk swap thing again, though."
+          ],
+          "mood": "happy"
         }
       ]
     },
@@ -534,36 +779,45 @@
       "part": "tag",
       "plot": "tag",
       "set": "office",
-      "region": "bullpen",
+      "region": "michael_office",
       "venue": "",
       "present": [
-        "jim",
-        "dwight",
-        "pam",
-        "stanley"
+        "michael",
+        "dwight"
       ],
-      "recap": "Dwight finds a beet in his drawer; Stanley eats a pretzel.",
+      "away": [],
+      "recap": "The next morning, Michael asks Dwight if he can keep a secret; Dwight says no.",
       "beats": [
+        {
+          "type": "caption",
+          "text": "THE NEXT MORNING"
+        },
+        {
+          "type": "move",
+          "who": "dwight",
+          "to": "michael_guest_1",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Dwight. Can you keep a secret?",
+          "to": "dwight",
+          "mood": "excited"
+        },
         {
           "type": "say",
           "who": "dwight",
-          "text": "A real beet. In my drawer. Who put you here?",
-          "to": "all",
-          "mood": "nervous"
-        },
-        {
-          "type": "say",
-          "who": "jim",
-          "text": "Maybe it's a sign.",
-          "to": "dwight",
+          "text": "No.",
+          "to": "michael",
           "mood": "deadpan"
         },
         {
-          "type": "action",
-          "who": "stanley",
-          "verb": "eat",
-          "target": "none",
-          "caption": "eats his pretzel in perfect silence"
+          "type": "say",
+          "who": "michael",
+          "text": "Good. Neither can I.",
+          "to": "dwight",
+          "mood": "happy"
         }
       ]
     }

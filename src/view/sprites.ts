@@ -24,6 +24,8 @@ const VOID = '#050508';
 /** Sort key for someone drawn over a prop whose base is at `B`: right after it, and among everyone else drawn over it
  *  in feet order, so a person standing in front of a sitter still covers the sitter's arms (and not the other way round). */
 const overProp = (B: number, fy: number) => B + 0.1 + fy * 1e-5;
+/** Two people closer than this (world px, horizontally) can cover each other, so they keep feet order. */
+const PERSON_OVERLAP = 48;
 
 interface Built { plan: Plan; seats: Map<string, Plan['chairs'][number]> }
 const built = new WeakMap<SetMap, Built>();
@@ -200,16 +202,23 @@ export class SpriteMapView {
     // A sitter drawn with sit art brings their own chair, so the empty one at that seat goes.
     const taken = new Set(poses.filter((p) => p.seated && p.ownChair).map((p) => `${p.a.x},${p.a.y}`));
     const items: { k: number; f: (c: CanvasRenderingContext2D) => void }[] = plan.items.filter((i) => (!i.seat || !taken.has(i.seat)) && vis(i));
+    // People who overlap keep feet order among themselves even when a prop raised one (a side sitter at the conference
+    // table sorts at the table's base, and must not then cover someone standing lower beside them).
+    const people: { fx: number; fy: number; n0: number; n1: number; raise?: (k: number) => void }[] = [];
     for (const p of poses) {
       const { fx, fy } = poseFeet(p, geo);
+      const n0 = items.length;
+      people.at(-1) && (people.at(-1)!.n1 = n0);
+      people.push({ fx, fy, n0, n1: Infinity });
       // A side sitter at a desk: whole behind it (legs under the desktop), then from the lap up over it (arms on top).
       if (atDeskSide(p)) {
         items.push({ k: fy, f: () => drawActor(ctx, p, geo, this.stage.wt) });
         items.push({ k: Math.max(fy, overProp(p.chair!.front!, fy)), f: () => drawActor(ctx, p, geo, this.stage.wt, lapY(p, geo)) });
         continue;
       }
-      // Walking the last steps into such a seat (behind the reception desk): the same split, legs behind, torso over.
-      const to = p.moving ? p.a.dest : null, goal = to ? seats.get(`${to.x},${to.y}`) : undefined;
+      // Walking the last steps into such a seat (behind the reception desk), or standing up at it: the same split,
+      // legs behind, torso over.
+      const to = p.moving ? p.a.dest : p.seated ? null : { x: p.a.x, y: p.a.y }, goal = to ? seats.get(`${to.x},${to.y}`) : undefined;
       if (to && goal?.front != null && goal.dir === 'side' && fy < goal.front && Math.abs(to.x - p.a.x) + Math.abs(to.y - p.a.y) <= WALK_IN) {
         items.push({ k: fy, f: () => drawActor(ctx, p, geo, this.stage.wt) });
         items.push({ k: overProp(goal.front, fy), f: () => drawActor(ctx, p, geo, this.stage.wt, fy - geo.personH * WAIST) });
@@ -222,11 +231,18 @@ export class SpriteMapView {
       for (const s of plan.sides) {
         if (fy > s.top && fy < s.B && fx + SIDE_HALF > s.x0 && fx - SIDE_HALF < s.x1 && (fx <= s.sx0 || fx >= s.sx1)) k = Math.max(k, overProp(s.B, fy));
       }
-      items.push({ k, f: () => drawActor(ctx, p, geo, this.stage.wt) });
+      const it = { k, f: () => drawActor(ctx, p, geo, this.stage.wt) };
+      items.push(it);
+      people[people.length - 1].raise = (to) => { it.k = Math.max(it.k, to); };
       // A sitter facing the camera sits behind the desk in front of them (ASCII sets): redraw the torso over it.
       const tk = p.seated && p.dir === 'front' ? plan.torsoKey?.(p.a.x, p.a.y) ?? null : null;
       if (tk !== null) items.push({ k: tk, f: () => drawActor(ctx, p, geo, this.stage.wt, fy - TORSO.keep) });
     }
+    const top = (q: (typeof people)[number]) => Math.max(...items.slice(q.n0, Math.min(q.n1, items.length)).map((i) => i.k));
+    const byFeet = [...people].sort((a, b) => a.fy - b.fy);
+    byFeet.forEach((b, j) => {
+      for (const a of byFeet.slice(0, j)) if (b.raise && a.fy < b.fy && Math.abs(a.fx - b.fx) < PERSON_OVERLAP) b.raise(top(a) + 1e-4);
+    });
     items.sort((a, b) => a.k - b.k);
     for (const i of items) i.f(ctx);
     if (GRID) drawGrid(ctx, this.stage.set, poses.map((p) => p.a));

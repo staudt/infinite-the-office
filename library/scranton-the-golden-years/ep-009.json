@@ -1,33 +1,40 @@
 {
-  "title": "Booze Cruise Control",
-  "logline": "On a company lake outing, Michael tries to impress Jan, Pam and Roy fight, and Pam tells Jim she isn't sure about the wedding.",
-  "outline": "A: Michael runs a company lake outing to impress Jan, with a spiraling all-hands meeting. B: Pam and Roy fight, and Jim and Pam talk on deck. C: Dwight and Ryan jockey for position near Jan; Kevin shows surprising competence. Order: cold, A, B, A, C, B, A, B, A, C, tag",
-  "theme": "Being chosen, and saying the true thing out loud",
-  "storySoFar": "Michael's dinner with Jan was canceled; Jan mocked his costume then softened. Ryan has a corporate lunch with Jan. Dwight campaigns for Assistant Regional Manager. Jim holds a real beet. Pam keeps Jim's lamp on and attends art class. Ep 9: at the lake outing Roy snapped at Pam; Pam told Jim she isn't sure about the wedding. Michael got a small honest moment with Jan. Kevin saved the day with competence. Pam has not yet ended the engagement.",
+  "title": "Art Show",
+  "logline": "Michael guest-lectures at Ryan's business school class and defends paper with his whole heart, then turns out to be the only person from the office at Pam's student art show, which Jim chose to miss.",
+  "outline": "A: Michael lectures at Ryan's business school class, is wounded by Ryan's 'paper is dead' presentation, and humiliates him with sincerity; that night he's the only one who comes to Pam's art show, and he quietly rescues her painting. B: Pam's art show: Roy leaves early, Jim stays away on purpose, and the next day Pam tells him he should have come. C: Oscar notices Dwight and Angela have matching bobbleheads. Order: cold, B, A, C, A, B, A, B, C, A, B, tag",
+  "theme": "Showing up",
+  "storySoFar": "Michael guest-lectured at Ryan's business school class; Ryan presented 'Paper Is Dead', and Michael's sincere defense of paper got a standing ovation (Ryan got a B-minus). At Pam's student art show, Roy stayed two minutes, Oscar one, and Jim invented a client dinner to avoid watching Roy be her fiance; Michael came and stayed. Pam left her watercolor of the office building on the free table, and Michael secretly paid for it and hung it in his office; Pam doesn't know. She told Jim he should have been there. Oscar noticed Dwight and Angela's matching cat-sheriff bobbleheads. Earlier: Roy set the wedding for June 10; Jim confessed to Michael that he loves Pam and Michael is keeping it secret; Kelly kissed Ryan's cheek at bowling; corporate will close Scranton or Stamford; Jan says her kiss with Michael never happened.",
   "extras": [],
+  "away": [],
   "stateChanges": [
     {
       "type": "arc",
-      "arc": "Will They, Won't They",
-      "progress": "Roy snapped at Pam; Pam told Jim on the deck she isn't sure about the wedding. Engagement not yet ended."
-    },
-    {
-      "type": "arc",
-      "arc": "Michael Needs a Date",
-      "progress": "Jan joined the outing; Michael got a small honest moment from her."
+      "arc": "Jim and Pam",
+      "progress": "Jim skipped Pam's art show on purpose; she told him he should have been there"
     },
     {
       "type": "arc",
       "arc": "Ryan the Temp",
-      "progress": "Ryan sat with Jan; Michael let him go."
+      "progress": "Michael's guest lecture humiliated Ryan with sincerity; Ryan got a B-minus"
     },
     {
-      "type": "gag",
-      "text": "Kevin competence: he actually knew how to dock the boat."
+      "type": "arc",
+      "arc": "Dwight and Angela, Secretly",
+      "progress": "Oscar noticed their matching cat-sheriff bobbleheads"
+    },
+    {
+      "type": "relationship",
+      "a": "michael",
+      "b": "pam",
+      "status": "He was the only one at her art show; she hugged him"
     },
     {
       "type": "note",
-      "text": "Jim and Pam have a coffee promise after the lake."
+      "text": "Michael secretly bought Pam's watercolor of the office building and hung it in his office; Pam thinks nobody took it"
+    },
+    {
+      "type": "note",
+      "text": "Jim lied about a client dinner in Carbondale to skip the art show"
     }
   ],
   "scenes": [
@@ -38,47 +45,128 @@
       "region": "bullpen",
       "venue": "",
       "present": [
-        "jim",
         "dwight",
+        "jim",
         "pam"
       ],
-      "recap": "Jim tells Dwight the lake outing requires a survival test.",
+      "away": [],
+      "recap": "A tiny radio hidden in the ceiling plays crickets; Dwight hunts for them all morning.",
       "beats": [
         {
           "type": "say",
-          "who": "jim",
-          "text": "Dwight, for the lake trip, corporate requires everyone to hold their breath for two minutes. Just a heads up.",
-          "to": "dwight",
-          "mood": "deadpan"
+          "who": "dwight",
+          "text": "Does anyone else hear crickets?",
+          "to": "all",
+          "mood": "nervous"
         },
         {
           "type": "say",
-          "who": "dwight",
-          "text": "I can do four. Question: do they award points for style?",
-          "to": "jim",
-          "mood": "excited"
+          "who": "jim",
+          "text": "Crickets? In November?",
+          "to": "dwight",
+          "mood": "neutral"
         },
         {
           "type": "action",
           "who": "dwight",
-          "verb": "hide",
+          "verb": "search",
           "target": "none",
-          "caption": "holds his breath at his desk, turning purple"
+          "caption": "climbs on his chair and pushes up a ceiling tile"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "A cricket infestation can destroy a building in a week. I've seen it. In a barn.",
+          "to": "all",
+          "mood": "panicked"
+        },
+        {
+          "type": "action",
+          "who": "pam",
+          "verb": "typing",
+          "target": "none",
+          "caption": "turns a tiny dial under her desk; the crickets get louder"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "THEY'RE BREEDING.",
+          "to": "all",
+          "mood": "panicked"
         },
         {
           "type": "react",
           "who": [
             "pam"
           ],
-          "reaction": "laugh"
+          "reaction": "look_at_camera"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "B",
+      "set": "office",
+      "region": "reception",
+      "venue": "",
+      "present": [
+        "pam",
+        "jim",
+        "kevin",
+        "oscar"
+      ],
+      "away": [],
+      "recap": "Pam hands out flyers for her class's student art show on Thursday; Jim promises to come.",
+      "beats": [
+        {
+          "type": "action",
+          "who": "pam",
+          "verb": "present",
+          "target": "kevin",
+          "caption": "hands out small hand-drawn flyers"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "So my class has a student show Thursday night. It's no big deal. There's cheese.",
+          "to": "all",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "What kind of cheese?",
+          "to": "pam",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "oscar",
+          "text": "I'll try to stop by. I love a student show. So much ambition.",
+          "to": "pam",
+          "mood": "happy"
+        },
+        {
+          "type": "move",
+          "who": "jim",
+          "to": "pam",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "Thursday. I'll be there. Front row. Do art shows have rows?",
+          "to": "pam",
+          "mood": "happy"
         },
         {
           "type": "talking_head",
-          "who": "jim",
+          "who": "pam",
           "lines": [
-            "There's no test. But he's been practicing since nine."
+            "I'm showing three pieces. Two still lifes and a watercolor of the building.",
+            "The office building. I know. It's what I see every day. It's kind of all I see."
           ],
-          "mood": "smug"
+          "mood": "awkward"
         }
       ]
     },
@@ -86,114 +174,112 @@
       "part": "act1",
       "plot": "A",
       "set": "office",
-      "region": "conference_room",
+      "region": "michael_office",
       "venue": "",
       "present": [
         "michael",
-        "jim",
-        "pam",
-        "dwight",
-        "ryan",
-        "stanley",
-        "phyllis",
-        "angela",
-        "oscar",
-        "kevin",
-        "kelly",
-        "meredith",
-        "creed",
-        "toby"
+        "ryan"
       ],
-      "recap": "Michael calls an unnecessary all-staff meeting about the lake outing.",
+      "away": [],
+      "recap": "Ryan's professor wants a local manager to speak to the class; Ryan reluctantly asks Michael, who is overjoyed.",
       "beats": [
         {
-          "type": "gather",
-          "who": [
-            "everyone"
+          "type": "move",
+          "who": "ryan",
+          "to": "michael_guest_1",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "ryan",
+          "text": "My professor wants a local manager to speak to the class. About real-world business. Tomorrow.",
+          "to": "michael",
+          "mood": "awkward"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Ryan. Are you asking me to be your teacher? Again? Officially?",
+          "to": "ryan",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "ryan",
+          "text": "The manager at Staples said no.",
+          "to": "michael",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "I accept. I'll bring handouts. And Dwight, for demonstrations.",
+          "to": "ryan",
+          "mood": "excited"
+        },
+        {
+          "type": "talking_head",
+          "who": "ryan",
+          "lines": [
+            "It's ten minutes. He'll talk about paper, everyone will be bored, and I'll get extra credit.",
+            "What could go wrong."
           ],
-          "to": "conference_room"
-        },
-        {
-          "type": "say",
-          "who": "michael",
-          "text": "Tomorrow, Lake Wallenpaupack. Jan is coming. This meeting is to prepare for the other meeting, which is on the boat.",
-          "to": "all",
-          "mood": "excited"
-        },
-        {
-          "type": "say",
-          "who": "stanley",
-          "text": "This could have been a memo.",
-          "to": "none",
-          "mood": "annoyed"
-        },
-        {
-          "type": "say",
-          "who": "michael",
-          "text": "Or a meeting about a memo. Toby, do not say anything about liability.",
-          "to": "toby",
-          "mood": "annoyed"
-        },
-        {
-          "type": "say",
-          "who": "toby",
-          "text": "I just think life jackets should be—",
-          "to": "michael",
-          "mood": "nervous"
-        },
-        {
-          "type": "say",
-          "who": "michael",
-          "text": "Life jackets are for people who fear life. Moving on. Kevin has volunteered to be captain.",
-          "to": "all",
-          "mood": "happy"
-        },
-        {
-          "type": "say",
-          "who": "kevin",
-          "text": "I did not.",
-          "to": "michael",
           "mood": "neutral"
-        },
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "C",
+      "set": "office",
+      "region": "accounting",
+      "venue": "",
+      "present": [
+        "oscar",
+        "angela",
+        "dwight"
+      ],
+      "away": [],
+      "recap": "Oscar notices Angela's new bobblehead is identical to one on Dwight's desk; both deny it.",
+      "beats": [
         {
-          "type": "say",
-          "who": "michael",
-          "text": "You will. Now everyone say what they want out of this trip. Go around.",
-          "to": "all",
-          "mood": "excited"
-        },
-        {
-          "type": "say",
-          "who": "meredith",
-          "text": "A boat with a bar.",
-          "to": "all",
-          "mood": "happy"
-        },
-        {
-          "type": "say",
-          "who": "creed",
-          "text": "I'd like to see the lake again. The last time it was frozen, and I was not alone.",
-          "to": "all",
-          "mood": "neutral"
-        },
-        {
-          "type": "pause",
-          "seconds": 2,
-          "caption": "nobody follows up"
-        },
-        {
-          "type": "say",
-          "who": "michael",
-          "text": "Great, we are two hours into this meeting.",
-          "to": "all",
-          "mood": "happy"
+          "type": "move",
+          "who": "dwight",
+          "to": "angela",
+          "pace": "walk"
         },
         {
           "type": "say",
           "who": "oscar",
-          "text": "It's been nine minutes.",
-          "to": "michael",
-          "mood": "annoyed"
+          "text": "Angela, is that a bobblehead of a cat in a sheriff's hat?",
+          "to": "angela",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "angela",
+          "text": "It was a gift. From my sister.",
+          "to": "oscar",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "oscar",
+          "text": "Dwight has the exact same one. A cat. In a sheriff's hat.",
+          "to": "angela",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Mine is a deputy. Completely different rank.",
+          "to": "oscar",
+          "mood": "nervous"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": ""
         },
         {
           "type": "react",
@@ -206,229 +292,396 @@
     },
     {
       "part": "act1",
-      "plot": "B",
+      "plot": "A",
       "set": "offsite",
       "region": "venue",
-      "venue": "LAKE WALLENPAUPACK",
+      "venue": "UNIVERSITY OF SCRANTON, ROOM 2",
       "present": [
-        "pam",
-        "roy",
-        "jim"
+        "michael",
+        "ryan",
+        "dwight"
       ],
-      "recap": "On the dock, Roy snaps at Pam about her art class, and Jim overhears.",
+      "away": [],
+      "recap": "Michael opens his guest lecture by calling Ryan 'like a son', then sits through Ryan's presentation, 'Paper Is Dead'.",
       "beats": [
         {
-          "type": "caption",
-          "text": "THE NEXT DAY"
-        },
-        {
-          "type": "enter",
-          "who": [
-            "pam",
-            "roy"
-          ],
-          "to": "entrance"
-        },
-        {
-          "type": "enter",
-          "who": [
-            "jim"
-          ],
-          "to": "seat_1"
+          "type": "move",
+          "who": "michael",
+          "to": "entrance",
+          "pace": "walk"
         },
         {
           "type": "say",
-          "who": "roy",
-          "text": "I'm not paying for a boat cruise so you can sit there and draw the lake.",
+          "who": "michael",
+          "text": "Good morning, future millionaires. I'm Michael Scott. Ryan is my temp. And, in a way, my son.",
+          "to": "all",
+          "mood": "excited"
+        },
+        {
+          "type": "react",
+          "who": [
+            "ryan"
+          ],
+          "reaction": "facepalm"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "But first, Ryan has a presentation. Go, Ryan. Make me proud.",
+          "to": "ryan",
+          "mood": "happy"
+        },
+        {
+          "type": "move",
+          "who": "ryan",
+          "to": "entrance",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "ryan",
+          "text": "My presentation is called 'Paper Is Dead.' Companies like Dunder Mifflin will be obsolete in ten years.",
+          "to": "all",
+          "mood": "neutral"
+        },
+        {
+          "type": "pause",
+          "seconds": 3,
+          "caption": ""
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Michael, say the word and I'll take him down.",
+          "to": "michael",
+          "mood": "angry"
+        },
+        {
+          "type": "react",
+          "who": [
+            "michael"
+          ],
+          "reaction": "stare"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "B",
+      "set": "office",
+      "region": "reception",
+      "venue": "",
+      "present": [
+        "pam",
+        "jim"
+      ],
+      "away": [],
+      "recap": "Jim tells Pam he can't make the art show because of a client dinner; his talking head tells the truth.",
+      "beats": [
+        {
+          "type": "move",
+          "who": "jim",
           "to": "pam",
-          "mood": "annoyed"
+          "pace": "walk"
         },
         {
           "type": "say",
-          "who": "pam",
-          "text": "Nobody asked you to pay. I just brought a sketchbook.",
-          "to": "roy",
+          "who": "jim",
+          "text": "Hey, so, Thursday. I've got a client dinner in Carbondale. I can't move it. I'm really sorry.",
+          "to": "pam",
           "mood": "awkward"
         },
         {
           "type": "say",
-          "who": "roy",
-          "text": "Can you just be normal for one day? Jeez, Pam.",
+          "who": "pam",
+          "text": "Oh. No, that's fine. Totally. It's just a student thing.",
+          "to": "jim",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "Show me everything Friday?",
           "to": "pam",
-          "mood": "angry"
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Sure.",
+          "to": "jim",
+          "mood": "neutral"
+        },
+        {
+          "type": "talking_head",
+          "who": "jim",
+          "lines": [
+            "There's no client dinner. I just... can't stand in a room and watch Roy be her fiance right now.",
+            "She set a date. I need to get used to that. I'm getting used to it."
+          ],
+          "mood": "sad"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "A",
+      "set": "offsite",
+      "region": "venue",
+      "venue": "UNIVERSITY OF SCRANTON, ROOM 2",
+      "present": [
+        "michael",
+        "ryan",
+        "dwight"
+      ],
+      "away": [],
+      "recap": "Michael's rebuttal is a long, sincere defense of paper, which humiliates Ryan more than any insult could.",
+      "beats": [
+        {
+          "type": "move",
+          "who": "michael",
+          "to": "entrance",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Paper is dead? Paper is your birth certificate. Your diploma. Your first love letter.",
+          "to": "all",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "When Ryan started, I gave him a stapler. I didn't email him a stapler. You can't email a stapler.",
+          "to": "all",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Ryan, I believe in you. You'll do great things. Just maybe not to my company.",
+          "to": "ryan",
+          "mood": "sad"
         },
         {
           "type": "pause",
-          "seconds": 2,
-          "caption": "Jim hears it"
+          "seconds": 3,
+          "caption": "someone in the back starts clapping"
+        },
+        {
+          "type": "talking_head",
+          "who": "ryan",
+          "lines": [
+            "The class gave Michael a standing ovation. I got a B-minus.",
+            "My professor wrote 'Your boss is right' on the rubric."
+          ],
+          "mood": "annoyed"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "B",
+      "set": "offsite",
+      "region": "venue",
+      "venue": "LACKAWANNA COMMUNITY COLLEGE",
+      "present": [
+        "pam"
+      ],
+      "away": [],
+      "recap": "At the art show, Roy looks for two minutes and leaves for the game; Oscar stops by politely and goes; Pam stands alone by her pictures.",
+      "beats": [
+        {
+          "type": "caption",
+          "text": "THURSDAY NIGHT"
+        },
+        {
+          "type": "enter",
+          "who": [
+            "roy"
+          ],
+          "to": "pam"
+        },
+        {
+          "type": "say",
+          "who": "roy",
+          "text": "These are nice, babe. Real nice. The building one's good. Looks just like it.",
+          "to": "pam",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "roy",
+          "text": "Game starts at eight. I'll see you at home?",
+          "to": "pam",
+          "mood": "neutral"
         },
         {
           "type": "exit",
           "who": [
             "roy"
           ],
-          "how": "storm_off"
+          "how": "walk"
         },
-        {
-          "type": "react",
-          "who": [
-            "jim"
-          ],
-          "reaction": "look_at_camera"
-        },
-        {
-          "type": "say",
-          "who": "pam",
-          "text": "I'm fine. It's fine.",
-          "to": "jim",
-          "mood": "sad"
-        }
-      ]
-    },
-    {
-      "part": "act1",
-      "plot": "A",
-      "set": "offsite",
-      "region": "venue",
-      "venue": "LAKE WALLENPAUPACK",
-      "present": [
-        "michael",
-        "jan",
-        "kevin",
-        "dwight",
-        "ryan"
-      ],
-      "recap": "Michael tries to impress Jan on the boat; Kevin is made captain.",
-      "beats": [
         {
           "type": "enter",
           "who": [
-            "michael",
-            "jan",
-            "kevin",
-            "dwight",
-            "ryan"
+            "oscar"
           ],
-          "to": "seat_2"
+          "to": "pam"
         },
         {
           "type": "say",
-          "who": "michael",
-          "text": "Jan, welcome aboard the S.S. Scott. I had the lake delivered. Kidding. Ha.",
-          "to": "jan",
-          "mood": "nervous"
+          "who": "oscar",
+          "text": "Pam, your lines are very confident. I mean that. I have to run. Book club.",
+          "to": "pam",
+          "mood": "happy"
         },
         {
-          "type": "say",
-          "who": "jan",
-          "text": "Michael, this is a public lake.",
-          "to": "michael",
-          "mood": "annoyed"
-        },
-        {
-          "type": "say",
-          "who": "dwight",
-          "text": "Ma'am, I am Assistant Regional Manager and a certified lifeguard in three counties.",
-          "to": "jan",
-          "mood": "excited"
-        },
-        {
-          "type": "say",
-          "who": "ryan",
-          "text": "Jan, I'm saving the lunch discussion for the right moment. Just leveraging the vibe.",
-          "to": "jan",
-          "mood": "smug"
-        },
-        {
-          "type": "say",
-          "who": "michael",
-          "text": "Ryan, you can talk to her later. When I'm done. Which is later.",
-          "to": "ryan",
-          "mood": "awkward"
-        },
-        {
-          "type": "talking_head",
-          "who": "michael",
-          "lines": [
-            "I'm not jealous of Ryan. I'm his mentor. Mentors don't get jealous. They get quiet."
+          "type": "exit",
+          "who": [
+            "oscar"
           ],
-          "mood": "sad"
+          "how": "walk"
+        },
+        {
+          "type": "pause",
+          "seconds": 4,
+          "caption": "Pam stands alone by her three pictures"
         }
       ]
     },
     {
       "part": "act2",
       "plot": "C",
-      "set": "offsite",
-      "region": "venue",
-      "venue": "LAKE WALLENPAUPACK",
+      "set": "kitchen",
+      "region": "kitchen",
+      "venue": "",
       "present": [
-        "kevin",
         "dwight",
-        "ryan",
-        "michael"
+        "angela"
       ],
-      "recap": "The boat drifts toward the rocks and Kevin steps up.",
+      "away": [],
+      "recap": "Angela demands Dwight hide his bobblehead; he hides it in his desk, but keeps it facing out.",
       "beats": [
         {
           "type": "say",
-          "who": "michael",
-          "text": "Kevin, steer us toward Jan. I mean, toward the shore.",
-          "to": "kevin",
-          "mood": "excited"
+          "who": "angela",
+          "text": "Oscar knows. You said nobody would notice two identical cat sheriffs.",
+          "to": "dwight",
+          "mood": "angry"
         },
         {
           "type": "say",
           "who": "dwight",
-          "text": "Wind is northeast. We'll hit the rocks in forty seconds.",
-          "to": "all",
-          "mood": "panicked"
+          "text": "Mine is a deputy, Angela.",
+          "to": "angela",
+          "mood": "deadpan"
         },
         {
           "type": "say",
-          "who": "ryan",
-          "text": "Is that bad? I'm not a boat guy.",
-          "to": "all",
-          "mood": "nervous"
-        },
-        {
-          "type": "pause",
-          "seconds": 2,
-          "caption": "everyone panics"
+          "who": "angela",
+          "text": "Hide it.",
+          "to": "dwight",
+          "mood": "angry"
         },
         {
           "type": "say",
-          "who": "kevin",
-          "text": "Everybody move left. Dwight, rope. Michael, stop touching things.",
-          "to": "all",
-          "mood": "neutral"
+          "who": "dwight",
+          "text": "I will hide it in my drawer. Facing out. So he can still see me.",
+          "to": "angela",
+          "mood": "sad"
         },
         {
-          "type": "action",
-          "who": "kevin",
-          "verb": "present",
-          "target": "none",
-          "caption": "turns the wheel and calmly brings the boat around"
+          "type": "talking_head",
+          "who": "angela",
+          "lines": [
+            "I don't have a sister. Don't tell anyone that either."
+          ],
+          "mood": "deadpan"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "A",
+      "set": "offsite",
+      "region": "venue",
+      "venue": "LACKAWANNA COMMUNITY COLLEGE",
+      "present": [
+        "pam"
+      ],
+      "away": [],
+      "recap": "Michael arrives, still glowing from his lecture, and loves her watercolor of the building; after she leaves it on the 'free' table, he quietly takes it and pays anyway.",
+      "beats": [
+        {
+          "type": "enter",
+          "who": [
+            "michael"
+          ],
+          "to": "pam"
         },
         {
           "type": "say",
           "who": "michael",
-          "text": "Kevin! Who knew?",
-          "to": "kevin",
+          "text": "Pam! Am I late? I had a lecture. I'm a professor now. Kind of. Is this ours? Is this our building?",
+          "to": "pam",
           "mood": "excited"
         },
         {
           "type": "say",
-          "who": "kevin",
-          "text": "My uncle had a boat. Also, I read the manual.",
+          "who": "pam",
+          "text": "Yeah. You're the only one from work who came, actually.",
           "to": "michael",
-          "mood": "happy"
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Pam, this is... You made our building look like somewhere people would want to be.",
+          "to": "pam",
+          "mood": "sad"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": ""
+        },
+        {
+          "type": "action",
+          "who": "pam",
+          "verb": "hug",
+          "target": "michael",
+          "caption": "hugs Michael, surprising them both"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Nobody's buying anything. I'm leaving the building one on the free table. It's too sad to carry home.",
+          "to": "michael",
+          "mood": "sad"
+        },
+        {
+          "type": "exit",
+          "who": [
+            "pam"
+          ],
+          "how": "walk"
+        },
+        {
+          "type": "action",
+          "who": "michael",
+          "verb": "present",
+          "target": "none",
+          "caption": "slips forty dollars into the class jar and takes the watercolor"
         },
         {
           "type": "talking_head",
-          "who": "kevin",
+          "who": "michael",
           "lines": [
-            "Sometimes I'm smart on purpose. Mostly nobody asks."
+            "She can't know. She'd think it was weird. It is weird. But it's going on my wall.",
+            "And someday, when she's famous, I'll be rich. That's not why. That's partly why."
           ],
           "mood": "happy"
         }
@@ -437,204 +690,121 @@
     {
       "part": "act2",
       "plot": "B",
-      "set": "offsite",
-      "region": "venue",
-      "venue": "LAKE WALLENPAUPACK",
+      "set": "office",
+      "region": "reception",
+      "venue": "",
       "present": [
         "pam",
         "jim"
       ],
-      "recap": "On the deck, Pam tells Jim she isn't sure about the wedding.",
+      "away": [],
+      "recap": "Friday, Jim asks about the show; Pam tells him only Michael came, and that he should have been there.",
       "beats": [
         {
-          "type": "enter",
-          "who": [
-            "pam",
-            "jim"
-          ],
-          "to": "bar_stool"
+          "type": "caption",
+          "text": "FRIDAY"
+        },
+        {
+          "type": "move",
+          "who": "jim",
+          "to": "pam",
+          "pace": "walk"
         },
         {
           "type": "say",
           "who": "jim",
-          "text": "You okay?",
+          "text": "So? How was it? Tell me everything.",
           "to": "pam",
-          "mood": "neutral"
+          "mood": "happy"
         },
         {
           "type": "say",
           "who": "pam",
-          "text": "Roy and I have been engaged three years. I keep waiting to feel something about a date.",
+          "text": "Roy came for a minute. Oscar came for a minute. Michael came. Michael stayed.",
           "to": "jim",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "Pam, I'm sorry. I should've been there.",
+          "to": "pam",
           "mood": "sad"
         },
         {
           "type": "pause",
-          "seconds": 2,
+          "seconds": 3,
           "caption": ""
         },
         {
           "type": "say",
           "who": "pam",
-          "text": "I'm not sure about the wedding, Jim. I haven't said that out loud.",
+          "text": "Yeah. You should have.",
           "to": "jim",
-          "mood": "nervous"
-        },
-        {
-          "type": "say",
-          "who": "jim",
-          "text": "Thanks for telling me. For what it's worth, you don't owe anyone a date.",
-          "to": "pam",
           "mood": "sad"
-        },
-        {
-          "type": "action",
-          "who": "pam",
-          "verb": "search",
-          "target": "none",
-          "caption": "opens her sketchbook and shows him the lake"
-        },
-        {
-          "type": "say",
-          "who": "jim",
-          "text": "That's really good.",
-          "to": "pam",
-          "mood": "happy"
-        },
-        {
-          "type": "say",
-          "who": "pam",
-          "text": "Maybe after this weekend we get coffee? Away from the office.",
-          "to": "jim",
-          "mood": "nervous"
-        },
-        {
-          "type": "say",
-          "who": "jim",
-          "text": "I'd like that. A lot.",
-          "to": "pam",
-          "mood": "happy"
-        },
-        {
-          "type": "talking_head",
-          "who": "pam",
-          "lines": [
-            "I didn't plan that. It just came out. Which might be the point."
-          ],
-          "mood": "nervous"
-        }
-      ]
-    },
-    {
-      "part": "act2",
-      "plot": "A",
-      "set": "offsite",
-      "region": "venue",
-      "venue": "LAKE WALLENPAUPACK",
-      "present": [
-        "michael",
-        "jan"
-      ],
-      "recap": "Michael gets an honest moment with Jan.",
-      "beats": [
-        {
-          "type": "enter",
-          "who": [
-            "michael",
-            "jan"
-          ],
-          "to": "seat_5"
-        },
-        {
-          "type": "say",
-          "who": "michael",
-          "text": "I planned a whole speech. It had a toast and a slideshow. I left both at home on purpose.",
-          "to": "jan",
-          "mood": "awkward"
-        },
-        {
-          "type": "say",
-          "who": "jan",
-          "text": "Michael, you're exhausting. You know that.",
-          "to": "michael",
-          "mood": "annoyed"
-        },
-        {
-          "type": "say",
-          "who": "michael",
-          "text": "I know. I just want someone to be happy I showed up.",
-          "to": "jan",
-          "mood": "sad"
-        },
-        {
-          "type": "pause",
-          "seconds": 2,
-          "caption": ""
-        },
-        {
-          "type": "say",
-          "who": "jan",
-          "text": "I'm happy you showed up. Don't make it a meeting.",
-          "to": "michael",
-          "mood": "happy"
-        },
-        {
-          "type": "say",
-          "who": "michael",
-          "text": "Okay. That's the best meeting I never had.",
-          "to": "jan",
-          "mood": "happy"
-        },
-        {
-          "type": "talking_head",
-          "who": "jan",
-          "lines": [
-            "He's a lot. But the lake was nicer with him on it."
-          ],
-          "mood": "neutral"
-        }
-      ]
-    },
-    {
-      "part": "tag",
-      "plot": "tag",
-      "set": "offsite",
-      "region": "entrance",
-      "venue": "LAKE WALLENPAUPACK",
-      "present": [
-        "jim",
-        "dwight",
-        "creed"
-      ],
-      "recap": "Dwight finishes his breath-hold.",
-      "beats": [
-        {
-          "type": "say",
-          "who": "dwight",
-          "text": "Four minutes, thirty seconds. Where is the judge?",
-          "to": "jim",
-          "mood": "excited"
-        },
-        {
-          "type": "say",
-          "who": "jim",
-          "text": "The judge went home yesterday.",
-          "to": "dwight",
-          "mood": "deadpan"
-        },
-        {
-          "type": "say",
-          "who": "creed",
-          "text": "I'd have given you five.",
-          "to": "dwight",
-          "mood": "neutral"
         },
         {
           "type": "react",
           "who": [
             "jim"
           ],
-          "reaction": "look_at_camera"
+          "reaction": "sigh"
+        }
+      ]
+    },
+    {
+      "part": "tag",
+      "plot": "tag",
+      "set": "office",
+      "region": "michael_office",
+      "venue": "",
+      "present": [
+        "michael",
+        "dwight"
+      ],
+      "away": [],
+      "recap": "Michael hangs the watercolor in his office, crooked; Dwight asks what it is.",
+      "beats": [
+        {
+          "type": "action",
+          "who": "michael",
+          "verb": "present",
+          "target": "none",
+          "caption": "hangs a small watercolor of the office building, slightly crooked"
+        },
+        {
+          "type": "move",
+          "who": "dwight",
+          "to": "michael_guest_1",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "What is that?",
+          "to": "michael",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Art, Dwight. Anonymous art. From an anonymous artist. Who I don't know.",
+          "to": "dwight",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "It's our building.",
+          "to": "michael",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Coincidence.",
+          "to": "dwight",
+          "mood": "deadpan"
         }
       ]
     }

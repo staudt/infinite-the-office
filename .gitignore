@@ -8,6 +8,7 @@ booker-debug-*.json
 renders/
 art/out/
 
-# Kept local only (older 2-season show); the published demo is library/scranton-the-golden-years
+# Kept local only: the older 2-season show and the first (Sonnet) Golden Years
 library/the-office/
+library/scranton-the-golden-years-sonnet/
 shots/

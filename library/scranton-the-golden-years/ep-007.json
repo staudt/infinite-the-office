@@ -1,28 +1,44 @@
 {
-  "title": "The Office Olympics Qualifier",
-  "logline": "Michael stages a day-long office competition to win everyone's love, while Pam quietly signs up for an art class and Dwight chases a title.",
-  "outline": "A: Michael runs \"Scott's Tots Cup\" contest to be loved; it sours, then he gets an honest moment. B: Pam signs up for art class; Jim alone asks to see her work. C: Dwight/Ryan: Dwight competes for the title; Ryan acts above it. Order: cold, A, B, A, C, B, A, C, A, B, tag",
-  "theme": "Wanting to be picked, and who actually looks at you",
-  "storySoFar": "Michael's dinner with Jan was canceled; Jan mocked his costume then privately softened. Ryan pitched David Wallace; Jan hinted corporate interest. Dwight campaigns for Assistant Regional Manager. Jim holds a real beet. Pam keeps Jim's lamp on; Roy keeps canceling. Ep 7: Michael ran an Office Games contest; Pam signed up for an art class and Jim asked to see her sketchbook; Dwight won the title of contest champion, not the job; Ryan was named a judge and Michael felt it.",
+  "title": "Snow Day",
+  "logline": "Michael keeps everyone late for a 'Winter Wellness' seminar until the roads close, trapping half the office overnight; Jim and Pam share a vending-machine dinner, and Dwight and Angela share a survival blanket.",
+  "outline": "A: Michael delays dismissal for a pointless seminar, strands half the office, and tries to make the night a family sleepover; Kevin's chili saves it, and Michael admits why he wanted them to stay. B: Roy can't get through; Jim and Pam spend a quiet evening with vending-machine dinner and her sketchbook. C: Dwight's survival supplies, and a shared blanket that Kevin almost sees. Order: cold, A, B, C, A, B, A, C, A, B, A, tag",
+  "theme": "The people you're stuck with",
+  "storySoFar": "Michael stalled corporate's noon storm closing with a 'Winter Wellness' seminar until the roads closed, stranding half the office overnight; Bob Vance rescued Phyllis, and Stanley walked out mid-slide. Michael's 'Snow Games' flopped, but Kevin's emergency chili made it a party, and Michael admitted to Oscar that his apartment is too quiet; they played gin rummy. Jim and Pam shared a vending-machine dinner and she told him she wanted to illustrate children's books; at midnight Roy called to say the plow came and he was coming for her. Dwight and Angela shared a survival blanket and Kevin almost noticed. Kelly counts sleeping near Ryan as a milestone. Earlier: Michael ranked last in the manager survey (Angela wrote the harsh comment; Dwight protected her); Pam is taking an art class on Tuesdays; corporate will close Scranton or Stamford; Jan kissed Michael and faxed that it didn't happen.",
   "extras": [],
+  "away": [
+    "stanley",
+    "phyllis",
+    "meredith",
+    "toby"
+  ],
   "stateChanges": [
     {
       "type": "arc",
-      "arc": "Will They, Won't They",
-      "progress": "Pam signed up for a community art class; Jim was the only one to ask to see her sketchbook. She showed him a drawing of the office."
+      "arc": "Jim and Pam",
+      "progress": "Snowed in: vending-machine dinner and a quiet night; Roy came for her at midnight"
     },
     {
       "type": "arc",
-      "arc": "Assistant (to the) Regional Manager",
-      "progress": "Dwight won the Office Games gold but no title; Michael gave him a 'Champion' ribbon."
+      "arc": "Dwight and Angela, Secretly",
+      "progress": "Shared a survival blanket; Kevin saw and asked to get in"
+    },
+    {
+      "type": "relationship",
+      "a": "michael",
+      "b": "oscar",
+      "status": "Gin rummy partners after the snowstorm; Oscar is less angry"
     },
     {
       "type": "note",
-      "text": "(ep 7) Pam's sketchbook has a drawing of Jim she didn't show him; art class starts Thursday."
+      "text": "Kevin keeps a backup chili in his car for emergencies"
+    },
+    {
+      "type": "note",
+      "text": "Pam wanted to illustrate children's books when she was ten"
     },
     {
       "type": "gag",
-      "text": "Dwight's homemade gold medal from beet-colored ribbon."
+      "text": "Creed sleeps at the office most nights"
     }
   ],
   "scenes": [
@@ -33,370 +49,58 @@
       "region": "bullpen",
       "venue": "",
       "present": [
-        "jim",
-        "dwight",
-        "pam"
-      ],
-      "recap": "Jim pranks Dwight with a ringing desk phone that is actually Jim's cell.",
-      "beats": [
-        {
-          "type": "action",
-          "who": "jim",
-          "verb": "prank",
-          "target": "dwight",
-          "caption": "calls Dwight's desk phone from his cell, hanging up each time"
-        },
-        {
-          "type": "say",
-          "who": "dwight",
-          "text": "Dunder Mifflin, Dwight Schrute. Hello? Hello?",
-          "to": "none",
-          "mood": "annoyed"
-        },
-        {
-          "type": "say",
-          "who": "dwight",
-          "text": "Question: who is calling me and breathing?",
-          "to": "jim",
-          "mood": "angry"
-        },
-        {
-          "type": "say",
-          "who": "jim",
-          "text": "Wasn't me. Maybe it's Creed.",
-          "to": "dwight",
-          "mood": "deadpan"
-        },
-        {
-          "type": "say",
-          "who": "creed",
-          "text": "I only breathe on calls I'm paid for.",
-          "to": "none",
-          "mood": "neutral"
-        },
-        {
-          "type": "react",
-          "who": [
-            "pam"
-          ],
-          "reaction": "laugh"
-        },
-        {
-          "type": "talking_head",
-          "who": "dwight",
-          "lines": [
-            "Someone is harassing me by phone. My prime suspect is Creed. My second suspect is also Creed."
-          ],
-          "mood": "deadpan"
-        }
-      ]
-    },
-    {
-      "part": "act1",
-      "plot": "A",
-      "set": "office",
-      "region": "conference_room",
-      "venue": "",
-      "present": [
-        "michael",
         "dwight",
         "jim",
-        "pam",
-        "ryan",
-        "stanley",
-        "kevin",
-        "angela",
-        "oscar",
-        "toby"
+        "kevin"
       ],
-      "recap": "Michael announces the Office Games to boost morale.",
+      "away": [],
+      "recap": "Dwight arrives dragging a sled of survival supplies for a storm that hasn't started.",
       "beats": [
         {
-          "type": "gather",
+          "type": "caption",
+          "text": "8:30 AM. FORECAST: 14 INCHES"
+        },
+        {
+          "type": "enter",
           "who": [
-            "everyone"
+            "dwight"
           ],
-          "to": "conference_room"
-        },
-        {
-          "type": "say",
-          "who": "michael",
-          "text": "Today, we are having the Office Games. Events, medals, glory. Winner gets lunch with me. Loser also gets lunch with me.",
-          "to": "all",
-          "mood": "excited"
-        },
-        {
-          "type": "say",
-          "who": "toby",
-          "text": "Technically, any prize requires an approved budget form.",
-          "to": "michael",
-          "mood": "neutral"
-        },
-        {
-          "type": "say",
-          "who": "michael",
-          "text": "Toby, the only thing I need from you is to be gone.",
-          "to": "toby",
-          "mood": "annoyed"
-        },
-        {
-          "type": "say",
-          "who": "ryan",
-          "text": "Do I have to compete? I feel like I'm more of an observer.",
-          "to": "michael",
-          "mood": "neutral"
-        },
-        {
-          "type": "say",
-          "who": "michael",
-          "text": "Ryan, you will be head judge. Of everything. Judges are like kings, but with clipboards.",
-          "to": "ryan",
-          "mood": "happy"
-        },
-        {
-          "type": "say",
-          "who": "dwight",
-          "text": "Question: does the winner become Assistant Regional Manager?",
-          "to": "michael",
-          "mood": "excited"
-        },
-        {
-          "type": "say",
-          "who": "michael",
-          "text": "No. But there's a ribbon.",
-          "to": "dwight",
-          "mood": "neutral"
-        },
-        {
-          "type": "say",
-          "who": "dwight",
-          "text": "I will take the ribbon and the principle.",
-          "to": "michael",
-          "mood": "deadpan"
-        },
-        {
-          "type": "talking_head",
-          "who": "michael",
-          "lines": [
-            "People say I do these things for attention. I do them for love. Which is attention, but warmer."
-          ],
-          "mood": "sad"
-        }
-      ]
-    },
-    {
-      "part": "act1",
-      "plot": "B",
-      "set": "office",
-      "region": "reception",
-      "venue": "",
-      "present": [
-        "pam",
-        "jim"
-      ],
-      "recap": "Pam hides an art class flyer; Jim asks to see her work.",
-      "beats": [
-        {
-          "type": "action",
-          "who": "pam",
-          "verb": "hide",
-          "target": "none",
-          "caption": "slides an art class flyer under her keyboard"
-        },
-        {
-          "type": "move",
-          "who": "jim",
-          "to": "pam_desk",
-          "pace": "walk"
-        },
-        {
-          "type": "say",
-          "who": "jim",
-          "text": "What's that? The flyer.",
-          "to": "pam",
-          "mood": "neutral"
-        },
-        {
-          "type": "say",
-          "who": "pam",
-          "text": "Nothing. Night class at the Scranton Community Center. Drawing. Roy thinks it's a phase.",
-          "to": "jim",
-          "mood": "awkward"
-        },
-        {
-          "type": "say",
-          "who": "jim",
-          "text": "Can I see some of your stuff?",
-          "to": "pam",
-          "mood": "happy"
-        },
-        {
-          "type": "pause",
-          "seconds": 2,
-          "caption": "nobody has asked before"
-        },
-        {
-          "type": "say",
-          "who": "pam",
-          "text": "Really? It's just a sketchbook. It's not very good.",
-          "to": "jim",
-          "mood": "nervous"
-        },
-        {
-          "type": "say",
-          "who": "jim",
-          "text": "Pam. I've seen your Dundies speech. I trust you.",
-          "to": "pam",
-          "mood": "happy"
+          "to": "dwight_desk"
         },
         {
           "type": "action",
-          "who": "pam",
+          "who": "dwight",
           "verb": "present",
-          "target": "jim",
-          "caption": "opens her sketchbook to a drawing of the office"
-        },
-        {
-          "type": "talking_head",
-          "who": "pam",
-          "lines": [
-            "I put that drawing of Jim on the last page. I'm not showing that one. It's, uh, still a work in progress."
-          ],
-          "mood": "nervous"
-        }
-      ]
-    },
-    {
-      "part": "act1",
-      "plot": "A",
-      "set": "office",
-      "region": "bullpen",
-      "venue": "",
-      "present": [
-        "michael",
-        "ryan",
-        "kevin",
-        "oscar",
-        "stanley",
-        "phyllis",
-        "angela",
-        "dwight"
-      ],
-      "recap": "Event one: paper-ream toss; Ryan judges coldly.",
-      "beats": [
-        {
-          "type": "say",
-          "who": "michael",
-          "text": "Event one: Ream Toss. Throw paper like it's your ex-wife. Or your mom. Either way.",
-          "to": "all",
-          "mood": "excited"
-        },
-        {
-          "type": "action",
-          "who": "kevin",
-          "verb": "fall",
           "target": "none",
-          "caption": "hurls a ream into the water cooler"
+          "caption": "drags in a sled loaded with canned beets, rope and a hand-crank radio"
         },
         {
           "type": "say",
-          "who": "kevin",
-          "text": "Oops.",
-          "to": "none",
-          "mood": "neutral"
-        },
-        {
-          "type": "say",
-          "who": "ryan",
-          "text": "I'm giving that a six. Aesthetically, it's chaos.",
-          "to": "michael",
-          "mood": "deadpan"
-        },
-        {
-          "type": "say",
-          "who": "michael",
-          "text": "Ryan said six! Kevin, it's a strong six.",
-          "to": "kevin",
-          "mood": "excited"
-        },
-        {
-          "type": "say",
-          "who": "stanley",
-          "text": "I'm doing my crossword. Count me out of all events. Did I stutter?",
-          "to": "michael",
-          "mood": "annoyed"
-        },
-        {
-          "type": "react",
-          "who": [
-            "oscar"
-          ],
-          "reaction": "eye_roll"
-        },
-        {
-          "type": "say",
-          "who": "michael",
-          "text": "Stanley is disqualified for being the only one who is not having fun.",
-          "to": "all",
-          "mood": "annoyed"
-        }
-      ]
-    },
-    {
-      "part": "act2",
-      "plot": "C",
-      "set": "office",
-      "region": "bullpen",
-      "venue": "",
-      "present": [
-        "dwight",
-        "ryan",
-        "jim",
-        "michael"
-      ],
-      "recap": "Dwight pressures Ryan, the judge, for a high score.",
-      "beats": [
-        {
-          "type": "move",
-          "who": "dwight",
-          "to": "ryan",
-          "pace": "hurry"
-        },
-        {
-          "type": "say",
-          "who": "dwight",
-          "text": "Judge Howard. I have a gift. Organic beet jerky.",
-          "to": "ryan",
-          "mood": "smug"
-        },
-        {
-          "type": "say",
-          "who": "ryan",
-          "text": "Is it a bribe or a startup?",
+          "who": "jim",
+          "text": "Dwight, it's not snowing.",
           "to": "dwight",
           "mood": "deadpan"
         },
         {
           "type": "say",
           "who": "dwight",
-          "text": "Both.",
-          "to": "ryan",
+          "text": "Not YET. The weak prepare when it snows. The strong prepare when it's sunny.",
+          "to": "jim",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "Is that a whole sled of beets?",
+          "to": "dwight",
           "mood": "neutral"
         },
         {
-          "type": "action",
-          "who": "jim",
-          "verb": "prank",
-          "target": "dwight",
-          "caption": "quietly swaps Dwight's gold medal paperwork with a lunch menu"
-        },
-        {
-          "type": "talking_head",
-          "who": "ryan",
-          "lines": [
-            "I'm not here for the games. I'm here because Jan said corporate is watching. I just judge slower."
-          ],
-          "mood": "smug"
+          "type": "say",
+          "who": "dwight",
+          "text": "And one can of peaches. For morale.",
+          "to": "kevin",
+          "mood": "deadpan"
         },
         {
           "type": "react",
@@ -408,7 +112,94 @@
       ]
     },
     {
-      "part": "act2",
+      "part": "act1",
+      "plot": "A",
+      "set": "office",
+      "region": "conference_room",
+      "venue": "",
+      "present": [
+        "michael",
+        "jim",
+        "pam",
+        "dwight",
+        "stanley",
+        "phyllis",
+        "angela",
+        "oscar",
+        "kevin",
+        "kelly",
+        "creed",
+        "ryan"
+      ],
+      "away": [],
+      "recap": "Corporate says close at noon; Michael insists on finishing his 'Winter Wellness' seminar first.",
+      "beats": [
+        {
+          "type": "gather",
+          "who": [
+            "everyone"
+          ],
+          "to": "conference_room"
+        },
+        {
+          "type": "say",
+          "who": "oscar",
+          "text": "Michael, corporate emailed. All branches close at noon because of the storm.",
+          "to": "michael",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "And we will close at noon. Right after my Winter Wellness seminar. Which is very short.",
+          "to": "all",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Slide one. 'Snow: Friend or Foe?' Discuss.",
+          "to": "all",
+          "mood": "excited"
+        },
+        {
+          "type": "action",
+          "who": "stanley",
+          "verb": "hide",
+          "target": "none",
+          "caption": "puts on his coat and walks out mid-slide"
+        },
+        {
+          "type": "exit",
+          "who": [
+            "stanley"
+          ],
+          "how": "walk"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Stanley will be marked as 'Foe.'",
+          "to": "all",
+          "mood": "annoyed"
+        },
+        {
+          "type": "caption",
+          "text": "1:40 PM. STILL ON SLIDE FOUR"
+        },
+        {
+          "type": "talking_head",
+          "who": "oscar",
+          "lines": [
+            "The seminar had nine slides. Three of them were the same picture of a snowman.",
+            "One of the snowmen was Michael. He'd drawn a tie on it."
+          ],
+          "mood": "deadpan"
+        }
+      ]
+    },
+    {
+      "part": "act1",
       "plot": "B",
       "set": "office",
       "region": "reception",
@@ -417,62 +208,429 @@
         "pam",
         "jim"
       ],
-      "recap": "Roy calls and cancels; Pam shows Jim another sketch.",
+      "away": [],
+      "recap": "Pam calls Roy; his truck is stuck, the roads are closing, and he can't come.",
       "beats": [
         {
           "type": "action",
           "who": "pam",
           "verb": "phone_call",
           "target": "none",
-          "caption": "talks to Roy, voice small"
+          "caption": "calls Roy, watching the window"
         },
         {
           "type": "say",
           "who": "pam",
-          "text": "No, it's fine. I'll just pick something up. It's fine.",
+          "text": "You're stuck? In the ditch? No, I'm fine. Are you fine? Okay. Just... okay.",
           "to": "none",
           "mood": "sad"
         },
         {
           "type": "move",
           "who": "jim",
-          "to": "pam_desk",
+          "to": "pam",
           "pace": "walk"
         },
         {
           "type": "say",
           "who": "jim",
-          "text": "You okay?",
+          "text": "No Roy?",
           "to": "pam",
           "mood": "neutral"
         },
         {
           "type": "say",
           "who": "pam",
-          "text": "Yeah. Class starts Thursday. I was going to ask Roy to come. Then I thought, he'd rather not.",
+          "text": "His truck's in a ditch on Route 6. They're closing the roads. I guess I live here now.",
           "to": "jim",
-          "mood": "sad"
+          "mood": "awkward"
         },
         {
           "type": "say",
           "who": "jim",
-          "text": "I'd go. I mean, I can't draw. But I'd hold the pencil case.",
+          "text": "Well, the commute is great.",
           "to": "pam",
-          "mood": "happy"
-        },
-        {
-          "type": "say",
-          "who": "pam",
-          "text": "I might hold you to that.",
-          "to": "jim",
-          "mood": "happy"
+          "mood": "deadpan"
         },
         {
           "type": "react",
           "who": [
             "pam"
           ],
-          "reaction": "look_at_camera"
+          "reaction": "laugh"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "C",
+      "set": "kitchen",
+      "region": "kitchen",
+      "venue": "",
+      "present": [
+        "dwight",
+        "angela"
+      ],
+      "away": [],
+      "recap": "Dwight inventories his survival supplies with Angela and gives her the good blanket.",
+      "beats": [
+        {
+          "type": "action",
+          "who": "dwight",
+          "verb": "present",
+          "target": "angela",
+          "caption": "unfolds a crinkly silver survival blanket"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Two blankets. One is military grade. One is from a 5K. The military one is yours.",
+          "to": "angela",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "angela",
+          "text": "And the canned beets?",
+          "to": "dwight",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Forty. Enough for us for a week. Or the office for a day.",
+          "to": "angela",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "angela",
+          "text": "Then it's for us.",
+          "to": "dwight",
+          "mood": "deadpan"
+        },
+        {
+          "type": "talking_head",
+          "who": "dwight",
+          "lines": [
+            "In a crisis, a man protects his tribe.",
+            "My tribe is very small. And very well-dressed. And I will not be naming her."
+          ],
+          "mood": "deadpan"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "A",
+      "set": "office",
+      "region": "bullpen",
+      "venue": "",
+      "present": [
+        "michael",
+        "phyllis",
+        "oscar",
+        "kelly",
+        "ryan",
+        "kevin",
+        "creed"
+      ],
+      "away": [],
+      "recap": "Bob Vance rescues Phyllis with a truck with chains; the rest are stranded, and Oscar points out whose fault it is.",
+      "beats": [
+        {
+          "type": "enter",
+          "who": [
+            "bob_vance"
+          ],
+          "to": "phyllis"
+        },
+        {
+          "type": "say",
+          "who": "bob_vance",
+          "text": "Bob Vance, Vance Refrigeration. My truck has chains. Phyllis, let's go.",
+          "to": "all",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "phyllis",
+          "text": "Bye, everyone! Stay warm!",
+          "to": "all",
+          "mood": "happy"
+        },
+        {
+          "type": "exit",
+          "who": [
+            "phyllis",
+            "bob_vance"
+          ],
+          "how": "walk"
+        },
+        {
+          "type": "say",
+          "who": "kelly",
+          "text": "Wait, can Bob take more people? Bob! Bob Vance! Ugh.",
+          "to": "all",
+          "mood": "panicked"
+        },
+        {
+          "type": "say",
+          "who": "oscar",
+          "text": "The state closed Route 6 at two. We'd be home if not for the snowman slides.",
+          "to": "michael",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Or. Hear me out. This is the best thing that's ever happened to us.",
+          "to": "all",
+          "mood": "excited"
+        },
+        {
+          "type": "pause",
+          "seconds": 3,
+          "caption": ""
+        },
+        {
+          "type": "talking_head",
+          "who": "michael",
+          "lines": [
+            "A sleepover. With my favorite people. I've only ever had one sleepover, in 1978.",
+            "Everyone left at nine. This time they can't."
+          ],
+          "mood": "happy"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "B",
+      "set": "break_room",
+      "region": "break_room",
+      "venue": "",
+      "present": [
+        "jim",
+        "pam"
+      ],
+      "away": [],
+      "recap": "Jim and Pam make a vending-machine dinner and talk about what she wanted to be.",
+      "beats": [
+        {
+          "type": "caption",
+          "text": "7:15 PM"
+        },
+        {
+          "type": "move",
+          "who": "jim",
+          "to": "vending",
+          "pace": "walk"
+        },
+        {
+          "type": "action",
+          "who": "jim",
+          "verb": "present",
+          "target": "pam",
+          "caption": "lays out two bags of pretzels, a Twix and a cup of soup like a dinner service"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "Tonight's tasting menu. The chef recommends the Twix.",
+          "to": "pam",
+          "mood": "deadpan"
+        },
+        {
+          "type": "sit",
+          "who": [
+            "jim",
+            "pam"
+          ]
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "When I was ten I wanted to draw the pictures in children's books. Like, that was my whole plan.",
+          "to": "jim",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "What happened to the plan?",
+          "to": "pam",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "I don't know. Nothing happened to it. That's kind of what happened.",
+          "to": "jim",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "You're taking the class, though. That's something happening.",
+          "to": "pam",
+          "mood": "happy"
+        },
+        {
+          "type": "talking_head",
+          "who": "pam",
+          "lines": [
+            "Tonight is kind of... nice? Is that weird? We're trapped. In an office.",
+            "It's nice."
+          ],
+          "mood": "happy"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "A",
+      "set": "office",
+      "region": "conference_room",
+      "venue": "",
+      "present": [
+        "michael",
+        "kevin",
+        "oscar",
+        "kelly",
+        "ryan",
+        "creed",
+        "dwight",
+        "angela"
+      ],
+      "away": [],
+      "recap": "Michael's 'Snow Games' flop, until Kevin produces a slow cooker of chili and dinner becomes a party.",
+      "beats": [
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Welcome to the Snow Games! Event one: interpretive snow dance. Ryan, you're up.",
+          "to": "all",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "ryan",
+          "text": "No.",
+          "to": "michael",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Event two: Who Can Be Quiet the Longest. Not you, Kelly.",
+          "to": "all",
+          "mood": "neutral"
+        },
+        {
+          "type": "enter",
+          "who": [
+            "kevin"
+          ],
+          "to": "conf_front"
+        },
+        {
+          "type": "action",
+          "who": "kevin",
+          "verb": "present",
+          "target": "none",
+          "caption": "sets a slow cooker on the table and lifts the lid"
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "I always keep a backup chili in my car. For emergencies. This is an emergency.",
+          "to": "all",
+          "mood": "happy"
+        },
+        {
+          "type": "react",
+          "who": [
+            "kelly",
+            "creed",
+            "oscar"
+          ],
+          "reaction": "cheer"
+        },
+        {
+          "type": "say",
+          "who": "creed",
+          "text": "Best chili I've had since the commune.",
+          "to": "kevin",
+          "mood": "happy"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "C",
+      "set": "office",
+      "region": "bullpen",
+      "venue": "",
+      "present": [
+        "dwight",
+        "angela",
+        "kevin"
+      ],
+      "away": [],
+      "recap": "Late at night, Dwight and Angela share the survival blanket; Kevin wanders by for more chili and they spring apart.",
+      "beats": [
+        {
+          "type": "caption",
+          "text": "11:40 PM"
+        },
+        {
+          "type": "action",
+          "who": "dwight",
+          "verb": "sleep",
+          "target": "angela",
+          "caption": "shares a crinkly silver blanket with Angela, very close"
+        },
+        {
+          "type": "move",
+          "who": "kevin",
+          "to": "dwight_desk",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "Is there more chili? Why is Angela in your blanket?",
+          "to": "dwight",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Body heat is a survival resource, Kevin. I'm saving her life. Clinically.",
+          "to": "kevin",
+          "mood": "panicked"
+        },
+        {
+          "type": "say",
+          "who": "angela",
+          "text": "It's an emergency. Nothing about this is enjoyable.",
+          "to": "kevin",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "Okay. Can I get in?",
+          "to": "dwight",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "NO.",
+          "to": "kevin",
+          "mood": "angry"
         }
       ]
     },
@@ -484,129 +642,121 @@
       "venue": "",
       "present": [
         "michael",
-        "dwight",
-        "ryan",
-        "kevin",
-        "oscar",
-        "phyllis",
-        "angela",
-        "toby"
+        "oscar"
       ],
-      "recap": "The final event goes wrong; Michael is alone with the results.",
+      "away": [],
+      "recap": "Michael admits to Oscar that he stalled because his apartment is empty; Oscar softens and stays up playing cards with him.",
       "beats": [
         {
+          "type": "sit",
+          "who": [
+            "michael",
+            "oscar"
+          ]
+        },
+        {
           "type": "say",
-          "who": "michael",
-          "text": "Final event: Trivia about me. Question one: what is my favorite thing in the world?",
-          "to": "all",
-          "mood": "excited"
+          "who": "oscar",
+          "text": "You did this on purpose, didn't you? The slides.",
+          "to": "michael",
+          "mood": "neutral"
         },
         {
           "type": "pause",
           "seconds": 3,
-          "caption": "silence"
-        },
-        {
-          "type": "say",
-          "who": "kevin",
-          "text": "Chili?",
-          "to": "michael",
-          "mood": "neutral"
+          "caption": ""
         },
         {
           "type": "say",
           "who": "michael",
-          "text": "Wrong. It's being asked.",
-          "to": "kevin",
+          "text": "My place is very quiet in a storm, Oscar. It's quiet always. Storms make it louder.",
+          "to": "oscar",
           "mood": "sad"
         },
         {
           "type": "say",
-          "who": "dwight",
-          "text": "Michael Scott's favorite thing is loyalty. Then Bears. Then Jan.",
-          "to": "michael",
-          "mood": "deadpan"
-        },
-        {
-          "type": "say",
-          "who": "michael",
-          "text": "That's... correct. Dwight wins.",
-          "to": "dwight",
-          "mood": "awkward"
-        },
-        {
-          "type": "say",
-          "who": "angela",
-          "text": "He knows you better than anyone here.",
+          "who": "oscar",
+          "text": "...Do you play gin rummy?",
           "to": "michael",
           "mood": "neutral"
         },
         {
-          "type": "react",
-          "who": [
-            "toby"
+          "type": "say",
+          "who": "michael",
+          "text": "I have never been asked that by someone who meant it.",
+          "to": "oscar",
+          "mood": "happy"
+        },
+        {
+          "type": "talking_head",
+          "who": "oscar",
+          "lines": [
+            "I'm still angry. He stranded eight people with a snowman PowerPoint.",
+            "He's also terrible at gin rummy. So I'm less angry."
           ],
-          "reaction": "cringe"
-        },
-        {
-          "type": "say",
-          "who": "toby",
-          "text": "For what it's worth, I'd have said 'the Bears' too.",
-          "to": "michael",
-          "mood": "sad"
-        },
-        {
-          "type": "say",
-          "who": "michael",
-          "text": "Thanks, Toby. Please leave.",
-          "to": "toby",
-          "mood": "awkward"
+          "mood": "deadpan"
         }
       ]
     },
     {
       "part": "act2",
-      "plot": "C",
+      "plot": "B",
       "set": "office",
-      "region": "michael_office",
+      "region": "reception",
       "venue": "",
       "present": [
-        "michael",
-        "ryan"
+        "pam",
+        "jim"
       ],
-      "recap": "Ryan tells Michael he might leave someday; Michael takes it well.",
+      "away": [],
+      "recap": "Near midnight, Jim and Pam watch the snow from reception; a quiet moment, until Roy calls to say the plow came through.",
       "beats": [
         {
+          "type": "move",
+          "who": "jim",
+          "to": "pam",
+          "pace": "walk"
+        },
+        {
           "type": "say",
-          "who": "ryan",
-          "text": "Michael, if corporate calls me, I'd probably take it.",
-          "to": "michael",
+          "who": "pam",
+          "text": "It's so quiet. I've never heard the office quiet. It's like a different building.",
+          "to": "jim",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "I like it. I like the different building.",
+          "to": "pam",
           "mood": "neutral"
         },
         {
           "type": "pause",
-          "seconds": 2,
-          "caption": "Michael processes"
+          "seconds": 4,
+          "caption": ""
+        },
+        {
+          "type": "action",
+          "who": "pam",
+          "verb": "phone_call",
+          "target": "none",
+          "caption": "the phone rings; she answers"
         },
         {
           "type": "say",
-          "who": "michael",
-          "text": "Good. You should. A good boss wants his people to leave. That's what she said.",
-          "to": "ryan",
-          "mood": "sad"
+          "who": "pam",
+          "text": "Roy? The plow came? You're coming now? Oh. Great. That's great.",
+          "to": "none",
+          "mood": "awkward"
         },
         {
-          "type": "say",
-          "who": "ryan",
-          "text": "That doesn't work there.",
-          "to": "michael",
-          "mood": "deadpan"
-        },
-        {
-          "type": "say",
-          "who": "michael",
-          "text": "I know. I just needed to say something.",
-          "to": "ryan",
+          "type": "talking_head",
+          "who": "jim",
+          "lines": [
+            "Roy got his truck out of the ditch. He's coming to get her. That's good. He's a good guy.",
+            "The plow guys are really fast. Like... really fast."
+          ],
           "mood": "sad"
         }
       ]
@@ -615,75 +765,50 @@
       "part": "act2",
       "plot": "A",
       "set": "office",
-      "region": "bullpen",
+      "region": "conference_room",
       "venue": "",
       "present": [
         "michael",
-        "dwight",
-        "jim",
-        "pam",
         "kevin",
-        "stanley",
         "oscar",
-        "phyllis",
-        "angela"
+        "kelly",
+        "ryan",
+        "creed"
       ],
-      "recap": "Medal ceremony; Dwight gets a ribbon and the office applauds Michael.",
+      "away": [],
+      "recap": "In the morning the stranded crew wakes up in the conference room, and Michael has had the best night of his life.",
       "beats": [
         {
-          "type": "gather",
-          "who": [
-            "everyone"
-          ],
-          "to": "bullpen"
+          "type": "caption",
+          "text": "THE NEXT MORNING"
+        },
+        {
+          "type": "action",
+          "who": "kevin",
+          "verb": "sleep",
+          "target": "none",
+          "caption": "snores under the conference table"
         },
         {
           "type": "say",
-          "who": "michael",
-          "text": "Gold goes to Dwight Schrute. He is Champion. Not Assistant Regional Manager. Champion.",
-          "to": "dwight",
-          "mood": "happy"
-        },
-        {
-          "type": "say",
-          "who": "dwight",
-          "text": "I will wear it in the shower.",
+          "who": "kelly",
+          "text": "Ryan slept next to me. That's basically a relationship milestone.",
           "to": "michael",
-          "mood": "smug"
+          "mood": "excited"
         },
         {
           "type": "say",
-          "who": "pam",
-          "text": "Thanks for doing this, Michael. It was kind of fun.",
+          "who": "ryan",
+          "text": "There were four chairs. I had no choice.",
           "to": "michael",
-          "mood": "happy"
-        },
-        {
-          "type": "say",
-          "who": "jim",
-          "text": "Best day of the quarter.",
-          "to": "michael",
-          "mood": "happy"
-        },
-        {
-          "type": "say",
-          "who": "michael",
-          "text": "Really?",
-          "to": "all",
-          "mood": "happy"
-        },
-        {
-          "type": "say",
-          "who": "stanley",
-          "text": "I finished my crossword. So yes.",
-          "to": "michael",
-          "mood": "neutral"
+          "mood": "annoyed"
         },
         {
           "type": "talking_head",
           "who": "michael",
           "lines": [
-            "I didn't win love. But I did get a pretty good ribbon budget. Ryan said I'm a solid six."
+            "Best night of my life. We ate chili. We played gin rummy. Ryan slept near people.",
+            "'Stuck in a room together.' Yeah. That's what a family is. Survey's wrong."
           ],
           "mood": "happy"
         }
@@ -696,36 +821,35 @@
       "region": "bullpen",
       "venue": "",
       "present": [
-        "dwight",
-        "jim"
+        "creed",
+        "oscar"
       ],
-      "recap": "Dwight finds his stapler in Jell-O wearing his medal.",
+      "away": [],
+      "recap": "Creed mentions he sleeps at the office most nights anyway.",
       "beats": [
         {
-          "type": "action",
-          "who": "dwight",
-          "verb": "search",
-          "target": "none",
-          "caption": "opens his drawer, medal swinging"
-        },
-        {
           "type": "say",
-          "who": "dwight",
-          "text": "Creed.",
-          "to": "none",
-          "mood": "angry"
+          "who": "oscar",
+          "text": "Creed, you seem very rested.",
+          "to": "creed",
+          "mood": "neutral"
         },
         {
           "type": "say",
           "who": "creed",
-          "text": "Nice medal. I won one in 1973. Different circumstances.",
-          "to": "dwight",
-          "mood": "neutral"
+          "text": "I sleep here most nights. The storm just meant company.",
+          "to": "oscar",
+          "mood": "deadpan"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": ""
         },
         {
           "type": "react",
           "who": [
-            "jim"
+            "oscar"
           ],
           "reaction": "look_at_camera"
         }

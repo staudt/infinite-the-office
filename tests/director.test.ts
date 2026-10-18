@@ -115,6 +115,17 @@ describe('kitchen and annex sets', () => {
     expect(seen).toBe(false);
   });
 
+  it('leaves desks empty for regulars away in one scene only', () => {
+    const night = { ...scene('office', 'bullpen', ['jim']), away: ['kevin'] };
+    const ep = Episode.parse({ title: 'Night', logline: '', scenes: [night, scene('office', 'bullpen', ['jim'])] });
+    const st = new Stage(1, CAST, ep, DEMO_ROSTER);
+    const task = st.spawn(new Director(st, ep, DEMO_ROSTER).play());
+    const seen: boolean[] = [];
+    st.on((e) => { if (e.type === 'said') seen.push(st.actor('kevin').visible); });
+    while (!task.done && st.time < 600) st.update(TICK);
+    expect(seen).toEqual([false, true]);
+  });
+
   it('walks at a uniform pixel speed on a square-cell set', () => {
     const ep = Episode.parse({ title: 'Walk', logline: '', scenes: [scene('office', 'bullpen', ['jim'])] });
     const st = new Stage(1, CAST, ep, DEMO_ROSTER);

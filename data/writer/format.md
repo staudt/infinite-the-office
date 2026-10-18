@@ -4,7 +4,7 @@
 Call `write_episode` exactly once with the complete episode. `beats` is ONE flat, ordered list for the whole episode. Every scene starts with a scene marker, followed by that scene's beats:
 
 ```
-{ "type": "scene", "part": "cold_open|act1|act2|tag", "plot": "cold_open|A|B|C|tag", "set": "office|kitchen|annex|break_room|parking_lot|warehouse|offsite", "region": "bullpen", "venue": "", "present": ["jim","pam"], "recap": "One sentence: what happens in this scene" }
+{ "type": "scene", "part": "cold_open|act1|act2|tag", "plot": "cold_open|A|B|C|tag", "set": "office|kitchen|annex|break_room|parking_lot|warehouse|offsite", "region": "bullpen", "venue": "", "present": ["jim","pam"], "away": [], "recap": "One sentence: what happens in this scene" }
 ```
 
 Beat shapes (use exactly these field names; `who` is always a character id, never a name):
@@ -34,6 +34,7 @@ An `action` caption is a stage direction WITHOUT the actor's name, starting with
 - `title`: a short, funny title (no "Episode N"). `logline`: one sentence for the whole episode. `theme`: the unstated theme.
 - `storySoFar`: the UPDATED running summary of all ongoing storylines in under 150 words, as of the end of this episode.
 - `extras`: only when you introduce a new recurring side character: `{ "id": "gary", "name": "Gary Trundle", "title": "Owner, Trundle Storage", "voice": "how they talk" }`. Then use their id in beats.
+- Scene `away` (optional): regulars not at their desks in that scene only, e.g. the office at night.
 - `away`: ids of regulars who are absent the whole episode (vacation, not hired yet, transferred), so they aren't drawn at their desks. Usually empty.
 - `stateChanges`: what changed, so the next writer remembers. Each is one of:
   `{ "type": "relationship", "a": "jim", "b": "pam", "status": "dating" }`,

@@ -119,7 +119,7 @@ export class Director {
     for (const id of this.roster) {
       const a = st.actor(id);
       const desk = a.desk ? st.set.spots[a.desk] : undefined;
-      if (sc.present.includes(id) || !desk) continue;
+      if (sc.present.includes(id) || sc.away.includes(id) || !desk) continue;
       st.show(a, desk);
       if (!busy.has(id)) background.push(a);
     }

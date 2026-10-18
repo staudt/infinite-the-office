@@ -144,6 +144,7 @@ export function reviewEpisode(series: Series, raw: unknown, sets: Sets): Episode
     if (sc.set === 'offsite' && !sc.venue.trim()) sc.venue = 'OFFSITE';
     sc.venue = sc.venue.toUpperCase().slice(0, 30);
     sc.present = list(sc.present, where).filter((p) => p !== 'everyone');
+    sc.away = list(sc.away, where).filter((p) => p !== 'everyone');
     sc.recap = capText(sc.recap, 200);
     const place = (to: string, whereB: string): string => {
       if (to === 'none' || set.regions[to] || set.spots[to]) return to;

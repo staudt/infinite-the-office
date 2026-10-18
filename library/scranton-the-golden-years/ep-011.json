@@ -1,32 +1,44 @@
 {
-  "title": "Yankee Swap Meet",
-  "logline": "Michael's Christmas party Yankee Swap splits the Party Planning Committee, while Dwight wants the Assistant title and Michael learns what to give a temp who might leave.",
-  "outline": "A: Michael hijacks Angela's Christmas party with a Yankee Swap, secretly rigging a gift for Ryan. B: Dwight's elaborate plan to be picked as Jan's inspection assistant; Jim sabotages. C: Ryan has a corporate interview and hides it; it slips out at the worst moment. Order: cold, A, B, A, C, B, A, C, A, B, A, tag",
-  "theme": "Giving what you wish you'd get",
-  "storySoFar": "Michael's dinner with Jan was canceled; Jan softened. Dwight campaigns for Assistant Regional Manager; Jim holds a real beet. Pam keeps Jim's lamp on, attends art class, told Jim she isn't sure about the wedding; Jim's stairwell/lot confession was interrupted; coffee promise stands. Ep 11: Christmas party civil war between Angela's committee and Michael's Yankee Swap; Michael secretly buys Ryan a thoughtful gift; Ryan's corporate interview is revealed; Dwight preps to be picked as Jan's inspection assistant. Finale next: Jan and David inspect, rumors of downsizing.",
+  "title": "Secret Santa",
+  "logline": "Michael draws Toby in Secret Santa and can't trade him away, the Party Planning Committee splits into two rival parties, and Jim gives Pam a box of their inside jokes, keeping back the card that says why.",
+  "outline": "A: Michael draws Toby for Secret Santa, fails to trade him, tries to merge two rival parties, and is undone by Toby's thoughtful gift. B: Jim drew Pam; his gift is a box of their inside jokes, and he pockets the card. C: The Party Planning Committee splits, Angela's silent party versus Kelly's karaoke, and Oscar notices Dwight and Angela drew each other. Order: cold, A, B, C, A, C, A, B, C, A, B, tag",
+  "theme": "The gift that says too much",
+  "storySoFar": "At Christmas, Michael drew Toby for Secret Santa and couldn't trade him; he gave Toby a 'Get Out of Jail Free' card, and Toby, who drew Michael, gave him an engraved pen: 'Michael Scott, Regional Manager, Scranton.' The Party Planning Committee split into Angela's quiet party and Kelly's karaoke until Michael merged them, with only quiet songs (Kevin sang a lovely Silent Night). Jim drew Pam and gave her a box of their inside jokes: a Twix, a beet, the Dundies umbrella, the cricket radio and a sketchbook 'for the children's books'; he pocketed the card and told her there wasn't one. Dwight and Angela drew each other (a carved cat, an engraved pocketknife); Oscar is 'keeping a file'. Kelly sang karaoke to Ryan, who stayed. Corporate decides at month's end whether Scranton or Stamford closes; Jim's Stamford transfer is pending; Pam's wedding is June 10.",
   "extras": [],
+  "away": [],
   "stateChanges": [
     {
       "type": "arc",
-      "arc": "Ryan the Temp",
-      "progress": "Ryan has a corporate interview and let it slip; Michael gave him a thoughtful gift and said he'd be fine if he left."
+      "arc": "Jim and Pam",
+      "progress": "Jim's Christmas gift was a box of inside jokes; he kept the card that says how he feels"
     },
     {
       "type": "arc",
-      "arc": "Assistant (to the) Regional Manager",
-      "progress": "Michael says he'll name an assistant for Jan's inspection; Dwight has prepared a binder."
+      "arc": "Dwight and Angela, Secretly",
+      "progress": "They drew each other for Secret Santa; Oscar caught them in the kitchen and is keeping a mental file"
+    },
+    {
+      "type": "arc",
+      "arc": "Ryan the Temp",
+      "progress": "Ryan stayed for one more karaoke song with Kelly"
+    },
+    {
+      "type": "relationship",
+      "a": "michael",
+      "b": "toby",
+      "status": "Toby gave Michael a perfect gift; Michael still hates him, slightly less"
     },
     {
       "type": "note",
-      "text": "Michael will announce his inspection assistant next episode; Dwight's binder is ready."
+      "text": "Jim still has the unread Christmas card for Pam in his pocket"
+    },
+    {
+      "type": "note",
+      "text": "Toby's pen: 'Michael Scott, Regional Manager, Scranton'"
     },
     {
       "type": "gag",
-      "text": "Creed's Yankee Swap gift is something unsettling nobody follows up on."
-    },
-    {
-      "type": "note",
-      "text": "Jim's gift to Pam in the swap: a pencil set; Pam's gift hinted at the sketchbook drawing."
+      "text": "Kevin has a surprisingly beautiful singing voice"
     }
   ],
   "scenes": [
@@ -34,61 +46,66 @@
       "part": "cold_open",
       "plot": "cold_open",
       "set": "office",
-      "region": "bullpen",
+      "region": "michael_office",
       "venue": "",
       "present": [
-        "jim",
-        "dwight",
-        "pam"
+        "michael",
+        "toby"
       ],
-      "recap": "Jim wraps all of Dwight's desk in Christmas paper.",
+      "away": [],
+      "recap": "Michael hangs mistletoe in his doorway; the first person under it is Toby, and Michael flees.",
       "beats": [
         {
-          "type": "say",
-          "who": "dwight",
-          "text": "Question: why is my desk a present?",
-          "to": "jim",
-          "mood": "annoyed"
-        },
-        {
-          "type": "say",
-          "who": "jim",
-          "text": "Early Christmas. Don't open it.",
-          "to": "dwight",
-          "mood": "deadpan"
+          "type": "caption",
+          "text": "DECEMBER 22"
         },
         {
           "type": "action",
-          "who": "dwight",
-          "verb": "search",
+          "who": "michael",
+          "verb": "present",
           "target": "none",
-          "caption": "tears into his own wrapped monitor"
+          "caption": "tapes a sprig of mistletoe above his office door"
+        },
+        {
+          "type": "talking_head",
+          "who": "michael",
+          "lines": [
+            "Mistletoe is a Christmas tradition that goes back to the Druids.",
+            "And Jan is coming by later. Maybe. To drop off a form. Under here."
+          ],
+          "mood": "smug"
+        },
+        {
+          "type": "move",
+          "who": "toby",
+          "to": "michael_guest_1",
+          "pace": "walk"
         },
         {
           "type": "say",
-          "who": "dwight",
-          "text": "It's just my monitor. Wrapped. Why would anyone do this?",
-          "to": "all",
-          "mood": "annoyed"
+          "who": "toby",
+          "text": "Michael, I just need you to sign the holiday party liability—",
+          "to": "michael",
+          "mood": "nervous"
         },
         {
           "type": "say",
-          "who": "pam",
-          "text": "There's a tag on it.",
-          "to": "dwight",
-          "mood": "happy"
+          "who": "michael",
+          "text": "NO. Not under there. Get out from under there. That is not for you.",
+          "to": "toby",
+          "mood": "panicked"
         },
         {
-          "type": "say",
-          "who": "dwight",
-          "text": "'To Dwight, from Creed.' I knew it.",
-          "to": "all",
-          "mood": "angry"
+          "type": "action",
+          "who": "michael",
+          "verb": "hide",
+          "target": "none",
+          "caption": "ducks under his own desk"
         },
         {
           "type": "react",
           "who": [
-            "jim"
+            "toby"
           ],
           "reaction": "look_at_camera"
         }
@@ -102,17 +119,22 @@
       "venue": "",
       "present": [
         "michael",
+        "jim",
+        "pam",
+        "dwight",
+        "stanley",
+        "phyllis",
         "angela",
         "oscar",
         "kevin",
-        "phyllis",
-        "pam",
-        "jim",
-        "dwight",
-        "toby",
-        "ryan"
+        "kelly",
+        "meredith",
+        "creed",
+        "ryan",
+        "toby"
       ],
-      "recap": "Michael announces a Yankee Swap and Angela objects.",
+      "away": [],
+      "recap": "The Secret Santa drawing: Michael draws Toby, and Angela announces there will be no trades.",
       "beats": [
         {
           "type": "gather",
@@ -123,67 +145,45 @@
         },
         {
           "type": "say",
-          "who": "michael",
-          "text": "Christmas party. Yankee Swap. It's like Secret Santa but with more stealing. Like marriage.",
-          "to": "all",
-          "mood": "excited"
-        },
-        {
-          "type": "say",
           "who": "angela",
-          "text": "The Party Planning Committee has already approved Secret Santa. Twelve-dollar limit. Ham.",
-          "to": "michael",
-          "mood": "annoyed"
+          "text": "Secret Santa rules. Twenty-dollar limit. No trades. No exceptions. No gag gifts, Kevin.",
+          "to": "all",
+          "mood": "deadpan"
+        },
+        {
+          "type": "action",
+          "who": "michael",
+          "verb": "search",
+          "target": "none",
+          "caption": "pulls a slip from the bowl and reads it"
+        },
+        {
+          "type": "pause",
+          "seconds": 3,
+          "caption": "Michael's face falls"
         },
         {
           "type": "say",
           "who": "michael",
-          "text": "Angela, I'm overriding the committee. I'm the committee's father.",
+          "text": "Is there a re-draw? For medical reasons?",
           "to": "angela",
-          "mood": "smug"
-        },
-        {
-          "type": "say",
-          "who": "phyllis",
-          "text": "I already bought a Secret Santa gift. It's a scarf.",
-          "to": "all",
-          "mood": "sad"
-        },
-        {
-          "type": "say",
-          "who": "toby",
-          "text": "Technically, HR requires that any gift exchange be voluntary and—",
-          "to": "michael",
-          "mood": "nervous"
-        },
-        {
-          "type": "say",
-          "who": "michael",
-          "text": "Toby, nobody asked, and also, no.",
-          "to": "toby",
-          "mood": "angry"
+          "mood": "panicked"
         },
         {
           "type": "say",
           "who": "angela",
-          "text": "Then the committee will hold a separate party. In the annex. With real cookies.",
-          "to": "all",
-          "mood": "angry"
-        },
-        {
-          "type": "say",
-          "who": "oscar",
-          "text": "Actually, I'm now at two parties. Great.",
-          "to": "all",
-          "mood": "sarcastic"
+          "text": "No trades. No exceptions.",
+          "to": "michael",
+          "mood": "smug"
         },
         {
           "type": "talking_head",
-          "who": "angela",
+          "who": "michael",
           "lines": [
-            "Michael is a tyrant. I have a binder and cats. Who has more power? Me."
+            "Of the fourteen people in this office, I drew Toby. One in fourteen.",
+            "Somebody rigged this. Probably God. God hates me and loves Toby. For some reason."
           ],
-          "mood": "smug"
+          "mood": "angry"
         }
       ]
     },
@@ -194,205 +194,256 @@
       "region": "bullpen",
       "venue": "",
       "present": [
-        "dwight",
-        "jim",
-        "michael",
-        "pam"
+        "jim"
       ],
-      "recap": "Dwight pitches himself as inspection assistant.",
+      "away": [],
+      "recap": "Jim tells the camera he drew Pam, and shows the box he's been filling for weeks.",
       "beats": [
         {
-          "type": "move",
-          "who": "dwight",
-          "to": "michael_desk",
-          "pace": "hurry"
-        },
-        {
-          "type": "say",
-          "who": "dwight",
-          "text": "Sir, for Jan's inspection you need an assistant. I have prepared a binder. Tabs.",
-          "to": "michael",
-          "mood": "excited"
-        },
-        {
-          "type": "say",
-          "who": "michael",
-          "text": "I'll choose after the party. Everyone auditions in the swap. That's how Jesus did it.",
-          "to": "dwight",
-          "mood": "smug"
-        },
-        {
-          "type": "say",
-          "who": "dwight",
-          "text": "False. But understood.",
-          "to": "michael",
-          "mood": "neutral"
+          "type": "action",
+          "who": "jim",
+          "verb": "hide",
+          "target": "none",
+          "caption": "slips a slip of paper reading PAM into his pocket"
         },
         {
           "type": "talking_head",
-          "who": "dwight",
+          "who": "jim",
           "lines": [
-            "I will win the Yankee Swap. I have a plan. Do not look for it. It is in my pants."
+            "I drew Pam. Which is a coincidence. A good one.",
+            "I've had her gift for three weeks. I didn't know I'd draw her. I was going to give it to her anyway. Don't tell her that."
           ],
-          "mood": "deadpan"
+          "mood": "happy"
         },
         {
           "type": "action",
           "who": "jim",
-          "verb": "prank",
-          "target": "dwight",
-          "caption": "swaps Dwight's plan folder with a Christmas menu"
-        }
-      ]
-    },
-    {
-      "part": "act1",
-      "plot": "A",
-      "set": "kitchen",
-      "region": "kitchen",
-      "venue": "",
-      "present": [
-        "michael"
-      ],
-      "recap": "Michael secretly wraps a gift for Ryan.",
-      "beats": [
-        {
-          "type": "action",
-          "who": "michael",
-          "verb": "hide",
+          "verb": "present",
           "target": "none",
-          "caption": "wraps a small box in newspaper, hiding it"
+          "caption": "peeks into a small shoebox wrapped in Sunday comics"
         },
         {
-          "type": "enter",
-          "who": [
-            "pam"
-          ],
-          "to": "fridge"
-        },
-        {
-          "type": "say",
-          "who": "pam",
-          "text": "Michael, what's in the box?",
-          "to": "michael",
-          "mood": "happy"
+          "type": "move",
+          "who": "dwight",
+          "to": "jim_desk",
+          "pace": "walk"
         },
         {
           "type": "say",
-          "who": "michael",
-          "text": "Nothing. A coaster. For nobody. Don't tell Ryan.",
-          "to": "pam",
+          "who": "dwight",
+          "text": "What's in the box?",
+          "to": "jim",
           "mood": "nervous"
         },
         {
-          "type": "talking_head",
-          "who": "michael",
-          "lines": [
-            "I do not have a favorite. But if I did, I'd get him a gift that says, 'I know you.' And also, 'Stay.'"
-          ],
-          "mood": "sad"
+          "type": "say",
+          "who": "jim",
+          "text": "Your Secret Santa gift. It's a live cricket.",
+          "to": "dwight",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "I knew it.",
+          "to": "jim",
+          "mood": "panicked"
         }
       ]
     },
     {
       "part": "act1",
       "plot": "C",
-      "set": "annex",
-      "region": "annex",
+      "set": "office",
+      "region": "accounting",
       "venue": "",
       "present": [
-        "ryan",
+        "angela",
+        "phyllis",
         "kelly"
       ],
-      "recap": "Ryan lets slip his interview is Thursday.",
+      "away": [],
+      "recap": "The Party Planning Committee splits over music: Angela wants a 'classic, quiet' party, Kelly and Phyllis want karaoke.",
       "beats": [
+        {
+          "type": "move",
+          "who": "kelly",
+          "to": "angela",
+          "pace": "walk"
+        },
+        {
+          "type": "move",
+          "who": "phyllis",
+          "to": "angela",
+          "pace": "walk"
+        },
         {
           "type": "say",
           "who": "kelly",
-          "text": "Why are you wearing a tie? Is it a date? Is it me?",
-          "to": "ryan",
+          "text": "Christmas karaoke. In the conference room. I already rented the machine.",
+          "to": "angela",
           "mood": "excited"
         },
         {
           "type": "say",
-          "who": "ryan",
-          "text": "It's an interview. Corporate. Tuesday. Do not tell Michael.",
+          "who": "angela",
+          "text": "The Christmas party will be classic. Cider. A wreath. Quiet reflection.",
           "to": "kelly",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "phyllis",
+          "text": "Angela, last year's party was so quiet Kevin fell asleep standing up.",
+          "to": "angela",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "angela",
+          "text": "Then have your karaoke. In the conference room. I'll be in the break room. With the people who matter.",
+          "to": "phyllis",
+          "mood": "angry"
+        },
+        {
+          "type": "talking_head",
+          "who": "kelly",
+          "lines": [
+            "There are two Christmas parties now. That's like, double Christmas.",
+            "Mine has a disco ball. Angela's has a bowl of nuts."
+          ],
+          "mood": "excited"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "A",
+      "set": "office",
+      "region": "bullpen",
+      "venue": "",
+      "present": [
+        "michael",
+        "dwight",
+        "kevin",
+        "stanley"
+      ],
+      "away": [],
+      "recap": "Michael tries to trade Toby with everyone, illegally; nobody will take him.",
+      "beats": [
+        {
+          "type": "move",
+          "who": "michael",
+          "to": "dwight",
+          "pace": "hurry"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Dwight. I'll trade you. My slip for your slip. Sight unseen. You'd be doing your country a service.",
+          "to": "dwight",
           "mood": "nervous"
         },
         {
           "type": "say",
-          "who": "kelly",
-          "text": "Oh my God. I'm so proud and so devastated. Can I be your assistant?",
-          "to": "ryan",
-          "mood": "excited"
+          "who": "dwight",
+          "text": "I can't. Mine is... very important. Medically important.",
+          "to": "michael",
+          "mood": "nervous"
         },
         {
-          "type": "talking_head",
-          "who": "ryan",
-          "lines": [
-            "I'm not hiding it. I'm just not sharing it. There's a difference."
-          ],
+          "type": "move",
+          "who": "michael",
+          "to": "kevin",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Kevin. Trade. I'll throw in twenty dollars.",
+          "to": "kevin",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "Who'd I get?",
+          "to": "michael",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "I can't say. Rhymes with... no-bee.",
+          "to": "kevin",
+          "mood": "awkward"
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "No.",
+          "to": "michael",
           "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "stanley",
+          "text": "Don't even walk over here.",
+          "to": "michael",
+          "mood": "annoyed"
         }
       ]
     },
     {
       "part": "act2",
-      "plot": "B",
+      "plot": "C",
       "set": "office",
-      "region": "bullpen",
+      "region": "accounting",
       "venue": "",
       "present": [
+        "oscar",
         "dwight",
-        "jim",
-        "pam",
-        "angela",
-        "michael"
+        "angela"
       ],
-      "recap": "Dwight tries to cheat at swap prep; Angela helps.",
+      "away": [],
+      "recap": "Oscar works out that Dwight and Angela drew each other, which is very unlikely, and very interesting.",
       "beats": [
         {
           "type": "say",
+          "who": "oscar",
+          "text": "Dwight, who did you draw? I won't tell.",
+          "to": "dwight",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
           "who": "dwight",
-          "text": "Angela, can I borrow your gift list? For research.",
-          "to": "angela",
+          "text": "Toby.",
+          "to": "oscar",
           "mood": "nervous"
         },
         {
           "type": "say",
-          "who": "angela",
-          "text": "No. But it is by the third cat. Don't look at the cat.",
+          "who": "oscar",
+          "text": "Michael drew Toby. He announced it. Twice.",
           "to": "dwight",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "angela",
+          "text": "Oscar, don't you have numbers to look at?",
+          "to": "oscar",
           "mood": "annoyed"
         },
         {
-          "type": "action",
-          "who": "dwight",
-          "verb": "snoop",
-          "target": "none",
-          "caption": "opens his folder; it's a Christmas menu"
-        },
-        {
-          "type": "say",
-          "who": "dwight",
-          "text": "This is a menu. Where is my plan?",
-          "to": "all",
-          "mood": "panicked"
-        },
-        {
-          "type": "say",
-          "who": "jim",
-          "text": "Is it ham? I hear it's ham.",
-          "to": "dwight",
-          "mood": "deadpan"
-        },
-        {
-          "type": "react",
-          "who": [
-            "pam"
+          "type": "talking_head",
+          "who": "oscar",
+          "lines": [
+            "The bobbleheads. The blanket. The way they both pretend to hate the other one exactly the same amount.",
+            "I'm not saying anything. I'm just keeping a file. Mentally. It's a thick file."
           ],
-          "reaction": "look_at_camera"
+          "mood": "smug"
         }
       ]
     },
@@ -405,117 +456,217 @@
       "present": [
         "michael",
         "angela",
-        "kevin",
-        "oscar",
-        "creed",
-        "meredith",
-        "phyllis",
-        "stanley"
+        "stanley",
+        "toby",
+        "creed"
       ],
-      "recap": "Two parties collide; the swap begins.",
+      "away": [],
+      "recap": "Michael tries to reunite the two parties, runs between them, and ends up bringing the karaoke machine to the cider.",
       "beats": [
+        {
+          "type": "caption",
+          "text": "THE PARTY (PARTIES)"
+        },
         {
           "type": "say",
           "who": "michael",
-          "text": "Welcome to the Yankee Swap. Pick a gift. Steal. Be ruthless. Like Santa's elves.",
-          "to": "all",
-          "mood": "excited"
+          "text": "Angela. Two parties is not Christmas. Christmas is about togetherness. And presents. Mostly togetherness.",
+          "to": "angela",
+          "mood": "sad"
         },
         {
           "type": "say",
           "who": "angela",
-          "text": "There is a cookie table in the annex for those with decency.",
-          "to": "all",
-          "mood": "annoyed"
+          "text": "Tell that to the karaoke traitors.",
+          "to": "michael",
+          "mood": "angry"
         },
         {
           "type": "say",
           "who": "stanley",
-          "text": "I'm taking the gift card and going home.",
-          "to": "all",
-          "mood": "deadpan"
+          "text": "I like this party. Nobody's singing.",
+          "to": "michael",
+          "mood": "happy"
+        },
+        {
+          "type": "exit",
+          "who": [
+            "michael"
+          ],
+          "how": "run"
+        },
+        {
+          "type": "caption",
+          "text": "TWO MINUTES LATER"
+        },
+        {
+          "type": "enter",
+          "who": [
+            "michael",
+            "kelly",
+            "kevin",
+            "phyllis"
+          ],
+          "to": "angela"
         },
         {
           "type": "say",
-          "who": "creed",
-          "text": "I wrapped a jar. Of something. Don't shake it.",
+          "who": "michael",
+          "text": "Compromise! Karaoke. But only quiet songs. Silent Night only.",
           "to": "all",
-          "mood": "neutral"
+          "mood": "excited"
+        },
+        {
+          "type": "action",
+          "who": "kevin",
+          "verb": "sing",
+          "target": "none",
+          "caption": "sings Silent Night in a surprisingly lovely baritone"
+        },
+        {
+          "type": "react",
+          "who": [
+            "angela"
+          ],
+          "reaction": "stare"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "B",
+      "set": "break_room",
+      "region": "break_room",
+      "venue": "",
+      "present": [
+        "pam",
+        "jim",
+        "michael",
+        "kelly",
+        "phyllis"
+      ],
+      "away": [],
+      "recap": "Pam opens Jim's gift: a box of their inside jokes. Jim quietly pockets the card before she sees it.",
+      "beats": [
+        {
+          "type": "action",
+          "who": "pam",
+          "verb": "search",
+          "target": "none",
+          "caption": "opens a shoebox wrapped in Sunday comics"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "A Twix. The beets game. A tiny umbrella from the Dundies?",
+          "to": "jim",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Is this the cricket radio? And... a sketchbook. 'For the children's books.'",
+          "to": "jim",
+          "mood": "sad"
         },
         {
           "type": "pause",
-          "seconds": 2,
-          "caption": "nobody follows up"
+          "seconds": 3,
+          "caption": ""
+        },
+        {
+          "type": "action",
+          "who": "jim",
+          "verb": "hide",
+          "target": "none",
+          "caption": "slides a folded card out of the box and into his pocket"
         },
         {
           "type": "say",
-          "who": "kevin",
-          "text": "I got chili. Open it.",
-          "to": "all",
+          "who": "pam",
+          "text": "Jim. This is... how did you remember all this?",
+          "to": "jim",
           "mood": "happy"
         },
         {
           "type": "say",
-          "who": "meredith",
-          "text": "Whoever gets mine, wear it responsibly.",
-          "to": "all",
-          "mood": "happy"
+          "who": "jim",
+          "text": "I have a good memory. For umbrellas.",
+          "to": "pam",
+          "mood": "awkward"
         },
         {
           "type": "talking_head",
-          "who": "jim",
+          "who": "michael",
           "lines": [
-            "I got Pam a pencil set. Good pencils. Not weird. Totally not weird."
+            "I saw that. I see things. I'm a vault, but I have eyes.",
+            "Vaults have eyes. Little peepholes."
           ],
-          "mood": "awkward"
+          "mood": "sad"
         }
       ]
     },
     {
       "part": "act2",
       "plot": "C",
-      "set": "office",
-      "region": "bullpen",
+      "set": "kitchen",
+      "region": "kitchen",
       "venue": "",
       "present": [
-        "ryan",
-        "michael",
-        "kelly"
+        "dwight",
+        "angela"
       ],
-      "recap": "Ryan's interview slips out loudly.",
+      "away": [],
+      "recap": "Dwight and Angela exchange suspiciously perfect gifts in the kitchen.",
       "beats": [
         {
-          "type": "say",
-          "who": "kelly",
-          "text": "Ryan, good luck at your interview tomorrow! Corporate! Yay!",
-          "to": "ryan",
-          "mood": "excited"
-        },
-        {
-          "type": "pause",
-          "seconds": 2,
-          "caption": "Michael freezes"
+          "type": "action",
+          "who": "dwight",
+          "verb": "present",
+          "target": "angela",
+          "caption": "gives her a tiny wooden cat, hand-carved"
         },
         {
           "type": "say",
-          "who": "michael",
-          "text": "Interview. For what. A job. Another job. Than this one.",
-          "to": "ryan",
-          "mood": "sad"
+          "who": "dwight",
+          "text": "It's Sprinkles. To scale. I used a photo.",
+          "to": "angela",
+          "mood": "nervous"
+        },
+        {
+          "type": "action",
+          "who": "angela",
+          "verb": "present",
+          "target": "dwight",
+          "caption": "gives him a pocketknife engraved D.K.S."
         },
         {
           "type": "say",
-          "who": "ryan",
-          "text": "It's just a conversation, Michael. It's not a thing.",
-          "to": "michael",
-          "mood": "awkward"
+          "who": "angela",
+          "text": "For the farm. And for whittling. More cats.",
+          "to": "dwight",
+          "mood": "happy"
         },
         {
-          "type": "react",
+          "type": "enter",
           "who": [
-            "michael"
+            "oscar"
           ],
-          "reaction": "cringe"
+          "to": "kitchen_1"
+        },
+        {
+          "type": "say",
+          "who": "oscar",
+          "text": "Oh. Sorry. Am I interrupting the Secret Santa you two definitely didn't do?",
+          "to": "dwight",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "angela",
+          "text": "Get out.",
+          "to": "oscar",
+          "mood": "angry"
         }
       ]
     },
@@ -523,59 +674,74 @@
       "part": "act2",
       "plot": "A",
       "set": "office",
-      "region": "conference_room",
+      "region": "michael_office",
       "venue": "",
       "present": [
         "michael",
-        "ryan",
-        "dwight",
-        "jim",
-        "pam",
-        "angela",
-        "phyllis"
+        "toby"
       ],
-      "recap": "Michael gives Ryan the gift he rigged.",
+      "away": [],
+      "recap": "Michael gives Toby a Monopoly 'Get Out of Jail Free' card; Toby, who drew Michael, gives him an engraved pen that says 'Regional Manager, Scranton.'",
       "beats": [
         {
-          "type": "say",
-          "who": "michael",
-          "text": "Ryan, you get to open last. Because I fixed it that way.",
-          "to": "ryan",
-          "mood": "neutral"
+          "type": "move",
+          "who": "toby",
+          "to": "michael_guest_1",
+          "pace": "walk"
         },
         {
           "type": "action",
-          "who": "ryan",
+          "who": "michael",
           "verb": "present",
-          "target": "none",
-          "caption": "opens a leather portfolio with his initials"
+          "target": "toby",
+          "caption": "hands Toby a Monopoly 'Get Out of Jail Free' card"
         },
         {
           "type": "say",
           "who": "michael",
-          "text": "For your interview. I knew. I always know. Don't be a stranger.",
-          "to": "ryan",
-          "mood": "sad"
+          "text": "Merry Christmas. Keep it on you. You never know.",
+          "to": "toby",
+          "mood": "smug"
         },
         {
           "type": "say",
-          "who": "ryan",
-          "text": "Thanks. Honestly. This is... good.",
+          "who": "toby",
+          "text": "Thanks. I actually drew you too. Here.",
           "to": "michael",
           "mood": "awkward"
         },
         {
+          "type": "action",
+          "who": "michael",
+          "verb": "search",
+          "target": "none",
+          "caption": "unwraps a heavy pen engraved: MICHAEL SCOTT, REGIONAL MANAGER, SCRANTON"
+        },
+        {
           "type": "say",
-          "who": "dwight",
-          "text": "Question: where is my gift? I played the game.",
+          "who": "toby",
+          "text": "Whatever corporate decides, you should have something that says it.",
           "to": "michael",
-          "mood": "annoyed"
+          "mood": "neutral"
+        },
+        {
+          "type": "pause",
+          "seconds": 4,
+          "caption": ""
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "This is a very nice pen, Toby. I still hate you.",
+          "to": "toby",
+          "mood": "sad"
         },
         {
           "type": "talking_head",
-          "who": "toby",
+          "who": "michael",
           "lines": [
-            "I got a mug. It says 'World's Okayest HR.' I think somebody liked it."
+            "Toby got me the best gift I've ever gotten. Which is so typical of Toby.",
+            "He ruins everything. Even hating him."
           ],
           "mood": "sad"
         }
@@ -585,51 +751,55 @@
       "part": "act2",
       "plot": "B",
       "set": "office",
-      "region": "bullpen",
+      "region": "reception",
       "venue": "",
       "present": [
-        "dwight",
-        "jim",
         "pam",
-        "michael"
+        "jim"
       ],
-      "recap": "Dwight's last-ditch plan fails kindly.",
+      "away": [],
+      "recap": "After the party, Pam asks if there was a card; Jim says no, and the card stays in his pocket.",
       "beats": [
         {
-          "type": "say",
-          "who": "dwight",
-          "text": "I'm the best swapper. I stole six gifts. Name me assistant.",
-          "to": "michael",
-          "mood": "excited"
+          "type": "move",
+          "who": "jim",
+          "to": "pam",
+          "pace": "walk"
         },
         {
           "type": "say",
-          "who": "michael",
-          "text": "I'll announce my choice next week. For Jan. Be ready.",
-          "to": "dwight",
-          "mood": "smug"
+          "who": "pam",
+          "text": "Best gift I've ever gotten. I mean it. Was there a card? There's usually a card.",
+          "to": "jim",
+          "mood": "happy"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": ""
         },
         {
           "type": "say",
           "who": "jim",
-          "text": "Dwight, you left your folder. There's a real plan in it now.",
-          "to": "dwight",
-          "mood": "deadpan"
+          "text": "No. No card. Just the umbrella.",
+          "to": "pam",
+          "mood": "nervous"
         },
         {
-          "type": "action",
-          "who": "dwight",
-          "verb": "search",
-          "target": "none",
-          "caption": "finds a beet in the folder"
+          "type": "say",
+          "who": "pam",
+          "text": "Merry Christmas, Jim.",
+          "to": "jim",
+          "mood": "happy"
         },
         {
           "type": "talking_head",
           "who": "jim",
           "lines": [
-            "Dwight's plan was to win. My plan was to be here."
+            "What does the card say? It says... stuff. It said too much. It's for another time.",
+            "Or never. Never's also a time."
           ],
-          "mood": "deadpan"
+          "mood": "sad"
         }
       ]
     },
@@ -637,41 +807,53 @@
       "part": "tag",
       "plot": "tag",
       "set": "office",
-      "region": "bullpen",
+      "region": "conference_room",
       "venue": "",
       "present": [
-        "creed",
-        "michael",
-        "pam",
-        "jim"
+        "kelly",
+        "ryan"
       ],
-      "recap": "Creed's jar is opened.",
+      "away": [],
+      "recap": "After everyone leaves, Kelly sings karaoke alone to Ryan, who stays.",
       "beats": [
         {
-          "type": "say",
-          "who": "michael",
-          "text": "Creed, what's in the jar?",
-          "to": "creed",
-          "mood": "neutral"
+          "type": "action",
+          "who": "kelly",
+          "verb": "sing",
+          "target": "ryan",
+          "caption": "belts out a Christmas power ballad to an empty conference room"
         },
         {
           "type": "say",
-          "who": "creed",
-          "text": "My old sheriff's badge. Not mine. Keep it warm.",
-          "to": "michael",
-          "mood": "neutral"
+          "who": "ryan",
+          "text": "Everyone's gone, Kelly.",
+          "to": "kelly",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "kelly",
+          "text": "You're not.",
+          "to": "ryan",
+          "mood": "happy"
         },
         {
           "type": "pause",
           "seconds": 2,
-          "caption": "no one follows up"
+          "caption": ""
+        },
+        {
+          "type": "sit",
+          "who": [
+            "ryan"
+          ]
         },
         {
           "type": "say",
-          "who": "pam",
-          "text": "Merry Christmas, everyone.",
-          "to": "all",
-          "mood": "happy"
+          "who": "ryan",
+          "text": "One more song.",
+          "to": "kelly",
+          "mood": "neutral"
         }
       ]
     }

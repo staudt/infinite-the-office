@@ -1,9 +1,9 @@
 {
   "version": 1,
   "id": "scranton-the-golden-years",
-  "seed": 188589232,
+  "seed": 200604017,
   "name": "Scranton: The Golden Years",
-  "direction": "The definitive classic Office, built for nostalgia: Scranton in its golden years (seasons 2-4 feel). Michael Scott is a lonely, well-meaning boss who craves love and approval and turns every meeting into a performance; Jim and Pam's slow-burn will-they-won't-they told through glances at the camera, pranks on Dwight, and quiet moments at reception; Dwight scheming for Assistant (to the) Regional Manager and running his beet farm. Iconic textures fans love: Dundies-style awards, conference room meetings that go off the rails, birthday parties in the break room, Kevin's chili, Angela's cats, Stanley's crosswords and pretzel day, Creed being inexplicable, Toby as Michael's nemesis, Ryan the temp. Warm, cringe, grounded mockumentary with talking heads that undercut the action, small stakes that feel huge, and a season arc that builds to an emotional, satisfying finale.",
+  "direction": "The classic Office, built for nostalgia: Scranton in its golden years (seasons 2-3 feel). Michael is a lonely boss who wants the office to be his family; Jim is quietly in love with Pam, who is engaged to Roy; Dwight schemes for rank and hides a romance with Angela; Ryan is the new temp. Original stories with the textures fans love: the Dundies, Pretzel Day, conference room meetings that go off the rails, pranks on Dwight, glances at the camera. Warm, cringe, grounded, and building to an unresolved, romantic finale. Written by Claude Opus, by hand.",
   "season": 1,
   "episode": 0,
   "roster": [
@@ -22,65 +22,52 @@
     "creed",
     "toby",
     "darryl",
+    "roy",
     "jan",
     "david",
-    "roy",
-    "bob_vance",
-    "mose",
-    "packer",
-    "cheryl_dunder"
+    "bob_vance"
   ],
   "deskOverrides": {},
-  "extras": [
-    {
-      "id": "cheryl_dunder",
-      "name": "Cheryl Palumbo",
-      "title": "Corporate Auditor",
-      "voice": "Dry, clipped, carries a clipboard, never smiles, says 'noted' after anything.",
-      "glyph": "Y",
-      "color": "#00e5ff",
-      "since": 1,
-      "look": "office_f"
-    }
-  ],
+  "extras": [],
   "relationships": [
     {
       "a": "jim",
       "b": "pam",
-      "status": "Best friends; Jim quietly in love, Pam engaged to Roy with no wedding date."
-    },
-    {
-      "a": "michael",
-      "b": "jan",
-      "status": "Jan is his boss and fragile flirtation; he is desperate for her approval."
-    },
-    {
-      "a": "dwight",
-      "b": "angela",
-      "status": "Secret, nervous romance only Oscar and the audience suspect."
-    },
-    {
-      "a": "michael",
-      "b": "toby",
-      "status": "Open nemesis; Michael wants him gone."
+      "status": "Best friends and prank partners; Jim is quietly in love with her."
     },
     {
       "a": "pam",
       "b": "roy",
-      "status": "Engaged for three years; Roy keeps postponing the wedding."
+      "status": "Engaged for three years, no wedding date; Roy works in the warehouse."
     },
     {
       "a": "michael",
-      "b": "ryan",
-      "status": "Michael sees Ryan as a protege; Ryan sees the job as a stepping stone."
+      "b": "jan",
+      "status": "She is his boss at corporate; he is hopelessly, visibly into her."
+    },
+    {
+      "a": "dwight",
+      "b": "angela",
+      "status": "Secretly dating; nobody knows, and they barely speak in public."
+    },
+    {
+      "a": "michael",
+      "b": "toby",
+      "status": "Michael hates Toby for no reason Toby has ever understood."
+    },
+    {
+      "a": "jim",
+      "b": "dwight",
+      "status": "Desk mates; Jim pranks, Dwight retaliates with paperwork."
     }
   ],
   "gags": [
-    "Jim puts Dwight's stapler in Jell-O or other prank objects",
-    "Stanley's crossword and 'Did I stutter?' energy, plus his love of Pretzel Day",
-    "Kevin's chili and spilling food",
-    "Angela's cats and thinly veiled judgments",
-    "Creed says something unsettling and nobody follows up"
+    "Jim pranks Dwight with elaborate calm",
+    "Stanley's crossword, and Pretzel Day as his only joy",
+    "Kevin's chili and Kevin's band, Scrantonicity",
+    "Angela's cats, and her disapproval of everyone",
+    "Creed says something unsettling and nobody follows up",
+    "Michael hates Toby"
   ],
   "notes": [],
   "arcProgress": {},
@@ -88,8 +75,8 @@
   "history": [],
   "recentPlots": [],
   "bible": {
-    "theme": "Everyone wants to be chosen: Michael wants love, Dwight wants rank, Jim wants to say something to Pam, and Pam wants to want something for herself.",
-    "era": "Season 2-3 energy: Jim and Pam longing with Roy still in the picture, Michael and Jan's awkward corporate tension, Dwight's assistant scheming, Ryan the temp.",
+    "theme": "Everyone wants something they're afraid to ask for: Jim wants Pam, Pam wants a life of her own, Michael wants a family, Dwight wants respect.",
+    "era": "Season 2-3 energy: Pam is the receptionist and engaged to Roy, Jim sits across from Dwight and is in love with her, Michael and Jan's awkward corporate flirtation, Ryan the temp, Dwight and Angela's secret.",
     "roster": [
       "michael",
       "dwight",
@@ -106,13 +93,10 @@
       "creed",
       "toby",
       "darryl",
+      "roy",
       "jan",
       "david",
-      "roy",
-      "bob_vance",
-      "mose",
-      "packer",
-      "cheryl_dunder"
+      "bob_vance"
     ],
     "deskOverrides": [],
     "manager": "michael",
@@ -120,205 +104,205 @@
       {
         "a": "jim",
         "b": "pam",
-        "status": "Best friends; Jim quietly in love, Pam engaged to Roy with no wedding date."
-      },
-      {
-        "a": "michael",
-        "b": "jan",
-        "status": "Jan is his boss and fragile flirtation; he is desperate for her approval."
-      },
-      {
-        "a": "dwight",
-        "b": "angela",
-        "status": "Secret, nervous romance only Oscar and the audience suspect."
-      },
-      {
-        "a": "michael",
-        "b": "toby",
-        "status": "Open nemesis; Michael wants him gone."
+        "status": "Best friends and prank partners; Jim is quietly in love with her."
       },
       {
         "a": "pam",
         "b": "roy",
-        "status": "Engaged for three years; Roy keeps postponing the wedding."
+        "status": "Engaged for three years, no wedding date; Roy works in the warehouse."
       },
       {
         "a": "michael",
-        "b": "ryan",
-        "status": "Michael sees Ryan as a protege; Ryan sees the job as a stepping stone."
+        "b": "jan",
+        "status": "She is his boss at corporate; he is hopelessly, visibly into her."
+      },
+      {
+        "a": "dwight",
+        "b": "angela",
+        "status": "Secretly dating; nobody knows, and they barely speak in public."
+      },
+      {
+        "a": "michael",
+        "b": "toby",
+        "status": "Michael hates Toby for no reason Toby has ever understood."
+      },
+      {
+        "a": "jim",
+        "b": "dwight",
+        "status": "Desk mates; Jim pranks, Dwight retaliates with paperwork."
       }
     ],
     "arcs": [
       {
-        "name": "Will They, Won't They",
+        "name": "Jim and Pam",
         "kind": "A",
-        "summary": "Jim's crush on Pam and her slow realization that she's settling with Roy, told through camera glances and reception moments.",
+        "summary": "Jim is in love with Pam, who is engaged to Roy. Told through pranks, glances, and the small moments at reception, until Jim finally says it.",
         "perEpisode": [
           {
             "episode": 1,
-            "beat": "Jim sets up Dwight prank while Pam laughs; Roy picks her up and she checks to see if Jim noticed."
+            "beat": "Jim and Pam's prank on Dwight is the best part of both their days; Roy honks from the parking lot."
           },
           {
-            "episode": 3,
-            "beat": "Jim gives Pam a small thoughtful gift (a mix CD or a fixed desk lamp)."
+            "episode": 2,
+            "beat": "At the Dundies, a tipsy Pam kisses Jim on the cheek and doesn't remember; he does."
           },
           {
-            "episode": 5,
-            "beat": "Roy cancels on Pam again; Jim sits with her at lunch in the parking lot."
+            "episode": 6,
+            "beat": "Pam signs up for an art class; Roy shrugs, Jim asks to see her sketches."
           },
           {
             "episode": 7,
-            "beat": "Pam signs up for an art class and Jim is the only one who asks to see her work."
+            "beat": "Snowed in, Jim and Pam share a quiet hour; Roy can't come get her."
+          },
+          {
+            "episode": 8,
+            "beat": "At the bowling outing Roy sets a wedding date on a whim; Jim tells Michael he's in love with Pam."
           },
           {
             "episode": 9,
-            "beat": "Roy snaps at Pam in the warehouse; Jim hears it. Pam tells Jim she's not sure about the wedding."
+            "beat": "Pam's art show: nobody from the office comes but Michael, and Jim misses it and hates himself."
           },
           {
             "episode": 10,
-            "beat": "Jim almost tells Pam; interrupted by Michael's crisis."
-          },
-          {
-            "episode": 12,
-            "beat": "After Roy breaks things off, Pam tells Jim she wants to talk; Jim sees her, smiles, and nothing is resolved but everything has changed."
-          }
-        ],
-        "payoff": "Pam ends the engagement and opens the door to Jim; they share a long look and a promise of a coffee."
-      },
-      {
-        "name": "Assistant (to the) Regional Manager",
-        "kind": "B",
-        "summary": "Dwight schemes to be named official second-in-command while Jim sabotages him, and Dwight's farm and secret romance with Angela complicate things.",
-        "perEpisode": [
-          {
-            "episode": 2,
-            "beat": "Dwight prints a business card claiming Assistant Regional Manager; Michael pretends it's a joke."
-          },
-          {
-            "episode": 4,
-            "beat": "Dwight sells beets to the office to fund his campaign; Jim swaps them for fake beets."
-          },
-          {
-            "episode": 6,
-            "beat": "Dwight spies on Jan's visit to learn who Michael trusts."
-          },
-          {
-            "episode": 8,
-            "beat": "Dwight sabotages Ryan to protect his rank; Angela covers for him."
+            "beat": "Jim applies for a transfer to Stamford; Pam hears it from Dwight."
           },
           {
             "episode": 11,
-            "beat": "Michael must pick an assistant for Jan's inspection; Dwight prepares an elaborate plan."
+            "beat": "Christmas: Jim's Secret Santa gift for Pam is full of inside jokes; he takes the card back."
           },
           {
             "episode": 12,
-            "beat": "Michael publicly names Dwight Assistant to the Regional Manager, and Dwight cries privately in the stairwell."
+            "beat": "At the Office Prom Jim tells Pam he's in love with her in the parking lot. She says she can't. Later, in the empty office, they kiss."
           }
         ],
-        "payoff": "Dwight gets the title, and learns it comes with Michael's loyalty and annoyance."
+        "payoff": "The kiss, and nothing resolved: Pam is still engaged, Jim's transfer is still on the table."
       },
       {
-        "name": "Michael Needs a Date",
+        "name": "Michael, Jan and the Rumor",
         "kind": "B",
-        "summary": "Michael tries to get Jan's attention and fills his loneliness with office-wide performances; Toby keeps ruining things by following the rules.",
+        "summary": "Corporate will close Stamford or Scranton. Jan tells Michael in confidence; he can't keep it. They kiss after a client dinner, she calls it a mistake, and he spends the season trying to be the boss who saves everyone.",
         "perEpisode": [
           {
             "episode": 1,
-            "beat": "Michael mentions a 'special friend' coming to the office; it's Jan."
+            "beat": "Michael mentions a 'very important lady from corporate' far too often."
           },
           {
             "episode": 3,
-            "beat": "Michael plans an elaborate dinner with Jan and is humiliated when she cancels."
+            "beat": "Jan tells Michael one branch will close; by lunch the whole office knows."
           },
           {
-            "episode": 6,
-            "beat": "Jan visits and cuts down Michael's plan; he shows a moment of quiet hurt."
+            "episode": 4,
+            "beat": "Michael and Jan land a big county client at dinner and kiss in the parking lot; she says it never happened."
           },
           {
-            "episode": 8,
-            "beat": "Michael asks Toby for relationship advice, then fires him in a fantasy; Toby keeps his job."
+            "episode": 5,
+            "beat": "Michael tries to prove it did happen, at Pretzel Day."
           },
           {
             "episode": 10,
-            "beat": "Michael admits to the camera he's lonely and the office is his family."
+            "beat": "Jan calls: corporate decides at the end of the month; Michael is scared and honest for once."
           },
           {
             "episode": 12,
-            "beat": "Jan finally says something kind and genuine to Michael; he cherishes it."
+            "beat": "Scranton survives, Stamford will close; Jan comes to the Office Prom as Michael's date."
           }
         ],
-        "payoff": "Michael gets one honest moment of love from the office and from Jan."
+        "payoff": "Scranton is saved, and Jan, against her own judgment, dances with Michael."
+      },
+      {
+        "name": "Dwight and Angela, Secretly",
+        "kind": "B",
+        "summary": "Dwight campaigns for rank and suffers Jim's pranks; meanwhile, a secret romance with Angela that only the audience sees, until Oscar starts to wonder.",
+        "perEpisode": [
+          {
+            "episode": 2,
+            "beat": "Angela gives Dwight a Dundie of her own, secretly, in the parking lot."
+          },
+          {
+            "episode": 3,
+            "beat": "Dwight forms a Loyalty Task Force to keep the branch open."
+          },
+          {
+            "episode": 6,
+            "beat": "Dwight investigates the anonymous survey; Angela feeds him leads."
+          },
+          {
+            "episode": 7,
+            "beat": "Snowed in, Dwight and Angela share a 'survival blanket' and nearly get caught."
+          },
+          {
+            "episode": 9,
+            "beat": "Oscar notices Dwight and Angela's matching bobbleheads."
+          },
+          {
+            "episode": 11,
+            "beat": "Dwight and Angela's Secret Santa gifts are suspiciously perfect."
+          },
+          {
+            "episode": 12,
+            "beat": "Dwight and Angela slow-dance at the Office Prom 'by accident'; Oscar sees."
+          }
+        ],
+        "payoff": "Still secret, but Oscar knows something."
       },
       {
         "name": "Ryan the Temp",
         "kind": "C",
-        "summary": "Ryan arrives wanting something bigger, wins Michael's favor, and then outgrows the office.",
+        "summary": "The new temp wants out (business school); Michael idolizes him, Kelly has decided he's her boyfriend.",
         "perEpisode": [
           {
             "episode": 1,
-            "beat": "Ryan is introduced as new temp; Michael decides to mentor him."
+            "beat": "Ryan's first day; Michael gives him an 'orientation' and Kelly gives him a nickname."
           },
           {
-            "episode": 5,
-            "beat": "Ryan pitches a website idea to David."
+            "episode": 4,
+            "beat": "Kelly announces she and Ryan are dating; Ryan was not consulted."
           },
           {
-            "episode": 8,
-            "beat": "Ryan is promoted briefly, and Dwight feels threatened."
+            "episode": 9,
+            "beat": "Michael guest-lectures at Ryan's business school class and humiliates him."
           },
           {
-            "episode": 11,
-            "beat": "Ryan gets a corporate interview and mentions leaving; Michael is crushed."
+            "episode": 12,
+            "beat": "Ryan takes Kelly to the prom, mostly to avoid a conversation."
           }
         ],
-        "payoff": "Ryan stays for now but is on a path to corporate; Michael learns to let him go."
+        "payoff": "Ryan and Kelly are on, sort of; Ryan is still a temp, still leaving any day now."
       }
     ],
-    "extras": [
-      {
-        "id": "cheryl_dunder",
-        "name": "Cheryl Palumbo",
-        "title": "Corporate Auditor",
-        "voice": "Dry, clipped, carries a clipboard, never smiles, says 'noted' after anything.",
-        "look": "office_f"
-      }
-    ],
+    "extras": [],
     "runningGags": [
-      "Jim puts Dwight's stapler in Jell-O or other prank objects",
-      "Stanley's crossword and 'Did I stutter?' energy, plus his love of Pretzel Day",
-      "Kevin's chili and spilling food",
-      "Angela's cats and thinly veiled judgments",
-      "Creed says something unsettling and nobody follows up"
+      "Jim pranks Dwight with elaborate calm",
+      "Stanley's crossword, and Pretzel Day as his only joy",
+      "Kevin's chili and Kevin's band, Scrantonicity",
+      "Angela's cats, and her disapproval of everyone",
+      "Creed says something unsettling and nobody follows up",
+      "Michael hates Toby"
     ],
     "tentpoles": [
       {
         "episode": 2,
         "id": "dundies",
-        "plan": "Michael hosts the Dundies at Chili's; Pam gets drunk and brave, Jim watches, and Michael gives a sincere speech."
+        "plan": "The Dundies at Chili's: Michael's homemade trophies, Pam's cheek kiss, and one sincere moment."
       },
       {
-        "episode": 4,
+        "episode": 5,
         "id": "pretzel_day",
-        "plan": "Stanley's pretzel is threatened by Michael's pretzel-themed meeting; Dwight and Jim fight over the vendor."
+        "plan": "The pretzel man has a new trainee and Stanley's order is wrong; Michael turns the line into a referendum on Jan."
       },
       {
-        "episode": 6,
-        "id": "halloween",
-        "plan": "Michael's costume is Jan-themed; Dwight dresses as a nobleman to impress; Ryan wears a startup tee."
-      },
-      {
-        "episode": 9,
+        "episode": 8,
         "id": "booze_cruise",
-        "plan": "A company outing on a lake; Pam and Roy fight, Jim and Pam talk on deck, Michael tries to impress Jan."
+        "plan": "Michael's 'team-building' bowling night at Scranton Bowl-a-Rama; Roy sets a wedding date, Jim confesses to Michael."
       },
       {
         "episode": 11,
         "id": "christmas",
-        "plan": "Party Planning Committee civil war and Yankee Swap; Michael gives Ryan a gift that shows he cares."
+        "plan": "Party Planning Committee civil war over Secret Santa; Jim's gift for Pam and the card he takes back."
       }
     ],
-    "finale": "Jan and David inspect the branch as rumors of downsizing swirl. Michael rallies the office with a clumsy but heartfelt speech and saves the branch. Dwight is named Assistant to the Regional Manager. Pam ends her engagement and tells Jim she wants to talk; the camera stays on the two of them. Hook: Jan mentions a possible transfer for Michael's branch next season.",
-    "changes": "First season; starting configuration set to the classic golden era."
+    "finale": "The Office Prom, a charity dance in the warehouse. Jan brings the news that Scranton survives and stays as Michael's date. Jim tells Pam he's in love with her in the parking lot; she says she can't. Later, alone in the office, he kisses her, and she kisses him back. Tag: the next morning, nothing is settled.",
+    "changes": ""
   },
   "bibleSeason": 1
 }

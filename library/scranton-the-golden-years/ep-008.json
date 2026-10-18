@@ -1,33 +1,41 @@
 {
-  "title": "Promoted, Allegedly",
-  "logline": "A overheard half-sentence about Ryan turns into office-wide rumor, while Michael seeks Toby's dating advice at a client lunch and Dwight sabotages the temp.",
-  "outline": "A: Michael, wanting Jan, asks Toby for advice at a client lunch offsite and fantasizes firing him. B: Dwight sabotages Ryan after a telephone-game rumor says Ryan's been promoted; Angela covers. C: Ryan briefly treated as boss; Jim and Pam pass the rumor along and Pam draws. Order: cold, A, B, C, A, B, C, A, B, A, tag",
-  "theme": "Everyone wants to be chosen, and everyone hears what they fear.",
-  "storySoFar": "Michael's dinner with Jan was canceled; Jan mocked his costume then softened. Ryan pitched David Wallace; Jan hinted corporate interest. Dwight campaigns for Assistant Regional Manager, holds a Champion ribbon. Jim holds a real beet. Pam keeps Jim's lamp on, attends art class; Roy keeps canceling. Ep 8: a garbled rumor says Ryan was promoted; Dwight sabotaged Ryan with Angela's cover; Michael asked Toby for date advice at a client lunch and fantasized firing him; Ryan's actual news was a corporate lunch invitation from Jan.",
+  "title": "Bowl-a-Rama",
+  "logline": "Michael's 'team-building' bowling night becomes an office-versus-warehouse grudge match; Roy, after a strike, sets a wedding date on the spot, and Jim tells Michael, of all people, that he's in love with Pam.",
+  "outline": "A: Michael turns team-building bowling into a grudge match with the warehouse, loses, and keeps the one secret that matters. B: Roy sets a wedding date in front of everyone; outside, Jim confesses to Michael. C: Kelly keeps score for Ryan, generously. Order: cold, A, B, A, C, A, B, A, B, C, A, tag",
+  "theme": "Keeping score",
+  "storySoFar": "At Michael's team-building bowling night, the office lost to the warehouse (undefeated since 1998) despite three straight strikes from Kevin and his ball, Doris; Michael rolled a gutter ball on the last frame. After a strike, Roy set the wedding date on the spot: June tenth, and Pam said yes. In the parking lot Jim told Michael he's in love with Pam, and Michael is, for once, keeping the secret, badly. Kelly made Ryan MVP and kissed his cheek; Ryan is 'not not' dating her. Earlier: snowed in overnight, Jim and Pam shared a vending-machine dinner; Pam takes an art class Tuesdays; Angela secretly wrote the harsh survey comment and Dwight protected her; Jan kissed Michael and says it never happened; corporate will close Scranton or Stamford.",
   "extras": [],
+  "away": [],
   "stateChanges": [
     {
       "type": "arc",
+      "arc": "Jim and Pam",
+      "progress": "Roy set the wedding for June 10; Jim confessed his love to Michael, who is keeping it secret"
+    },
+    {
+      "type": "arc",
       "arc": "Ryan the Temp",
-      "progress": "Rumor of promotion spreads; real news is Jan wants to meet Ryan about corporate. Michael half-knows and lets him go to the lunch."
+      "progress": "Kelly made Ryan bowling MVP and kissed his cheek; Ryan is 'not not' dating her"
     },
     {
-      "type": "arc",
-      "arc": "Assistant (to the) Regional Manager",
-      "progress": "Dwight sabotaged Ryan's phone and files; Angela covered for him. Still no title."
+      "type": "relationship",
+      "a": "pam",
+      "b": "roy",
+      "status": "Wedding date set: June 10"
     },
     {
-      "type": "arc",
-      "arc": "Michael Needs a Date",
-      "progress": "Michael asked Toby for advice, imagined firing him; Toby kept his job and gave decent advice. Jan dinner still open."
-    },
-    {
-      "type": "gag",
-      "text": "Telephone-game rumor: 'Ryan got promoted' started as 'Ryan got prompted.'"
+      "type": "relationship",
+      "a": "michael",
+      "b": "jim",
+      "status": "Michael knows Jim loves Pam and is trying to be a real vault"
     },
     {
       "type": "note",
-      "text": "Ryan has a lunch with Jan at corporate next week."
+      "text": "Kevin is a great bowler; his ball is named Doris"
+    },
+    {
+      "type": "note",
+      "text": "The warehouse hasn't lost a bowling game since 1998"
     }
   ],
   "scenes": [
@@ -38,52 +46,65 @@
       "region": "bullpen",
       "venue": "",
       "present": [
-        "jim",
+        "michael",
         "dwight",
-        "pam"
+        "jim"
       ],
-      "recap": "Jim tells Dwight a sentence one word at a time through Pam and Creed.",
+      "away": [],
+      "recap": "Michael practices bowling in the office with a roll of packing tape and the water cooler jugs.",
       "beats": [
         {
-          "type": "say",
-          "who": "jim",
-          "text": "Pam, tell Dwight the fax machine is hungry.",
-          "to": "pam",
-          "mood": "deadpan"
+          "type": "move",
+          "who": "michael",
+          "to": "water_cooler",
+          "pace": "walk"
         },
         {
-          "type": "say",
-          "who": "pam",
-          "text": "Dwight, Jim says the fax machine is angry.",
-          "to": "dwight",
-          "mood": "neutral"
-        },
-        {
-          "type": "say",
+          "type": "action",
           "who": "dwight",
-          "text": "Question: why would a fax machine be angry? Did someone insult it?",
-          "to": "jim",
-          "mood": "annoyed"
+          "verb": "present",
+          "target": "none",
+          "caption": "sets up six empty water jugs like pins"
         },
         {
           "type": "say",
-          "who": "creed",
-          "text": "I once insulted a fax machine in Macau. Never saw that guy again.",
-          "to": "none",
-          "mood": "neutral"
+          "who": "michael",
+          "text": "Watch the form, Dwight. Low. Smooth. Like a panther. Bowling.",
+          "to": "dwight",
+          "mood": "smug"
+        },
+        {
+          "type": "action",
+          "who": "michael",
+          "verb": "fall",
+          "target": "none",
+          "caption": "rolls a tape roll, slips, and lands on one knee"
         },
         {
           "type": "pause",
           "seconds": 2,
-          "caption": ""
+          "caption": "the tape rolls under Stanley's desk"
         },
         {
-          "type": "talking_head",
-          "who": "jim",
-          "lines": [
-            "I just wanted to see how far a sentence goes. Turns out, not very."
-          ],
+          "type": "say",
+          "who": "dwight",
+          "text": "Strike.",
+          "to": "michael",
           "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "None of the jugs moved, Dwight.",
+          "to": "dwight",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Spiritually, Jim.",
+          "to": "jim",
+          "mood": "smug"
         }
       ]
     },
@@ -91,56 +112,74 @@
       "part": "act1",
       "plot": "A",
       "set": "office",
-      "region": "michael_office",
+      "region": "conference_room",
       "venue": "",
       "present": [
         "michael",
-        "toby"
+        "jim",
+        "pam",
+        "dwight",
+        "stanley",
+        "phyllis",
+        "angela",
+        "oscar",
+        "kevin",
+        "kelly",
+        "ryan"
       ],
-      "recap": "Michael invites Toby, of all people, to a client lunch and asks for relationship advice.",
+      "away": [],
+      "recap": "Michael announces a team-building bowling night, office versus warehouse; Darryl warns them the warehouse hasn't lost since 1998.",
       "beats": [
         {
-          "type": "say",
-          "who": "michael",
-          "text": "Toby. I need you at the Alfredo's client lunch. You're driving. And you are also advising.",
-          "to": "toby",
-          "mood": "annoyed"
+          "type": "gather",
+          "who": [
+            "everyone"
+          ],
+          "to": "conference_room"
         },
         {
           "type": "say",
-          "who": "toby",
-          "text": "Advising on what?",
-          "to": "michael",
+          "who": "michael",
+          "text": "Tonight: team building. Bowl-a-Rama. The office versus the warehouse. For pride. And pizza.",
+          "to": "all",
+          "mood": "excited"
+        },
+        {
+          "type": "enter",
+          "who": [
+            "darryl"
+          ],
+          "to": "conf_front"
+        },
+        {
+          "type": "say",
+          "who": "darryl",
+          "text": "Just so you know, the warehouse hasn't lost a game since 1998. We have shirts.",
+          "to": "all",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Well, the office has... heart. And Kevin. Kevin, you bowl?",
+          "to": "kevin",
           "mood": "nervous"
         },
         {
           "type": "say",
-          "who": "michael",
-          "text": "Hypothetically, a man loves a woman who is his boss. Hypothetically, it's me and Jan.",
-          "to": "toby",
-          "mood": "awkward"
-        },
-        {
-          "type": "say",
-          "who": "toby",
-          "text": "I'd say be honest, and maybe not do anything in the office.",
+          "who": "kevin",
+          "text": "I have my own ball. It's named Doris.",
           "to": "michael",
-          "mood": "sad"
-        },
-        {
-          "type": "say",
-          "who": "michael",
-          "text": "Wow. Great. So, lie and hide. Thank you, HR.",
-          "to": "toby",
-          "mood": "sarcastic"
+          "mood": "smug"
         },
         {
           "type": "talking_head",
-          "who": "toby",
+          "who": "michael",
           "lines": [
-            "He asked for my advice. I've waited years for that. I'm going to be so careful."
+            "Team building is about learning to trust each other. And crushing the warehouse.",
+            "Mostly the crushing. Darryl knows. We've talked."
           ],
-          "mood": "nervous"
+          "mood": "smug"
         }
       ]
     },
@@ -151,120 +190,52 @@
       "region": "reception",
       "venue": "",
       "present": [
-        "ryan",
         "pam",
-        "jim",
-        "kevin",
-        "oscar"
+        "jim"
       ],
-      "recap": "Ryan takes a call and the rumor starts.",
+      "away": [],
+      "recap": "Pam says Roy has been looking forward to bowling all week; Jim says he bowls 'with dignity'.",
       "beats": [
         {
-          "type": "say",
-          "who": "ryan",
-          "text": "Jan's office. Yes. Thursday. I'd be honored to be prompted.",
-          "to": "none",
-          "mood": "smug"
-        },
-        {
-          "type": "action",
-          "who": "ryan",
-          "verb": "phone_call",
-          "target": "none",
-          "caption": "hangs up and smirks at his phone"
-        },
-        {
-          "type": "say",
-          "who": "kevin",
-          "text": "Ryan got promoted?",
-          "to": "oscar",
-          "mood": "excited"
-        },
-        {
-          "type": "say",
-          "who": "oscar",
-          "text": "Actually, I heard 'prompted.' Which isn't a thing.",
-          "to": "kevin",
-          "mood": "annoyed"
-        },
-        {
-          "type": "say",
-          "who": "kevin",
-          "text": "Ryan is boss.",
+          "type": "move",
+          "who": "jim",
           "to": "pam",
-          "mood": "happy"
+          "pace": "walk"
         },
         {
           "type": "say",
           "who": "pam",
-          "text": "Ryan's... boss?",
+          "text": "Roy's been talking about tonight all week. He's bringing his wrist brace.",
           "to": "jim",
-          "mood": "awkward"
+          "mood": "neutral"
         },
         {
-          "type": "react",
-          "who": [
-            "jim"
-          ],
-          "reaction": "look_at_camera"
-        }
-      ]
-    },
-    {
-      "part": "act1",
-      "plot": "C",
-      "set": "office",
-      "region": "bullpen",
-      "venue": "",
-      "present": [
-        "dwight",
-        "angela",
-        "ryan",
-        "phyllis"
-      ],
-      "recap": "Dwight hears the rumor from Phyllis and panics.",
-      "beats": [
+          "type": "say",
+          "who": "jim",
+          "text": "Wow. A brace. That's... serious bowling.",
+          "to": "pam",
+          "mood": "deadpan"
+        },
         {
           "type": "say",
-          "who": "phyllis",
-          "text": "Dwight, did you hear? Ryan got promoted. Over you, I think.",
-          "to": "dwight",
+          "who": "pam",
+          "text": "Do you bowl?",
+          "to": "jim",
           "mood": "happy"
         },
         {
           "type": "say",
-          "who": "dwight",
-          "text": "False. That is impossible. I am Assistant to the Regional Manager.",
-          "to": "phyllis",
-          "mood": "angry"
-        },
-        {
-          "type": "move",
-          "who": "dwight",
-          "to": "angela_desk",
-          "pace": "hurry"
-        },
-        {
-          "type": "say",
-          "who": "dwight",
-          "text": "Angela. Ryan must be neutralized. I need an alibi, starting now.",
-          "to": "angela",
-          "mood": "nervous"
-        },
-        {
-          "type": "say",
-          "who": "angela",
-          "text": "I saw nothing. I always see nothing. Nothing is my favorite thing.",
-          "to": "dwight",
+          "who": "jim",
+          "text": "I bowl with dignity. Which means badly, but with good posture.",
+          "to": "pam",
           "mood": "smug"
         },
         {
-          "type": "talking_head",
-          "who": "dwight",
-          "lines": [
-            "Ryan has been here six months. I have been here nine years. Hypothetically, I would never sabotage a temp. But if I did, it would be perfect."
+          "type": "react",
+          "who": [
+            "pam"
           ],
-          "mood": "deadpan"
+          "reaction": "laugh"
         }
       ]
     },
@@ -273,145 +244,268 @@
       "plot": "A",
       "set": "offsite",
       "region": "venue",
-      "venue": "ALFREDO'S PIZZA CAFE",
+      "venue": "SCRANTON BOWL-A-RAMA",
       "present": [
         "michael",
-        "toby"
+        "dwight",
+        "kevin",
+        "oscar",
+        "stanley",
+        "darryl",
+        "roy",
+        "jim",
+        "pam"
       ],
-      "recap": "At the client lunch Michael practices dating lines on Toby.",
+      "away": [],
+      "recap": "Michael trash-talks the warehouse; Darryl stays calm, and Roy bowls a strike on his first ball.",
       "beats": [
+        {
+          "type": "caption",
+          "text": "SCRANTON BOWL-A-RAMA"
+        },
         {
           "type": "say",
           "who": "michael",
-          "text": "Okay, Toby, you be Jan. Hello Michael, you look handsome.",
-          "to": "toby",
+          "text": "Darryl, I hope your team likes losing. Because they're gonna... lose. A lot. At this.",
+          "to": "darryl",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "darryl",
+          "text": "Michael, we're bowling. Relax. Have a pretzel.",
+          "to": "michael",
+          "mood": "deadpan"
+        },
+        {
+          "type": "action",
+          "who": "roy",
+          "verb": "present",
+          "target": "none",
+          "caption": "bowls a strike and points at the pins"
+        },
+        {
+          "type": "react",
+          "who": [
+            "pam"
+          ],
+          "reaction": "cheer"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Luck. Pure luck. Next I'll show you skill.",
+          "to": "michael",
+          "mood": "angry"
+        },
+        {
+          "type": "action",
+          "who": "dwight",
+          "verb": "present",
+          "target": "none",
+          "caption": "bowls with enormous force; the ball hops into the next lane"
+        },
+        {
+          "type": "say",
+          "who": "stanley",
+          "text": "I'm going to get a beer.",
+          "to": "all",
+          "mood": "deadpan"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "C",
+      "set": "offsite",
+      "region": "venue",
+      "venue": "SCRANTON BOWL-A-RAMA",
+      "present": [
+        "kelly",
+        "ryan"
+      ],
+      "away": [],
+      "recap": "Kelly keeps score and gives Ryan bonus points for being cute.",
+      "beats": [
+        {
+          "type": "action",
+          "who": "kelly",
+          "verb": "typing",
+          "target": "none",
+          "caption": "writes on the scorecard with a glitter pen"
+        },
+        {
+          "type": "say",
+          "who": "kelly",
+          "text": "Ryan, that was a seven, but I gave you a ten. For form. And for your arms.",
+          "to": "ryan",
           "mood": "excited"
         },
         {
           "type": "say",
-          "who": "toby",
-          "text": "Hello Michael. You look... handsome.",
-          "to": "michael",
+          "who": "ryan",
+          "text": "You can't do that. It's math.",
+          "to": "kelly",
           "mood": "awkward"
         },
         {
           "type": "say",
-          "who": "michael",
-          "text": "Stop. You sound sad. Jan is never sad. She is mysteriously unavailable.",
-          "to": "toby",
-          "mood": "annoyed"
+          "who": "kelly",
+          "text": "It's my math. I'm the scorekeeper.",
+          "to": "ryan",
+          "mood": "smug"
         },
         {
+          "type": "talking_head",
+          "who": "ryan",
+          "lines": [
+            "Kelly's not my girlfriend. She's a coworker who is very... present.",
+            "But I'm winning, so."
+          ],
+          "mood": "neutral"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "A",
+      "set": "offsite",
+      "region": "venue",
+      "venue": "SCRANTON BOWL-A-RAMA",
+      "present": [
+        "michael",
+        "kevin",
+        "dwight",
+        "oscar",
+        "angela"
+      ],
+      "away": [],
+      "recap": "Down eighty pins, Michael gives a war speech; Kevin and Doris bowl three strikes in a row.",
+      "beats": [
+        {
           "type": "say",
-          "who": "toby",
-          "text": "Maybe just ask her if she's free for coffee. Low pressure.",
+          "who": "oscar",
+          "text": "We're down by eighty pins, Michael.",
           "to": "michael",
           "mood": "neutral"
         },
         {
           "type": "say",
           "who": "michael",
-          "text": "Low pressure. Yes. Like a tire. That's a good point and I hate it.",
-          "to": "toby",
-          "mood": "annoyed"
+          "text": "Huddle. Listen to me. They have shirts. We have something better. We have each other. And Kevin.",
+          "to": "all",
+          "mood": "excited"
         },
         {
           "type": "action",
-          "who": "michael",
-          "verb": "drink",
+          "who": "kevin",
+          "verb": "present",
           "target": "none",
-          "caption": "stares into his soda, imagining firing Toby"
+          "caption": "bowls a perfect strike with a purple ball named Doris"
+        },
+        {
+          "type": "action",
+          "who": "kevin",
+          "verb": "present",
+          "target": "none",
+          "caption": "bowls another strike"
+        },
+        {
+          "type": "action",
+          "who": "kevin",
+          "verb": "present",
+          "target": "none",
+          "caption": "bowls a third, and kisses the ball"
         },
         {
           "type": "say",
-          "who": "michael",
-          "text": "Toby Flenderson, you're fired. Pack your sad little box. Goodbye, forever.",
-          "to": "toby",
-          "mood": "angry"
+          "who": "angela",
+          "text": "Kevin is... good at something?",
+          "to": "dwight",
+          "mood": "neutral"
         },
         {
-          "type": "pause",
-          "seconds": 2,
-          "caption": "Toby has no idea"
-        },
-        {
-          "type": "say",
-          "who": "toby",
-          "text": "Michael, did you say that out loud?",
-          "to": "michael",
-          "mood": "nervous"
-        },
-        {
-          "type": "say",
-          "who": "michael",
-          "text": "No. Eat your breadsticks.",
-          "to": "toby",
-          "mood": "awkward"
+          "type": "talking_head",
+          "who": "kevin",
+          "lines": [
+            "I've bowled every Thursday since I was nine. Doris is my third ball.",
+            "The first two retired. Doris is a champion."
+          ],
+          "mood": "smug"
         }
       ]
     },
     {
       "part": "act2",
       "plot": "B",
-      "set": "office",
-      "region": "reception",
-      "venue": "",
+      "set": "offsite",
+      "region": "venue",
+      "venue": "SCRANTON BOWL-A-RAMA",
       "present": [
-        "dwight",
-        "ryan",
-        "angela",
-        "kelly"
+        "roy",
+        "pam",
+        "jim",
+        "darryl",
+        "phyllis",
+        "kelly",
+        "michael"
       ],
-      "recap": "Dwight sabotages Ryan's desk and Angela lies for him.",
+      "away": [],
+      "recap": "After another strike, Roy pumped up, sets the wedding date on the spot: June tenth. Everyone cheers, and Jim smiles too late.",
       "beats": [
         {
           "type": "action",
-          "who": "dwight",
-          "verb": "snoop",
+          "who": "roy",
+          "verb": "present",
           "target": "none",
-          "caption": "unplugs Ryan's monitor and swaps his stapler"
+          "caption": "bowls a strike and roars"
         },
         {
           "type": "say",
-          "who": "kelly",
-          "text": "Ryan! Did you get promoted? Are you rich now? Can we go to Cancun?",
-          "to": "ryan",
+          "who": "roy",
+          "text": "Pam! You know what? June tenth. Let's do it. The wedding. June tenth. I'm serious.",
+          "to": "pam",
           "mood": "excited"
         },
         {
-          "type": "say",
-          "who": "ryan",
-          "text": "I was invited to something. It's not a thing yet.",
-          "to": "kelly",
-          "mood": "smug"
+          "type": "pause",
+          "seconds": 2,
+          "caption": ""
         },
         {
           "type": "say",
-          "who": "ryan",
-          "text": "My computer is dead. And my phone list is gone.",
-          "to": "all",
-          "mood": "annoyed"
-        },
-        {
-          "type": "say",
-          "who": "angela",
-          "text": "Dwight was with me all morning. Discussing cats. Eleven hours.",
-          "to": "ryan",
-          "mood": "annoyed"
-        },
-        {
-          "type": "say",
-          "who": "ryan",
-          "text": "It's ten-fifteen.",
-          "to": "angela",
-          "mood": "deadpan"
-        },
-        {
-          "type": "say",
-          "who": "angela",
-          "text": "It was a very long cat conversation.",
-          "to": "ryan",
+          "who": "pam",
+          "text": "Really? Like, a date date?",
+          "to": "roy",
           "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "roy",
+          "text": "Date date. It's been three years. Let's go.",
+          "to": "pam",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Okay. Yes! June tenth!",
+          "to": "roy",
+          "mood": "excited"
+        },
+        {
+          "type": "react",
+          "who": [
+            "kelly",
+            "phyllis",
+            "michael"
+          ],
+          "reaction": "cheer"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": ""
         },
         {
           "type": "react",
@@ -424,266 +518,236 @@
     },
     {
       "part": "act2",
-      "plot": "C",
-      "set": "office",
-      "region": "bullpen",
-      "venue": "",
-      "present": [
-        "pam",
-        "jim",
-        "stanley"
-      ],
-      "recap": "Jim and Pam watch the rumor mutate; Pam shows Jim a drawing.",
-      "beats": [
-        {
-          "type": "say",
-          "who": "stanley",
-          "text": "I heard Ryan's the new regional manager and Michael is moving to Utica.",
-          "to": "jim",
-          "mood": "deadpan"
-        },
-        {
-          "type": "say",
-          "who": "jim",
-          "text": "That's... remarkable, considering it started as 'prompted'.",
-          "to": "stanley",
-          "mood": "sarcastic"
-        },
-        {
-          "type": "say",
-          "who": "stanley",
-          "text": "I don't care. Tell him Pretzel Day stays.",
-          "to": "jim",
-          "mood": "annoyed"
-        },
-        {
-          "type": "move",
-          "who": "jim",
-          "to": "pam_desk",
-          "pace": "walk"
-        },
-        {
-          "type": "say",
-          "who": "pam",
-          "text": "I drew the whole rumor. See? Telephone wires, and Ryan with a crown.",
-          "to": "jim",
-          "mood": "happy"
-        },
-        {
-          "type": "say",
-          "who": "jim",
-          "text": "You gave Dwight a tiny crown too. Good call.",
-          "to": "pam",
-          "mood": "happy"
-        },
-        {
-          "type": "pause",
-          "seconds": 2,
-          "caption": "a look that lasts a beat too long"
-        },
-        {
-          "type": "talking_head",
-          "who": "pam",
-          "lines": [
-            "It's nice when someone looks at your drawing like it matters. That's all. It's just nice."
-          ],
-          "mood": "neutral"
-        }
-      ]
-    },
-    {
-      "part": "act2",
       "plot": "A",
-      "set": "office",
-      "region": "michael_office",
-      "venue": "",
+      "set": "offsite",
+      "region": "venue",
+      "venue": "SCRANTON BOWL-A-RAMA",
       "present": [
         "michael",
-        "toby",
-        "ryan",
-        "dwight"
+        "darryl",
+        "dwight",
+        "kevin",
+        "oscar"
       ],
-      "recap": "Michael returns to a chaotic office, hears the rumor, and confronts Ryan.",
+      "away": [],
+      "recap": "Michael needs a spare to tie the game in the last frame, and misses; Darryl is gracious about it.",
       "beats": [
         {
-          "type": "enter",
-          "who": [
-            "michael",
-            "toby"
-          ],
-          "to": "michael_desk"
+          "type": "caption",
+          "text": "FINAL FRAME"
         },
         {
           "type": "say",
           "who": "dwight",
-          "text": "Michael, Ryan is trying to take your job. I have evidence. It is mostly feelings.",
+          "text": "Michael, you need a spare to tie. The fate of the office is in your hands.",
           "to": "michael",
-          "mood": "panicked"
-        },
-        {
-          "type": "say",
-          "who": "michael",
-          "text": "Ryan. Are you my boss now?",
-          "to": "ryan",
           "mood": "nervous"
         },
         {
-          "type": "say",
-          "who": "ryan",
-          "text": "No. Jan invited me to lunch at corporate. To talk about my future.",
-          "to": "michael",
-          "mood": "neutral"
+          "type": "action",
+          "who": "michael",
+          "verb": "present",
+          "target": "none",
+          "caption": "bowls slowly, very slowly, directly into the gutter"
         },
         {
           "type": "pause",
-          "seconds": 2,
+          "seconds": 3,
           "caption": ""
         },
         {
           "type": "say",
+          "who": "darryl",
+          "text": "Good game, Michael. Y'all were closer than last year. Last year was a massacre.",
+          "to": "michael",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
           "who": "michael",
-          "text": "Okay. Well. That's... great. Go to the lunch. Wear the good tie.",
-          "to": "ryan",
+          "text": "Thank you, Darryl. We'll get you next year. Or the year after. Or Kevin will.",
+          "to": "darryl",
           "mood": "sad"
-        },
-        {
-          "type": "say",
-          "who": "dwight",
-          "text": "Michael, he is a mole.",
-          "to": "michael",
-          "mood": "panicked"
-        },
-        {
-          "type": "say",
-          "who": "michael",
-          "text": "Dwight, be quiet. Fix Ryan's computer. Now.",
-          "to": "dwight",
-          "mood": "angry"
-        },
-        {
-          "type": "say",
-          "who": "dwight",
-          "text": "I... it might already be plugged back in.",
-          "to": "michael",
-          "mood": "nervous"
         }
       ]
     },
     {
       "part": "act2",
       "plot": "B",
-      "set": "office",
-      "region": "bullpen",
+      "set": "parking_lot",
+      "region": "parking_lot",
       "venue": "",
       "present": [
-        "dwight",
-        "jim",
-        "angela",
-        "creed"
+        "jim"
       ],
-      "recap": "Dwight's guilt and a Jell-O reveal.",
+      "away": [],
+      "recap": "Outside, Michael finds Jim alone; Jim tells him he's in love with Pam, and Michael promises to be a real vault.",
       "beats": [
         {
-          "type": "say",
-          "who": "angela",
-          "text": "I lied for you. You owe me. Kitten food. A year of it.",
-          "to": "dwight",
-          "mood": "annoyed"
+          "type": "move",
+          "who": "jim",
+          "to": "car_jim",
+          "pace": "walk"
+        },
+        {
+          "type": "enter",
+          "who": [
+            "michael"
+          ],
+          "to": "jim"
         },
         {
           "type": "say",
-          "who": "dwight",
-          "text": "Agreed. Also, I love you, in a strictly professional way.",
-          "to": "angela",
+          "who": "michael",
+          "text": "Jim! Great night. Even though we lost. What are you doing out here?",
+          "to": "jim",
+          "mood": "happy"
+        },
+        {
+          "type": "pause",
+          "seconds": 3,
+          "caption": ""
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "I'm in love with Pam.",
+          "to": "michael",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Oh. Oh no. Does she know?",
+          "to": "jim",
           "mood": "nervous"
         },
         {
           "type": "say",
-          "who": "creed",
-          "text": "I heard that. I've said it to a hostage before.",
-          "to": "none",
-          "mood": "neutral"
-        },
-        {
-          "type": "action",
-          "who": "dwight",
-          "verb": "search",
-          "target": "none",
-          "caption": "opens drawer, finds stapler in lime Jell-O"
+          "who": "jim",
+          "text": "No. And she just set a date. So you can't tell anyone. Ever. Michael.",
+          "to": "michael",
+          "mood": "nervous"
         },
         {
           "type": "say",
-          "who": "dwight",
-          "text": "Creed!",
-          "to": "creed",
-          "mood": "angry"
+          "who": "michael",
+          "text": "I'm a vault.",
+          "to": "jim",
+          "mood": "neutral"
         },
         {
-          "type": "react",
-          "who": [
-            "jim"
+          "type": "say",
+          "who": "jim",
+          "text": "Michael.",
+          "to": "michael",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "A real vault. I promise. Not a Dwight vault.",
+          "to": "jim",
+          "mood": "sad"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "C",
+      "set": "offsite",
+      "region": "entrance",
+      "venue": "SCRANTON BOWL-A-RAMA",
+      "present": [
+        "kelly",
+        "ryan"
+      ],
+      "away": [],
+      "recap": "Kelly declares Ryan MVP and kisses his cheek; Ryan doesn't hate it.",
+      "beats": [
+        {
+          "type": "action",
+          "who": "kelly",
+          "verb": "present",
+          "target": "ryan",
+          "caption": "hands Ryan the scorecard with 'MVP' written in glitter"
+        },
+        {
+          "type": "say",
+          "who": "kelly",
+          "text": "You're the MVP. Officially. I decided.",
+          "to": "ryan",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "ryan",
+          "text": "I bowled a ninety.",
+          "to": "kelly",
+          "mood": "deadpan"
+        },
+        {
+          "type": "action",
+          "who": "kelly",
+          "verb": "hug",
+          "target": "ryan",
+          "caption": "kisses Ryan on the cheek and runs off"
+        },
+        {
+          "type": "talking_head",
+          "who": "ryan",
+          "lines": [
+            "She kissed me on the cheek. I'm not dating Kelly.",
+            "I'm... not not dating Kelly. I don't know. It was a good game."
           ],
-          "reaction": "stare"
+          "mood": "awkward"
         }
       ]
     },
     {
       "part": "act2",
       "plot": "A",
-      "set": "office",
-      "region": "michael_office",
-      "venue": "",
+      "set": "offsite",
+      "region": "venue",
+      "venue": "SCRANTON BOWL-A-RAMA",
       "present": [
         "michael",
-        "toby"
+        "dwight"
       ],
-      "recap": "Michael thanks Toby and calls Jan.",
+      "away": [],
+      "recap": "Dwight asks what Jim said outside; Michael, heroically, says nothing.",
       "beats": [
         {
-          "type": "say",
-          "who": "michael",
-          "text": "Toby. Your advice was... fine. Don't let it go to your head.",
-          "to": "toby",
-          "mood": "awkward"
-        },
-        {
-          "type": "say",
-          "who": "toby",
-          "text": "Thanks, Michael. That means more than you know.",
+          "type": "move",
+          "who": "dwight",
           "to": "michael",
-          "mood": "sad"
-        },
-        {
-          "type": "action",
-          "who": "michael",
-          "verb": "phone_call",
-          "target": "none",
-          "caption": "dials Jan, hangs up, dials again"
+          "pace": "hurry"
         },
         {
           "type": "say",
-          "who": "michael",
-          "text": "Jan. It's Michael. Coffee. Low pressure. Like a tire.",
-          "to": "none",
+          "who": "dwight",
+          "text": "What were you and Jim talking about in the parking lot? Was it a plot? Against me?",
+          "to": "michael",
           "mood": "nervous"
         },
         {
           "type": "pause",
           "seconds": 3,
-          "caption": "a very long silence on the line"
+          "caption": "Michael's face does a lot"
         },
         {
           "type": "say",
           "who": "michael",
-          "text": "She said maybe. I'm going to be sick. It was a great maybe.",
-          "to": "toby",
-          "mood": "excited"
+          "text": "Nothing. Bowling. Shoes. Shoe sizes. Jim is a twelve.",
+          "to": "dwight",
+          "mood": "nervous"
         },
         {
           "type": "talking_head",
           "who": "michael",
           "lines": [
-            "Ryan is leaving, and Jan said maybe. A man can only lose and win so much in one day."
+            "I have the biggest secret of my life, and I'm not telling anyone.",
+            "This is the hardest thing I've ever done. Including the gutter ball."
           ],
           "mood": "sad"
         }
@@ -693,36 +757,55 @@
       "part": "tag",
       "plot": "tag",
       "set": "office",
-      "region": "bullpen",
+      "region": "reception",
       "venue": "",
       "present": [
-        "jim",
-        "dwight",
         "pam",
-        "ryan"
+        "michael",
+        "jim"
       ],
-      "recap": "Final rumor.",
+      "away": [],
+      "recap": "The next morning, Michael congratulates Pam on the date, very carefully, and says too much about saying nothing.",
       "beats": [
         {
-          "type": "say",
-          "who": "jim",
-          "text": "Pam, tell Dwight the beets are ready.",
+          "type": "move",
+          "who": "michael",
           "to": "pam",
-          "mood": "deadpan"
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Pam. Congratulations on June tenth. That's all I'm going to say. I know nothing else. About anything.",
+          "to": "pam",
+          "mood": "nervous"
         },
         {
           "type": "say",
           "who": "pam",
-          "text": "Dwight, Jim says your feet are ready.",
-          "to": "dwight",
-          "mood": "neutral"
+          "text": "Okay... thanks?",
+          "to": "michael",
+          "mood": "awkward"
         },
         {
           "type": "say",
-          "who": "dwight",
-          "text": "My feet have been ready since birth.",
+          "who": "michael",
+          "text": "Okay. Good. Vault. Bye.",
           "to": "pam",
-          "mood": "neutral"
+          "mood": "panicked"
+        },
+        {
+          "type": "move",
+          "who": "michael",
+          "to": "michael_office",
+          "pace": "hurry"
+        },
+        {
+          "type": "react",
+          "who": [
+            "jim"
+          ],
+          "reaction": "facepalm"
         }
       ]
     }

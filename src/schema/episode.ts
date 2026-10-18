@@ -100,6 +100,7 @@ export const Scene = z.object({
   region: str('none').describe('Region of the set the scene is focused on, or "none"'),
   venue: str().describe('Offsite only: the place shown on the title card, e.g. "CHILI\'S"'),
   present: strs().describe('Character ids on screen when the scene starts (others are offscreen, or at their desks in the background)'),
+  away: strs().describe('Regulars not at their desks in this scene only (e.g. everyone gone home at night)'),
   recap: str().describe('One sentence: what happens in this scene'),
   beats: listOf(Beat),
 });

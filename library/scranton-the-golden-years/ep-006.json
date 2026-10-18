@@ -1,33 +1,38 @@
 {
-  "title": "Costume Party Line",
-  "logline": "On Halloween, Michael dresses as Jan to impress the real Jan, who arrives for a surprise visit while Dwight spies and Jim and Pam's prank spirals.",
-  "outline": "A: Michael comes as Jan; Jan visits, cuts him down, then gives a small honest moment. B: Dwight, dressed as a nobleman, spies on Jan to learn whom Michael trusts; Jim and Pam's prank on him escalates. C: Ryan in a startup tee, waiting on David. Order: cold, A, B, A, C, B, A, B, A, tag",
-  "theme": "Everyone wants to be seen as who they really are, not their costume.",
-  "storySoFar": "Michael's dinner with Jan was canceled; the office gave him warm moments. Ryan pitched a website to David Wallace, who said he'd look at it. Dwight campaigns for Assistant Regional Manager, owes beet refunds; Jim holds one real beet. Pam keeps Jim's lamp on; Roy keeps canceling. On Halloween, Michael dressed as Jan; Jan visited unannounced, mocked it, then gave a small kind word. Dwight spied on Jan as Lord Schrute. Jim and Pam's prank on Dwight got out of hand. Ryan wore a startup tee, and Jan noticed his pitch.",
+  "title": "The Survey",
+  "logline": "Corporate's anonymous manager survey ranks Michael last in the region, and he hunts down the author of one brutal comment, while Pam works up the nerve to sign up for an art class.",
+  "outline": "A: Michael is ranked last in an anonymous survey and obsesses over one harsh comment, until he reads the rest. B: Pam wants to take an art class; Roy shrugs, Jim asks to see her sketchbook. C: Dwight investigates the survey with Angela as secretary, discovers she wrote the comment, and protects her. Order: cold, A, B, A, C, A, B, C, A, C, B, tag",
+  "theme": "What people really think of you",
+  "storySoFar": "An anonymous manager survey ranked Michael sixth of six (Josh from Stamford was first), with one brutal comment: 'Michael thinks we're a family. We're not. We're people who are stuck in a room together.' Dwight, investigating with Angela as secretary, matched a misspelling ('togethger') to her party memos, realized she wrote it, and protected her by telling Michael the author was unknowable. Michael read the rest of the comments, including 'he's the reason I still work here', and let it go. Pam signed up for a Tuesday art class, 'Drawing from Life', after Roy shrugged and Darryl told her to go; Jim found a sketch of himself asleep in her sketchbook. Earlier: Jan kissed Michael and faxed 'It didn't happen'; corporate will close Stamford or Scranton; Pam kept the invitation Jim picked; Kelly insists she's dating Ryan.",
   "extras": [],
+  "away": [],
   "stateChanges": [
     {
+      "type": "arc",
+      "arc": "Jim and Pam",
+      "progress": "Pam signed up for an art class; Roy shrugged; Jim saw a sketch of himself in her book"
+    },
+    {
+      "type": "arc",
+      "arc": "Dwight and Angela, Secretly",
+      "progress": "Dwight discovered Angela wrote the harsh survey comment and protected her"
+    },
+    {
+      "type": "arc",
+      "arc": "Michael, Jan and the Rumor",
+      "progress": "Michael ranked last in the region's manager survey; Josh from Stamford ranked first"
+    },
+    {
       "type": "note",
-      "text": "Jan saw Ryan's startup pitch note and said corporate might talk to him; Michael overheard."
+      "text": "Pam's art class: 'Drawing from Life', Tuesdays at Lackawanna Community College"
+    },
+    {
+      "type": "note",
+      "text": "Angela wrote the 'stuck in a room together' comment; only Dwight knows"
     },
     {
       "type": "gag",
-      "text": "Dwight's nobleman costume; Jim and Pam's fake 'royal decree' prank spiraled."
-    },
-    {
-      "type": "arc",
-      "arc": "Michael Needs a Date",
-      "progress": "Jan mocked Michael's Jan costume, then privately said she was touched; dinner still open."
-    },
-    {
-      "type": "arc",
-      "arc": "Assistant (to the) Regional Manager",
-      "progress": "Dwight spied on Jan and learned Michael trusts Dwight more than he admits; no title yet."
-    },
-    {
-      "type": "arc",
-      "arc": "Ryan the Temp",
-      "progress": "Jan hints corporate may take interest in Ryan; Michael half-knows."
+      "text": "Dwight's suggestion box, stuffed by Jim"
     }
   ],
   "scenes": [
@@ -38,496 +43,53 @@
       "region": "bullpen",
       "venue": "",
       "present": [
-        "jim",
-        "pam",
-        "dwight"
+        "dwight",
+        "jim"
       ],
-      "recap": "Jim and Pam start a Halloween prank on Dwight.",
+      "away": [],
+      "recap": "Dwight opens his new suggestion box and finds forty suggestions, all about himself, all in Jim's handwriting.",
       "beats": [
-        {
-          "type": "say",
-          "who": "pam",
-          "text": "Okay. He's coming. Act natural.",
-          "to": "jim",
-          "mood": "nervous"
-        },
-        {
-          "type": "enter",
-          "who": [
-            "dwight"
-          ],
-          "to": "dwight_desk"
-        },
-        {
-          "type": "say",
-          "who": "dwight",
-          "text": "Behold. Lord Dwight Schrute, Baron of the Lackawanna Valley.",
-          "to": "all",
-          "mood": "excited"
-        },
-        {
-          "type": "say",
-          "who": "jim",
-          "text": "Your Grace. A messenger came while you were away.",
-          "to": "dwight",
-          "mood": "deadpan"
-        },
         {
           "type": "action",
-          "who": "pam",
-          "verb": "present",
-          "target": "dwight",
-          "caption": "hands Dwight a scroll sealed with red wax"
+          "who": "dwight",
+          "verb": "search",
+          "target": "none",
+          "caption": "opens a shoebox labeled DWIGHT'S SUGGESTION BOX"
         },
         {
           "type": "say",
           "who": "dwight",
-          "text": "A royal decree. It says I must surrender my stapler to the Crown.",
-          "to": "jim",
-          "mood": "nervous"
-        },
-        {
-          "type": "say",
-          "who": "jim",
-          "text": "Wow. Seems legit.",
-          "to": "dwight",
-          "mood": "deadpan"
-        },
-        {
-          "type": "react",
-          "who": [
-            "pam"
-          ],
-          "reaction": "look_at_camera"
-        }
-      ]
-    },
-    {
-      "part": "act1",
-      "plot": "A",
-      "set": "office",
-      "region": "michael_office",
-      "venue": "",
-      "present": [
-        "michael",
-        "pam",
-        "toby"
-      ],
-      "recap": "Michael arrives dressed as Jan and announces a costume contest.",
-      "beats": [
-        {
-          "type": "enter",
-          "who": [
-            "michael"
-          ],
-          "to": "michael_desk"
-        },
-        {
-          "type": "say",
-          "who": "michael",
-          "text": "Pam. Who am I? Do not say Michael.",
-          "to": "pam",
-          "mood": "excited"
-        },
-        {
-          "type": "say",
-          "who": "pam",
-          "text": "You're wearing a blonde wig and a blazer. Jan?",
-          "to": "michael",
-          "mood": "awkward"
-        },
-        {
-          "type": "say",
-          "who": "michael",
-          "text": "Janus. The Roman god of doorways. Also Jan. Both.",
-          "to": "pam",
-          "mood": "smug"
-        },
-        {
-          "type": "gather",
-          "who": [
-            "everyone"
-          ],
-          "to": "conference_room"
-        },
-        {
-          "type": "say",
-          "who": "michael",
-          "text": "Costume contest at four. Winner gets a Dunder Mifflin mug. A good mug.",
-          "to": "all",
-          "mood": "happy"
-        },
-        {
-          "type": "say",
-          "who": "toby",
-          "text": "Just a reminder, costumes can't be offensive or—",
-          "to": "michael",
-          "mood": "nervous"
-        },
-        {
-          "type": "say",
-          "who": "michael",
-          "text": "Toby, you're not wearing a costume. You're wearing Toby. Sit down.",
-          "to": "toby",
+          "text": "'Dwight should wear a bell so we know when he's coming.'",
+          "to": "none",
           "mood": "annoyed"
         },
         {
-          "type": "talking_head",
-          "who": "michael",
-          "lines": [
-            "I dressed as Jan because imitation is the sincerest form of flattery. Also because I'm hoping she sees it and asks me to dinner."
-          ],
-          "mood": "smug"
-        }
-      ]
-    },
-    {
-      "part": "act1",
-      "plot": "B",
-      "set": "office",
-      "region": "bullpen",
-      "venue": "",
-      "present": [
-        "dwight",
-        "jim",
-        "ryan",
-        "kevin"
-      ],
-      "recap": "The phone rings: Jan is on her way. Dwight plans to spy.",
-      "beats": [
-        {
-          "type": "action",
-          "who": "pam",
-          "verb": "phone_call",
-          "target": "none",
-          "caption": "takes a call, goes pale"
-        },
-        {
-          "type": "say",
-          "who": "pam",
-          "text": "Jan's in the parking lot. She's early. Michael's dressed as her.",
-          "to": "all",
-          "mood": "panicked"
-        },
-        {
           "type": "say",
           "who": "dwight",
-          "text": "Everyone act like a functioning office. Look busy. Kevin, stop eating.",
-          "to": "all",
+          "text": "'Dwight should only speak in questions on Fridays.' 'Dwight should be in charge of nothing.'",
+          "to": "none",
           "mood": "angry"
         },
         {
-          "type": "action",
-          "who": "kevin",
-          "verb": "eat",
-          "target": "none",
-          "caption": "freezes with a fun-size Snickers"
+          "type": "say",
+          "who": "jim",
+          "text": "Wow. Lot of feedback. People really engaged with the box.",
+          "to": "dwight",
+          "mood": "neutral"
         },
         {
           "type": "say",
           "who": "dwight",
-          "text": "Jan is here to see who Michael trusts. I will observe and report. From within.",
+          "text": "They're all in your handwriting, Jim.",
           "to": "jim",
-          "mood": "smug"
+          "mood": "angry"
         },
         {
-          "type": "talking_head",
-          "who": "dwight",
-          "lines": [
-            "Question: who does the boss trust? Answer: the person standing closest to him. I will stand very close."
-          ],
+          "type": "say",
+          "who": "jim",
+          "text": "Or are they in a lot of people's handwriting that looks like mine?",
+          "to": "dwight",
           "mood": "deadpan"
-        }
-      ]
-    },
-    {
-      "part": "act1",
-      "plot": "A",
-      "set": "office",
-      "region": "michael_office",
-      "venue": "",
-      "present": [
-        "michael",
-        "jan",
-        "dwight"
-      ],
-      "recap": "Jan arrives and cuts down Michael's costume.",
-      "beats": [
-        {
-          "type": "enter",
-          "who": [
-            "jan"
-          ],
-          "to": "michael_desk"
-        },
-        {
-          "type": "say",
-          "who": "jan",
-          "text": "Michael. Why do you look like me?",
-          "to": "michael",
-          "mood": "annoyed"
-        },
-        {
-          "type": "say",
-          "who": "michael",
-          "text": "Tribute. Imitation. Love. Pick one.",
-          "to": "jan",
-          "mood": "nervous"
-        },
-        {
-          "type": "say",
-          "who": "jan",
-          "text": "It's mocking. The wig is a bird's nest. I'm in a meeting with David tomorrow.",
-          "to": "michael",
-          "mood": "sarcastic"
-        },
-        {
-          "type": "pause",
-          "seconds": 2,
-          "caption": "Michael's smile slowly fades"
-        },
-        {
-          "type": "say",
-          "who": "michael",
-          "text": "It's... it's a joke. Ha. Ha.",
-          "to": "jan",
-          "mood": "sad"
-        },
-        {
-          "type": "move",
-          "who": "dwight",
-          "to": "michael_desk",
-          "pace": "sneak"
-        },
-        {
-          "type": "say",
-          "who": "jan",
-          "text": "Why is there a nobleman standing behind me?",
-          "to": "michael",
-          "mood": "annoyed"
-        }
-      ]
-    },
-    {
-      "part": "act1",
-      "plot": "C",
-      "set": "office",
-      "region": "bullpen",
-      "venue": "",
-      "present": [
-        "ryan",
-        "kelly",
-        "pam"
-      ],
-      "recap": "Ryan wears a startup tee and waits for David.",
-      "beats": [
-        {
-          "type": "say",
-          "who": "kelly",
-          "text": "Ryan, your shirt is so cute. What's a Fluxly?",
-          "to": "ryan",
-          "mood": "excited"
-        },
-        {
-          "type": "say",
-          "who": "ryan",
-          "text": "It's a company I may or may not start. You wouldn't get it.",
-          "to": "kelly",
-          "mood": "smug"
-        },
-        {
-          "type": "say",
-          "who": "jan",
-          "text": "Ryan, right? I got your note. Come by my office after lunch.",
-          "to": "ryan",
-          "mood": "neutral"
-        },
-        {
-          "type": "react",
-          "who": [
-            "ryan"
-          ],
-          "reaction": "gasp"
-        },
-        {
-          "type": "talking_head",
-          "who": "ryan",
-          "lines": [
-            "I'm not nervous. I'm just... aligned with the moment."
-          ],
-          "mood": "nervous"
-        }
-      ]
-    },
-    {
-      "part": "act2",
-      "plot": "B",
-      "set": "office",
-      "region": "bullpen",
-      "venue": "",
-      "present": [
-        "jim",
-        "pam",
-        "dwight"
-      ],
-      "recap": "Dwight reports; Jim and Pam's prank spirals.",
-      "beats": [
-        {
-          "type": "say",
-          "who": "dwight",
-          "text": "The Crown has summoned me to Corporate. By decree. I'm to bring my stapler.",
-          "to": "jim",
-          "mood": "nervous"
-        },
-        {
-          "type": "say",
-          "who": "jim",
-          "text": "Dwight, that was... a joke. Pam made it.",
-          "to": "dwight",
-          "mood": "awkward"
-        },
-        {
-          "type": "say",
-          "who": "pam",
-          "text": "I wrote it with a quill. It was supposed to be a one-minute thing.",
-          "to": "jim",
-          "mood": "awkward"
-        },
-        {
-          "type": "say",
-          "who": "dwight",
-          "text": "Too late. I've already told Jan the King wants me as Knight of the Realm.",
-          "to": "all",
-          "mood": "excited"
-        },
-        {
-          "type": "action",
-          "who": "dwight",
-          "verb": "present",
-          "target": "jan",
-          "caption": "kneels and offers his stapler to Jan"
-        },
-        {
-          "type": "react",
-          "who": [
-            "jim",
-            "pam"
-          ],
-          "reaction": "cringe"
-        },
-        {
-          "type": "say",
-          "who": "jan",
-          "text": "Is this a stapler? Why is it in Jell-O?",
-          "to": "dwight",
-          "mood": "annoyed"
-        },
-        {
-          "type": "talking_head",
-          "who": "jim",
-          "lines": [
-            "This was supposed to be a prank. Now Jan thinks Dwight's a knight. I think we won?"
-          ],
-          "mood": "deadpan"
-        }
-      ]
-    },
-    {
-      "part": "act2",
-      "plot": "A",
-      "set": "office",
-      "region": "conference_room",
-      "venue": "",
-      "present": [
-        "michael",
-        "jan",
-        "dwight"
-      ],
-      "recap": "Michael hurt; Jan softens in private.",
-      "beats": [
-        {
-          "type": "say",
-          "who": "michael",
-          "text": "I just wanted you to like it. Like me.",
-          "to": "jan",
-          "mood": "sad"
-        },
-        {
-          "type": "pause",
-          "seconds": 3,
-          "caption": "Jan looks at the wig"
-        },
-        {
-          "type": "say",
-          "who": "jan",
-          "text": "It's... a little flattering. Nobody's ever dressed as me before.",
-          "to": "michael",
-          "mood": "awkward"
-        },
-        {
-          "type": "say",
-          "who": "michael",
-          "text": "Really?",
-          "to": "jan",
-          "mood": "happy"
-        },
-        {
-          "type": "say",
-          "who": "jan",
-          "text": "Don't make it weird. Maybe dinner. Maybe.",
-          "to": "michael",
-          "mood": "neutral"
-        },
-        {
-          "type": "say",
-          "who": "dwight",
-          "text": "I'll be the best man. At the dinner.",
-          "to": "michael",
-          "mood": "excited"
-        }
-      ]
-    },
-    {
-      "part": "act2",
-      "plot": "B",
-      "set": "office",
-      "region": "bullpen",
-      "venue": "",
-      "present": [
-        "dwight",
-        "jim",
-        "pam",
-        "oscar"
-      ],
-      "recap": "Dwight learns whom Michael trusts.",
-      "beats": [
-        {
-          "type": "say",
-          "who": "dwight",
-          "text": "Michael said I could be at the dinner. That's trust.",
-          "to": "oscar",
-          "mood": "smug"
-        },
-        {
-          "type": "say",
-          "who": "oscar",
-          "text": "Actually, that's a third wheel.",
-          "to": "dwight",
-          "mood": "sarcastic"
-        },
-        {
-          "type": "say",
-          "who": "jim",
-          "text": "Dwight, I'm sorry about the scroll.",
-          "to": "dwight",
-          "mood": "awkward"
-        },
-        {
-          "type": "say",
-          "who": "dwight",
-          "text": "Don't be. It got me in Jan's office. Best prank ever. Never speak of this.",
-          "to": "jim",
-          "mood": "neutral"
         },
         {
           "type": "react",
@@ -539,69 +101,627 @@
       ]
     },
     {
-      "part": "act2",
+      "part": "act1",
       "plot": "A",
       "set": "office",
       "region": "conference_room",
       "venue": "",
       "present": [
         "michael",
-        "jan",
-        "ryan",
+        "jim",
         "pam",
+        "dwight",
         "stanley",
+        "phyllis",
+        "angela",
+        "oscar",
         "kevin",
-        "creed"
+        "kelly",
+        "meredith",
+        "creed",
+        "ryan",
+        "toby"
       ],
-      "recap": "The costume contest.",
+      "away": [],
+      "recap": "Michael proudly reads the regional manager survey results aloud and discovers he's last, and one comment hurts.",
       "beats": [
+        {
+          "type": "gather",
+          "who": [
+            "everyone"
+          ],
+          "to": "conference_room"
+        },
         {
           "type": "say",
           "who": "michael",
-          "text": "Contest time. Stanley, who are you?",
-          "to": "stanley",
+          "text": "The regional manager survey results are in. Anonymous. Which means honest. Which means great.",
+          "to": "all",
           "mood": "excited"
         },
         {
-          "type": "say",
-          "who": "stanley",
-          "text": "A man who wants to go home.",
-          "to": "michael",
-          "mood": "deadpan"
-        },
-        {
-          "type": "say",
-          "who": "creed",
-          "text": "I'm just wearing my regular clothes. They're from 1973.",
-          "to": "all",
-          "mood": "neutral"
-        },
-        {
-          "type": "say",
-          "who": "jan",
-          "text": "The winner is the person who looks the most like they want to be here.",
-          "to": "all",
-          "mood": "sarcastic"
+          "type": "action",
+          "who": "michael",
+          "verb": "search",
+          "target": "none",
+          "caption": "flips to the last page, then back, then to the last page"
         },
         {
           "type": "say",
           "who": "michael",
-          "text": "That's... me. Obviously.",
+          "text": "Sixth out of six. Josh from Stamford is first. Josh plays squash.",
           "to": "all",
-          "mood": "happy"
+          "mood": "sad"
         },
         {
           "type": "say",
-          "who": "jan",
-          "text": "Fine. Michael wins.",
+          "who": "michael",
+          "text": "And a comment. 'Michael thinks we're a family. We're not. We're people who are stuck in a room together.'",
+          "to": "all",
+          "mood": "sad"
+        },
+        {
+          "type": "pause",
+          "seconds": 4,
+          "caption": ""
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "I didn't write that. I wrote 'Michael is good at birthdays.'",
           "to": "michael",
-          "mood": "neutral"
+          "mood": "nervous"
         },
         {
           "type": "talking_head",
           "who": "michael",
           "lines": [
-            "She said I win. I have never won anything. Not even second place. This is it."
+            "'Stuck in a room together.' You know who else was stuck in a room together? The Brady Bunch.",
+            "And they were a family. Look it up."
+          ],
+          "mood": "sad"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "B",
+      "set": "office",
+      "region": "reception",
+      "venue": "",
+      "present": [
+        "pam",
+        "jim"
+      ],
+      "away": [],
+      "recap": "Jim notices an art-class flyer on Pam's desk; she hasn't signed up yet.",
+      "beats": [
+        {
+          "type": "move",
+          "who": "jim",
+          "to": "pam",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "'Drawing from Life. Lackawanna Community College. Tuesdays.' Pam Beesly, are you going to art school?",
+          "to": "pam",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "It's one class. And I haven't signed up. It's eighty dollars. It's probably dumb.",
+          "to": "jim",
+          "mood": "awkward"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "It's not dumb. You draw on sticky notes all day. Imagine what you'd do with a whole piece of paper.",
+          "to": "pam",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "I'll ask Roy tonight.",
+          "to": "jim",
+          "mood": "neutral"
+        },
+        {
+          "type": "talking_head",
+          "who": "pam",
+          "lines": [
+            "I used to draw every day. In high school I wanted to illustrate children's books.",
+            "Then I got a job answering phones. Which I'm also good at. So."
+          ],
+          "mood": "sad"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "A",
+      "set": "office",
+      "region": "michael_office",
+      "venue": "",
+      "present": [
+        "michael",
+        "dwight"
+      ],
+      "away": [],
+      "recap": "Michael orders Dwight to find out who wrote the comment; Dwight demands a secretary.",
+      "beats": [
+        {
+          "type": "move",
+          "who": "dwight",
+          "to": "michael_guest_1",
+          "pace": "hurry"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Dwight. I need you to find out who wrote it. Quietly. No one can know.",
+          "to": "dwight",
+          "mood": "angry"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "An anonymous survey can be cracked. I'll need typing samples, coffee logs, and a secretary.",
+          "to": "michael",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Use Angela. She hates everybody equally. She's objective.",
+          "to": "dwight",
+          "mood": "neutral"
+        },
+        {
+          "type": "talking_head",
+          "who": "dwight",
+          "lines": [
+            "Every anonymous author makes one mistake. A comma. A smell. A favorite pen.",
+            "I will find it. And then I will make them sign the Loyalty Oath. Twice."
+          ],
+          "mood": "deadpan"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "C",
+      "set": "office",
+      "region": "accounting",
+      "venue": "",
+      "present": [
+        "dwight",
+        "angela",
+        "oscar"
+      ],
+      "away": [],
+      "recap": "Dwight and Angela begin the investigation; Angela is unusually eager to suggest Toby.",
+      "beats": [
+        {
+          "type": "move",
+          "who": "dwight",
+          "to": "angela",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Secretary. Suspects.",
+          "to": "angela",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "angela",
+          "text": "Toby. It's obviously Toby. He's sad and he types.",
+          "to": "dwight",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "oscar",
+          "text": "Toby's HR. HR isn't allowed to take the survey.",
+          "to": "angela",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "angela",
+          "text": "Then it's Oscar.",
+          "to": "dwight",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "oscar",
+          "text": "I gave him a three out of five. I was generous.",
+          "to": "dwight",
+          "mood": "deadpan"
+        },
+        {
+          "type": "react",
+          "who": [
+            "oscar"
+          ],
+          "reaction": "look_at_camera"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "A",
+      "set": "annex",
+      "region": "annex",
+      "venue": "",
+      "present": [
+        "toby",
+        "kelly"
+      ],
+      "away": [],
+      "recap": "Michael accuses Toby; Toby wasn't allowed to take the survey, and Kelly volunteers her own glowing comment.",
+      "beats": [
+        {
+          "type": "enter",
+          "who": [
+            "michael"
+          ],
+          "to": "toby"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Toby. You wrote it. 'Stuck in a room.' That's an HR phrase.",
+          "to": "toby",
+          "mood": "angry"
+        },
+        {
+          "type": "say",
+          "who": "toby",
+          "text": "I'm not allowed to take the survey, Michael. Because I'm HR.",
+          "to": "michael",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "That's exactly what someone who took the survey would say.",
+          "to": "toby",
+          "mood": "angry"
+        },
+        {
+          "type": "say",
+          "who": "kelly",
+          "text": "Michael, I wrote 'Michael is so fun!!!' With three exclamation points. And a heart.",
+          "to": "michael",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Thank you, Kelly. You are a good daughter.",
+          "to": "kelly",
+          "mood": "sad"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "B",
+      "set": "warehouse",
+      "region": "warehouse",
+      "venue": "",
+      "present": [
+        "roy",
+        "darryl"
+      ],
+      "away": [],
+      "recap": "Pam tells Roy about the art class; he shrugs that she already draws for free. Darryl tells her to sign up.",
+      "beats": [
+        {
+          "type": "enter",
+          "who": [
+            "pam"
+          ],
+          "to": "roy"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "So there's this art class on Tuesdays. Eighty dollars. I was thinking about it.",
+          "to": "roy",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "roy",
+          "text": "You already draw, though. Why pay to do something you already do?",
+          "to": "pam",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "To get better at it?",
+          "to": "roy",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "roy",
+          "text": "Tuesdays is darts, babe. I'll be out anyway. Do whatever.",
+          "to": "pam",
+          "mood": "neutral"
+        },
+        {
+          "type": "exit",
+          "who": [
+            "roy"
+          ],
+          "how": "walk"
+        },
+        {
+          "type": "say",
+          "who": "darryl",
+          "text": "Sign up, Pam. Life's short. I took a keyboard class. Best eighty dollars I ever spent.",
+          "to": "pam",
+          "mood": "happy"
+        },
+        {
+          "type": "react",
+          "who": [
+            "pam"
+          ],
+          "reaction": "laugh"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "C",
+      "set": "office",
+      "region": "bullpen",
+      "venue": "",
+      "present": [
+        "dwight",
+        "angela"
+      ],
+      "away": [],
+      "recap": "Dwight finds a misspelling in the comment that matches Angela's party memos; he realizes she wrote it, and closes the folder.",
+      "beats": [
+        {
+          "type": "action",
+          "who": "dwight",
+          "verb": "snoop",
+          "target": "none",
+          "caption": "holds the comment next to a Party Planning Committee memo"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "'Together.' Spelled with two Gs. 'Togethger.' The same as on the birthday memo.",
+          "to": "angela",
+          "mood": "deadpan"
+        },
+        {
+          "type": "pause",
+          "seconds": 3,
+          "caption": ""
+        },
+        {
+          "type": "say",
+          "who": "angela",
+          "text": "That's a common mistake.",
+          "to": "dwight",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "It is a common mistake.",
+          "to": "angela",
+          "mood": "deadpan"
+        },
+        {
+          "type": "action",
+          "who": "dwight",
+          "verb": "hide",
+          "target": "none",
+          "caption": "closes the folder and puts it in the shredder pile"
+        },
+        {
+          "type": "talking_head",
+          "who": "angela",
+          "lines": [
+            "I don't regret it. Michael made us do a trust fall in August. I fell. Nobody caught me.",
+            "But I don't want him sad either. I'm not a monster. I'm a realist."
+          ],
+          "mood": "deadpan"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "A",
+      "set": "office",
+      "region": "michael_office",
+      "venue": "",
+      "present": [
+        "michael"
+      ],
+      "away": [],
+      "recap": "Alone, Michael reads the rest of the anonymous comments, which are not all bad.",
+      "beats": [
+        {
+          "type": "action",
+          "who": "michael",
+          "verb": "search",
+          "target": "none",
+          "caption": "reads the full stack of comments, one at a time"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "'Michael remembered my mom's surgery.' 'Michael is annoying, but he's the reason I still work here.'",
+          "to": "none",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "'Good at birthdays.' That's Kevin. 'Please fewer meetings.' That's everyone.",
+          "to": "none",
+          "mood": "happy"
+        },
+        {
+          "type": "talking_head",
+          "who": "michael",
+          "lines": [
+            "Sixth out of six. But 'he's the reason I still work here.' Josh from Stamford didn't get that.",
+            "Okay, he probably did. But I got it too."
+          ],
+          "mood": "happy"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "C",
+      "set": "office",
+      "region": "michael_office",
+      "venue": "",
+      "present": [
+        "michael",
+        "dwight",
+        "angela"
+      ],
+      "away": [],
+      "recap": "Dwight reports that the author is unknowable, protecting Angela; Michael lets it go.",
+      "beats": [
+        {
+          "type": "move",
+          "who": "dwight",
+          "to": "michael_guest_1",
+          "pace": "walk"
+        },
+        {
+          "type": "move",
+          "who": "angela",
+          "to": "michael_guest_2",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Michael. The author cannot be found. They are like the wind. Or a ninja. Or a ghost ninja.",
+          "to": "michael",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "That's okay, Dwight. I've decided I don't want to know.",
+          "to": "dwight",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Also, it was probably Stanley. Stanley's going to get the worst birthday this year.",
+          "to": "dwight",
+          "mood": "smug"
+        },
+        {
+          "type": "action",
+          "who": "angela",
+          "verb": "present",
+          "target": "dwight",
+          "caption": "brushes Dwight's sleeve with one finger, on the way out"
+        },
+        {
+          "type": "react",
+          "who": [
+            "dwight"
+          ],
+          "reaction": "stare"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "B",
+      "set": "office",
+      "region": "reception",
+      "venue": "",
+      "present": [
+        "pam",
+        "jim"
+      ],
+      "away": [],
+      "recap": "Pam signs up for the class; Jim asks to see her sketchbook, and finds a drawing of himself asleep at his desk.",
+      "beats": [
+        {
+          "type": "action",
+          "who": "pam",
+          "verb": "typing",
+          "target": "none",
+          "caption": "fills out the art class registration form"
+        },
+        {
+          "type": "move",
+          "who": "jim",
+          "to": "pam",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "I did it. Tuesdays. Drawing from Life. I'm a student.",
+          "to": "jim",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "Can I see the sketchbook? The famous sketchbook.",
+          "to": "pam",
+          "mood": "happy"
+        },
+        {
+          "type": "action",
+          "who": "pam",
+          "verb": "present",
+          "target": "jim",
+          "caption": "hands over a worn sketchbook"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "Is that... me? Asleep?",
+          "to": "pam",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "You were very still. It's hard to find a still model here.",
+          "to": "jim",
+          "mood": "awkward"
+        },
+        {
+          "type": "talking_head",
+          "who": "jim",
+          "lines": [
+            "She drew me. While I was asleep. Which is either really sweet or really creepy.",
+            "It's sweet. I'm calling it sweet."
           ],
           "mood": "happy"
         }
@@ -614,29 +734,38 @@
       "region": "bullpen",
       "venue": "",
       "present": [
-        "dwight",
-        "jim"
+        "michael",
+        "stanley"
       ],
-      "recap": "Dwight finds the stapler in Jell-O.",
+      "away": [],
+      "recap": "Michael asks Stanley whether he wrote the comment; Stanley says if he'd written it, it would have been worse.",
       "beats": [
         {
-          "type": "say",
-          "who": "dwight",
-          "text": "Jell-O. Again. Creed!",
-          "to": "all",
-          "mood": "angry"
+          "type": "move",
+          "who": "michael",
+          "to": "stanley",
+          "pace": "walk"
         },
         {
           "type": "say",
-          "who": "creed",
-          "text": "I'd do it. But I'd also rob you.",
-          "to": "dwight",
-          "mood": "neutral"
+          "who": "michael",
+          "text": "Stanley. Off the record. Did you write the comment?",
+          "to": "stanley",
+          "mood": "nervous"
         },
         {
-          "type": "pause",
-          "seconds": 2,
-          "caption": "nobody follows up"
+          "type": "say",
+          "who": "stanley",
+          "text": "Michael, if I had written a comment, you would know. It would have been much worse.",
+          "to": "michael",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "That's... weirdly comforting.",
+          "to": "stanley",
+          "mood": "happy"
         }
       ]
     }

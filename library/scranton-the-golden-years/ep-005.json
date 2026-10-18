@@ -1,103 +1,107 @@
 {
-  "title": "Lunch Hour",
-  "logline": "Michael's mandatory \"Team Lunch Efficiency\" initiative runs into Pam's canceled lunch with Roy, Dwight's title scheming, and Ryan's website pitch.",
-  "outline": "A: Michael bans desk lunches and forces a \"family lunch\" in the conference room, wanting to be loved. B: Roy cancels on Pam; Jim eats with her in the parking lot (Pam/Jim), while Dwight tries to become the lunch enforcer. C: Ryan pitches a website to David on the phone; Andy tries too hard. Order: cold, A, B, C, A, B, A, C, B, A, tag",
-  "theme": "Who do you eat lunch with: being chosen.",
-  "storySoFar": "Michael's dinner with Jan was canceled earlier; the office gave him a warm moment. Ryan is his reluctant protege and this week pitched a website to David Wallace, who said he'd look at it. Dwight campaigns for Assistant Regional Manager; owes beet refunds; Jim holds one real beet. Pam keeps Jim's lamp on; Roy canceled lunch on her again and Jim sat with her in the parking lot, nothing said. Andy tried too hard to be liked and got iced out of the family lunch. Michael's family lunch ended with him eating alone, then the office joining him.",
-  "extras": [],
+  "title": "The Trainee",
+  "logline": "On Pretzel Day the pretzel man sends a trainee who keeps botching Stanley's order, Michael polls the line on whether a kiss that 'never happened' happened, and Pam asks Jim to help pick her wedding invitations.",
+  "outline": "A: Michael can't stop asking the pretzel line, hypothetically, whether a kiss that 'didn't happen' happened; Jan's fax settles it. B: In line, Pam asks Jim to help choose wedding invitations, and Roy doesn't care which. C: A new pretzel trainee ruins Stanley's order twice, until Kevin, of all people, takes over the cart. Order: cold, A, C, B, A, C, B, A, C, A, B, tag",
+  "theme": "Getting it exactly right",
+  "storySoFar": "On Pretzel Day a nervous trainee, Tyler, botched Stanley's order twice until Kevin took over the cart with surgical precision; Stanley thanked him. Michael polled the pretzel line about a 'hypothetical' parking-lot kiss (everyone guessed Jan); Jan called to ask if he was telling people, then faxed 'It didn't happen. P.S. Good work on the county account', which Michael is framing. Pam asked Jim to help pick wedding invitations; they chose the plain one with leaves, but Roy said to go with his mom's swan. Pam kept the leaf one in her drawer. Dwight and Angela secretly split a pretzel in the kitchen. Earlier: Michael promised the office no layoffs while corporate decides between Scranton and Stamford; Jim mentioned Stamford would take him; Kelly says she's dating Ryan, who says she isn't.",
+  "extras": [
+    {
+      "id": "tyler_dombrowski",
+      "name": "Tyler Dombrowski",
+      "title": "Pretzel Trainee",
+      "voice": "Nineteen, nervous, first week on the job, apologizes constantly, mixes up toppings.",
+      "look": "office_m"
+    }
+  ],
+  "away": [],
   "stateChanges": [
     {
       "type": "arc",
-      "arc": "Will They, Won't They",
-      "progress": "Roy cancelled on Pam again; Jim ate lunch with her in the parking lot. Pam quietly noticed Roy never asks what she wants."
+      "arc": "Michael, Jan and the Rumor",
+      "progress": "Jan faxed 'It didn't happen. P.S. Good work'; Michael is framing it"
     },
     {
       "type": "arc",
-      "arc": "Ryan the Temp",
-      "progress": "Ryan pitched a website idea to David Wallace; David said he'd look at it. Michael half-knows."
-    },
-    {
-      "type": "arc",
-      "arc": "Assistant (to the) Regional Manager",
-      "progress": "Dwight appointed himself Lunch Monitor; Michael still stalling on the title."
+      "arc": "Jim and Pam",
+      "progress": "Jim helped pick Pam's wedding invitations; Roy chose the swan; Pam kept Jim's pick in her drawer"
     },
     {
       "type": "note",
-      "text": "David Wallace may follow up on Ryan's website pitch."
+      "text": "Pam keeps the leaf wedding invitation Jim picked in her desk drawer"
+    },
+    {
+      "type": "note",
+      "text": "Kevin knows exactly how to make Stanley's pretzel"
     },
     {
       "type": "gag",
-      "text": "Andy tries too hard (a cappella lunch song) and is ignored."
+      "text": "Pretzel Day: Stanley's order is original, sweet glaze, cinnamon sugar, chocolate drizzle in a zigzag"
     }
   ],
   "scenes": [
     {
       "part": "cold_open",
       "plot": "cold_open",
-      "set": "office",
-      "region": "bullpen",
+      "set": "break_room",
+      "region": "break_room",
       "venue": "",
       "present": [
-        "jim",
-        "dwight",
-        "pam"
+        "kevin"
       ],
-      "recap": "Jim convinces Dwight that lunch smells are a security risk.",
+      "away": [],
+      "recap": "Stanley arrives at 7 a.m. to be first in the Pretzel Day line, and Kevin is already there.",
       "beats": [
         {
-          "type": "say",
-          "who": "jim",
-          "text": "Dwight, quick question. Do you smell tuna?",
-          "to": "dwight",
-          "mood": "neutral"
+          "type": "caption",
+          "text": "PRETZEL DAY. 7:02 AM"
         },
         {
-          "type": "say",
-          "who": "dwight",
-          "text": "Yes. Tuna is a known bear attractant. Who is eating tuna?",
-          "to": "jim",
-          "mood": "panicked"
+          "type": "sit",
+          "who": [
+            "kevin"
+          ]
         },
         {
-          "type": "action",
-          "who": "jim",
-          "verb": "prank",
-          "target": "dwight",
-          "caption": "slides a tuna can under Dwight's desk"
-        },
-        {
-          "type": "move",
-          "who": "dwight",
-          "to": "jim_desk",
-          "pace": "hurry"
-        },
-        {
-          "type": "say",
-          "who": "dwight",
-          "text": "I am sweeping the building for bears. Nobody move.",
-          "to": "all",
-          "mood": "angry"
-        },
-        {
-          "type": "say",
-          "who": "pam",
-          "text": "It's a tuna sandwich, Dwight. In Stanley's hand.",
-          "to": "dwight",
-          "mood": "deadpan"
+          "type": "enter",
+          "who": [
+            "stanley"
+          ],
+          "to": "kevin"
         },
         {
           "type": "say",
           "who": "stanley",
-          "text": "Did I stutter? It's tuna.",
-          "to": "dwight",
+          "text": "Kevin. How long have you been here.",
+          "to": "kevin",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "Since six. I brought a pillow. And a backup pillow.",
+          "to": "stanley",
+          "mood": "happy"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": ""
+        },
+        {
+          "type": "say",
+          "who": "stanley",
+          "text": "I respect it. I don't like it. But I respect it.",
+          "to": "kevin",
           "mood": "annoyed"
         },
         {
-          "type": "react",
-          "who": [
-            "jim"
+          "type": "talking_head",
+          "who": "stanley",
+          "lines": [
+            "Pretzel Day is the one day a year I come to work happy.",
+            "Don't talk to me about it. You'll ruin it."
           ],
-          "reaction": "look_at_camera"
+          "mood": "deadpan"
         }
       ]
     },
@@ -105,96 +109,350 @@
       "part": "act1",
       "plot": "A",
       "set": "office",
-      "region": "conference_room",
+      "region": "michael_office",
       "venue": "",
       "present": [
         "michael",
-        "dwight",
-        "jim",
-        "pam",
-        "stanley",
-        "andy",
-        "oscar",
-        "kevin",
-        "toby",
-        "angela",
-        "phyllis"
+        "dwight"
       ],
-      "recap": "Michael bans desk lunches and announces mandatory Family Lunch.",
+      "away": [],
+      "recap": "Michael asks Dwight, 'hypothetically', whether a kiss that a woman says never happened, happened.",
       "beats": [
         {
-          "type": "gather",
-          "who": [
-            "everyone"
-          ],
-          "to": "conference_room"
+          "type": "move",
+          "who": "dwight",
+          "to": "michael_guest_1",
+          "pace": "walk"
         },
         {
           "type": "say",
           "who": "michael",
-          "text": "People. I read that families who eat together stay together. We are a family. Therefore, lunch together. Mandatory.",
-          "to": "all",
-          "mood": "excited"
-        },
-        {
-          "type": "say",
-          "who": "stanley",
-          "text": "My lunch is the one hour I don't know you.",
-          "to": "michael",
-          "mood": "annoyed"
-        },
-        {
-          "type": "say",
-          "who": "toby",
-          "text": "Technically a mandatory lunch has to be paid time, so—",
-          "to": "michael",
+          "text": "Dwight. Hypothetically. A woman kisses a man in a parking lot. Then says it never happened. Did it happen?",
+          "to": "dwight",
           "mood": "nervous"
         },
         {
           "type": "say",
+          "who": "dwight",
+          "text": "Was there a witness?",
+          "to": "michael",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
           "who": "michael",
-          "text": "Toby, nobody asked you. Not now, not ever, not at lunch.",
-          "to": "toby",
-          "mood": "angry"
+          "text": "A Subaru.",
+          "to": "dwight",
+          "mood": "neutral"
         },
         {
           "type": "say",
           "who": "dwight",
-          "text": "I volunteer as Lunch Monitor. I will take attendance and confiscate unauthorized sandwiches.",
+          "text": "Then it's your word against hers. And the Subaru's.",
           "to": "michael",
-          "mood": "excited"
-        },
-        {
-          "type": "say",
-          "who": "michael",
-          "text": "We'll see. Wait, no. We'll see.",
-          "to": "dwight",
-          "mood": "awkward"
-        },
-        {
-          "type": "say",
-          "who": "andy",
-          "text": "I wrote a lunch song. It's a cappella. I'll do all four parts.",
-          "to": "all",
-          "mood": "excited"
-        },
-        {
-          "type": "pause",
-          "seconds": 2,
-          "caption": "Nobody responds"
+          "mood": "deadpan"
         },
         {
           "type": "talking_head",
           "who": "michael",
           "lines": [
-            "Lunch is the heart of the day. Also the stomach. That's what she said. I don't know why."
+            "It happened. I was there. My lips were there.",
+            "But Jan says it didn't. And Jan is my boss. So legally, I'm not sure."
           ],
-          "mood": "smug"
+          "mood": "sad"
         }
       ]
     },
     {
       "part": "act1",
+      "plot": "C",
+      "set": "break_room",
+      "region": "break_room",
+      "venue": "",
+      "present": [
+        "stanley",
+        "kevin",
+        "oscar"
+      ],
+      "away": [],
+      "recap": "The pretzel man's new trainee, Tyler, takes Stanley's order and gets it wrong.",
+      "beats": [
+        {
+          "type": "enter",
+          "who": [
+            "tyler_dombrowski"
+          ],
+          "to": "microwave"
+        },
+        {
+          "type": "say",
+          "who": "tyler_dombrowski",
+          "text": "Hi! Sorry. I'm Tyler. Sal's sick. I'm new. Sorry.",
+          "to": "all",
+          "mood": "nervous"
+        },
+        {
+          "type": "move",
+          "who": "stanley",
+          "to": "tyler_dombrowski",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "stanley",
+          "text": "Original. Sweet glaze. Cinnamon sugar. Then the chocolate drizzle. Not the other way.",
+          "to": "tyler_dombrowski",
+          "mood": "deadpan"
+        },
+        {
+          "type": "action",
+          "who": "tyler_dombrowski",
+          "verb": "eat",
+          "target": "stanley",
+          "caption": "assembles a pretzel in a panic and hands it over"
+        },
+        {
+          "type": "pause",
+          "seconds": 3,
+          "caption": "Stanley looks at the pretzel"
+        },
+        {
+          "type": "say",
+          "who": "stanley",
+          "text": "This is salt. You put salt on it.",
+          "to": "tyler_dombrowski",
+          "mood": "angry"
+        },
+        {
+          "type": "say",
+          "who": "tyler_dombrowski",
+          "text": "Sorry! Sorry. Salt is the default. Sorry.",
+          "to": "stanley",
+          "mood": "panicked"
+        },
+        {
+          "type": "react",
+          "who": [
+            "oscar"
+          ],
+          "reaction": "cringe"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "B",
+      "set": "break_room",
+      "region": "break_room",
+      "venue": "",
+      "present": [
+        "jim",
+        "pam"
+      ],
+      "away": [],
+      "recap": "In line, Pam asks Jim to help her choose wedding invitations, since Roy won't.",
+      "beats": [
+        {
+          "type": "action",
+          "who": "pam",
+          "verb": "present",
+          "target": "jim",
+          "caption": "fans out three cream-colored invitation samples"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Okay, help me. Roy says they're all the same. They are not all the same.",
+          "to": "jim",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "This one has a swan. Do you want a swan at your wedding?",
+          "to": "pam",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Nobody wants a swan. The swan was his mom's idea.",
+          "to": "jim",
+          "mood": "awkward"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "Then this one. The plain one. With the little leaves. It looks like you drew it.",
+          "to": "pam",
+          "mood": "happy"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": ""
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "That's the one I liked.",
+          "to": "jim",
+          "mood": "happy"
+        },
+        {
+          "type": "talking_head",
+          "who": "jim",
+          "lines": [
+            "I helped pick out Pam's wedding invitations today.",
+            "Great. It was great. The leaves are nice."
+          ],
+          "mood": "deadpan"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "A",
+      "set": "break_room",
+      "region": "break_room",
+      "venue": "",
+      "present": [
+        "michael",
+        "phyllis",
+        "oscar",
+        "meredith",
+        "creed"
+      ],
+      "away": [],
+      "recap": "Michael polls the pretzel line about his 'hypothetical' kiss, and everybody guesses it's Jan.",
+      "beats": [
+        {
+          "type": "move",
+          "who": "michael",
+          "to": "phyllis",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Quick survey. A man and a woman. A parking lot. A kiss. She says it never happened. Go.",
+          "to": "all",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "phyllis",
+          "text": "Is this about Jan?",
+          "to": "michael",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "No. Who? No. It's about a friend. Named... Mjan.",
+          "to": "phyllis",
+          "mood": "panicked"
+        },
+        {
+          "type": "say",
+          "who": "oscar",
+          "text": "If she says it didn't happen, she wants it to not have happened. That's different.",
+          "to": "michael",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "meredith",
+          "text": "Happens to me all the time. I just say it didn't happen too. Everybody wins.",
+          "to": "michael",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "creed",
+          "text": "I kissed a woman in a parking lot once. Turned out to be a parking lot attendant. Married her.",
+          "to": "michael",
+          "mood": "neutral"
+        },
+        {
+          "type": "react",
+          "who": [
+            "phyllis"
+          ],
+          "reaction": "look_at_camera"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "C",
+      "set": "break_room",
+      "region": "break_room",
+      "venue": "",
+      "present": [
+        "stanley",
+        "tyler_dombrowski",
+        "kevin"
+      ],
+      "away": [],
+      "recap": "Stanley's second attempt is worse; he sits in silent mourning.",
+      "beats": [
+        {
+          "type": "move",
+          "who": "stanley",
+          "to": "tyler_dombrowski",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "stanley",
+          "text": "Again. Original. Sweet glaze. Cinnamon sugar. Chocolate drizzle.",
+          "to": "tyler_dombrowski",
+          "mood": "deadpan"
+        },
+        {
+          "type": "action",
+          "who": "tyler_dombrowski",
+          "verb": "eat",
+          "target": "stanley",
+          "caption": "builds a pretzel with shaking hands"
+        },
+        {
+          "type": "say",
+          "who": "tyler_dombrowski",
+          "text": "Here you go! I did the drizzle first. For flavor. Sorry.",
+          "to": "stanley",
+          "mood": "nervous"
+        },
+        {
+          "type": "move",
+          "who": "stanley",
+          "to": "table_2",
+          "pace": "walk"
+        },
+        {
+          "type": "pause",
+          "seconds": 4,
+          "caption": "Stanley stares at a wall"
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "Stanley? Stanley, are you okay?",
+          "to": "stanley",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "stanley",
+          "text": "Leave me alone, Kevin. I'm grieving.",
+          "to": "kevin",
+          "mood": "sad"
+        }
+      ]
+    },
+    {
+      "part": "act2",
       "plot": "B",
       "set": "office",
       "region": "reception",
@@ -203,260 +461,62 @@
         "pam",
         "jim"
       ],
-      "recap": "Roy cancels on Pam by phone; Jim notices.",
+      "away": [],
+      "recap": "Roy stops by reception; Pam shows him the invitation she and Jim picked, and Roy says just pick anything.",
       "beats": [
         {
-          "type": "action",
-          "who": "pam",
-          "verb": "phone_call",
-          "target": "none",
-          "caption": "listens to Roy on the phone"
+          "type": "enter",
+          "who": [
+            "roy"
+          ],
+          "to": "pam"
         },
         {
           "type": "say",
           "who": "pam",
-          "text": "No, it's fine. Guys from the warehouse. No, totally. Okay. Bye.",
-          "to": "none",
-          "mood": "sad"
-        },
-        {
-          "type": "move",
-          "who": "jim",
-          "to": "pam_desk",
-          "pace": "walk"
-        },
-        {
-          "type": "say",
-          "who": "jim",
-          "text": "Everything okay?",
-          "to": "pam",
-          "mood": "neutral"
-        },
-        {
-          "type": "say",
-          "who": "pam",
-          "text": "Roy's lunch thing. It's fine. It's the third time. It's fine.",
-          "to": "jim",
-          "mood": "awkward"
-        },
-        {
-          "type": "say",
-          "who": "jim",
-          "text": "I have a sandwich. And a parking lot. Well, the lot isn't mine.",
-          "to": "pam",
+          "text": "Roy, I picked one. The plain one, with the leaves. Jim helped.",
+          "to": "roy",
           "mood": "happy"
         },
         {
-          "type": "react",
-          "who": [
-            "pam"
-          ],
-          "reaction": "laugh"
-        },
-        {
-          "type": "talking_head",
-          "who": "toby",
-          "lines": [
-            "I'm not saying I noticed Pam is sad. I'm saying I noticed. Which is different, I think."
-          ],
-          "mood": "sad"
-        }
-      ]
-    },
-    {
-      "part": "act1",
-      "plot": "C",
-      "set": "office",
-      "region": "michael_office",
-      "venue": "",
-      "present": [
-        "ryan",
-        "michael"
-      ],
-      "recap": "Ryan takes a call from David and pitches a website.",
-      "beats": [
-        {
           "type": "say",
-          "who": "ryan",
-          "text": "David. Ryan Howard. I'm thinking direct online orders. Paper, but on the internet.",
-          "to": "none",
-          "mood": "neutral"
-        },
-        {
-          "type": "move",
-          "who": "michael",
-          "to": "michael_desk",
-          "pace": "hurry"
-        },
-        {
-          "type": "say",
-          "who": "michael",
-          "text": "Is that David? Tell him I taught you everything. Say Michael Scott, mentor.",
-          "to": "ryan",
-          "mood": "excited"
-        },
-        {
-          "type": "say",
-          "who": "ryan",
-          "text": "Michael, this is a one-on-one. Can you not hover?",
-          "to": "michael",
-          "mood": "annoyed"
-        },
-        {
-          "type": "say",
-          "who": "michael",
-          "text": "Hover. Yes. Like a hummingbird. A supportive one.",
-          "to": "ryan",
-          "mood": "awkward"
-        },
-        {
-          "type": "talking_head",
-          "who": "ryan",
-          "lines": [
-            "If David likes it, I'm out of here. Not out of here out of here. Up. Out and up."
-          ],
-          "mood": "smug"
-        }
-      ]
-    },
-    {
-      "part": "act2",
-      "plot": "A",
-      "set": "office",
-      "region": "conference_room",
-      "venue": "",
-      "present": [
-        "michael",
-        "dwight",
-        "stanley",
-        "andy",
-        "oscar",
-        "kevin",
-        "angela",
-        "phyllis",
-        "meredith",
-        "creed"
-      ],
-      "recap": "Family Lunch is held; Andy's song, Dwight's confiscations.",
-      "beats": [
-        {
-          "type": "caption",
-          "text": "12:00 PM. FAMILY LUNCH"
-        },
-        {
-          "type": "say",
-          "who": "dwight",
-          "text": "Attendance. Kevin. Present. Oscar. Present, regretfully.",
-          "to": "all",
-          "mood": "deadpan"
-        },
-        {
-          "type": "say",
-          "who": "andy",
-          "text": "Okay, everybody. This one's called 'Lunchtime, Anytime.' Ahem.",
-          "to": "all",
-          "mood": "excited"
-        },
-        {
-          "type": "action",
-          "who": "andy",
-          "verb": "sing",
-          "target": "none",
-          "caption": "sings a four-part lunch song alone"
-        },
-        {
-          "type": "say",
-          "who": "angela",
-          "text": "My cats don't even do that.",
-          "to": "andy",
-          "mood": "annoyed"
-        },
-        {
-          "type": "react",
-          "who": [
-            "oscar"
-          ],
-          "reaction": "cringe"
-        },
-        {
-          "type": "say",
-          "who": "creed",
-          "text": "I ate lunch with a man once. Only one of us left the room.",
-          "to": "all",
-          "mood": "neutral"
-        },
-        {
-          "type": "say",
-          "who": "michael",
-          "text": "Great. Wonderful. Who wants to share something about their week?",
-          "to": "all",
-          "mood": "excited"
-        },
-        {
-          "type": "pause",
-          "seconds": 3,
-          "caption": "Everyone stares at their sandwiches"
-        }
-      ]
-    },
-    {
-      "part": "act2",
-      "plot": "B",
-      "set": "parking_lot",
-      "region": "parking_lot",
-      "venue": "",
-      "present": [
-        "jim",
-        "pam"
-      ],
-      "recap": "Jim and Pam eat in the lot.",
-      "beats": [
-        {
-          "type": "say",
-          "who": "pam",
-          "text": "Can I tell you something dumb? I wasn't even upset about the lunch.",
-          "to": "jim",
-          "mood": "sad"
-        },
-        {
-          "type": "say",
-          "who": "jim",
-          "text": "What were you upset about?",
+          "who": "roy",
+          "text": "Great. Cool. Whatever you want, babe. Just not the swan, my mom'll ask.",
           "to": "pam",
           "mood": "neutral"
         },
         {
           "type": "say",
           "who": "pam",
-          "text": "That I wasn't surprised. And that I didn't really mind who I was eating with.",
-          "to": "jim",
-          "mood": "awkward"
+          "text": "So, the swan?",
+          "to": "roy",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "roy",
+          "text": "Yeah. Do the swan. Easier. See you at five.",
+          "to": "pam",
+          "mood": "neutral"
+        },
+        {
+          "type": "exit",
+          "who": [
+            "roy"
+          ],
+          "how": "walk"
         },
         {
           "type": "pause",
           "seconds": 2,
-          "caption": "A long look"
-        },
-        {
-          "type": "say",
-          "who": "jim",
-          "text": "Well. I'm very glad I'm the one with the sandwich.",
-          "to": "pam",
-          "mood": "happy"
-        },
-        {
-          "type": "say",
-          "who": "pam",
-          "text": "Me too.",
-          "to": "jim",
-          "mood": "happy"
+          "caption": ""
         },
         {
           "type": "react",
           "who": [
             "jim"
           ],
-          "reaction": "look_at_camera"
+          "reaction": "stare"
         }
       ]
     },
@@ -464,85 +524,27 @@
       "part": "act2",
       "plot": "A",
       "set": "office",
-      "region": "conference_room",
+      "region": "michael_office",
       "venue": "",
       "present": [
-        "michael",
-        "dwight",
-        "kevin"
+        "michael"
       ],
-      "recap": "Everyone has left; Michael is left alone at his own lunch.",
+      "away": [],
+      "recap": "Jan calls to ask if Michael is telling people; he lies badly, then invites her to Pretzel Day.",
       "beats": [
         {
           "type": "action",
           "who": "michael",
-          "verb": "eat",
+          "verb": "phone_call",
           "target": "none",
-          "caption": "eats alone at the long table"
-        },
-        {
-          "type": "say",
-          "who": "dwight",
-          "text": "Everyone sneaked out. I tried to stop them. Stanley used a stairwell.",
-          "to": "michael",
-          "mood": "angry"
+          "caption": "answers, mid-bite of a pretzel"
         },
         {
           "type": "say",
           "who": "michael",
-          "text": "It's fine. Families grow apart. It's natural. It's sad.",
-          "to": "dwight",
-          "mood": "sad"
-        },
-        {
-          "type": "say",
-          "who": "kevin",
-          "text": "I'll stay. I have chili.",
-          "to": "michael",
-          "mood": "happy"
-        },
-        {
-          "type": "talking_head",
-          "who": "michael",
-          "lines": [
-            "I just wanted one lunch where nobody looked at their watch. Is that a lot? Don't answer."
-          ],
-          "mood": "sad"
-        }
-      ]
-    },
-    {
-      "part": "act2",
-      "plot": "C",
-      "set": "office",
-      "region": "michael_office",
-      "venue": "",
-      "present": [
-        "ryan",
-        "michael"
-      ],
-      "recap": "David calls back; Michael learns Ryan pitched alone.",
-      "beats": [
-        {
-          "type": "say",
-          "who": "ryan",
-          "text": "David wants to see a proposal. I may need Thursday off.",
-          "to": "michael",
-          "mood": "neutral"
-        },
-        {
-          "type": "say",
-          "who": "michael",
-          "text": "You went over my head. To my boss's boss. Who is my friend.",
-          "to": "ryan",
-          "mood": "sad"
-        },
-        {
-          "type": "say",
-          "who": "ryan",
-          "text": "I didn't go over. I went around. Up.",
-          "to": "michael",
-          "mood": "neutral"
+          "text": "Jan! No. I'm not telling people. What would I tell people? About what? Nothing happened.",
+          "to": "none",
+          "mood": "panicked"
         },
         {
           "type": "pause",
@@ -552,9 +554,106 @@
         {
           "type": "say",
           "who": "michael",
-          "text": "Take Thursday. And Ryan? Take me with you. In spirit.",
-          "to": "ryan",
+          "text": "Phyllis said that? Phyllis is a known liar. She knits.",
+          "to": "none",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Anyway, it's Pretzel Day. If you were here, I'd get you a pretzel. With anything. Hello? Jan?",
+          "to": "none",
+          "mood": "sad"
+        },
+        {
+          "type": "talking_head",
+          "who": "michael",
+          "lines": [
+            "She hung up. Which is what you do when you have feelings and you're on a phone.",
+            "That's science."
+          ],
+          "mood": "smug"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "C",
+      "set": "break_room",
+      "region": "break_room",
+      "venue": "",
+      "present": [
+        "kevin",
+        "tyler_dombrowski",
+        "stanley",
+        "oscar",
+        "angela"
+      ],
+      "away": [],
+      "recap": "Kevin steps behind the cart and teaches Tyler Stanley's order with total precision; Stanley gets his perfect pretzel.",
+      "beats": [
+        {
+          "type": "move",
+          "who": "kevin",
+          "to": "tyler_dombrowski",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "Tyler. Step aside. I've watched Sal for six years.",
+          "to": "tyler_dombrowski",
+          "mood": "deadpan"
+        },
+        {
+          "type": "action",
+          "who": "kevin",
+          "verb": "eat",
+          "target": "none",
+          "caption": "glazes, sugars and drizzles a pretzel like a surgeon"
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "Glaze to the edge. Sugar while it's wet. Drizzle in a zigzag. Never a circle. Circles are for amateurs.",
+          "to": "tyler_dombrowski",
+          "mood": "deadpan"
+        },
+        {
+          "type": "move",
+          "who": "kevin",
+          "to": "stanley",
+          "pace": "walk"
+        },
+        {
+          "type": "action",
+          "who": "stanley",
+          "verb": "eat",
+          "target": "none",
+          "caption": "takes one bite and closes his eyes"
+        },
+        {
+          "type": "say",
+          "who": "stanley",
+          "text": "Kevin. Thank you.",
+          "to": "kevin",
+          "mood": "happy"
+        },
+        {
+          "type": "say",
+          "who": "oscar",
+          "text": "Kevin, that's the most competent thing I've ever seen you do.",
+          "to": "kevin",
           "mood": "awkward"
+        },
+        {
+          "type": "talking_head",
+          "who": "kevin",
+          "lines": [
+            "People think I'm not good at anything. I'm good at a lot of things.",
+            "Pretzels. Drums. Knowing which vending machine row gives two."
+          ],
+          "mood": "smug"
         }
       ]
     },
@@ -562,104 +661,181 @@
       "part": "act2",
       "plot": "A",
       "set": "office",
-      "region": "bullpen",
+      "region": "reception",
       "venue": "",
       "present": [
         "michael",
-        "jim",
-        "pam",
-        "stanley",
-        "kevin",
-        "oscar",
-        "andy",
-        "dwight",
-        "phyllis"
+        "pam"
       ],
-      "recap": "The office quietly brings lunches to Michael.",
+      "away": [],
+      "recap": "A fax arrives from Jan: 'It didn't happen. Good work on the county account.' Michael treasures it.",
       "beats": [
         {
           "type": "move",
-          "who": "pam",
-          "to": "conf_1",
-          "pace": "walk"
-        },
-        {
-          "type": "say",
-          "who": "pam",
-          "text": "Michael, we're all going to eat in the conference room. If that's okay.",
-          "to": "michael",
-          "mood": "happy"
-        },
-        {
-          "type": "say",
           "who": "michael",
-          "text": "Voluntarily? Is this a prank?",
           "to": "pam",
-          "mood": "nervous"
+          "pace": "hurry"
+        },
+        {
+          "type": "action",
+          "who": "pam",
+          "verb": "present",
+          "target": "michael",
+          "caption": "hands Michael a fax from corporate"
         },
         {
           "type": "say",
-          "who": "stanley",
-          "text": "I had a pretzel. It was a good day. Sit down.",
+          "who": "pam",
+          "text": "From Jan. It says, 'It didn't happen. P.S. Good work on the county account.'",
           "to": "michael",
           "mood": "neutral"
         },
         {
           "type": "say",
-          "who": "andy",
-          "text": "Lunchtime, anytime—",
-          "to": "all",
+          "who": "michael",
+          "text": "She wrote a P.S. Pam. Do you know what a P.S. means?",
+          "to": "pam",
           "mood": "excited"
         },
         {
           "type": "say",
-          "who": "oscar",
-          "text": "Andy. No.",
-          "to": "andy",
-          "mood": "annoyed"
+          "who": "pam",
+          "text": "Post script?",
+          "to": "michael",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "It means 'Psst. Something.' It means something.",
+          "to": "pam",
+          "mood": "happy"
         },
         {
           "type": "talking_head",
-          "who": "andy",
+          "who": "michael",
           "lines": [
-            "I think it's going great. I feel closer to everybody. Mostly physically."
+            "I'm framing this fax. Next to my Dundie. And my other Dundie.",
+            "It didn't happen. But she wrote about it not happening. That's a love letter."
           ],
-          "mood": "nervous"
+          "mood": "happy"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "B",
+      "set": "office",
+      "region": "reception",
+      "venue": "",
+      "present": [
+        "pam",
+        "jim"
+      ],
+      "away": [],
+      "recap": "At the end of the day, Pam quietly puts the swan invitation in her bag and the leaf one in her drawer.",
+      "beats": [
+        {
+          "type": "caption",
+          "text": "4:55 PM"
+        },
+        {
+          "type": "action",
+          "who": "pam",
+          "verb": "hide",
+          "target": "none",
+          "caption": "puts the leaf invitation in her desk drawer, and the swan one in her bag"
+        },
+        {
+          "type": "move",
+          "who": "jim",
+          "to": "pam",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "So. Swan.",
+          "to": "pam",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Swan. It's fine. It's just paper.",
+          "to": "jim",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "We do sell paper. I could get you a deal on non-swan paper.",
+          "to": "pam",
+          "mood": "deadpan"
+        },
+        {
+          "type": "react",
+          "who": [
+            "pam"
+          ],
+          "reaction": "laugh"
         }
       ]
     },
     {
       "part": "tag",
       "plot": "tag",
-      "set": "office",
-      "region": "bullpen",
+      "set": "kitchen",
+      "region": "kitchen",
       "venue": "",
       "present": [
-        "jim",
-        "dwight"
+        "dwight",
+        "angela"
       ],
-      "recap": "Dwight finds the tuna can.",
+      "away": [],
+      "recap": "Dwight and Angela secretly share one pretzel in the kitchen, and spring apart when the door opens.",
       "beats": [
         {
-          "type": "say",
+          "type": "action",
           "who": "dwight",
-          "text": "Found it. The tuna. Under my desk. Whoever did this is a bear.",
-          "to": "jim",
-          "mood": "angry"
+          "verb": "present",
+          "target": "angela",
+          "caption": "splits one pretzel exactly in half with a pocketknife"
         },
         {
           "type": "say",
-          "who": "jim",
-          "text": "Probably Creed.",
-          "to": "dwight",
+          "who": "dwight",
+          "text": "Cinnamon sugar on your half. Salt on mine. As agreed.",
+          "to": "angela",
           "mood": "deadpan"
         },
         {
           "type": "say",
-          "who": "creed",
-          "text": "Probably.",
-          "to": "none",
-          "mood": "neutral"
+          "who": "angela",
+          "text": "Thank you, D.",
+          "to": "dwight",
+          "mood": "happy"
+        },
+        {
+          "type": "enter",
+          "who": [
+            "kevin"
+          ],
+          "to": "kitchen_1"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "And THAT is why the Loyalty Task Force needs more staples. Good day.",
+          "to": "angela",
+          "mood": "panicked"
+        },
+        {
+          "type": "react",
+          "who": [
+            "kevin"
+          ],
+          "reaction": "shrug"
         }
       ]
     }

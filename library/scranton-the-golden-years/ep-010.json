@@ -1,28 +1,41 @@
 {
-  "title": "The Fire Drill Confession",
-  "logline": "Michael stages a surprise fire drill \"family safety\" meeting that forces everyone into the parking lot, where secrets spill, Jim nearly tells Pam, and Michael admits he's lonely.",
-  "outline": "A: Michael runs a surprise fire drill/\"family meeting\" to feel needed; he admits he's lonely. B: Jim almost tells Pam how he feels; Dwight's secret (he's secretly been drafting Michael's speeches/hiding Angela's cat) blows up. C: Andy tries too hard to be liked as fire marshal and backfires. Order: cold, A, B, C, A, B, C, A, B, A, tag",
-  "theme": "Saying the thing you've been holding in",
-  "storySoFar": "Michael's dinner with Jan was canceled; Jan softened. Ryan has a corporate lunch with Jan. Dwight campaigns for Assistant Regional Manager. Jim holds a real beet. Pam keeps Jim's lamp on, attends art class, and told Jim at the lake she isn't sure about the wedding. Ep 10: Michael's fire drill gathers everyone outside; Angela's secret cat in her desk is revealed, Andy's fire-marshal bid backfires, Jim nearly tells Pam but is interrupted, and Michael admits on camera the office is his family and he's lonely. Pam has not yet ended the engagement; coffee promise stands.",
+  "title": "The Transfer",
+  "logline": "Jan tells Michael corporate decides at the end of the month and that Jim has applied for a transfer to Stamford; Pam hears it from Dwight, and Michael, still a vault, tries to talk Jim out of it without saying why.",
+  "outline": "A: Michael learns the closing decision is weeks away and that Jim applied to Stamford; he tries to keep Jim without breaking his promise, admits to the office he's scared, and faxes Jan Oscar's report. B: Pam learns about Jim's transfer from Dwight and confronts him. C: Accounting, led by Oscar, builds a one-page case that Scranton is the better branch, with help from Kevin's math and Angela's clip art. Order: cold, A, B, A, C, B, A, C, B, A, B, tag",
+  "theme": "Leaving versus being left",
+  "storySoFar": "Jan told Michael corporate will decide at the end of the month whether Scranton or Stamford closes, and that Jim applied for a transfer to Stamford. Pam heard it from Dwight (who reads every fax), confronted Jim in the kitchen ('When?'), then told him Stamford would be good for him; neither said what they meant. Michael nearly broke his promise to keep Jim's love for Pam secret. In a short, honest meeting he told the office he can't promise anything and is scared too. Oscar, Kevin (who caught a real math mistake) and Angela (who added a cat) made a one-page case that Scranton is better; Michael faxed it to Jan with 'These are my people.' Dwight is measuring Jim's desk. Earlier: Michael secretly bought Pam's watercolor of the building; Roy set the wedding for June 10; Oscar noticed Dwight and Angela's matching bobbleheads; Kelly and Ryan are 'not not' dating.",
   "extras": [],
+  "away": [],
   "stateChanges": [
     {
       "type": "arc",
-      "arc": "Will They, Won't They",
-      "progress": "Jim almost tells Pam in the stairwell/parking lot; Michael interrupts. Coffee promise still pending."
+      "arc": "Jim and Pam",
+      "progress": "Jim applied to Stamford; Pam heard it from Dwight and is hurt; neither says what they mean"
     },
     {
       "type": "arc",
-      "arc": "Michael Needs a Date",
-      "progress": "Michael admits to camera he's lonely and the office is his family; office gives a small gesture."
+      "arc": "Michael, Jan and the Rumor",
+      "progress": "Decision at month's end; Michael admitted he's scared and faxed Jan Oscar's report with 'These are my people.'"
+    },
+    {
+      "type": "relationship",
+      "a": "jim",
+      "b": "pam",
+      "status": "Strained: she found out about his Stamford application from Dwight"
+    },
+    {
+      "type": "relationship",
+      "a": "michael",
+      "b": "jan",
+      "status": "Honest with each other about being scared; still secret"
     },
     {
       "type": "note",
-      "text": "Angela hid a kitten in her desk drawer all episode; the fire drill exposed it. Dwight knew."
+      "text": "Accounting's one-page case for Scranton (with Angela's cat clip art) was faxed to Jan"
     },
     {
-      "type": "gag",
-      "text": "Andy tries too hard as self-appointed fire marshal; ignored, then locks himself out."
+      "type": "note",
+      "text": "Dwight has measured Jim's desk for the Loyalty Task Force headquarters"
     }
   ],
   "scenes": [
@@ -33,60 +46,55 @@
       "region": "bullpen",
       "venue": "",
       "present": [
-        "jim",
         "dwight",
-        "pam"
+        "kevin",
+        "creed",
+        "stanley"
       ],
-      "recap": "Jim convinces Dwight his desk phone smells like smoke.",
+      "away": [],
+      "recap": "Dwight drills the office on looking busy in case corporate visits without warning.",
       "beats": [
         {
           "type": "say",
-          "who": "jim",
-          "text": "Dwight, do you smell smoke?",
+          "who": "dwight",
+          "text": "Corporate inspection drill. When I say 'Jan,' everyone looks busy. Jan!",
+          "to": "all",
+          "mood": "excited"
+        },
+        {
+          "type": "action",
+          "who": "kevin",
+          "verb": "typing",
+          "target": "none",
+          "caption": "types furiously on a keyboard that isn't plugged in"
+        },
+        {
+          "type": "action",
+          "who": "creed",
+          "verb": "copy",
+          "target": "none",
+          "caption": "holds a blank sheet of paper very seriously"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Stanley. You didn't move.",
+          "to": "stanley",
+          "mood": "angry"
+        },
+        {
+          "type": "say",
+          "who": "stanley",
+          "text": "This is how I look busy.",
           "to": "dwight",
           "mood": "deadpan"
-        },
-        {
-          "type": "action",
-          "who": "dwight",
-          "verb": "search",
-          "target": "none",
-          "caption": "sniffs the air like a bloodhound"
-        },
-        {
-          "type": "say",
-          "who": "dwight",
-          "text": "Yes. It's coming from the phone. Electrical fire. Or sabotage.",
-          "to": "jim",
-          "mood": "panicked"
-        },
-        {
-          "type": "action",
-          "who": "jim",
-          "verb": "prank",
-          "target": "dwight",
-          "caption": "holds a smoldering birthday candle under his desk"
-        },
-        {
-          "type": "say",
-          "who": "dwight",
-          "text": "Everybody remain calm! I will handle this with my fire extinguisher and my body.",
-          "to": "all",
-          "mood": "panicked"
         },
         {
           "type": "react",
           "who": [
-            "pam"
+            "dwight"
           ],
-          "reaction": "look_at_camera"
-        },
-        {
-          "type": "say",
-          "who": "pam",
-          "text": "Dwight, it's a candle. It says Happy Birthday Stanley.",
-          "to": "dwight",
-          "mood": "deadpan"
+          "reaction": "stare"
         }
       ]
     },
@@ -94,21 +102,323 @@
       "part": "act1",
       "plot": "A",
       "set": "office",
+      "region": "michael_office",
+      "venue": "",
+      "present": [
+        "michael"
+      ],
+      "away": [],
+      "recap": "Jan calls: corporate decides at the end of the month, and Jim Halpert has applied for a transfer to Stamford.",
+      "beats": [
+        {
+          "type": "action",
+          "who": "michael",
+          "verb": "phone_call",
+          "target": "none",
+          "caption": "answers the phone, sitting very still"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "End of the month. Okay. And either way, you'll call me first. Before the fax.",
+          "to": "none",
+          "mood": "nervous"
+        },
+        {
+          "type": "pause",
+          "seconds": 3,
+          "caption": ""
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Jim applied? To Stamford? When? No. No, I didn't know. Why would I know?",
+          "to": "none",
+          "mood": "panicked"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Jan. Can I say something not as a manager? I'm scared.",
+          "to": "none",
+          "mood": "sad"
+        },
+        {
+          "type": "talking_head",
+          "who": "michael",
+          "lines": [
+            "Jan said she was scared too. Then she said, 'Don't tell anyone I said that.'",
+            "We have a lot of things we don't tell anyone. It's kind of our thing."
+          ],
+          "mood": "sad"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "B",
+      "set": "office",
+      "region": "reception",
+      "venue": "",
+      "present": [
+        "pam",
+        "dwight"
+      ],
+      "away": [],
+      "recap": "Dwight gleefully tells Pam that Jim has applied to Stamford; she didn't know.",
+      "beats": [
+        {
+          "type": "move",
+          "who": "dwight",
+          "to": "pam",
+          "pace": "hurry"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Pam. Wonderful news. Jim has applied for a transfer to Stamford. I saw the fax. I read every fax.",
+          "to": "pam",
+          "mood": "excited"
+        },
+        {
+          "type": "pause",
+          "seconds": 3,
+          "caption": ""
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Jim's... leaving?",
+          "to": "dwight",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "Hopefully. I've already measured his desk for the Loyalty Task Force headquarters.",
+          "to": "pam",
+          "mood": "smug"
+        },
+        {
+          "type": "talking_head",
+          "who": "pam",
+          "lines": [
+            "It's a good opportunity. Stamford is bigger. It makes sense.",
+            "I just thought I'd hear it from Jim. Not from... the fax guy."
+          ],
+          "mood": "sad"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "A",
+      "set": "office",
+      "region": "michael_office",
+      "venue": "",
+      "present": [
+        "michael",
+        "jim"
+      ],
+      "away": [],
+      "recap": "Michael calls Jim in and tries to talk him out of Stamford without breaking his promise, and nearly breaks it.",
+      "beats": [
+        {
+          "type": "move",
+          "who": "jim",
+          "to": "michael_guest_1",
+          "pace": "walk"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Jim. Stamford. Is this about... the thing? The vault thing?",
+          "to": "jim",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "It's a good job, Michael. It's a step up.",
+          "to": "michael",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Because if this is about a certain person with a certain date in June—",
+          "to": "jim",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "Michael.",
+          "to": "michael",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Vault. Vault. I said nothing. That was a hypothetical June.",
+          "to": "jim",
+          "mood": "panicked"
+        },
+        {
+          "type": "talking_head",
+          "who": "jim",
+          "lines": [
+            "If Scranton closes, I need a plan. If it doesn't close... I still might need a plan.",
+            "Watching someone plan a wedding from twenty feet away is a lot. It's just a lot."
+          ],
+          "mood": "sad"
+        }
+      ]
+    },
+    {
+      "part": "act1",
+      "plot": "C",
+      "set": "office",
+      "region": "accounting",
+      "venue": "",
+      "present": [
+        "oscar",
+        "kevin",
+        "angela"
+      ],
+      "away": [],
+      "recap": "Oscar decides accounting will build a one-page case proving Scranton is the better branch.",
+      "beats": [
+        {
+          "type": "say",
+          "who": "oscar",
+          "text": "If corporate decides on numbers, we give them better numbers. Revenue per employee. Customer retention. One page.",
+          "to": "all",
+          "mood": "excited"
+        },
+        {
+          "type": "say",
+          "who": "angela",
+          "text": "I'll format it. Nobody formats like me.",
+          "to": "oscar",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "I'll do the math.",
+          "to": "oscar",
+          "mood": "happy"
+        },
+        {
+          "type": "pause",
+          "seconds": 2,
+          "caption": ""
+        },
+        {
+          "type": "say",
+          "who": "oscar",
+          "text": "Kevin, you can... check the math.",
+          "to": "kevin",
+          "mood": "awkward"
+        },
+        {
+          "type": "talking_head",
+          "who": "oscar",
+          "lines": [
+            "I don't love it here. But I'm not moving to Connecticut, and I'm not losing to Josh.",
+            "Josh plays squash."
+          ],
+          "mood": "deadpan"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "B",
+      "set": "kitchen",
+      "region": "kitchen",
+      "venue": "",
+      "present": [
+        "jim",
+        "pam"
+      ],
+      "away": [],
+      "recap": "Pam confronts Jim in the kitchen about hearing the news from Dwight.",
+      "beats": [
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "You applied to Stamford. Dwight told me. Dwight.",
+          "to": "jim",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "I didn't tell Dwight. He reads the faxes.",
+          "to": "pam",
+          "mood": "awkward"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "Were you going to tell me?",
+          "to": "jim",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "Yes.",
+          "to": "pam",
+          "mood": "nervous"
+        },
+        {
+          "type": "say",
+          "who": "pam",
+          "text": "When?",
+          "to": "jim",
+          "mood": "neutral"
+        },
+        {
+          "type": "pause",
+          "seconds": 4,
+          "caption": ""
+        },
+        {
+          "type": "exit",
+          "who": [
+            "pam"
+          ],
+          "how": "walk"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "A",
+      "set": "office",
       "region": "conference_room",
       "venue": "",
       "present": [
         "michael",
-        "dwight",
         "jim",
         "pam",
-        "angela",
-        "andy",
-        "toby",
+        "dwight",
         "stanley",
+        "phyllis",
+        "angela",
+        "oscar",
         "kevin",
-        "oscar"
+        "kelly",
+        "meredith",
+        "creed",
+        "ryan",
+        "toby"
       ],
-      "recap": "Michael announces a surprise fire drill disguised as a family meeting.",
+      "away": [],
+      "recap": "Michael tells the office the decision comes at the end of the month and admits he's scared; for once, nobody makes fun of him.",
       "beats": [
         {
           "type": "gather",
@@ -120,400 +430,158 @@
         {
           "type": "say",
           "who": "michael",
-          "text": "Family. Today we practice the worst day of our lives. Together. Surprise fire drill.",
+          "text": "Corporate decides at the end of the month. Us or Stamford. I don't know which.",
           "to": "all",
-          "mood": "excited"
+          "mood": "sad"
         },
         {
           "type": "say",
-          "who": "toby",
-          "text": "Actually, corporate requires notice for drills. Also an evacuation map.",
+          "who": "michael",
+          "text": "I promised you nobody would lose their job. I shouldn't have. I don't know that. I'm scared too.",
+          "to": "all",
+          "mood": "sad"
+        },
+        {
+          "type": "pause",
+          "seconds": 4,
+          "caption": "nobody says anything"
+        },
+        {
+          "type": "say",
+          "who": "stanley",
+          "text": "Thank you for not making a speech, Michael.",
           "to": "michael",
           "mood": "neutral"
         },
         {
           "type": "say",
           "who": "michael",
-          "text": "Toby, there is no map for love. Or fire. Sit down.",
-          "to": "toby",
-          "mood": "annoyed"
-        },
-        {
-          "type": "say",
-          "who": "stanley",
-          "text": "I'm not leaving my crossword for a fake fire.",
-          "to": "michael",
-          "mood": "annoyed"
-        },
-        {
-          "type": "say",
-          "who": "michael",
-          "text": "Then you will die in a real one, Stanley. Alone.",
+          "text": "I had one. It was eleven pages. It had a song.",
           "to": "stanley",
-          "mood": "angry"
+          "mood": "sad"
         },
         {
-          "type": "pause",
-          "seconds": 2,
-          "caption": "awkward silence"
+          "type": "say",
+          "who": "phyllis",
+          "text": "We know you're trying, Michael.",
+          "to": "michael",
+          "mood": "happy"
         },
         {
           "type": "talking_head",
-          "who": "michael",
+          "who": "toby",
           "lines": [
-            "People say I'm just an office manager. I'm more of a fire marshal of feelings.",
-            "Not a real marshal. That's Andy. He applied."
+            "I've worked here eight years. That's the first meeting that ended early.",
+            "I don't know what to do with my afternoon."
           ],
-          "mood": "smug"
+          "mood": "awkward"
         }
       ]
     },
     {
-      "part": "act1",
+      "part": "act2",
+      "plot": "C",
+      "set": "office",
+      "region": "accounting",
+      "venue": "",
+      "present": [
+        "oscar",
+        "kevin",
+        "angela"
+      ],
+      "away": [],
+      "recap": "Kevin finds a real mistake in Oscar's numbers; Angela adds cat clip art; the page is done.",
+      "beats": [
+        {
+          "type": "say",
+          "who": "kevin",
+          "text": "Oscar. You carried the one wrong. Here. Scranton's even better than you said.",
+          "to": "oscar",
+          "mood": "neutral"
+        },
+        {
+          "type": "action",
+          "who": "oscar",
+          "verb": "search",
+          "target": "none",
+          "caption": "checks the column twice"
+        },
+        {
+          "type": "say",
+          "who": "oscar",
+          "text": "...He's right. Kevin is right. Nobody move.",
+          "to": "angela",
+          "mood": "awkward"
+        },
+        {
+          "type": "say",
+          "who": "angela",
+          "text": "I added a border. And a small cat. For professionalism.",
+          "to": "oscar",
+          "mood": "smug"
+        },
+        {
+          "type": "say",
+          "who": "oscar",
+          "text": "Take out the cat.",
+          "to": "angela",
+          "mood": "annoyed"
+        },
+        {
+          "type": "say",
+          "who": "angela",
+          "text": "The cat stays.",
+          "to": "oscar",
+          "mood": "angry"
+        }
+      ]
+    },
+    {
+      "part": "act2",
       "plot": "B",
       "set": "office",
       "region": "reception",
       "venue": "",
       "present": [
-        "jim",
         "pam",
-        "angela"
+        "jim"
       ],
-      "recap": "Jim tries to say something to Pam; Angela acts strange about her drawer.",
+      "away": [],
+      "recap": "Pam tells Jim, carefully, that Stamford would be good for him; neither says what they mean.",
       "beats": [
         {
           "type": "move",
           "who": "jim",
-          "to": "pam_desk",
+          "to": "pam",
           "pace": "walk"
         },
         {
           "type": "say",
+          "who": "pam",
+          "text": "Stamford would be good for you. Really. You're wasted here.",
+          "to": "jim",
+          "mood": "neutral"
+        },
+        {
+          "type": "say",
           "who": "jim",
-          "text": "Hey. So. Since the lake, I've kind of wanted to say something.",
+          "text": "Yeah. Maybe.",
           "to": "pam",
-          "mood": "nervous"
+          "mood": "sad"
         },
         {
           "type": "say",
           "who": "pam",
-          "text": "Yeah? Me too, actually. Maybe. Is it a coffee thing?",
+          "text": "Who's going to help me with Dwight, though?",
           "to": "jim",
           "mood": "awkward"
         },
         {
           "type": "say",
           "who": "jim",
-          "text": "It's a... bigger-than-coffee thing. Well, coffee-adjacent.",
+          "text": "You don't need help with Dwight. You've got the crickets.",
           "to": "pam",
-          "mood": "nervous"
-        },
-        {
-          "type": "say",
-          "who": "angela",
-          "text": "Nobody touch my desk during the drill. Especially the bottom drawer.",
-          "to": "all",
-          "mood": "annoyed"
-        },
-        {
-          "type": "react",
-          "who": [
-            "jim"
-          ],
-          "reaction": "look_at_camera"
-        },
-        {
-          "type": "talking_head",
-          "who": "angela",
-          "lines": [
-            "I have nothing in my drawer. Nothing that meows. Why would you ask?"
-          ],
-          "mood": "nervous"
-        }
-      ]
-    },
-    {
-      "part": "act1",
-      "plot": "C",
-      "set": "office",
-      "region": "bullpen",
-      "venue": "",
-      "present": [
-        "andy",
-        "oscar",
-        "kevin",
-        "phyllis"
-      ],
-      "recap": "Andy appoints himself fire marshal and nobody listens.",
-      "beats": [
-        {
-          "type": "enter",
-          "who": [
-            "andy"
-          ],
-          "to": "andy_desk"
-        },
-        {
-          "type": "say",
-          "who": "andy",
-          "text": "Fire marshal Bernard reporting! Everyone take a hat. Nard-Dog safety hats.",
-          "to": "all",
-          "mood": "excited"
-        },
-        {
-          "type": "action",
-          "who": "andy",
-          "verb": "present",
-          "target": "none",
-          "caption": "hands out paper hats nobody wants"
-        },
-        {
-          "type": "say",
-          "who": "oscar",
-          "text": "Actually, those are birthday hats from Stanley's party.",
-          "to": "andy",
-          "mood": "annoyed"
-        },
-        {
-          "type": "say",
-          "who": "kevin",
-          "text": "I like hat. Hat good.",
-          "to": "andy",
           "mood": "happy"
-        },
-        {
-          "type": "say",
-          "who": "andy",
-          "text": "Thank you, Kevin. Finally, someone with vision.",
-          "to": "kevin",
-          "mood": "happy"
-        },
-        {
-          "type": "talking_head",
-          "who": "andy",
-          "lines": [
-            "I just want people to like me. And also to survive. In that order."
-          ],
-          "mood": "nervous"
-        }
-      ]
-    },
-    {
-      "part": "act2",
-      "plot": "A",
-      "set": "parking_lot",
-      "region": "parking_lot",
-      "venue": "",
-      "present": [
-        "michael",
-        "dwight",
-        "oscar",
-        "kevin",
-        "stanley",
-        "phyllis"
-      ],
-      "recap": "The drill sends everyone outside; Michael demands a head count.",
-      "beats": [
-        {
-          "type": "caption",
-          "text": "THE FIRE DRILL"
-        },
-        {
-          "type": "say",
-          "who": "michael",
-          "text": "Head count! I want everyone on the asphalt, mourning each other.",
-          "to": "all",
-          "mood": "excited"
-        },
-        {
-          "type": "say",
-          "who": "dwight",
-          "text": "Fifteen present. One missing. Angela.",
-          "to": "michael",
-          "mood": "panicked"
-        },
-        {
-          "type": "say",
-          "who": "michael",
-          "text": "Then she's burning! Dwight, rescue her. Take the fire extinguisher.",
-          "to": "dwight",
-          "mood": "panicked"
-        },
-        {
-          "type": "move",
-          "who": "dwight",
-          "to": "parking_lot",
-          "pace": "hurry"
-        },
-        {
-          "type": "react",
-          "who": [
-            "stanley"
-          ],
-          "reaction": "eye_roll"
-        }
-      ]
-    },
-    {
-      "part": "act2",
-      "plot": "B",
-      "set": "office",
-      "region": "accounting",
-      "venue": "",
-      "present": [
-        "angela",
-        "dwight",
-        "jim",
-        "pam"
-      ],
-      "recap": "Dwight finds Angela's secret kitten; it escapes at the worst moment.",
-      "beats": [
-        {
-          "type": "say",
-          "who": "dwight",
-          "text": "Angela, evacuate. Also, I know about the kitten. Everyone will.",
-          "to": "angela",
-          "mood": "nervous"
-        },
-        {
-          "type": "say",
-          "who": "angela",
-          "text": "Dwight! You promised. I'm keeping her until my cat sitter returns.",
-          "to": "dwight",
-          "mood": "panicked"
-        },
-        {
-          "type": "action",
-          "who": "angela",
-          "verb": "hide",
-          "target": "none",
-          "caption": "scoops a kitten into her cardigan"
-        },
-        {
-          "type": "say",
-          "who": "jim",
-          "text": "Is that a kitten in your sweater?",
-          "to": "angela",
-          "mood": "deadpan"
-        },
-        {
-          "type": "say",
-          "who": "angela",
-          "text": "It's a very small cat. Dwight smuggled her. She's his.",
-          "to": "all",
-          "mood": "angry"
-        },
-        {
-          "type": "say",
-          "who": "dwight",
-          "text": "False. I mean, true. Fine. Her name is Sprinkles.",
-          "to": "all",
-          "mood": "awkward"
-        },
-        {
-          "type": "talking_head",
-          "who": "dwight",
-          "lines": [
-            "I kept the secret all day. Angela asked me to. A good assistant keeps secrets, even when it costs him dignity."
-          ],
-          "mood": "deadpan"
-        }
-      ]
-    },
-    {
-      "part": "act2",
-      "plot": "C",
-      "set": "parking_lot",
-      "region": "entrance",
-      "venue": "",
-      "present": [
-        "andy",
-        "kevin",
-        "creed"
-      ],
-      "recap": "Andy locks the door and strands everyone outside.",
-      "beats": [
-        {
-          "type": "action",
-          "who": "andy",
-          "verb": "present",
-          "target": "none",
-          "caption": "locks the entrance door to seal the building"
-        },
-        {
-          "type": "say",
-          "who": "andy",
-          "text": "Safety first. Nobody re-enters until I say so.",
-          "to": "all",
-          "mood": "excited"
-        },
-        {
-          "type": "say",
-          "who": "kevin",
-          "text": "My chili is in there.",
-          "to": "andy",
-          "mood": "sad"
-        },
-        {
-          "type": "say",
-          "who": "creed",
-          "text": "I once lived in a building like this. It burned. I was fine.",
-          "to": "andy",
-          "mood": "neutral"
-        },
-        {
-          "type": "pause",
-          "seconds": 2,
-          "caption": ""
-        },
-        {
-          "type": "say",
-          "who": "andy",
-          "text": "The key's inside. Oh no. Oh no, no.",
-          "to": "all",
-          "mood": "panicked"
-        },
-        {
-          "type": "react",
-          "who": [
-            "oscar"
-          ],
-          "reaction": "look_at_camera"
-        }
-      ]
-    },
-    {
-      "part": "act2",
-      "plot": "B",
-      "set": "parking_lot",
-      "region": "parking_lot",
-      "venue": "",
-      "present": [
-        "jim",
-        "pam",
-        "michael"
-      ],
-      "recap": "Jim finally starts to tell Pam; Michael interrupts.",
-      "beats": [
-        {
-          "type": "move",
-          "who": "jim",
-          "to": "pam",
-          "pace": "walk"
-        },
-        {
-          "type": "say",
-          "who": "jim",
-          "text": "Pam, I've been trying to say this all day. I think you should know that I—",
-          "to": "pam",
-          "mood": "nervous"
-        },
-        {
-          "type": "say",
-          "who": "michael",
-          "text": "Everybody! Group hug! Fire is scary, and I'm lonely!",
-          "to": "all",
-          "mood": "sad"
         },
         {
           "type": "react",
@@ -523,111 +591,178 @@
           "reaction": "laugh"
         },
         {
-          "type": "say",
+          "type": "talking_head",
           "who": "pam",
-          "text": "Later? Coffee. Thursday after art class?",
-          "to": "jim",
-          "mood": "happy"
-        },
-        {
-          "type": "say",
-          "who": "jim",
-          "text": "Thursday. Yes. Good.",
-          "to": "pam",
-          "mood": "happy"
+          "lines": [
+            "I'm happy for him. I'm happy. That's what this is.",
+            "This is my happy face."
+          ],
+          "mood": "sad"
         }
       ]
     },
     {
       "part": "act2",
       "plot": "A",
+      "set": "office",
+      "region": "reception",
+      "venue": "",
+      "present": [
+        "michael",
+        "oscar",
+        "pam"
+      ],
+      "away": [],
+      "recap": "Michael faxes accounting's one-page case to Jan, with a handwritten note: 'These are my people.'",
+      "beats": [
+        {
+          "type": "move",
+          "who": "oscar",
+          "to": "michael",
+          "pace": "walk"
+        },
+        {
+          "type": "action",
+          "who": "oscar",
+          "verb": "present",
+          "target": "michael",
+          "caption": "hands Michael a single page with a small cat in the corner"
+        },
+        {
+          "type": "say",
+          "who": "michael",
+          "text": "Oscar. You did this? For us?",
+          "to": "oscar",
+          "mood": "sad"
+        },
+        {
+          "type": "say",
+          "who": "oscar",
+          "text": "For me. Mostly. A little for us.",
+          "to": "michael",
+          "mood": "awkward"
+        },
+        {
+          "type": "move",
+          "who": "michael",
+          "to": "copier",
+          "pace": "walk"
+        },
+        {
+          "type": "action",
+          "who": "michael",
+          "verb": "copy",
+          "target": "none",
+          "caption": "writes 'These are my people. - Michael' at the bottom and feeds it into the fax"
+        },
+        {
+          "type": "react",
+          "who": [
+            "pam"
+          ],
+          "reaction": "look_at_camera"
+        }
+      ]
+    },
+    {
+      "part": "act2",
+      "plot": "B",
       "set": "parking_lot",
       "region": "parking_lot",
       "venue": "",
       "present": [
-        "michael",
         "jim",
         "pam",
-        "dwight",
-        "angela",
-        "andy",
-        "kevin",
-        "stanley",
-        "oscar"
+        "roy"
       ],
-      "recap": "Michael admits he's lonely and the office gives him a small gesture.",
+      "away": [],
+      "recap": "At five, Roy picks Pam up; she looks back at Jim, who sits in his car and doesn't start it.",
       "beats": [
         {
-          "type": "say",
-          "who": "michael",
-          "text": "I made this a drill because I wanted everyone in one place. That's all.",
-          "to": "all",
-          "mood": "sad"
+          "type": "caption",
+          "text": "5:05 PM"
         },
         {
-          "type": "talking_head",
-          "who": "michael",
-          "lines": [
-            "I'm lonely. This office is my family. A weird family, with no mom and a lot of dads who are Stanley.",
-            "I don't need a fire. I need people who run out with me."
-          ],
-          "mood": "sad"
+          "type": "move",
+          "who": "pam",
+          "to": "roy",
+          "pace": "walk"
         },
         {
           "type": "say",
-          "who": "stanley",
-          "text": "Fine. I'll stand out here. Five more minutes.",
-          "to": "michael",
+          "who": "roy",
+          "text": "Ready? Mom wants to talk napkins tonight.",
+          "to": "pam",
           "mood": "neutral"
         },
         {
-          "type": "action",
-          "who": "kevin",
-          "verb": "hug",
-          "target": "michael",
-          "caption": "hugs Michael, spilling a little chili"
+          "type": "say",
+          "who": "pam",
+          "text": "Napkins. Yeah.",
+          "to": "roy",
+          "mood": "neutral"
         },
         {
-          "type": "say",
-          "who": "michael",
-          "text": "Thank you, Kevin. That's what she said.",
-          "to": "kevin",
-          "mood": "happy"
+          "type": "move",
+          "who": "jim",
+          "to": "car_jim",
+          "pace": "walk"
+        },
+        {
+          "type": "pause",
+          "seconds": 3,
+          "caption": "Pam looks back. Jim doesn't start his car."
+        },
+        {
+          "type": "exit",
+          "who": [
+            "pam",
+            "roy"
+          ],
+          "how": "walk"
         }
       ]
     },
     {
       "part": "tag",
       "plot": "tag",
-      "set": "parking_lot",
-      "region": "entrance",
+      "set": "office",
+      "region": "bullpen",
       "venue": "",
       "present": [
-        "andy",
-        "dwight"
+        "dwight",
+        "jim"
       ],
-      "recap": "Andy is still locked out.",
+      "away": [],
+      "recap": "Dwight starts measuring Jim's desk for his headquarters while Jim is still sitting at it.",
       "beats": [
-        {
-          "type": "say",
-          "who": "andy",
-          "text": "I am so sorry, everyone. I'll wait out here. Forever.",
-          "to": "all",
-          "mood": "sad"
-        },
-        {
-          "type": "say",
-          "who": "dwight",
-          "text": "Good. Fire marshal goes down with the building.",
-          "to": "andy",
-          "mood": "deadpan"
-        },
         {
           "type": "action",
           "who": "dwight",
-          "verb": "hug",
-          "target": "none",
-          "caption": "cradles Sprinkles through his jacket"
+          "verb": "search",
+          "target": "jim",
+          "caption": "measures Jim's desk with a tape measure while Jim is at it"
+        },
+        {
+          "type": "say",
+          "who": "jim",
+          "text": "I'm still here, Dwight.",
+          "to": "dwight",
+          "mood": "deadpan"
+        },
+        {
+          "type": "say",
+          "who": "dwight",
+          "text": "For now. Lift your elbow. I need the full depth.",
+          "to": "jim",
+          "mood": "smug"
+        },
+        {
+          "type": "react",
+          "who": [
+            "jim"
+          ],
+          "reaction": "sigh"
         }
       ]
     }
