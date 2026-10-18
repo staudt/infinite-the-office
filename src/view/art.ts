@@ -22,7 +22,8 @@ class Art {
   private dressed = new Map<string, { base: string; color: string }>();
   private tints = new Map<string, HTMLCanvasElement>();
 
-  async load(): Promise<void> {
+  /** Everything at once; `progress` hears about each image as it arrives (or fails). */
+  async load(progress?: (done: number, total: number) => void): Promise<void> {
     try {
       const r = await fetch('sprites/index.json');
       if (!r.ok) return;
@@ -31,10 +32,15 @@ class Art {
       return; // no art: views draw placeholders
     }
     const all = [this.index.images, this.index.props, this.index.anims].flatMap((g) => Object.entries(g ?? {}));
-    await Promise.all(all.map(([name, e]) => new Promise<void>((done) => {
+    // Progress by pixel area, a fair stand-in for bytes (a portrait weighs as much as dozens of walk frames).
+    const area = (e: Entry | Anim) => ('frames' in e ? e.frameW * e.frameH * e.frames : e.w * e.h);
+    const total = all.reduce((t, [, e]) => t + area(e), 0);
+    let got = 0;
+    await Promise.all(all.map(([name, e]) => new Promise<void>((resolve) => {
+      const done = () => { progress?.((got += area(e)), total); resolve(); };
       const im = new Image();
       im.onload = () => { this.imgs.set(name, im); done(); };
-      im.onerror = () => done();
+      im.onerror = done;
       im.src = `sprites/${e.src}`;
     })));
   }

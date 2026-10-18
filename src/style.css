@@ -54,6 +54,7 @@ main { flex: 1; min-height: 0; display: flex; gap: 14px; }
 #left { --stage-w: min(calc(100vw - 48px - var(--side)), calc((100vh - 250px) * 16 / 9), 1500px); width: max(480px, var(--stage-w)); }
 #stage { position: relative; flex: none; width: 100%; aspect-ratio: 16 / 9; container-type: inline-size; --u: 1.7cqw; }
 #head-gfx[hidden], #map-gfx[hidden] { display: none; }
+#loading { position: absolute; inset: 0; display: grid; place-items: center; font-size: calc(var(--u) * 1.5); color: var(--dim); }
 
 /* The drawn confessional: same box as the map, layered images plus HTML text. */
 #head-gfx, #map-gfx {

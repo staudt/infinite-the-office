@@ -42,6 +42,11 @@ if (RENDER) {
 
 // ------------------------------------------------------------------ stage + views
 
+// The art is big (~30 MB, half a minute on a phone), so it starts downloading at once and only playback
+// waits for it (run), with progress on the stage; the start screen opens without it.
+const artReady = art.load((done, total) => ($('loading').textContent = `Loading the office… ${Math.round((done / total) * 100)}%`));
+void artReady.then(() => $('loading').remove());
+
 /** What is on screen: an episode, who is on the roster, and how the stage should seat them. */
 interface Playable {
   episode: Episode;
@@ -244,7 +249,7 @@ async function run(n: number, target?: Target): Promise<void> {
   playing = null;
   hideEnded();
   setStatus(n === nowPlaying ? 'rewinding…' : `loading episode ${n}…`);
-  const entry = await entryFor(n);
+  const [entry] = await Promise.all([entryFor(n), artReady]); // before playback, so rendered videos never catch a half-loaded sprite
   if (my !== generation) return;
   if (!entry) {
     if (RENDER) {
@@ -359,7 +364,6 @@ function markChosen(): void {
 
 /** Decide what to air: ?show= / ?play=new|library, the saved series, or the start screen. */
 async function main(): Promise<void> {
-  await art.load(); // before playback, so rendered videos never catch a half-loaded sprite
   const deepScene = Number(params.get('scene') ?? 0);
   const target: Target | undefined = deepScene > 0 ? { scene: deepScene - 1 } : undefined;
   if (!RENDER) {
