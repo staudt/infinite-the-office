@@ -55,7 +55,6 @@ export class StartScreen {
       if (value('#series-name')) play.name = value('#series-name');
       go(play);
     });
-    el.querySelector('#play-demo')!.addEventListener('click', () => go({ demo: '1' }));
     el.querySelector('#library-list')!.addEventListener('click', (e) => {
       const id = (e.target as HTMLElement).dataset.show;
       if (id) go({ show: id });
@@ -81,7 +80,7 @@ export class StartScreen {
     connEl.textContent = conn.text;
     connEl.className = `conn-line ${conn.cls}`;
 
-    // New series are written by the AI; without it (the online demo) the form is hidden and only stored shows play.
+    // New series are written by the AI; without it (the published site) the form is hidden and only stored shows play.
     // A local writer server without a key keeps a short note on how to enable it.
     const canCreate = !!opts.health?.llm;
     (this.el.querySelector('#create-area') as HTMLFieldSetElement).disabled = !canCreate;

@@ -1,4 +1,4 @@
-// The contract between the writer (LLM or hand-written demo) and the show engine.
+// The contract between the writer (LLM or a hand-written season) and the show engine.
 // Parsing is lenient on purpose: a missing or invalid non-essential field is repaired
 // with a sensible default (via .catch) instead of failing the whole episode, because
 // every retry costs credits. Places are names from the set files (regions, spots), and

@@ -3,7 +3,6 @@ import '@fontsource/jetbrains-mono/700.css';
 import '@fontsource/jetbrains-mono/400-italic.css';
 import './style.css';
 import { Director } from './choreo/director';
-import { DEMO_EPISODE, DEMO_ROSTER } from './demo';
 import type { EngineEvent } from './engine/events';
 import { Stage, TICK } from './engine/stage';
 import type { Task } from './engine/tasks';
@@ -27,7 +26,6 @@ import {
 
 const $ = <T extends HTMLElement>(id: string) => document.getElementById(id) as T;
 const params = new URLSearchParams(location.search);
-const SEED = Number(params.get('seed') ?? 1);
 
 // Render mode (?render=1, used by `npm run render`): no real-time loop and no UI chrome.
 // The renderer script steps the simulation by exact simulated time through window.__render
@@ -52,7 +50,8 @@ interface Playable {
   seed: number;
   series: Series | null;
 }
-let cur: Playable = { episode: DEMO_EPISODE, roster: DEMO_ROSTER, label: 'Demo', seed: SEED, series: null };
+/** Null until a show starts (the start screen opens over an empty stage). */
+let cur: Playable | null = null;
 
 // Every run plays on a fresh stage, so jumping (to a scene or a log line) replays the
 // episode silently up to that point: the engine is deterministic for a given seed.
@@ -71,7 +70,7 @@ function onEvent(e: EngineEvent): void {
   card.onEvent(e);
   if (RENDER) subtitle(e);
   if (CLIP && e.type === 'sceneEnd' && e.index === renderTargetScene) renderState.done = true;
-  if (e.type === 'episodeStart') $('ep').textContent = cur.series ? `${cur.label}: ${e.title}` : e.title;
+  if (e.type === 'episodeStart') $('ep').textContent = cur?.series ? `${cur.label}: ${e.title}` : e.title;
   if (e.type === 'sceneStart') {
     scene = e.index;
     $('seg').textContent = sceneHeading(e);
@@ -113,6 +112,7 @@ function fastForward(task: Task, until: () => boolean): void {
 
 /** (Re)start the current episode on a fresh stage; `done` runs when it ends. */
 function start(target?: Target, done: () => void = () => start()): void {
+  if (!cur) return;
   const { episode, roster, series } = cur;
   stage = new Stage(cur.seed, CAST, episode, roster, series ?? {});
   map = new SpriteMapView($('map-gfx'), stage);
@@ -147,7 +147,7 @@ function setStatus(s: string): void {
 }
 
 function renderStatus(): void {
-  if (!stage) return;
+  if (!stage || !cur) return;
   const sceneInfo = cur.episode.scenes.length ? ` · scene ${scene + 1}/${cur.episode.scenes.length}` : '';
   $('status').textContent = `${paused ? '⏸ paused' : `▶ ${speed}x`}${sceneInfo}${status ? ` · ${status}` : ''}`;
   if (!$('debug').hidden) {
@@ -205,7 +205,7 @@ const ready = new Set<number>();
 
 /** The card's episode arrows: back to any earlier episode of this run, forward once the next is ready. */
 function navFor(): EpisodeNav | null {
-  if (!cur.series) return null;
+  if (!cur?.series) return null;
   return { label: cur.label, prev: !!base && nowPlaying > base.n, next: ready.has(nowPlaying + 1) };
 }
 
@@ -357,24 +357,11 @@ function markChosen(): void {
   }
 }
 
-/** The hand-written demo episode, looping (the fallback when there is nothing else to play). */
-function playDemo(target?: Target): void {
-  generation++;
-  cur = { episode: DEMO_EPISODE, roster: DEMO_ROSTER, label: 'Demo', seed: SEED, series: null };
-  $('show').textContent = 'THE OFFICE';
-  start(target);
-}
-
-/** Decide what to air: ?demo, ?show= / ?play=new|library, the saved series, the start screen, or the demo. */
+/** Decide what to air: ?show= / ?play=new|library, the saved series, or the start screen. */
 async function main(): Promise<void> {
   await art.load(); // before playback, so rendered videos never catch a half-loaded sprite
   const deepScene = Number(params.get('scene') ?? 0);
   const target: Target | undefined = deepScene > 0 ? { scene: deepScene - 1 } : undefined;
-  if (params.has('demo')) {
-    if (!RENDER) await refreshHealth();
-    playDemo(target);
-    return;
-  }
   if (!RENDER) {
     await refreshHealth();
     setInterval(refreshHealth, 20_000);
@@ -388,7 +375,6 @@ async function main(): Promise<void> {
     const direction = params.get('direction') ?? '';
     setStatus('creating a new series…');
     showNotice('Writing your series…', `The showrunner is planning season 1${direction ? ` (${direction.slice(0, 80)}${direction.length > 80 ? '…' : ''})` : ''}. This takes a minute.`);
-    playDemo(); // something to look at while the writers work
     const created = await fetchNewSeries(direction, randomSeed(), params.get('name') ?? '');
     hideEnded();
     series = created.series;
@@ -415,13 +401,11 @@ async function main(): Promise<void> {
   if (!series) {
     const library = await fetchLibrary();
     if (!program && !health?.llm && !library.length) {
-      // No server, nothing stored: the demo is all there is.
-      setStatus('demo episode (no writer server, no stored shows)');
-      playDemo();
+      // No server, nothing stored: nothing to play.
+      setStatus('no shows: run the writer server (npm run server) or add one to library/');
       return;
     }
     if (!status.startsWith("couldn't")) setStatus('choose a show');
-    if (!stage) playDemo(); // attract mode behind the start screen
     await openStart(false);
     return;
   }
@@ -431,7 +415,6 @@ async function main(): Promise<void> {
   // reloads in the same tab, or a pick from the start screen, go straight to the show.
   if (!RENDER && !program && !chosenThisTab()) {
     setStatus('choose a show');
-    playDemo();
     startScreen.onContinue = () => {
       startScreen.onContinue = null;
       markChosen();
@@ -465,7 +448,7 @@ function frame(now: number): void {
       if (playing?.task.done) {
         const p = playing;
         playing = null;
-        p.done(); // the next episode (or the demo loop) starts here
+        p.done(); // the next episode starts here
         break;
       }
     }
@@ -499,8 +482,8 @@ window.addEventListener('keydown', (e) => {
   } else if (e.key === 'N') {
     void openStart(true);
   } else if (e.key === 'ArrowLeft') {
-    jump({ scene: Math.max(0, scene - 1) });
-  } else if (e.key === 'ArrowRight') {
+    if (cur) jump({ scene: Math.max(0, scene - 1) });
+  } else if (e.key === 'ArrowRight' && cur) {
     if (scene + 1 < cur.episode.scenes.length) jump({ scene: scene + 1 });
     else if (cur.series) void run(nowPlaying + 1);
     else jump();
@@ -541,7 +524,7 @@ if (RENDER) {
     get error() { return renderState.error; },
     get done() { return renderState.done; },
     get time() { return stage?.time ?? 0; },
-    get label() { return cur.label; },
+    get label() { return cur?.label ?? ''; },
     /** For test scripts: the live stage (read-only use). */
     get stage() { return stage; },
     /** Advance the show by `dt` seconds of simulated time (exactly, in 60 Hz ticks); true if the picture changed. */

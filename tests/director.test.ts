@@ -1,17 +1,18 @@
 import { describe, expect, it } from 'vitest';
 import { Director } from '../src/choreo/director.ts';
-import { CAST, DEMO_EPISODE, DEMO_ROSTER } from '../src/demo.ts';
+import { CAST } from '../src/world/cast.ts';
 import { SPEED } from '../src/engine/actor.ts';
 import type { EngineEvent } from '../src/engine/events.ts';
 import { Stage, TICK } from '../src/engine/stage.ts';
 import { Episode } from '../src/schema/episode.ts';
+import { EPISODE, ROSTER } from './helpers.ts';
 
-/** Run the whole demo headlessly; `onTick` sees the stage after every tick. */
+/** Run a whole stored episode headlessly; `onTick` sees the stage after every tick. */
 function run(seed: number, onTick?: (st: Stage) => void) {
-  const st = new Stage(seed, CAST, DEMO_EPISODE, DEMO_ROSTER);
+  const st = new Stage(seed, CAST, EPISODE, ROSTER);
   const events: EngineEvent[] = [];
   st.on((e) => events.push(e));
-  const task = st.spawn(new Director(st, DEMO_EPISODE, DEMO_ROSTER).play());
+  const task = st.spawn(new Director(st, EPISODE, ROSTER).play());
   while (!task.done && st.time < 3600) {
     st.update(TICK);
     onTick?.(st);
@@ -20,22 +21,22 @@ function run(seed: number, onTick?: (st: Stage) => void) {
 }
 
 describe('director', () => {
-  it('plays the demo episode to the end in 5-15 minutes', () => {
+  it('plays a stored episode to the end in 5-15 minutes', () => {
     const { st, events, done } = run(1);
     expect(done).toBe(true);
     expect(st.time).toBeGreaterThan(5 * 60);
     expect(st.time).toBeLessThan(15 * 60);
-    expect(events.filter((e) => e.type === 'sceneStart')).toHaveLength(DEMO_EPISODE.scenes.length);
+    expect(events.filter((e) => e.type === 'sceneStart')).toHaveLength(EPISODE.scenes.length);
     expect(events.at(-1)?.type).toBe('episodeEnd');
   });
 
   it('only lets visible people speak', () => {
     const bad: string[] = [];
-    const st = new Stage(1, CAST, DEMO_EPISODE, DEMO_ROSTER);
+    const st = new Stage(1, CAST, EPISODE, ROSTER);
     st.on((e) => {
       if (e.type === 'said' && !st.actor(e.who).visible) bad.push(`${e.t} ${e.who}`);
     });
-    const task = st.spawn(new Director(st, DEMO_EPISODE, DEMO_ROSTER).play());
+    const task = st.spawn(new Director(st, EPISODE, ROSTER).play());
     while (!task.done) st.update(TICK);
     expect(bad).toEqual([]);
   });
@@ -73,11 +74,11 @@ describe('director with a sloppy episode', () => {
         ] },
       ],
     });
-    const st = new Stage(1, CAST, ep, DEMO_ROSTER, { extras: [{ id: 'gary', name: 'Gary', title: 'x', glyph: 'G', color: '#123456' }], deskOverrides: { kevin: 'jim_desk', oscar: 'bogus' } });
+    const st = new Stage(1, CAST, ep, ROSTER, { extras: [{ id: 'gary', name: 'Gary', title: 'x', glyph: 'G', color: '#123456' }], deskOverrides: { kevin: 'jim_desk', oscar: 'bogus' } });
     expect(st.actors.get('gary')?.glyph).toBe('G');
     expect(st.actors.get('kevin')?.desk).toBe('jim_desk');
     expect(st.actors.get('oscar')?.desk).not.toBe('bogus');
-    const task = st.spawn(new Director(st, ep, DEMO_ROSTER).play());
+    const task = st.spawn(new Director(st, ep, ROSTER).play());
     while (!task.done && st.time < 600) st.update(TICK);
     expect(task.done).toBe(true);
   });
@@ -90,7 +91,7 @@ describe('kitchen and annex sets', () => {
 
   it('plays old office scenes with a kitchen or annex region in the new sets, with the annex crew at their desks', () => {
     const ep = Episode.parse({ title: 'Old', logline: '', scenes: [scene('office', 'kitchen', ['kevin']), scene('office', 'annex', ['kelly']), scene('annex', 'annex', ['ryan'])] });
-    const roster = [...DEMO_ROSTER, 'ryan', 'toby'];
+    const roster = [...new Set([...ROSTER, 'ryan', 'toby'])];
     const st = new Stage(1, CAST, ep, roster);
     const sets: string[] = [], seated: string[] = [];
     st.on((e) => {
@@ -106,20 +107,20 @@ describe('kitchen and annex sets', () => {
 
   it('leaves the desks of regulars who are away empty', () => {
     const ep = Episode.parse({ title: 'Away', logline: '', away: ['kevin'], scenes: [scene('office', 'bullpen', ['jim'])] });
-    const st = new Stage(1, CAST, ep, DEMO_ROSTER);
-    const task = st.spawn(new Director(st, ep, DEMO_ROSTER).play());
+    const st = new Stage(1, CAST, ep, ROSTER);
+    const task = st.spawn(new Director(st, ep, ROSTER).play());
     let seen = false;
     st.on((e) => { if (e.type === 'said') seen = st.actor('kevin').visible; });
     while (!task.done && st.time < 600) st.update(TICK);
-    expect(DEMO_ROSTER).toContain('kevin');
+    expect(ROSTER).toContain('kevin');
     expect(seen).toBe(false);
   });
 
   it('leaves desks empty for regulars away in one scene only', () => {
     const night = { ...scene('office', 'bullpen', ['jim']), away: ['kevin'] };
     const ep = Episode.parse({ title: 'Night', logline: '', scenes: [night, scene('office', 'bullpen', ['jim'])] });
-    const st = new Stage(1, CAST, ep, DEMO_ROSTER);
-    const task = st.spawn(new Director(st, ep, DEMO_ROSTER).play());
+    const st = new Stage(1, CAST, ep, ROSTER);
+    const task = st.spawn(new Director(st, ep, ROSTER).play());
     const seen: boolean[] = [];
     st.on((e) => { if (e.type === 'said') seen.push(st.actor('kevin').visible); });
     while (!task.done && st.time < 600) st.update(TICK);
@@ -128,7 +129,7 @@ describe('kitchen and annex sets', () => {
 
   it('walks at a uniform pixel speed on a square-cell set', () => {
     const ep = Episode.parse({ title: 'Walk', logline: '', scenes: [scene('office', 'bullpen', ['jim'])] });
-    const st = new Stage(1, CAST, ep, DEMO_ROSTER);
+    const st = new Stage(1, CAST, ep, ROSTER);
     st.enterSet('office');
     // The open aisle between Dwight's and Phyllis's desks: a straight run down.
     const d = st.set.spots.dwight_desk, p = st.set.spots.phyllis_desk;

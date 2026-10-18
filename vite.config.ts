@@ -7,7 +7,7 @@ import { exportLibrary, listLibrary, readStored } from './server/sessions.ts';
  *   GET /library/index.json              every stored series
  *   GET /library/<id>/<file>.json        series.json or ep-NNN.json
  * In a production build (GitHub Pages) the committed library/ is emitted as the same
- * static files, so the demo plays stored shows with no server at all.
+ * static files, so the site plays stored shows with no server at all.
  */
 function library(): Plugin {
   return {

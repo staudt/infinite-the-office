@@ -1,11 +1,10 @@
-// Render stored episodes (or the demo) to silent MP4. The show is deterministic, so instead of
+// Render stored episodes to silent MP4. The show is deterministic, so instead of
 // recording in real time we step it by exact simulated time in headless Chromium, screenshot
 // each frame and pipe the frames into ffmpeg. The page is just screenshotted: any view works.
 //
 //   npm run render -- --show <id> --ep 3              one episode -> renders/<id>-s1e03.mp4
 //   npm run render -- --show <id> --ep 3 --scene 2    one scene (a clip)
 //   npm run render -- --show <id> --season 1          every stored episode of a season
-//   npm run render -- --demo [--scene 3]              the built-in demo episode
 //   options: --format horizontal|vertical (1920x1080 | 1080x1920)  --fps 30  --out renders
 import { spawn } from 'node:child_process';
 import { mkdirSync } from 'node:fs';
@@ -13,38 +12,33 @@ import { join } from 'node:path';
 import { listLibrary } from '../../server/sessions';
 import { episodeInSeason, SEASON_LENGTH, seasonOf } from '../world/season';
 import { findShow, type LibraryEntry } from '../world/state';
-import { arg, has } from './args';
+import { arg } from './args';
 import { failer, FORMATS, type FormatName, openRender, startSession } from './browser';
 
 const fail: (msg: string) => never = failer('render');
 
-const demo = has('demo');
 const formatName = (arg('format') ?? 'horizontal') as FormatName;
 FORMATS[formatName] ?? fail('--format is horizontal or vertical');
 const fps = Number(arg('fps') ?? 30);
 const outDir = arg('out') ?? 'renders';
 const scene = arg('scene') ? Number(arg('scene')) : null;
 
-interface Job { episode: number | null; file: string }
+interface Job { episode: number; file: string }
 const jobs: Job[] = [];
 let show: LibraryEntry | undefined;
 const sceneSuffix = scene ? `-scene${scene}` : '';
-if (demo) {
-  jobs.push({ episode: null, file: `demo${sceneSuffix}.mp4` });
-} else {
-  const showArg = arg('show') ?? fail('missing --show <id | name> (or --demo)');
-  show = findShow(listLibrary(), showArg) ?? fail(`no stored show matches "${showArg}"`);
-  let episodes: number[];
-  if (arg('ep')) episodes = [Number(arg('ep'))];
-  else if (arg('season')) {
-    const s = Number(arg('season'));
-    episodes = Array.from({ length: SEASON_LENGTH }, (_, i) => (s - 1) * SEASON_LENGTH + i + 1).filter((n) => n <= show!.episodes);
-  } else fail('pass --ep <n>, --season <n> or --demo');
-  if (!episodes.length || episodes.some((n) => !(n >= 1 && n <= show!.episodes))) fail(`"${show.name}" has ${show.episodes} stored episodes`);
-  if (scene !== null && episodes.length > 1) fail('--scene works with a single --ep');
-  for (const n of episodes) {
-    jobs.push({ episode: n, file: `${show.id}-s${seasonOf(n)}e${String(episodeInSeason(n)).padStart(2, '0')}${sceneSuffix}.mp4` });
-  }
+const showArg = arg('show') ?? fail('missing --show <id | name>');
+show = findShow(listLibrary(), showArg) ?? fail(`no stored show matches "${showArg}"`);
+let episodes: number[];
+if (arg('ep')) episodes = [Number(arg('ep'))];
+else if (arg('season')) {
+  const s = Number(arg('season'));
+  episodes = Array.from({ length: SEASON_LENGTH }, (_, i) => (s - 1) * SEASON_LENGTH + i + 1).filter((n) => n <= show!.episodes);
+} else fail('pass --ep <n> or --season <n>');
+if (!episodes.length || episodes.some((n) => !(n >= 1 && n <= show!.episodes))) fail(`"${show.name}" has ${show.episodes} stored episodes`);
+if (scene !== null && episodes.length > 1) fail('--scene works with a single --ep');
+for (const n of episodes) {
+  jobs.push({ episode: n, file: `${show.id}-s${seasonOf(n)}e${String(episodeInSeason(n)).padStart(2, '0')}${sceneSuffix}.mp4` });
 }
 
 mkdirSync(outDir, { recursive: true });
@@ -57,11 +51,8 @@ try {
 
 async function renderJob(job: Job, file: string): Promise<void> {
   const params = new URLSearchParams();
-  if (job.episode === null) params.set('demo', '1');
-  else {
-    params.set('show', show!.id);
-    params.set('ep', String(job.episode));
-  }
+  params.set('show', show!.id);
+  params.set('ep', String(job.episode));
   if (scene) {
     params.set('scene', String(scene));
     params.set('clip', '1');

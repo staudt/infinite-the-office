@@ -1,7 +1,14 @@
+import ep1 from '../library/scranton-the-golden-years/ep-001.json';
+import goldenYears from '../library/scranton-the-golden-years/series.json';
+import { Episode } from '../src/schema/episode.ts';
 import { SETS } from '../src/sets/index.ts';
 import { reviewBible } from '../src/writer/validate.ts';
 import { applySeasonStart } from '../src/world/apply.ts';
 import { newSeries, type Series } from '../src/world/state.ts';
+
+/** A real stored episode to stage (the published season's first one) and the roster it airs with. */
+export const EPISODE = Episode.parse(ep1);
+export const ROSTER = goldenYears.roster as string[];
 
 export const bible = (over: object = {}) => ({
   theme: 'Everyone wants a promotion', era: 'Season 2-3', manager: 'Michael Scott',

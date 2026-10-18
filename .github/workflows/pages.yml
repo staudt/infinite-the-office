@@ -1,6 +1,6 @@
-# Builds the static demo (no AI: stored shows from library/ + the demo episode)
+# Builds the static site (no AI: the stored shows from library/)
 # and publishes it to GitHub Pages on every push to master.
-name: Deploy demo to GitHub Pages
+name: Deploy to GitHub Pages
 
 on:
   push:

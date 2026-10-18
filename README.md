@@ -25,7 +25,7 @@ npm run dev                 # open the printed URL
 
 | Variable | Default | Purpose |
 |----------|---------|---------|
-| `ANTHROPIC_API_KEY` | none | Enables writing. Without it, stored shows and the demo still play. |
+| `ANTHROPIC_API_KEY` | none | Enables writing. Without it, stored shows still play. |
 | `WRITER_MODEL` | `claude-haiku-5-5` | Writes each episode. |
 | `WRITER_PLAN_MODEL` | `claude-sonnet-5-5` | Season bibles and cast changes. |
 | `PORT` | `8787` | Writer proxy port. |
@@ -41,7 +41,7 @@ Episode N+1 is written while N airs; the arrows next to the episode title in the
 
 Keys: `space` pause · `1`–`4` speed (1/2/4/8x) · `←`/`→` previous/next scene · `d` debug panel · `f` full screen (just the picture, like a video; also the HUD button or a double-click on it; `?tv=1` opens in it) · `N` shows · `Esc` close the start screen or leave full screen.
 
-URL params (read in `src/main.ts`): `?show=<id>` opens a stored show, `?ep=N` and `?scene=N` jump to an episode and scene (1-based scene), `?play=new|library` and `?id=<id>` select a program, `?direction=` and `?name=` prefill a new series, `?demo` plays the built-in demo episode, and `?seed=N` sets the seed.
+URL params (read in `src/main.ts`): `?show=<id>` opens a stored show, `?ep=N` and `?scene=N` jump to an episode and scene (1-based scene), `?play=new|library` and `?id=<id>` select a program, and `?direction=` and `?name=` prefill a new series.
 
 ### Seasons
 
@@ -71,7 +71,7 @@ npm run render -- --show <id> --season 1                     # every stored epis
 npm run render -- --show <id> --ep 12 --format vertical      # 1080x1920 for Shorts/Reels
 ```
 
-Options: `--demo`, `--fps 24` (default 30), `--out renders`. The renderer steps the deterministic show frame by frame in headless Chromium and pipes frames to ffmpeg. It needs `ffmpeg` on the PATH and Chrome or Chromium; set `CHROMIUM_PATH` if it isn't found.
+Options: `--fps 24` (default 30), `--out renders`. The renderer steps the deterministic show frame by frame in headless Chromium and pipes frames to ffmpeg. It needs `ffmpeg` on the PATH and Chrome or Chromium; set `CHROMIUM_PATH` if it isn't found.
 
 ## Tuning the writing without code
 
