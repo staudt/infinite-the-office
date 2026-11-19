@@ -2,13 +2,13 @@
 
 **Never-ending generative *The Office* (US).** A screensaver-style sitcom that writes itself. Claude writes each season's plan and every ~10-minute episode. A deterministic engine stages it on a sprite-drawn floor plan of Dunder Mifflin Scranton: characters walk around, talk in speech balloons, hold conference-room meetings, and cut to a confessional close-up for talking heads.
 
+**Watch sample seasons here: https://staudt.github.io/infinite-the-office/**
+
 ![Michael's conference room meeting](docs/conference-room.png)
 
 | | |
 |---|---|
 | ![The bullpen](docs/bullpen.png) | ![A talking head](docs/talking-head.png) |
-
-**Watch it:** https://staudt.github.io/infinite-the-office/ plays *Scranton: The Golden Years*, a pre-generated 12-episode season written by Claude, and its sequel *Scranton: Growing Up* (Michael and Holly, Pam's year in New York, Angela's secret), with no API key needed. Then make your own: give it a direction ("Andy's era", "Michael's last year", "what if Dwight ran the branch") and Claude writes a new show.
 
 Fan project, not affiliated with NBC/Universal. It uses the characters' names and no official assets; the pixel art is AI-generated. The engine is built on [infinite-wrestling](https://github.com/staudt/infinite-wrestling).
 
